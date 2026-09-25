@@ -1,7 +1,7 @@
 # AI, Seriously? — master project brief
 
 **Leyla Amur · 25 September 2026 · 5-Day AI Builder Challenge, 6–10 October 2026**  
-**Stage:** product defined; feature scope to be approved; implementation has not begun.
+**Stage:** product defined; feature scope approved; implementation has not begun.
 
 **Browse AI news. Check the hype. Understand what holds up.**
 
@@ -12,13 +12,14 @@ This brief merges two earlier documents, both kept in `archive/`: the challenge 
 | Challenge rules gathered | Done. Summarised in Part 2. |
 | App idea | **Decided:** AI news feed with story scores and a hype meter. |
 | Working name | **AI, Seriously?** (provisional; availability not yet checked). |
-| Feature scope | Candidate list below; final list comes from the feature-scoping workstream, then Leyla's approval. |
+| Feature scope | **Approved** 25 September: 10 Must, 3 Should (see `prep/feature-list.md`). |
 | Build stack | Open. Compare options during preparation (see Delivery). |
-| Mockup | To do, after this brief, from the approved feature list. |
+| AI model | Compare Claude Opus 5 and Claude Sonnet 5 on the calibration set, then choose. |
+| Mockup | Next: build from the approved feature list. |
 | Participant profile | Steps 1 and 3 drafted; step 2 (Skills) not reviewed. |
 | Budget and time | About **US$100** through judging; **40 hands-on hours** over the sprint. |
 
-**Next action:** run the feature-scoping workstream and approve the feature list, then build the mockup.
+**Next action:** build the clickable mockup from the approved feature list.
 
 ---
 
@@ -59,15 +60,17 @@ These uses are hypotheses, not validated demand. BlueDot and the wider network a
 
 **Why AI is needed (for the "thoughtful use of AI" criterion):** reading each article in full, choosing its consequential claims, finding and comparing the supporting source, and explaining the gap in plain language cannot be done by hand for a live feed. The AI does this assessment; stored ratings, a written rubric and visible evidence keep it inspectable.
 
-## Candidate features
+## Features (approved)
 
-These are the candidate features going into the feature-scoping workstream. The workstream confirms or changes the tiers; the three essentials below are the current proposal.
+Approved on 25 September 2026 through the feature-scoping workstream; details, estimates and reasoning are in `prep/`. The Must set takes about 19.5 of the roughly 18–20 feature-building hours in the sprint, so Should items are built only if Day 3 ends on schedule.
 
 | Tier | Features |
 | --- | --- |
-| **Essential (proposed)** | Connected feed; story score and hype meter; "Why this rating?" with a small Behind the Claim evidence layer. |
-| **Candidates to rank** | Topic filters; Newest / Strong reporting / Most hyped / Unrated sorts; stale and "Not rated yet" states; operator controls (refresh, pause, cost check). |
-| **Later (unless the workstream promotes one)** | Guess the hype game; paired article comparison; story clustering; user-submitted URLs; accounts; personalization; notifications; scheduled monitoring; browser extension; PDF/OCR; export cards; languages other than English. |
+| **Must have** (in build order) | 1. Live feed: import, refresh, dedup, stale state · 2. Story score, hype meter, one-sentence explanation · 3. Stored, versioned ratings with daily cap and spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence" states · 6. Score breakdown · 7. Behind the Claim with coverage status · 8. Operator controls: pause, withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page |
+| **Should have** | Sorts (Newest, Strong reporting, Most hyped, Unrated) · topic filter chips · scheduled daily rating run |
+| **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR · Turkish coverage · story clustering · paired article comparison · user-submitted URLs · accounts, personalization, notifications · browser extension |
+
+The sections below describe the three core features in detail.
 
 ### 1. A connected AI-news feed
 
@@ -122,7 +125,7 @@ Hype is separate and is not added again as a penalty in the story-score formula.
 
 The tone is curious, sharp and welcoming. Use the spice metaphor for exaggerated presentation, not the severity of harm. Avoid mocking affected people or assuming every dramatic claim is wrong.
 
-Give the first version personality through colourful meters, topic chips, concise explanations and browsing choices: **Newest**, **Strong reporting** and **Most hyped**. Rating views apply to assessed articles; a visible **Unrated** option prevents incomplete coverage disappearing. A later "Guess the hype" reveal could add a light game; the core pleasure should come from discovering a story and learning something surprising about its presentation.
+Give the first version personality through colourful meters and concise explanations. If time allows (Should have), add topic chips and the browsing choices **Newest**, **Strong reporting** and **Most hyped**; rating views apply to assessed articles, and a visible **Unrated** option prevents incomplete coverage disappearing. A later "Guess the hype" reveal could add a light game; the core pleasure should come from discovering a story and learning something surprising about its presentation.
 
 ## Name
 
@@ -202,18 +205,18 @@ The official Day 1 mission is "Define & Set Up", so final scope is allowed to se
 
 | By | Task | Output |
 | --- | --- | --- |
-| 28 Sep | Run the **feature-scoping workstream** (below) and approve the feature list | `prep/feature-list.md` |
+| ~~28 Sep~~ | ~~Run the **feature-scoping workstream** and approve the feature list~~ **Done 25 Sep** | `prep/feature-list.md` |
 | 30 Sep | Build the **clickable mockup** from the approved list | Mockup link |
 | 30 Sep | Check the name *AI, Seriously?* (existing products, domain) | Name confirmed or fallback chosen |
 | 1 Oct | Choose **two eligible RSS sources**: permitted use, full-text access | Source notes |
-| 2 Oct | Prepare **eight calibration articles** with manual ratings (four held back) and write the rubric anchors | Calibration set |
+| 2 Oct | Prepare **eight calibration articles** with manual ratings (four held back), write the rubric anchors, and compare **Opus 5 vs Sonnet 5** on them | Calibration set; model choice |
 | 3 Oct | **Compare stacks** and pick one: set up accounts, run a quick "hello" test of the AI model, set a hard spending limit | Stack decision |
 | 4 Oct | Write the **starting-point note** and block calendar time for 6–12 Oct | Starting-point note |
 | 5 Oct | Finish the **participant profile**, update the project name and one-liner on the dashboard, attend the kick-off webinar | Signup complete |
 
 ## Feature-scoping workstream
 
-This replaces the idea-picking workstream from the earlier challenge brief. The idea is chosen; this workstream decides **which features go into the app**. Each stage saves a short report in `prep/`.
+**Status: stages 1–4 and the gate done on 25 September;** reports in `prep/`. This replaces the idea-picking workstream from the earlier challenge brief. The idea is chosen; this workstream decides **which features go into the app**. Each stage saves a short report in `prep/`.
 
 | Stage | Job | Output |
 | --- | --- | --- |
@@ -260,7 +263,7 @@ Choose on: can it fetch RSS on demand, store ratings, enforce a spending cap, pu
 | Keeping the app live and rating through judging | $15 |
 | Contingency, tax and currency movement | $25 |
 
-Measure cost per rated article during preparation before fixing the daily cap; start at three articles a day. Set a hard spending limit with the AI provider. These are estimates, not quotes or purchase authorization; costs after judging need a separate decision.
+Measure cost per rated article during preparation before fixing the daily cap; start at three articles a day. Planning estimates for about 130 ratings through judging: $20–60 on Claude Opus 5, $8–23 on Claude Sonnet 5 (see `prep/03_feasibility.md`). Cache the fixed rubric instructions, use the Batch API for the daily run, and have the app fetch source pages itself. Set a hard spending limit with the AI provider. These are estimates, not quotes or purchase authorization; costs after judging need a separate decision.
 
 ## Participant profile
 
@@ -280,7 +283,7 @@ Measure cost per rated article during preparation before fixing the daily cap; s
 
 ## Next steps
 
-- [ ] Run the feature-scoping workstream and approve the feature list
+- [x] Run the feature-scoping workstream and approve the feature list
 - [ ] Build the clickable mockup
 - [ ] Check the name and choose two eligible RSS sources
 - [ ] Prepare the eight calibration articles and rubric anchors
