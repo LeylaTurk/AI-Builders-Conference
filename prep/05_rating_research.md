@@ -1,10 +1,10 @@
 # Research: how to rate AI news, and where the evidence comes from
 
-**AI, Seriously? · preparation research · 25 September 2026 · second pass (five sources checked against the originals)**
+**AI, Seriously? · preparation research · 25 September 2026 · second pass (six sources checked against the originals)**
 
 **Question:** how should each part of the rating work, where does the information for each judgement come from, and does the approach match established practice?
 
-**Method:** web searches, then the originals for five key sources, supplied by Leyla as PDFs and saved in `prep/sources/`. Findings from the originals are marked **✓ checked**. The rest still come from search-result summaries; items marked **(verify)** need the original page (see "Pages to check" at the end).
+**Method:** web searches, then the originals for six key sources, supplied by Leyla as PDFs and saved in `prep/sources/`. Findings from the originals are marked **✓ checked**. The rest still come from search-result summaries; items marked **(verify)** need the original page (see "Pages to check" at the end).
 
 ## 1. How established services rate news
 
@@ -86,19 +86,21 @@ Proposed mapping (to calibrate): 0 distortions → 1 Grounded; 1 minor → 2; 2 
 | --- | --- | --- |
 | **Link out** (headline, short summary, brief quotes, link) | Standard aggregator practice. **Caution:** a March 2026 US ruling (publishers v. Cohere) found that "substitutive" AI summaries that mirror an article's structure may infringe. Keep summaries to 1–2 sentences about the *assessment*, not a replacement for the article. [Copyright Lately](https://copyrightlately.com/court-rules-ai-news-summaries-may-infringe-copyright/) | Default for all sources. |
 | **The Conversation** ✓ checked | Creative Commons **Attribution/No Derivatives**. Free to republish online if you: make **no edits** (material edits need the author's approval); credit authors, institutions and The Conversation with a link; include their **invisible page-view counter**; check image licences; and **don't systematically republish all** their articles. Explicitly allowed: **extracts** (the first few lines or paragraphs plus "Read the full article on The Conversation") and **quotes** with a link. Note: "commercial, non-journalism usage: licence fees may apply". [guidelines](https://theconversation.com/us/republishing-guidelines) | Good fit. Show selected articles in full *unaltered*, and put Behind the Claim highlights in **our own panel as linked quotes**, not marked up inside their text (that could count as an edit). Confirm the app counts as non-commercial with us-republish@theconversation.com. |
-| **Guardian Open Platform** | Free developer key, **non-commercial only**, about 5,000 calls/day; full text available via the API; **content must not be stored for more than 24 hours**. [summary](https://publicapis.io/the-guardian-api) | Full text for rating is possible, but stored quotes and summaries may conflict with the 24-hour rule. **Must read the actual terms.** |
+| **The Guardian** ✓ checked: **ruled out** | The Open Platform terms (clause 6(g), added January 2024) forbid using Guardian content, its API **or its RSS feeds and website** "with any machine learning and/or artificial intelligence technologies to generate any data or content", for "text and data aggregation, analysis or mining", and with any bot, crawler or automated tool. They also forbid distorting an article's meaning "by association, implication or juxtaposition", require deleting all content within **24 hours**, limit the free key to **500 requests a day** (not 5,000 as search results said), and allow end users personal, non-commercial use only. [terms](https://www.theguardian.com/open-platform/terms-and-conditions) | **Not usable in any form**, including RSS: AI rating is exactly the prohibited use. Readers can still find Guardian stories elsewhere; the app simply won't include them. |
 
-**Recommended approach (to confirm):** link out by default; show full text only for a source whose licence clearly allows it; keep summaries short and assessment-focused.
+**Wider lesson from the Guardian terms:** since 2023–24 many publishers have added clauses that reserve their content against AI use and text-and-data mining (in the EU this is the Article 4(3) opt-out under the 2019 Copyright Directive). **An RSS feed being public doesn't make it usable for AI rating.** Every candidate source needs its terms checked for an AI or text-and-data-mining clause, and its `robots.txt` for AI crawler blocks.
+
+**Recommended approach:** link out by default; show full text only where the licence clearly allows it; keep summaries short and assessment-focused; **only use sources whose terms don't prohibit AI analysis**, favouring openly licensed publishers (such as The Conversation) and sources that explicitly permit reuse.
 
 ## 6. Pages to check
 
 **Done** (PDFs in `prep/sources/`): Kapoor & Narayanan checklist and article · Wright & Augenstein 2021 · Science Feedback process · The Conversation republishing guidelines.
 
-**Still needed:**
-1. **Guardian Open Platform terms and conditions:** [open-platform.theguardian.com](https://open-platform.theguardian.com/), the terms page and the access/keys page. Decides whether the Guardian is usable (non-commercial rule, 24-hour storage rule).
-2. **HealthNewsReview "how we rate stories":** [healthnewsreview.org/about-us/how-we-rate-stories](https://www.healthnewsreview.org/about-us/how-we-rate-stories/). The exact wording of the 10 criteria. *(The AMA Journal of Ethics article describes the same criteria, so it's only a backup if this page won't save.)*
+Also done: Guardian Open Platform terms (`prep/sources/guardian-open-platform-terms.pdf`).
+
+**Not available:** the HealthNewsReview site won't open for Leyla either (the project stopped in 2018). Its criteria are used here at summary level, as published in the [AMA Journal of Ethics](https://journalofethics.ama-assn.org/article/healthnewsrevieworg-criteria-excellence-health-and-medical-journalism/2007-03) and [Wikipedia](https://en.wikipedia.org/wiki/HealthNewsReview.org). That's enough, because our checklist wording is our own.
 
 ## Still to research
 
-- The **six candidate AI-news sources**: feed availability, full text, terms (this session can't reach news sites, so it depends on the PDFs or checks by Leyla).
+- The **candidate AI-news sources**: feed availability, full text, and above all **an AI or text-and-data-mining clause in the terms** (this session can't reach news sites, so it depends on PDFs or checks by Leyla). The Guardian is out; The Conversation is the leading candidate.
 - Whether any **existing AI-news hype rating** exists, to confirm originality.
