@@ -1,6 +1,6 @@
 # AI, Seriously? — master project brief
 
-**Leyla Amur · updated 26 September 2026 · 5-Day AI Builder Challenge, 6–10 October 2026**  
+**Leyla Amur · updated 26 September 2026 (latest: rating scales and names) · 5-Day AI Builder Challenge, 6–10 October 2026**  
 **Stage:** product, features, sources, visual design and rating display decided; mockup done; implementation has not begun.
 
 **Browse AI news. Check the hype. Understand what holds up.**
@@ -12,7 +12,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | App idea | **Decided:** an AI-news feed that rates each story for hype and for gaps in its evidence, with the evidence shown. |
 | Working name | **AI, Seriously?** (name and domain not yet checked). |
 | Feature scope | **Approved** 25–26 Sep: 12 Musts, 4 Shoulds (see [Features](#features-approved) and `prep/feature-list.md`). |
-| Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Evidence** (1–5 flags, one per level of gaps in the evidence). |
+| Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Evidence** (1–5 flags, one per level of gaps in the evidence). The name "Evidence" is a **working label, to revisit**. |
 | Sources | **Decided:** big outlets are not fetched or AI-rated; the feed uses press releases, company announcements and openly licensed outlets, plus a hand-collected backlog. Readers can check any article by pasting it. |
 | Visual design | **Decided:** "Night edition" colours; three highlight colour families; shared look with the videos. |
 | Mockup | **Done** 26 Sep: four clickable screens plus option boards ([canvas](https://claude.ai/artifact/NWzfGeYbTxNZkCLAfrVFLr), private until shared; source in `mockup/`). |
@@ -91,7 +91,7 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 
 ### Two ratings, matching scales: fewer is better
 
-**Decided 26 Sep.** The evidence rating is labelled **"Evidence"** and shown with flag icons; it isn't called "red flags" or "story score" ("score" suggests higher is better, which would bring back the direction confusion). Two separate ratings are kept because they answer different questions (the **packaging** versus the **substance**), and the cases where they disagree are the ones readers most need flagged. Any single combined number would give a strong study with a clickbait headline and a calm but unsupported story nearly the same score. Both ratings use the **same direction**: more icons means more to worry about.
+**Decided 26 Sep.** The evidence rating is shown with flag icons. Its label is **"Evidence" for now; the final name is still to be decided** (Leyla will revisit it). "Red flags" was dropped because the icons already say it; "story score" was considered, but "score" suggests higher is better, which clashes with "more flags = weaker evidence". Two separate ratings are kept because they answer different questions (the **packaging** versus the **substance**), and the cases where they disagree are the ones readers most need flagged. Any single combined number would give a strong study with a clickbait headline and a calm but unsupported story nearly the same score. Both ratings use the **same direction**: more icons means more to worry about.
 
 | | 🌶 **Hype** | 🚩 **Evidence** |
 | --- | --- | --- |
@@ -134,6 +134,7 @@ HealthNewsReview.org's review criteria; NewsGuard's pass/fail criteria; the Trus
 3. **Human check before publishing:** Leyla approves each feed rating (about 5 minutes a day at 3 ratings), enabling a "Reviewed by a human" label. *Leyla's call.*
 4. **Hide the outlet's name from the AI while it rates**, to reduce reputation bias. *Proposed.*
 5. **Reduce built-in overlap** so an overstated claim counts only towards hype, and evidence flags measure only what's there or missing. *Proposed.*
+6. **Name of the evidence rating:** "Evidence" is a working label; Leyla will revisit it (any name should work with "more flags = weaker evidence").
 
 ## The colour-coded markup categories
 
@@ -300,7 +301,7 @@ Leyla builds solo with agent support; no coding experience assumed. **Stack deci
 - [x] Merge the briefs; run feature scoping; approve the feature list
 - [x] Research ratings, sources and visual design; plan the videos
 - [x] Build the clickable mockup; choose colours and rating display
-- [ ] Confirm the open rating decisions (checklist method, hype formula, human check, hidden outlet name, overlap)
+- [ ] Confirm the open rating decisions (checklist method, hype formula, human check, hidden outlet name, overlap, name of the evidence rating)
 - [ ] Video 0: script (30 Sep), film (2 Oct), publish (4 Oct)
 - [ ] Check the name; confirm feed sources and allowlist terms
 - [ ] Collect and hand-rate the backlog; compare models; measure cost
