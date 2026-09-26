@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Rating display options</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF;color:#16131F;font-family:'Public Sans',system-ui,sans-serif}
+.serif{font-family:'Fraunces',Georgia,serif}
+.card{background:#FFFFFF;border:1px solid #E4E0EC;border-radius:14px}
+.mlabel{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4B4658}
+.seg{width:20px;height:10px;border-radius:3px;background:#E4E0EC}
+.seg.on{background:#2A78D6}
+.chili .body{fill:none;stroke:#B3AB9C;stroke-width:1.6}
+.chili .stem{fill:none;stroke:#B3AB9C;stroke-width:1.6;stroke-linecap:round}
+.chili.on .body{fill:#EB6834;stroke:#B94A1C}
+.chili.on .stem{stroke:#3F7D3A}
+.cell{width:18px;height:18px;border-radius:3px;background:#EEEBF3;display:flex;align-items:center;justify-content:center}
+.cell.on{background:#16131F}
+.verdict{display:inline-flex;align-items:center;gap:8px;background:#16131F;color:#FFFFFF;font:700 17px 'Public Sans',system-ui,sans-serif;padding:8px 14px;border-radius:999px}
+.badge{display:inline-flex;align-items:center;gap:6px;background:#FCE3D7;border:1.5px solid #EB6834;color:#16131F;font:700 14px 'Public Sans',system-ui,sans-serif;padding:6px 12px;border-radius:999px}
+.calm{display:inline-flex;align-items:center;gap:6px;background:#F1EFF5;color:#4B4658;font:600 14px 'Public Sans',system-ui,sans-serif;padding:6px 12px;border-radius:999px}
+li{margin-bottom:4px}
+</style>
+</helmet>
+<div style="width: 1280px; height: 1560px; box-sizing: border-box; padding: 48px 56px; display: flex; flex-direction: column; gap: 28px; background: #FFFFFF">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 900px">
+<h1 class="serif" style="margin: 0; font-size: 40px; font-weight: 800">Three ways to show a rating</h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4B4658">The same two fictional stories in each option: a hyped, thinly sourced one, and a serious, well-sourced warning. The checklist and evidence behind them stay the same; only the display changes.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start">
+
+<section style="display: flex; flex-direction: column; gap: 14px">
+<div class="mlabel">Option A · current</div>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Two separate scales</h2>
+<sc-for list="{{stories}}" as="s" hint-placeholder-count="2">
+<div class="card" style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<div class="serif" style="font-size: 18px; font-weight: 600; line-height: 1.25">{{s.headline}}</div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span class="mlabel">Story score</span><div style="display: flex; gap: 8px; align-items: center"><div style="display: flex; gap: 3px" aria-hidden="true"><sc-for list="{{s.segs}}" as="g"><span class="{{g.cls}}"></span></sc-for></div><strong>{{s.ev}}/5 {{s.evWord}}</strong></div></div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span class="mlabel">Hype</span><div style="display: flex; gap: 8px; align-items: center"><div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{s.chilis}}" as="h"><svg class="{{h.cls}}" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div><strong>{{s.hypeWord}} · {{s.hype}}/5</strong></div></div>
+</div>
+</sc-for>
+<ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.5">
+<li>✓ Both dimensions always visible</li>
+<li>✗ Opposite directions: more blue is good, more chillies is bad</li>
+<li>✗ Two visuals to learn, and readers compare them as if alike</li>
+</ul>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 14px">
+<div class="mlabel">Option B · recommended</div>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">One verdict, two dimensions behind it</h2>
+<sc-for list="{{stories}}" as="s" hint-placeholder-count="2">
+<div class="card" style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<div class="serif" style="font-size: 18px; font-weight: 600; line-height: 1.25">{{s.headline}}</div>
+<div style="display: flex; gap: 14px; align-items: center">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3px" aria-hidden="true"><sc-for list="{{s.grid}}" as="c"><span class="{{c.cls}}"></span></sc-for></div>
+<div style="display: flex; flex-direction: column; gap: 6px; align-items: flex-start">
+<span class="verdict">{{s.verdict}}</span>
+<span style="font-size: 13px; color: #4B4658">Evidence {{s.evWord}} · Hype {{s.hypeWord}}</span>
+</div>
+</div>
+</div>
+</sc-for>
+<div class="card" style="padding: 14px; display: flex; flex-direction: column; gap: 8px; background: #F8F7FB">
+<div class="mlabel">The verdict map</div>
+<div style="display: grid; grid-template-columns: 70px repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 12px; line-height: 1.3">
+<span></span><strong>Thin evidence</strong><strong>Mixed</strong><strong>Strong evidence</strong>
+<strong>High hype</strong><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">All sizzle</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Mostly sizzle</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Solid story, spicy headline</span>
+<strong>Some hype</strong><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Shaky</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Mixed</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Solid, a bit spicy</span>
+<strong>Low hype</strong><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Thin evidence</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Mixed evidence</span><span style="background: #FFFFFF; padding: 6px; border-radius: 6px">Holds up</span>
+</div>
+</div>
+<ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.5">
+<li>✓ One word to read at a glance. A single summary label is what worked best in the 12-country Nutri-Score study.</li>
+<li>✓ The two dimensions stay visible in the map and the detail page</li>
+<li>✓ A serious, well-sourced warning reads “Holds up”, never “good news”</li>
+<li>✗ Readers learn a few verdict names; the middle is “Mixed”</li>
+</ul>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 14px">
+<div class="mlabel">Option C</div>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">One score, plus a hype warning</h2>
+<sc-for list="{{stories}}" as="s" hint-placeholder-count="2">
+<div class="card" style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<div class="serif" style="font-size: 18px; font-weight: 600; line-height: 1.25">{{s.headline}}</div>
+<div style="display: flex; flex-direction: column; gap: 4px"><span class="mlabel">Story score</span><div style="display: flex; gap: 8px; align-items: center"><div style="display: flex; gap: 3px" aria-hidden="true"><sc-for list="{{s.segs}}" as="g"><span class="{{g.cls}}"></span></sc-for></div><strong>{{s.ev}}/5 {{s.evWord}}</strong></div></div>
+<sc-if value="{{s.hot}}" hint-placeholder-val="{{true}}"><span class="badge"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" class="chili on"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>Hype warning: {{s.hypeWord}}</span></sc-if>
+<sc-if value="{{s.cool}}" hint-placeholder-val="{{false}}"><span class="calm">No hype flags</span></sc-if>
+</div>
+</sc-for>
+<ul style="margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.5">
+<li>✓ One scale, one direction: higher is better</li>
+<li>✓ Hype only appears when it matters</li>
+<li>✗ The chilli meter becomes a side note, losing some of the fun</li>
+<li>✗ “No hype flags” can look like a stamp of approval</li>
+</ul>
+</section>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1560}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const segs = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'seg on' : 'seg' }));
+    const chilis = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'chili on' : 'chili' }));
+    const grid = (col, row) => {
+      const out = [];
+      for (let r = 0; r < 3; r++) for (let c = 0; c < 3; c++) out.push({ cls: r === row && c === col ? 'cell on' : 'cell' });
+      return out;
+    };
+    const stories = [
+      { headline: 'AI can replace 40% of workers, new study claims', ev: 2, evWord: 'Limited', hype: 4, hypeWord: 'Overheated',
+        segs: segs(2), chilis: chilis(4), grid: grid(0, 0), verdict: 'All sizzle', hot: true, cool: false },
+      { headline: 'Audit finds benefits screening tool wrongly flagged eligible applicants', ev: 5, evWord: 'Very strong', hype: 1, hypeWord: 'Grounded',
+        segs: segs(5), chilis: chilis(1), grid: grid(2, 2), verdict: 'Holds up', hot: false, cool: true }
+    ];
+    return { stories };
+  }
+}
+</script>
+</body>
+</html>

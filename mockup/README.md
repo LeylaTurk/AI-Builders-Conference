@@ -9,4 +9,9 @@ Four linked screens, all with fictional stories and scores:
 3. `project/Check.dc.html`: "Check an article" (link with allowlist, or pasted text; try both demo buttons)
 4. `project/HowRatings.dc.html`: how ratings work, highlight legend, and the Learn section with video placeholders
 
+Option boards (second row of the canvas), for choosing:
+
+5. `project/ScoreOptions.dc.html`: three ways to show a rating (two scales; one verdict with two dimensions; one score plus a hype warning)
+6. `project/ColourOptions.dc.html`: three brighter colour directions (Highlighter pop, Night edition, Pink press)
+
 Design decisions: `prep/10_visual_design.md`. This is a pre-sprint mockup, not app code.
