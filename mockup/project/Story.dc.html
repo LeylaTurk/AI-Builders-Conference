@@ -89,9 +89,9 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <span style="font-size: 20px; font-weight: 700">Overheated · 4/5</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span class="mlabel">Evidence</span>
+<span class="mlabel">Gaps</span>
 <div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
-<span style="font-size: 20px; font-weight: 700">Major gaps · 4/5</span>
+<span style="font-size: 20px; font-weight: 700">Major · 4/5</span>
 </div>
 <p style="margin: 0; font-size: 17px; line-height: 1.5">The study found the tool <strong>matched</strong> radiologists on archived scans from one hospital. The release says it <strong>beats</strong> them and will replace routine work.</p>
 </section>
@@ -154,7 +154,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 </sc-for>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 14px">
-<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Evidence breakdown</h2>
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Gaps breakdown</h2>
 <sc-for list="{{components}}" as="k" hint-placeholder-count="3">
 <div style="display: flex; flex-direction: column; gap: 4px">
 <div style="display: flex; justify-content: space-between; font-size: 14px"><strong>{{k.name}}</strong><span>{{k.word}} · {{k.n}}/5</span></div>
@@ -162,7 +162,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <div style="font-size: 13px; color: #4B4658; line-height: 1.45">{{k.note}}</div>
 </div>
 </sc-for>
-<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 3.7 → 4 flags: Major gaps. Hype is scored separately and isn’t added again.</div>
+<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 3.7 → Gaps: Major (4/5). Hype is scored separately and isn’t added again.</div>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 12px">
 <h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Behind the Claim</h2>
@@ -197,7 +197,7 @@ class Component extends DCLogic {
       good: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8.5 12.5l2.5 2.5 4.5-5'
     };
     const famName = { hype: 'Hype', evid: 'Evidence & sourcing', good: 'Good practice' };
-    const counts = { hype: 'Hype meter', evid: 'Evidence (adds a flag)', good: 'Evidence (removes a flag)' };
+    const counts = { hype: 'Hype meter', evid: 'Gaps (adds a flag)', good: 'Gaps (removes a flag)' };
     const tint = { hype: 'background: #FCE3D7', evid: 'background: #F7DCE2', good: 'background: #D6F2E6' };
     const F = {
       f1: { fam: 'hype', u: 'u-dotted', icon: I.humanai, label: 'Human–AI framing', quote: 'beats radiologists',
@@ -214,7 +214,7 @@ class Component extends DCLogic {
       f5: { fam: 'evid', u: 'u-dashed', icon: I.pr, label: 'PR language', quote: 'a breakthrough in trustworthy AI that thinks like a specialist',
         explain: 'A promotional quote from the tool’s developer, presented without an independent response, and it gives the software a human way of thinking.', source: '', basis: 'Pitfalls 11–12: self-interested sources and PR terms' },
       f6: { fam: 'good', u: 'u-solid', icon: I.good, label: 'Good practice', quote: 'a radiologist who was not involved in the study, said the results were “promising but preliminary”',
-        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This removes an evidence flag.', source: '', basis: 'HealthNewsReview: independent sources' },
+        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This removes a gaps flag.', source: '', basis: 'HealthNewsReview: independent sources' },
       f7: { fam: 'evid', u: '', icon: I.context, label: 'Missing context', quote: '(nothing to underline: this is about what’s left out)',
         explain: 'The release doesn’t say the tool was tested only on archived scans from one hospital, or how often it raised false alarms. Those limits change what the result means.',
         source: 'Retrospective, single-centre design; prospective clinical testing is needed.', basis: 'Pitfalls 13–14: limitations missing or buried' }
@@ -249,9 +249,9 @@ class Component extends DCLogic {
     }));
     const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
     const components = [
-      { name: 'Source transparency', n: 3, word: 'Some gaps', flags: flags(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
-      { name: 'Strength of the evidence behind the key claims', n: 4, word: 'Major gaps', flags: flags(4), note: 'One retrospective study on archived scans from a single hospital; the full paper is paywalled. (How the release overstates it counts under hype.)' },
-      { name: 'Context and qualifications', n: 4, word: 'Major gaps', flags: flags(4), note: 'Key limits (archived scans, one hospital, no false-alarm rate) are missing.' }
+      { name: 'Source transparency', n: 3, word: 'Some', flags: flags(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
+      { name: 'Strength of the evidence behind the key claims', n: 4, word: 'Major', flags: flags(4), note: 'One retrospective study on archived scans from a single hospital; the full paper is paywalled. (How the release overstates it counts under hype.)' },
+      { name: 'Context and qualifications', n: 4, word: 'Major', flags: flags(4), note: 'Key limits (archived scans, one hospital, no false-alarm rate) are missing.' }
     ];
     return {
       paras, sel, findingList, components,

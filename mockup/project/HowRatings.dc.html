@@ -57,9 +57,9 @@ p{line-height:1.6}
 <section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
 <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 12px">
 <div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
-<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Evidence · more flags, weaker evidence</h2>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Evidence gaps · more flags, bigger gaps</h2>
 <p style="margin: 0; font-size: 16px">Gaps in how the article is sourced, whether its key claims match their sources, and whether it keeps the important limits. Three parts, averaged: source transparency, strength of the evidence behind the key claims, context. How the wording overstates the evidence counts under hype, not here.</p>
-<div style="font-size: 15px; font-weight: 600">1 Well supported · 2 Minor gaps · 3 Some gaps · 4 Major gaps · 5 Unsupported</div>
+<div style="font-size: 15px; font-weight: 600">1 None · 2 Minor · 3 Some · 4 Major · 5 Unsupported</div>
 </div>
 <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 12px">
 <div style="display: flex; gap: 2px" aria-hidden="true"><sc-for list="{{twoChilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="26" height="26" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div>
@@ -164,12 +164,12 @@ class Component extends DCLogic {
         { icon: I.hyperbole, label: 'Hyperbole', style: u(H[0], H[1], 'wavy'), desc: '“Revolutionary”, “breakthrough”, sweeping predictions.' },
         { icon: I.humanai, label: 'Human–AI framing', style: u(H[0], H[1], 'dotted'), desc: 'AI “decides”, “thinks” or “beats doctors”.' }
       ] },
-      { name: 'Evidence & sourcing', feeds: 'Adds evidence flags', border: 'border-color: #B3123A', items: [
+      { name: 'Evidence & sourcing', feeds: 'Adds gaps', border: 'border-color: #B3123A', items: [
         { icon: I.number, label: 'Unexplained number', style: u(E[0], E[1], 'double'), desc: '“90% accurate” without saying at what, or how it was measured.' },
         { icon: I.pr, label: 'PR language', style: u(E[0], E[1], 'dashed'), desc: 'Company wording or self-interested sources repeated as fact.' },
         { icon: I.context, label: 'Missing context', style: 'background: ' + E[0] + '; text-decoration-line: none; border: 1px dashed ' + E[1], desc: 'Important limits left out or buried. Shown as a note.' }
       ] },
-      { name: 'Good practice', feeds: 'Removes evidence flags', border: 'border-color: #1BAF7A', items: [
+      { name: 'Good practice', feeds: 'Reduces gaps', border: 'border-color: #1BAF7A', items: [
         { icon: I.good, label: 'Good practice', style: u(G[0], G[1], 'solid'), desc: 'Independent experts, linked studies, limits stated clearly.' }
       ] }
     ];

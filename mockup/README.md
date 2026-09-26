@@ -15,6 +15,6 @@ Option boards (second row of the canvas), for choosing:
 7. `project/ChilliOptions.dc.html`: two chilli-led rating options (D and E), in the chosen Night edition colours
 6. `project/ColourOptions.dc.html`: three brighter colour directions (Highlighter pop, Night edition, Pink press)
 
-Current design: Night edition colours; ratings shown as 1–5 chillies (hype) and 1–5 flags labelled "Evidence" (gaps in the evidence), both "fewer is better".
+Current design: Night edition colours; ratings shown as 1–5 chillies (hype) and 1–5 flags labelled "Gaps" (gaps in the evidence), both "fewer is better".
 
 Design decisions: `prep/10_visual_design.md`. This is a pre-sprint mockup, not app code.
