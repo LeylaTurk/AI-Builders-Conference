@@ -9,7 +9,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 
 | Item | Status |
 | --- | --- |
-| App idea | **Decided:** an AI-news feed that rates each story for hype and for gaps in its evidence, with the evidence shown. |
+| Idea | **Decided:** an AI-news website that rates each story for hype and for gaps in its evidence, with the evidence shown. |
 | Working name | **AI, Seriously?** (name and domain not yet checked). |
 | Feature scope | **Approved** 25–26 Sep: 12 Musts, 4 Shoulds (see [Features](#features-approved) and `prep/feature-list.md`). |
 | Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Gaps** (1–5 flags for gaps in the evidence). |
@@ -30,7 +30,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 
 ## What it is
 
-An enjoyable news app about artificial intelligence. Readers browse a live feed, see at a glance **how hyped** each story is and **how big the gaps** in its evidence are, and open "Why this rating?" to see the article marked up with the reasons. They can also **check any article themselves** by pasting a link or its text.
+An enjoyable news website about artificial intelligence. Readers browse a live feed, see at a glance **how hyped** each story is and **how big the gaps** in its evidence are, and open "Why this rating?" to see the article marked up with the reasons. They can also **check any article themselves** by pasting a link or its text.
 
 **Browse the feed → see the chillies and flags → open a story → see the marked-up evidence.**
 
@@ -43,7 +43,7 @@ An example card (fictional story):
 > The result concerns selected tasks in a supervised test. The headline turns that into a claim about replacing workers.  
 > **Why this rating?** · **Read original ↗**
 
-Readers see the headline, a short summary written by the app, the two ratings and a one-line reason. The full article stays on the publisher's site behind "Read original", unless the source's licence allows showing it (see [Sources](#sources-and-permissions)).
+Readers see the headline, a short summary written by the site, the two ratings and a one-line reason. The full article stays on the publisher's site behind "Read original", unless the source's licence allows showing it (see [Sources](#sources-and-permissions)).
 
 ## Audience and purpose
 
@@ -73,7 +73,7 @@ Full list with hours and details: `prep/feature-list.md`.
 
 ### 1. The live feed
 
-Two eligible feed sources, about **20 recent cards**, and a refresh that fetches new entries and shows when the feed was checked. Duplicate URLs are removed. New entries show **"Not rated yet"** until the daily rating run reaches them (start at **three a day**, adjusted after measuring cost). A failed fetch keeps the previous feed with a stale-status message. Rating time is shown separately from feed-check time. The feed is read by the app's server on a schedule, not embedded from other sites. Cached examples can support a demo but cannot replace the connected feed.
+Two eligible feed sources, about **20 recent cards**, and a refresh that fetches new entries and shows when the feed was checked. Duplicate URLs are removed. New entries show **"Not rated yet"** until the daily rating run reaches them (start at **three a day**, adjusted after measuring cost). A failed fetch keeps the previous feed with a stale-status message. Rating time is shown separately from feed-check time. The feed is read by the site's server on a schedule, not embedded from other sites. Cached examples can support a demo but cannot replace the connected feed.
 
 ### 2. "Check an article"
 
@@ -124,7 +124,7 @@ The **gaps** rating combines three parts, each shown in the breakdown (formula: 
 - **Low hype doesn't mean low risk.** A serious, well-evidenced warning should show 1 chilli and 1 flag.
 - **Hype is not added again** into the gaps rating.
 - **No guessing:** if the **article** can't be read, show **"Insufficient evidence to rate"** (an empty grey meter) for both ratings, never a made-up rating. A headline or feed snippet alone can't earn a rating.
-- **Article readable, source not (decided 26 Sep):** "source" means whatever the story rests on: a study, report, press release or announcement. If the article **doesn't identify** it specifically enough to find (no link, and no title, publisher or date: "a new study found…", "Microsoft announced…"), that counts as a **gap**: it's the article's fault. If the rater **finds the source only by digging** (searching, because the article doesn't point to it), the source check still fails, but the evidence and hype checks are scored normally, and the rating records "found by digging": the app's AI follows only links in the article, so this marks where a hand rating could see more than the AI can (decided 26 Sep). If the source is **identifiable but can't be read** (paywall, dead link), checks that need it count as **not checked**, not failed; the other checks still count. **Hype** then scores only the checks that need just the article (hyperbole, agency framing, headline versus its own body, promotional wording, clickbait); "stronger claim than the source" isn't scored. Both ratings carry the label **"Partly checked: source not read"**, and Behind the Claim shows the source as unavailable.
+- **Article readable, source not (decided 26 Sep):** "source" means whatever the story rests on: a study, report, press release or announcement. If the article **doesn't identify** it specifically enough to find (no link, and no title, publisher or date: "a new study found…", "Microsoft announced…"), that counts as a **gap**: it's the article's fault. If the rater **finds the source only by digging** (searching, because the article doesn't point to it), the source check still fails, but the evidence and hype checks are scored normally, and the rating records "found by digging": the site's AI follows only links in the article, so this marks where a hand rating could see more than the AI can (decided 26 Sep). If the source is **identifiable but can't be read** (paywall, dead link), checks that need it count as **not checked**, not failed; the other checks still count. **Hype** then scores only the checks that need just the article (hyperbole, agency framing, headline versus its own body, promotional wording, clickbait); "stronger claim than the source" isn't scored. Both ratings carry the label **"Partly checked: source not read"**, and Behind the Claim shows the source as unavailable.
 - Ratings are **stored with the article version, date and rubric version**, so they don't change on refresh.
 - A rating is an assessment of how well **this article** supports what it says, not a verdict on truth or on the outlet. Ratings are AI-assisted and can be corrected.
 
@@ -169,13 +169,13 @@ The three colours passed colour-blindness tests in light mode (seven separate co
 
 | # | Video | When |
 | --- | --- | --- |
-| 0 | "Why AI hype matters now": the state of AI headlines, why it matters for AI safety, what the app does (2–3 min) | Before the sprint: script 30 Sep, film 2 Oct, publish 4 Oct |
+| 0 | "Why AI hype matters now": the state of AI headlines, why it matters for AI safety, what the website does (2–3 min) | Before the sprint: script 30 Sep, film 2 Oct, publish 4 Oct |
 | 1 | Overstated claims & unexplained numbers | After the challenge |
 | 2 | Hyperbole & human–AI framing | After |
 | 3 | PR language & missing context | After |
 | 4 | What good AI reporting looks like | After |
 
-Scripts are checked against the app's own checklist. Video work stays outside the 40 sprint hours. Suggested tool: CapCut (free, captions, collage effects); Descript for talking-to-camera editing.
+Scripts are checked against the site's own checklist. Video work stays outside the 40 sprint hours. Suggested tool: CapCut (free, captions, collage effects); Descript for talking-to-camera editing.
 
 ## Sources and permissions
 
@@ -183,7 +183,7 @@ Scripts are checked against the app's own checklist. Video work stays outside th
 
 - **Big outlets are not fetched or AI-rated.** Reuters and AP have no public RSS and license their content; CNN, Fox, the NYT and others prohibit or don't clearly allow automated or AI use; **the Guardian's terms (clause 6(g)) forbid AI analysis, text and data mining and bots on its API, website and RSS feeds.** Many publishers added such clauses in 2023–24, so a public feed doesn't mean AI use is allowed.
 - **The rated feed uses** press releases (e.g. EurekAlert!), company announcements (e.g. OpenAI's news feed) and openly licensed outlets (The Conversation, ProPublica), each to be confirmed by checking its terms. Proposed pair: EurekAlert AI press releases and The Conversation's AI topic, with OpenAI news as backup.
-- **The Conversation (checked):** free to republish selected articles unedited with credit and their page counter; extracts and quotes with a link are allowed; not all articles systematically. Evidence highlights go in the app's own panel, not marked up inside their text.
+- **The Conversation (checked):** free to republish selected articles unedited with credit and their page counter; extracts and quotes with a link are allowed; not all articles systematically. Evidence highlights go in the site's own panel, not marked up inside their text.
 - **Summaries stay short and about the assessment,** because a 2026 US ruling found that AI summaries substituting for articles may infringe.
 - **Headline-and-link demos** of big outlets are assessed in `prep/08_headline_demo_assessment.md` (local development vs private hosting vs public).
 - **Readers can check any article** by pasting its text.
@@ -199,7 +199,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 ## Testing and acceptance
 
 - **Calibration set:** 8–12 backlog articles rated by hand (4 held back), covering supported alarm, unsupported optimism, calm overstatement, shared sources and access failures (wishlist: `backlog/wishlist.md`). The AI's ratings are compared with Leyla's to choose the model and tune the rubric.
-- **The backlog lives in the private repo `LeylaTurk/ai-news-articles`** (decided 26 Sep), never in this public repo, because it holds article text. It already contains 52 free news stories saved by an agent on 26 Sep (Set: `archive`; summary, short exact quotes and links, no full text; 11 marked for hand rating in `archive-rating-picks.md`). Most are from big outlets, so they're for **private calibration only** and are never shown in the app.
+- **The backlog lives in the private repo `LeylaTurk/ai-news-articles`** (decided 26 Sep), never in this public repo, because it holds article text. It already contains 52 free news stories saved by an agent on 26 Sep (Set: `archive`; summary, short exact quotes and links, no full text; 11 marked for hand rating in `archive-rating-picks.md`). Most are from big outlets, so they're for **private calibration only** and are never shown on the site.
 - **Reader tests:** three to five ordinary readers, including people outside AI circles (after outreach is authorised): browsing enjoyment, understanding both ratings, spotting a key limitation, wanting to return.
 - **Acceptance targets:** refresh adds entries without duplicates; failed fetches show stale status; unrated items get no invented ratings; quotes match the source text; a serious well-supported warning isn't labelled hype; caps actually limit spend; blocked sites get the paste message; keyboard use, contrast and non-colour labels work.
 
@@ -254,7 +254,7 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 
 ## Preparation before 6 October
 
-**Approach:** do as much as possible before the sprint. **Do early:** research, rubric, mockup, source checks, backlog and manual ratings, prompt drafts, accounts, spending limits, an empty test deployment, video 0. **Keep for the sprint:** the app itself, which is what judges score as "built during the challenge". Everything done early goes in `prep/starting-point-log.md`, which becomes the "starting point" submission field.
+**Approach:** do as much as possible before the sprint. **Do early:** research, rubric, mockup, source checks, backlog and manual ratings, prompt drafts, accounts, spending limits, an empty test deployment, video 0. **Keep for the sprint:** the web app itself, which is what judges score as "built during the challenge". Everything done early goes in `prep/starting-point-log.md`, which becomes the "starting point" submission field.
 
 | By | Task | Status |
 | --- | --- | --- |
@@ -265,7 +265,7 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 | 2 Oct | Collect the backlog and rate it by hand (8+ articles, 4 held back) | To do |
 | 3 Oct | Rating prompt and output format drafted; compare Opus 5 vs Sonnet 5; measure cost per article | To do |
 | 4 Oct | Edit, caption and publish video 0 | To do |
-| 4 Oct | Pick and set up the stack: accounts, API key, spending limit, empty app at a public URL | To do |
+| 4 Oct | Pick and set up the stack: accounts, API key, spending limit, empty web app at a public URL | To do |
 | 5 Oct | Sprint task list with cut order; starting-point log final; profile and dashboard complete; kick-off webinar | To do |
 
 ## Five-day build plan
@@ -284,9 +284,9 @@ Leyla's own build-first plan, not the official Daily Missions (which are guidanc
 
 ## Stack and budget
 
-Leyla builds solo with agent support; no coding experience assumed. **Stack decided by 4 Oct** after a short trial: agent-written code with free hosting (e.g. Claude Code with Vercel) versus a visual builder (e.g. Lovable, Bolt, Replit). Choose on: fetching feeds on a schedule, storing ratings, enforcing a spending cap, a public link without login, and operating it without code.
+Leyla builds solo with agent support; no coding experience assumed. It's a **web app**: people open it at a public web address, with no download. **Naming (decided 26 Sep):** readers see **"website"**; the challenge submission and technical notes say **"web app"**; a bare "app" is avoided in anything readers see, because it suggests something to install. **Stack decided by 4 Oct** after a short trial: agent-written code with free hosting (e.g. Claude Code with Vercel) versus a visual builder (e.g. Lovable, Bolt, Replit). Choose on: fetching feeds on a schedule, storing ratings, enforcing a spending cap, a public link without login, and operating it without code.
 
-**Budget: about US$100 through judging:** $15 tools and hosting (free tiers first), $45 AI calls, $15 keeping it live through judging, $25 contingency. Estimated AI cost for about 130 ratings: $20–60 on Claude Opus 5, $8–23 on Claude Sonnet 5 (`prep/03_feasibility.md`); pasted-article checks share the same daily cap. Use prompt caching, the Batch API for the daily run, and the app's own fetching of source pages. Set a hard spending limit with the AI provider. Video tools stay on free plans or are a separate personal cost.
+**Budget: about US$100 through judging:** $15 tools and hosting (free tiers first), $45 AI calls, $15 keeping it live through judging, $25 contingency. Estimated AI cost for about 130 ratings: $20–60 on Claude Opus 5, $8–23 on Claude Sonnet 5 (`prep/03_feasibility.md`); pasted-article checks share the same daily cap. Use prompt caching, the Batch API for the daily run, and the site's own fetching of source pages. Set a hard spending limit with the AI provider. Video tools stay on free plans or are a separate personal cost.
 
 ## Participant profile
 
