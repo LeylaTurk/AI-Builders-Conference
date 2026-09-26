@@ -30,7 +30,7 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
 
     Highlights come from the checklist findings; each quote is **matched against the article text in code** and dropped if not found; scores are calculated from the findings. For feed articles the markup is available only where the source's licence allows showing the text; for checked articles it's private to the reader.
 
-> **Time warning:** the Musts now total about **27.5 hours** against roughly **18–20 feature-building hours plus 6 reserve hours (24–26 in total)**. Even using all the reserve, the list is about 1.5–3.5 hours too long, and there would be no margin for problems. **Decision (26 Sep): Leyla decides what to cut on Day 3.** Proposed cut order to make that decision quick, from first to cut to last:
+> **Time check (updated 26 Sep):** the Musts total about **27.5 hours**. With setup and planning moved before 6 October, the sprint has about **28 build hours plus 4 reserve**, so they fit, just. **Leyla decides any cuts on Day 3.** Cut order, first to last:
 > 1. Behind the Claim at fallback size (1 claim, 1 source page)
 > 2. Operator controls simplified (pause via the provider's spending limit; withdraw by editing the database)
 > 3. Live feed reduced to one source and 10 cards

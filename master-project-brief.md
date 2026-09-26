@@ -202,18 +202,24 @@ Deadlines are set in Eastern Time, 7 hours behind Istanbul in October.
 
 ## Preparation before 6 October
 
-The official Day 1 mission is "Define & Set Up", so final scope is allowed to settle on Day 1. Going in with decisions made, though, frees the sprint for building. Before 6 October, **plan, design, check and set up, but don't write the app itself.** Everything done now is recorded in the starting-point note. Estimated preparation: about **10 hours**, logged separately from the 40 sprint hours.
+**Approach (decided 26 Sep):** Leyla does as much as possible **before** the sprint, so the five sprint days go almost entirely to building. The official Daily Missions are guidance, not a required workflow; the challenge asks for no daily check-ins.
+
+**What can be done early:** the challenge allows earlier work if it is **declared as the starting point**, and reviewers judge what was added during the sprint. So:
+- **Do early:** research, rubric, feature list, mockup, source checks, backlog and manual ratings, draft AI prompts and the output format, accounts, API keys, spending limits, and a "hello world" deployment test.
+- **Keep for the sprint:** the app itself (feed, rating pipeline, screens, "Check an article", markup view). That is what the judges score as "built during the challenge".
+- **Trade-off to decide consciously:** a prompt that's fully tuned before 6 October makes Day 1 faster, but it counts as starting point, not sprint work.
+
+Everything done early goes in the running log, `prep/starting-point-log.md`, which becomes the "starting point" submission field.
 
 | By | Task | Output |
 | --- | --- | --- |
-| ~~28 Sep~~ | ~~Run the **feature-scoping workstream** and approve the feature list~~ **Done 25 Sep** | `prep/feature-list.md` |
-| 30 Sep | Build the **clickable mockup** from the approved list | Mockup link |
-| 30 Sep | Check the name *AI, Seriously?* (existing products, domain) | Name confirmed or fallback chosen |
-| 1 Oct | Choose **two eligible RSS sources**: permitted use, full-text access | Source notes |
-| 2 Oct | Prepare **eight calibration articles** with manual ratings (four held back), write the rubric anchors, and compare **Opus 5 vs Sonnet 5** on them | Calibration set; model choice |
-| 3 Oct | **Compare stacks** and pick one: set up accounts, run a quick "hello" test of the AI model, set a hard spending limit | Stack decision |
-| 4 Oct | Write the **starting-point note** and block calendar time for 6–12 Oct | Starting-point note |
-| 5 Oct | Finish the **participant profile**, update the project name and one-liner on the dashboard, attend the kick-off webinar | Signup complete |
+| ~~28 Sep~~ | ~~Feature-scoping workstream and approved feature list~~ **Done 25–26 Sep** | `prep/feature-list.md` |
+| 29 Sep | **Clickable mockup** of the feed, cards, "Check an article" and the markup view | Mockup link |
+| 30 Sep | Check the name *AI, Seriously?*; confirm the feed sources and allowlist terms (save PDFs) | Name; `prep/sources/` |
+| 2 Oct | **Collect the backlog** and rate it by hand (8+ articles, 4 held back) | `backlog/` |
+| 3 Oct | **Rating prompt and output format drafted**; compare Opus 5 vs Sonnet 5 on the calibration set; measure cost per article | Model choice; cost per article |
+| 4 Oct | **Pick the stack and set it up:** accounts, API key, hard spending limit, empty app deployed to a public URL | Working empty deployment |
+| 5 Oct | **Sprint task list** written (every build task in order, with the cut order); starting-point log final; profile and dashboard complete; kick-off webinar | Ready to build |
 
 ## Feature-scoping workstream
 
@@ -226,23 +232,34 @@ The official Day 1 mission is "Define & Set Up", so final scope is allowed to se
 | 3. Feasibility and cost | Estimate build hours, AI cost per article and risks (source access, permissions, rating difficulty). | `03_feasibility.md` |
 | 4. Ranking | Sort into **Must have**, **Should have** and **Later**, weighting the official rubric against 40 hours and US$100. | `04_ranked_features.md` |
 | Gate | **Leyla approves** the feature list or asks for changes. | Approved `feature-list.md` |
-| 5. Builder | Turns the approved list into the mockup, the Day 1 brief and daily build tasks; helps build each Daily Mission. | Mockup, build plan, app, submission draft |
+| 5. Builder | Turns the approved list into the mockup and the sprint task list; helps build during the sprint. | Mockup, build plan, app, submission draft |
 
 Ground rules: cite claims and label sources as official, independent or tertiary; say which pages couldn't be reached; keep everything shippable to a public link by 10 October. Nothing is built before the gate.
 
 ## Five-day build plan
 
-Aligned to the official Daily Missions. 8 hands-on hours a day, 40 in total, including supervision and learning; agent work and unattended waiting are separate.
+**Leyla's own build-first plan**, not the official Daily Missions. Because setup and planning happen before 6 October, about **28 of the 40 hours go to building** (up from 18–20).
 
-| Day | Official mission | Leyla's hours | Output by end of day |
-| --- | --- | --- | --- |
-| **1 · 6 Oct** | Define & Set Up | 2h brief + starting point · 4h setup · 2h feed import | Final focused brief and honest starting-point record; stack running; the two RSS sources importing into stored entries. |
-| **2 · 7 Oct** | Build the Core | 7h core rating · 1h review | One real article → story score, hype meter, one-sentence explanation and Behind the Claim passages, end to end, saved as an example. Biggest remaining gap noted. |
-| **3 · 8 Oct** | Integrate & Develop | 5h interface + integration · 1h failure states · 1h first user try · 1h reserve | Feed → rated card → "Why this rating?" connected, with stored ratings; stale, "Not rated yet" and "Insufficient evidence" states handled; one person tries the main flow without instructions. |
-| **4 · 9 Oct** | Test, Evaluate & Deploy | 4h testing · 1h accessibility · 1h deploy · 2h reserve | Tested on a typical story, a difficult one (a well-supported alarming warning) and one it should decline to rate; held-back articles compared with the manual ratings; top failure fixed; limitations recorded; cost cap verified; **public link opened in a private browser window**. Feature freeze. |
-| **5 · 10 Oct** | Finalize & Submit | 1h polish · 4h submission + demo video · 3h reserve | Main journey polished; all submission fields complete; short backup demo recorded; every answer reviewed once; **submitted by 01:00 Istanbul, 11 Oct**. |
+| Use of the 40 sprint hours | Hours |
+| --- | --- |
+| Building features | 28 |
+| Testing and fixes | 5 |
+| Submission and demo video | 3 |
+| Reserve | 4 |
 
-**If behind:** reduce history to ten cards, rate fewer articles, inspect one claim and one supporting page, and simplify filters. **Keep the connected feed and both ratings.** Replace a blocked source with another eligible one. Do not quietly revert to a static catalogue or a paste-a-URL-only tool.
+The Musts total about 27.5 hours, so they now **fit**, with a 4-hour reserve. The Day 3 cut order in `prep/feature-list.md` still applies if the build runs slow.
+
+| Day | Build focus | Done by end of day |
+| --- | --- | --- |
+| **1 · 6 Oct** | Rating engine + feed import | Real article → checklist findings → both scores and explanation, end to end; feed entries importing and stored; **deployed to the public URL from day one** |
+| **2 · 7 Oct** | Feed and cards | Rated cards in the feed; stored, versioned ratings; "Not rated yet" and "Insufficient evidence" states; daily cap and spending limit working |
+| **3 · 8 Oct** | "Check an article" + markup view | Link (allowlist) or pasted text → private rating with colour-coded highlights; **one person tries it without instructions**; cut decision if behind |
+| **4 · 9 Oct** | Explanations, controls, polish | Score breakdown, Behind the Claim, operator controls, "How ratings work", accessibility; held-back articles compared with manual ratings; **public link checked in a private browser window**; feature freeze at end of day |
+| **5 · 10 Oct** | Test, submit | Fixes from testing; submission fields; short demo video; **submitted by 01:00 Istanbul, 11 Oct** |
+
+Two practices from the official missions are kept because they catch real problems: someone else trying the app without instructions (Day 3), and checking the public link without being logged in (Day 4).
+
+**If behind:** follow the cut order in `prep/feature-list.md`. **Keep the connected feed and both ratings.** Replace a blocked source with another eligible one. Don't quietly fall back to a static catalogue.
 
 ## Delivery, stack and budget
 
