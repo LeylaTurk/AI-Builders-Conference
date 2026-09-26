@@ -74,6 +74,7 @@ Tips:
 - Mix outlets: roughly half free sites and half NYT, plus at least one local story.
 - Choose articles from the last few weeks that link to a study, report or press release. The app has to follow those links.
 - Save 1–2 **spares** (Set: `spare`) in case one doesn't work out.
+- Stories saved to fill the app's archive use Set: `archive`. An agent may save these from free news sites with the same template: it writes `Saved by: agent`, marks its Category as `(suggested)` for you to confirm, and leaves "My quick notes" empty.
 
 ---
 

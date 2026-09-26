@@ -19,9 +19,9 @@ Do NOT put full article text in the public AI-Builders-Conference repo.
 - URL: 
 - Access: free | subscription (NYT) | partly paywalled | could not access
 - Saved on: YYYY-MM-DD
-- Saved by: Leyla
-- Set: dev | holdout | spare
-- Category (pick one): supported alarming | unsupported optimism | calm overstatement | shared source | access failure | other
+- Saved by: Leyla | agent
+- Set: dev | holdout | spare | archive
+- Category (pick one; agent adds "(suggested)" for Leyla to confirm): supported alarming | unsupported optimism | calm overstatement | shared source | access failure | other
 - Subheadline / deck (the line under the headline, if any): 
 
 ## Links inside the article (studies, press releases, reports it cites)
