@@ -175,7 +175,7 @@ The three colours passed colour-blindness tests in light mode (seven separate co
 | 3 | PR language & missing context | After |
 | 4 | What good AI reporting looks like | After |
 
-Scripts are checked against the app's own checklist. Video work stays outside the 40 sprint hours. Suggested tool: CapCut (free, captions, collage effects); Descript for talking-to-camera editing.
+Scripts are checked against the site's own checklist. Video work stays outside the 40 sprint hours. Suggested tool: CapCut (free, captions, collage effects); Descript for talking-to-camera editing.
 
 ## Sources and permissions
 
@@ -199,7 +199,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 ## Testing and acceptance
 
 - **Calibration set:** 8–12 backlog articles rated by hand (4 held back), covering supported alarm, unsupported optimism, calm overstatement, shared sources and access failures (wishlist: `backlog/wishlist.md`). The AI's ratings are compared with Leyla's to choose the model and tune the rubric.
-- **The backlog lives in the private repo `LeylaTurk/ai-news-articles`** (decided 26 Sep), never in this public repo, because it holds article text. It already contains 52 free news stories saved by an agent on 26 Sep (Set: `archive`; summary, short exact quotes and links, no full text; 11 marked for hand rating in `archive-rating-picks.md`). Most are from big outlets, so they're for **private calibration only** and are never shown in the app.
+- **The backlog lives in the private repo `LeylaTurk/ai-news-articles`** (decided 26 Sep), never in this public repo, because it holds article text. It already contains 52 free news stories saved by an agent on 26 Sep (Set: `archive`; summary, short exact quotes and links, no full text; 11 marked for hand rating in `archive-rating-picks.md`). Most are from big outlets, so they're for **private calibration only** and are never shown on the site.
 - **Reader tests:** three to five ordinary readers, including people outside AI circles (after outreach is authorised): browsing enjoyment, understanding both ratings, spotting a key limitation, wanting to return.
 - **Acceptance targets:** refresh adds entries without duplicates; failed fetches show stale status; unrated items get no invented ratings; quotes match the source text; a serious well-supported warning isn't labelled hype; caps actually limit spend; blocked sites get the paste message; keyboard use, contrast and non-colour labels work.
 
