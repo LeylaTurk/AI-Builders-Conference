@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI, Seriously? · Feed</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F3FF;color:#16131F;font-family:'Public Sans',system-ui,sans-serif}
+a{color:#5B3FD1}a:hover{color:#3F2AA0}
+:focus-visible{outline:3px solid #5B3FD1;outline-offset:2px}
+.serif{font-family:'Fraunces',Georgia,serif}
+.hdr{color:#FFFFFF;background-color:#2B1B5E;background-image:radial-gradient(#3C2B78 1px,transparent 1.4px);background-size:9px 9px;clip-path:polygon(0 0,100% 0,100% 88%,96% 96%,92% 89%,88% 98%,84% 90%,80% 97%,76% 88%,72% 96%,68% 90%,64% 99%,60% 89%,56% 96%,52% 88%,48% 97%,44% 90%,40% 98%,36% 89%,32% 96%,28% 88%,24% 97%,20% 90%,16% 98%,12% 89%,8% 96%,4% 88%,0 95%)}
+.mark{background:#FFE34D;color:#16131F;padding:0 8px;display:inline-block;transform:rotate(-1.5deg);border-radius:3px}
+.nav{color:#FFFFFF;text-decoration:none;font-weight:600;font-size:16px;padding:0 16px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px}
+.nav:hover{background:#3A2A73;color:#FFFFFF}
+.nav.cur{background:#FFE34D;color:#16131F}
+.card{background:#FFFFFF;border:1px solid #E4E0EC;border-radius:14px}
+.meta{font-size:14px;color:#4B4658;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.topic{background:#EEE9FF;color:#16131F;font-weight:600;font-size:13px;padding:4px 10px;border-radius:999px}
+.kind{border:1px solid #CFC8DD;font-size:13px;padding:3px 9px;border-radius:999px;color:#4B4658}
+.mlabel{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4B4658}
+.mval{font-size:15px;font-weight:600;color:#16131F}
+.seg{width:22px;height:10px;border-radius:3px;background:#E4E0EC}
+.seg.on{background:#B3123A}
+.chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.6}
+.chili .stem{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linecap:round}
+.chili.on .body{fill:#EB6834;stroke:#B94A1C}
+.chili.on .stem{stroke:#3F7D3A}
+.btn{min-height:44px;padding:0 18px;border-radius:10px;font:600 15px 'Public Sans',system-ui,sans-serif;display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;box-sizing:border-box}
+.btn-dark{background:#2B1B5E;color:#FFFFFF;border:1px solid #2B1B5E}
+.btn-dark:hover{background:#3F2A80;color:#FFFFFF}
+.btn-line{background:#FFFFFF;color:#16131F;border:1px solid #CFC8DD}
+.btn-line:hover{background:#EEE9FF;color:#16131F}
+.sort{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid #CFC8DD;background:#FFFFFF;color:#16131F;font:600 14px 'Public Sans',system-ui,sans-serif;cursor:pointer}
+.sort.sel{background:#2B1B5E;color:#FFFFFF;border-color:#2B1B5E}
+.fam{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#16131F}
+.dot{width:12px;height:12px;border-radius:3px;flex-shrink:0;margin-top:4px}
+.why{font-size:15px;line-height:1.5;color:#16131F;background:#F6F3FF;border-radius:10px;padding:12px 14px}
+.grey{font-size:15px;line-height:1.5;color:#4B4658;background:#F1EFF5;border:1px dashed #A9A2B8;border-radius:10px;padding:12px 14px}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#F7DCE2;border:1.5px solid #B3123A;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.flag .pole{fill:none;stroke:#7A7390;stroke-width:1.8;stroke-linecap:round}
+.flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
+.flag.on .pole{stroke:#16131F}
+.flag.on .f{fill:#B3123A;stroke:#7F0D29}
+</style>
+</helmet>
+<div style="width: 1280px; height: 2080px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
+<header class="hdr" style="padding: 28px 56px 52px; display: flex; justify-content: space-between; align-items: center; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div class="serif" style="font-size: 38px; font-weight: 800; letter-spacing: -0.01em">AI, <span class="mark">Seriously?</span></div>
+<div style="font-size: 15px; color: #D9D2F2">Browse AI news. Check the hype. Understand what holds up.</div>
+</div>
+<nav aria-label="Main" style="display: flex; gap: 4px; align-items: center">
+<a class="nav cur" href="Main.dc.html" aria-current="page">Feed</a>
+<a class="nav" href="Check.dc.html">Check an article</a>
+<a class="nav" href="HowRatings.dc.html">How ratings work</a>
+<a class="nav" href="HowRatings.dc.html#learn">Learn</a>
+</nav>
+</header>
+<div style="margin: 0 56px; padding: 10px 16px; border-radius: 10px; background: #FFF4D6; border: 1px solid #E9D59A; font-size: 14px; color: #4B4658">Mockup: every story, publisher and score on this page is a fictional example.</div>
+<div style="padding: 32px 56px 56px; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 48px; align-items: start">
+<main style="display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 class="serif" style="margin: 0; font-size: 34px; font-weight: 800">Latest AI stories</h1>
+<div style="font-size: 14px; color: #4B4658">Feed checked 10:42 · 3 new stories · rated from sources that permit it</div>
+</div>
+<button class="btn btn-line" type="button">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7"></path></svg>
+Refresh feed
+</button>
+</div>
+<div role="group" aria-label="Sort stories" style="display: flex; gap: 8px; flex-wrap: wrap">
+<sc-for list="{{sorts}}" as="s" hint-placeholder-count="4">
+<button type="button" class="{{s.cls}}" aria-pressed="{{s.pressed}}" onClick="{{s.pick}}">{{s.label}}</button>
+</sc-for>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; font-size: 14px; color: #4B4658; align-items: center">
+<span style="font-weight: 600">Topics:</span>
+<sc-for list="{{topics}}" as="t" hint-placeholder-count="6">
+<button type="button" class="topic" style="border: none; min-height: 32px; cursor: pointer">{{t}}</button>
+</sc-for>
+</div>
+<sc-for list="{{cards}}" as="c" hint-placeholder-count="5">
+<article class="card" style="padding: 24px 28px; display: flex; flex-direction: column; gap: 14px">
+<div class="meta"><span class="topic">{{c.topic}}</span><span class="kind">{{c.kind}}</span><span>{{c.publisher}}</span><span aria-hidden="true">·</span><span>{{c.ago}}</span></div>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 600; line-height: 1.2">{{c.headline}}</h2>
+<sc-if value="{{c.rated}}" hint-placeholder-val="{{true}}">
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #4B4658">{{c.summary}}</p>
+<div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap">
+<div style="display: flex; align-items: center; gap: 10px"><span class="mlabel">Hype</span><div style="display: flex; gap: 2px" aria-hidden="true"><sc-for list="{{c.chilis}}" as="h"><svg class="{{h.cls}}" width="30" height="30" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div><span style="font-size: 17px; font-weight: 700">{{c.hypeWord}}</span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span class="mlabel">Gaps</span><div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{c.flags}}" as="fl"><svg class="{{fl.cls}}" width="28" height="28" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></sc-for></div><span style="font-size: 17px; font-weight: 700">{{c.flagWord}}</span></div>
+<span style="font-size: 13px; color: #4B4658; margin-left: auto">{{c.ratedAt}}</span>
+</div>
+<div class="why">{{c.why}}</div>
+</sc-if>
+<sc-if value="{{c.unrated}}" hint-placeholder-val="{{false}}">
+<div class="grey">Not rated yet. {{c.note}}</div>
+</sc-if>
+<sc-if value="{{c.insufficient}}" hint-placeholder-val="{{false}}">
+<div class="grey"><strong>Insufficient evidence to rate.</strong> {{c.note}}</div>
+<div style="font-size: 14px; color: #4B4658">{{c.lang}}</div>
+</sc-if>
+<div style="display: flex; gap: 10px; flex-wrap: wrap">
+<sc-if value="{{c.rated}}" hint-placeholder-val="{{true}}">
+<a class="btn btn-dark" href="Story.dc.html">Why this rating?</a>
+</sc-if>
+<a class="btn btn-line" href="https://example.com" aria-label="Read the original article (opens publisher site)">Read original
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"></path></svg>
+</a>
+</div>
+</article>
+</sc-for>
+</main>
+<aside style="display: flex; flex-direction: column; gap: 20px">
+<section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 12px; border: 2px solid #16131F">
+<h2 class="serif" style="margin: 0; font-size: 22px; font-weight: 800">Check any article</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.5; color: #4B4658">Paste a link or the text of any AI story. You get a private rating with the evidence marked up. Nothing is saved.</p>
+<a class="btn btn-dark" href="Check.dc.html" style="justify-content: center">Check an article</a>
+</section>
+<section class="card" style="padding: 18px; display: flex; flex-direction: column; gap: 12px">
+<div style="aspect-ratio: 16 / 9; border-radius: 10px; background-color: #EEE9FF; background-image: radial-gradient(#DCD3F5 1px, transparent 1.4px); background-size: 9px 9px; display: flex; align-items: center; justify-content: center; border: 1px dashed #A9A2B8">
+<a href="HowRatings.dc.html#learn" aria-label="Play video: Why AI hype matters now" style="width: 64px; height: 64px; border-radius: 999px; background: #2B1B5E; display: flex; align-items: center; justify-content: center">
+<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#F6F3FF"></path></svg>
+</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div class="mlabel">Video · with Leyla</div>
+<div class="serif" style="font-size: 19px; font-weight: 600">Why AI hype matters now</div>
+<div style="font-size: 14px; color: #4B4658">[Video placeholder: 2–3 min, captions and transcript]</div>
+</div>
+</section>
+<section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 14px">
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Reading the ratings</h2>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
+<div style="font-size: 14px; line-height: 1.45"><strong>Gaps</strong>: gaps in the evidence, such as missing sources, a weak or unreadable study, or limits left out. More flags, bigger gaps.</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; gap: 1px" aria-hidden="true">
+<svg class="chili on" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>
+<svg class="chili on" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>
+<svg class="chili" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>
+<svg class="chili" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>
+<svg class="chili" width="20" height="20" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg>
+</div>
+<div style="font-size: 14px; line-height: 1.45"><strong>Hype</strong>: how far the framing goes beyond the evidence. More chillies, more hype. Low hype doesn’t mean low risk.</div>
+</div>
+<div style="border-top: 1px solid #E4E0EC; padding-top: 12px; display: flex; flex-direction: column; gap: 8px">
+<div class="mlabel">Highlights in the marked-up view</div>
+<div class="fam"><span class="dot" style="background: #EB6834"></span><span><strong>Hype</strong>: overstated claims, hyperbole, human–AI framing</span></div>
+<div class="fam"><span class="dot" style="background: #B3123A"></span><span><strong>Evidence &amp; sourcing</strong>: unexplained numbers, PR language, missing context</span></div>
+<div class="fam"><span class="dot" style="background: #1BAF7A"></span><span><strong>Good practice</strong>: independent experts, linked studies, stated limits</span></div>
+</div>
+<a href="HowRatings.dc.html" style="font-size: 14px; font-weight: 600">How ratings work →</a>
+</section>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2080}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { sort: 'Newest' };
+  }
+  renderVals() {
+    const segs = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'seg on' : 'seg' }));
+    const chilis = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'chili on' : 'chili' }));
+    const greySegs = segs(0);
+    const sorts = ['Newest', 'Fewest gaps', 'Most hyped', 'Unrated'].map((label) => ({
+      label,
+      pressed: this.state.sort === label ? 'true' : 'false',
+      cls: this.state.sort === label ? 'sort sel' : 'sort',
+      pick: () => this.setState({ sort: label })
+    }));
+    const fw = ['', 'None', 'Minor', 'Some', 'Major', 'Unsupported'];
+    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
+    const rated = (o) => Object.assign({ rated: true, unrated: false, insufficient: false, segs: segs(o.scoreNum), chilis: chilis(o.hypeNum), flags: flags(6 - o.scoreNum), flagWord: fw[6 - o.scoreNum] }, o);
+    const cards = [
+      rated({
+        topic: 'Work & society', kind: 'News article', publisher: 'Example News', ago: '2 hours ago',
+        headline: 'AI can replace 40% of workers, new study claims',
+        summary: 'A study tested an AI system on selected office tasks under human supervision. The article presents the result as a forecast about jobs.',
+        scoreNum: 2, scoreWord: 'Limited', hypeNum: 4, hypeWord: 'Overheated', ratedAt: 'Rated today 09:10 · reviewed by Leyla',
+        why: 'The result concerns selected tasks in a supervised test. The headline turns that into a claim about replacing workers.'
+      }),
+      rated({
+        topic: 'Health', kind: 'Press release', publisher: 'Example Institute of Technology', ago: '3 hours ago',
+        headline: 'New AI tool beats radiologists and will transform diagnosis, researchers say',
+        summary: 'A university announces an AI tool for reading lung scans, tested on archived images from one hospital.',
+        scoreNum: 2, scoreWord: 'Limited', hypeNum: 4, hypeWord: 'Overheated', ratedAt: 'Rated today 09:25 · reviewed by Leyla',
+        why: 'The study found the tool matched radiologists on archived scans. The release says it beats them and will replace routine work.'
+      }),
+      rated({
+        topic: 'Public services', kind: 'Investigation', publisher: 'The Example Review', ago: 'Yesterday',
+        headline: 'Audit finds benefits screening tool wrongly flagged eligible applicants',
+        summary: 'An investigation based on internal documents and an independent code review finds errors in an automated screening system.',
+        scoreNum: 5, scoreWord: 'Very strong', hypeNum: 1, hypeWord: 'Grounded', ratedAt: 'Rated yesterday 18:40 · reviewed by Leyla',
+        why: 'A serious finding, backed by documents and independent experts, told without exaggeration. Low hype doesn’t mean low risk.'
+      }),
+      {
+        rated: false, unrated: true, insufficient: false, segs: greySegs, chilis: chilis(0),
+        topic: 'Research', kind: 'Announcement', publisher: 'Example Lab (company blog)', ago: '12 minutes ago',
+        headline: 'Example Lab releases an open model for translating medical records',
+        note: 'It’s in today’s rating queue (2 of 3) and will appear once reviewed.'
+      },
+      {
+        rated: false, unrated: false, insufficient: true, segs: greySegs, chilis: chilis(0),
+        topic: 'Products', kind: 'Press release', publisher: 'Example Wire', ago: '5 hours ago',
+        headline: 'Startup says its chatbot finally understands human emotions',
+        note: 'The study it cites is behind a paywall, so its claims can’t be checked. We don’t guess.',
+        lang: 'Language note: “understands human emotions” gives software a human ability (human–AI framing).'
+      }
+    ];
+    return {
+      sorts,
+      topics: ['All', 'Work & society', 'Health', 'Public services', 'Research', 'Products'],
+      cards,
+      true: true,
+      false: false
+    };
+  }
+}
+</script>
+</body>
+</html>

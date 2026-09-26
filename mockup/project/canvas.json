@@ -1,0 +1,96 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Check.dc.html": {
+      "h": 1500,
+      "is_interactive": true,
+      "title": "3 · Check an article",
+      "w": 1280,
+      "x": 2720,
+      "y": 0
+    },
+    "ColourOptions.dc.html": {
+      "h": 1300,
+      "title": "Option board · three brighter colour directions",
+      "w": 1280,
+      "x": 1360,
+      "y": 2640
+    },
+    "HowRatings.dc.html": {
+      "h": 2200,
+      "is_interactive": true,
+      "title": "4 · How ratings work + Learn",
+      "w": 1280,
+      "x": 4080,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "h": 2080,
+      "is_interactive": true,
+      "title": "1 · Feed",
+      "w": 1280,
+      "x": 0,
+      "y": 0
+    },
+    "ScoreOptions.dc.html": {
+      "h": 1560,
+      "title": "Option board · three ways to show a rating",
+      "w": 1280,
+      "x": -300,
+      "y": 2741
+    },
+    "Story.dc.html": {
+      "h": 2080,
+      "is_interactive": true,
+      "title": "2 · Why this rating? (marked-up article)",
+      "w": 1280,
+      "x": 1360,
+      "y": 0
+    },
+    "ChilliOptions.dc.html": {
+      "h": 1400,
+      "title": "Option board · chilli-led ratings (new)",
+      "w": 1280,
+      "x": 2720,
+      "y": 2640
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-09-26T10:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "options": {
+      "kind": "title1",
+      "maxW": 2640,
+      "text": "Options to choose from: rating display and colours",
+      "w": 240,
+      "x": -300,
+      "y": 2354
+    },
+    "title": {
+      "kind": "title1",
+      "maxW": 5360,
+      "text": "AI, Seriously? · clickable mockup · all stories, publishers and scores are fictional",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Story.dc.html",
+    "Check.dc.html",
+    "HowRatings.dc.html",
+    "ScoreOptions.dc.html",
+    "ColourOptions.dc.html",
+    "ChilliOptions.dc.html"
+  ],
+  "pages": [],
+  "title": "AI, Seriously? mockup"
+}

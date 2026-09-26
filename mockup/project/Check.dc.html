@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AI, Seriously? · Check an article</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F3FF;color:#16131F;font-family:'Public Sans',system-ui,sans-serif}
+a{color:#5B3FD1}a:hover{color:#3F2AA0}
+:focus-visible{outline:3px solid #5B3FD1;outline-offset:2px}
+.serif{font-family:'Fraunces',Georgia,serif}
+.hdr{color:#FFFFFF;background-color:#2B1B5E;background-image:radial-gradient(#3C2B78 1px,transparent 1.4px);background-size:9px 9px;clip-path:polygon(0 0,100% 0,100% 84%,96% 95%,92% 86%,88% 97%,84% 87%,80% 96%,76% 85%,72% 95%,68% 87%,64% 98%,60% 86%,56% 95%,52% 85%,48% 96%,44% 87%,40% 97%,36% 86%,32% 95%,28% 85%,24% 96%,20% 87%,16% 97%,12% 86%,8% 95%,4% 85%,0 94%)}
+.mark{background:#FFE34D;color:#16131F;padding:0 6px;display:inline-block;transform:rotate(-1.5deg);border-radius:3px}
+.nav{color:#FFFFFF;text-decoration:none;font-weight:600;font-size:15px;padding:0 14px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px}
+.nav:hover{background:#3A2A73;color:#FFFFFF}
+.nav.cur{background:#FFE34D;color:#16131F}
+.card{background:#FFFFFF;border:1px solid #E4E0EC;border-radius:14px}
+.mlabel{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4B4658}
+.tab{min-height:48px;padding:0 22px;border-radius:10px 10px 0 0;border:1px solid #E4E0EC;border-bottom:none;background:#EEE9FF;color:#16131F;font:600 16px 'Public Sans',system-ui,sans-serif;cursor:pointer}
+.tab.sel{background:#FFFFFF;box-shadow:inset 0 3px 0 #5B3FD1}
+.field{width:100%;box-sizing:border-box;min-height:52px;border:1.5px solid #7A7390;border-radius:10px;padding:12px 14px;font:400 16px 'Public Sans',system-ui,sans-serif;color:#16131F;background:#FFFFFF}
+.btn{min-height:48px;padding:0 20px;border-radius:10px;font:600 15px 'Public Sans',system-ui,sans-serif;display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;box-sizing:border-box}
+.btn-dark{background:#2B1B5E;color:#FFFFFF;border:1px solid #2B1B5E}
+.btn-dark:hover{background:#3F2A80;color:#FFFFFF}
+.btn-line{background:#FFFFFF;color:#16131F;border:1px solid #CFC8DD}
+.btn-line:hover{background:#EEE9FF;color:#16131F}
+.seg{width:26px;height:11px;border-radius:3px;background:#E4E0EC}
+.seg.on{background:#B3123A}
+.chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.6}
+.chili .stem{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linecap:round}
+.chili.on .body{fill:#EB6834;stroke:#B94A1C}
+.chili.on .stem{stroke:#3F7D3A}
+.sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+.ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#F7DCE2;border:1.5px solid #B3123A;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.flag .pole{fill:none;stroke:#7A7390;stroke-width:1.8;stroke-linecap:round}
+.flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
+.flag.on .pole{stroke:#16131F}
+.flag.on .f{fill:#B3123A;stroke:#7F0D29}
+</style>
+</helmet>
+<div style="width: 1280px; height: 1500px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
+<header class="hdr" style="padding: 20px 56px 40px; display: flex; justify-content: space-between; align-items: center">
+<a href="Main.dc.html" class="serif" style="font-size: 28px; font-weight: 800; color: #FFFFFF; text-decoration: none">AI, <span class="mark">Seriously?</span></a>
+<nav aria-label="Main" style="display: flex; gap: 4px">
+<a class="nav" href="Main.dc.html">Feed</a>
+<a class="nav cur" href="Check.dc.html" aria-current="page">Check an article</a>
+<a class="nav" href="HowRatings.dc.html">How ratings work</a>
+<a class="nav" href="HowRatings.dc.html#learn">Learn</a>
+</nav>
+</header>
+<div style="padding: 16px 56px 56px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 48px; align-items: start">
+<main style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<h1 class="serif" style="margin: 0; font-size: 40px; font-weight: 800">Check an article</h1>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #4B4658; max-width: 720px">Paste a link or the article’s text. You’ll get a private rating with the evidence marked up. <strong style="color: #16131F">We don’t save the article or its rating.</strong></p>
+</div>
+<div>
+<div role="group" aria-label="How to check" style="display: flex; gap: 6px">
+<button type="button" class="{{tabLinkCls}}" aria-pressed="{{linkPressed}}" onClick="{{toLink}}">Paste a link</button>
+<button type="button" class="{{tabTextCls}}" aria-pressed="{{textPressed}}" onClick="{{toText}}">Paste the text</button>
+</div>
+<section class="card" style="border-radius: 0 14px 14px 14px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+<sc-if value="{{isLink}}" hint-placeholder-val="{{true}}">
+<label for="url" style="font-weight: 700; font-size: 15px">Article link</label>
+<div style="display: flex; gap: 10px">
+<input id="url" class="field" type="url" placeholder="https://" value="{{url}}" onChange="{{onUrl}}">
+<button type="button" class="btn btn-dark" onClick="{{checkLink}}">Check</button>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-size: 14px; color: #4B4658">
+<span>Try the mockup:</span>
+<button type="button" class="btn btn-line" style="min-height: 40px" onClick="{{tryAllowed}}">A site we can fetch</button>
+<button type="button" class="btn btn-line" style="min-height: 40px" onClick="{{tryBlocked}}">A site we can’t fetch</button>
+</div>
+<sc-if value="{{isBlocked}}" hint-placeholder-val="{{false}}">
+<div role="status" style="background: #FFF4D6; border: 1.5px solid #C99A1C; border-radius: 10px; padding: 16px; display: flex; gap: 12px; align-items: flex-start">
+<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><path class="ico" d="M12 3l9.5 17h-19zM12 10v4M12 17v.5"></path></svg>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 16px; line-height: 1.5"><strong>We can’t fetch this site.</strong> Its terms don’t allow automated access, so we won’t download it. Paste the article text instead. It stays private and isn’t saved.</div>
+<button type="button" class="btn btn-dark" style="align-self: flex-start" onClick="{{toText}}">Paste the text instead</button>
+</div>
+</div>
+</sc-if>
+</sc-if>
+<sc-if value="{{isText}}" hint-placeholder-val="{{false}}">
+<label for="txt" style="font-weight: 700; font-size: 15px">Article text</label>
+<textarea id="txt" class="field" rows="9" placeholder="Paste the headline and article text here" onChange="{{onText}}" value="{{text}}" style="resize: vertical; line-height: 1.5"></textarea>
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<span style="font-size: 13px; color: #4B4658">{{textCount}} / 12,000 characters · shown only to you, never saved</span>
+<button type="button" class="btn btn-dark" onClick="{{checkText}}">Check text</button>
+</div>
+</sc-if>
+</section>
+</div>
+<sc-if value="{{showResult}}" hint-placeholder-val="{{false}}">
+<section class="card" style="padding: 28px; display: flex; flex-direction: column; gap: 18px; border: 2px solid #16131F" aria-live="polite">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Your result</h2>
+<span style="font-size: 13px; font-weight: 700; background: #EEE9FF; padding: 6px 12px; border-radius: 999px">Private · not saved · AI assessment, not reviewed</span>
+</div>
+<div style="font-size: 14px; color: #4B4658">Sample result for the mockup: “New AI tool beats radiologists and will transform diagnosis, researchers say”</div>
+<div style="display: flex; gap: 48px; flex-wrap: wrap; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span class="mlabel">Hype</span>
+<div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{chilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="26" height="26" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div>
+<span style="font-size: 18px; font-weight: 700">Overheated · 4/5</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px"><span class="mlabel">Gaps</span><div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div><span style="font-size: 18px; font-weight: 700">Major · 4/5</span></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
+<div style="background: #FCE3D7; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #EB6834"></span>Hype · 3</div><div style="font-size: 14px; line-height: 1.45">Overstated claim, hyperbole, human–AI framing</div></div>
+<div style="background: #F7DCE2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #B3123A"></span>Gaps · 3</div><div style="font-size: 14px; line-height: 1.45">Unexplained number, PR language, missing context</div></div>
+<div style="background: #D6F2E6; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #1BAF7A"></span>Good practice · 1</div><div style="font-size: 14px; line-height: 1.45">Independent expert who states the limits</div></div>
+</div>
+<a class="btn btn-dark" href="Story.dc.html" style="align-self: flex-start">Open the marked-up article</a>
+</section>
+</sc-if>
+</main>
+<aside style="display: flex; flex-direction: column; gap: 20px">
+<section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Sites we can fetch</h2>
+<p style="margin: 0; font-size: 14px; line-height: 1.5; color: #4B4658">We only download articles from sources whose terms allow it. For anything else, paste the text.</p>
+<ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.8">
+<li>The Conversation</li>
+<li>ProPublica</li>
+<li>EurekAlert! press releases</li>
+<li>AI company newsrooms</li>
+<li>University press offices</li>
+</ul>
+<div style="font-size: 12px; color: #4B4658">[Final list to be confirmed from the source research]</div>
+</section>
+<section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 10px">
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Your privacy</h2>
+<ul style="margin: 0; padding-left: 20px; font-size: 14px; line-height: 1.6; color: #16131F">
+<li>Your result is shown only to you.</li>
+<li>We don’t store the article or its rating.</li>
+<li>Checks share a daily limit that keeps costs down: {{checksLeft}} left today.</li>
+</ul>
+</section>
+</aside>
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { mode: 'link', url: '', text: '', status: 'idle' };
+  }
+  renderVals() {
+    const allow = ['theconversation.com', 'propublica.org', 'eurekalert.org', 'openai.com', 'example.edu'];
+    const hostOf = (u) => (u || '').trim().replace(/^https?:\/\//i, '').split(/[/?#]/)[0].replace(/^www\./i, '').toLowerCase();
+    const isAllowed = (u) => { const h = hostOf(u); return !!h && allow.some((d) => h === d || h.endsWith('.' + d)); };
+    const st = this.state;
+    const isLink = st.mode === 'link';
+    return {
+      isLink, isText: !isLink,
+      tabLinkCls: isLink ? 'tab sel' : 'tab', tabTextCls: isLink ? 'tab' : 'tab sel',
+      linkPressed: isLink ? 'true' : 'false', textPressed: isLink ? 'false' : 'true',
+      toLink: () => this.setState({ mode: 'link', status: 'idle' }),
+      toText: () => this.setState({ mode: 'text', status: st.status === 'blocked' ? 'idle' : st.status }),
+      url: st.url, text: st.text, textCount: String(st.text.length),
+      onUrl: (e) => this.setState({ url: e.target.value, status: 'idle' }),
+      onText: (e) => this.setState({ text: e.target.value }),
+      checkLink: () => this.setState({ status: isAllowed(st.url) ? 'result' : 'blocked' }),
+      checkText: () => this.setState({ status: 'result' }),
+      tryAllowed: () => this.setState({ url: 'https://news.example.edu/2026/ai-tool-lung-scans', status: 'result' }),
+      tryBlocked: () => this.setState({ url: 'https://www.big-news-example.com/tech/ai-story', status: 'blocked' }),
+      isBlocked: isLink && st.status === 'blocked',
+      showResult: st.status === 'result',
+      checksLeft: st.status === 'result' ? '18' : '19',
+      chilis: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 4 ? 'chili on' : 'chili' }))
+    };
+  }
+}
+</script>
+</body>
+</html>
