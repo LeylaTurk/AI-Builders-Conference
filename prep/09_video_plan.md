@@ -43,3 +43,5 @@ A **"Learn" section** (Should-have, about 1 hour): video 0 at the top, the four 
 
 - Tools for a beginner: recording, text-based editing with automatic captions, collage and torn-paper effects (free tiers first, within the budget).
 - How Vox-style explainers are structured (hook, question, evidence, turn, takeaway).
+
+Filming setup (light, camera, sound, kit): see `11_video_setup_guide.md`.
