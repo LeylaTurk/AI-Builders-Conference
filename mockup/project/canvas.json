@@ -10,6 +10,13 @@
       "x": 2720,
       "y": 0
     },
+    "ColourOptions.dc.html": {
+      "h": 1300,
+      "title": "Option board · three brighter colour directions",
+      "w": 1280,
+      "x": 1360,
+      "y": 2640
+    },
     "HowRatings.dc.html": {
       "h": 2200,
       "is_interactive": true,
@@ -26,6 +33,13 @@
       "x": 0,
       "y": 0
     },
+    "ScoreOptions.dc.html": {
+      "h": 1560,
+      "title": "Option board · three ways to show a rating",
+      "w": 1280,
+      "x": -300,
+      "y": 2741
+    },
     "Story.dc.html": {
       "h": 2080,
       "is_interactive": true,
@@ -34,18 +48,11 @@
       "x": 1360,
       "y": 0
     },
-    "ScoreOptions.dc.html": {
-      "h": 1560,
-      "title": "Option board · three ways to show a rating",
+    "ChilliOptions.dc.html": {
+      "h": 1400,
+      "title": "Option board · chilli-led ratings (new)",
       "w": 1280,
-      "x": 0,
-      "y": 2640
-    },
-    "ColourOptions.dc.html": {
-      "h": 1300,
-      "title": "Option board · three brighter colour directions",
-      "w": 1280,
-      "x": 1360,
+      "x": 2720,
       "y": 2640
     }
   },
@@ -58,6 +65,14 @@
     "view": "canvas"
   },
   "notes": {
+    "options": {
+      "kind": "title1",
+      "maxW": 2640,
+      "text": "Options to choose from: rating display and colours",
+      "w": 240,
+      "x": -300,
+      "y": 2354
+    },
     "title": {
       "kind": "title1",
       "maxW": 5360,
@@ -65,13 +80,6 @@
       "w": 240,
       "x": 0,
       "y": -300
-    },
-    "options": {
-      "kind": "title1",
-      "maxW": 2640,
-      "text": "Options to choose from: rating display and colours",
-      "x": 0,
-      "y": 2340
     }
   },
   "order": [
@@ -80,7 +88,8 @@
     "Check.dc.html",
     "HowRatings.dc.html",
     "ScoreOptions.dc.html",
-    "ColourOptions.dc.html"
+    "ColourOptions.dc.html",
+    "ChilliOptions.dc.html"
   ],
   "pages": [],
   "title": "AI, Seriously? mockup"

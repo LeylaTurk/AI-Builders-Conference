@@ -12,6 +12,7 @@ Four linked screens, all with fictional stories and scores:
 Option boards (second row of the canvas), for choosing:
 
 5. `project/ScoreOptions.dc.html`: three ways to show a rating (two scales; one verdict with two dimensions; one score plus a hype warning)
+7. `project/ChilliOptions.dc.html`: two chilli-led rating options (D and E), in the chosen Night edition colours
 6. `project/ColourOptions.dc.html`: three brighter colour directions (Highlighter pop, Night edition, Pink press)
 
 Design decisions: `prep/10_visual_design.md`. This is a pre-sprint mockup, not app code.
