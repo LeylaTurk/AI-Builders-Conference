@@ -52,12 +52,12 @@ p{line-height:1.6}
 <main style="padding: 16px 56px 56px; display: flex; flex-direction: column; gap: 32px; max-width: 1168px">
 <section style="display: flex; flex-direction: column; gap: 12px; max-width: 820px">
 <h1 class="serif" style="margin: 0; font-size: 44px; font-weight: 800">How ratings work</h1>
-<p style="margin: 0; font-size: 18px; color: #4B4658">Every rated story gets two ratings that work the same way: fewer is better. Chillies show hype; red flags show gaps in the evidence. An AI checks each article against a published checklist, quoting the passage behind every finding. Scores are calculated from those findings, not guessed.</p>
+<p style="margin: 0; font-size: 18px; color: #4B4658">Every rated story gets two ratings that work the same way: fewer is better. Chillies show hype; flags show gaps in the evidence. An AI checks each article against a published checklist, quoting the passage behind every finding. Scores are calculated from those findings, not guessed.</p>
 </section>
 <section style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px">
 <div class="card" style="padding: 26px; display: flex; flex-direction: column; gap: 12px">
 <div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
-<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Red flags · more flags, weaker evidence</h2>
+<h2 class="serif" style="margin: 0; font-size: 26px; font-weight: 800">Evidence · more flags, weaker evidence</h2>
 <p style="margin: 0; font-size: 16px">Gaps in how the article is sourced, whether its key claims match their sources, and whether it keeps the important limits. Three parts, averaged: source transparency, support for claims, context.</p>
 <div style="font-size: 15px; font-weight: 600">1 Well supported · 2 Minor gaps · 3 Some gaps · 4 Major gaps · 5 Unsupported</div>
 </div>
@@ -164,12 +164,12 @@ class Component extends DCLogic {
         { icon: I.hyperbole, label: 'Hyperbole', style: u(H[0], H[1], 'wavy'), desc: '“Revolutionary”, “breakthrough”, sweeping predictions.' },
         { icon: I.humanai, label: 'Human–AI framing', style: u(H[0], H[1], 'dotted'), desc: 'AI “decides”, “thinks” or “beats doctors”.' }
       ] },
-      { name: 'Evidence & sourcing', feeds: 'Adds red flags', border: 'border-color: #B3123A', items: [
+      { name: 'Evidence & sourcing', feeds: 'Adds evidence flags', border: 'border-color: #B3123A', items: [
         { icon: I.number, label: 'Unexplained number', style: u(E[0], E[1], 'double'), desc: '“90% accurate” without saying at what, or how it was measured.' },
         { icon: I.pr, label: 'PR language', style: u(E[0], E[1], 'dashed'), desc: 'Company wording or self-interested sources repeated as fact.' },
         { icon: I.context, label: 'Missing context', style: 'background: ' + E[0] + '; text-decoration-line: none; border: 1px dashed ' + E[1], desc: 'Important limits left out or buried. Shown as a note.' }
       ] },
-      { name: 'Good practice', feeds: 'Reduces red flags', border: 'border-color: #1BAF7A', items: [
+      { name: 'Good practice', feeds: 'Removes evidence flags', border: 'border-color: #1BAF7A', items: [
         { icon: I.good, label: 'Good practice', style: u(G[0], G[1], 'solid'), desc: 'Independent experts, linked studies, limits stated clearly.' }
       ] }
     ];

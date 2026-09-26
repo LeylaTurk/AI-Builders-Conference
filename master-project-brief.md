@@ -12,7 +12,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | App idea | **Decided:** an AI-news feed that rates each story for hype and for gaps in its evidence, with the evidence shown. |
 | Working name | **AI, Seriously?** (name and domain not yet checked). |
 | Feature scope | **Approved** 25–26 Sep: 12 Musts, 4 Shoulds (see [Features](#features-approved) and `prep/feature-list.md`). |
-| Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Red flags** (1–5 flags for gaps in the evidence). |
+| Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Evidence** (1–5 flags, one per level of gaps in the evidence). |
 | Sources | **Decided:** big outlets are not fetched or AI-rated; the feed uses press releases, company announcements and openly licensed outlets, plus a hand-collected backlog. Readers can check any article by pasting it. |
 | Visual design | **Decided:** "Night edition" colours; three highlight colour families; shared look with the videos. |
 | Mockup | **Done** 26 Sep: four clickable screens plus option boards ([canvas](https://claude.ai/artifact/NWzfGeYbTxNZkCLAfrVFLr), private until shared; source in `mockup/`). |
@@ -30,7 +30,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 
 ## What it is
 
-An enjoyable news app about artificial intelligence. Readers browse a live feed, see at a glance **how hyped** each story is and **how many red flags** its evidence has, and open "Why this rating?" to see the article marked up with the reasons. They can also **check any article themselves** by pasting a link or its text.
+An enjoyable news app about artificial intelligence. Readers browse a live feed, see at a glance **how hyped** each story is and **how many flags** its evidence has, and open "Why this rating?" to see the article marked up with the reasons. They can also **check any article themselves** by pasting a link or its text.
 
 **Browse the feed → see the chillies and flags → open a story → see the marked-up evidence.**
 
@@ -39,7 +39,7 @@ An example card (fictional story):
 > **AI can replace 40% of workers, new study claims**  
 > Work & society · News article · Example News · 2 hours ago  
 > A study tested an AI system on selected office tasks under human supervision. The article presents the result as a forecast about jobs.  
-> 🌶🌶🌶🌶 **Hype: Overheated** · 🚩🚩🚩🚩 **Red flags: Major gaps**  
+> 🌶🌶🌶🌶 **Hype: Overheated** · 🚩🚩🚩🚩 **Evidence: Major gaps**  
 > The result concerns selected tasks in a supervised test. The headline turns that into a claim about replacing workers.  
 > **Why this rating?** · **Read original ↗**
 
@@ -65,8 +65,8 @@ Full list with hours and details: `prep/feature-list.md`.
 
 | Tier | Features |
 | --- | --- |
-| **Must have** (build order) | 1. Live feed: RSS import, refresh with "checked at", dedup, stale state · 2. Ratings: hype (chillies) and red flags, plus a one-line reason · 3. Stored, versioned ratings with a daily cap (start at 3 a day) and a hard spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence to rate" states · 6. Red flags breakdown (three parts) · 7. Behind the Claim with coverage status · 8. Operator controls: pause; withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. **"Check an article"**: link (allowlisted sources) or pasted text, private result, nothing stored · 12. **Colour-coded markup view**: highlights by category, click for the reason and the source passage |
-| **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Fewest red flags, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos |
+| **Must have** (build order) | 1. Live feed: RSS import, refresh with "checked at", dedup, stale state · 2. Ratings: hype (chillies) and evidence (flags), plus a one-line reason · 3. Stored, versioned ratings with a daily cap (start at 3 a day) and a hard spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence to rate" states · 6. Evidence breakdown (three parts) · 7. Behind the Claim with coverage status · 8. Operator controls: pause; withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. **"Check an article"**: link (allowlisted sources) or pasted text, private result, nothing stored · 12. **Colour-coded markup view**: highlights by category, click for the reason and the source passage |
+| **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Best evidence, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR sources · Turkish coverage · story clustering · paired comparison · fetching links from any site · accounts and notifications · browser extension · dark mode · phone-optimised layout (to be checked in the mockup) |
 
 **Time:** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls, (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
@@ -83,7 +83,7 @@ Readers paste a **link** or the **article text** and get a private rating with t
 
 ### 3. "Why this rating?" and the colour-coded markup
 
-The detail page shows the two ratings, the one-line reason, the **article marked up like an editor would**, a **red flags breakdown**, and **Behind the Claim**:
+The detail page shows the two ratings, the one-line reason, the **article marked up like an editor would**, an **evidence breakdown**, and **Behind the Claim**:
 - **Markup:** each finding is highlighted in the text. Click it to see the explanation, the matching source passage and which rating it affects. The markup is shown for feed articles only where the source's licence allows showing the text; for checked articles it's private to the reader.
 - **Behind the Claim:** up to **two key claims** traced to up to **two source pages** (fallback: one and one), with exact passages, links, what was read, partly read or unavailable, and what the evidence says about risks and unknowns. Quotes are **checked against the fetched text in code** before display.
 
@@ -91,9 +91,9 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 
 ### Two ratings, matching scales: fewer is better
 
-**Decided 26 Sep.** Two separate ratings are kept because they answer different questions (the **packaging** versus the **substance**), and the cases where they disagree are the ones readers most need flagged. Any single combined number would give a strong study with a clickbait headline and a calm but unsupported story nearly the same score. Both ratings use the **same direction**: more icons means more to worry about.
+**Decided 26 Sep.** The evidence rating is labelled **"Evidence"** and shown with flag icons; it isn't called "red flags" or "story score" ("score" suggests higher is better, which would bring back the direction confusion). Two separate ratings are kept because they answer different questions (the **packaging** versus the **substance**), and the cases where they disagree are the ones readers most need flagged. Any single combined number would give a strong study with a clickbait headline and a calm but unsupported story nearly the same score. Both ratings use the **same direction**: more icons means more to worry about.
 
-| | 🌶 **Hype** | 🚩 **Red flags** |
+| | 🌶 **Hype** | 🚩 **Evidence** |
 | --- | --- | --- |
 | **Question** | How far does the framing go beyond the evidence? | How big are the gaps in the evidence? |
 | **Shown as** | 1–5 orange chillies + word | 1–5 crimson flags + word |
@@ -103,7 +103,7 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 | **4** | Overheated | Major gaps |
 | **5** | Off the charts | Unsupported |
 
-**Red flags** combine three parts, averaged and rounded, each shown in the breakdown:
+**Evidence flags** combine three parts, averaged and rounded, each shown in the breakdown:
 
 | Part | Checks for gaps in |
 | --- | --- |
@@ -111,14 +111,14 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 | **Support for the selected claims** | Traced claims match their source in scope, numbers and claim strength (correlation / conditional / causal); performance figures say how and where they were measured; deployment claims match reality. |
 | **Context and qualifications** | Limits and risks discussed and not buried; human labour acknowledged; compared with a baseline; news, opinion and prediction distinguished. |
 
-(Internally, red flags = 6 − the evidence score in the original rubric, so the anchors and research are unchanged.)
+(Internally, evidence flags = 6 − the evidence score in the original rubric, so the anchors and research are unchanged.)
 
 **Hype** counts distortions, checking the **headline and the body separately**: stronger claim than the source; over-generalisation; hyperbole; unjustified future claims; attributing agency to AI or comparing it with human intelligence or skills; PR language repeated as fact; deep-sounding terms for ordinary operations; a clickbait headline.
 
 ### Rules that don't change
 
 - **Low hype doesn't mean low risk.** A serious, well-evidenced warning should show 1 chilli and 1 flag.
-- **Hype is not added again** into the red flags.
+- **Hype is not added again** into the evidence flags.
 - **No guessing:** if the evidence can't be read, show **"Insufficient evidence to rate"** (an empty grey meter), never a made-up rating. A headline or feed snippet alone can't earn a rating.
 - Ratings are **stored with the article version, date and rubric version**, so they don't change on refresh.
 - A rating is an assessment of how well **this article** supports what it says, not a verdict on truth or on the outlet. Ratings are AI-assisted and can be corrected.
@@ -133,7 +133,7 @@ HealthNewsReview.org's review criteria; NewsGuard's pass/fail criteria; the Trus
 2. **Hype formula (draft, to calibrate):** no distortions = 1; one minor = 2; two, or one major = 3; three to four = 4; five or more, or one in the central headline claim = 5.
 3. **Human check before publishing:** Leyla approves each feed rating (about 5 minutes a day at 3 ratings), enabling a "Reviewed by a human" label. *Leyla's call.*
 4. **Hide the outlet's name from the AI while it rates**, to reduce reputation bias. *Proposed.*
-5. **Reduce built-in overlap** so an overstated claim counts only towards hype, and red flags measure only what's there or missing. *Proposed.*
+5. **Reduce built-in overlap** so an overstated claim counts only towards hype, and evidence flags measure only what's there or missing. *Proposed.*
 
 ## The colour-coded markup categories
 
@@ -142,8 +142,8 @@ Colour shows the **family**; each category also has its own **icon, label and un
 | Family | Colour | Categories | Affects |
 | --- | --- | --- | --- |
 | **🌶 Hype** | orange `#EB6834` | Overstated claim (solid) · Hyperbole (wavy) · Human–AI framing (dotted) | Adds chillies |
-| **🚩 Evidence & sourcing** | crimson `#B3123A` | Unexplained number (double) · PR language / unchallenged source (dashed) · Missing context (margin note) | Adds red flags |
-| **✓ Good practice** | green `#1BAF7A` | Independent expert, linked study, stated limits | Reduces red flags |
+| **🚩 Evidence & sourcing** | crimson `#B3123A` | Unexplained number (double) · PR language / unchallenged source (dashed) · Missing context (margin note) | Adds evidence flags |
+| **✓ Good practice** | green `#1BAF7A` | Independent expert, linked study, stated limits | Removes evidence flags |
 
 The three colours passed colour-blindness tests in light mode (seven separate colours failed). Dark mode is borderline for orange against crimson and needs tuning before a dark theme is built.
 
@@ -223,7 +223,7 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 | Problem and user value | 25% | Readers can't easily tell AI hype from substance; every story gets an explained rating, and any article can be checked. |
 | Working execution | 25% | A live feed, stored ratings, clear stale/unrated/insufficient states, a tested public link. |
 | Thoughtful use of AI | 20% | AI checks each article against a published checklist with quoted evidence; code computes the ratings and verifies quotes. |
-| Originality and approach | 15% | Article-level hype and red-flag ratings with editor-style markup, plus explainer videos. |
+| Originality and approach | 15% | Article-level hype and evidence ratings with editor-style markup, plus explainer videos. |
 | Responsible and inclusive design | 15% | Visible evidence, no guessing, publishers' terms respected, private checks, cost caps, human oversight, accessibility. |
 
 **Submission (required):** title and one-line value proposition; summary; problem and users; public link; starting point; what was built during the challenge; role of AI; building responsibly. **Optional:** demo video, walkthrough, architecture notes or deck, screenshots.
@@ -290,7 +290,7 @@ Leyla builds solo with agent support; no coding experience assumed. **Stack deci
 | Team | Solo |
 | Public display | Tick it (needed for Community Choice and the Showcase) |
 | Project name | AI, Seriously? |
-| One-line idea | An AI-news feed that rates every story for hype and red flags, and shows the evidence behind each rating. |
+| One-line idea | An AI-news feed that rates every story for hype and for gaps in its evidence, and shows the evidence behind each rating. |
 
 **Short introduction (draft):**
 > Independent researcher and builder based in Istanbul. I design multi-agent AI workflows that take on research-heavy work: gathering sources, fact-checking, drafting and editing, with a human approving each step. I care about AI that people can trust, so I build in clear sourcing and human oversight from the start. Here to build something useful in five days, learn from this community, and trade feedback. Say hello!
