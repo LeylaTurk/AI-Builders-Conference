@@ -84,7 +84,7 @@ Sources: [Descript comparison](https://www.descript.com/compare/descript-vs-capc
 
 **Suggestion:** CapCut for video 0 (free, captions, collage effects). Descript is worth trying if editing the talking parts becomes slow. Keep any paid plan within the project budget or treat it as a separate personal cost.
 
-## Decisions for Leyla
+## Decisions (approved by Leyla, 26 September)
 
 1. **Three colour families** (hype orange, evidence blue, good-practice green) instead of seven colours, with icons, labels and underline styles for the categories. *Recommended: the seven-colour version fails the tests.*
 2. **Scores as segments:** blue segments for the story score, orange chillies for hype; number and word always shown.

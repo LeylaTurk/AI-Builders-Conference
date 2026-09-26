@@ -1,6 +1,6 @@
 # Approved feature list
 
-**AI, Seriously? · approved by Leyla Amur on 25 September 2026 · updated 25 Sep (reader paste added) and 26 Sep (link checking with allowlist, colour-coded markup)**
+**AI, Seriously? · approved by Leyla Amur on 25 September 2026 · updated 25 Sep (reader paste added) and 26 Sep (link checking with allowlist, colour-coded markup, visual design decisions)**
 
 This list comes out of the feature-scoping workstream (`01`–`04` in this folder). It drives the mockup, the Day 1 brief and the daily build tasks. Change it only with Leyla's approval.
 
@@ -20,13 +20,16 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
     - **Links** are fetched only from an **allowlist** of sources whose terms permit it (open-licensed outlets, press releases, company announcements). For any other site the app says: *"We can't fetch this site. Paste the article text instead."*
     - The result is shown **only to that reader**; the article text and its rating are **not saved or published**; a length limit and the shared daily spending cap apply; all input is treated as untrusted.
 12. **Colour-coded markup view** (about 4 hours), shown **alongside** the score breakdown and Behind the Claim. The article is shown with highlights, each with a colour **plus an icon and label** (not colour alone). Clicking one explains the finding and, where relevant, shows the matching source passage. Categories:
-    - 🟥 **Overstated claim**: says more than the source (Wright & Augenstein; pitfalls 8, 9)
-    - 🟧 **Hyperbole**: "revolutionary", sweeping future claims (pitfalls 5–7, 10)
-    - 🟨 **Unexplained number**: figures without how they were measured (pitfall 17)
-    - 🟪 **Human–AI framing**: agency, "beats doctors" (pitfalls 1, 3, 4)
-    - 🟦 **PR language / unchallenged source** (pitfalls 11, 12)
-    - ⬜ **Missing context**: a margin note, since there's nothing to underline (pitfalls 13–15)
-    - 🟩 **Good practice**: independent expert, links the study, states limits
+    Colour shows one of **three families** (decided 26 Sep; seven separate colours failed the colour-blindness tests, see `prep/10_visual_design.md`). Each category has its own **icon, label and underline style**:
+    - **🌶 Hype family (orange), feeds the hype meter:**
+      - **Overstated claim**: says more than the source (Wright & Augenstein; pitfalls 8, 9)
+      - **Hyperbole**: "revolutionary", sweeping future claims (pitfalls 5–7, 10)
+      - **Human–AI framing**: agency, "beats doctors" (pitfalls 1, 3, 4)
+    - **🔎 Evidence & sourcing family (blue), feeds the story score:**
+      - **Unexplained number**: figures without how they were measured (pitfall 17)
+      - **PR language / unchallenged source** (pitfalls 11, 12)
+      - **Missing context**: a margin note, since there's nothing to underline (pitfalls 13–15)
+    - **✓ Good practice (green):** independent expert, links the study, states limits
 
     Highlights come from the checklist findings; each quote is **matched against the article text in code** and dropped if not found; scores are calculated from the findings. For feed articles the markup is available only where the source's licence allows showing the text; for checked articles it's private to the reader.
 
@@ -55,3 +58,4 @@ Guess the hype · share/export cards · cost view · "Disagree with this rating?
 - **Sources:** big outlets (Reuters, AP, CNN, WIRED, Fox, BBC, NYT, the Guardian) are **not** fetched or AI-rated, because their terms prohibit it or don't clearly allow it (`prep/06_source_research.md`). The rated feed uses press releases, company announcements and openly licensed outlets (`prep/07_press_release_sources.md`), plus the hand-collected `backlog/`. Readers can still check any article by pasting its text; links are fetched only from the allowlist.
 - **Source pages** are fetched by the app itself, not by the AI provider's web-fetch tool.
 - **Quotes** in Behind the Claim are checked against the fetched text in code before display.
+- **Visual design (26 Sep):** three colour families (hype orange, evidence blue, good-practice green); story score as blue segments with number and word ("4/5 Strong"); hype as orange chillies with word and number ("A little spicy · 2/5"); no green-to-red traffic lights; "Insufficient evidence" as an empty grey meter; paper-and-highlighter accents shared with the videos, plain reading view. See `prep/10_visual_design.md`.
