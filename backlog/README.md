@@ -1,11 +1,15 @@
 # Article backlog
 
+> **The backlog now lives in the private repo [`LeylaTurk/ai-news-articles`](https://github.com/LeylaTurk/ai-news-articles)** (decided 26 Sep). Don't put article text in this public repo. Files go in `articles/` there, named `YYYY-MM-DD_outlet_short-slug.md`, with one row per article in `article-index.csv`. This folder keeps the wishlist and these notes.
+
 Articles Leyla collects by hand before the sprint. They serve two purposes:
 
 1. **Calibration:** Leyla rates them manually; the AI's ratings are compared against hers (see `prep/05_rating_research.md`).
 2. **Launch content:** rated articles that may be **published** give the app a starting archive alongside the live feed. They don't replace the connected feed.
 
-## Folders
+## Folders (superseded: use the private repo)
+
+The split below still applies, but mark it in each file in the private repo instead of using folders here.
 
 | Folder | What goes in | Published in the app? |
 | --- | --- | --- |

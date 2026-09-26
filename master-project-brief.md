@@ -5,7 +5,7 @@
 
 **Browse AI news. Check the hype. Understand what holds up.**
 
-This brief merges the two earlier documents in `archive/` (the challenge brief and the AI news feed brief) and records every decision made since. Part 1 covers the product; Part 2 covers the challenge, preparation and delivery. Supporting research and plans are in `prep/`, the article backlog in `backlog/`, and the clickable mockup in `mockup/`.
+This brief merges the two earlier documents in `archive/` (the challenge brief and the AI news feed brief) and records every decision made since. Part 1 covers the product; Part 2 covers the challenge, preparation and delivery. Supporting research and plans are in `prep/`, the article backlog in the private repo `LeylaTurk/ai-news-articles` (wishlist and instructions in `backlog/`), and the clickable mockup in `mockup/`.
 
 | Item | Status |
 | --- | --- |
@@ -192,6 +192,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 ## Testing and acceptance
 
 - **Calibration set:** 8–12 backlog articles rated by hand (4 held back), covering supported alarm, unsupported optimism, calm overstatement, shared sources and access failures (wishlist: `backlog/wishlist.md`). The AI's ratings are compared with Leyla's to choose the model and tune the rubric.
+- **The backlog lives in the private repo `LeylaTurk/ai-news-articles`** (decided 26 Sep), never in this public repo, because it holds article text. It already contains 52 free news stories saved by an agent on 26 Sep (Set: `archive`; summary, short exact quotes and links, no full text; 11 marked for hand rating in `archive-rating-picks.md`). Most are from big outlets, so they're for **private calibration only** and are never shown in the app.
 - **Reader tests:** three to five ordinary readers, including people outside AI circles (after outreach is authorised): browsing enjoyment, understanding both ratings, spotting a key limitation, wanting to return.
 - **Acceptance targets:** refresh adds entries without duplicates; failed fetches show stale status; unrated items get no invented ratings; quotes match the source text; a serious well-supported warning isn't labelled hype; caps actually limit spend; blocked sites get the paste message; keyboard use, contrast and non-colour labels work.
 
