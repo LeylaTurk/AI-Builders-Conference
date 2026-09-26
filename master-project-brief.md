@@ -12,7 +12,7 @@ This brief merges two earlier documents, both kept in `archive/`: the challenge 
 | Challenge rules gathered | Done. Summarised in Part 2. |
 | App idea | **Decided:** AI news feed with story scores and a hype meter. |
 | Working name | **AI, Seriously?** (provisional; availability not yet checked). |
-| Feature scope | **Approved** 25 September: 11 Must (reader paste added), 3 Should (see `prep/feature-list.md`). Musts now slightly exceed build hours. |
+| Feature scope | **Approved** 25–26 September: 12 Must (including "Check an article" by link or text, and a colour-coded markup view), 3 Should (see `prep/feature-list.md`). **Musts exceed the build time even with reserve; cuts decided on Day 3.** |
 | Sources | Big outlets ruled out for AI rating; feed uses press releases and openly licensed outlets, plus a hand-collected backlog (see `prep/06`, `prep/07`, `backlog/`). |
 | Build stack | Open. Compare options during preparation (see Delivery). |
 | AI model | Compare Claude Opus 5 and Claude Sonnet 5 on the calibration set, then choose. |
@@ -67,9 +67,9 @@ Approved on 25 September 2026 through the feature-scoping workstream; details, e
 
 | Tier | Features |
 | --- | --- |
-| **Must have** (in build order) | 1. Live feed: import, refresh, dedup, stale state · 2. Story score, hype meter, one-sentence explanation · 3. Stored, versioned ratings with daily cap and spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence" states · 6. Score breakdown · 7. Behind the Claim with coverage status · 8. Operator controls: pause, withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. "Check an article": readers paste text, private result, nothing stored |
+| **Must have** (in build order) | 1. Live feed: import, refresh, dedup, stale state · 2. Story score, hype meter, one-sentence explanation · 3. Stored, versioned ratings with daily cap and spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence" states · 6. Score breakdown · 7. Behind the Claim with coverage status · 8. Operator controls: pause, withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. "Check an article": link (allowlisted sources) or pasted text, private result, nothing stored · 12. Colour-coded markup view: highlights by category with icon and label, click for the reason and source passage |
 | **Should have** | Sorts (Newest, Strong reporting, Most hyped, Unrated) · topic filter chips · scheduled daily rating run |
-| **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR · Turkish coverage · story clustering · paired article comparison · user-submitted URLs (pasted text is a Must) · accounts, personalization, notifications · browser extension |
+| **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR · Turkish coverage · story clustering · paired article comparison · links from any site (allowlisted links and pasted text are Musts) · accounts, personalization, notifications · browser extension |
 
 The sections below describe the three core features in detail.
 
