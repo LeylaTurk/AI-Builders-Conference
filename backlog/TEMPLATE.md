@@ -19,9 +19,13 @@ calibration_case: "" # supported-alarm | unsupported-optimism | calm-overstateme
 
 ## My manual rating (fill in before seeing the AI's)
 
-- Story score (1–5):
-- Hype (1–5):
-- Distortions I spotted:
+Use the hand-rating sheet (`rating-sheet.md` in the private repo `LeylaTurk/ai-news-articles`).
+
+- Hype 🌶 (1–5): (points, and which findings)
+- Gaps 🚩 (1–5): (part levels T / S / C)
+- Distortions and gaps I spotted:
+- Partly checked (source not read)? yes / no
+- My own level, if I disagree with the formula (and why):
 
 ## Article text
 
