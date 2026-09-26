@@ -67,3 +67,19 @@ That lights the back and one side, and leaves the face in shade. Options, best f
 - Keep the script visible: bullet points beside the lens, or a teleprompter app.
 - Solid colours; avoid fine stripes and pure white.
 - **Do a 30-second test** and watch it on a laptop before the real session.
+
+## Where to buy in Türkiye (researched 26 September 2026)
+
+Prices from search results for Turkish shops and comparison sites; they change often, so check before buying.
+
+| Item | Product | Where | Price seen |
+| --- | --- | --- | --- |
+| Tripod (essential) | **Ulanzi MT-44** extendable vlog tripod (111.5 cm, tilting phone mount, doubles as selfie stick) | [Trendyol](https://www.trendyol.com/pd/ulanzi/mt-44-uzatilabilir-vlog-tripod-beyaz-p-261699488) · [Hepsiburada](https://www.hepsiburada.com/ulanzi-mt-44-uzatilabilir-vlog-tripod-siyah-pm-HBC00001U4RM9) | about 1,099–2,299 TL ([Akakçe](https://www.akakce.com/tripod/en-ucuz-ulanzi-mt-44-vlog-siyah-fiyati,78488946.html)) |
+| Microphone (strongly recommended) | **Boya BY-M3** USB-C clip-on mic (no battery, 6 m cable) | [Trendyol](https://www.trendyol.com/boya/by-m3-iphone-15-16-serisi-uyumlu-yaka-mikrofonu-p-804408623) · [Hepsiburada](https://www.hepsiburada.com/boya-by-m3-iphone-15-16-serisi-uyumlu-yaka-mikrofonu-pm-HBC00005VQQO8) | about 1,500–1,650 TL ([Cimri](https://www.cimri.com/studyo-mikrofonu/en-ucuz-boya-by-m3-type-c-telefon-yaka-mikrofonu-fiyatlari,416125930)) |
+| Light (only if needed) | **Ulanzi VL200** LED panel, adjustable colour, diffuser included (needs a stand or clamp) | [Trendyol](https://www.trendyol.com/ulanzi/vl200-bi-color-led-video-isik-p-362098557) · [Amazon.com.tr](https://www.amazon.com.tr/Ulanzi-VL200-Bi-Color-Video-I%C5%9F%C4%B1k/dp/B099DPVZMW) | about 2,299–3,000 TL ([Akakçe](https://www.akakce.com/isik-sistemi/en-ucuz-ulanzi-vl200-bi-color-led-video-isik-fiyati,271283614.html)) |
+
+Essentials (tripod + mic): roughly 2,600–3,900 TL; with the light, roughly 4,900–6,900 TL.
+
+**Alternatives:** wireless **DJI Mic Mini** (1 transmitter + 1 receiver) about 4,280 TL on [Amazon.com.tr](https://www.amazon.com.tr/DJI-Kaliteli-Otomatik-Kablosuz-Mikrofon/dp/B0DDLCLFFX) (check the USB-C adapter is included); **Hollyland Lark M2 Combo** about 6,500–6,700 TL ([Akakçe](https://www.akakce.com/yaka-mikrofonu/en-ucuz-hollyland-lark-m2-combo-kablosuz-mikrofon-sistemi-fiyati,506803589.html)); **Ulanzi VL120** is cheaper but too small as a main light; **50×70 cm softbox sets** (about 3,150 TL average on [Hepsiburada](https://www.hepsiburada.com/ara?q=s%C3%BCrekli+%C4%B1%C5%9F%C4%B1k+softbox)) give the softest light but are bulky.
+
+**Buying tips:** "Yurt dışından" listings ship from abroad (slower, may lack a Turkish warranty); prefer listings with the Türkiye distributor warranty. Buy the tripod and mic first; add the light only if a test clip with window light looks too dark or uneven.
