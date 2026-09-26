@@ -110,8 +110,10 @@ The **gaps** rating combines three parts, each shown in the breakdown (formula: 
 | Part | Checks for gaps in |
 | --- | --- |
 | **Source transparency** | The people and organisations quoted are named; at least one independent expert; conflicts of interest disclosed; the article **points readers straight to its source**: the study, report, press release or announcement is linked, or cited exactly (title, publisher and date); if a reader has to search for it, this check fails; more than a reworded press release. |
-| **Strength of the evidence behind the key claims** | The traced claims rest on a real, readable source (study, data, documents); its design and scale are adequate (e.g. one hospital, archived data, small sample are flagged); performance figures say how and where they were measured; independent confirmation exists. Whether the *wording* overstates the source is scored under hype, not here. |
-| **Context and qualifications** | Limits and risks discussed and not buried; human labour acknowledged; compared with a baseline; news, opinion and prediction distinguished. |
+| **Strength of the evidence behind the key claims** | The key claims rest on something checkable (a study, data, a document, an official record or a named first-hand statement); the evidence is strong enough for the size of the claim (e.g. one CEO's word for "most companies will", or a single-hospital study for "AI beats doctors", is flagged); key numbers are explained (where they come from and what they measure); independent confirmation exists. Whether the *wording* overstates the source is scored under hype, not here. |
+| **Context and qualifications** | Limits and risks discussed and not buried; human labour behind an AI system acknowledged (only for stories about what a system does); context to judge scale (a baseline, trend or comparison); news, opinion and prediction distinguished. |
+
+**Checks fit any kind of story (decided 26 Sep).** The checklist is worded for any key claim, not only studies: company decisions, announcements, policy, court cases and incidents too. **A check that doesn't fit this kind of story is "not applicable" and doesn't count;** only "no" means the story should have done it and didn't. Found while hand-rating the Block layoffs story, where study-only wording turned three irrelevant checks into gaps.
 
 (Internally, gaps = 6 − the evidence score in the original rubric, so the anchors and research are unchanged.)
 
