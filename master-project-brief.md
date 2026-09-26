@@ -119,7 +119,8 @@ The **gaps** rating combines three parts, each shown in the breakdown (formula: 
 
 - **Low hype doesn't mean low risk.** A serious, well-evidenced warning should show 1 chilli and 1 flag.
 - **Hype is not added again** into the gaps rating.
-- **No guessing:** if the evidence can't be read, show **"Insufficient evidence to rate"** (an empty grey meter), never a made-up rating. A headline or feed snippet alone can't earn a rating.
+- **No guessing:** if the **article** can't be read, show **"Insufficient evidence to rate"** (an empty grey meter) for both ratings, never a made-up rating. A headline or feed snippet alone can't earn a rating.
+- **Article readable, source not (decided 26 Sep):** if the article **doesn't name or link** its source ("a new study found…"), that counts as a **gap**: it's the article's fault. If the source is **named but can't be read** (paywall, dead link), checks that need it count as **not checked**, not failed; the other checks still count. **Hype** then scores only the checks that need just the article (hyperbole, agency framing, headline versus its own body, promotional wording, clickbait); "stronger claim than the source" isn't scored. Both ratings carry the label **"Partly checked: source not read"**, and Behind the Claim shows the source as unavailable.
 - Ratings are **stored with the article version, date and rubric version**, so they don't change on refresh.
 - A rating is an assessment of how well **this article** supports what it says, not a verdict on truth or on the outlet. Ratings are AI-assisted and can be corrected.
 
