@@ -1,6 +1,6 @@
 # National US news: AI story candidates
 
-**Compiled:** 2026-09-26 · **For:** rating calibration and feed-source selection (see `../project-brief.md`)
+**Compiled:** 2026-09-26 · **For:** rating calibration and feed-source selection (see `../master-project-brief.md`)
 
 ## Method and caveats
 
