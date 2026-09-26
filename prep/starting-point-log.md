@@ -17,5 +17,6 @@ The challenge allows earlier work if it's declared, and reviewers judge what was
 | 26 Sep | Explainer video series planned (video 0 to be made before the sprint) | `prep/09_video_plan.md` |
 | 26 Sep | Visual design research: comparable tools, colour palette tested for colour blindness, score displays, shared look with the videos, video tools | `prep/10_visual_design.md` |
 | 26 Sep | Clickable mockup (four screens: feed, marked-up article, check an article, how ratings work + Learn) | `mockup/` |
+| 26 Sep | Mockup iterated: Night edition colours; matching rating scales (chillies for hype, red flags for evidence gaps); master brief updated with all decisions | `mockup/`, `master-project-brief.md` |
 
 **No app code has been written yet.** The mockup is a design prototype with fictional data, not the app.

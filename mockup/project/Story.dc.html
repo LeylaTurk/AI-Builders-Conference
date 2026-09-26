@@ -23,16 +23,16 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .card{background:#FFFFFF;border:1px solid #E4E0EC;border-radius:14px}
 .mlabel{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4B4658}
 .seg{width:30px;height:12px;border-radius:3px;background:#E4E0EC}
-.seg.on{background:#2A78D6}
+.seg.on{background:#B3123A}
 .sseg{width:16px;height:8px;border-radius:2px;background:#E4E0EC}
-.sseg.on{background:#2A78D6}
+.sseg.on{background:#B3123A}
 .chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.6}
 .chili .stem{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linecap:round}
 .chili.on .body{fill:#EB6834;stroke:#B94A1C}
 .chili.on .stem{stroke:#3F7D3A}
 .hl{font:inherit;color:inherit;background:none;border:none;padding:1px 2px;margin:0;cursor:pointer;border-radius:3px;text-decoration-thickness:2.5px;text-underline-offset:4px;text-decoration-line:underline;line-height:inherit;text-align:left}
 .hl.hype{background:#FCE3D7;text-decoration-color:#EB6834}
-.hl.evid{background:#DDE9F8;text-decoration-color:#2A78D6}
+.hl.evid{background:#F7DCE2;text-decoration-color:#B3123A}
 .hl.good{background:#D6F2E6;text-decoration-color:#1BAF7A}
 .hl.u-solid{text-decoration-style:solid}
 .hl.u-wavy{text-decoration-style:wavy}
@@ -43,20 +43,24 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .notesel{outline:2.5px solid #16131F;outline-offset:2px}
 .tag{display:inline-flex;align-items:center;gap:3px;font:700 11px 'Public Sans',system-ui,sans-serif;letter-spacing:.02em;padding:1px 6px 1px 4px;border-radius:999px;vertical-align:3px;margin-left:3px;color:#16131F;white-space:nowrap}
 .tag.hype{background:#FCE3D7;border:1px solid #EB6834}
-.tag.evid{background:#DDE9F8;border:1px solid #2A78D6}
+.tag.evid{background:#F7DCE2;border:1px solid #B3123A}
 .tag.good{background:#D6F2E6;border:1px solid #1BAF7A}
 .ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .fbtn{width:100%;min-height:44px;display:flex;gap:10px;align-items:center;text-align:left;background:#FFFFFF;border:1px solid #E4E0EC;border-radius:10px;padding:8px 12px;font:500 14px 'Public Sans',system-ui,sans-serif;color:#16131F;cursor:pointer;box-sizing:border-box}
 .fbtn.sel{border:2px solid #16131F;background:#F6F3FF}
 .sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
-.sw.hype{background:#EB6834}.sw.evid{background:#2A78D6}.sw.good{background:#1BAF7A}
+.sw.hype{background:#EB6834}.sw.evid{background:#B3123A}.sw.good{background:#1BAF7A}
 .quote{border-radius:10px;padding:12px 14px;font-size:15px;line-height:1.5}
 .btn{min-height:44px;padding:0 18px;border-radius:10px;font:600 15px 'Public Sans',system-ui,sans-serif;display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;box-sizing:border-box}
 .btn-line{background:#FFFFFF;color:#16131F;border:1px solid #CFC8DD}
 .btn-line:hover{background:#EEE9FF;color:#16131F}
 .lg{display:flex;gap:8px;align-items:center;font-size:13px}
 .lgu{padding:0 3px;border-radius:2px;text-decoration-line:underline;text-decoration-thickness:2px;text-underline-offset:3px}
-.ev{display:inline-flex;align-items:center;gap:8px;background:#DDE9F8;border:1.5px solid #2A78D6;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#F7DCE2;border:1.5px solid #B3123A;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.flag .pole{fill:none;stroke:#7A7390;stroke-width:1.8;stroke-linecap:round}
+.flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
+.flag.on .pole{stroke:#16131F}
+.flag.on .f{fill:#B3123A;stroke:#7F0D29}
 </style>
 </helmet>
 <div style="width: 1280px; height: 2080px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -85,9 +89,9 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <span style="font-size: 20px; font-weight: 700">Overheated · 4/5</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span class="mlabel">Evidence</span>
-<span class="ev" style="align-self: flex-start; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4" fill="none" stroke="#16131F" stroke-width="2" stroke-linecap="round"></path></svg>Evidence: Limited</span>
-<span style="font-size: 14px; color: #4B4658">2 on a scale of 5</span>
+<span class="mlabel">Red flags</span>
+<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
+<span style="font-size: 20px; font-weight: 700">Major gaps · 4/5</span>
 </div>
 <p style="margin: 0; font-size: 17px; line-height: 1.5">The study found the tool <strong>matched</strong> radiologists on archived scans from one hospital. The release says it <strong>beats</strong> them and will replace routine work.</p>
 </section>
@@ -104,9 +108,9 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <div style="display: flex; gap: 6px; align-items: center; font-weight: 700; font-size: 14px"><span class="sw evid"></span>Evidence &amp; sourcing · 3</div>
-<div class="lg"><span class="lgu" style="background: #DDE9F8; text-decoration-color: #2A78D6; text-decoration-style: double">double</span>Unexplained number</div>
-<div class="lg"><span class="lgu" style="background: #DDE9F8; text-decoration-color: #2A78D6; text-decoration-style: dashed">dashed</span>PR language</div>
-<div class="lg"><span class="lgu" style="background: #DDE9F8; text-decoration-color: #2A78D6; text-decoration-line: none; border: 1px dashed #2A78D6">note</span>Missing context</div>
+<div class="lg"><span class="lgu" style="background: #F7DCE2; text-decoration-color: #B3123A; text-decoration-style: double">double</span>Unexplained number</div>
+<div class="lg"><span class="lgu" style="background: #F7DCE2; text-decoration-color: #B3123A; text-decoration-style: dashed">dashed</span>PR language</div>
+<div class="lg"><span class="lgu" style="background: #F7DCE2; text-decoration-color: #B3123A; text-decoration-line: none; border: 1px dashed #B3123A">note</span>Missing context</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
 <div style="display: flex; gap: 6px; align-items: center; font-weight: 700; font-size: 14px"><span class="sw good"></span>Good practice · 1</div>
@@ -121,7 +125,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <sc-for list="{{p.segs}}" as="s"><sc-if value="{{s.plain}}" hint-placeholder-val="{{true}}">{{s.text}}</sc-if><sc-if value="{{s.hl}}" hint-placeholder-val="{{false}}"><button type="button" class="{{s.cls}}" aria-label="{{s.aria}}" aria-pressed="{{s.pressed}}" onClick="{{s.pick}}">{{s.text}}</button><span class="{{s.tagCls}}" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 24 24"><path class="ico" d="{{s.icon}}"></path></svg>{{s.label}}</span></sc-if></sc-for>
 </p>
 </sc-for>
-<button type="button" class="{{noteCls}}" onClick="{{pickNote}}" aria-pressed="{{notePressed}}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.5; text-align: left; background: #DDE9F8; border: 1.5px dashed #2A78D6; border-radius: 10px; padding: 12px 14px; color: #16131F; cursor: pointer; display: flex; gap: 10px; align-items: flex-start">
+<button type="button" class="{{noteCls}}" onClick="{{pickNote}}" aria-pressed="{{notePressed}}" style="font-family: 'Public Sans', system-ui, sans-serif; font-size: 15px; line-height: 1.5; text-align: left; background: #F7DCE2; border: 1.5px dashed #B3123A; border-radius: 10px; padding: 12px 14px; color: #16131F; cursor: pointer; display: flex; gap: 10px; align-items: flex-start">
 <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><path class="ico" d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 8v5M12 16.5v.5"></path></svg>
 <span><strong>Missing context:</strong> the release doesn’t say the tool was tested only on archived scans from one hospital, or how often it raised false alarms.</span>
 </button>
@@ -150,15 +154,15 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 </sc-for>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 14px">
-<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Evidence breakdown</h2>
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Red flags breakdown</h2>
 <sc-for list="{{components}}" as="k" hint-placeholder-count="3">
 <div style="display: flex; flex-direction: column; gap: 4px">
-<div style="display: flex; justify-content: space-between; font-size: 14px"><strong>{{k.name}}</strong><span>{{k.n}}/5</span></div>
-<div style="display: flex; gap: 3px" aria-hidden="true"><sc-for list="{{k.segs}}" as="g"><span class="{{g.cls}}"></span></sc-for></div>
+<div style="display: flex; justify-content: space-between; font-size: 14px"><strong>{{k.name}}</strong><span>{{k.word}} · {{k.n}}/5</span></div>
+<div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{k.flags}}" as="fl"><svg class="{{fl.cls}}" width="18" height="18" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></sc-for></div>
 <div style="font-size: 13px; color: #4B4658; line-height: 1.45">{{k.note}}</div>
 </div>
 </sc-for>
-<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 2.3 → Evidence: Limited (2/5). Hype is scored separately and isn’t subtracted again.</div>
+<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 3.7 → 4 red flags: Major gaps. Hype is scored separately and isn’t added again.</div>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 12px">
 <h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Behind the Claim</h2>
@@ -193,8 +197,8 @@ class Component extends DCLogic {
       good: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8.5 12.5l2.5 2.5 4.5-5'
     };
     const famName = { hype: 'Hype', evid: 'Evidence & sourcing', good: 'Good practice' };
-    const counts = { hype: 'Hype meter', evid: 'Evidence rating (lowers it)', good: 'Evidence rating (raises it)' };
-    const tint = { hype: 'background: #FCE3D7', evid: 'background: #DDE9F8', good: 'background: #D6F2E6' };
+    const counts = { hype: 'Hype meter', evid: 'Red flags (adds to them)', good: 'Red flags (reduces them)' };
+    const tint = { hype: 'background: #FCE3D7', evid: 'background: #F7DCE2', good: 'background: #D6F2E6' };
     const F = {
       f1: { fam: 'hype', u: 'u-dotted', icon: I.humanai, label: 'Human–AI framing', quote: 'beats radiologists',
         explain: 'The study compared the tool with three radiologists on archived scans and found similar accuracy. “Beats” turns a narrow test into a contest the study didn’t hold.',
@@ -210,7 +214,7 @@ class Component extends DCLogic {
       f5: { fam: 'evid', u: 'u-dashed', icon: I.pr, label: 'PR language', quote: 'a breakthrough in trustworthy AI that thinks like a specialist',
         explain: 'A promotional quote from the tool’s developer, presented without an independent response, and it gives the software a human way of thinking.', source: '', basis: 'Pitfalls 11–12: self-interested sources and PR terms' },
       f6: { fam: 'good', u: 'u-solid', icon: I.good, label: 'Good practice', quote: 'a radiologist who was not involved in the study, said the results were “promising but preliminary”',
-        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This raises the evidence rating.', source: '', basis: 'HealthNewsReview: independent sources' },
+        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This reduces the red flags.', source: '', basis: 'HealthNewsReview: independent sources' },
       f7: { fam: 'evid', u: '', icon: I.context, label: 'Missing context', quote: '(nothing to underline: this is about what’s left out)',
         explain: 'The release doesn’t say the tool was tested only on archived scans from one hospital, or how often it raised false alarms. Those limits change what the result means.',
         source: 'Retrospective, single-centre design; prospective clinical testing is needed.', basis: 'Pitfalls 13–14: limitations missing or buried' }
@@ -243,11 +247,11 @@ class Component extends DCLogic {
       label: F[id].label, short: F[id].quote, icon: F[id].icon, swCls: 'sw ' + F[id].fam,
       btnCls: selId === id ? 'fbtn sel' : 'fbtn', pressed: selId === id ? 'true' : 'false', pick: pick(id)
     }));
-    const segs = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'sseg on' : 'sseg' }));
+    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
     const components = [
-      { name: 'Source transparency', n: 3, segs: segs(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
-      { name: 'Support for the selected claims', n: 2, segs: segs(2), note: 'Two traced claims go beyond the study: “beats” and “proving… replace”.' },
-      { name: 'Context and qualifications', n: 2, segs: segs(2), note: 'Key limits (archived scans, one hospital, no false-alarm rate) are missing.' }
+      { name: 'Source transparency', n: 3, word: 'Some gaps', flags: flags(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
+      { name: 'Support for the selected claims', n: 4, word: 'Major gaps', flags: flags(4), note: 'Two traced claims go beyond the study: “beats” and “proving… replace”.' },
+      { name: 'Context and qualifications', n: 4, word: 'Major gaps', flags: flags(4), note: 'Key limits (archived scans, one hospital, no false-alarm rate) are missing.' }
     ];
     return {
       paras, sel, findingList, components,

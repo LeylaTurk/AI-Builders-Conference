@@ -31,14 +31,18 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .btn-line{background:#FFFFFF;color:#16131F;border:1px solid #CFC8DD}
 .btn-line:hover{background:#EEE9FF;color:#16131F}
 .seg{width:26px;height:11px;border-radius:3px;background:#E4E0EC}
-.seg.on{background:#2A78D6}
+.seg.on{background:#B3123A}
 .chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.6}
 .chili .stem{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linecap:round}
 .chili.on .body{fill:#EB6834;stroke:#B94A1C}
 .chili.on .stem{stroke:#3F7D3A}
 .sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.ev{display:inline-flex;align-items:center;gap:8px;background:#DDE9F8;border:1.5px solid #2A78D6;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#F7DCE2;border:1.5px solid #B3123A;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
+.flag .pole{fill:none;stroke:#7A7390;stroke-width:1.8;stroke-linecap:round}
+.flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
+.flag.on .pole{stroke:#16131F}
+.flag.on .f{fill:#B3123A;stroke:#7F0D29}
 </style>
 </helmet>
 <div style="width: 1280px; height: 1500px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -107,11 +111,11 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{chilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="26" height="26" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div>
 <span style="font-size: 18px; font-weight: 700">Overheated · 4/5</span>
 </div>
-<span class="ev"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4" fill="none" stroke="#16131F" stroke-width="2" stroke-linecap="round"></path></svg>Evidence: Limited</span>
+<div style="display: flex; flex-direction: column; gap: 8px"><span class="mlabel">Red flags</span><div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="26" height="26" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div><span style="font-size: 18px; font-weight: 700">Major gaps · 4/5</span></div>
 </div>
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
 <div style="background: #FCE3D7; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #EB6834"></span>Hype · 3</div><div style="font-size: 14px; line-height: 1.45">Overstated claim, hyperbole, human–AI framing</div></div>
-<div style="background: #DDE9F8; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #2A78D6"></span>Evidence · 3</div><div style="font-size: 14px; line-height: 1.45">Unexplained number, PR language, missing context</div></div>
+<div style="background: #F7DCE2; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #B3123A"></span>Red flags · 3</div><div style="font-size: 14px; line-height: 1.45">Unexplained number, PR language, missing context</div></div>
 <div style="background: #D6F2E6; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #1BAF7A"></span>Good practice · 1</div><div style="font-size: 14px; line-height: 1.45">Independent expert who states the limits</div></div>
 </div>
 <a class="btn btn-dark" href="Story.dc.html" style="align-self: flex-start">Open the marked-up article</a>

@@ -85,6 +85,8 @@ Sources: [Descript comparison](https://www.descript.com/compare/descript-vs-capc
 **Suggestion:** CapCut for video 0 (free, captions, collage effects). Descript is worth trying if editing the talking parts becomes slow. Keep any paid plan within the project budget or treat it as a separate personal cost.
 
 > **Update, 26 September:** after seeing the mockup, Leyla chose **Night edition** colours (deep violet header, yellow highlighter logo, pale lilac page) and **Option D** for ratings: the chilli meter is the only meter, and evidence is shown in plain words ("Evidence: Limited") instead of blue segments. See `prep/feature-list.md`.
+>
+> **Later update, 26 September:** both ratings now use matching "fewer is better" scales: 1–5 orange chillies for hype and 1–5 **crimson red flags** for gaps in the evidence. The evidence highlight family changes from blue to crimson `#B3123A`. Tested: orange `#EB6834`, crimson `#B3123A` and green `#1BAF7A` pass all-pairs in light mode (worst colour-blind separation 9.2; worst full-colour separation 19.4, crimson vs orange). Dark mode is borderline (crimson vs dark orange 15.0) and needs a retuned pair before a dark theme is built.
 
 ## Decisions (approved by Leyla, 26 September)
 
