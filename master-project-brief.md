@@ -17,12 +17,12 @@ This brief merges two earlier documents, both kept in `archive/`: the challenge 
 | Build stack | Open. Compare options during preparation (see Delivery). |
 | AI model | Compare Claude Opus 5 and Claude Sonnet 5 on the calibration set, then choose. |
 | Visual design | **Decided** 26 September: three colour families, blue score segments, orange hype chillies, shared paper-and-highlighter look (see `prep/10_visual_design.md`). |
-| Mockup | In progress. |
+| Mockup | **First version done** 26 September: four clickable screens (see `mockup/`). |
 | Videos | Explainer series planned: video 0 before the sprint, four learner videos after; "Learn" section is a Should-have (see `prep/09_video_plan.md`). |
 | Participant profile | Steps 1 and 3 drafted; step 2 (Skills) not reviewed. |
 | Budget and time | About **US$100** through judging; **40 hands-on hours** over the sprint. |
 
-**Next action:** build the clickable mockup from the approved feature list.
+**Next action:** review the mockup; then video 0 script, source terms, and the backlog.
 
 ---
 

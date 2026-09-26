@@ -1,0 +1,12 @@
+# Clickable mockup
+
+Source of the design canvas published at https://claude.ai/artifact/NWzfGeYbTxNZkCLAfrVFLr (private until shared from its Share menu).
+
+Four linked screens, all with fictional stories and scores:
+
+1. `project/Main.dc.html`: the feed (rated, "Not rated yet" and "Insufficient evidence" cards; sort buttons work)
+2. `project/Story.dc.html`: "Why this rating?" with the colour-coded markup (click any highlight), score breakdown and Behind the Claim
+3. `project/Check.dc.html`: "Check an article" (link with allowlist, or pasted text; try both demo buttons)
+4. `project/HowRatings.dc.html`: how ratings work, highlight legend, and the Learn section with video placeholders
+
+Design decisions: `prep/10_visual_design.md`. This is a pre-sprint mockup, not app code.
