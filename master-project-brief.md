@@ -148,7 +148,7 @@ Colour shows the **family**; each category also has its own **icon, label and un
 | --- | --- | --- | --- |
 | **🌶 Hype** | orange `#EB6834` | Overstated claim (solid) · Hyperbole, including promotional wording (wavy) · Human–AI framing (dotted) | Adds chillies |
 | **🚩 Evidence & sourcing** | crimson `#B3123A` | Unexplained number (double) · Unchallenged source (dashed) · Missing context (margin note) | Adds gaps |
-| **✓ Good practice** | green `#1BAF7A` | Independent expert, linked study, stated limits | Reduces gaps |
+| **✓ Good practice** | green `#1BAF7A` | Independent expert, linked study, stated limits | Met item: counted in the Gaps score, no bonus |
 
 The three colours passed colour-blindness tests in light mode (seven separate colours failed). Dark mode is borderline for orange against crimson and needs tuning before a dark theme is built.
 
