@@ -15,5 +15,6 @@ The challenge allows earlier work if it's declared, and reviewers judge what was
 | 25 Sep | Article backlog set up with template and wishlist | `backlog/` |
 | 26 Sep | Feature list updated: "Check an article" by link (allowlist) or text; colour-coded markup view; build-first sprint plan | `prep/feature-list.md`, `master-project-brief.md` |
 | 26 Sep | Explainer video series planned (video 0 to be made before the sprint) | `prep/09_video_plan.md` |
+| 26 Sep | Visual design research: comparable tools, colour palette tested for colour blindness, score displays, shared look with the videos, video tools | `prep/10_visual_design.md` |
 
 **No app code has been written yet.**
