@@ -85,3 +85,14 @@ Essentials (tripod + mic): roughly 2,600–3,900 TL; with the light, roughly 4,9
 **Buying tips:** "Yurt dışından" listings ship from abroad (slower, may lack a Turkish warranty); prefer listings with the Türkiye distributor warranty. Buy the tripod and mic first; add the light only if a test clip with window light looks too dark or uneven.
 
 **Considered and not recommended as the main light: Ulanzi LM19 MagSafe selfie ring light** (about 1,350–1,700 TL on [Amazon.com.tr](https://www.amazon.com.tr/Ulanzi-MagSafe-Selfie-Light-L015/dp/B0DR5JVK3Z); specs from [B&H](https://www.bhphotovideo.com/c/product/1848858-REG/ulanzi_l049gbb1_lm19_magsafe_led_selfie.html)). It clips to the iPhone, has adjustable colour and good colour accuracy, but gives only about 101 lux at 50 cm (roughly a quarter or less at a normal 1–1.5 m filming distance), lights the face flat from the camera position, leaves a ring reflection in the eyes, and lasts about 1.5 hours at full brightness. Fine for arm's-length vertical clips and video calls; the VL200 at 45° is the better main light if one is needed.
+
+## Update: filming seated at the desk (26 September 2026)
+
+Leyla will film sitting at her desk, and the floor tripod (MT-44) may not be available. Desk options:
+
+- **Phone stand: Ulanzi MT-16** extendable tabletop tripod (22–44 cm, 360° ball head, cold-shoe mount), about 513–657 TL ([Akakçe](https://www.akakce.com/tripod/en-ucuz-ulanzi-mt-16-uzayabilen-top-kafa-vlog-fiyati,1445052275.html)); [Amazon.com.tr](https://www.amazon.com.tr/ULANZI-Tripod-Selfie-%C3%87ubu%C4%9Fu-Telefon/dp/B08N6ZG9F2) · [Hepsiburada](https://www.hepsiburada.com/ulanzi-mt-16-uzayabilen-top-kafa-vlog-tripod-pm-HBC000004UBHF). Raise on books if 44 cm is too low for eye level.
+- **Alternative: desk-clamp arm** ("masaya kelepçeli telefon tutucu"), e.g. SMAYLİNG ([Amazon.com.tr](https://www.amazon.com.tr/SMAYL%C4%B0NG-Masa%C3%BCst%C3%BC-Ayarlanabilir-S%C3%BCspansiyon-Evrensel/dp/B0FKSYCWXS) · [Hepsiburada](https://www.hepsiburada.com/smayling-telefon-tripodu-360-derece-ayarlanabilir-masaustu-suspansiyonlu-ust-cekim-youtuber-yayinci-standi-pm-HBC00005EWL26)). Also points straight down for filming hands arranging paper collage. Check reviews for wobble.
+- **Light is now likely needed**, because the window stays behind. Place it in front at about 45°, on its own stand (a second MT-16), not on the phone. First pick Ulanzi VL200 if in stock; otherwise similar panels seen on Turkish sites such as the Ulanzi U60 (about 1,691 TL) or Neewer RGB61 (about 1,619 TL) — brightness not verified, check for a diffuser.
+- **Desk framing:** phone at arm's length or more, lens at eye level, frame from mid-chest up; window out of frame with a sheer curtain drawn.
+
+Updated essentials: MT-16 + Boya BY-M3 ≈ 2,000–2,300 TL; with a light and a second MT-16 ≈ 4,100–6,000 TL.
