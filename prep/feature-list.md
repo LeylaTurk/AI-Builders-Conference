@@ -43,6 +43,7 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
 13. **Sorts:** Newest (default), Strong reporting, Most hyped, Unrated.
 14. **Topic filter chips.**
 15. **Scheduled daily rating run**, only after the cap is tested.
+16. **"Learn" section** (about 1 hour): video 0 plus four learner videos ("coming soon" until made), captions and transcripts, and a "▶ Learn this in 60 seconds" link on each highlight category. See `prep/09_video_plan.md`.
 
 ## Later (after the challenge)
 

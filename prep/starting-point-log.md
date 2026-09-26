@@ -14,5 +14,6 @@ The challenge allows earlier work if it's declared, and reviewers judge what was
 | 25 Sep | Source and licensing research: major outlets, open-licensed sources, press-release feeds, headline-demo assessment | `prep/06`–`08` |
 | 25 Sep | Article backlog set up with template and wishlist | `backlog/` |
 | 26 Sep | Feature list updated: "Check an article" by link (allowlist) or text; colour-coded markup view; build-first sprint plan | `prep/feature-list.md`, `master-project-brief.md` |
+| 26 Sep | Explainer video series planned (video 0 to be made before the sprint) | `prep/09_video_plan.md` |
 
 **No app code has been written yet.**

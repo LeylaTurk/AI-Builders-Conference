@@ -16,7 +16,8 @@ This brief merges two earlier documents, both kept in `archive/`: the challenge 
 | Sources | Big outlets ruled out for AI rating; feed uses press releases and openly licensed outlets, plus a hand-collected backlog (see `prep/06`, `prep/07`, `backlog/`). |
 | Build stack | Open. Compare options during preparation (see Delivery). |
 | AI model | Compare Claude Opus 5 and Claude Sonnet 5 on the calibration set, then choose. |
-| Mockup | Next: build from the approved feature list. |
+| Mockup | Next, after visual design research. |
+| Videos | Explainer series planned: video 0 before the sprint, four learner videos after; "Learn" section is a Should-have (see `prep/09_video_plan.md`). |
 | Participant profile | Steps 1 and 3 drafted; step 2 (Skills) not reviewed. |
 | Budget and time | About **US$100** through judging; **40 hands-on hours** over the sprint. |
 
@@ -68,7 +69,7 @@ Approved on 25 September 2026 through the feature-scoping workstream; details, e
 | Tier | Features |
 | --- | --- |
 | **Must have** (in build order) | 1. Live feed: import, refresh, dedup, stale state · 2. Story score, hype meter, one-sentence explanation · 3. Stored, versioned ratings with daily cap and spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence" states · 6. Score breakdown · 7. Behind the Claim with coverage status · 8. Operator controls: pause, withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. "Check an article": link (allowlisted sources) or pasted text, private result, nothing stored · 12. Colour-coded markup view: highlights by category with icon and label, click for the reason and source passage |
-| **Should have** | Sorts (Newest, Strong reporting, Most hyped, Unrated) · topic filter chips · scheduled daily rating run |
+| **Should have** | Sorts (Newest, Strong reporting, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · "Learn" section with explainer videos |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR · Turkish coverage · story clustering · paired article comparison · links from any site (allowlisted links and pasted text are Musts) · accounts, personalization, notifications · browser extension |
 
 The sections below describe the three core features in detail.
@@ -214,8 +215,10 @@ Everything done early goes in the running log, `prep/starting-point-log.md`, whi
 | By | Task | Output |
 | --- | --- | --- |
 | ~~28 Sep~~ | ~~Feature-scoping workstream and approved feature list~~ **Done 25–26 Sep** | `prep/feature-list.md` |
+| 28 Sep | **Visual design research**: rating displays, meters, editor-style markup, accessible colours, a shared look for the app and videos | `prep/10_visual_design.md` |
 | 29 Sep | **Clickable mockup** of the feed, cards, "Check an article" and the markup view | Mockup link |
 | 30 Sep | Check the name *AI, Seriously?*; confirm the feed sources and allowlist terms (save PDFs) | Name; `prep/sources/` |
+| 30 Sep – 4 Oct | **Video 0, "Why AI hype matters now"**: script checked against the rubric (30 Sep), film (2 Oct), edit, caption and publish (4 Oct). Outside the sprint hours. | Published video |
 | 2 Oct | **Collect the backlog** and rate it by hand (8+ articles, 4 held back) | `backlog/` |
 | 3 Oct | **Rating prompt and output format drafted**; compare Opus 5 vs Sonnet 5 on the calibration set; measure cost per article | Model choice; cost per article |
 | 4 Oct | **Pick the stack and set it up:** accounts, API key, hard spending limit, empty app deployed to a public URL | Working empty deployment |
