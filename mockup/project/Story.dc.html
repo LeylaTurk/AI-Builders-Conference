@@ -78,7 +78,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <section style="display: flex; flex-direction: column; gap: 12px">
 <div style="font-size: 14px; color: #4B4658; display: flex; gap: 8px; flex-wrap: wrap"><span>Health</span><span aria-hidden="true">·</span><span>Press release</span><span aria-hidden="true">·</span><span>Example Institute of Technology (fictional)</span><span aria-hidden="true">·</span><span>3 hours ago</span></div>
 <h1 class="serif" style="margin: 0; font-size: 40px; font-weight: 800; line-height: 1.15; max-width: 1000px">New AI tool beats radiologists and will transform diagnosis, researchers say</h1>
-<div style="font-size: 13px; color: #4B4658">Rated today 09:25 · rubric v0.1 · AI-assisted, checked against a published checklist</div>
+<div style="font-size: 13px; color: #4B4658">Rated today 09:25 · rubric v0.1 · AI checklist assessment · reviewed by Leyla</div>
 </section>
 <section class="card" style="padding: 24px 28px; display: grid; grid-template-columns: 300px 240px minmax(0, 1fr); gap: 32px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 8px">
@@ -250,7 +250,7 @@ class Component extends DCLogic {
     const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
     const components = [
       { name: 'Source transparency', n: 3, word: 'Some gaps', flags: flags(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
-      { name: 'Support for the selected claims', n: 4, word: 'Major gaps', flags: flags(4), note: 'Two traced claims go beyond the study: “beats” and “proving… replace”.' },
+      { name: 'Strength of the evidence behind the key claims', n: 4, word: 'Major gaps', flags: flags(4), note: 'One retrospective study on archived scans from a single hospital; the full paper is paywalled. (How the release overstates it counts under hype.)' },
       { name: 'Context and qualifications', n: 4, word: 'Major gaps', flags: flags(4), note: 'Key limits (archived scans, one hospital, no false-alarm rate) are missing.' }
     ];
     return {

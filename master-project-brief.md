@@ -65,11 +65,11 @@ Full list with hours and details: `prep/feature-list.md`.
 
 | Tier | Features |
 | --- | --- |
-| **Must have** (build order) | 1. Live feed: RSS import, refresh with "checked at", dedup, stale state · 2. Ratings: hype (chillies) and evidence (flags), plus a one-line reason · 3. Stored, versioned ratings with a daily cap (start at 3 a day) and a hard spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence to rate" states · 6. Evidence breakdown (three parts) · 7. Behind the Claim with coverage status · 8. Operator controls: pause; withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. **"Check an article"**: link (allowlisted sources) or pasted text, private result, nothing stored · 12. **Colour-coded markup view**: highlights by category, click for the reason and the source passage |
+| **Must have** (build order) | 1. Live feed: RSS import, refresh with "checked at", dedup, stale state · 2. Ratings: hype (chillies) and evidence (flags), plus a one-line reason · 3. Stored, versioned ratings with a daily cap (start at 3 a day) and a hard spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence to rate" states · 6. Evidence breakdown (three parts) · 7. Behind the Claim with coverage status · 8. Operator controls: **approve each feed rating before it's published**; pause; withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. **"Check an article"**: link (allowlisted sources) or pasted text, private result, nothing stored · 12. **Colour-coded markup view**: highlights by category, click for the reason and the source passage |
 | **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Best evidence, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR sources · Turkish coverage · story clustering · paired comparison · fetching links from any site · accounts and notifications · browser extension · dark mode · phone-optimised layout (to be checked in the mockup) |
 
-**Time:** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls, (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
+**Time:** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls (the approve step stays), (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
 
 ### 1. The live feed
 
@@ -108,7 +108,7 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 | Part | Checks for gaps in |
 | --- | --- |
 | **Source transparency** | Named sources; at least one independent expert; conflicts of interest disclosed; the study or announcement named or linked; more than a reworded press release. |
-| **Support for the selected claims** | Traced claims match their source in scope, numbers and claim strength (correlation / conditional / causal); performance figures say how and where they were measured; deployment claims match reality. |
+| **Strength of the evidence behind the key claims** | The traced claims rest on a real, readable source (study, data, documents); its design and scale are adequate (e.g. one hospital, archived data, small sample are flagged); performance figures say how and where they were measured; independent confirmation exists. Whether the *wording* overstates the source is scored under hype, not here. |
 | **Context and qualifications** | Limits and risks discussed and not buried; human labour acknowledged; compared with a baseline; news, opinion and prediction distinguished. |
 
 (Internally, evidence flags = 6 − the evidence score in the original rubric, so the anchors and research are unchanged.)
@@ -127,14 +127,17 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 
 HealthNewsReview.org's review criteria; NewsGuard's pass/fail criteria; the Trust Project indicators; Science Feedback's credibility criteria and verdict tags; Sumner et al. (BMJ 2014) on exaggeration starting in press releases; Wright & Augenstein (2021) on claim strength and exaggeration; and Kapoor & Narayanan's "Eighteen pitfalls in AI journalism" (2022), 17 of which map onto the checklist. Details: `prep/05_rating_research.md`; source PDFs in `prep/sources/`.
 
-### Rating decisions still open
+### How ratings are produced (decided 26 Sep)
 
-1. **Checklist method (recommended):** the AI answers specific yes/no checklist questions, each backed by a quoted passage, and **code** calculates the ratings. The markup view already works this way. *To confirm.*
-2. **Hype formula (draft, to calibrate):** no distortions = 1; one minor = 2; two, or one major = 3; three to four = 4; five or more, or one in the central headline claim = 5.
-3. **Human check before publishing:** Leyla approves each feed rating (about 5 minutes a day at 3 ratings), enabling a "Reviewed by a human" label. *Leyla's call.*
-4. **Hide the outlet's name from the AI while it rates**, to reduce reputation bias. *Proposed.*
-5. **Reduce built-in overlap** so an overstated claim counts only towards hype, and evidence flags measure only what's there or missing. *Proposed.*
-6. **Name of the evidence rating:** "Evidence" is a working label; Leyla will revisit it (any name should work with "more flags = weaker evidence").
+1. **Checklist method.** The AI answers specific **yes / no / not applicable** checklist questions, each backed by a **quoted passage**. **Code** turns the answers into both ratings, and every quote is matched against the article text before it's shown. An **"other observations"** field lets the AI note anything the checklist doesn't cover; it is shown but **not scored**. Reasons: steadier results than an overall AI judgement (which research found agrees with experts only moderately), every rating explainable finding by finding, the markup view *is* the rating, and weights can be tuned without re-prompting. This is the HealthNewsReview/NewsGuard approach of fixed, published criteria.
+2. **Hype formula (starting draft, tuned on the hand-rated backlog).** Each hype finding is **minor** (a flourish; meaning unchanged) = **1 point** or **major** (changes scope, certainty or cause and effect) = **2 points**. Findings **in the headline count double**. Points → level: **0 → 1 Grounded · 1–2 → 2 · 3–4 → 3 · 5–6 → 4 · 7+ → 5**. **Safety rule:** a major distortion of the story's central claim in the headline sets hype to **at least 4**.
+3. **Human review before publishing.** Feed ratings stay **"Not rated yet"** until Leyla approves them (about 5 minutes a day at 3 ratings), then show **"Reviewed by Leyla"**. She can correct or withdraw a rating at any point. **Pasted checks** are instant and private, so they're labelled **"AI assessment, not reviewed"**. Kept at least through judging; to be reconsidered afterwards.
+4. **Outlet name hidden, source type kept.** The AI doesn't see the outlet's name or brand, to reduce reputation and political bias, but it is told the **source type** (e.g. "press release from the institution that did the study", "company announcement about its own product", "independent news outlet"), because the conflict-of-interest and independent-expert checks depend on who is speaking.
+5. **The two ratings are cleanly separated; each finding counts once.** **Hype** = the gap between the article's *wording* and its evidence ("beats radiologists" versus "matched"). **Evidence** = the *strength of what's underneath*: named and independent sources, a study that exists and can be read, its design and limits. The evidence part "support for the selected claims" becomes **"strength of the evidence behind the key claims"**. An accurate press release about a single-hospital study therefore gets low hype but some evidence flags.
+
+### Still open
+
+- **Name of the evidence rating:** "Evidence" is a working label; Leyla will revisit it (any name must work with "more flags = weaker evidence").
 
 ## The colour-coded markup categories
 
@@ -201,7 +204,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 - Protect credentials, validate URLs, treat all article and pasted text as untrusted, and keep only what's needed.
 - Respect publishers' terms: allowlist for fetching, short attributed excerpts, links back.
 - Show what the AI read and couldn't read, when a rating was made and with which rubric version.
-- Human oversight: Leyla can refresh, inspect, correct or withdraw ratings, change sources, check costs and pause processing without code.
+- Human oversight: **every feed rating is reviewed by Leyla before it's published**; she can also refresh, correct or withdraw ratings, change sources, check costs and pause processing without code. Pasted checks are labelled as unreviewed AI assessments.
 - Accessibility as above; start in English.
 
 ---
@@ -223,9 +226,9 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 | --- | --- | --- |
 | Problem and user value | 25% | Readers can't easily tell AI hype from substance; every story gets an explained rating, and any article can be checked. |
 | Working execution | 25% | A live feed, stored ratings, clear stale/unrated/insufficient states, a tested public link. |
-| Thoughtful use of AI | 20% | AI checks each article against a published checklist with quoted evidence; code computes the ratings and verifies quotes. |
+| Thoughtful use of AI | 20% | AI checks each article against a published checklist with quoted evidence; code computes the ratings and verifies quotes; outlet names hidden to reduce bias. |
 | Originality and approach | 15% | Article-level hype and evidence ratings with editor-style markup, plus explainer videos. |
-| Responsible and inclusive design | 15% | Visible evidence, no guessing, publishers' terms respected, private checks, cost caps, human oversight, accessibility. |
+| Responsible and inclusive design | 15% | Visible evidence, no guessing, publishers' terms respected, private checks, cost caps, every feed rating reviewed by a human before publishing, accessibility. |
 
 **Submission (required):** title and one-line value proposition; summary; problem and users; public link; starting point; what was built during the challenge; role of AI; building responsibly. **Optional:** demo video, walkthrough, architecture notes or deck, screenshots.
 
@@ -301,7 +304,8 @@ Leyla builds solo with agent support; no coding experience assumed. **Stack deci
 - [x] Merge the briefs; run feature scoping; approve the feature list
 - [x] Research ratings, sources and visual design; plan the videos
 - [x] Build the clickable mockup; choose colours and rating display
-- [ ] Confirm the open rating decisions (checklist method, hype formula, human check, hidden outlet name, overlap, name of the evidence rating)
+- [x] Decide how ratings are produced (checklist method, hype formula, human review, hidden outlet name, clean separation)
+- [ ] Decide the final name of the evidence rating
 - [ ] Video 0: script (30 Sep), film (2 Oct), publish (4 Oct)
 - [ ] Check the name; confirm feed sources and allowlist terms
 - [ ] Collect and hand-rate the backlog; compare models; measure cost

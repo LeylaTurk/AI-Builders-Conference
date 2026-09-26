@@ -13,7 +13,7 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
 5. **"Not rated yet" and "Insufficient evidence to rate" states.**
 6. **Evidence breakdown** in "Why this rating?" (three parts).
 7. **Behind the Claim** with coverage status: up to 2 claims and 2 source pages; fallback 1 claim and 1 page.
-8. **Operator controls:** pause processing; withdraw or correct a rating.
+8. **Operator controls:** **approve each feed rating before it's published** (decided 26 Sep); pause processing; withdraw or correct a rating.
 9. **Accessibility basics:** keyboard use, contrast, labels that don't rely on colour.
 10. **"How ratings work" page:** the rubric, what scores do and don't mean, known limits, "low hype ≠ low risk".
 11. **"Check an article": readers paste a link or the article text** and get a rating (about 4 hours).
@@ -35,7 +35,7 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
 
 > **Time check (updated 26 Sep):** the Musts total about **27.5 hours**. With setup and planning moved before 6 October, the sprint has about **28 build hours plus 4 reserve**, so they fit, just. **Leyla decides any cuts on Day 3.** Cut order, first to last:
 > 1. Behind the Claim at fallback size (1 claim, 1 source page)
-> 2. Operator controls simplified (pause via the provider's spending limit; withdraw by editing the database)
+> 2. Operator controls simplified (pause via the provider's spending limit; withdraw by editing the database). **The approve-before-publishing step stays.**
 > 3. Live feed reduced to one source and 10 cards
 > 4. Evidence breakdown panel dropped, since the markup view shows the same findings
 >
@@ -63,3 +63,4 @@ Guess the hype · share/export cards · cost view · "Disagree with this rating?
 - **Rating display (26 Sep): Option D.** The **chilli meter is the only meter** on cards (1–5 chillies with its word, e.g. "Overheated"). The story score is shown as an **evidence label in plain words** ("🔎 Evidence: Limited", from Weak to Very strong), not as a second scale, because two look-alike scales pointing in opposite directions confused readers. Both are still scored 1–5; the detail page shows the numbers and an "Evidence breakdown". Replaces the blue score segments in the earlier visual design decision.
 - **Matching scales (26 Sep, replaces the evidence label above):** Leyla kept two separate ratings (combining them would merge the cases readers most need told apart) and asked for both scales to match. Both now read **"fewer is better"**: 🌶 **Hype**, 1–5 orange chillies (Grounded … Off the charts), and 🚩 **Red flags**, 1–5 **crimson** flags (Well supported, Minor gaps, Some gaps, Major gaps, Unsupported). Red flags = 6 − the evidence score, so the rubric is unchanged. The evidence highlight family moves from blue to crimson `#B3123A` so red always means evidence problems; orange, crimson and green pass the colour-blindness tests in light mode (dark mode needs tuning).
 - **Name of the evidence rating (26 Sep, provisional, to revisit):** labelled **"Evidence"** in the app for now, shown with 1–5 crimson flag icons and a word (e.g. "Evidence 🚩🚩🚩🚩 Major gaps"). Not "red flags" and not "story score" ("score" suggests higher is better). The icons carry the meaning.
+- **How ratings are produced (26 Sep):** checklist method with quoted evidence and code-calculated ratings, plus unscored "other observations"; severity-weighted hype formula (minor 1, major 2, headline ×2; 0→1, 1–2→2, 3–4→3, 5–6→4, 7+→5; major central-claim distortion in the headline → at least 4); human review before publishing feed ratings ("Reviewed by Leyla"; pasted checks labelled "AI assessment, not reviewed"); outlet name hidden from the AI but source type kept; the two ratings cleanly separated so each finding counts once, with the evidence part "support for the selected claims" renamed "strength of the evidence behind the key claims". Details in `master-project-brief.md`.
