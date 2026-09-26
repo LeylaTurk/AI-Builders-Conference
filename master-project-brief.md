@@ -97,11 +97,13 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 | --- | --- | --- |
 | **Question** | How far does the framing go beyond the evidence? | How big are the gaps in the evidence? |
 | **Shown as** | 1–5 orange chillies + word | 1–5 crimson flags + word |
-| **1** | Grounded | None |
-| **2** | A little spicy | Minor |
-| **3** | Turning it up | Some |
-| **4** | Overheated | Major |
-| **5** | Off the charts | Unsupported |
+| **1** | **Grounded:** the framing matches the evidence's scope and certainty. | **None:** sources are named and independent, the key claims rest on evidence you can read, and the limits are stated. |
+| **2** | **A little spicy:** some flourish, without a major change in meaning. | **Minor:** small omissions (e.g. no independent expert, one limit missing) that don't change what a reader should conclude. |
+| **3** | **Turning it up:** noticeable inflation or missing qualifications affect how the story is understood. | **Some:** gaps a reader should know about, e.g. a single interested source, an unexplained number, limits buried at the end. |
+| **4** | **Overheated:** major extrapolation or unjustified certainty drives the story. | **Major:** the key claims rest on thin or unchecked evidence, e.g. one press release, a tiny or single-site study, no independent voice. |
+| **5** | **Off the charts:** the central framing goes far beyond the evidence. | **Unsupported:** no real, readable evidence behind the key claims. |
+
+The formulas below decide the level; these descriptions (starting drafts, 26 Sep) are for hand rating and the "How ratings work" page.
 
 The **gaps** rating combines three parts, each shown in the breakdown (formula: see "How ratings are produced", point 3):
 
