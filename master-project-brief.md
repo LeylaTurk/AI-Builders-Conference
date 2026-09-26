@@ -113,7 +113,7 @@ The **gaps** rating combines three parts, each shown in the breakdown (formula: 
 
 (Internally, gaps = 6 − the evidence score in the original rubric, so the anchors and research are unchanged.)
 
-**Hype** counts distortions, checking the **headline and the body separately**: stronger claim than the source; over-generalisation; hyperbole; unjustified future claims; attributing agency to AI or comparing it with human intelligence or skills; PR language repeated as fact; deep-sounding terms for ordinary operations; a clickbait headline.
+**Hype** counts distortions, checking the **headline and the body separately**: stronger claim than the source; over-generalisation; hyperbole; unjustified future claims; attributing agency to AI or comparing it with human intelligence or skills; promotional language in the outlet's own voice; deep-sounding terms for ordinary operations; a clickbait headline.
 
 ### Rules that don't change
 
@@ -135,6 +135,7 @@ HealthNewsReview.org's review criteria; NewsGuard's pass/fail criteria; the Trus
 4. **Human review before publishing.** Feed ratings stay **"Not rated yet"** until Leyla approves them (about 5 minutes a day at 3 ratings), then show **"Reviewed by Leyla"**. She can correct or withdraw a rating at any point. **Pasted checks** are instant and private, so they're labelled **"AI assessment, not reviewed"**. Kept at least through judging; to be reconsidered afterwards.
 5. **Outlet name hidden, source type kept.** The AI doesn't see the outlet's name or brand, to reduce reputation and political bias, but it is told the **source type** (e.g. "press release from the institution that did the study", "company announcement about its own product", "independent news outlet"), because the conflict-of-interest and independent-expert checks depend on who is speaking.
 6. **The two ratings are cleanly separated; each finding counts once.** **Hype** = the gap between the article's *wording* and its evidence ("beats radiologists" versus "matched"). **Evidence** = the *strength of what's underneath*: named and independent sources, a study that exists and can be read, its design and limits. The evidence part "support for the selected claims" becomes **"strength of the evidence behind the key claims"**. An accurate press release about a single-hospital study therefore gets low hype but some evidence flags.
+   - **Borderline findings (decided 26 Sep).** *PR material:* promotional words adopted in the outlet's own voice ("revolutionary", "world's first") → **Hype**; a company or press release as the only, unchecked source → **Gaps** (unchallenged source). *Predictions:* a future claim stated with unjustified certainty → **Hype**; a piece not marked as opinion, analysis or forecast → **Gaps** (context). **One quoted passage produces one finding:** if it fits both, it goes to Hype when the problem is wording or certainty, and to Gaps when it's a missing source or label.
 
 ## The colour-coded markup categories
 
@@ -142,8 +143,8 @@ Colour shows the **family**; each category also has its own **icon, label and un
 
 | Family | Colour | Categories | Affects |
 | --- | --- | --- | --- |
-| **🌶 Hype** | orange `#EB6834` | Overstated claim (solid) · Hyperbole (wavy) · Human–AI framing (dotted) | Adds chillies |
-| **🚩 Evidence & sourcing** | crimson `#B3123A` | Unexplained number (double) · PR language / unchallenged source (dashed) · Missing context (margin note) | Adds gaps |
+| **🌶 Hype** | orange `#EB6834` | Overstated claim (solid) · Hyperbole, including promotional wording (wavy) · Human–AI framing (dotted) | Adds chillies |
+| **🚩 Evidence & sourcing** | crimson `#B3123A` | Unexplained number (double) · Unchallenged source (dashed) · Missing context (margin note) | Adds gaps |
 | **✓ Good practice** | green `#1BAF7A` | Independent expert, linked study, stated limits | Reduces gaps |
 
 The three colours passed colour-blindness tests in light mode (seven separate colours failed). Dark mode is borderline for orange against crimson and needs tuning before a dark theme is built.
