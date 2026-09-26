@@ -38,6 +38,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .chili.on .stem{stroke:#3F7D3A}
 .sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#DDE9F8;border:1.5px solid #2A78D6;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
 </style>
 </helmet>
 <div style="width: 1280px; height: 1500px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -100,17 +101,13 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <span style="font-size: 13px; font-weight: 700; background: #EEE9FF; padding: 6px 12px; border-radius: 999px">Private · not saved</span>
 </div>
 <div style="font-size: 14px; color: #4B4658">Sample result for the mockup: “New AI tool beats radiologists and will transform diagnosis, researchers say”</div>
-<div style="display: flex; gap: 48px; flex-wrap: wrap">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span class="mlabel">Story score</span>
-<div style="display: flex; gap: 3px" aria-hidden="true"><span class="seg on"></span><span class="seg on"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
-<span style="font-size: 18px; font-weight: 700">2/5 Limited</span>
-</div>
+<div style="display: flex; gap: 48px; flex-wrap: wrap; align-items: flex-end">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span class="mlabel">Hype</span>
 <div style="display: flex; gap: 1px" aria-hidden="true"><sc-for list="{{chilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="26" height="26" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for></div>
 <span style="font-size: 18px; font-weight: 700">Overheated · 4/5</span>
 </div>
+<span class="ev"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4" fill="none" stroke="#16131F" stroke-width="2" stroke-linecap="round"></path></svg>Evidence: Limited</span>
 </div>
 <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px">
 <div style="background: #FCE3D7; border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 4px"><div style="display: flex; gap: 6px; align-items: center; font-weight: 700"><span class="sw" style="background: #EB6834"></span>Hype · 3</div><div style="font-size: 14px; line-height: 1.45">Overstated claim, hyperbole, human–AI framing</div></div>

@@ -56,6 +56,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .btn-line:hover{background:#EEE9FF;color:#16131F}
 .lg{display:flex;gap:8px;align-items:center;font-size:13px}
 .lgu{padding:0 3px;border-radius:2px;text-decoration-line:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+.ev{display:inline-flex;align-items:center;gap:8px;background:#DDE9F8;border:1.5px solid #2A78D6;color:#16131F;font:600 15px 'Public Sans',system-ui,sans-serif;padding:6px 12px 6px 10px;border-radius:999px}
 </style>
 </helmet>
 <div style="width: 1280px; height: 2080px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -75,18 +76,18 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <h1 class="serif" style="margin: 0; font-size: 40px; font-weight: 800; line-height: 1.15; max-width: 1000px">New AI tool beats radiologists and will transform diagnosis, researchers say</h1>
 <div style="font-size: 13px; color: #4B4658">Rated today 09:25 · rubric v0.1 · AI-assisted, checked against a published checklist</div>
 </section>
-<section class="card" style="padding: 24px 28px; display: grid; grid-template-columns: 260px 300px minmax(0, 1fr); gap: 32px; align-items: center">
-<div style="display: flex; flex-direction: column; gap: 8px">
-<span class="mlabel">Story score</span>
-<div style="display: flex; gap: 4px" aria-hidden="true"><span class="seg on"></span><span class="seg on"></span><span class="seg"></span><span class="seg"></span><span class="seg"></span></div>
-<span style="font-size: 20px; font-weight: 700">2/5 Limited</span>
-</div>
+<section class="card" style="padding: 24px 28px; display: grid; grid-template-columns: 300px 240px minmax(0, 1fr); gap: 32px; align-items: center">
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span class="mlabel">Hype</span>
 <div style="display: flex; gap: 2px" aria-hidden="true">
 <sc-for list="{{hypeChilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="30" height="30" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for>
 </div>
 <span style="font-size: 20px; font-weight: 700">Overheated · 4/5</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span class="mlabel">Evidence</span>
+<span class="ev" style="align-self: flex-start; font-size: 17px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM20 20l-4-4" fill="none" stroke="#16131F" stroke-width="2" stroke-linecap="round"></path></svg>Evidence: Limited</span>
+<span style="font-size: 14px; color: #4B4658">2 on a scale of 5</span>
 </div>
 <p style="margin: 0; font-size: 17px; line-height: 1.5">The study found the tool <strong>matched</strong> radiologists on archived scans from one hospital. The release says it <strong>beats</strong> them and will replace routine work.</p>
 </section>
@@ -149,7 +150,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 </sc-for>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 14px">
-<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Score breakdown</h2>
+<h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Evidence breakdown</h2>
 <sc-for list="{{components}}" as="k" hint-placeholder-count="3">
 <div style="display: flex; flex-direction: column; gap: 4px">
 <div style="display: flex; justify-content: space-between; font-size: 14px"><strong>{{k.name}}</strong><span>{{k.n}}/5</span></div>
@@ -157,7 +158,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <div style="font-size: 13px; color: #4B4658; line-height: 1.45">{{k.note}}</div>
 </div>
 </sc-for>
-<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 2.3 → story score 2. Hype is scored separately and isn’t subtracted again.</div>
+<div style="font-size: 13px; color: #4B4658; border-top: 1px solid #E4E0EC; padding-top: 10px">Average 2.3 → Evidence: Limited (2/5). Hype is scored separately and isn’t subtracted again.</div>
 </section>
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 12px">
 <h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Behind the Claim</h2>
@@ -192,7 +193,7 @@ class Component extends DCLogic {
       good: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8.5 12.5l2.5 2.5 4.5-5'
     };
     const famName = { hype: 'Hype', evid: 'Evidence & sourcing', good: 'Good practice' };
-    const counts = { hype: 'Hype meter', evid: 'Story score (lowers it)', good: 'Story score (raises it)' };
+    const counts = { hype: 'Hype meter', evid: 'Evidence rating (lowers it)', good: 'Evidence rating (raises it)' };
     const tint = { hype: 'background: #FCE3D7', evid: 'background: #DDE9F8', good: 'background: #D6F2E6' };
     const F = {
       f1: { fam: 'hype', u: 'u-dotted', icon: I.humanai, label: 'Human–AI framing', quote: 'beats radiologists',
@@ -209,7 +210,7 @@ class Component extends DCLogic {
       f5: { fam: 'evid', u: 'u-dashed', icon: I.pr, label: 'PR language', quote: 'a breakthrough in trustworthy AI that thinks like a specialist',
         explain: 'A promotional quote from the tool’s developer, presented without an independent response, and it gives the software a human way of thinking.', source: '', basis: 'Pitfalls 11–12: self-interested sources and PR terms' },
       f6: { fam: 'good', u: 'u-solid', icon: I.good, label: 'Good practice', quote: 'a radiologist who was not involved in the study, said the results were “promising but preliminary”',
-        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This raises the story score.', source: '', basis: 'HealthNewsReview: independent sources' },
+        explain: 'An independent expert who wasn’t involved in the research, stating the limits. This raises the evidence rating.', source: '', basis: 'HealthNewsReview: independent sources' },
       f7: { fam: 'evid', u: '', icon: I.context, label: 'Missing context', quote: '(nothing to underline: this is about what’s left out)',
         explain: 'The release doesn’t say the tool was tested only on archived scans from one hospital, or how often it raised false alarms. Those limits change what the result means.',
         source: 'Retrospective, single-centre design; prospective clinical testing is needed.', basis: 'Pitfalls 13–14: limitations missing or buried' }
