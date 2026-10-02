@@ -66,7 +66,7 @@ Full list with hours and details: `prep/feature-list.md`.
 | Tier | Features |
 | --- | --- |
 | **Must have** (build order) | 1. Live feed: RSS import, refresh with "checked at", dedup, stale state · 2. Ratings: hype (chillies) and gaps (flags), plus a one-line reason · 3. Stored, versioned ratings with a daily cap (start at 3 a day) and a hard spending limit · 4. Cards with a short summary · 5. "Not rated yet" and "Insufficient evidence to rate" states · 6. Gaps breakdown (three parts) · 7. Behind the Claim with coverage status · 8. Operator controls: **approve each feed rating before it's published**; pause; withdraw or correct a rating · 9. Accessibility basics · 10. "How ratings work" page · 11. **"Check an article"**: link (allowlisted sources) or pasted text, private result, nothing stored · 12. **Colour-coded markup view**: highlights by category, click for the reason and the source passage |
-| **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Fewest gaps, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos |
+| **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Fewest gaps, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos · **"Common claims" page** (added 2 Oct; built last, if time allows; see below) |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR sources · Turkish coverage · story clustering · paired comparison · fetching links from any site · accounts and notifications · browser extension · dark mode · phone-optimised layout (to be checked in the mockup) |
 
 **Time:** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls (the approve step stays), (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
@@ -86,6 +86,14 @@ Readers paste a **link** or the **article text** and get a private rating with t
 The detail page shows the two ratings, the one-line reason, the **article marked up like an editor would**, a **gaps breakdown**, and **Behind the Claim**:
 - **Markup:** each finding is highlighted in the text. Click it to see the explanation, the matching source passage and which rating it affects. The markup is shown for feed articles only where the source's licence allows showing the text; for checked articles it's private to the reader.
 - **Behind the Claim:** up to **two key claims** traced to up to **two source pages** (fallback: one and one), with exact passages, links, what was read, partly read or unavailable, and what the evidence says about risks and unknowns. Quotes are **checked against the fetched text in code** before display.
+
+### "Common claims" (added 2 Oct)
+
+**Decided 2 Oct: built last, only if time allows.** Each rating also tags the story's main claim with **one type from a fixed list** of common AI claims. A **Common claims** page groups rated stories by claim type and shows, for each: how many stories made it, their typical Hype and Gaps, and the best-supported and most hyped examples (linking to their story pages). It's separate from Behind the Claim, which checks one story's claim against that story's own source.
+
+**Starting list (tuned after seeing real tags):** (1) AI will take jobs or replace workers · (2) AI beats experts (doctors, lawyers, programmers) · (3) AI could wipe out humanity, or we'll lose control · (4) AI acts on its own (rogue agents, "wants", "decides") · (5) a company's "world's first / most capable" claim · (6) data centers bring jobs and growth · (7) AI saves time or money · (8) AI harms children or mental health · (9) other.
+
+**Enough stories to group (decided 2 Oct):** on Day 2, rate a **one-off batch of 30–40 recent stories** from the feed source, then return to the daily cap. Approving the batch takes about an hour. The archive's big-outlet stories can't appear here. **Estimate:** about 30 minutes for the claim tag in the rating step (cheap enough to include from the start, so the data exists either way) plus 1.5–2 hours for the page.
 
 ## How the ratings work
 

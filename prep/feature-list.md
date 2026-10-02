@@ -47,6 +47,7 @@ This list comes out of the feature-scoping workstream (`01`–`04` in this folde
 14. **Topic filter chips.**
 15. **Scheduled daily rating run**, only after the cap is tested.
 16. **"Learn" section** (about 1 hour): video 0 plus four learner videos ("coming soon" until made), captions and transcripts, and a "▶ Learn this in 60 seconds" link on each highlight category. See `prep/09_video_plan.md`.
+17. **"Common claims" page** (added 2 Oct; about 2–2.5 hours; **built last, if time allows**): each rating tags the story's main claim with one type from a fixed list (jobs, beats experts, wipes out humanity, acts on its own, company "world's first", data centers bring jobs, saves time or money, harms children, other); a page groups rated stories by claim with counts, typical Hype and Gaps, and best and worst examples. A one-off batch of 30–40 recent stories is rated on Day 2 so the page has enough stories. Details in `master-project-brief.md`.
 
 ## Later (after the challenge)
 
