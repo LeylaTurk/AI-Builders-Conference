@@ -34,6 +34,11 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
 .flag.on .pole{stroke:#16131F}
 .flag.on .f{fill:#B3123A;stroke:#7F0D29}
+.flag.on.lv1 .f{fill:#1BAF7A;stroke:#11734F}
+.flag.on.lv2 .f{fill:#E6B400;stroke:#8F7000}
+.flag.on.lv3 .f{fill:#F08A24;stroke:#A85A10}
+.flag.on.lv4 .f{fill:#DB2E4B;stroke:#9A1B33}
+.flag.on.lv5 .f{fill:#8E0E2E;stroke:#5E0A1F}
 .ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .sw.hype{background:#EB6834}.sw.evid{background:#B3123A}.sw.good{background:#1BAF7A}
@@ -180,7 +185,7 @@ class Component extends DCLogic {
     return {
       finds,
       hypeChilis: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 4 ? 'chili on' : 'chili' })),
-      gapFlags: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 3 ? 'flag on' : 'flag' }))
+      gapFlags: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 3 ? 'flag on lv3' : 'flag' }))
     };
   }
 }

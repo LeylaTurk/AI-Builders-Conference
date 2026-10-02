@@ -65,6 +65,11 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
 .flag.on .pole{stroke:#16131F}
 .flag.on .f{fill:#B3123A;stroke:#7F0D29}
+.flag.on.lv1 .f{fill:#1BAF7A;stroke:#11734F}
+.flag.on.lv2 .f{fill:#E6B400;stroke:#8F7000}
+.flag.on.lv3 .f{fill:#F08A24;stroke:#A85A10}
+.flag.on.lv4 .f{fill:#DB2E4B;stroke:#9A1B33}
+.flag.on.lv5 .f{fill:#8E0E2E;stroke:#5E0A1F}
 </style>
 </helmet>
 <div style="width: 1280px; height: 2080px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -94,7 +99,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span class="mlabel">Gaps</span>
-<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
+<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on lv4" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on lv4" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on lv4" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on lv4" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
 <span style="font-size: 20px; font-weight: 700">Major · 4/5</span>
 </div>
 <p style="margin: 0; font-size: 17px; line-height: 1.5">The study found the tool <strong>matched</strong> radiologists on archived scans from one hospital. The release says it <strong>beats</strong> them and will replace routine work.</p>
@@ -251,7 +256,7 @@ class Component extends DCLogic {
       label: F[id].label, short: F[id].quote, icon: F[id].icon, swCls: 'sw ' + F[id].fam,
       btnCls: selId === id ? 'fbtn sel' : 'fbtn', pressed: selId === id ? 'true' : 'false', pick: pick(id)
     }));
-    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
+    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on lv' + n : 'flag' }));
     const components = [
       { name: 'Source transparency', n: 3, word: 'Some', flags: flags(3), note: 'An independent expert is quoted, but the developer’s promotional quote goes unchallenged and the study isn’t linked.' },
       { name: 'Strength of the evidence behind the key claims', n: 4, word: 'Major', flags: flags(4), note: 'One retrospective study on archived scans from a single hospital; the full paper is paywalled. (How the release overstates it counts under hype.)' },

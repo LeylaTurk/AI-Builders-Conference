@@ -52,6 +52,11 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
 .flag.on .pole{stroke:#16131F}
 .flag.on .f{fill:#B3123A;stroke:#7F0D29}
+.flag.on.lv1 .f{fill:#1BAF7A;stroke:#11734F}
+.flag.on.lv2 .f{fill:#E6B400;stroke:#8F7000}
+.flag.on.lv3 .f{fill:#F08A24;stroke:#A85A10}
+.flag.on.lv4 .f{fill:#DB2E4B;stroke:#9A1B33}
+.flag.on.lv5 .f{fill:#8E0E2E;stroke:#5E0A1F}
 </style>
 </helmet>
 <div style="width: 1280px; height: 2080px; box-sizing: border-box; background: #F6F3FF; display: flex; flex-direction: column">
@@ -143,7 +148,7 @@ Refresh feed
 <section class="card" style="padding: 22px; display: flex; flex-direction: column; gap: 14px">
 <h2 class="serif" style="margin: 0; font-size: 20px; font-weight: 800">Reading the ratings</h2>
 <div style="display: flex; flex-direction: column; gap: 6px">
-<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
+<div style="display: flex; gap: 1px" aria-hidden="true"><svg class="flag on lv2" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag on lv2" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg><svg class="flag" width="20" height="20" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></div>
 <div style="font-size: 14px; line-height: 1.45"><strong>Gaps</strong>: gaps in the evidence, such as missing sources, a weak or unreadable study, or limits left out. More flags, bigger gaps.</div>
 </div>
 <div style="display: flex; flex-direction: column; gap: 6px">
@@ -185,7 +190,7 @@ class Component extends DCLogic {
       pick: () => this.setState({ sort: label })
     }));
     const fw = ['', 'None', 'Minor', 'Some', 'Major', 'Unsupported'];
-    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on' : 'flag' }));
+    const flags = (n) => [1, 2, 3, 4, 5].map((i) => ({ cls: i <= n ? 'flag on lv' + n : 'flag' }));
     const rated = (o) => Object.assign({ rated: true, unrated: false, insufficient: false, segs: segs(o.scoreNum), chilis: chilis(o.hypeNum), flags: flags(6 - o.scoreNum), flagWord: fw[6 - o.scoreNum] }, o);
     const cards = [
       rated({
