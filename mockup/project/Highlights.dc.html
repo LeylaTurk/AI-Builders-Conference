@@ -22,14 +22,23 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 .nav:hover{background:#3A2A73;color:#FFFFFF}
 .card{background:#FFFFFF;border:1px solid #E4E0EC;border-radius:14px}
 .mlabel{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4B4658}
-.chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.6}
-.chili .stem{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linecap:round}
-.chili.on .body{fill:#EB6834;stroke:#B94A1C}
-.chili.on .stem{stroke:#3F7D3A}
+.chili .body{fill:none;stroke:#A9A2B8;stroke-width:1.2;stroke-linejoin:round}
+.chili .shine{display:none}
+.chili .cap{fill:none;stroke:#A9A2B8;stroke-width:.9;stroke-linejoin:round}
+.chili .stem{fill:none;stroke:#A9A2B8;stroke-width:2;stroke-linecap:round}
+.chili.on .body{fill:#EF4F27;stroke:#B0331A;stroke-width:1}
+.chili.on .shine{display:inline;fill:none;stroke:#FFFFFF;stroke-opacity:.55;stroke-width:1.4;stroke-linecap:round}
+.chili.on .cap{fill:#2F8F3A;stroke:#1E6127}
+.chili.on .stem{stroke:#2F8F3A}
 .flag .pole{fill:none;stroke:#7A7390;stroke-width:1.8;stroke-linecap:round}
 .flag .f{fill:none;stroke:#A9A2B8;stroke-width:1.6;stroke-linejoin:round}
 .flag.on .pole{stroke:#16131F}
 .flag.on .f{fill:#B3123A;stroke:#7F0D29}
+.flag.on.lv1 .f{fill:#1BAF7A;stroke:#11734F}
+.flag.on.lv2 .f{fill:#E6B400;stroke:#8F7000}
+.flag.on.lv3 .f{fill:#F08A24;stroke:#A85A10}
+.flag.on.lv4 .f{fill:#DB2E4B;stroke:#9A1B33}
+.flag.on.lv5 .f{fill:#8E0E2E;stroke:#5E0A1F}
 .ico{fill:none;stroke:#16131F;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .sw{width:12px;height:12px;border-radius:3px;flex-shrink:0}
 .sw.hype{background:#EB6834}.sw.evid{background:#B3123A}.sw.good{background:#1BAF7A}
@@ -72,7 +81,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <div style="display: flex; flex-direction: column; gap: 8px">
 <span class="mlabel">Hype</span>
 <div style="display: flex; gap: 2px" aria-hidden="true">
-<sc-for list="{{hypeChilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="30" height="30" viewBox="0 0 24 24"><path class="body" d="M10.5 7.5c3.8-.6 7 1.6 7 5.3 0 5-5.2 9-12.5 9.7 3.4-2.4 5-5.8 5-9.4 0-2.1.1-3.9.5-5.6z"></path><path class="stem" d="M11 7.4c.2-2 1.3-3.4 3.2-4"></path></svg></sc-for>
+<sc-for list="{{hypeChilis}}" as="h" hint-placeholder-count="5"><svg class="{{h.cls}}" width="30" height="30" viewBox="0 0 32 32"><path class="body" d="M8.2 27.6c-1.6.5-2.6-.6-1.6-1.6 4.4-1.6 7.7-4.8 9-9.6.9-3.4 1.6-6 4.4-6.9 3.3-1 6.3 1.4 6.6 5 .5 5.5-4.6 11.6-11.6 13-2.4.5-4.6.5-6.8.1z"></path><path class="shine" d="M10.5 25.4c3.6-1.5 6.4-4.4 7.6-8.4"></path><path class="cap" d="M18.6 11.6c.4-1.6 1.8-2.6 3.4-2.4 1.2-1.2 3.4-1.1 4.4.4 1.3.2 2.1 1.4 1.8 2.6-1.2-.5-2.4-.3-3.2.4-1.3-.9-3-.9-4.2 0-.7-.6-1.5-.9-2.2-1z"></path><path class="stem" d="M24 9.4c.2-2.4 1.6-4.4 4-5.4"></path></svg></sc-for>
 </div>
 <span style="font-size: 20px; font-weight: 700">Overheated · 4/5</span>
 </div>
@@ -176,7 +185,7 @@ class Component extends DCLogic {
     return {
       finds,
       hypeChilis: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 4 ? 'chili on' : 'chili' })),
-      gapFlags: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 3 ? 'flag on' : 'flag' }))
+      gapFlags: [1, 2, 3, 4, 5].map((i) => ({ cls: i <= 3 ? 'flag on lv3' : 'flag' }))
     };
   }
 }
