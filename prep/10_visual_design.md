@@ -93,3 +93,6 @@ Sources: [Descript comparison](https://www.descript.com/compare/descript-vs-capc
 1. **Three colour families** (hype orange, evidence blue, good-practice green) instead of seven colours, with icons, labels and underline styles for the categories. *Recommended: the seven-colour version fails the tests.*
 2. **Scores as segments:** blue segments for the story score, orange chillies for hype; number and word always shown.
 3. **Look:** paper and highlighter accents shared with the videos; plain, readable reading view; serif headlines to be tried in the mockup.
+
+> **Update, 2 October: chilli icon redrawn.** The original icon (a straight, tapering orange cone with a thin green line) read as a carrot. The new chilli has a curved body that hooks at the tip, a broad shoulder, a green cap, a bent stem and a white shine, and is coloured **red-orange `#EF4F27`** (outline `#B0331A`). That red was chosen because it stays distinct from the crimson Gaps flags (`#B3123A`): full-colour separation 16.5 (floor 15), colour-blind separation 16.6. A redder `#E2442B` failed the full-colour floor (13.1). The orange **highlight** family for hype findings in the markup (`#EB6834`) is unchanged; only the meter icon is redder. Applied in the rating desk and every mockup screen.
+
