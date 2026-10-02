@@ -6,6 +6,7 @@ Four linked screens, all with fictional stories and scores:
 
 1. `project/Main.dc.html`: the feed (rated, "Not rated yet" and "Insufficient evidence" cards; sort buttons work)
 2. `project/Story.dc.html`: "Why this rating?" with the colour-coded markup (click any highlight), score breakdown and Behind the Claim
+2b. `project/Highlights.dc.html` (added 2 Oct): the **Highlights** story page for a big-outlet story: short excerpts with paragraph numbers, the copyright notice, "Open the full article" and "See every highlight in the full text" (goes to Check an article), and Behind the Claim with short quotes
 3. `project/Check.dc.html`: "Check an article" (link with allowlist, or pasted text; try both demo buttons)
 4. `project/HowRatings.dc.html`: how ratings work, highlight legend, and the Learn section with video placeholders
 

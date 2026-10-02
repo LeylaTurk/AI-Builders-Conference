@@ -54,6 +54,14 @@
       "w": 1280,
       "x": 2720,
       "y": 2640
+    },
+    "Highlights.dc.html": {
+      "h": 1900,
+      "is_interactive": true,
+      "title": "2b · Why this rating? (highlights only, big-outlet story)",
+      "w": 1280,
+      "x": 5440,
+      "y": 0
     }
   },
   "createdOnFiles": {
@@ -75,7 +83,7 @@
     },
     "title": {
       "kind": "title1",
-      "maxW": 5360,
+      "maxW": 6720,
       "text": "AI, Seriously? · clickable mockup · all stories, publishers and scores are fictional",
       "w": 240,
       "x": 0,
@@ -85,6 +93,7 @@
   "order": [
     "Main.dc.html",
     "Story.dc.html",
+    "Highlights.dc.html",
     "Check.dc.html",
     "HowRatings.dc.html",
     "ScoreOptions.dc.html",

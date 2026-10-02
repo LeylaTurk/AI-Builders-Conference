@@ -69,7 +69,9 @@ Full list with hours and details: `prep/feature-list.md`.
 | **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Fewest gaps, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos · **"Common claims" page** (added 2 Oct; built last, if time allows; see below) |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR sources · Turkish coverage · story clustering · paired comparison · fetching links from any site · accounts and notifications · browser extension · dark mode · phone-optimised layout (to be checked in the mockup) |
 
-**Time:** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls (the approve step stays), (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
+**Plan for the actual hours (decided 2 Oct):** Leyla has **5.5 hours a day** in the challenge week (27.5 h) plus about 9.5 hours of prep. Changes from the list above: **all four candidate feed sources** whose terms allow it (EurekAlert, The Conversation, ProPublica, OpenAI news); the **archive with Highlights pages is required**; **links in "Check an article" and the Common claims page are built only if ahead**; Behind the Claim checks 1 claim against 1 source page; the gaps breakdown panel is dropped (the markup shows the same findings); operator controls are the approve step (pause via the provider's spending limit); video 0 moves to after the challenge (a 2-minute screen recording is the demo video); no reserve, so the cut order is the safety net. The day-by-day plan and progress tracker is the private "AI, Seriously? Sprint Plan" page. The original estimate follows for reference.
+
+**Time (original estimate):** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls (the approve step stays), (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
 
 ### 1. The live feed
 
@@ -86,6 +88,16 @@ Readers paste a **link** or the **article text** and get a private rating with t
 The detail page shows the two ratings, the one-line reason, the **article marked up like an editor would**, a **gaps breakdown**, and **Behind the Claim**:
 - **Markup:** each finding is highlighted in the text. Click it to see the explanation, the matching source passage and which rating it affects. The markup is shown for feed articles only where the source's licence allows showing the text; for checked articles it's private to the reader.
 - **Behind the Claim:** up to **two key claims** traced to up to **two source pages** (fallback: one and one), with exact passages, links, what was read, partly read or unavailable, and what the evidence says about risks and unknowns. Quotes are **checked against the fetched text in code** before display.
+
+### Archive and "Highlights" story pages (decided 2 Oct)
+
+**Required.** The website shows the hand-collected archive (`LeylaTurk/ai-news-articles`) as an **archive page**: each story's headline, outlet, date, a **"Read original"** link, a short summary in Leyla's words, one or two short credited quotes, and **Leyla's hand ratings, labelled "Rated by Leyla"** ("Not rated yet" for the rest). **No full article text from outlets that don't allow it** (CNN, NBC, CBS, ABC, NPR, Fox and others): reproducing it would breach their copyright and undercut the "publishers' terms respected" answer to the Responsible design criterion. Stories from newsrooms that invite republishing (e.g. Texas Tribune, CalMatters, CT Mirror, Chalkbeat, Wisconsin Watch, Capitol News Illinois, Inside Climate News) may appear in full, following their terms.
+
+**Two kinds of story page:**
+- **Full markup:** the whole article with highlights inline, for sources whose terms allow showing the text (the feed sources and permissive archive stories).
+- **Highlights:** for big-outlet stories. Each finding appears as a **short excerpt (a sentence or less)** in reading order, with its position ("paragraph 9 of 14"), its colour, icon and label, and the explanation; Behind the Claim uses short quotes too. Mockup: `mockup/project/Highlights.dc.html`.
+
+**Three things that make Highlights feel complete:** (1) every card and story page says **"Full markup"** or **"Highlights"**, and the story page explains why ("We show highlights only, to respect [outlet]'s copyright"); (2) **"Open the full article at [outlet] ↗"** so readers can follow along with paragraph numbers; (3) **"See every highlight in the full text"** opens Check an article, where the reader pastes the article and gets the complete markup privately (not stored). For this to work, hand-rated findings record the **exact short quote** and its paragraph.
 
 ### "Common claims" (added 2 Oct)
 
