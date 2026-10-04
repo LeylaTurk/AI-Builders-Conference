@@ -1,12 +1,12 @@
 # Stage 4 — Ranked feature list (awaiting approval)
 
-**AI, Seriously? · feature-scoping workstream · 25 September 2026**
+**AI Decoded · feature-scoping workstream · 25 September 2026**
 
 Ranked using the official rubric weights (value to readers and judges) against Leyla's 40 hours and US$100 budget. **Nothing here is final until Leyla approves it at the gate.**
 
 ## Must have (about 19.5 hours)
 
-The app is not "AI, Seriously?" without these. Build them in this order.
+The app is not "AI Decoded" without these. Build them in this order.
 
 | # | ID | Feature | Why it's a Must |
 | --- | --- | --- | --- |

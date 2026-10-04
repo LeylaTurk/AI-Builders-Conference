@@ -1,4 +1,4 @@
-# Video plan: "AI, Seriously?" explainer series
+# Video plan: "AI Decoded" explainer series
 
 **Decided 26 September 2026.** Leyla wants practice making videos, a growing format in AI safety communication. The series teaches readers to spot hype themselves, complementing what the app shows them.
 

@@ -1,6 +1,6 @@
 # Assessment: private development demo with headlines and links
 
-**AI, Seriously? · 25 September 2026 · not legal advice**
+**AI Decoded · 25 September 2026 · not legal advice**
 
 **The use assessed:** a development demo that shows each outlet's **headline**, publisher and time, with a **link to the original article**. No article text, no summaries, no AI analysis of the outlets' content. If AI ratings are added, the AI clauses in [06](06_source_research.md) apply again and this assessment no longer holds.
 

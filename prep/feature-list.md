@@ -1,6 +1,6 @@
 # Approved feature list
 
-**AI, Seriously? · approved by Leyla Amur on 25 September 2026 · updated 25 Sep (reader paste added) and 26 Sep (link checking with allowlist, colour-coded markup, visual design decisions, matching rating scales)**
+**AI Decoded · approved by Leyla Amur on 25 September 2026 · updated 25 Sep (reader paste added) and 26 Sep (link checking with allowlist, colour-coded markup, visual design decisions, matching rating scales)**
 
 This list comes out of the feature-scoping workstream (`01`–`04` in this folder). It drives the mockup, the Day 1 brief and the daily build tasks. Change it only with Leyla's approval.
 
