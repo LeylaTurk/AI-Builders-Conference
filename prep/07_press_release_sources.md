@@ -1,6 +1,6 @@
 # Research: press-release and open sources for the live feed
 
-**AI, Seriously? · preparation research · 25 September 2026 · first pass**
+**AI Decoded · preparation research · 25 September 2026 · first pass**
 
 **Goal:** a connected, auto-updating feed that doesn't depend on big outlets' permission (see [06](06_source_research.md)). Company and university announcements are where much AI hype starts, and they're written to be spread.
 

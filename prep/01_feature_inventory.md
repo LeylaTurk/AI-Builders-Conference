@@ -1,6 +1,6 @@
 # Stage 1 — Feature inventory
 
-**AI, Seriously? · feature-scoping workstream · 25 September 2026**
+**AI Decoded · feature-scoping workstream · 25 September 2026**
 
 Every candidate feature found in the master brief, the archived news-feed brief (including its "Later" list) and the archived challenge brief. Two new candidates are marked **(new)**. IDs are used in later stages.
 
