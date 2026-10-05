@@ -18,7 +18,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | Mockup | **Done** 26 Sep: four clickable screens plus option boards ([canvas](https://claude.ai/artifact/NWzfGeYbTxNZkCLAfrVFLr), private until shared; source in `mockup/`). |
 | Videos | **Planned:** video 0 before the sprint; four learner videos after. |
 | Sprint approach | **Decided:** front-load prep; build-first sprint, not the official Daily Missions. |
-| Build stack | Open, decided by 4 Oct. |
+| Build stack | **Lovable** (decided 5 Oct); set up on Tue 6 Oct. |
 | AI model | Open: compare Claude Opus 5 and Claude Sonnet 5 on the calibration set. |
 | Budget and time | About **US$100** through judging; **40 hands-on hours** in the sprint, plus prep. |
 
@@ -306,6 +306,8 @@ Leyla's own build-first plan, not the official Daily Missions (which are guidanc
 
 Leyla builds solo with agent support; no coding experience assumed. It's a **web app**: people open it at a public web address, with no download. **Naming (decided 26 Sep):** readers see **"website"**; the challenge submission and technical notes say **"web app"**; a bare "app" is avoided in anything readers see, because it suggests something to install. **Stack decided by 4 Oct** after a short trial: agent-written code with free hosting (e.g. Claude Code with Vercel) versus a visual builder (e.g. Lovable, Bolt, Replit). Choose on: fetching feeds on a schedule, storing ratings, enforcing a spending cap, a public link without login, and operating it without code.
 
+**Decided 5 Oct: Lovable.** Setup moves to the first 1.5 hours of Tue 6 Oct; the rubric work (hand ratings, rating instructions, model choice) comes first on Mon 5 Oct because the rating engine needs it, but the blank site itself doesn't. Things to get right in Lovable: (1) the AI provider's API key is stored as a **backend secret** and every rating call runs in a backend function, never in the browser; (2) feed fetching and the daily rating run need a **scheduled backend job**; (3) ratings are stored in the backend database with the approve step before publishing; (4) the Hype and Gaps **scores are calculated by code** (port the formulas from the Rating Desk), not by the AI; (5) check that the Lovable plan's credits cover a week of building; (6) the hard spending limit is still set with the AI provider.
+
 **Budget: about US$100 through judging:** $15 tools and hosting (free tiers first), $45 AI calls, $15 keeping it live through judging, $25 contingency. Estimated AI cost for about 130 ratings: $20–60 on Claude Opus 5, $8–23 on Claude Sonnet 5 (`prep/03_feasibility.md`); pasted-article checks share the same daily cap. Use prompt caching, the Batch API for the daily run, and the site's own fetching of source pages. Set a hard spending limit with the AI provider. Video tools stay on free plans or are a separate personal cost.
 
 ## Participant profile
@@ -333,7 +335,7 @@ Leyla builds solo with agent support; no coding experience assumed. It's a **web
 - [ ] Video 0: script (30 Sep), film (2 Oct), publish (4 Oct)
 - [ ] Check the name; confirm feed sources and allowlist terms
 - [ ] Collect and hand-rate the backlog; compare models; measure cost
-- [ ] Choose and set up the stack; empty public deployment
+- [ ] Choose and set up the stack; empty public deployment (Lovable chosen 5 Oct; setup Tue 6 Oct)
 - [ ] Finish the profile (step 2 Skills, Code of Conduct, public display) and update the dashboard name and one-liner
 - [ ] Write the sprint task list; finalise the starting-point log
 - [ ] Block time for 6–10 October and the peer reviews on 10–12 October
