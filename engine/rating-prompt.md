@@ -56,12 +56,14 @@ For every **N**, give the **exact words** from the article that show the problem
 **Headline (H): does the headline match the story?**
 - **H1. The headline matches what the story shows.** N if the headline repeats a claim ("world's first", "better than doctors") as if it were established when the story only reports someone saying it.
 - **H2. The headline keeps any uncertainty.** "may", "could", "says": no certainty the story doesn't have.
+
+Putting a hyped phrase in quotation marks in the headline doesn't excuse it: the outlet chose to put it there (see "Quoted words count").
 - **H3. No clickbait.** No teasers, bait questions or shock words. Grand or superlative phrases in the headline ("world's first", "greatest revolution", "better than doctors") count as shock words, even in quotation marks.
 
 **Claims in proportion (P): is the finding kept to its real size?**
 - **P1. Doesn't sound surer than the source.** "may reduce" becomes "reduces", "linked to" becomes "causes", "early results" becomes "proves". Compare the article with the main source text; follow the Step 0 table when the source isn't read.
 - **P2. Doesn't stretch the finding further than it goes.** For example, a trial with 200 students at one school becomes "AI makes students learn faster"; tasks become jobs; a lab test becomes the real world; one company becomes "most companies".
-- **P3. Predictions are presented as predictions,** not stated as certain.
+- **P3. Predictions are presented as predictions,** not stated as certain. Y if the story makes no predictions (not NA).
 
 **Wording (W): is the language fair to the evidence?**
 - **W1. No exaggerated or promotional language, in either direction.** "revolutionary", "world's first", "the magic of AI", "the end of jobs".
