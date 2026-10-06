@@ -72,6 +72,6 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 | Privacy | ChatGPT is sharing your secrets. | Tom's Guide, April 2023 | 4/5 | 1/5 |
 | Existential risk | If anyone builds superintelligent AI, everyone dies. | Yudkowsky and Soares, book title, 2025 | 4/5 | 2/5 |
 
-**Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. This was the recommended option on Leyla's decision card; it can be reverted by removing one line in `scoring/claim-score.py`.
+**Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. Leyla chose this on a decision card on October 6; it can be reverted by removing one line in `scoring/claim-score.py`.
 
 The headline score records (`research/*-headline-score.json`) are an AI research draft. Unlike the careful versions, they have not had an independent evidence review. The Washington Post page returned an access error at cutoff, so its figure was confirmed through TechRepublic's summary.
