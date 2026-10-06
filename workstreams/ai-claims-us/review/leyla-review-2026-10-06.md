@@ -40,3 +40,21 @@ The rubric says "a material wording change requires rescoring". The headline sta
 ## Not changed
 
 No explainer, score, content file or Lovable prompt has been edited yet. Once you've picked headlines and interactive pieces, the next step is updating the explainers, `claims-content.json` and a new Lovable prompt to match.
+
+## Changes applied (October 6, 2026)
+
+Leyla asked for the fixes to be made, using the defaults above.
+
+| # | What changed |
+|---|---|
+| 1 | Each explainer title and the `headline` field are now plain statements. `readerQuestion` is gone from the content file. |
+| 2 | New `handoff/interactive-layers.json` holds the key word, claim dial, fine print, quiz and privacy picker. The louder and softer dial versions stay **unscored**. |
+| 3 | Every short answer (section B) is rewritten in plain language, 55–75 words, keeping inline sources. Sections C–F are unchanged. |
+| 4 | The Lovable prompt has a new section 5b for the interactive layers, and the design recommendation and decision summary carry an update note. |
+| 5 | Evidence-gap flags stay off. The score note now tells readers why there are no flags. |
+| 6 | Labels now read "Claim hype" and "AI rating, not yet reviewed", switching to "Reviewed by Leyla" once a topic is marked reviewed. |
+| 7 | The brief has a new "AI claims explained" entry. Common claims stays as it was. |
+| 8 | "U.S." is now "US" in the explainers, score records and metadata. The archived research briefs are left as written. |
+| 9 | The jobs headline says "by about 2030". |
+
+The exact scored claims are unchanged apart from the US spelling, so no scores changed. `assemble-content.py` now also checks that each headline is a statement, contains its key word, and matches the dial's scored version.

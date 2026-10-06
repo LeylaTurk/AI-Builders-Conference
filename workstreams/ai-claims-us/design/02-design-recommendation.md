@@ -1,5 +1,7 @@
 # Design recommendation: AI claims explained
 
+> **Update, October 6, 2026 (Leyla's review):** headlines are now plain statements, not questions, and nuance moves into tap-to-open interactive layers (key word, claim dial, fine print, quiz, privacy picker). The headline, score, score reason and key qualification stay visible without tapping. Labels match the feed: “AI rating, not yet reviewed”. See [the review](../review/leyla-review-2026-10-06.md) and section 5b of the [Lovable prompt](../handoff/lovable-prompt.md), which override the matching rules below.
+
 Status: final design decisions for the completed handoff. Use the finalized `claims-content.json` attachment with `lovable-prompt.md`; this specification does not authorize changing or publishing the live website.
 
 ## One small extension to the current product
@@ -40,9 +42,9 @@ Do not truncate claims with ellipses or hide qualifiers in hover text. Do not sq
 
 ## Detail-page reading order
 
-Keep a single reading column, maximum approximately 728px, with 20px mobile gutters. A page is regular scrolling text with sections and anchor links; it does not need accordions, tabs, a sticky side panel or a drawer. That keeps citations and caveats visible and makes browser Find and keyboard navigation work.
+Keep a single reading column, maximum approximately 728px, with 20px mobile gutters. A page is regular scrolling text with sections and anchor links, plus the interactive layers named in the update note; it does not need tabs, a sticky side panel or a drawer. That keeps citations and caveats visible and makes browser Find and keyboard navigation work.
 
-1. Topic eyebrow, starting reader question as h1; metadata line with US/global scope, research cutoff and accurate review state.
+1. Topic eyebrow, headline statement as h1; metadata line with US/global scope, research cutoff and accurate review state.
 2. White **The claim** panel: exact claim, its public-example citation(s), explicit scope/time horizon, and the key qualifier. Show the proposed hype score with the two- or three-sentence cited rationale immediately here. Below it show separate qualitative **Evidence limitations** from the final rubric/content. Never imply the hype score is a risk gauge. The finalized package uses qualitative evidence limitations consistently across all six topics, with null numeric evidence-gap fields. Render no numeric evidence-gap score in this release, including any diagnostic number in internal scoring material; never inherit it from the article engine. Include the score note and **How these scores work** anchor. An applicable unchecked hype item means **Not yet assessable**, without peppers or a number; an applicable unchecked evidence item means **Partly checked**, with the missing information and no numeric evidence-gap score.
 3. **The short answer** (all 50–80 words, with supplied inline citations), fully visible.
 4. Compact **On this page** anchor list: Meaning · Evidence · Actions · Sources and review. Use wrapping text links; no horizontally scrolling tabs.

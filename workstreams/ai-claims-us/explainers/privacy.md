@@ -1,14 +1,14 @@
-# Privacy: What happens to the information I give AI?
+# Privacy: ChatGPT may use your personal-account chats to train its AI, depending on your settings.
 
 ## A. The claim
 
-**The claim:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
+**The exact claim we scored:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
 
-This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for U.S. users as of October 6, 2026; other services require separate checks.
+This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for US users as of October 6, 2026; other services require separate checks.
 
 ## B. The short answer
 
-Yes, that possibility is real. OpenAI says eligible consumer conversations [may help train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance). An opt-out covers new conversations, with an exception for feedback you submit. But training, storage, human access, and sharing are different questions: switching training off does not delete chats. Business and Enterprise accounts have [different defaults](https://openai.com/enterprise-privacy/). These are company policy statements, not independent proof that every safeguard always works.
+Yes. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off. Turning it off doesn't delete your chats, and thumbs-up or thumbs-down feedback can still be used. Business and Enterprise accounts are [left out of training by default](https://openai.com/enterprise-privacy/). These are OpenAI's own rules; no independent audit has checked that they're always followed.
 
 ## C. What does this claim actually mean?
 
@@ -26,7 +26,7 @@ Yes, that possibility is real. OpenAI says eligible consumer conversations [may 
 
 These sources establish stated rules, not the percentage of conversations actually selected for training or a measured probability of exposure. There is no experiment or independent compliance audit in this evidence set.
 
-**U.S. protections:** The [FTC explains](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments) that deceptive privacy promises can violate federal law. State rights differ: [California’s access, correction, and deletion rights](https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/) have eligibility limits and exceptions, rather than applying to every American.
+**US protections:** The [FTC explains](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments) that deceptive privacy promises can violate federal law. State rights differ: [California’s access, correction, and deletion rights](https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/) have eligibility limits and exceptions, rather than applying to every American.
 
 ## E. Hype score and explanation
 
@@ -42,6 +42,6 @@ These sources establish stated rules, not the percentage of conversations actual
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Source dates: Tom’s Guide, updated October 30, 2025; OpenAI training explanation, May 6, 2026; enterprise privacy, updated January 8, 2026; FTC article, January 2024. OpenAI’s consumer-data, training-use, and data-controls Help Center pages displayed “Updated: 8 days ago”; temporary-chat and sharing pages displayed “Updated: 17 days ago.” CalPrivacy guidance is undated. Relative update labels are recorded as observed, not converted into invented publication dates. Inline links support the relevant statements.

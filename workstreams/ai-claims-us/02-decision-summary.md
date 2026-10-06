@@ -1,5 +1,7 @@
 # Decision summary
 
+> **Update, October 6, 2026 (Leyla's review):** headlines are now plain statements, not questions, and nuance moves into tap-to-open interactive layers (key word, claim dial, fine print, quiz, privacy picker). The headline, score, score reason and key qualification stay visible without tapping. Labels match the feed: “AI rating, not yet reviewed”. See [the review](review/leyla-review-2026-10-06.md) and section 5b of the [Lovable prompt](handoff/lovable-prompt.md), which override the matching rules below.
+
 Research cutoff: October 6, 2026. This package is a content and implementation handoff for Decoding the Hype. It does not modify or publish the live website. Human editorial review remains pending.
 
 ## Recommended product decision
@@ -14,14 +16,14 @@ These scores apply only to the displayed proposition. They are not ratings of an
 
 | Topic | Exact claim under examination | Proposed hype | Main unresolved issue |
 |---|---|---|---|
-| [Water](explainers/water.md) | AI data-center growth threatens local water supplies in water-stressed U.S. communities. | **1/5 — Grounded** | Facility-level and peak-demand data are incomplete; national all-data-center estimates cannot establish a particular town's shortage or AI-only use. |
+| [Water](explainers/water.md) | AI data-center growth threatens local water supplies in water-stressed US communities. | **1/5 — Grounded** | Facility-level and peak-demand data are incomplete; national all-data-center estimates cannot establish a particular town's shortage or AI-only use. |
 | [Jobs](explainers/jobs.md) | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** | This is a conditional scenario from May 2025, approximately 2026–2030. Its fraction and timetable are unvalidated; observed employment changes do not establish how much AI caused. |
-| [Energy and climate](explainers/energy-climate.md) | AI’s growing electricity demand could increase U.S. carbon emissions by 2030. | **1/5 — Grounded** | The comparison is extra emissions versus a path without the added demand, not necessarily rising total national emissions. Future supply, demand and offsets are uncertain. |
+| [Energy and climate](explainers/energy-climate.md) | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** | The comparison is extra emissions versus a path without the added demand, not necessarily rising total national emissions. Future supply, demand and offsets are uncertain. |
 | [Creativity](explainers/creativity.md) | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** | Targeted tests establish possibility, not ordinary-use frequency. US legal outcomes depend on conduct and facts; economic findings are not nationwide creator-income estimates. |
 | [Privacy](explainers/privacy.md) | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** | Official policies establish stated practices, not audited compliance or a personal exposure probability. Product, account, setting and state-law boundaries matter. |
 | [Existential risk](explainers/existential-risk.md) | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** | Current capabilities and incidents do not establish the inevitable extinction asserted after the condition. Timing, scaling, defenses and recovery remain contested. |
 
-The original questions remain page headings; **The claim** labels make assessment distinct from endorsement. Public occurrences, transparent paraphrases and exclusions are documented in each brief. No claim is described as the most common without prevalence evidence.
+Each page leads with a plain headline statement (changed October 6 from the original reader questions); **The exact claim we scored** label keeps assessment distinct from endorsement. Public occurrences, transparent paraphrases and exclusions are documented in each brief. No claim is described as the most common without prevalence evidence.
 
 ## Why the scores look like this
 

@@ -1,14 +1,14 @@
-# Water: Is AI draining our water supplies?
+# Water: AI data centers threaten water supplies in some dry US towns.
 
 ## A. The claim
 
-**The claim:** “AI data-center growth threatens local water supplies in water-stressed U.S. communities.”
+**The exact claim we scored:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
 
 This assesses site-specific risk from current and planned facilities. It narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to its local-threat proposition; it does not claim that every facility causes shortages.
 
 ## B. The short answer
 
-The local risk is real, but whether a particular project threatens your supply depends on its location, cooling system, water source, and hottest-day demand. A [2026 research preprint](https://arxiv.org/html/2603.02705v1) identifies pressure on community water capacity; its forecasts are conditional. [National estimates](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) cover all data centers, so they cannot be assigned wholly to AI. They also cannot establish that your town is running out of water.
+In some places, yes. Data centers can use a lot of water to stay cool, especially on [the hottest days](https://arxiv.org/html/2603.02705v1), when supplies are tightest. At six Virginia utilities, data centers already make up [between 2% and 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF). But the risk depends on where a data center is, how it's cooled and where its water comes from. [National totals](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) can't tell you whether your town is at risk.
 
 ## C. What does this claim actually mean?
 
@@ -20,11 +20,11 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## D. What evidence do we actually have?
 
-**National modeling:** Berkeley Lab’s December 2024 report estimated that all U.S. data centers directly consumed 66 billion liters in 2023—about 17 billion gallons. Its separate electricity-related estimate was nearly 800 billion liters, using regional electricity mixes and including reservoir evaporation. These are modeled allocations, not an AI-only water-meter census or proof of local shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
+**National modeling:** Berkeley Lab’s December 2024 report estimated that all US data centers directly consumed 66 billion liters in 2023—about 17 billion gallons. Its separate electricity-related estimate was nearly 800 billion liters, using regional electricity mixes and including reservoir evaporation. These are modeled allocations, not an AI-only water-meter census or proof of local shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
 **Observed records:** Virginia’s December 2024 audit found wide variation between buildings. Data centers represented 2–21% of use at six examined utilities, excluding reclaimed water. That shows substantial local demand in some places, not demonstrated deprivation of households. [Audit, pages 62–64](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
-**Newer projections:** A March 2026 preprint examines peak demand on U.S. water systems. Its results depend on computing growth and cooling-efficiency assumptions; future capacity requirements are not observed shortages. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
+**Newer projections:** A March 2026 preprint examines peak demand on US water systems. Its results depend on computing growth and cooling-efficiency assumptions; future capacity requirements are not observed shortages. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
 
 **Per-query estimates:** The widely discussed half-liter figure modeled roughly 10–50 medium-length GPT-3 responses, with location-dependent cooling and electricity assumptions. It is not a measurement of every current chatbot response. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
 
@@ -40,6 +40,6 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024 (2023 utility records); Li et al., version 5, March 26, 2025; Han et al., preprint March 3, 2026. USGS glossary and NOAA tool: undated pages. EPA consumer guide: updated November 21, 2025; EPA permit guide: updated July 22, 2026. Links appear beside the statements they support.

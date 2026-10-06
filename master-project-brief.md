@@ -107,6 +107,10 @@ The detail page shows the two ratings, the one-line reason, the **article marked
 
 **Enough stories to group (decided 2 Oct):** on Day 2, rate a **one-off batch of 30–40 recent stories** from the feed source, then return to the daily cap. Approving the batch takes about an hour. The archive's big-outlet stories can't appear here. **Estimate:** about 30 minutes for the claim tag in the rating step (cheap enough to include from the start, so the data exists either way) plus 1.5–2 hours for the page.
 
+### "AI claims explained" (added 6 Oct)
+
+A separate, hand-researched section at `/claims`, beside the Feed: **six claims** (water, jobs, energy and climate, creativity, privacy, existential risk), each with a plain **statement headline** (never a question), a hype score for the exact claim checked, a plain short answer, and **interactive layers** for the nuance (highlighted key word, a softer-to-louder claim dial, fine-print chips, a true/false/not-proven quiz, and a "what happens to my chat?" picker for privacy). Labels match the feed: "AI rating, not yet reviewed" until Leyla marks a page reviewed. Only hype is scored; evidence limits are described in words, without flags. It **does not replace "Common claims"**, which stays as above (built last, only if time allows). Research, content and Lovable prompt: `workstreams/ai-claims-us/`.
+
 ## How the ratings work
 
 ### Two ratings, matching scales: fewer is better

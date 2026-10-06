@@ -1,14 +1,14 @@
-# Jobs: Will AI replace my job?
+# Jobs: AI could eliminate half of US entry-level office jobs by about 2030.
 
 ## A. The claim
 
-**The claim:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
+**The exact claim we scored:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
 
 This preserves the possibility in [Dario Amodei's May 2025 warning](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), restated in his [January 2026 essay](https://darioamodei.com/essay/the-adolescence-of-technology). The original window runs approximately from 2026 to 2030; it does not restart today.
 
 ## B. The short answer
 
-AI may reduce hiring or replace some work, but the specific half-of-jobs forecast is an [executive's judgment](https://darioamodei.com/essay/the-adolescence-of-technology), not an established forecast. [US payroll research](https://digitaleconomy.stanford.edu/news/canariesaug26/) finds worrying patterns for younger workers while explicitly stopping short of proving AI caused them. [National survey tracking](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) finds no clear broad disruption yet. Neither result predicts what will happen to your particular job, or rules out larger changes ahead.
+Possibly, but nobody knows. This is a May 2025 warning from Anthropic's CEO, [not a tested forecast](https://darioamodei.com/essay/the-adolescence-of-technology). Young workers in jobs where AI can do many tasks are being hired less, but [researchers can't yet say AI is the cause](https://digitaleconomy.stanford.edu/news/canariesaug26/). Across the whole US job market, there's [no clear sign of broad AI disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 
@@ -41,7 +41,7 @@ The [August Stanford revision](https://digitaleconomy.stanford.edu/news/canaries
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
 
 - Amodei warning: Axios, May 28, 2025; author's essay, January 2026.
 - Stanford revision: August 12, 2026; ADP update: September 23, 2026 (August data).

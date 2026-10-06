@@ -1,14 +1,14 @@
-# Creativity: Is AI copying other people’s work?
+# Creativity: AI can reproduce copyrighted work from its training data.
 
 ## A. The claim
 
-**The claim:** Generative AI can reproduce copyrighted material from its training data.
+**The exact claim we scored:** Generative AI can reproduce copyrighted material from its training data.
 
 This is the output-copying possibility discussed in [extraction research](https://arxiv.org/html/2601.02671v1) and [OpenAI’s public acknowledgment of regurgitation](https://openai.com/index/openai-and-journalism/). “Can” means demonstrated possibility, not that every output is copied or every training use is illegal. We assess systems available to US users, using evidence available through October 6, 2026.
 
 ## B. The short answer
 
-Yes: researchers have prompted some models to reproduce protected text and training images. Their experiments establish that copying can happen; they do not measure how often an ordinary user encounters it. Training, output reproduction, and imitating a style raise different questions. US copyright outcomes depend on the particular conduct and facts, while concerns about consent and livelihoods extend beyond legal judgments. ([Book extraction](https://arxiv.org/html/2601.02671v1); [image extraction](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf); [Copyright Office analysis](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
+Yes, it can. Researchers got commercial AI models to [repeat long passages from books](https://arxiv.org/html/2601.02671v1), and other researchers [pulled training images out of image generators](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf). But they used special tests on chosen works, so we don't know how often it happens in normal use. Whether it's illegal [depends on the facts of each case](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven't settled it.
 
 ## C. What does this claim actually mean?
 
@@ -39,6 +39,6 @@ Style alone generally lacks copyright protection; copying protected expression w
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and colleagues, *Extracting books from production language models*, January 6, 2026 preprint (experiments August–September 2025); Carlini and colleagues, USENIX Security, August 2023; US Copyright Office, Part 3 prepublication report, May 9, 2025 (still labeled prepublication on the [official AI page](https://www.copyright.gov/ai/) at cutoff); Demirci, Hannane, and Zhu, August 2024 working paper, [journal version published online January 24, 2025](https://spiral.imperial.ac.uk/entities/publication/88113a91-b994-4717-8526-dadac657f1cb); *Bartz* orders June 23, 2025 and July 20, 2026; *ROSS* opinion filed September 29, 2026. Authors Guild clauses updated April 29, 2026; USAGov page updated March 2, 2026; Copyright Office and CCB guidance undated, checked at cutoff. Court-issued documents were inspected through Justia’s public copies.

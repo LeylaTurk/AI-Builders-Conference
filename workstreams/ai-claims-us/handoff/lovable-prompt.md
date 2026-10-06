@@ -2,7 +2,7 @@
 
 ## How to supply this handoff
 
-Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all six final explainers, exact claims and proposed scores, citations, dates, review states, scoring records and actual related-story candidates. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
+Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all six final explainers, statement headlines, interactive layers, exact claims and scores, citations, dates, review states, scoring records and actual related-story candidates. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
 
 This handoff is for implementation in the existing project's preview. It does not authorize publishing the live site. Human editorial review of the content is still pending.
 
@@ -14,16 +14,16 @@ I have attached **`claims-content.json`** to this message. It is the complete, a
 
 ### 1. Content package and exact expected output
 
-The attached JSON has `contentVersion: "claims-us-content-1.0"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
+The attached JSON has `contentVersion: "claims-us-content-1.1"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
 
-| Topic | Route | Exact claim under examination | Proposed claim hype |
-| --- | --- | --- | --- |
-| Water | `/claims/water` | AI data-center growth threatens local water supplies in water-stressed U.S. communities. | **1/5 — Grounded** |
-| Jobs | `/claims/jobs` | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
-| Energy and climate | `/claims/energy-climate` | AI’s growing electricity demand could increase U.S. carbon emissions by 2030. | **1/5 — Grounded** |
-| Creativity | `/claims/creativity` | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
-| Privacy | `/claims/privacy` | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
-| Existential risk | `/claims/existential-risk` | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
+| Topic | Route | Headline statement (page h1) | Exact claim we scored | Claim hype |
+| --- | --- | --- | --- | --- |
+| Water | `/claims/water` | AI data centers threaten water supplies in some dry US towns. | AI data-center growth threatens local water supplies in water-stressed US communities. | **1/5 — Grounded** |
+| Jobs | `/claims/jobs` | AI could eliminate half of US entry-level office jobs by about 2030. | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
+| Energy and climate | `/claims/energy-climate` | AI's growing power use could raise US carbon emissions by 2030. | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
+| Creativity | `/claims/creativity` | AI can reproduce copyrighted work from its training data. | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
+| Privacy | `/claims/privacy` | ChatGPT may use your personal-account chats to train its AI, depending on your settings. | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
+| Existential risk | `/claims/existential-risk` | Building superintelligent AI with 2025-era methods will kill everyone on Earth. | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 
 The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. The five 1/5 scores are intentional results of the same coarse checklist. They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
 
@@ -31,20 +31,21 @@ Field mapping for each topic:
 
 | JSON field | How to use it |
 | --- | --- |
-| `slug`, `route`, `topic`, `readerQuestion` | Stable route/key, topic label and detail-page h1. Use the exact provided route; Energy and climate is `/claims/energy-climate`. |
+| `slug`, `route`, `topic`, `headline` | Stable route/key, topic label, and the plain statement used as the detail-page h1 and the card heading. Headlines are statements, never questions. Use the exact provided route; Energy and climate is `/claims/energy-climate`. |
 | `claim` | Exact declarative wording on the topic card; also use to verify the claim shown in the detail text. Do not silently replace “could” with “will,” or “can” with “always.” |
-| `claimContextMarkdown` | Exact section A body: the claim, public examples, geographic/time context and inline citations. Render once in the claim-under-examination panel. It already includes the visible words “The claim.” |
+| `claimContextMarkdown` | Exact section A body: the claim, public examples, geographic/time context and inline citations. Render once in the claim-under-examination panel. It already includes the visible words “The exact claim we scored.” |
 | `scope`, `timeHorizon`, `keyQualification` | Show the exact scope and time horizon as normal text in the panel; keep the key qualification immediately beside the claim and on its card. Do not put these in tooltips. |
 | `shortAnswerMarkdown` | Exact section B body under “The short answer,” always expanded. |
 | `meaningMarkdown` | Exact section C body under “What does this claim actually mean?” |
 | `evidenceMarkdown` | Exact section D body under “What evidence do we actually have?” Retain evidence-type labels, dates, geography and limitations. |
-| `scoreExplanationMarkdown` | Exact section E body, placed next to the score in the claim panel. Its first line contains the proposed score. Render it once; do not repeat the full section farther down. |
+| `scoreExplanationMarkdown` | Exact section E body, placed next to the score in the claim panel. Its first line contains the score. Render it once; do not repeat the full section farther down. |
 | `actionsMarkdown` | Exact section F body under “What can you do if you are still concerned?” Preserve the supplied three to five actions, links and limits. |
 | `sourcesAndReviewMarkdown` | Exact section G body under “Sources and review.” It contains source publication/update dates, cutoff and remaining source-access caveats. |
-| `hype.level`, `hype.label`, `hype.displayPrefix` | Numeric pepper row with text `Proposed claim hype: [label] [level]/5`; supplied display prefix is authoritative. Score is a stored proposed editorial result, not an article-engine call. |
+| `hype.level`, `hype.label`, `hype.displayPrefix`, `hype.reason` | Numeric pepper row with text `Claim hype: [label] [level]/5`, followed by the one-line `hype.reason`. The supplied display prefix is authoritative. Score is a stored editorial result, not an article-engine call. |
+| `interactive` | Interactive layers described in section 5b: `keyWord`, `claimDial`, `finePrint`, `quiz`, and for privacy only `situationPicker`. Render the text exactly. |
 | `hype.checklist` | Five records keyed P1, P2, P3, W1, W2. Use for the “Detailed scoring checks” disclosure described below. Preserve reasons and links. |
 | `evidenceGaps.displayMode`, `.score`, `.limitations` | All six use qualitative limitations and a null numeric score. Show the supplied limitations as a short list titled “Evidence limitations.” Do not invent numbers, flags, or article-derived gap scores. |
-| `researchCutoff`, `aiEvidenceReview`, `humanEditorialReview`, `reviewStatusText` | Explicit metadata, never derived from deployment time or the viewer's clock. Use the status text exactly and show the cutoff/AI-check dates from the fields. Human review stays pending. |
+| `researchCutoff`, `aiEvidenceReview`, `humanEditorialReview`, `reviewStatusText` | Explicit metadata, never derived from deployment time or the viewer's clock. Use the status text exactly and show the cutoff/AI-check dates from the fields. Human review stays pending until Leyla marks a topic reviewed. |
 | `sourceLinks`, `claimExampleCitations` | Direct URL inventory for link checks and any extra source index. Inline citations in A–G are the primary reading experience; a bibliography alone is insufficient. `sourceLinks` supplies exact link titles, not separate structured publication dates: those dates remain in G. |
 | `remainingLimitations` | Preserve as content metadata. The concise public limitation list is `evidenceGaps.limitations`; do not dump the longer internal limitations a second time or remove caveats already in A–G. |
 | `relatedStoryCandidates` | Only these curated existing article IDs can seed related cards. Resolve them as described below. |
@@ -83,21 +84,22 @@ Use two equal columns at widths of 768px and up and a single column below that. 
 Each card contains:
 
 1. Linked serif topic heading.
-2. Small bold visible label **The claim**, then the complete exact `claim` text.
+2. The `headline` statement as the card's main text, in full.
 3. Exact `keyQualification` in readable normal text.
-4. Decorative pepper row and the full text `Proposed claim hype: [label] [level]/5`.
+4. Decorative pepper row and the full text `Claim hype: [label] [level]/5`, then `hype.reason`.
 5. Link **Read the evidence and actions**. Give it an accessible name that includes the topic, such as “Water: Read the evidence and actions.”
 
 Let text wrap and card height grow. Never ellipsize a claim, hide a qualifier, use a tooltip for a key limit, or communicate the score with peppers/color alone. The claim itself is text under examination, not an unlabeled site assertion. A linked heading and descriptive text link are sufficient; do not nest interactive controls inside an all-card button. Do not squeeze the entire short answer into cards.
 
 ### 5. Topic-page order and visible evidence
 
-Use a normal page with one readable column and anchors. Do not make the topic a modal or hide main sections behind tabs. Keep this order on desktop and mobile:
+Use a normal page with one readable column and anchors. Do not make the topic a modal or hide main sections behind tabs; the interactive layers in 5b are the only tap-to-open content. Keep this order on desktop and mobile:
 
 1. Breadcrumb **AI claims explained / [Topic]**, linked back to `/claims`.
-2. Topic label and `readerQuestion` as the single h1; research cutoff and exact review status.
-3. A white claim panel containing `claimContextMarkdown`, exact scope/time horizon and `keyQualification`; the proposed score row; `scoreExplanationMarkdown`; and the short `evidenceGaps.limitations` list. Keep the label **The claim** unambiguous. Add `section.scoreNote` and a **How these scores work** anchor link. Avoid duplicating `claim` a second time if section A already renders it. Do not separate the qualifier and rationale from the score.
+2. Topic label and `headline` as the single h1, with `interactive.keyWord.word` highlighted inside it (see 5b); research cutoff and exact review status.
+3. A white claim panel containing the score row and `hype.reason` directly under the h1, then `claimContextMarkdown`, exact scope/time horizon and `keyQualification`; `scoreExplanationMarkdown`; and the short `evidenceGaps.limitations` list. Keep the label **The claim** unambiguous. Add `section.scoreNote` and a **How these scores work** anchor link. Avoid duplicating `claim` a second time if section A already renders it. Do not separate the qualifier and rationale from the score.
 4. **The short answer** and `shortAnswerMarkdown`, always visible.
+4b. The interactive layers from section 5b, in this order: claim dial, fine print, situation picker (privacy only), quiz.
 5. A wrapping **On this page** list of ordinary anchor links: **Meaning**, **Evidence**, **Actions**, **Sources and review**. No horizontal scrolling tab strip.
 6. The full meaning, evidence and actions sections in that order, using their exact JSON bodies and headings from the mapping table.
 7. **How these scores work**, with the exact public methodology below and the scoring disclosure.
@@ -109,7 +111,7 @@ Anchor destinations need enough `scroll-margin-top` to avoid header overlap. Met
 
 Use this exact public methodology paragraph:
 
-> We assess the exact claim shown above using five checks: the status of the evidence, the scope of the claim, the certainty of predictions, inflated language, and unsupported agency or intentions. The same issue is counted once. Checks are marked met, not met, not applicable, or not checked. A calculated score summarizes the checked wording; an applicable unchecked item prevents a numeric score. The scale is coarse, so different claims can receive the same score. Evidence limitations and potential harm are explained separately. These proposed claim ratings adapt the site's article checklist. The newsfeed's article ratings remain separate.
+> We assess the exact claim shown above using five checks: the status of the evidence, the scope of the claim, the certainty of predictions, inflated language, and unsupported agency or intentions. The same issue is counted once. Checks are marked met, not met, not applicable, or not checked. A calculated score summarizes the checked wording; an applicable unchecked item prevents a numeric score. The scale is coarse, so different claims can receive the same score. Evidence limitations and potential harm are explained separately. These claim ratings adapt the site's article checklist. The newsfeed's article ratings remain separate.
 
 Show the scale as text: **1 Grounded · 2 A little spicy · 3 Turning it up · 4 Overheated · 5 Off the charts**. Always pair it with `section.scoreNote` where a reader could otherwise read the scale as a harm gauge.
 
@@ -121,11 +123,21 @@ Within that disclosure, a compact optional calculation note may state:
 
 Use the provided computed `hype` values; do not calculate claim scores by sending the explainers to the article engine. If a future content record is explicitly not assessable or lacks a valid level, show **Not yet assessable** with its supplied reason, without peppers or `0/5`. For this package all six scores are present. All six evidence-gap displays are qualitative; a numeric score in internal audit material must not override that design choice.
 
+### 5b. Interactive layers
+
+These layers carry the nuance so the headline can stay short. They add detail; they never hide the headline, score, score reason or key qualification. Use native buttons, `<details>` or radio inputs so everything works by keyboard and screen reader, with 44px tap targets. Respect `prefers-reduced-motion`. Render all text from `interactive` exactly.
+
+- **Key word** (`keyWord`): highlight `keyWord.word` inside the h1 using the same orange wavy underline as the article markup view's hype highlights. It is a button (`aria-expanded`) that opens `keyWord.explanation` in a small panel just below the h1.
+- **Claim dial** (`claimDial`, ordered softer → louder): heading **Turn the dial**, hint “The same topic, said more softly or more loudly. Only the marked version was scored.” A range input (labelled “Claim version”) with end labels **Softer** and **Louder**. It starts on the item where `scored` is true. Show the selected `text` as a large quote. For the scored item show peppers and `Claim hype: [label] [level]/5` plus “This is the version we checked against the evidence.” For other items show `origin` and “Not scored. A different claim from the one we checked, shown for comparison.” Never show peppers for unscored items.
+- **Fine print** (`finePrint`): heading **But…**, hint “The fine print, one tap at a time.” A wrapping row of chip buttons (`label`); tapping one opens its `text` below the row and closes any other.
+- **Situation picker** (`situationPicker`, privacy only): heading from `title`, hint “Pick the one that fits you. Based on OpenAI's published policies.” Radio options (`label`); the chosen option's `result` appears below.
+- **Quiz** (`quiz`): heading **True, false or not proven?**, hint “Test yourself.” Each `statement` gets three buttons, **True**, **False**, **Not proven**. After a tap, show “Right.” or “Not quite.” then the correct `answer` and `why`. Answers are text, not colour alone.
+
 ### 6. Citations, dates and review status
 
 Keep every inline citation in sections A–F; render every section G source/date note. Links in the body must be underlined, descriptive and keyboard accessible. Retain URLs, query strings and internal routes exactly; do not replace original evidence links with search results. Sources may open in the same tab. If you use new tabs, announce that consistently and use appropriate link security attributes.
 
-Display `reviewStatusText` exactly: **AI evidence review completed; human editorial review pending**. The AI check was an independent AI evidence review, not approval by a human expert. `humanEditorialReview.reviewer` and `.date` are null. Never show “Reviewed by Leyla” or a named human reviewer for these pages unless the content is later explicitly updated after such review.
+Display `reviewStatusText` exactly: **AI rating, not yet reviewed**, matching the feed's label. Use `section.reviewLabels`: show **Reviewed by Leyla** only when a topic's `humanEditorialReview.status` is `reviewed`. `humanEditorialReview.reviewer` and `.date` are null now. The AI check was an independent AI evidence review, not approval by a human expert.
 
 Format ISO dates for US readers, e.g. **Research checked through October 6, 2026** and **AI evidence review: October 6, 2026**, using the actual fields. Do not update them on deploy, refresh, feed update or rebuild. Do not change publication dates recorded as “undated,” preprint dates, court-status dates or relative update labels in G into guessed dates. Source dates, research cutoff, AI review and future human-review dates are separate facts. A refreshed feed never silently refreshes the explainers' research.
 
@@ -174,10 +186,11 @@ Complete these in preview and report pass/fail with any exact remaining issue. D
 
 - **All routes:** `/`, `/claims`, all six listed `/claims/[slug]` routes and at least two existing `/story/[id]` routes work. Direct loads, refresh, browser Back, breadcrumbs and both header links work. Active nav is correct. `/claims/energy-climate` is the canonical climate route.
 - **Complete exact content:** Six topics appear in the supplied order. Each A–G Markdown body is rendered once in the specified location, with the same wording and links as the attachment. Compare against `websiteCopyMarkdown`; headings/placement may differ, bodies must not. No omitted action, citation, qualification, source date or access limitation. No duplicated full article or placeholder.
-- **Scoring:** Water, Jobs, Energy and climate, Creativity and Privacy each show **1/5 — Grounded**; Existential risk shows **2/5 — A little spicy**. The claim, immediate qualification and exact cited rationale match that score. “Proposed” is visible. The five checklist answers/reasons/links remain accessible. All six evidence limitation sections are qualitative; no invented numeric evidence-gap values or safety percentages. No rescores were made by the article engine.
-- **Interpretation:** “The claim” is always visible; every card/page keeps its qualifier. Jobs retains the original approximately 2026–2030 warning window, energy retains the comparison-baseline caveat, privacy remains limited to the stated personal-account policy, and existential risk retains its conditional future-superintelligence scope. These checks preserve supplied copy, not new additions. Score meaning is visible; no low-score “safe” badge.
+- **Scoring:** Water, Jobs, Energy and climate, Creativity and Privacy each show **1/5 — Grounded**; Existential risk shows **2/5 — A little spicy**. The claim, immediate qualification and exact cited rationale match that score. The `hype.reason` line is visible next to the score. The five checklist answers/reasons/links remain accessible. All six evidence limitation sections are qualitative; no invented numeric evidence-gap values or safety percentages. No rescores were made by the article engine.
+- **Statements and interactivity:** Every h1 and card heading is the `headline` statement, with no question marks. The key word is highlighted and opens its explanation by keyboard and tap. The dial starts on the scored version; unscored versions show no peppers. Fine-print chips, quiz and privacy picker work by keyboard, tap and screen reader. The headline, score, `hype.reason` and `keyQualification` are visible without any interaction.
+- **Interpretation:** “The exact claim we scored” is always visible; every card/page keeps its qualifier. Jobs retains the original approximately 2026–2030 warning window, energy retains the comparison-baseline caveat, privacy remains limited to the stated personal-account policy, and existential risk retains its conditional future-superintelligence scope. These checks preserve supplied copy, not new additions. Score meaning is visible; no low-score “safe” badge.
 - **Citations/resources:** Every supplied external inline link has the correct destination in the rendered page; internal `/claims/water` opens correctly. Check representative live sources and report any inaccessible links without inventing replacements or silently dropping them. Section G retains source dates and distinctions between publication date, data period and inspected policy date. No search-snippet substitutions.
-- **Review/dates:** All six show the exact completed AI-review/pending human-review state and metadata dates from JSON. No “Reviewed by Leyla” on the new pages. Rebuild/refresh does not change research/review dates. Existing articles keep their own review labels.
+- **Review/dates:** All six show **AI rating, not yet reviewed** and metadata dates from JSON. No “Reviewed by Leyla” until a topic's human review status is updated. Rebuild/refresh does not change research/review dates. Existing articles keep their own review labels.
 - **Related stories:** Resolve the three distinct curated IDs when available; verify clicks open their existing story pages. Water and Energy may reference the same infrastructure story; Privacy visibly says Australia. Jobs and Creativity show the honest empty state. Test missing-ID and failed-fetch behavior; full explainers remain available.
 - **Mobile/accessibility:** At all four widths and 200% zoom, no clipping or horizontal page overflow. Two-row mobile navigation, one-column cards, readable labels/links, visible keyboard focus, skip link, anchor links and disclosure controls work. Screen-reader accessible score names contain numbers and words, not a sequence of peppers. Verify contrast.
 - **Feed regression:** Before/after compare the current story order/content, existing timestamp, unrated state, rated/partly-checked labels, original-source links and article-detail functionality. Feed refreshing/loading/error behavior and article-engine paths stay intact. The only intended feed-body addition is the compact invitation. Claim content still loads when the feed request fails.

@@ -2,8 +2,8 @@
   "topics": [
     {
       "topic": "water",
-      "wordsAThroughF": 539,
-      "shortAnswerWords": 64,
+      "wordsAThroughF": 545,
+      "shortAnswerWords": 70,
       "actions": 3,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 9,
@@ -14,8 +14,8 @@
     },
     {
       "topic": "jobs",
-      "wordsAThroughF": 512,
-      "shortAnswerWords": 64,
+      "wordsAThroughF": 507,
+      "shortAnswerWords": 56,
       "actions": 4,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 13,
@@ -26,8 +26,8 @@
     },
     {
       "topic": "energy-climate",
-      "wordsAThroughF": 545,
-      "shortAnswerWords": 64,
+      "wordsAThroughF": 553,
+      "shortAnswerWords": 75,
       "actions": 3,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 11,
@@ -38,8 +38,8 @@
     },
     {
       "topic": "creativity",
-      "wordsAThroughF": 545,
-      "shortAnswerWords": 68,
+      "wordsAThroughF": 539,
+      "shortAnswerWords": 59,
       "actions": 4,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 14,
@@ -50,8 +50,8 @@
     },
     {
       "topic": "privacy",
-      "wordsAThroughF": 547,
-      "shortAnswerWords": 64,
+      "wordsAThroughF": 545,
+      "shortAnswerWords": 61,
       "actions": 5,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 11,
@@ -62,8 +62,8 @@
     },
     {
       "topic": "existential-risk",
-      "wordsAThroughF": 510,
-      "shortAnswerWords": 66,
+      "wordsAThroughF": 502,
+      "shortAnswerWords": 55,
       "actions": 3,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 12,
@@ -74,17 +74,17 @@
     }
   ],
   "sourceFileSha256": {
-    "explainers/water.md": "6fa0c8d01c6b132f566df45348313f87df8d669eed72f978c56301e89c938ad1",
-    "research/water-score.json": "c03b572c5cc3dc5c0cb4bdb60eb2074f322a6b61f2d4a7ed33a3d2e83fc04462",
-    "explainers/jobs.md": "c837d71fc1ca6602c926ec5b321321ef63d7dd11640f68f321ce2dd6c2572a86",
+    "explainers/water.md": "718c5a4f2803ce82e3b44a47a7953d53a3186c2fb24c275e704b2daa238b4042",
+    "research/water-score.json": "1d03198978e9d5e0798a633a4a1d165a523e09684c2024229f074bfbf2e46b73",
+    "explainers/jobs.md": "325dee5aa7a3515f2512a0100e35cd1546be10a1d94a606b823824147d48eed5",
     "research/jobs-score.json": "f4281c7755d9e481bb9453ae18f12fccd48df0d9f02f2c027c007974f4f073e9",
-    "explainers/energy-climate.md": "6f896f061f5534b7951bd8629d69051d708d277abaf40cd98b2cc74b68e5ee74",
-    "research/energy-climate-score.json": "6f0bba3417a10947792f3496c5ccc3c9074ddd78542b7b2b74b408d46bff253e",
-    "explainers/creativity.md": "94697f86f56aa627d2755a1cda5e04b0413271601495a488d178018c9ebe914f",
+    "explainers/energy-climate.md": "1f4b08a9ec494f9d332b78f4489c9a7ea65407ab5513aee1deffef1ab1c34e71",
+    "research/energy-climate-score.json": "6ffe1f33daf7c87f9deae3390aad42ed16430783a0730bd7131cba791c478b1f",
+    "explainers/creativity.md": "4b75b8da0f1876fd27886d4ba8f98beaca7a278434636d4ee4d92bf1e8bb304b",
     "research/creativity-score.json": "fadee6baf62c06663013a3fbe7127adedf7e3535f6fa66825362f719354d1bdf",
-    "explainers/privacy.md": "cba7b2dccc5be792d1c3f83d8410cbcb91698967fa73c3891127de26da10a42c",
-    "research/privacy-score.json": "b2cffeb72f03a5b400e19baf19f2a90301649b1d3dbc1440be3f2e8d0b77efee",
-    "explainers/existential-risk.md": "28d483ff38f1d058f442e8d1a7a56968f5a437a41ac383965b617e1ae0b6e591",
+    "explainers/privacy.md": "128fb6aced84d7126437eefa442328ada9b469856486d3e422b716fb5d147a42",
+    "research/privacy-score.json": "1ce30a1341b6873868cb595222cf51c6ababed130fdf653fc9c7d6322c6db153",
+    "explainers/existential-risk.md": "13447b559e58f9b2424f766f747f0889d8c9350bf857227f70458ebebc38277c",
     "research/existential-risk-score.json": "8e6f0384f4bde1e7c205bb3c8d512660dfd26e531be1cf67158dcfb157e9df6f"
   }
 }

@@ -1,18 +1,18 @@
 # Exact website copy: AI claims explained
 
-Human editorial review pending. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
+AI rating, not yet reviewed. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
 
-# Water: Is AI draining our water supplies?
+# Water: AI data centers threaten water supplies in some dry US towns.
 
 ## A. The claim
 
-**The claim:** “AI data-center growth threatens local water supplies in water-stressed U.S. communities.”
+**The exact claim we scored:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
 
 This assesses site-specific risk from current and planned facilities. It narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to its local-threat proposition; it does not claim that every facility causes shortages.
 
 ## B. The short answer
 
-The local risk is real, but whether a particular project threatens your supply depends on its location, cooling system, water source, and hottest-day demand. A [2026 research preprint](https://arxiv.org/html/2603.02705v1) identifies pressure on community water capacity; its forecasts are conditional. [National estimates](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) cover all data centers, so they cannot be assigned wholly to AI. They also cannot establish that your town is running out of water.
+In some places, yes. Data centers can use a lot of water to stay cool, especially on [the hottest days](https://arxiv.org/html/2603.02705v1), when supplies are tightest. At six Virginia utilities, data centers already make up [between 2% and 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF). But the risk depends on where a data center is, how it's cooled and where its water comes from. [National totals](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) can't tell you whether your town is at risk.
 
 ## C. What does this claim actually mean?
 
@@ -24,11 +24,11 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## D. What evidence do we actually have?
 
-**National modeling:** Berkeley Lab’s December 2024 report estimated that all U.S. data centers directly consumed 66 billion liters in 2023—about 17 billion gallons. Its separate electricity-related estimate was nearly 800 billion liters, using regional electricity mixes and including reservoir evaporation. These are modeled allocations, not an AI-only water-meter census or proof of local shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
+**National modeling:** Berkeley Lab’s December 2024 report estimated that all US data centers directly consumed 66 billion liters in 2023—about 17 billion gallons. Its separate electricity-related estimate was nearly 800 billion liters, using regional electricity mixes and including reservoir evaporation. These are modeled allocations, not an AI-only water-meter census or proof of local shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
 **Observed records:** Virginia’s December 2024 audit found wide variation between buildings. Data centers represented 2–21% of use at six examined utilities, excluding reclaimed water. That shows substantial local demand in some places, not demonstrated deprivation of households. [Audit, pages 62–64](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
-**Newer projections:** A March 2026 preprint examines peak demand on U.S. water systems. Its results depend on computing growth and cooling-efficiency assumptions; future capacity requirements are not observed shortages. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
+**Newer projections:** A March 2026 preprint examines peak demand on US water systems. Its results depend on computing growth and cooling-efficiency assumptions; future capacity requirements are not observed shortages. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
 
 **Per-query estimates:** The widely discussed half-liter figure modeled roughly 10–50 medium-length GPT-3 responses, with location-dependent cooling and electricity assumptions. It is not a measurement of every current chatbot response. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
 
@@ -44,23 +44,23 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024 (2023 utility records); Li et al., version 5, March 26, 2025; Han et al., preprint March 3, 2026. USGS glossary and NOAA tool: undated pages. EPA consumer guide: updated November 21, 2025; EPA permit guide: updated July 22, 2026. Links appear beside the statements they support.
 
 ---
 
-# Jobs: Will AI replace my job?
+# Jobs: AI could eliminate half of US entry-level office jobs by about 2030.
 
 ## A. The claim
 
-**The claim:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
+**The exact claim we scored:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
 
 This preserves the possibility in [Dario Amodei's May 2025 warning](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), restated in his [January 2026 essay](https://darioamodei.com/essay/the-adolescence-of-technology). The original window runs approximately from 2026 to 2030; it does not restart today.
 
 ## B. The short answer
 
-AI may reduce hiring or replace some work, but the specific half-of-jobs forecast is an [executive's judgment](https://darioamodei.com/essay/the-adolescence-of-technology), not an established forecast. [US payroll research](https://digitaleconomy.stanford.edu/news/canariesaug26/) finds worrying patterns for younger workers while explicitly stopping short of proving AI caused them. [National survey tracking](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) finds no clear broad disruption yet. Neither result predicts what will happen to your particular job, or rules out larger changes ahead.
+Possibly, but nobody knows. This is a May 2025 warning from Anthropic's CEO, [not a tested forecast](https://darioamodei.com/essay/the-adolescence-of-technology). Young workers in jobs where AI can do many tasks are being hired less, but [researchers can't yet say AI is the cause](https://digitaleconomy.stanford.edu/news/canariesaug26/). Across the whole US job market, there's [no clear sign of broad AI disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 
@@ -93,7 +93,7 @@ The [August Stanford revision](https://digitaleconomy.stanford.edu/news/canaries
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
 
 - Amodei warning: Axios, May 28, 2025; author's essay, January 2026.
 - Stanford revision: August 12, 2026; ADP update: September 23, 2026 (August data).
@@ -105,17 +105,17 @@ Research cutoff: **October 6, 2026**. **AI research and editorial checks complet
 
 ---
 
-# Energy and climate: How bad is AI for the environment?
+# Energy and climate: AI's growing power use could raise US carbon emissions by 2030.
 
 ## A. The claim
 
-**The claim:** “AI’s growing electricity demand could increase U.S. carbon emissions by 2030.”
+**The exact claim we scored:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
 
-Here, “increase” means extra emissions compared with otherwise similar development without the added demand; total U.S. emissions need not rise. This narrows [Cornell researchers’ public warning](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) about computing demand outpacing cleaner electricity.
+Here, “increase” means extra emissions compared with otherwise similar development without the added demand; total US emissions need not rise. This narrows [Cornell researchers’ public warning](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) about computing demand outpacing cleaner electricity.
 
 ## B. The short answer
 
-Yes, that is a credible risk, not a guaranteed outcome. AI contributes to growing electricity demand, and supplying it with fossil fuels adds carbon emissions. The [IEA’s 2026 assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) identifies both expanding clean-energy investment and U.S. gas-power development. The size of the impact depends on demand, efficiency, location, and electricity supply. [Potential climate benefits](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change) from AI applications do not automatically cancel those emissions.
+It could. AI is helping push up demand for electricity, and if gas or coal plants supply the extra power, emissions are higher than they'd be without it. The [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) sees both new clean energy and new gas power being built in the US. How much AI adds depends on how fast demand grows and how clean the grid gets. Total US emissions could still fall; AI would make them fall more slowly.
 
 ## C. What does this claim actually mean?
 
@@ -127,11 +127,11 @@ This page focuses on electricity and climate. See our [water explainer](/claims/
 
 ## D. What evidence do we actually have?
 
-**U.S. historical estimate:** Berkeley Lab estimated that all data centers used 4.4% of U.S. electricity in 2023. This is a model informed by equipment and operating data, not an AI-only meter reading. Its documented data gaps limit precision. [December 2024 report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
+**US historical estimate:** Berkeley Lab estimated that all data centers used 4.4% of US electricity in 2023. This is a model informed by equipment and operating data, not an AI-only meter reading. Its documented data gaps limit precision. [December 2024 report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
-**Updated global projection:** The IEA estimates all data centers used 485 terawatt-hours in 2025 and projects 950 in 2030. Those global totals include non-AI workloads. Its April 2026 analysis also finds U.S. developers pursuing onsite gas generation; announced projects are not all operating plants. [2026 assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
+**Updated global projection:** The IEA estimates all data centers used 485 terawatt-hours in 2025 and projects 950 in 2030. Those global totals include non-AI workloads. Its April 2026 analysis also finds US developers pursuing onsite gas generation; announced projects are not all operating plants. [2026 assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
 
-**U.S. regional scenario:** Virginia’s legislative audit warned in December 2024 that rapid data-center growth could complicate clean-energy goals and delay fossil-plant retirements. It modeled all data centers in one state, not inevitable national outcomes. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
+**US regional scenario:** Virginia’s legislative audit warned in December 2024 that rapid data-center growth could complicate clean-energy goals and delay fossil-plant retirements. It modeled all data centers in one state, not inevitable national outcomes. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 **Possible offsets:** Efficiency can reduce electricity per task while total use grows. AI can also improve energy management, but projected climate savings require adoption and can be eroded by increased consumption. These are conditional benefits, not a demonstrated national net reduction. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).
 
@@ -147,23 +147,23 @@ This page focuses on electricity and climate. See our [water explainer](/claims/
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.
 
 ---
 
-# Creativity: Is AI copying other people’s work?
+# Creativity: AI can reproduce copyrighted work from its training data.
 
 ## A. The claim
 
-**The claim:** Generative AI can reproduce copyrighted material from its training data.
+**The exact claim we scored:** Generative AI can reproduce copyrighted material from its training data.
 
 This is the output-copying possibility discussed in [extraction research](https://arxiv.org/html/2601.02671v1) and [OpenAI’s public acknowledgment of regurgitation](https://openai.com/index/openai-and-journalism/). “Can” means demonstrated possibility, not that every output is copied or every training use is illegal. We assess systems available to US users, using evidence available through October 6, 2026.
 
 ## B. The short answer
 
-Yes: researchers have prompted some models to reproduce protected text and training images. Their experiments establish that copying can happen; they do not measure how often an ordinary user encounters it. Training, output reproduction, and imitating a style raise different questions. US copyright outcomes depend on the particular conduct and facts, while concerns about consent and livelihoods extend beyond legal judgments. ([Book extraction](https://arxiv.org/html/2601.02671v1); [image extraction](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf); [Copyright Office analysis](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
+Yes, it can. Researchers got commercial AI models to [repeat long passages from books](https://arxiv.org/html/2601.02671v1), and other researchers [pulled training images out of image generators](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf). But they used special tests on chosen works, so we don't know how often it happens in normal use. Whether it's illegal [depends on the facts of each case](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven't settled it.
 
 ## C. What does this claim actually mean?
 
@@ -194,23 +194,23 @@ Style alone generally lacks copyright protection; copying protected expression w
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and colleagues, *Extracting books from production language models*, January 6, 2026 preprint (experiments August–September 2025); Carlini and colleagues, USENIX Security, August 2023; US Copyright Office, Part 3 prepublication report, May 9, 2025 (still labeled prepublication on the [official AI page](https://www.copyright.gov/ai/) at cutoff); Demirci, Hannane, and Zhu, August 2024 working paper, [journal version published online January 24, 2025](https://spiral.imperial.ac.uk/entities/publication/88113a91-b994-4717-8526-dadac657f1cb); *Bartz* orders June 23, 2025 and July 20, 2026; *ROSS* opinion filed September 29, 2026. Authors Guild clauses updated April 29, 2026; USAGov page updated March 2, 2026; Copyright Office and CCB guidance undated, checked at cutoff. Court-issued documents were inspected through Justia’s public copies.
 
 ---
 
-# Privacy: What happens to the information I give AI?
+# Privacy: ChatGPT may use your personal-account chats to train its AI, depending on your settings.
 
 ## A. The claim
 
-**The claim:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
+**The exact claim we scored:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
 
-This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for U.S. users as of October 6, 2026; other services require separate checks.
+This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for US users as of October 6, 2026; other services require separate checks.
 
 ## B. The short answer
 
-Yes, that possibility is real. OpenAI says eligible consumer conversations [may help train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance). An opt-out covers new conversations, with an exception for feedback you submit. But training, storage, human access, and sharing are different questions: switching training off does not delete chats. Business and Enterprise accounts have [different defaults](https://openai.com/enterprise-privacy/). These are company policy statements, not independent proof that every safeguard always works.
+Yes. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off. Turning it off doesn't delete your chats, and thumbs-up or thumbs-down feedback can still be used. Business and Enterprise accounts are [left out of training by default](https://openai.com/enterprise-privacy/). These are OpenAI's own rules; no independent audit has checked that they're always followed.
 
 ## C. What does this claim actually mean?
 
@@ -228,7 +228,7 @@ Yes, that possibility is real. OpenAI says eligible consumer conversations [may 
 
 These sources establish stated rules, not the percentage of conversations actually selected for training or a measured probability of exposure. There is no experiment or independent compliance audit in this evidence set.
 
-**U.S. protections:** The [FTC explains](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments) that deceptive privacy promises can violate federal law. State rights differ: [California’s access, correction, and deletion rights](https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/) have eligibility limits and exceptions, rather than applying to every American.
+**US protections:** The [FTC explains](https://www.ftc.gov/policy/advocacy-research/tech-at-ftc/2024/01/ai-companies-uphold-your-privacy-confidentiality-commitments) that deceptive privacy promises can violate federal law. State rights differ: [California’s access, correction, and deletion rights](https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/) have eligibility limits and exceptions, rather than applying to every American.
 
 ## E. Hype score and explanation
 
@@ -244,23 +244,23 @@ These sources establish stated rules, not the percentage of conversations actual
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Source dates: Tom’s Guide, updated October 30, 2025; OpenAI training explanation, May 6, 2026; enterprise privacy, updated January 8, 2026; FTC article, January 2024. OpenAI’s consumer-data, training-use, and data-controls Help Center pages displayed “Updated: 8 days ago”; temporary-chat and sharing pages displayed “Updated: 17 days ago.” CalPrivacy guidance is undated. Relative update labels are recorded as observed, not converted into invented publication dates. Inline links support the relevant statements.
 
 ---
 
-# Existential risk: Will AI kill us all?
+# Existential risk: Building superintelligent AI with 2025-era methods will kill everyone on Earth.
 
 ## A. The claim
 
-**The claim:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
+**The exact claim we scored:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
 
 This faithfully paraphrases Yudkowsky and Soares’s conditional prediction, [quoted in Lawfare](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions). It concerns future, globally consequential systems, with no fixed deadline.
 
 ## B. The short answer
 
-There is evidence of dangerous AI behavior, but it does not establish inevitable extinction. [A 2026 independent investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) documented unauthorized hacking by agents during benchmark testing. The [International AI Safety Report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) describes unresolved links between capabilities, harmful behavior, and catastrophic loss of control. Neither “everyone will die” nor “it is all imaginary” follows from this evidence. Serious precautions do not require pretending the outcome is certain.
+That's not proven. AI systems have behaved dangerously in tests, including [hacking they weren't supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to "everyone will die" takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn't support certainty in either direction: "we're doomed" and "it's all made up" both go too far.
 
 ## C. What does this claim actually mean?
 
@@ -292,7 +292,7 @@ These are routes to participation; individual choices cannot eliminate a global 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources inspected October 6, 2026:
 

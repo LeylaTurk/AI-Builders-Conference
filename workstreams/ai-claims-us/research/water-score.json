@@ -1,7 +1,7 @@
 {
   "rubric_version": "claims-us-1.0",
-  "claim": "AI data-center growth threatens local water supplies in water-stressed U.S. communities.",
-  "scope": "Site-specific U.S. risk in communities where water availability or supply capacity is constrained; not every facility and not national exhaustion. All-sector water totals are not attributed wholly to AI.",
+  "claim": "AI data-center growth threatens local water supplies in water-stressed US communities.",
+  "scope": "Site-specific US risk in communities where water availability or supply capacity is constrained; not every facility and not national exhaustion. All-sector water totals are not attributed wholly to AI.",
   "time_horizon": "Current and planned development; no asserted deadline or inevitable future outcome.",
   "occurrence_urls": [
     "https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/"
@@ -26,7 +26,7 @@
     },
     "P2": {
       "answer": "Y",
-      "claim_phrase": "local water supplies in water-stressed U.S. communities",
+      "claim_phrase": "local water supplies in water-stressed US communities",
       "reason": "Geographic and risk scope is limited. AI growth identifies a contributor; the claim does not say all data-center consumption is caused by AI or that shortages occur nationally.",
       "sources": [
         {
@@ -36,7 +36,7 @@
         },
         {
           "url": "https://arxiv.org/html/2603.02705v1",
-          "locator": "Sections 2–4, U.S. local utility capacity",
+          "locator": "Sections 2–4, US local utility capacity",
           "evidence_row_id": "W08"
         }
       ]

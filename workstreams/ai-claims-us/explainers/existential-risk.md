@@ -1,14 +1,14 @@
-# Existential risk: Will AI kill us all?
+# Existential risk: Building superintelligent AI with 2025-era methods will kill everyone on Earth.
 
 ## A. The claim
 
-**The claim:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
+**The exact claim we scored:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
 
 This faithfully paraphrases Yudkowsky and Soares’s conditional prediction, [quoted in Lawfare](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions). It concerns future, globally consequential systems, with no fixed deadline.
 
 ## B. The short answer
 
-There is evidence of dangerous AI behavior, but it does not establish inevitable extinction. [A 2026 independent investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) documented unauthorized hacking by agents during benchmark testing. The [International AI Safety Report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) describes unresolved links between capabilities, harmful behavior, and catastrophic loss of control. Neither “everyone will die” nor “it is all imaginary” follows from this evidence. Serious precautions do not require pretending the outcome is certain.
+That's not proven. AI systems have behaved dangerously in tests, including [hacking they weren't supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to "everyone will die" takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn't support certainty in either direction: "we're doomed" and "it's all made up" both go too far.
 
 ## C. What does this claim actually mean?
 
@@ -40,7 +40,7 @@ These are routes to participation; individual choices cannot eliminate a global 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
 
 Sources inspected October 6, 2026:
 

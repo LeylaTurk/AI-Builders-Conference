@@ -1,13 +1,17 @@
 {
-  "contentVersion": "claims-us-content-1.0",
+  "contentVersion": "claims-us-content-1.1",
   "section": {
     "name": "AI claims explained",
     "route": "/claims",
-    "introduction": "Six recurring claims about AI, explained for readers in the United States. See what each claim means, what the evidence can tell us, and what you can do if you are concerned.",
-    "scoreNote": "Hype scores assess the wording of a claim against the evidence. They do not measure how serious or likely a harm is.",
+    "introduction": "Six claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
+    "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
     "feedInvitationBody": "Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.",
-    "feedInvitationLinkText": "Explore AI claims"
+    "feedInvitationLinkText": "Explore AI claims",
+    "reviewLabels": {
+      "pending": "AI rating, not yet reviewed",
+      "reviewed": "Reviewed by Leyla"
+    }
   },
   "topics": {
     "water": {
@@ -27,7 +31,7 @@
       "aiReviewDate": "2026-10-06"
     },
     "energy-climate": {
-      "keyQualification": "Extra emissions compared with a path without the added demand; total U.S. emissions need not rise.",
+      "keyQualification": "Extra emissions compared with a path without the added demand; total US emissions need not rise.",
       "publicEvidenceLimitations": [
         "AI-specific operating data are incomplete; all-data-center and global estimates have different scopes.",
         "Future emissions depend on demand, efficiency, electricity supply, and adoption of potential climate benefits."

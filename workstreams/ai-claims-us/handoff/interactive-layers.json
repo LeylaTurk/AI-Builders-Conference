@@ -1,0 +1,427 @@
+{
+  "version": "claims-us-interactive-1.0",
+  "status": "Draft copy from the October 6, 2026 plain-language review; simplified from the explainers without new facts.",
+  "topics": {
+    "water": {
+      "headline": "AI data centers threaten water supplies in some dry US towns.",
+      "keyWord": {
+        "word": "threaten",
+        "explanation": "Threaten means a real risk worth checking locally, not a shortage that has already happened everywhere."
+      },
+      "scoreReason": "Says “threaten”, not “drain”, and limits itself to some places. That matches the evidence.",
+      "claimDial": [
+        {
+          "text": "AI's water use is harmless because it all comes back as rain.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "AI data centers threaten water supplies in some dry US towns.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "Every AI prompt uses a bottle of water.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "AI is draining America's water supply.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Not all data centers are AI",
+          "text": "National water figures cover every data center, so they can't all be blamed on AI."
+        },
+        {
+          "label": "Using vs. using up",
+          "text": "“Withdrawal” means taking water from a river or aquifer. “Consumption” is the part that evaporates or can't be reused nearby."
+        },
+        {
+          "label": "Hot days matter most",
+          "text": "A data center can look small over a year but use a lot on the hottest days, when water is scarcest."
+        },
+        {
+          "label": "Cooling is a trade-off",
+          "text": "Dry cooling uses less water but more electricity."
+        },
+        {
+          "label": "That “bottle of water” number",
+          "text": "It was a 2023 estimate for 10–50 answers from GPT-3, an older model. It isn't a measurement of today's chatbots."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Every data center causes water shortages.",
+          "answer": "False",
+          "why": "It depends on location, cooling and water source."
+        },
+        {
+          "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
+          "answer": "True",
+          "why": "Peak demand on the hottest days is the pressure point."
+        },
+        {
+          "statement": "AI data centers are why my town has water restrictions.",
+          "answer": "Not proven",
+          "why": "Drought maps and utility reports can't pin a shortage on one user."
+        }
+      ]
+    },
+    "jobs": {
+      "headline": "AI could eliminate half of US entry-level office jobs by about 2030.",
+      "keyWord": {
+        "word": "could",
+        "explanation": "Could describes a possible scenario. It needs AI to keep improving fast, companies to adopt it widely, and jobs to disappear faster than new ones appear."
+      },
+      "scoreReason": "Says “could” and rests on a reasoned scenario. The half-of-jobs number itself hasn't been tested.",
+      "claimDial": [
+        {
+          "text": "AI isn't affecting jobs at all.",
+          "scored": false,
+          "origin": "example (not scored)"
+        },
+        {
+          "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "AI will eliminate half of entry-level office jobs by 2030.",
+          "scored": false,
+          "origin": "example (not scored)"
+        },
+        {
+          "text": "AI is coming for your job.",
+          "scored": false,
+          "origin": "example (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Who said it",
+          "text": "Dario Amodei runs Anthropic, a company that sells AI. That's worth knowing, but it isn't a reason to dismiss him."
+        },
+        {
+          "label": "“Exposed” isn't “at risk”",
+          "text": "It means AI could help with or do some tasks in a job. The US Bureau of Labor Statistics says it isn't a chance of losing your job."
+        },
+        {
+          "label": "Fewer hires, not layoffs",
+          "text": "So far the change shows up mainly as weaker hiring of young people."
+        },
+        {
+          "label": "The numbers so far",
+          "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the most AI-exposed jobs, versus 2.0% in the least exposed (ADP payroll data)."
+        },
+        {
+          "label": "The clock started in 2025",
+          "text": "“One to five years” from May 2025 means roughly 2026 to 2030."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "If your job is “highly exposed” to AI, you'll probably lose it.",
+          "answer": "False",
+          "why": "Exposure measures tasks AI could touch, not job losses."
+        },
+        {
+          "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
+          "answer": "True",
+          "why": "Payroll data shows it."
+        },
+        {
+          "statement": "AI caused that drop in hiring.",
+          "answer": "Not proven",
+          "why": "Education, earlier trends and other factors haven't been ruled out."
+        }
+      ]
+    },
+    "energy-climate": {
+      "headline": "AI's growing power use could raise US carbon emissions by 2030.",
+      "keyWord": {
+        "word": "raise",
+        "explanation": "Raise here means compared with a US without the extra AI demand. Total emissions could still be lower than today."
+      },
+      "scoreReason": "Says “could”, and there's a documented path: more demand met partly by gas power.",
+      "claimDial": [
+        {
+          "text": "AI's climate benefits will cancel out its emissions.",
+          "scored": false,
+          "origin": "example (not scored)"
+        },
+        {
+          "text": "AI's growing power use could raise US carbon emissions by 2030.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "AI will wreck America's climate goals.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Electricity isn't emissions",
+          "text": "The same power use can be clean or dirty depending on which plants make it."
+        },
+        {
+          "label": "Not all data centers are AI",
+          "text": "All US data centers used 4.4% of US electricity in 2023; AI is one part of that."
+        },
+        {
+          "label": "Green purchases have limits",
+          "text": "Buying renewable power over a year doesn't mean clean power every hour, in every place."
+        },
+        {
+          "label": "Worldwide numbers",
+          "text": "The International Energy Agency says data centers worldwide used 485 terawatt-hours in 2025 and projects 950 in 2030, including non-AI work."
+        },
+        {
+          "label": "Could AI help the climate?",
+          "text": "Possibly, through things like smarter energy management, but those savings aren't proven to cancel out its emissions."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "If a company buys enough renewable power over a year, its AI runs on clean power every hour.",
+          "answer": "False",
+          "why": "Yearly purchases don't match supply hour by hour."
+        },
+        {
+          "statement": "US emissions could fall overall while AI still adds emissions.",
+          "answer": "True",
+          "why": "“Adds” is measured against a path without the extra demand."
+        },
+        {
+          "statement": "AI's climate benefits will cancel out its emissions.",
+          "answer": "Not proven",
+          "why": "Savings depend on adoption and can be eaten up by more use."
+        }
+      ]
+    },
+    "creativity": {
+      "headline": "AI can reproduce copyrighted work from its training data.",
+      "keyWord": {
+        "word": "can",
+        "explanation": "Can means it has been shown to happen, not that it happens every time you use AI."
+      },
+      "scoreReason": "Says “can”, and controlled experiments show it happens.",
+      "claimDial": [
+        {
+          "text": "AI never memorizes anything.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "AI can reproduce copyrighted work from its training data.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "Training AI on unlicensed work is always illegal.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "Everything AI makes is copied.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Training vs. output",
+          "text": "Copying works to train a model is legally separate from an answer that reproduces a work."
+        },
+        {
+          "label": "Style isn't protected",
+          "text": "Imitating an artist's style usually isn't copyright infringement; copying their actual expression can be."
+        },
+        {
+          "label": "Legal isn't the same as fair",
+          "text": "A court ruling can't settle whether creators should be asked or paid."
+        },
+        {
+          "label": "Creators' income",
+          "text": "Image-making job posts on one global freelance site fell 17% after image generators appeared. That's one platform, not a US-wide figure."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Copying an artist's style is copyright infringement.",
+          "answer": "False",
+          "why": "Usually not. Style alone generally isn't protected."
+        },
+        {
+          "statement": "Researchers have pulled long book passages out of commercial AI models.",
+          "answer": "True",
+          "why": "Shown in 2025 tests of four production models."
+        },
+        {
+          "statement": "This happens often in everyday use.",
+          "answer": "Not proven",
+          "why": "The tests were targeted at chosen works."
+        }
+      ]
+    },
+    "privacy": {
+      "headline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+      "keyWord": {
+        "word": "may",
+        "explanation": "May … depending on your settings means it's possible, and you have some control over it."
+      },
+      "scoreReason": "Says “may” and “depending on your settings”, which is what OpenAI's own policy says.",
+      "claimDial": [
+        {
+          "text": "Once you opt out, your chats are private.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "Everything you tell ChatGPT ends up in the AI.",
+          "scored": false,
+          "origin": "example (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Three different things",
+          "text": "Training (improving the model), storing (keeping your chat) and access (who can see it) have separate settings and rules."
+        },
+        {
+          "label": "Opting out isn't deleting",
+          "text": "Your chats stay saved until you delete them, and deletion has legal and security exceptions."
+        },
+        {
+          "label": "Temporary Chat",
+          "text": "Not used for training, but kept for up to 30 days for safety checks. Saving it turns it into a normal chat."
+        },
+        {
+          "label": "Shared links",
+          "text": "Anyone with a link to a chat you shared can see it."
+        },
+        {
+          "label": "Depends on your state",
+          "text": "Californians have rights to see, correct and delete data; not every American does."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Turning off training deletes my old chats.",
+          "answer": "False",
+          "why": "Training and storage are separate. Delete chats separately."
+        },
+        {
+          "statement": "Thumbs-up or thumbs-down feedback may still be used even if I opt out.",
+          "answer": "True",
+          "why": "OpenAI lists feedback as an exception."
+        },
+        {
+          "statement": "OpenAI always follows its own privacy rules.",
+          "answer": "Not proven",
+          "why": "No independent audit is in the evidence."
+        }
+      ],
+      "situationPicker": {
+        "title": "What happens to my chat?",
+        "options": [
+          {
+            "label": "Personal account, training setting on",
+            "result": "May be used to train OpenAI's models. Saved until you delete it."
+          },
+          {
+            "label": "Personal account, training setting off",
+            "result": "Not used for training, except feedback you send with thumbs up or down. Still saved until you delete it."
+          },
+          {
+            "label": "Temporary Chat",
+            "result": "Not used for training. Kept for up to 30 days for safety checks, then removed unless you save it."
+          },
+          {
+            "label": "Business or Enterprise account",
+            "result": "Not used for training by default. Your organization controls who can see chats and how long they're kept."
+          }
+        ]
+      }
+    },
+    "existential-risk": {
+      "headline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+      "keyWord": {
+        "word": "will",
+        "explanation": "Will is the word that earns this claim its chilli. Saying “could” would be a different claim."
+      },
+      "scoreReason": "Says everyone “will” die. The evidence supports real concern, not that certainty.",
+      "claimDial": [
+        {
+          "text": "AI wiping out humanity is impossible.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "Future AI could contribute to a global catastrophe.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        },
+        {
+          "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+          "scored": true,
+          "origin": "scored claim"
+        },
+        {
+          "text": "Today's AI already guarantees human extinction.",
+          "scored": false,
+          "origin": "research brief (not scored)"
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Who says it",
+          "text": "Eliezer Yudkowsky and Nate Soares, in their 2025 book If Anyone Builds It, Everyone Dies."
+        },
+        {
+          "label": "“Superintelligence”",
+          "text": "AI that is more capable than all of humanity combined, not today's chatbots."
+        },
+        {
+          "label": "Not about hatred",
+          "text": "The authors' worry is AI pursuing goals and resources in ways that destroy what humans need to survive, not AI that hates us."
+        },
+        {
+          "label": "Four different fears",
+          "text": "Extinction, mass-casualty catastrophe, people misusing AI, and losing control of AI are different things."
+        },
+        {
+          "label": "What the tests showed",
+          "text": "AI models blackmailed in made-up company scenarios (Anthropic, 2025). AI agents attempted unauthorized actions in UK government testing, and hacked a real website during benchmark tests (2026). The made-up scenarios hurt no one, and the UK attempts failed."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "AI systems have done things in tests their makers didn't intend.",
+          "answer": "True",
+          "why": "Documented by Anthropic, the UK AI Security Institute and METR."
+        },
+        {
+          "statement": "Experts agree on how likely AI extinction is.",
+          "answer": "False",
+          "why": "The 2026 International AI Safety Report records wide disagreement."
+        },
+        {
+          "statement": "AI risk is all made up.",
+          "answer": "False",
+          "why": "The test incidents are real, even though they don't prove extinction."
+        }
+      ]
+    }
+  }
+}

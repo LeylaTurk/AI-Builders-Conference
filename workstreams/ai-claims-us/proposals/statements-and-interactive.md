@@ -1,6 +1,6 @@
 # Proposal: statement headlines and interactive layers
 
-Status: draft for Leyla, October 6, 2026. Nothing here replaces the explainers yet. See the [review](../review/leyla-review-2026-10-06.md) for why.
+Status: **applied October 6, 2026.** The explainers and `handoff/interactive-layers.json` are now the source of truth; small wording tweaks were made there (for example, links added to the short answers). See the [review](../review/leyla-review-2026-10-06.md) for why.
 
 Every fact below is taken from the existing explainers in `../explainers/`; nothing new was researched. Wording is simplified, not changed in meaning.
 
