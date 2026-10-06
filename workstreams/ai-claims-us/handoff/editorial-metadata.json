@@ -1,0 +1,62 @@
+{
+  "contentVersion": "claims-us-content-1.0",
+  "section": {
+    "name": "AI claims explained",
+    "route": "/claims",
+    "introduction": "Six recurring claims about AI, explained for readers in the United States. See what each claim means, what the evidence can tell us, and what you can do if you are concerned.",
+    "scoreNote": "Hype scores assess the wording of a claim against the evidence. They do not measure how serious or likely a harm is.",
+    "feedInvitationTitle": "Concerned about a recurring AI claim?",
+    "feedInvitationBody": "Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.",
+    "feedInvitationLinkText": "Explore AI claims"
+  },
+  "topics": {
+    "water": {
+      "keyQualification": "Local risk depends on water source, cooling, and peak demand; shortages are not inevitable at every facility.",
+      "publicEvidenceLimitations": [
+        "Most national estimates cover all data centers, not AI alone.",
+        "Facility-level and peak-demand data are incomplete; projected capacity pressure is not proof of household deprivation."
+      ],
+      "aiReviewDate": "2026-10-06"
+    },
+    "jobs": {
+      "keyQualification": "A conditional May 2025 scenario for roughly 2026–2030; the half-jobs estimate is unvalidated and is not a personal forecast.",
+      "publicEvidenceLimitations": [
+        "Observed employment and hiring patterns do not establish how much AI caused.",
+        "Future adoption and the forecast's specific scale and timetable remain uncertain."
+      ],
+      "aiReviewDate": "2026-10-06"
+    },
+    "energy-climate": {
+      "keyQualification": "Extra emissions compared with a path without the added demand; total U.S. emissions need not rise.",
+      "publicEvidenceLimitations": [
+        "AI-specific operating data are incomplete; all-data-center and global estimates have different scopes.",
+        "Future emissions depend on demand, efficiency, electricity supply, and adoption of potential climate benefits."
+      ],
+      "aiReviewDate": "2026-10-06"
+    },
+    "creativity": {
+      "keyQualification": "Demonstrated possibility in selected models and tests; not a claim that every output is copied or every training use is illegal.",
+      "publicEvidenceLimitations": [
+        "Targeted extraction tests do not establish copying rates in ordinary use.",
+        "Economic findings and legal decisions have specific populations, facts, and jurisdictions."
+      ],
+      "aiReviewDate": "2026-10-06"
+    },
+    "privacy": {
+      "keyQualification": "This concerns ChatGPT personal accounts and stated policies; training settings do not settle storage, access, or sharing.",
+      "publicEvidenceLimitations": [
+        "Company policies establish stated practices, not independently verified compliance or individual exposure risk.",
+        "Other services, workplace configurations, and state-law rights need separate checks."
+      ],
+      "aiReviewDate": "2026-10-06"
+    },
+    "existential-risk": {
+      "keyQualification": "A conditional prediction about future superintelligence, with no fixed deadline; inevitable extinction is not established.",
+      "publicEvidenceLimitations": [
+        "Current experiments and incidents do not establish how capabilities would lead to irreversible, global loss of control.",
+        "Expert probabilities are judgments, and key assumptions about future systems, defenses, and recovery remain contested."
+      ],
+      "aiReviewDate": "2026-10-06"
+    }
+  }
+}

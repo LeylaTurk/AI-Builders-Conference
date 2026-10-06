@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decoding the Hype recurring-claim score record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rubric_version",
+    "claim",
+    "scope",
+    "time_horizon",
+    "occurrence_urls",
+    "hype_checks",
+    "evidence_limitations",
+    "research_cutoff",
+    "review_status"
+  ],
+  "properties": {
+    "rubric_version": {
+      "const": "claims-us-1.0"
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "time_horizon": {
+      "type": "string",
+      "minLength": 1
+    },
+    "occurrence_urls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "hype_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "P1",
+        "P2",
+        "P3",
+        "W1",
+        "W2"
+      ],
+      "properties": {
+        "P1": {
+          "$ref": "#/$defs/check"
+        },
+        "P2": {
+          "$ref": "#/$defs/check"
+        },
+        "P3": {
+          "$ref": "#/$defs/check"
+        },
+        "W1": {
+          "$ref": "#/$defs/check"
+        },
+        "W2": {
+          "$ref": "#/$defs/check"
+        }
+      }
+    },
+    "evidence_checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "T1",
+        "T2",
+        "S1",
+        "S2",
+        "S3",
+        "C1",
+        "C2"
+      ],
+      "properties": {
+        "T1": {
+          "$ref": "#/$defs/check"
+        },
+        "T2": {
+          "$ref": "#/$defs/check"
+        },
+        "S1": {
+          "$ref": "#/$defs/check"
+        },
+        "S2": {
+          "$ref": "#/$defs/check"
+        },
+        "S3": {
+          "$ref": "#/$defs/check"
+        },
+        "C1": {
+          "$ref": "#/$defs/check"
+        },
+        "C2": {
+          "$ref": "#/$defs/check"
+        }
+      }
+    },
+    "evidence_limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "research_cutoff": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "enum": [
+        "AI research draft",
+        "AI evidence review completed; human editorial review pending",
+        "Human editorial review completed"
+      ]
+    }
+  },
+  "$defs": {
+    "check": {
+      "type": "object",
+      "required": [
+        "answer",
+        "claim_phrase",
+        "reason",
+        "sources"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "answer": {
+          "enum": [
+            "Y",
+            "N",
+            "NA",
+            "NC"
+          ]
+        },
+        "claim_phrase": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "url",
+              "locator"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_row_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

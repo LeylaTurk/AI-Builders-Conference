@@ -1,0 +1,89 @@
+{
+  "rubric_version": "claims-us-1.0",
+  "claim": "ChatGPT may use personal-account conversations to train its models, depending on your settings.",
+  "scope": "U.S. adult users of ChatGPT personal accounts; company-stated policy, with business and managed-account exclusions distinguished. Not a claim about all AI services.",
+  "time_horizon": "Current stated practice as inspected October 6, 2026; no prediction of whether a particular conversation will enter a future model.",
+  "occurrence_urls": [
+    "https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "may use",
+      "reason": "Current official policy directly supports eligibility for training. The claim does not assert that a particular conversation was selected or present an independently audited rate.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+          "locator": "Services for individuals, paragraphs 1–3 (retrieved lines 20–24)",
+          "evidence_row_id": "PR2"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "personal-account conversations … depending on your settings",
+      "reason": "Account scope is explicit. Policy distinguishes eligible consumer content from business services excluded by default, and preserves opt-out and feedback qualifications.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+          "locator": "Services for individuals (retrieved lines 20–24)",
+          "evidence_row_id": "PR2"
+        },
+        {
+          "url": "https://openai.com/enterprise-privacy/",
+          "locator": "Does OpenAI train its models on my business data?",
+          "evidence_row_id": "PR5"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "may",
+      "reason": "The training-use possibility is evidenced by an explicit eligibility pathway. No inevitable inclusion or timeline is asserted.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+          "locator": "Services for individuals, paragraph 1",
+          "evidence_row_id": "PR2"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "ChatGPT may use personal-account conversations to train its models, depending on your settings.",
+      "reason": "No sensational metaphor or guaranteed privacy reassurance is added to the factual possibility. This preserves the source occurrence’s conditional framing.",
+      "sources": [
+        {
+          "url": "https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how",
+          "locator": "Introduction, first paragraph (retrieved line 653)",
+          "evidence_row_id": "PR1"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+          "locator": "Services for individuals",
+          "evidence_row_id": "PR2"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "ChatGPT … train its models",
+      "reason": "ChatGPT is ordinary shorthand for the provider’s service and training process. The claim does not attribute human intentions, feelings, or independent decisions to the model.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/how-chatgpt-protects-privacy/",
+          "locator": "Opening explanation and What information may be used in training (retrieved lines 51–61)",
+          "evidence_row_id": "PR6"
+        }
+      ]
+    }
+  },
+  "evidence_limitations": [
+    "The decisive sources establish company-stated practices, not an independent compliance audit or the frequency of actual training selection.",
+    "The evidence does not quantify personal exposure, misuse, or privacy incident probabilities. A low hype score is not a safety rating.",
+    "Other providers, third-party integrations, and every managed-workspace configuration are outside the scored scope; state rights are not nationwide rights.",
+    "Help Center update dates are relative as displayed on October 6, 2026; policies must be refreshed if publication is delayed."
+  ],
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

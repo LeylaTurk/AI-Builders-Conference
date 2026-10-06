@@ -1,0 +1,190 @@
+{
+  "date": "2026-10-06",
+  "status": "Scoring calibration complete; independent evidence review recorded separately; human editorial review pending",
+  "rubric_version": "claims-us-1.0",
+  "results": [
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "Generative AI can reproduce copyrighted material from its training data.",
+      "hype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/creativity-score.json"
+    },
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "hype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "evidence_gaps": {
+        "status": "proposed",
+        "level": 2,
+        "label": "Evidence gaps: 2/5",
+        "not_checked": [],
+        "sections": {
+          "T": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          },
+          "S": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "C": {
+            "out": false,
+            "level": 3,
+            "met": 1,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/energy-climate-score.json"
+    },
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.",
+      "hype": {
+        "status": "proposed",
+        "level": 2,
+        "label": "A little spicy",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 3,
+            "met": 2,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/existential-risk-score.json"
+    },
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "AI could eliminate half of US entry-level white-collar jobs within one to five years.",
+      "hype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/jobs-score.json"
+    },
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "ChatGPT may use personal-account conversations to train its models, depending on your settings.",
+      "hype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/privacy-score.json"
+    },
+    {
+      "rubric_version": "claims-us-1.0",
+      "claim": "AI data-center growth threatens local water supplies in water-stressed U.S. communities.",
+      "hype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false
+      },
+      "source_record": "../research/water-score.json"
+    }
+  ]
+}

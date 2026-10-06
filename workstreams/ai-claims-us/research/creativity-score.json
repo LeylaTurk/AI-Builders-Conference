@@ -1,0 +1,86 @@
+{
+  "rubric_version": "claims-us-1.0",
+  "claim": "Generative AI can reproduce copyrighted material from its training data.",
+  "scope": "Demonstrated output-reproduction capability in particular generative systems, including US-copyrighted books; not a claim about every model, output, or training use.",
+  "time_horizon": "Existing capability demonstrated in experiments published by October 6, 2026; no future prediction.",
+  "occurrence_urls": [
+    "https://arxiv.org/html/2601.02671v1",
+    "https://openai.com/index/openai-and-journalism/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "can reproduce",
+      "reason": "Describes observed experimental capability, not adjudicated illegality or ordinary-use frequency.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.02671v1",
+          "locator": "Sections 4.1–4.3 and 5.1; experimental findings and limitations",
+          "evidence_row_id": "C1"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "Generative AI can reproduce copyrighted material",
+      "reason": "Possibility within the category is supported by selected systems and explicitly US-copyrighted works; the claim makes no universal system or output-frequency assertion.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.02671v1",
+          "locator": "Section 4.1, Setup and Books; Section 5.1",
+          "evidence_row_id": "C1"
+        },
+        {
+          "url": "https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf",
+          "locator": "Sections 4.2–4.3, targeted extraction of training images",
+          "evidence_row_id": "C3"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "can",
+      "reason": "No future prediction. The possibility is established experimentally, with limitations retained in the assessment.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.02671v1",
+          "locator": "Sections 3.3 and 4; mechanism and experiments",
+          "evidence_row_id": "C1"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "reproduce copyrighted material",
+      "reason": "Neutral description of output behavior; no added theft metaphor, universal moral verdict, or certainty beyond the factual proposition.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.02671v1",
+          "locator": "Introduction, descriptive capability statement; Section 5.1 limitations",
+          "evidence_row_id": "C1"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "from its training data",
+      "reason": "Names reproduction behavior and source relationship without assigning human intention. Does not imply all works reside as directly retrievable files.",
+      "sources": [
+        {
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+          "locator": "Sections II.A–D and III.D; training, memorization, outputs",
+          "evidence_row_id": "C4"
+        }
+      ]
+    }
+  },
+  "evidence_limitations": [
+    "Targeted extraction of selected works and dated model versions does not measure ordinary-user prevalence or rank current products.",
+    "Proprietary training inventories are generally unavailable; strong exact-match evidence can support memorization without proving every individual training provenance detail.",
+    "Observed global platform job-posting effects do not establish US-wide creator-income losses or copyright infringement.",
+    "US legal results concern particular conduct, records, parties, jurisdictions, and procedural stages; no cited decision resolves every generative use.",
+    "Evidence gaps are qualitative; no public numeric evidence-gaps score has been calculated."
+  ],
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

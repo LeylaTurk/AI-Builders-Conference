@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-06T13:07:14Z",
+  "repository": "https://github.com/LeylaTurk/AI-Builders-Conference",
+  "default_branch": "main",
+  "commit": "dc88b53d7750ad5c39403428815ff82b7d575b74",
+  "matches_user_reference": true,
+  "access": "GitHub connector, read only",
+  "files": [
+    {
+      "path": "engine/rating-prompt.md",
+      "sha": "853ba3ec4ed3cd8309761d222d622778859185b3",
+      "url": "https://github.com/LeylaTurk/AI-Builders-Conference/blob/dc88b53d7750ad5c39403428815ff82b7d575b74/engine/rating-prompt.md"
+    },
+    {
+      "path": "engine/scoring.ts",
+      "sha": "fd864345608dde7011b0cdaadd786082537ef29c",
+      "url": "https://github.com/LeylaTurk/AI-Builders-Conference/blob/dc88b53d7750ad5c39403428815ff82b7d575b74/engine/scoring.ts"
+    },
+    {
+      "path": "engine/rating-schema.json",
+      "sha": "4fb62a3484f1100615a3f8ef7c68be10ccb08098",
+      "url": "https://github.com/LeylaTurk/AI-Builders-Conference/blob/dc88b53d7750ad5c39403428815ff82b7d575b74/engine/rating-schema.json"
+    },
+    {
+      "path": "master-project-brief.md",
+      "sha": "7b170b4f26299a210e87e8c62b7401481288751e",
+      "url": "https://github.com/LeylaTurk/AI-Builders-Conference/blob/dc88b53d7750ad5c39403428815ff82b7d575b74/master-project-brief.md"
+    }
+  ]
+}

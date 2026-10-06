@@ -1,0 +1,55 @@
+{
+  "verifiedOn": "2026-10-06",
+  "site": "https://hype-decoder-shell.lovable.app",
+  "purpose": "Manually selected context links, not research citations or claim-score evidence. Resolve live records before rendering; omit missing records.",
+  "topics": {
+    "water": [
+      {
+        "id": "dcf19ba9-804b-4919-8bf2-950f0d29c7d6",
+        "contextLabel": "United States · data-center cooling",
+        "verifiedTitle": "Microsoft reveals new datacenter for Atlanta, will be world’s first ‘AI super factory’",
+        "verifiedPublicationDate": "2025-11-13"
+      }
+    ],
+    "jobs": [],
+    "energy-climate": [
+      {
+        "id": "dcf19ba9-804b-4919-8bf2-950f0d29c7d6",
+        "contextLabel": "United States · data-center infrastructure",
+        "verifiedTitle": "Microsoft reveals new datacenter for Atlanta, will be world’s first ‘AI super factory’",
+        "verifiedPublicationDate": "2025-11-13"
+      }
+    ],
+    "creativity": [],
+    "privacy": [
+      {
+        "id": "3ab33723-4d75-430a-aa22-ce61606ff8b7",
+        "contextLabel": "Australia · international context",
+        "verifiedTitle": "Australia’s proposed laws could help regulate privacy risks from chatbots – if we get the details right",
+        "verifiedPublicationDate": "2026-10-01"
+      }
+    ],
+    "existential-risk": [
+      {
+        "id": "0cbb21e6-cf82-437f-94d1-d7ed6d6bb1a5",
+        "contextLabel": "Commentary · AI control",
+        "verifiedTitle": "The ‘WarGames’ problem: Computer science has long understood what it takes to keep AI under control",
+        "verifiedPublicationDate": "2026-09-29"
+      }
+    ]
+  },
+  "excludedCandidates": {
+    "creativity": {
+      "reason": "The final claim concerns reproduction of protected works. The inspected French literary-prize accusation concerns authorship and is too indirect for the launch related-story list. Preserve the honest empty state.",
+      "inspectedStories": [
+        {
+          "id": "db415410-d65f-4c92-9ab4-1371b15d750d",
+          "contextLabel": "France · authorship debate",
+          "verifiedTitle": "A bestselling novel was pulled from a French literary prize after AI accusations – what next?",
+          "verifiedPublicationDate": "2026-09-28",
+          "note": "Peripheral context; not evidence of US copyright law or that AI-detection accusations prove copying."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "rubric_version": "claims-us-1.0",
+  "claim": "If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.",
+  "scope": "Worldwide human extinction, conditional on creating artificial superintelligence using techniques and understanding resembling those available in 2025; not ordinary consumer chatbots or all imaginable future architectures.",
+  "time_horizon": "Future conditional; no fixed deadline. 2025 anchors the original publication's contemporary-methods condition.",
+  "occurrence_urls": [
+    "https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions",
+    "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/",
+    "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "If anyone builds ... everyone ... will die",
+      "reason": "Explicit conditional prediction, not assertion that extinction has been observed. Future certainty is scored at P3; no distinct evidence-status problem.",
+      "sources": [
+        {
+          "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+          "locator": "Part One sections 5–6 distinguish ultimate predictions from clearly verified evidence.",
+          "evidence_row_id": "X03"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "artificial superintelligence using techniques and understanding like those available in 2025",
+      "reason": "Preserves the original technological condition and global proposed endpoint. Everyone denotes the hypothesized extinction outcome; there is no distinct population-study extrapolation beyond the P3 certainty problem.",
+      "sources": [
+        {
+          "url": "https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions",
+          "locator": "The Logic of AI Doom, paragraph beginning 'Yudkowsky and Soares’s real focus' quotes the original conditional.",
+          "evidence_row_id": "X01"
+        },
+        {
+          "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+          "locator": "Part One section 1 defines artificial superintelligence relative to humans collectively.",
+          "evidence_row_id": "X03"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "N",
+      "claim_phrase": "everyone on Earth will die",
+      "reason": "The construction condition does not establish that harmful goals, defeat of human defenses, and human extinction inevitably follow. New observed incidents support concern, while the authors themselves acknowledge ultimate predictions remain unverified; failure is asserted certainty, not hypothetical status or lack of a numerical model.",
+      "sources": [
+        {
+          "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+          "locator": "Section 2.2.2, Updates: remaining gaps about scaling/generalizing current capabilities and propensities.",
+          "evidence_row_id": "X06"
+        },
+        {
+          "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+          "locator": "Part One sections 5–6: harmful ASI motives not obviously verified; defeat-of-humanity prediction not clearly verified as of September 2026.",
+          "evidence_row_id": "X03"
+        },
+        {
+          "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+          "locator": "Scope of this investigation: excludes more severe harmful propensities, safeguard effectiveness and full security compromise.",
+          "evidence_row_id": "X10"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "everyone on Earth will die",
+      "reason": "Plainly states the severe proposition; no additional emotional metaphor or insult. Do not count the same predictive-certainty problem twice.",
+      "sources": [
+        {
+          "url": "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/",
+          "locator": "Title/subtitle and Description identify the extinction proposition.",
+          "evidence_row_id": "X02"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "artificial superintelligence ... everyone ... will die",
+      "reason": "Does not depend on human emotions or revenge. The proponent's mechanism is competition for resources, with inevitability already assessed at P3.",
+      "sources": [
+        {
+          "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east",
+          "locator": "Soares answers about resource competition and indifference, following the question why AI would kill everyone.",
+          "evidence_row_id": "X04"
+        }
+      ]
+    }
+  },
+  "evidence_limitations": [
+    "Scaling from current behavior to persistent goals and world-scale destructive power remains unresolved.",
+    "Evaluation configurations are not representative estimates of behavior across ordinary deployments.",
+    "Some investigations rely on developer-controlled records, partial datasets, redactions, and AI-assisted analysis.",
+    "Future technical defenses, governance, and the timing of capabilities are unsettled.",
+    "Expert surveys record judgments under assumptions, not measured extinction frequencies. No numeric evidence-gap score is proposed."
+  ],
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

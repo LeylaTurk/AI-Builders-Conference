@@ -1,0 +1,101 @@
+{
+  "rubric_version": "claims-us-1.0",
+  "claim": "AI data-center growth threatens local water supplies in water-stressed U.S. communities.",
+  "scope": "Site-specific U.S. risk in communities where water availability or supply capacity is constrained; not every facility and not national exhaustion. All-sector water totals are not attributed wholly to AI.",
+  "time_horizon": "Current and planned development; no asserted deadline or inevitable future outcome.",
+  "occurrence_urls": [
+    "https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "threatens",
+      "reason": "Describes a risk pathway supported by physical mechanisms and observed local demand; does not assert that withdrawals prove household deprivation.",
+      "sources": [
+        {
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+          "locator": "Printed pp. 62–64, utility-record analysis and local allocation discussion",
+          "evidence_row_id": "W05"
+        },
+        {
+          "url": "https://arxiv.org/html/2603.02705v1",
+          "locator": "Sections 3–4, capacity mechanisms and conditional projections",
+          "evidence_row_id": "W08"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "local water supplies in water-stressed U.S. communities",
+      "reason": "Geographic and risk scope is limited. AI growth identifies a contributor; the claim does not say all data-center consumption is caused by AI or that shortages occur nationally.",
+      "sources": [
+        {
+          "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+          "locator": "Printed pp. 53–58, AI contribution to growth and sector-wide water estimates",
+          "evidence_row_id": "W03"
+        },
+        {
+          "url": "https://arxiv.org/html/2603.02705v1",
+          "locator": "Sections 2–4, U.S. local utility capacity",
+          "evidence_row_id": "W08"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "threatens",
+      "reason": "Does not guarantee shortages or a deadline. The assessment identifies computing growth, cooling, and infrastructure assumptions that can change outcomes.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2603.02705v1",
+          "locator": "Sections 4.1–4.2, growth and efficiency scenarios",
+          "evidence_row_id": "W08"
+        },
+        {
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+          "locator": "Printed pp. 64–65, future needs and reclaimed-water options",
+          "evidence_row_id": "W05"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "threatens",
+      "reason": "Risk language adds no unsupported rhetoric beyond the bounded local proposition. Potentially serious harm is not itself hype.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2603.02705v1",
+          "locator": "Sections 3.2 and 4, capacity constraints",
+          "evidence_row_id": "W08"
+        },
+        {
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+          "locator": "Printed p. 64, local limits and allocation",
+          "evidence_row_id": "W05"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "AI data-center growth",
+      "reason": "Refers to physical infrastructure demand and cooling, not unsupported AI intention or human-like agency.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Section 2.2, direct cooling and indirect electricity water",
+          "evidence_row_id": "W06"
+        }
+      ]
+    }
+  },
+  "evidence_limitations": [
+    "Most aggregate data describe all data centers rather than AI workloads alone.",
+    "Comprehensive facility-level monthly and peak-demand measurements remain unavailable in the inspected evidence.",
+    "Forecasts depend on adoption, cooling technology, efficiency, infrastructure and grid assumptions.",
+    "Evidence of demand and plausible local risk is not specific causal proof of household water deprivation.",
+    "Some studies share authors, company inputs and Berkeley Lab estimates; they are not independent national censuses.",
+    "2026 USGS and Virginia groundwater original reports could not be retrieved, so their purported findings and current state-law implications are excluded."
+  ],
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

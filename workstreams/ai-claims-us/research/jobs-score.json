@@ -1,0 +1,97 @@
+{
+  "rubric_version": "claims-us-1.0",
+  "claim": "AI could eliminate half of US entry-level white-collar jobs within one to five years.",
+  "scope": "US entry-level white-collar jobs; potential displacement, not task reorganization, all employment, or individual prospects.",
+  "time_horizon": "One to five years after the May 28, 2025 warning, approximately 2026–2030; do not restart the clock on page update.",
+  "occurrence_urls": [
+    "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic",
+    "https://darioamodei.com/essay/the-adolescence-of-technology"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "could eliminate",
+      "reason": "The prospective wording does not claim current causal evidence, a measured result, or a quantified probability.",
+      "sources": [
+        {
+          "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+          "locator": "Labor market disruption opening",
+          "evidence_row_id": "J2"
+        },
+        {
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+          "locator": "Descriptive-patterns caution after six facts",
+          "evidence_row_id": "J6"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "US entry-level white-collar jobs",
+      "reason": "The conditional scenario concerns cognitive office work and discusses breadth and adoption; it does not present measured task exposure as observed nationwide replacement or generalize to every occupation. Its national share remains an unvalidated scenario, not a measured effect.",
+      "sources": [
+        {
+          "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+          "locator": "Labor market disruption, breadth and diffusion discussion",
+          "evidence_row_id": "J2"
+        },
+        {
+          "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm",
+          "locator": "Interpretation limits",
+          "evidence_row_id": "J3"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "could … within one to five years",
+      "reason": "Could preserves uncertainty. The source gives a reasoned capability, substitution, and diffusion pathway and explicitly disavows communicating certainty or likelihood. The exact share and horizon remain unvalidated, but no probability or inevitability is asserted and no distinct demonstrated scale/time extrapolation has been identified. Missing quantitative calibration alone is an evidence limitation, not excess certainty.",
+      "sources": [
+        {
+          "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+          "locator": "Introductory uncertainty bullet and Labor market disruption, including slow diffusion",
+          "evidence_row_id": "J2"
+        },
+        {
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+          "locator": "What comes next: uncertainty about acceleration, stabilization or reversal",
+          "evidence_row_id": "J6"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "eliminate",
+      "reason": "The word describes the potential employment loss without adding a sensational metaphor; no distinct rhetorical inflation.",
+      "sources": [
+        {
+          "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+          "locator": "Labor market disruption",
+          "evidence_row_id": "J2"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "AI could",
+      "reason": "Ordinary shorthand for a technology adopted through employer decisions; no unsupported human feelings or intentions are assigned.",
+      "sources": [
+        {
+          "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html",
+          "locator": "Abstract, functional deployment and employment discussion",
+          "evidence_row_id": "J9"
+        }
+      ]
+    }
+  },
+  "evidence_limitations": [
+    "The exact half-of-jobs fraction and one-to-five-year horizon have not been validated as an employment forecast. The hype score evaluates conditional wording, not the estimate’s likelihood or an individual’s job prospects.",
+    "Recent exposed-young-worker hiring declines are observational and may partly reflect education, prior trends, macroeconomic changes, and sample composition.",
+    "Technical exposure and product-usage measures are not direct measures of employer adoption or an individual worker’s risk.",
+    "ADP balanced samples exclude firm entry/exit and occupation-unmatched workers; age is an imperfect proxy for entry level.",
+    "Nationally representative longitudinal evidence linking deployment to hiring, total compensation and job quality remains limited.",
+    "Yale’s September 15 interactive was directly verified, but its linked detailed methodology page returned a site error; only inspected update claims are used."
+  ],
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}
