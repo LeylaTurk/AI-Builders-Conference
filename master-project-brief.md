@@ -202,8 +202,11 @@ Scripts are checked against the site's own checklist. Video work stays outside t
 **Decided.** Research: `prep/06`–`08`; terms PDFs in `prep/sources/`.
 
 - **Big outlets are not fetched or AI-rated.** Reuters and AP have no public RSS and license their content; CNN, Fox, the NYT and others prohibit or don't clearly allow automated or AI use; **the Guardian's terms (clause 6(g)) forbid AI analysis, text and data mining and bots on its API, website and RSS feeds.** Many publishers added such clauses in 2023–24, so a public feed doesn't mean AI use is allowed.
-- **The rated feed uses** press releases (e.g. EurekAlert!), company announcements (e.g. OpenAI's news feed) and openly licensed outlets (The Conversation, ProPublica), each to be confirmed by checking its terms. Proposed pair: EurekAlert AI press releases and The Conversation's AI topic, with OpenAI news as backup.
+- **The rated feed uses four sources (terms checked 6 Oct; PDFs in `prep/sources/`):** EurekAlert! press releases, OpenAI news, The Conversation and ProPublica. Each feed story shows the headline, a link back, the rating, a short summary in our own words and, except for EurekAlert, one or two short credited quotes. No full text is shown, and every rating waits for Leyla's approval.
 - **The Conversation (checked):** free to republish selected articles unedited with credit and their page counter; extracts and quotes with a link are allowed; not all articles systematically. Evidence highlights go in the site's own panel, not marked up inside their text.
+- **ProPublica (checked 6 Oct):** CC BY-NC-ND; no wholesale or automatic republishing, and stories are picked one by one. Rating and linking isn't republishing, and the approve step means a person picks each story.
+- **EurekAlert! (checked 6 Oct; decided 6 Oct):** its terms (section 7) allow downloading or redistributing content only for personal, non-commercial use without written permission from EurekAlert! and AAAS. **Decided: headline, link, rating and our own summary only, no quotes.** Leyla chose this over asking for permission.
+- **OpenAI news (checked 6 Oct):** OpenAI's Terms of Use cover ChatGPT and its other services; no separate terms for the openai.com website were found. Its news feed is published for subscribers, so rating, linking and short quotes are used.
 - **Summaries stay short and about the assessment,** because a 2026 US ruling found that AI summaries substituting for articles may infringe.
 - **Headline-and-link demos** of big outlets are assessed in `prep/08_headline_demo_assessment.md` (local development vs private hosting vs public).
 - **Readers can check any article** by pasting its text.
@@ -280,7 +283,7 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 | --- | --- | --- |
 | 25–26 Sep | Brief merged; feature scoping; rating, source and design research; video plan; mockup | ✅ Done |
 | 30 Sep | Video 0 script, checked against the rubric | To do |
-| 30 Sep | Name check; confirm feed sources and allowlist terms (save PDFs) | To do |
+| 30 Sep | Name check; confirm feed sources and allowlist terms (save PDFs) | Terms done 6 Oct; name check to do |
 | 2 Oct | Film video 0 | To do |
 | 2 Oct | Collect the backlog and rate it by hand (8+ articles, 4 held back) | To do |
 | 3 Oct | Rating prompt and output format drafted; compare Opus 5 vs Sonnet 5; measure cost per article | Done 6 Oct (`engine/`); Sonnet 5.5 chosen; real cost per article measured once Lovable runs it |
