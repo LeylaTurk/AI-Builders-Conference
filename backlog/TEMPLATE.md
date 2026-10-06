@@ -22,7 +22,7 @@ calibration_case: "" # supported-alarm | unsupported-optimism | calm-overstateme
 Use the hand-rating sheet (`rating-sheet.md` in the private repo `LeylaTurk/ai-news-articles`).
 
 - Hype 🌶 (1–5): (points, and which findings)
-- Gaps 🚩 (1–5): (part levels T / S / C)
+- Evidence gaps 🚩 (1–5): (part levels T / S / C)
 - Distortions and gaps I spotted:
 - Partly checked (source not read)? yes / no
 - My own level, if I disagree with the formula (and why):

@@ -86,7 +86,7 @@ a{color:#5B3FD1}a:hover{color:#3F2AA0}
 <span style="font-size: 20px; font-weight: 700">Overheated · 4/5</span>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
-<span class="mlabel">Gaps</span>
+<span class="mlabel">Evidence gaps</span>
 <div style="display: flex; gap: 1px" aria-hidden="true">
 <sc-for list="{{gapFlags}}" as="g" hint-placeholder-count="5"><svg class="{{g.cls}}" width="30" height="30" viewBox="0 0 24 24"><path class="pole" d="M6 21V3.5"></path><path class="f" d="M6 4h11.5l-2.6 4.2 2.6 4.3H6z"></path></svg></sc-for>
 </div>
@@ -157,7 +157,7 @@ class Component extends DCLogic {
       context: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 8v5M12 16.5v.5',
       good: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM8.5 12.5l2.5 2.5 4.5-5'
     };
-    const counts = { hype: 'Hype meter', evid: 'Gaps (adds a flag)', good: 'Gaps (a met check)' };
+    const counts = { hype: 'Hype meter', evid: 'Evidence gaps (adds a flag)', good: 'Evidence gaps (a met check)' };
     const F = [
       { id: 'f1', fam: 'hype', u: 'u-solid', icon: I.overstated, label: 'Overstated claim', where: 'Headline', excerpt: '“will replace half of office jobs by 2030”',
         explain: 'A prediction by one chief executive, stated in the headline as fact. The report he cites estimates which tasks could be automated; it doesn’t count jobs lost.' },
