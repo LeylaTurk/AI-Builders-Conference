@@ -1,33 +1,33 @@
 {
   "version": "claims-us-interactive-1.0",
-  "status": "Draft copy from the October 6, 2026 plain-language review; simplified from the explainers without new facts.",
+  "status": "Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
   "topics": {
     "water": {
-      "headline": "AI data centers threaten water supplies in some dry US towns.",
+      "headline": "Every AI-written email uses a bottle of water.",
       "keyWord": {
-        "word": "threaten",
-        "explanation": "Threaten means a real risk worth checking locally, not a shortage that has already happened everywhere."
+        "word": "Every",
+        "explanation": "The estimate was for one 100-word email from one model, GPT-4, under assumed cooling and power conditions. It is not a measurement of every AI email."
       },
-      "scoreReason": "Says “threaten”, not “drain”, and limits itself to some places. That matches the evidence.",
+      "scoreReason": "Presents a computer estimate as a measured fact, and stretches one model’s email to every AI email.",
       "claimDial": [
         {
           "text": "AI's water use is harmless because it all comes back as rain.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         },
         {
           "text": "AI data centers threaten water supplies in some dry US towns.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
         },
         {
-          "text": "Every AI prompt uses a bottle of water.",
-          "scored": false,
-          "origin": "research brief (not scored)"
+          "text": "Every AI-written email uses a bottle of water.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         },
         {
           "text": "AI is draining America's water supply.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         }
       ],
@@ -55,9 +55,9 @@
       ],
       "quiz": [
         {
-          "statement": "Every data center causes water shortages.",
-          "answer": "False",
-          "why": "It depends on location, cooling and water source."
+          "statement": "Every AI email uses a bottle of water.",
+          "answer": "Not proven",
+          "why": "That’s an estimate for one kind of email under assumed conditions, not a measurement."
         },
         {
           "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
@@ -69,41 +69,38 @@
           "answer": "Not proven",
           "why": "Drought maps and utility reports can't pin a shortage on one user."
         }
-      ]
+      ],
+      "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
+      "carefulScoreReason": "Says “threaten” and limits itself to some places, which matches the evidence."
     },
     "jobs": {
-      "headline": "AI could eliminate half of US entry-level office jobs by about 2030.",
+      "headline": "AI will take all our jobs.",
       "keyWord": {
-        "word": "could",
-        "explanation": "Could describes a possible scenario. It needs AI to keep improving fast, companies to adopt it widely, and jobs to disappear faster than new ones appear."
+        "word": "all",
+        "explanation": "Even Musk said “probably”. The evidence shows AI changing tasks and slowing hiring for some young workers, not replacing every job."
       },
-      "scoreReason": "Says “could” and rests on a reasoned scenario. The half-of-jobs number itself hasn't been tested.",
+      "scoreReason": "Turns Musk’s “probably” into a certainty and stretches tasks AI can do into every job.",
       "claimDial": [
         {
           "text": "AI isn't affecting jobs at all.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "example (not scored)"
         },
         {
           "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
         },
         {
-          "text": "AI will eliminate half of entry-level office jobs by 2030.",
-          "scored": false,
-          "origin": "example (not scored)"
-        },
-        {
-          "text": "AI is coming for your job.",
-          "scored": false,
-          "origin": "example (not scored)"
+          "text": "AI will take all our jobs.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         }
       ],
       "finePrint": [
         {
-          "label": "Who said it",
-          "text": "Dario Amodei runs Anthropic, a company that sells AI. That's worth knowing, but it isn't a reason to dismiss him."
+          "label": "What Musk actually said",
+          "text": "At a Paris tech conference in May 2024, Elon Musk said: “Probably none of us will have a job.” He added that work could become optional, like a hobby."
         },
         {
           "label": "“Exposed” isn't “at risk”",
@@ -118,15 +115,15 @@
           "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the most AI-exposed jobs, versus 2.0% in the least exposed (ADP payroll data)."
         },
         {
-          "label": "The clock started in 2025",
-          "text": "“One to five years” from May 2025 means roughly 2026 to 2030."
+          "label": "The narrower warning",
+          "text": "Anthropic’s CEO, whose company sells AI, warned in May 2025 that AI could eliminate half of entry-level office jobs within one to five years. That’s a possible scenario, not a tested forecast."
         }
       ],
       "quiz": [
         {
-          "statement": "If your job is “highly exposed” to AI, you'll probably lose it.",
-          "answer": "False",
-          "why": "Exposure measures tasks AI could touch, not job losses."
+          "statement": "AI will take every job.",
+          "answer": "Not proven",
+          "why": "Even Musk said “probably”, and current data show no broad disruption."
         },
         {
           "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
@@ -138,30 +135,32 @@
           "answer": "Not proven",
           "why": "Education, earlier trends and other factors haven't been ruled out."
         }
-      ]
+      ],
+      "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
+      "carefulScoreReason": "Says “could” and rests on a reasoned scenario, though the half-of-jobs number hasn’t been tested."
     },
     "energy-climate": {
-      "headline": "AI's growing power use could raise US carbon emissions by 2030.",
+      "headline": "AI will only intensify climate change.",
       "keyWord": {
-        "word": "raise",
-        "explanation": "Raise here means compared with a US without the extra AI demand. Total emissions could still be lower than today."
+        "word": "only",
+        "explanation": "“Only” rules out any climate benefit from AI. Those benefits are unproven, but so is the claim that there are none."
       },
-      "scoreReason": "Says “could”, and there's a documented path: more demand met partly by gas power.",
+      "scoreReason": "Says “will” and “only”, ruling out the uncertainty and possible benefits the evidence describes.",
       "claimDial": [
         {
           "text": "AI's climate benefits will cancel out its emissions.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "example (not scored)"
         },
         {
           "text": "AI's growing power use could raise US carbon emissions by 2030.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
         },
         {
-          "text": "AI will wreck America's climate goals.",
-          "scored": false,
-          "origin": "research brief (not scored)"
+          "text": "AI will only intensify climate change.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         }
       ],
       "finePrint": [
@@ -202,34 +201,36 @@
           "answer": "Not proven",
           "why": "Savings depend on adoption and can be eaten up by more use."
         }
-      ]
+      ],
+      "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
+      "carefulScoreReason": "Says “could”, and there’s a documented path: more demand met partly by gas power."
     },
     "creativity": {
-      "headline": "AI can reproduce copyrighted work from its training data.",
+      "headline": "AI art is theft.",
       "keyWord": {
-        "word": "can",
-        "explanation": "Can means it has been shown to happen, not that it happens every time you use AI."
+        "word": "theft",
+        "explanation": "Theft is a legal and moral judgment. US courts haven’t settled whether training AI on others’ work is legal, and one court found a specific use fair."
       },
-      "scoreReason": "Says “can”, and controlled experiments show it happens.",
+      "scoreReason": "States a legal and moral judgment as settled fact, for all AI art.",
       "claimDial": [
         {
           "text": "AI never memorizes anything.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         },
         {
           "text": "AI can reproduce copyrighted work from its training data.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
         },
         {
-          "text": "Training AI on unlicensed work is always illegal.",
-          "scored": false,
-          "origin": "research brief (not scored)"
+          "text": "AI art is theft.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         },
         {
           "text": "Everything AI makes is copied.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         }
       ],
@@ -263,34 +264,36 @@
           "why": "Shown in 2025 tests of four production models."
         },
         {
-          "statement": "This happens often in everyday use.",
-          "answer": "Not proven",
-          "why": "The tests were targeted at chosen works."
+          "statement": "Courts have ruled that AI art is theft.",
+          "answer": "False",
+          "why": "US courts haven’t settled it, and one found a specific training use fair."
         }
-      ]
+      ],
+      "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
+      "carefulScoreReason": "Says “can”, and controlled experiments show it happens."
     },
     "privacy": {
-      "headline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+      "headline": "ChatGPT is sharing your secrets.",
       "keyWord": {
-        "word": "may",
-        "explanation": "May … depending on your settings means it's possible, and you have some control over it."
+        "word": "sharing",
+        "explanation": "“Sharing” suggests other people see your chats. What OpenAI describes is using chats to train its models, which you can turn off, plus limited access by staff for things like safety."
       },
-      "scoreReason": "Says “may” and “depending on your settings”, which is what OpenAI's own policy says.",
+      "scoreReason": "Calls training “sharing”, treats every chat as a secret, and ignores the settings that change what happens.",
       "claimDial": [
         {
           "text": "Once you opt out, your chats are private.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         },
         {
           "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
         },
         {
-          "text": "Everything you tell ChatGPT ends up in the AI.",
-          "scored": false,
-          "origin": "example (not scored)"
+          "text": "ChatGPT is sharing your secrets.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         }
       ],
       "finePrint": [
@@ -327,9 +330,9 @@
           "why": "OpenAI lists feedback as an exception."
         },
         {
-          "statement": "OpenAI always follows its own privacy rules.",
-          "answer": "Not proven",
-          "why": "No independent audit is in the evidence."
+          "statement": "Other ChatGPT users can read my chats.",
+          "answer": "False",
+          "why": "Not unless you share a link to a chat. Training and sharing are different things."
         }
       ],
       "situationPicker": {
@@ -352,34 +355,41 @@
             "result": "Not used for training by default. Your organization controls who can see chats and how long they're kept."
           }
         ]
-      }
+      },
+      "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+      "carefulScoreReason": "Says “may” and “depending on your settings”, which is what OpenAI’s own policy says."
     },
     "existential-risk": {
-      "headline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+      "headline": "If anyone builds superintelligent AI, everyone dies.",
       "keyWord": {
-        "word": "will",
-        "explanation": "Will is the word that earns this claim its chilli. Saying “could” would be a different claim."
+        "word": "everyone dies",
+        "explanation": "Stated as a certainty. The evidence shows real reasons for concern, not that extinction is guaranteed."
       },
-      "scoreReason": "Says everyone “will” die. The evidence supports real concern, not that certainty.",
+      "scoreReason": "States extinction as certain and drops the authors’ own condition about how superintelligence is built.",
       "claimDial": [
         {
           "text": "AI wiping out humanity is impossible.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         },
         {
           "text": "Future AI could contribute to a global catastrophe.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         },
         {
           "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
-          "scored": true,
-          "origin": "scored claim"
+          "scoredAs": "careful",
+          "origin": "careful version"
+        },
+        {
+          "text": "If anyone builds superintelligent AI, everyone dies.",
+          "scoredAs": "headline",
+          "origin": "headline claim"
         },
         {
           "text": "Today's AI already guarantees human extinction.",
-          "scored": false,
+          "scoredAs": null,
           "origin": "research brief (not scored)"
         }
       ],
@@ -421,7 +431,9 @@
           "answer": "False",
           "why": "The test incidents are real, even though they don't prove extinction."
         }
-      ]
+      ],
+      "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+      "carefulScoreReason": "Keeps the authors’ condition, but “will” still claims more certainty than the evidence supports."
     }
   }
 }

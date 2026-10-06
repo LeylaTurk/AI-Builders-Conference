@@ -2,17 +2,21 @@
 
 AI rating, not yet reviewed. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
 
-# Water: AI data centers threaten water supplies in some dry US towns.
+# Water: Every AI-written email uses a bottle of water.
 
 ## A. The claim
 
-**The exact claim we scored:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
+**The headline claim:** “Every AI-written email uses a bottle of water.”
+
+This paraphrases [The Washington Post’s September 2024 headline](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/), “A bottle of water per email,” which reported researchers’ estimate that one 100-word email written with GPT-4 used 519 milliliters of water.
+
+**The careful version we also checked:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
 
 This assesses site-specific risk from current and planned facilities. It narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to its local-threat proposition; it does not claim that every facility causes shortages.
 
 ## B. The short answer
 
-In some places, yes. Data centers can use a lot of water to stay cool, especially on [the hottest days](https://arxiv.org/html/2603.02705v1), when supplies are tightest. At six Virginia utilities, data centers already make up [between 2% and 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF). But the risk depends on where a data center is, how it's cooled and where its water comes from. [National totals](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) can't tell you whether your town is at risk.
+Not quite. The bottle figure is a researchers’ estimate for one 100-word email from GPT-4, counting water used to cool data centers and to make their electricity. It depends on [assumptions about location and cooling](https://arxiv.org/html/2304.03271v5) and isn’t a measurement of every AI email. The real issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia utilities they already make up [2% to 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 ## C. What does this claim actually mean?
 
@@ -34,7 +38,9 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim in A describes a local threat, without asserting inevitable shortages: documented demand and the [peak-capacity analysis](https://arxiv.org/html/2603.02705v1) support that risk pathway. No hype checklist fails; incomplete AI-specific and facility-level data limit precision, while potential local harm remains serious.
+**Hype score for the headline: 4/5 — Overheated.** It presents a computer estimate as a measured fact and stretches one model’s 100-word email to every AI email, although water use varies widely with [model, location and cooling](https://arxiv.org/html/2304.03271v5). Failing on both counts triggers our loud-claim rule.
+
+**The careful version scores 1/5 — Grounded.** It describes a local threat, without asserting inevitable shortages: documented demand and the [peak-capacity analysis](https://arxiv.org/html/2603.02705v1) support that risk pathway. No hype checklist fails; incomplete AI-specific and facility-level data limit precision, while potential local harm remains serious.
 
 ## F. What can you do if you are still concerned?
 
@@ -50,17 +56,21 @@ Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 
 
 ---
 
-# Jobs: AI could eliminate half of US entry-level office jobs by about 2030.
+# Jobs: AI will take all our jobs.
 
 ## A. The claim
 
-**The exact claim we scored:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
+**The headline claim:** “AI will take all our jobs.”
+
+This is [CNN’s May 2024 headline](https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/) about Elon Musk, who told a Paris tech conference: “Probably none of us will have a job.”
+
+**The careful version we also checked:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
 
 This preserves the possibility in [Dario Amodei's May 2025 warning](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), restated in his [January 2026 essay](https://darioamodei.com/essay/the-adolescence-of-technology). The original window runs approximately from 2026 to 2030; it does not restart today.
 
 ## B. The short answer
 
-Possibly, but nobody knows. This is a May 2025 warning from Anthropic's CEO, [not a tested forecast](https://darioamodei.com/essay/the-adolescence-of-technology). Young workers in jobs where AI can do many tasks are being hired less, but [researchers can't yet say AI is the cause](https://digitaleconomy.stanford.edu/news/canariesaug26/). Across the whole US job market, there's [no clear sign of broad AI disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
+Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible scenario, not a tested forecast. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 
@@ -80,7 +90,9 @@ The [August Stanford revision](https://digitaleconomy.stanford.edu/news/canaries
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim says “could,” and [Amodei describes a conditional scenario with a reasoned pathway](https://darioamodei.com/essay/the-adolescence-of-technology). This score assesses the wording, not the reliability or likelihood of the half-of-jobs estimate: its precise fraction and timetable remain unvalidated by [current employment evidence](https://digitaleconomy.stanford.edu/news/canariesaug26/).
+**Hype score for the headline: 4/5 — Overheated.** It turns Musk’s “probably” into a certainty and stretches tasks AI can help with into every job. The [US Bureau of Labor Statistics](https://www.bls.gov/emp/publications/ai-exposure-categories.htm) says exposure to AI is not a job-loss probability. The wording isn’t inflated; the size and certainty are.
+
+**The careful version scores 1/5 — Grounded.** It says “could,” and [Amodei describes a conditional scenario with a reasoned pathway](https://darioamodei.com/essay/the-adolescence-of-technology). This score assesses the wording, not the reliability or likelihood of the half-of-jobs estimate: its precise fraction and timetable remain unvalidated by [current employment evidence](https://digitaleconomy.stanford.edu/news/canariesaug26/).
 
 **Evidence gaps:** substantial uncertainty about causation and future adoption. **Potential harm:** fewer opportunities and lost income would matter even if the forecast proves exaggerated.
 
@@ -105,17 +117,21 @@ Research cutoff: **October 6, 2026**. **AI research and editorial checks complet
 
 ---
 
-# Energy and climate: AI's growing power use could raise US carbon emissions by 2030.
+# Energy and climate: AI will only intensify climate change.
 
 ## A. The claim
 
-**The exact claim we scored:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
+**The headline claim:** “AI will only intensify climate change.”
+
+This is the headline of [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/).
+
+**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
 
 Here, “increase” means extra emissions compared with otherwise similar development without the added demand; total US emissions need not rise. This narrows [Cornell researchers’ public warning](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) about computing demand outpacing cleaner electricity.
 
 ## B. The short answer
 
-It could. AI is helping push up demand for electricity, and if gas or coal plants supply the extra power, emissions are higher than they'd be without it. The [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) sees both new clean energy and new gas power being built in the US. How much AI adds depends on how fast demand grows and how clean the grid gets. Total US emissions could still fall; AI would make them fall more slowly.
+Too certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).
 
 ## C. What does this claim actually mean?
 
@@ -137,7 +153,9 @@ This page focuses on electricity and climate. See our [water explainer](/claims/
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** This rates possible extra emissions compared with similar development without the added AI demand; national totals could still fall. The exact claim’s “could” matches documented demand and a plausible fossil-electricity pathway in the [IEA assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary). All five hype checks pass; incomplete AI-specific disclosures limit estimates, and low hype does not mean low environmental harm.
+**Hype score for the headline: 4/5 — Overheated.** “Will” rules out the uncertainty the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes, and “only” rules out possible climate benefits that are [unproven but not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). Failing on both counts triggers our loud-claim rule.
+
+**The careful version scores 1/5 — Grounded.** This rates possible extra emissions compared with similar development without the added AI demand; national totals could still fall. The exact claim’s “could” matches documented demand and a plausible fossil-electricity pathway in the [IEA assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary). All five hype checks pass; incomplete AI-specific disclosures limit estimates, and low hype does not mean low environmental harm.
 
 ## F. What can you do if you are still concerned?
 
@@ -153,17 +171,21 @@ Sources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, Dece
 
 ---
 
-# Creativity: AI can reproduce copyrighted work from its training data.
+# Creativity: AI art is theft.
 
 ## A. The claim
 
-**The exact claim we scored:** Generative AI can reproduce copyrighted material from its training data.
+**The headline claim:** “AI art is theft.”
+
+This is the title of [Trystan S. Goetze’s 2024 paper](https://arxiv.org/abs/2401.06178v2), which argues that image generators involve labour theft from artists.
+
+**The careful version we also checked:** Generative AI can reproduce copyrighted material from its training data.
 
 This is the output-copying possibility discussed in [extraction research](https://arxiv.org/html/2601.02671v1) and [OpenAI’s public acknowledgment of regurgitation](https://openai.com/index/openai-and-journalism/). “Can” means demonstrated possibility, not that every output is copied or every training use is illegal. We assess systems available to US users, using evidence available through October 6, 2026.
 
 ## B. The short answer
 
-Yes, it can. Researchers got commercial AI models to [repeat long passages from books](https://arxiv.org/html/2601.02671v1), and other researchers [pulled training images out of image generators](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf). But they used special tests on chosen works, so we don't know how often it happens in normal use. Whether it's illegal [depends on the facts of each case](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven't settled it.
+It’s an argument, not a settled fact. AI models [can repeat copyrighted work](https://arxiv.org/html/2601.02671v1) they were trained on, but researchers showed this with targeted tests, not everyday use. Whether training on others’ work is legal [depends on the facts](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven’t settled it; [one court](https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231) found a specific training use fair. Whether creators should be asked and paid is a fair question that law alone can’t answer.
 
 ## C. What does this claim actually mean?
 
@@ -181,7 +203,9 @@ Style alone generally lacks copyright protection; copying protected expression w
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim is “Generative AI can reproduce copyrighted material from its training data.” Demonstrated extraction supports “can”; it asserts no universal copying rate or legal verdict. All five wording checks pass, although everyday frequency and creator-wide losses remain uncertain. ([Experimental evidence](https://arxiv.org/html/2601.02671v1))
+**Hype score for the headline: 4/5 — Overheated.** “Theft” states as settled a legal and moral question US courts haven’t decided, and applies it to all AI art, although copying has been shown in [targeted tests](https://arxiv.org/html/2601.02671v1). As a moral argument about consent and pay it is a fair debate; as a statement of fact it goes beyond the evidence.
+
+**The careful version scores 1/5 — Grounded.** It is “Generative AI can reproduce copyrighted material from its training data.” Demonstrated extraction supports “can”; it asserts no universal copying rate or legal verdict. All five wording checks pass, although everyday frequency and creator-wide losses remain uncertain. ([Experimental evidence](https://arxiv.org/html/2601.02671v1))
 
 **Evidence limitations:** Targeted tests of selected works and model versions; incomplete evidence about ordinary use and US-wide creator income.
 
@@ -200,17 +224,21 @@ Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and c
 
 ---
 
-# Privacy: ChatGPT may use your personal-account chats to train its AI, depending on your settings.
+# Privacy: ChatGPT is sharing your secrets.
 
 ## A. The claim
 
-**The exact claim we scored:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
+**The headline claim:** “ChatGPT is sharing your secrets.”
+
+This is [Tom’s Guide’s April 2023 headline](https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting), in an article about ChatGPT using conversations to train its model.
+
+**The careful version we also checked:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
 
 This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for US users as of October 6, 2026; other services require separate checks.
 
 ## B. The short answer
 
-Yes. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off. Turning it off doesn't delete your chats, and thumbs-up or thumbs-down feedback can still be used. Business and Enterprise accounts are [left out of training by default](https://openai.com/enterprise-privacy/). These are OpenAI's own rules; no independent audit has checked that they're always followed.
+Not in the way it sounds. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off, which isn’t the same as showing them to other people. Some staff and service providers [can access chats](https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services) for limited reasons like safety. Business accounts are [left out of training by default](https://openai.com/enterprise-privacy/). No independent audit has checked that these rules are always followed.
 
 ## C. What does this claim actually mean?
 
@@ -232,7 +260,9 @@ These sources establish stated rules, not the percentage of conversations actual
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim in A preserves “may” and limits the account and settings involved, matching [OpenAI’s stated training policy](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance); none of the five hype checks fails. This score evaluates the wording, not your safety: the evidence does not quantify misuse or exposure risk.
+**Hype score for the headline: 4/5 — Overheated.** It calls training “sharing”, treats every chat as a secret, and ignores the [settings](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) and [account types](https://openai.com/enterprise-privacy/) that change what happens.
+
+**The careful version scores 1/5 — Grounded.** It preserves “may” and limits the account and settings involved, matching [OpenAI’s stated training policy](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance); none of the five hype checks fails. This score evaluates the wording, not your safety: the evidence does not quantify misuse or exposure risk.
 
 ## F. What can you do if you are still concerned?
 
@@ -250,17 +280,21 @@ Source dates: Tom’s Guide, updated October 30, 2025; OpenAI training explanati
 
 ---
 
-# Existential risk: Building superintelligent AI with 2025-era methods will kill everyone on Earth.
+# Existential risk: If anyone builds superintelligent AI, everyone dies.
 
 ## A. The claim
 
-**The exact claim we scored:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
+**The headline claim:** “If anyone builds superintelligent AI, everyone dies.”
+
+This is the plain-English form of the title of Yudkowsky and Soares’s 2025 book [If Anyone Builds It, Everyone Dies](https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/), where “it” is superintelligence.
+
+**The careful version we also checked:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
 
 This faithfully paraphrases Yudkowsky and Soares’s conditional prediction, [quoted in Lawfare](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions). It concerns future, globally consequential systems, with no fixed deadline.
 
 ## B. The short answer
 
-That's not proven. AI systems have behaved dangerously in tests, including [hacking they weren't supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to "everyone will die" takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn't support certainty in either direction: "we're doomed" and "it's all made up" both go too far.
+That’s not proven. AI systems have behaved dangerously in tests, including [hacking they weren’t supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to “everyone dies” takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn’t support certainty in either direction: “we’re doomed” and “it’s all made up” both go too far.
 
 ## C. What does this claim actually mean?
 
@@ -278,7 +312,9 @@ Keep four ideas separate: extinction means no humans survive; here, catastrophic
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 2/5 — A little spicy.** This scores the exact conditional claim in A. Its certainty about extinction exceeds what the [evidence and remaining assumptions](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) establish; the other four wording checks pass, producing 2 under our coarse checklist.
+**Hype score for the headline: 4/5 — Overheated.** It drops the authors’ own condition about how superintelligence is built and states extinction as certain, while the [international synthesis](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) records deep disagreement.
+
+**The careful version scores 2/5 — A little spicy.** This scores the careful conditional version in A. Its certainty about extinction exceeds what the [evidence and remaining assumptions](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) establish; the other four wording checks pass, producing 2 under our coarse checklist.
 
 **Evidence gaps:** How current behavior scales to persistent, globally destructive autonomy remains unresolved. This score is not a disaster probability or reassurance about safety.
 

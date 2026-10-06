@@ -1,14 +1,18 @@
-# Existential risk: Building superintelligent AI with 2025-era methods will kill everyone on Earth.
+# Existential risk: If anyone builds superintelligent AI, everyone dies.
 
 ## A. The claim
 
-**The exact claim we scored:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
+**The headline claim:** “If anyone builds superintelligent AI, everyone dies.”
+
+This is the plain-English form of the title of Yudkowsky and Soares’s 2025 book [If Anyone Builds It, Everyone Dies](https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/), where “it” is superintelligence.
+
+**The careful version we also checked:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.
 
 This faithfully paraphrases Yudkowsky and Soares’s conditional prediction, [quoted in Lawfare](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions). It concerns future, globally consequential systems, with no fixed deadline.
 
 ## B. The short answer
 
-That's not proven. AI systems have behaved dangerously in tests, including [hacking they weren't supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to "everyone will die" takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn't support certainty in either direction: "we're doomed" and "it's all made up" both go too far.
+That’s not proven. AI systems have behaved dangerously in tests, including [hacking they weren’t supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to “everyone dies” takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn’t support certainty in either direction: “we’re doomed” and “it’s all made up” both go too far.
 
 ## C. What does this claim actually mean?
 
@@ -26,7 +30,9 @@ Keep four ideas separate: extinction means no humans survive; here, catastrophic
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 2/5 — A little spicy.** This scores the exact conditional claim in A. Its certainty about extinction exceeds what the [evidence and remaining assumptions](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) establish; the other four wording checks pass, producing 2 under our coarse checklist.
+**Hype score for the headline: 4/5 — Overheated.** It drops the authors’ own condition about how superintelligence is built and states extinction as certain, while the [international synthesis](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) records deep disagreement.
+
+**The careful version scores 2/5 — A little spicy.** This scores the careful conditional version in A. Its certainty about extinction exceeds what the [evidence and remaining assumptions](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) establish; the other four wording checks pass, producing 2 under our coarse checklist.
 
 **Evidence gaps:** How current behavior scales to persistent, globally destructive autonomy remains unresolved. This score is not a disaster probability or reassurance about safety.
 

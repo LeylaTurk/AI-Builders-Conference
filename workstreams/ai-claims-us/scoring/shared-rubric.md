@@ -1,6 +1,6 @@
 # Shared recurring-claim scoring rubric
 
-Version: claims-us-1.0 · Research cutoff: October 6, 2026 · Status: proposed adaptation, AI research review; not human editorial approval.
+Version: claims-us-1.1 (1.0 plus the loud-claim rule, October 6, 2026) · Research cutoff: October 6, 2026 · Status: proposed adaptation, AI research review; not human editorial approval.
 
 Repository basis: [LeylaTurk/AI-Builders-Conference](https://github.com/LeylaTurk/AI-Builders-Conference), default branch main, inspected at commit [dc88b53d7750ad5c39403428815ff82b7d575b74](https://github.com/LeylaTurk/AI-Builders-Conference/commit/dc88b53d7750ad5c39403428815ff82b7d575b74). This matches the supplied reference. See repository-audit.md for the article-to-claim mapping.
 
@@ -40,7 +40,8 @@ Use section P = P1/P2/P3 and section W = W1/W2. H1/H2/H3 and the article headlin
 1. Exclude NA and NC from a section's fraction. It needs at least two Y/N answers.
 2. Fraction met = Y / (Y + N). A fraction of 1 gives level 1; at least .75 gives 2; at least .50 gives 3; at least .25 gives 4; below .25 gives 5.
 3. Both P and W must be scoreable. Average their section levels, round to the nearest whole number, and round an exact .5 **down**.
-4. **Additional claim safeguard:** any applicable hype NC makes the publishable score **“Not yet assessable”**. Keep a provisional computed diagnostic privately if useful; never render it as the final rating. A claim too ambiguous to apply the checklist also gets no number until narrowed transparently.
+4. **Loud-claim rule (added in 1.1, October 6, 2026):** if section P reaches level 4 or 5, the hype score is **at least 4**. This mirrors the article headline rule: a claim is read like a headline, and with only two wording checks a badly overstated claim would otherwise average down to 2.
+5. **Additional claim safeguard:** any applicable hype NC makes the publishable score **“Not yet assessable”**. Keep a provisional computed diagnostic privately if useful; never render it as the final rating. A claim too ambiguous to apply the checklist also gets no number until narrowed transparently.
 
 | Level | Preserved display label |
 |---|---|

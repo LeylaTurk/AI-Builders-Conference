@@ -38,16 +38,18 @@ def links(text):
             found.append({'title': title, 'url': url})
     return found
 
-def check_layer(slug, layer, hype, text):
+def check_layer(slug, layer, head, record, text):
     if '?' in layer['headline']:
         raise ValueError(f'{slug}: headline must be a statement, not a question')
     if layer['headline'] not in text.splitlines()[0]:
         raise ValueError(f'{slug}: explainer title does not use the headline')
     if layer['keyWord']['word'] not in layer['headline']:
         raise ValueError(f'{slug}: key word missing from headline')
-    scored = [v for v in layer['claimDial'] if v['scored']]
-    if len(scored) != 1 or scored[0]['text'] != layer['headline']:
-        raise ValueError(f'{slug}: claim dial needs exactly one scored version, matching the headline')
+    if layer['headline'] != head['claim'] or head['claim'] not in text.split('## B.')[0]:
+        raise ValueError(f'{slug}: headline must match the headline score record and section A')
+    kinds = {v['scoredAs']: v['text'] for v in layer['claimDial'] if v['scoredAs']}
+    if kinds != {'headline': layer['headline'], 'careful': layer['carefulHeadline']}:
+        raise ValueError(f'{slug}: claim dial needs the headline and careful versions marked as scored')
     if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
     if any(q['answer'] not in ('True', 'False', 'Not proven') for q in layer['quiz']):
@@ -70,20 +72,26 @@ def main():
             raise ValueError(f'{slug}: stale public review status')
         if record['claim'] not in parts['claimContextMarkdown']:
             raise ValueError(f'{slug}: exact scored claim not present in section A')
-        hype = calculator.score(record)['hype']
+        careful_hype = calculator.score(record)['hype']
+        head_path = ROOT/f'research/{slug}-headline-score.json'
+        head = json.loads(head_path.read_text())
+        hype = calculator.score(head)['hype']
         layer = layers[slug]
-        check_layer(slug, layer, hype, text)
+        check_layer(slug, layer, head, record, text)
         meta = editorial['topics'][slug]
         for field in ['keyQualification', 'publicEvidenceLimitations', 'aiReviewDate']:
             if not meta.get(field):
                 raise ValueError(f'{slug}: missing editorial field {field}')
         item = {
             'slug': slug, 'route': f'/claims/{slug}', 'topic': name,
-            'headline': layer['headline'], 'claim': record['claim'],
-            'claimExampleCitations': record['occurrence_urls'],
+            'headline': layer['headline'], 'headlineOccurrence': head['occurrence'],
+            'claim': record['claim'], 'carefulHeadline': layer['carefulHeadline'],
+            'claimExampleCitations': head['occurrence_urls'] + record['occurrence_urls'],
             'scope': record['scope'], 'timeHorizon': record['time_horizon'],
             'keyQualification': meta['keyQualification'], **parts,
-            'hype': {**hype, 'displayPrefix': 'Claim hype', 'reason': layer['scoreReason'],
+            'hype': {**hype, 'displayPrefix': 'Headline hype', 'reason': layer['scoreReason'],
+                     'checklist': head['hype_checks'], 'reviewStatus': head['review_status']},
+            'carefulHype': {**careful_hype, 'displayPrefix': 'Careful version', 'reason': layer['carefulScoreReason'],
                      'checklist': record['hype_checks']},
             'evidenceGaps': {'displayMode': 'qualitative', 'score': None,
                 'limitations': meta['publicEvidenceLimitations']},
@@ -92,7 +100,7 @@ def main():
             'aiEvidenceReview': {'status': 'completed', 'date': meta['aiReviewDate']},
             'humanEditorialReview': {'status': 'pending', 'reviewer': None, 'date': None},
             'reviewStatusText': PENDING_LABEL,
-            'interactive': {k: v for k, v in layer.items() if k not in ('headline', 'scoreReason')},
+            'interactive': {k: v for k, v in layer.items() if k not in ('headline', 'carefulHeadline', 'scoreReason', 'carefulScoreReason')},
             'remainingLimitations': record['evidence_limitations'],
             'relatedStoryCandidates': related['topics'].get(slug, []),
             'websiteCopyMarkdown': text,
@@ -110,17 +118,18 @@ def main():
         for field in list(FIELDS.values())[:6]:
             if not links(parts[field]):
                 raise ValueError(f'{slug}: no external inline citation in {field}')
-        if hype['level'] is not None and f"{hype['level']}/5" not in parts['scoreExplanationMarkdown']:
-            raise ValueError(f'{slug}: displayed and calculated score disagree')
+        for h in (hype, careful_hype):
+            if h['level'] is not None and f"{h['level']}/5" not in parts['scoreExplanationMarkdown']:
+                raise ValueError(f'{slug}: displayed and calculated score disagree')
         validations.append({'topic': slug,
             'wordsAThroughF': copy_words,
             'shortAnswerWords': counts['shortAnswerMarkdown'],
             'actions': action_count,
             'externalInlineLinksInEachRequiredSection': True,
             'inlineSourceCount': len(item['sourceLinks']),
-            'score': hype['level'], 'label': hype['label'],
+            'headlineScore': hype['level'], 'carefulScore': careful_hype['level'], 'label': hype['label'],
             'exactClaimMatch': True, 'sourceCopyUnchanged': True})
-        for p in [path, record_path]:
+        for p in [path, record_path, head_path]:
             hashes[str(p.relative_to(ROOT))] = hashlib.sha256(p.read_bytes()).hexdigest()
     content = {
         'contentVersion': editorial['contentVersion'], 'language': 'en-US',

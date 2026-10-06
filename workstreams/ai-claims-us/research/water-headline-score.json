@@ -1,0 +1,65 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "Every AI-written email uses a bottle of water.",
+  "scope": "Any email written with any AI chatbot, as the headline implies.",
+  "time_horizon": "Present-day; no prediction.",
+  "occurrence": "Paraphrase of The Washington Post headline “A bottle of water per email: the hidden environmental costs of using AI chatbots” (Pranshu Verma and Shelly Tan, September 18, 2024), which reported a university researchers’ estimate that one 100-word email written with GPT-4 used 519 milliliters of water. Wording of the estimate confirmed through TechRepublic’s September 20, 2024 summary; the Post page itself returned an access error at cutoff.",
+  "occurrence_urls": [
+    "https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/",
+    "https://www.techrepublic.com/article/generative-ai-data-center-water-use/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "N",
+      "claim_phrase": "uses a bottle of water",
+      "reason": "States as a measured fact what is a modelled estimate. Per-request water figures combine an assumed energy use per request with location-specific water-intensity factors, including water used to generate the electricity.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Section 3.3 and Table 1"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "Every AI-written email",
+      "reason": "Extends an estimate for one 100-word email from one model to every AI email, of any length, from any model and data center. Water use varies widely with location, cooling and power source.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Sections 2.2 and 3.3"
+        },
+        {
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+          "locator": "Printed pp. 62–64"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No prediction is made.",
+      "sources": []
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "a bottle of water",
+      "reason": "A bottle (about half a liter) matches the size of the reported estimate; the comparison adds no further exaggeration.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Section 3.3"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No human-like agency is attributed to AI.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

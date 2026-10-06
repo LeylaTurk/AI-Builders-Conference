@@ -1,6 +1,6 @@
 # AI claims explained — research and Lovable handoff
 
-For Decoding the Hype. US adult audience; American English. Research cutoff: **October 6, 2026**. **Independent AI evidence review and package validation complete; plain-language review applied October 6; AI rating, not yet reviewed by Leyla.** This folder archives the complete research and design package. No live website, feed or article rating was changed.
+For Decoding the Hype. US adult audience; American English. Research cutoff: **October 6, 2026**. **Independent AI evidence review and package validation complete; plain-language review and spicier headline claims (rubric claims-us-1.1) applied October 6; AI rating, not yet reviewed by Leyla.** This folder archives the complete research and design package. No live website, feed or article rating was changed.
 
 Start with the [decision summary](02-decision-summary.md). **October 6 review:** see [Leyla's review](review/leyla-review-2026-10-06.md) and the [proposal for statement headlines and interactive layers](proposals/statements-and-interactive.md) before building. To implement later, upload [claims-content.json](handoff/claims-content.json) to Lovable and paste the [Lovable prompt](handoff/lovable-prompt.md) in the same message. The prompt and attachment are self-contained; Lovable does not need this conversation or other local files.
 

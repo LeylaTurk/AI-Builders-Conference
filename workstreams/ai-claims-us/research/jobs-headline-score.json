@@ -1,0 +1,67 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "AI will take all our jobs.",
+  "scope": "All jobs, everywhere, with no time limit.",
+  "time_horizon": "Unspecified future.",
+  "occurrence": "CNN headline “Elon Musk says AI will take all our jobs” (Samantha Murphy Kelly, May 23, 2024), reporting Musk at VivaTech in Paris: “Probably none of us will have a job.” Inspected through WRAL’s syndicated copy.",
+  "occurrence_urls": [
+    "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "A prediction; no distinct problem with how current evidence is described.",
+      "sources": []
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "all our jobs",
+      "reason": "Goes from tasks AI can help with to every job. The US Bureau of Labor Statistics says AI exposure is not a job-loss probability, and national data show no clear broad disruption so far.",
+      "sources": [
+        {
+          "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm",
+          "locator": "Exposure categories guidance"
+        },
+        {
+          "url": "https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update",
+          "locator": "Current update"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "N",
+      "claim_phrase": "will",
+      "reason": "States as certain what Musk himself put as “probably”, with no conditions or timeline. Even the narrower half-of-entry-level-jobs warning is a conditional scenario.",
+      "sources": [
+        {
+          "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/",
+          "locator": "Musk quotation"
+        },
+        {
+          "url": "https://darioamodei.com/essay/the-adolescence-of-technology",
+          "locator": "Labor market disruption"
+        },
+        {
+          "url": "https://digitaleconomy.stanford.edu/news/canariesaug26/",
+          "locator": "What comes next"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "take",
+      "reason": "“Take” is ordinary wording; the scope and certainty problems are scored above.",
+      "sources": []
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "AI will take",
+      "reason": "Ordinary shorthand for employers using AI; no false mechanism.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

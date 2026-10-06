@@ -1,0 +1,68 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "ChatGPT is sharing your secrets.",
+  "scope": "All ChatGPT users and chats.",
+  "time_horizon": "Present tense; policy checked at the October 6, 2026 cutoff.",
+  "occurrence": "Tom’s Guide headline “ChatGPT is sharing your secrets — keep your chats private by changing this setting” (Andy Sansom, April 26, 2023). The article explains that ChatGPT saved conversations to train its model.",
+  "occurrence_urls": [
+    "https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "N",
+      "claim_phrase": "sharing",
+      "reason": "Describes training as disclosure. OpenAI’s stated policy is that eligible chats may be used to improve its models, with limited access by authorized staff and providers; other people see a chat only through a link you share.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+          "locator": "How your data is used"
+        },
+        {
+          "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
+          "locator": "Access section"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "your secrets",
+      "reason": "Applies to every chat and user, ignoring the training opt-out, Temporary Chat and business accounts, which are excluded from training by default.",
+      "sources": [
+        {
+          "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+          "locator": "Data controls"
+        },
+        {
+          "url": "https://openai.com/enterprise-privacy/",
+          "locator": "Enterprise privacy"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No prediction is made.",
+      "sources": []
+    },
+    "W1": {
+      "answer": "N",
+      "claim_phrase": "secrets",
+      "reason": "Calling every chat a “secret” that is being “shared” adds alarm beyond what the policy describes.",
+      "sources": [
+        {
+          "url": "https://openai.com/index/how-chatgpt-protects-privacy/",
+          "locator": "Training explanation"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "ChatGPT is sharing",
+      "reason": "Ordinary shorthand for the company’s practice; the mechanism problem is scored above.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

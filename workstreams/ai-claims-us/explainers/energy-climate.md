@@ -1,14 +1,18 @@
-# Energy and climate: AI's growing power use could raise US carbon emissions by 2030.
+# Energy and climate: AI will only intensify climate change.
 
 ## A. The claim
 
-**The exact claim we scored:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
+**The headline claim:** “AI will only intensify climate change.”
+
+This is the headline of [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/).
+
+**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
 
 Here, “increase” means extra emissions compared with otherwise similar development without the added demand; total US emissions need not rise. This narrows [Cornell researchers’ public warning](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) about computing demand outpacing cleaner electricity.
 
 ## B. The short answer
 
-It could. AI is helping push up demand for electricity, and if gas or coal plants supply the extra power, emissions are higher than they'd be without it. The [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) sees both new clean energy and new gas power being built in the US. How much AI adds depends on how fast demand grows and how clean the grid gets. Total US emissions could still fall; AI would make them fall more slowly.
+Too certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).
 
 ## C. What does this claim actually mean?
 
@@ -30,7 +34,9 @@ This page focuses on electricity and climate. See our [water explainer](/claims/
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** This rates possible extra emissions compared with similar development without the added AI demand; national totals could still fall. The exact claim’s “could” matches documented demand and a plausible fossil-electricity pathway in the [IEA assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary). All five hype checks pass; incomplete AI-specific disclosures limit estimates, and low hype does not mean low environmental harm.
+**Hype score for the headline: 4/5 — Overheated.** “Will” rules out the uncertainty the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes, and “only” rules out possible climate benefits that are [unproven but not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). Failing on both counts triggers our loud-claim rule.
+
+**The careful version scores 1/5 — Grounded.** This rates possible extra emissions compared with similar development without the added AI demand; national totals could still fall. The exact claim’s “could” matches documented demand and a plausible fossil-electricity pathway in the [IEA assessment](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary). All five hype checks pass; incomplete AI-specific disclosures limit estimates, and low hype does not mean low environmental harm.
 
 ## F. What can you do if you are still concerned?
 

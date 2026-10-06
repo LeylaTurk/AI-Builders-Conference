@@ -58,3 +58,20 @@ Leyla asked for the fixes to be made, using the defaults above.
 | 9 | The jobs headline says "by about 2030". |
 
 The exact scored claims are unchanged apart from the US spelling, so no scores changed. `assemble-content.py` now also checks that each headline is a statement, contains its key word, and matches the dial's scored version.
+
+## Spicier headlines (October 6, 2026)
+
+Leyla asked for spicier headlines, like "AI will take all our jobs". Each page now leads with a loud claim that a real outlet or author published, with its own score. The careful version stays on the page and on the dial as "what the evidence supports".
+
+| Topic | Headline claim | Where it was said | Headline | Careful |
+|---|---|---|---|---|
+| Water | Every AI-written email uses a bottle of water. | The Washington Post, September 2024 | 4/5 | 1/5 |
+| Jobs | AI will take all our jobs. | CNN, May 2024 (Elon Musk) | 4/5 | 1/5 |
+| Energy and climate | AI will only intensify climate change. | The Nation, December 2025 | 4/5 | 1/5 |
+| Creativity | AI art is theft. | Goetze, arXiv paper, 2024 | 4/5 | 1/5 |
+| Privacy | ChatGPT is sharing your secrets. | Tom's Guide, April 2023 | 4/5 | 1/5 |
+| Existential risk | If anyone builds superintelligent AI, everyone dies. | Yudkowsky and Soares, book title, 2025 | 4/5 | 2/5 |
+
+**Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. This was the recommended option on Leyla's decision card; it can be reverted by removing one line in `scoring/claim-score.py`.
+
+The headline score records (`research/*-headline-score.json`) are an AI research draft. Unlike the careful versions, they have not had an independent evidence review. The Washington Post page returned an access error at cutoff, so its figure was confirmed through TechRepublic's summary.

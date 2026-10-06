@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mechanical claims-us-1.0 calculator. Does not assess source quality.
+"""Mechanical claims-us-1.1 calculator. Does not assess source quality.
 Usage: python3 claim-score.py scoring-record.json
 Input needs claim and hype_checks; evidence_checks is optional.
 Each check is {"answer": "Y|N|NA|NC", ...evidence metadata...}.
@@ -8,7 +8,7 @@ import json
 import math
 import sys
 
-VERSION = "claims-us-1.0"
+VERSION = "claims-us-1.1"
 LABELS = {1: "Grounded", 2: "A little spicy", 3: "Turning it up",
           4: "Overheated", 5: "Off the charts"}
 HYPE = {"P": ["P1", "P2", "P3"], "W": ["W1", "W2"]}
@@ -49,6 +49,9 @@ def calculate(checks, sections, kind):
                 "sections": results, "rule_applied": False}
     level = rounded_average(scoreable)
     floor = kind == "evidence_gaps" and not results["S"]["out"] and results["S"]["level"] == 5 and level < 4
+    # Loud-claim rule (claims-us-1.1, Oct 6): like the article headline rule, a claim whose
+    # proportion checks (P) reach level 4 or 5 scores at least 4.
+    floor = floor or (kind == "hype" and not results["P"]["out"] and results["P"]["level"] >= 4 and level < 4)
     if floor:
         level = 4
     return {"status": "proposed", "level": level,
@@ -72,6 +75,8 @@ def self_test():
     assert calculate(checks(["Y"] * 5, hype_codes), HYPE, "hype")["level"] == 1
     assert calculate(checks(["N"] * 5, hype_codes), HYPE, "hype")["level"] == 5
     assert calculate(checks(["Y", "N", "Y", "Y", "Y"], hype_codes), HYPE, "hype")["level"] == 2
+    loud = calculate(checks(["Y", "N", "N", "Y", "Y"], hype_codes), HYPE, "hype")
+    assert loud["level"] == 4 and loud["rule_applied"]
     assert rounded_average([3, 4]) == 3
     assert rounded_average([4, 5]) == 4
     assert calculate(checks(["NC", "Y", "Y", "Y", "Y"], hype_codes), HYPE, "hype")["level"] is None
@@ -84,7 +89,7 @@ def self_test():
         result = calculate(checks(values, hype_codes), HYPE, "hype")
         assert "NC" not in values or result["level"] is None
         assert result["level"] is None or 1 <= result["level"] <= 5
-    return "Passed: anchors, example, tie-down, minimum coverage, NC suppression, evidence floor, all 1,024 hype answer combinations."
+    return "Passed: anchors, example, tie-down, minimum coverage, NC suppression, evidence floor, loud-claim rule, all 1,024 hype answer combinations."
 
 if __name__ == "__main__":
     try:

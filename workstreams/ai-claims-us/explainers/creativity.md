@@ -1,14 +1,18 @@
-# Creativity: AI can reproduce copyrighted work from its training data.
+# Creativity: AI art is theft.
 
 ## A. The claim
 
-**The exact claim we scored:** Generative AI can reproduce copyrighted material from its training data.
+**The headline claim:** “AI art is theft.”
+
+This is the title of [Trystan S. Goetze’s 2024 paper](https://arxiv.org/abs/2401.06178v2), which argues that image generators involve labour theft from artists.
+
+**The careful version we also checked:** Generative AI can reproduce copyrighted material from its training data.
 
 This is the output-copying possibility discussed in [extraction research](https://arxiv.org/html/2601.02671v1) and [OpenAI’s public acknowledgment of regurgitation](https://openai.com/index/openai-and-journalism/). “Can” means demonstrated possibility, not that every output is copied or every training use is illegal. We assess systems available to US users, using evidence available through October 6, 2026.
 
 ## B. The short answer
 
-Yes, it can. Researchers got commercial AI models to [repeat long passages from books](https://arxiv.org/html/2601.02671v1), and other researchers [pulled training images out of image generators](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf). But they used special tests on chosen works, so we don't know how often it happens in normal use. Whether it's illegal [depends on the facts of each case](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven't settled it.
+It’s an argument, not a settled fact. AI models [can repeat copyrighted work](https://arxiv.org/html/2601.02671v1) they were trained on, but researchers showed this with targeted tests, not everyday use. Whether training on others’ work is legal [depends on the facts](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven’t settled it; [one court](https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231) found a specific training use fair. Whether creators should be asked and paid is a fair question that law alone can’t answer.
 
 ## C. What does this claim actually mean?
 
@@ -26,7 +30,9 @@ Style alone generally lacks copyright protection; copying protected expression w
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim is “Generative AI can reproduce copyrighted material from its training data.” Demonstrated extraction supports “can”; it asserts no universal copying rate or legal verdict. All five wording checks pass, although everyday frequency and creator-wide losses remain uncertain. ([Experimental evidence](https://arxiv.org/html/2601.02671v1))
+**Hype score for the headline: 4/5 — Overheated.** “Theft” states as settled a legal and moral question US courts haven’t decided, and applies it to all AI art, although copying has been shown in [targeted tests](https://arxiv.org/html/2601.02671v1). As a moral argument about consent and pay it is a fair debate; as a statement of fact it goes beyond the evidence.
+
+**The careful version scores 1/5 — Grounded.** It is “Generative AI can reproduce copyrighted material from its training data.” Demonstrated extraction supports “can”; it asserts no universal copying rate or legal verdict. All five wording checks pass, although everyday frequency and creator-wide losses remain uncertain. ([Experimental evidence](https://arxiv.org/html/2601.02671v1))
 
 **Evidence limitations:** Targeted tests of selected works and model versions; incomplete evidence about ordinary use and US-wide creator income.
 

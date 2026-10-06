@@ -1,0 +1,64 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "If anyone builds superintelligent AI, everyone dies.",
+  "scope": "Any superintelligent AI, built by anyone, by any method.",
+  "time_horizon": "No deadline.",
+  "occurrence": "Plain-English form of the title of Eliezer Yudkowsky and Nate Soares’s book “If Anyone Builds It, Everyone Dies” (September 16, 2025), whose “it” is artificial superintelligence.",
+  "occurrence_urls": [
+    "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "A prediction; no distinct problem with how current evidence is described.",
+      "sources": []
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "If anyone builds",
+      "reason": "Drops the authors’ own condition: systems built with techniques and understanding like those available in 2025. The title applies to anyone building it in any way.",
+      "sources": [
+        {
+          "url": "https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions",
+          "locator": "Quoted passage"
+        },
+        {
+          "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+          "locator": "Part One"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "N",
+      "claim_phrase": "everyone dies",
+      "reason": "States extinction as certain. The international synthesis records disagreement about likelihood and timing, and current incidents do not establish the full chain to extinction.",
+      "sources": [
+        {
+          "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+          "locator": "Section 2.2.2"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "everyone dies",
+      "reason": "Blunt, but it states the authors’ actual prediction; severity is not counted as rhetoric.",
+      "sources": []
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "The proposed mechanism is resource-seeking, not hatred or human emotion.",
+      "sources": [
+        {
+          "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east",
+          "locator": "Interview"
+        }
+      ]
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

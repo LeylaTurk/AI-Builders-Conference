@@ -1,14 +1,18 @@
-# Jobs: AI could eliminate half of US entry-level office jobs by about 2030.
+# Jobs: AI will take all our jobs.
 
 ## A. The claim
 
-**The exact claim we scored:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
+**The headline claim:** “AI will take all our jobs.”
+
+This is [CNN’s May 2024 headline](https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/) about Elon Musk, who told a Paris tech conference: “Probably none of us will have a job.”
+
+**The careful version we also checked:** AI could eliminate half of US entry-level white-collar jobs within one to five years.
 
 This preserves the possibility in [Dario Amodei's May 2025 warning](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), restated in his [January 2026 essay](https://darioamodei.com/essay/the-adolescence-of-technology). The original window runs approximately from 2026 to 2030; it does not restart today.
 
 ## B. The short answer
 
-Possibly, but nobody knows. This is a May 2025 warning from Anthropic's CEO, [not a tested forecast](https://darioamodei.com/essay/the-adolescence-of-technology). Young workers in jobs where AI can do many tasks are being hired less, but [researchers can't yet say AI is the cause](https://digitaleconomy.stanford.edu/news/canariesaug26/). Across the whole US job market, there's [no clear sign of broad AI disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
+Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible scenario, not a tested forecast. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 
@@ -28,7 +32,9 @@ The [August Stanford revision](https://digitaleconomy.stanford.edu/news/canaries
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim says “could,” and [Amodei describes a conditional scenario with a reasoned pathway](https://darioamodei.com/essay/the-adolescence-of-technology). This score assesses the wording, not the reliability or likelihood of the half-of-jobs estimate: its precise fraction and timetable remain unvalidated by [current employment evidence](https://digitaleconomy.stanford.edu/news/canariesaug26/).
+**Hype score for the headline: 4/5 — Overheated.** It turns Musk’s “probably” into a certainty and stretches tasks AI can help with into every job. The [US Bureau of Labor Statistics](https://www.bls.gov/emp/publications/ai-exposure-categories.htm) says exposure to AI is not a job-loss probability. The wording isn’t inflated; the size and certainty are.
+
+**The careful version scores 1/5 — Grounded.** It says “could,” and [Amodei describes a conditional scenario with a reasoned pathway](https://darioamodei.com/essay/the-adolescence-of-technology). This score assesses the wording, not the reliability or likelihood of the half-of-jobs estimate: its precise fraction and timetable remain unvalidated by [current employment evidence](https://digitaleconomy.stanford.edu/news/canariesaug26/).
 
 **Evidence gaps:** substantial uncertainty about causation and future adoption. **Potential harm:** fewer opportunities and lost income would matter even if the forecast proves exaggerated.
 

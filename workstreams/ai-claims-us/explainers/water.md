@@ -1,14 +1,18 @@
-# Water: AI data centers threaten water supplies in some dry US towns.
+# Water: Every AI-written email uses a bottle of water.
 
 ## A. The claim
 
-**The exact claim we scored:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
+**The headline claim:** “Every AI-written email uses a bottle of water.”
+
+This paraphrases [The Washington Post’s September 2024 headline](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/), “A bottle of water per email,” which reported researchers’ estimate that one 100-word email written with GPT-4 used 519 milliliters of water.
+
+**The careful version we also checked:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
 
 This assesses site-specific risk from current and planned facilities. It narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to its local-threat proposition; it does not claim that every facility causes shortages.
 
 ## B. The short answer
 
-In some places, yes. Data centers can use a lot of water to stay cool, especially on [the hottest days](https://arxiv.org/html/2603.02705v1), when supplies are tightest. At six Virginia utilities, data centers already make up [between 2% and 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF). But the risk depends on where a data center is, how it's cooled and where its water comes from. [National totals](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) can't tell you whether your town is at risk.
+Not quite. The bottle figure is a researchers’ estimate for one 100-word email from GPT-4, counting water used to cool data centers and to make their electricity. It depends on [assumptions about location and cooling](https://arxiv.org/html/2304.03271v5) and isn’t a measurement of every AI email. The real issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia utilities they already make up [2% to 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 ## C. What does this claim actually mean?
 
@@ -30,7 +34,9 @@ Annual national totals can hide summer peaks and local constraints. Reclaimed wa
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim in A describes a local threat, without asserting inevitable shortages: documented demand and the [peak-capacity analysis](https://arxiv.org/html/2603.02705v1) support that risk pathway. No hype checklist fails; incomplete AI-specific and facility-level data limit precision, while potential local harm remains serious.
+**Hype score for the headline: 4/5 — Overheated.** It presents a computer estimate as a measured fact and stretches one model’s 100-word email to every AI email, although water use varies widely with [model, location and cooling](https://arxiv.org/html/2304.03271v5). Failing on both counts triggers our loud-claim rule.
+
+**The careful version scores 1/5 — Grounded.** It describes a local threat, without asserting inevitable shortages: documented demand and the [peak-capacity analysis](https://arxiv.org/html/2603.02705v1) support that risk pathway. No hype checklist fails; incomplete AI-specific and facility-level data limit precision, while potential local harm remains serious.
 
 ## F. What can you do if you are still concerned?
 

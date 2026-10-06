@@ -1,14 +1,18 @@
-# Privacy: ChatGPT may use your personal-account chats to train its AI, depending on your settings.
+# Privacy: ChatGPT is sharing your secrets.
 
 ## A. The claim
 
-**The exact claim we scored:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
+**The headline claim:** “ChatGPT is sharing your secrets.”
+
+This is [Tom’s Guide’s April 2023 headline](https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting), in an article about ChatGPT using conversations to train its model.
+
+**The careful version we also checked:** “ChatGPT may use personal-account conversations to train its models, depending on your settings.”
 
 This is a qualified paraphrase of [Tom’s Guide’s October 2025 explanation](https://www.tomsguide.com/ai/keep-your-chatgpt-data-private-by-opting-out-of-training-heres-how). We assess ChatGPT’s stated practices for US users as of October 6, 2026; other services require separate checks.
 
 ## B. The short answer
 
-Yes. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off. Turning it off doesn't delete your chats, and thumbs-up or thumbs-down feedback can still be used. Business and Enterprise accounts are [left out of training by default](https://openai.com/enterprise-privacy/). These are OpenAI's own rules; no independent audit has checked that they're always followed.
+Not in the way it sounds. OpenAI says chats in personal accounts [may be used to train its models](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance) unless you turn that setting off, which isn’t the same as showing them to other people. Some staff and service providers [can access chats](https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services) for limited reasons like safety. Business accounts are [left out of training by default](https://openai.com/enterprise-privacy/). No independent audit has checked that these rules are always followed.
 
 ## C. What does this claim actually mean?
 
@@ -30,7 +34,9 @@ These sources establish stated rules, not the percentage of conversations actual
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim in A preserves “may” and limits the account and settings involved, matching [OpenAI’s stated training policy](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance); none of the five hype checks fails. This score evaluates the wording, not your safety: the evidence does not quantify misuse or exposure risk.
+**Hype score for the headline: 4/5 — Overheated.** It calls training “sharing”, treats every chat as a secret, and ignores the [settings](https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt) and [account types](https://openai.com/enterprise-privacy/) that change what happens.
+
+**The careful version scores 1/5 — Grounded.** It preserves “may” and limits the account and settings involved, matching [OpenAI’s stated training policy](https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance); none of the five hype checks fails. This score evaluates the wording, not your safety: the evidence does not quantify misuse or exposure risk.
 
 ## F. What can you do if you are still concerned?
 
