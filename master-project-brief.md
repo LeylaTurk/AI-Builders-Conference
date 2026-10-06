@@ -1,4 +1,4 @@
-# AI Decoded — master project brief
+# Decoding the Hype — master project brief
 
 **Leyla Amur · updated 26 September 2026 (latest: rating scales and names) · 5-Day AI Builder Challenge, 6–10 October 2026**  
 **Stage:** product, features, sources, visual design and rating display decided; mockup done; implementation has not begun.
@@ -10,7 +10,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | Item | Status |
 | --- | --- |
 | Idea | **Decided:** an AI-news website that rates each story for hype and for gaps in its evidence, with the evidence shown. |
-| Name | **AI Decoded: Don't fall for the hype** (renamed 4 Oct from "AI, Seriously?"; name and domain not yet checked). |
+| Name | **Decoding the Hype**, subtitle *AI news, headlines, and claims* (renamed 6 Oct; subtitle and tagline not final; name and domain not yet checked). |
 | Feature scope | **Approved** 25–26 Sep: 12 Musts, 4 Shoulds (see [Features](#features-approved) and `prep/feature-list.md`). |
 | Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Gaps** (1–5 flags for gaps in the evidence). |
 | Sources | **Decided:** big outlets are not fetched or AI-rated; the feed uses press releases, company announcements and openly licensed outlets, plus a hand-collected backlog. Readers can check any article by pasting it. |
@@ -57,7 +57,7 @@ The benefit is better-informed public discussion: helping people recognise unsup
 
 **Why AI is needed:** reading each article, picking its key claims, comparing them with the source and explaining the gap cannot be done by hand for a live feed. The AI does the checklist assessment; published criteria, stored ratings, quote-checking and visible evidence keep it inspectable.
 
-**Where it fits:** Ground News rates *publishers*, not individual articles, and reviewers name that as its main weakness (a trusted outlet's weak article still looks fine). AI Decoded rates **each article**, and no established service rates **hype** separately.
+**Where it fits:** Ground News rates *publishers*, not individual articles, and reviewers name that as its main weakness (a trusted outlet's weak article still looks fine). Decoding the Hype rates **each article**, and no established service rates **hype** separately.
 
 ## Features (approved)
 
@@ -69,7 +69,7 @@ Full list with hours and details: `prep/feature-list.md`.
 | **Should have** (only if Day 3 ends on schedule) | Sorts (Newest, Fewest gaps, Most hyped, Unrated) · topic filter chips · scheduled daily rating run · **"Learn" section** with the explainer videos · **"Common claims" page** (added 2 Oct; built last, if time allows; see below) |
 | **Later** | Guess the hype · share/export cards · cost view · "Disagree with this rating?" link · PDF/OCR sources · Turkish coverage · story clustering · paired comparison · fetching links from any site · accounts and notifications · browser extension · dark mode · phone-optimised layout (to be checked in the mockup) |
 
-**Plan for the actual hours (decided 2 Oct):** Leyla has **5.5 hours a day** in the challenge week (27.5 h) plus about 9.5 hours of prep. Changes from the list above: **all four candidate feed sources** whose terms allow it (EurekAlert, The Conversation, ProPublica, OpenAI news); the **archive with Highlights pages is required**; **links in "Check an article" and the Common claims page are built only if ahead**; Behind the Claim checks 1 claim against 1 source page; the gaps breakdown panel is dropped (the markup shows the same findings); operator controls are the approve step (pause via the provider's spending limit); video 0 moves to after the challenge (a 2-minute screen recording is the demo video); no reserve, so the cut order is the safety net. The day-by-day plan and progress tracker is the private "AI Decoded Sprint Plan" page. The original estimate follows for reference.
+**Plan for the actual hours (decided 2 Oct):** Leyla has **5.5 hours a day** in the challenge week (27.5 h) plus about 9.5 hours of prep. Changes from the list above: **all four candidate feed sources** whose terms allow it (EurekAlert, The Conversation, ProPublica, OpenAI news); the **archive with Highlights pages is required**; **links in "Check an article" and the Common claims page are built only if ahead**; Behind the Claim checks 1 claim against 1 source page; the gaps breakdown panel is dropped (the markup shows the same findings); operator controls are the approve step (pause via the provider's spending limit); video 0 moves to after the challenge (a 2-minute screen recording is the demo video); no reserve, so the cut order is the safety net. The day-by-day plan and progress tracker is the private "Decoding the Hype Sprint Plan" page. The original estimate follows for reference.
 
 **Time (original estimate):** the Musts total about 27.5 hours against about 28 build hours plus 4 reserve. Leyla decides any cuts on Day 3, in this order: (1) Behind the Claim at its smaller size, (2) simpler operator controls (the approve step stays), (3) one feed source and 10 cards, (4) drop the breakdown panel (the markup shows the same findings). **Never cut:** the live feed, both ratings, the "Not rated" and "Insufficient evidence" states, the spending cap, accessibility.
 
@@ -214,7 +214,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 
 ## Name
 
-**Name (decided 4 Oct): AI Decoded**, with the tagline **"Don't fall for the hype."** It replaces the working name "AI, Seriously?". The logo reads "AI **Decoded**" with "Decoded" on the yellow highlighter mark; the tagline sits under it on the feed and in titles where there is room ("AI Decoded: Don't fall for the hype"). **Not yet checked** for existing products or a domain; nothing purchased. "AI Decoded" is already used elsewhere (for example a BBC News programme with that title), so check for confusion before using it publicly and, if needed, keep the tagline in the name. **Behind the Claim** names the evidence section. Avoid **ClaimTrail** ([existing product](https://claimtrail.dev/)). Fallbacks: Hype & Signal, The AI Edit, Signal & Spice, Beyond the Buzz, HeadlineTrail.
+**Name (decided 6 Oct): Decoding the Hype**, with the working subtitle **"AI news, headlines, and claims"** (subtitle and tagline not final). It replaces "AI Decoded: Don't fall for the hype" (4 Oct), which was already used elsewhere, and the first working name "AI, Seriously?". The logo reads "Decoding the **Hype**" with "Hype" on the yellow highlighter mark; the subtitle sits under it on the feed. **Not yet checked** for existing products or a domain; nothing purchased. **Behind the Claim** names the evidence section. Avoid **ClaimTrail** ([existing product](https://claimtrail.dev/)).
 
 ## Testing and acceptance
 
@@ -319,7 +319,7 @@ Leyla builds solo with agent support; no coding experience assumed. It's a **web
 | Experience | I have shipped AI projects |
 | Team | Solo |
 | Public display | Tick it (needed for Community Choice and the Showcase) |
-| Project name | AI Decoded: Don't fall for the hype |
+| Project name | Decoding the Hype: AI news, headlines, and claims |
 | One-line idea | An AI-news feed that rates every story for hype and for gaps in its evidence, and shows the evidence behind each rating. |
 
 **Short introduction (draft):**

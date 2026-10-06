@@ -1,6 +1,6 @@
 # Research: can the app use the biggest news outlets?
 
-**AI Decoded · preparation research · 25 September 2026 · first pass**
+**Decoding the Hype · preparation research · 25 September 2026 · first pass**
 
 **Question:** can the feed include major outlets (WIRED, CNN, BBC, MS NOW, Fox News, Reuters, AP and similar) and have AI rate their articles?
 

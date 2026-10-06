@@ -2,7 +2,7 @@
 
 > **Decisions taken from this research (26 Sep):** checklist method adopted; severity-weighted hype formula; human review before publishing; outlet name hidden but source type kept; hype and evidence cleanly separated. See `master-project-brief.md` → "How ratings are produced".
 
-**AI Decoded · preparation research · 25 September 2026 · second pass (six sources checked against the originals)**
+**Decoding the Hype · preparation research · 25 September 2026 · second pass (six sources checked against the originals)**
 
 **Question:** how should each part of the rating work, where does the information for each judgement come from, and does the approach match established practice?
 
