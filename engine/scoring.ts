@@ -1,4 +1,4 @@
-// Turns the AI's checklist answers into the Hype and Gaps ratings.
+// Turns the AI's checklist answers into the Hype and Evidence gaps ratings.
 // Same rules as the Rating Desk and the brief ("How ratings are produced", points 2 and 3).
 // The AI never computes a rating; this code does.
 
@@ -47,7 +47,7 @@ function average(levels: number[]): number {
 export type Rating = {
   level: number | "insufficient";
   sections: Record<string, SectionResult>;
-  ruleApplied: boolean; // Hype: headline rule. Gaps: safety rule.
+  ruleApplied: boolean; // Hype: headline rule. Evidence gaps: safety rule.
 };
 
 function rate(
@@ -62,7 +62,7 @@ function rate(
   if (scored.length < 2) return { level: "insufficient", sections: results, ruleApplied: false };
   let level = average(scored.map(r => r.level));
   // Hype: a Headline section of 5 means Hype is at least 4 (many people read only the headline).
-  // Gaps: a Strength of evidence section of 5 means Gaps is at least 4.
+  // Evidence gaps: a Strength of evidence section of 5 means Evidence gaps is at least 4.
   const rule = results[ruleSection];
   let ruleApplied = false;
   if (!rule.out && rule.level === 5 && level < 4) { level = 4; ruleApplied = true; }
