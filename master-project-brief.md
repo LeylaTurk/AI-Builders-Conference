@@ -19,7 +19,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | Videos | **Planned:** video 0 before the sprint; four learner videos after. |
 | Sprint approach | **Decided:** front-load prep; build-first sprint, not the official Daily Missions. |
 | Build stack | **Lovable** (decided 5 Oct); set up on Tue 6 Oct. |
-| AI model | Open: compare Claude Opus 5 and Claude Sonnet 5 on the calibration set. |
+| AI model | **Decided 6 Oct: Claude Sonnet 5.5.** Compared with Opus 5.5 on the 4 build stories: both matched 66 of 84 hand answers; Sonnet costs about half (estimated 3–7 cents a story against 7–14). Switching is one setting if the held-back stories show a problem. |
 | Budget and time | About **US$100** through judging; **40 hands-on hours** in the sprint, plus prep. |
 
 **Next actions:** video 0 script (30 Sep); name check and source terms (30 Sep); collect and hand-rate the backlog (2 Oct).
@@ -283,7 +283,7 @@ The 5-Day AI Builder Challenge is run by Women AI Builders (WomenTech Network) a
 | 30 Sep | Name check; confirm feed sources and allowlist terms (save PDFs) | To do |
 | 2 Oct | Film video 0 | To do |
 | 2 Oct | Collect the backlog and rate it by hand (8+ articles, 4 held back) | To do |
-| 3 Oct | Rating prompt and output format drafted; compare Opus 5 vs Sonnet 5; measure cost per article | To do |
+| 3 Oct | Rating prompt and output format drafted; compare Opus 5 vs Sonnet 5; measure cost per article | Done 6 Oct (`engine/`); Sonnet 5.5 chosen; real cost per article measured once Lovable runs it |
 | 4 Oct | Edit, caption and publish video 0 | To do |
 | 4 Oct | Pick and set up the stack: accounts, API key, spending limit, empty web app at a public URL | To do |
 | 5 Oct | Sprint task list with cut order; starting-point log final; profile and dashboard complete; kick-off webinar | To do |
