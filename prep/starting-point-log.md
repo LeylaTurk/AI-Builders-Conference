@@ -1,6 +1,6 @@
 # Starting-point log
 
-**AI Decoded · work done before the sprint (6–10 October 2026)**
+**Decoding the Hype · work done before the sprint (6–10 October 2026)**
 
 The challenge allows earlier work if it's declared, and reviewers judge what was added during the sprint. This log becomes the **"starting point"** field of the submission. Add a line whenever pre-sprint work is done.
 

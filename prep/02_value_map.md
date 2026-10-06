@@ -1,6 +1,6 @@
 # Stage 2 — User and judge lens
 
-**AI Decoded · feature-scoping workstream · 25 September 2026**
+**Decoding the Hype · feature-scoping workstream · 25 September 2026**
 
 For each feature: how much it matters to a **general reader** (the primary audience), and which **official scoring criteria** it strengthens.
 

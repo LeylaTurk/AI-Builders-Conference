@@ -1,6 +1,6 @@
 # Stage 3 — Feasibility and cost
 
-**AI Decoded · feature-scoping workstream · 25 September 2026**
+**Decoding the Hype · feature-scoping workstream · 25 September 2026**
 
 All figures are **planning estimates**, not measurements. Replace them with measured numbers during preparation (stack trial and calibration).
 

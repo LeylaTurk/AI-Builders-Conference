@@ -1,6 +1,6 @@
 # Video setup guide (first-time filming)
 
-**AI Decoded · 26 September 2026 · for video 0 and the learner videos (see `09_video_plan.md`)**
+**Decoding the Hype · 26 September 2026 · for video 0 and the learner videos (see `09_video_plan.md`)**
 
 Short version: an iPhone 15, good window light and a cheap clip-on microphone beat most beginner setups.
 

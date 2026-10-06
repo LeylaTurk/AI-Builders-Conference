@@ -1,6 +1,6 @@
 # Research: visual design
 
-**AI Decoded · preparation research · 26 September 2026**
+**Decoding the Hype · preparation research · 26 September 2026**
 
 **Goal:** before the mockup, decide how the app shows ratings, meters and colour-coded markup, so it is easy to read, accessible to colour-blind readers, works in light and dark mode, and shares a look with the Vox-style videos.
 
