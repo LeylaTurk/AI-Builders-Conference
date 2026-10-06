@@ -56,9 +56,9 @@ For every **N**, give the **exact words** from the article that show the problem
 **Headline (H): does the headline match the story?**
 - **H1. The headline matches what the story shows.** N if the headline repeats a claim ("world's first", "better than doctors") as if it were established when the story only reports someone saying it.
 - **H2. The headline keeps any uncertainty.** "may", "could", "says": no certainty the story doesn't have.
+- **H3. No clickbait.** No teasers, bait questions or shock words. Grand or superlative phrases in the headline ("world's first", "greatest revolution", "better than doctors") count as shock words, even in quotation marks.
 
 Putting a hyped phrase in quotation marks in the headline doesn't excuse it: the outlet chose to put it there (see "Quoted words count").
-- **H3. No clickbait.** No teasers, bait questions or shock words. Grand or superlative phrases in the headline ("world's first", "greatest revolution", "better than doctors") count as shock words, even in quotation marks.
 
 **Claims in proportion (P): is the finding kept to its real size?**
 - **P1. Doesn't sound surer than the source.** "may reduce" becomes "reduces", "linked to" becomes "causes", "early results" becomes "proves". Compare the article with the main source text; follow the Step 0 table when the source isn't read.
