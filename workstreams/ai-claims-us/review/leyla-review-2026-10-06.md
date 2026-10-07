@@ -70,7 +70,7 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 | Energy and climate | AI will only intensify climate change. | The Nation, December 2025 | 4/5 | 1/5 |
 | Creativity | AI art is theft. | Goetze, arXiv paper, 2024 | 4/5 | 1/5 |
 | Privacy | ChatGPT is sharing your secrets. | Tom's Guide, April 2023 | 4/5 | 1/5 |
-| Existential risk | If anyone builds superintelligent AI, everyone dies. | Yudkowsky and Soares, book title, 2025 | 4/5 | 2/5 |
+| Existential risk | AI will kill us all. | Yudkowsky and Soares, book title, 2025 (short form, changed October 7) | 4/5 | 2/5 |
 
 **Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. Leyla chose this on a decision card on October 6; it can be reverted by removing one line in `scoring/claim-score.py`.
 

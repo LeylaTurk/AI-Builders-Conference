@@ -1,13 +1,13 @@
 {
   "contentVersion": "claims-us-content-1.4",
   "section": {
-    "name": "AI claims explained",
+    "name": "Claim Tracker",
     "route": "/claims",
     "introduction": "Six claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
     "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
     "feedInvitationBody": "Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.",
-    "feedInvitationLinkText": "Explore AI claims",
+    "feedInvitationLinkText": "Explore the Claim Tracker",
     "reviewLabels": {
       "pending": "AI rating, not yet reviewed",
       "reviewed": "Reviewed by Leyla"

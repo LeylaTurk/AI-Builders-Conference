@@ -1,4 +1,4 @@
-# Lovable handoff: AI claims explained
+# Lovable handoff: Claim Tracker
 
 ## How to supply this handoff
 
@@ -8,7 +8,7 @@ This handoff is for implementation in the existing project's preview. It does no
 
 ## Prompt to paste into Lovable
 
-You are extending my existing **Decoding the Hype** project, whose live site is https://hype-decoder-shell.lovable.app/. Add a small section called **AI claims explained** alongside the working newsfeed. Implement and verify the changes in preview; do not publish. Preserve the current feed, article routes, ingestion, source links, stored ratings and article-rating engine.
+You are extending my existing **Decoding the Hype** project, whose live site is https://hype-decoder-shell.lovable.app/. Add a small section called **Claim Tracker** alongside the working newsfeed. Implement and verify the changes in preview; do not publish. Preserve the current feed, article routes, ingestion, source links, stored ratings and article-rating engine.
 
 I have attached **`claims-content.json`** to this message. It is the complete, authoritative content package. Read it before implementing. Do not research or generate replacement factual content, invent citations, change claims to improve the score, alter scores for variety, or claim human review has happened. If the attachment is missing, unreadable or incomplete, report the exact problem instead of filling missing material yourself. No access to earlier conversation or local files is assumed.
 
@@ -23,7 +23,7 @@ The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-
 | Energy and climate | `/claims/energy-climate` | AI will only intensify climate change. | **4/5 — Overheated** | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
 | Creativity | `/claims/creativity` | AI art is theft. | **4/5 — Overheated** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
 | Privacy | `/claims/privacy` | ChatGPT is sharing your secrets. | **4/5 — Overheated** | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
-| Existential risk | `/claims/existential-risk` | If anyone builds superintelligent AI, everyone dies. | **4/5 — Overheated** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
+| Existential risk | `/claims/existential-risk` | AI will kill us all. | **4/5 — Overheated** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 
 The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule (claims-us-1.1). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
 
@@ -64,7 +64,7 @@ Keep the current feed visually familiar. Use a centered content area around 856p
 
 ### 3. Routes, navigation and feed entry point
 
-Keep `/` as Feed and `/story/:id` as the current story detail. Add `/claims` and the six exact routes in the table. The logo still links to `/`. Add **AI claims explained** beside **Feed** in the global header, using the existing yellow active treatment and `aria-current="page"` on the active section. Claims detail pages keep the claims nav item active.
+Keep `/` as Feed and `/story/:id` as the current story detail. Add `/claims` and the six exact routes in the table. The logo still links to `/`. Add **Claim Tracker** beside **Feed** in the global header, using the existing yellow active treatment and `aria-current="page"` on the active section. Claims detail pages keep the claims nav item active.
 
 At 768px and wider, the logo and two nav links can occupy one row. Below 768px, place the logo on row one and the two links on row two, wrapping safely down to 320px. No hamburger menu is needed for two destinations. Use real links, not click-handler-only text.
 
@@ -72,7 +72,7 @@ On the current feed add one compact invitation below its existing feed-checked t
 
 - Title: `section.feedInvitationTitle` — **Concerned about a recurring AI claim?**
 - Body: `section.feedInvitationBody` — **Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.**
-- Link: `section.feedInvitationLinkText` — **Explore AI claims**, pointing to `/claims`.
+- Link: `section.feedInvitationLinkText` — **Explore the Claim Tracker**, pointing to `/claims`.
 
 Do not insert the six-card grid into the feed or change its fetching, ordering, ratings, refresh controls or timestamp. Keep the invitation compact so news remains prominent on mobile.
 
@@ -96,7 +96,7 @@ Let text wrap and card height grow. Never ellipsize a claim, hide a qualifier, u
 
 Use a normal page with one readable column and anchors. Do not make the topic a modal or hide main sections behind tabs; the interactive layers in 5b are the only tap-to-open content. Keep this order on desktop and mobile:
 
-1. Breadcrumb **AI claims explained / [Topic]**, linked back to `/claims`.
+1. Breadcrumb **Claim Tracker / [Topic]**, linked back to `/claims`.
 2. Topic label and `headline` as the single h1, with `interactive.keyWord.word` highlighted inside it (see 5b); research cutoff and exact review status.
 2b. Directly under the h1, `interactive.headlineSource` in a short line (for example “Said by: Elon Musk, at a tech conference in Paris in May 2024…”), so readers know who made the claim before they see its score.
 3. A white claim panel containing the headline score row and `hype.reason` directly under the h1. Then the label **Is it true? The short answer** and `shortAnswerMarkdown`, always visible. Then a clearly separated box headed **A more careful way to say it**, containing, in this order: the `carefulHeadline` as a quote, then `interactive.carefulSource` in small muted text (it says the wording is ours and which real source it rests on), then `carefulHype.reason` as a full sentence, then the careful-version score row. Never show the careful score row without its quote. Then `claimContextMarkdown`, exact scope/time horizon and `keyQualification`; `scoreExplanationMarkdown`; and the short `evidenceGaps.limitations` list. Section A labels **The headline claim** and **The careful version we also checked**; keep both labels visible. Add `section.scoreNote` and a **How these scores work** anchor link. Avoid duplicating `claim` a second time if section A already renders it. Do not separate the qualifier and rationale from the score.
@@ -106,7 +106,7 @@ Use a normal page with one readable column and anchors. Do not make the topic a 
 7. **How these scores work**, with the exact public methodology below and the scoring disclosure.
 8. **Sources and review**, rendering the complete G body, including every publication/update date and access limitation. Show the explicit AI review date separately if not in G. No claim of human review.
 9. **In the news**: the three article cards, as specified in section 7.
-10. Links **Explore all AI claims** to `/claims` and **Back to the feed** to `/`.
+10. Links **Explore the Claim Tracker** to `/claims` and **Back to the feed** to `/`.
 
 Anchor destinations need enough `scroll-margin-top` to avoid header overlap. Metadata and important evidence labels are plain text, not green/red “safe/danger” badges. Preserve the distinction between observed outcomes, controlled experiments, projections, surveys/judgments and theoretical scenarios in the supplied copy.
 

@@ -67,8 +67,8 @@
     },
     {
       "topic": "existential-risk",
-      "wordsAThroughF": 605,
-      "shortAnswerWords": 54,
+      "wordsAThroughF": 611,
+      "shortAnswerWords": 57,
       "actions": 3,
       "externalInlineLinksInEachRequiredSection": true,
       "inlineSourceCount": 13,
@@ -95,8 +95,8 @@
     "explainers/privacy.md": "a8278d8c4434598fccbcbc1842fecacfe3fa2e349829be6274cb1016ae6b496d",
     "research/privacy-score.json": "1ce30a1341b6873868cb595222cf51c6ababed130fdf653fc9c7d6322c6db153",
     "research/privacy-headline-score.json": "408eb9803425738708b3247ce62eb1cb5e2d4e01a3783c0e18211a1429ff371b",
-    "explainers/existential-risk.md": "d9657f1df64309e9eb2df8737f9da5b903832f43c98c5df8f2b90af7fca5ff14",
+    "explainers/existential-risk.md": "7197de9b8620440dbe0640691f8e511debab05a15e7f5fd687858e3159d93ff3",
     "research/existential-risk-score.json": "8e6f0384f4bde1e7c205bb3c8d512660dfd26e531be1cf67158dcfb157e9df6f",
-    "research/existential-risk-headline-score.json": "95fe0851ad1312bc4f5c38307b8624f31fdd01f7e594b16c560e2f9018f30a66"
+    "research/existential-risk-headline-score.json": "205974e104ea8c72046325c9338ffbbe270b30f867f9cc954711670df503dab6"
   }
 }

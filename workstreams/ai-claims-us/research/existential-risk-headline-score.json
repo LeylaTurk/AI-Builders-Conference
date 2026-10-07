@@ -1,11 +1,12 @@
 {
   "rubric_version": "claims-us-1.1",
-  "claim": "If anyone builds superintelligent AI, everyone dies.",
-  "scope": "Any superintelligent AI, built by anyone, by any method.",
+  "claim": "AI will kill us all.",
+  "scope": "Any AI, including today's, built by anyone, by any method.",
   "time_horizon": "No deadline.",
-  "occurrence": "Plain-English form of the title of Eliezer Yudkowsky and Nate Soares’s book “If Anyone Builds It, Everyone Dies” (September 16, 2025), whose “it” is artificial superintelligence.",
+  "occurrence": "Plain-English, short form of the title of Eliezer Yudkowsky and Nate Soares’s book “If Anyone Builds It, Everyone Dies” (September 16, 2025), whose “it” is artificial superintelligence. The same short wording circulates widely; for example, CNN’s September 24, 2026 story “Not everyone thinks AI will kill us all” responds to it.",
   "occurrence_urls": [
-    "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/"
+    "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/",
+    "https://edition.cnn.com/2026/09/24/tech/not-everyone-thinks-ai-will-kill-us-all"
   ],
   "hype_checks": {
     "P1": {
@@ -16,8 +17,8 @@
     },
     "P2": {
       "answer": "N",
-      "claim_phrase": "If anyone builds",
-      "reason": "Drops the authors’ own condition: systems built with techniques and understanding like those available in 2025. The title applies to anyone building it in any way.",
+      "claim_phrase": "AI",
+      "reason": "Applies to all AI, including today's, and drops the authors’ own condition: superintelligent systems built with techniques and understanding like those available in 2025.",
       "sources": [
         {
           "url": "https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions",
@@ -31,7 +32,7 @@
     },
     "P3": {
       "answer": "N",
-      "claim_phrase": "everyone dies",
+      "claim_phrase": "will kill us all",
       "reason": "States extinction as certain. The international synthesis records disagreement about likelihood and timing, and current incidents do not establish the full chain to extinction.",
       "sources": [
         {
@@ -60,5 +61,5 @@
   },
   "research_cutoff": "2026-10-06",
   "review_status": "AI research draft; not independently reviewed",
-  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief. Changed October 7, 2026 at Leyla’s request from “If anyone builds superintelligent AI, everyone dies.” to the shorter “AI will kill us all.”"
 }

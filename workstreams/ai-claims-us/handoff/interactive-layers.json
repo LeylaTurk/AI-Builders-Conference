@@ -765,12 +765,12 @@
       "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
     },
     "existential-risk": {
-      "headline": "If anyone builds superintelligent AI, everyone dies.",
+      "headline": "AI will kill us all.",
       "keyWord": {
-        "word": "everyone dies",
-        "explanation": "Stated as a certainty. The evidence shows real reasons for concern, not that extinction is guaranteed."
+        "word": "kill us all",
+        "explanation": "Stated as a certainty, about all AI. The evidence shows real reasons for concern about future, much smarter AI, not that extinction is guaranteed."
       },
-      "scoreReason": "The headline says everyone will certainly die, and drops the authors' own condition about how this super-smart AI gets built.",
+      "scoreReason": "The headline talks about all AI, says everyone will certainly die, and drops the authors' own condition about how a super-smart AI gets built.",
       "claimDial": [
         {
           "text": "Future AI much smarter than people could pose serious risks, and experts disagree about how big they are.",
@@ -835,7 +835,7 @@
           }
         },
         {
-          "text": "If anyone builds superintelligent AI, everyone dies.",
+          "text": "AI will kill us all.",
           "scoredAs": "headline",
           "origin": "headline claim",
           "level": 4
@@ -910,7 +910,7 @@
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
       "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
-      "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book.",
+      "headlineSource": "Said by: the short version of the title of AI-risk researchers Eliezer Yudkowsky and Nate Soares's 2025 book, “If Anyone Builds It, Everyone Dies.”",
       "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
     }
   }
