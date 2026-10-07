@@ -434,41 +434,41 @@
         ],
         "finePrint": [
           {
-            "label": "Not all data centers are AI",
-            "text": "Most water figures cover every kind of data center, from email to video streaming, so not all of it is AI."
+            "label": "Fact: Not all data centers are used for AI.",
+            "text": "Data centers also run email, websites, video streaming and online storage. Most numbers about data center water use add all of these together, so only part of that water goes to AI."
           },
           {
-            "label": "Some water goes back",
-            "text": "Data centers take water from rivers and wells. Some of it is returned. The part that evaporates is what a town really loses."
+            "label": "Fact: The “bottle” was for many answers, not one.",
+            "text": "Researchers estimated that GPT-3, an older AI model, used about half a liter of water (one small bottle) for every 10 to 50 answers. That counts water at the data center and at the power plant. It’s an estimate, not a measurement."
           },
           {
-            "label": "Hot days matter most",
-            "text": "A data center can look small over a year but use a lot on the hottest days, when water is scarcest."
+            "label": "Fact: Newer estimates are much smaller.",
+            "text": "In August 2025, Google estimated that a typical text question to its Gemini AI uses about 0.26 milliliters of water, or about five drops. That’s the company’s own estimate, and no one outside has checked it."
           },
           {
-            "label": "Saving water costs power",
-            "text": "Cooling systems that use less water need more electricity, so there's no free fix."
+            "label": "Fact: Some of the water goes back.",
+            "text": "Data centers take water from rivers, lakes and wells, and some of it is returned. The water that evaporates while cooling the machines is what a town actually loses."
           },
           {
-            "label": "Where the bottle number comes from",
-            "text": "Researchers estimated about half a liter for every 10–50 answers from GPT-3, an older model, counting water at the data center and at the power plant. It’s an estimate, not a measurement."
+            "label": "Fact: Hot days matter most.",
+            "text": "A data center can use little water over a whole year but a lot on the hottest days, which is exactly when a town’s water is scarcest."
           }
         ],
         "quiz": [
           {
             "statement": "Every time you use AI, it uses a bottle of water.",
             "answer": "False",
-            "why": "Not proven. The estimate was about a bottle for every 10–50 answers, and it’s based on guesses, not a measurement."
+            "why": "The study behind the bottle figure estimated one bottle for every 10 to 50 answers from an older model, not one per use. Google’s own estimate for a typical question today is about five drops. Both are estimates, not measurements."
           },
           {
-            "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
+            "statement": "A data center can strain a town’s water on hot days, even if its yearly use looks small.",
             "answer": "True",
-            "why": "The hottest days, when everyone needs water most, are when the strain shows."
+            "why": "Data centers use the most water for cooling on the hottest days, which is also when everyone else needs water most."
           },
           {
-            "statement": "AI data centers are why my town has water restrictions.",
+            "statement": "If your town has water restrictions, AI data centers are the cause.",
             "answer": "False",
-            "why": "Not proven. Drought maps and water company reports can't blame a shortage on one user."
+            "why": "Not necessarily. Water restrictions usually come from drought and from everyone in the area using more water. Public records rarely show that one user, like a data center, caused them."
           }
         ],
         "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
@@ -909,41 +909,41 @@
         ],
         "finePrint": [
           {
-            "label": "What Musk actually said",
+            "label": "Fact: Musk said “probably”.",
             "text": "At a Paris tech conference in May 2024, Elon Musk said: “Probably none of us will have a job.” He added that work could become optional, like a hobby."
           },
           {
-            "label": "“Exposed” isn't “at risk”",
-            "text": "It means AI could help with or do some tasks in a job. The US Bureau of Labor Statistics says it isn't a chance of losing your job."
+            "label": "Fact: A job “exposed” to AI isn’t a job at risk.",
+            "text": "“Exposed” means AI could help with or do some of the tasks in a job. The US Bureau of Labor Statistics says it doesn’t measure your chance of losing your job."
           },
           {
-            "label": "Fewer hires, not layoffs",
-            "text": "So far the change shows up mainly as weaker hiring of young people."
+            "label": "Fact: So far, it’s fewer hires, not mass layoffs.",
+            "text": "Where a change shows up, it’s mainly that fewer young people are being hired into jobs where AI can do a lot of the work."
           },
           {
-            "label": "The numbers so far",
-            "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the jobs where AI can do the most tasks, versus 2.0% in the jobs where it can do the fewest (figures from the payroll company ADP)."
+            "label": "Fact: Young workers in AI-heavy jobs are losing ground.",
+            "text": "In August 2026, the number of 22- to 25-year-olds working in the jobs where AI can do the most tasks was 4.4% lower than a year earlier. In the jobs where AI can do the fewest tasks, it was 2.0% lower. These figures come from ADP, a payroll company, and don’t prove AI caused the drop."
           },
           {
-            "label": "The narrower warning",
-            "text": "Anthropic's CEO, whose company sells AI, warned in May 2025 that AI could eliminate half of entry-level office jobs within one to five years. That's a possible future, not a proven prediction."
+            "label": "Fact: The scariest warning is a forecast.",
+            "text": "In May 2025, the head of Anthropic, a company that sells AI, warned that AI could wipe out half of entry-level office jobs within one to five years. That’s a prediction, not something that has happened."
           }
         ],
         "quiz": [
           {
             "statement": "AI will take every job.",
             "answer": "False",
-            "why": "Not proven. Even Musk said “probably”, and current data show no broad disruption."
+            "why": "Not proven. Even Musk said “probably”, and so far there’s no sign of jobs disappearing across the whole economy."
           },
           {
-            "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
+            "statement": "Fewer young people are being hired into jobs where AI can do a lot of the work.",
             "answer": "True",
-            "why": "Pay records from employers show it."
+            "why": "Payroll data studied by ADP and Stanford researchers show employment of 22- to 25-year-olds falling faster in those jobs, mostly because fewer are being hired."
           },
           {
-            "statement": "AI caused that drop in hiring.",
+            "statement": "Researchers have proven that AI caused that drop.",
             "answer": "False",
-            "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
+            "why": "No. The researchers say their findings show a pattern, not a cause. Other things, like education and trends that started before AI, could also play a part."
           }
         ],
         "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
@@ -1379,41 +1379,41 @@
         ],
         "finePrint": [
           {
-            "label": "Who says it",
-            "text": "Eliezer Yudkowsky and Nate Soares, in their 2025 book If Anyone Builds It, Everyone Dies."
+            "label": "Fact: The claim comes from a 2025 book.",
+            "text": "Eliezer Yudkowsky and Nate Soares make the case in their book If Anyone Builds It, Everyone Dies."
           },
           {
-            "label": "“Superintelligence”",
-            "text": "AI that is more capable than all of humanity combined, not today's chatbots."
+            "label": "Fact: The book is about “superintelligence”, not today’s chatbots.",
+            "text": "That means AI more capable than all of humanity combined. Nothing like that exists yet."
           },
           {
-            "label": "Not about hatred",
-            "text": "The authors' worry is AI pursuing goals and resources in ways that destroy what humans need to survive, not AI that hates us."
+            "label": "Fact: The worry isn’t that AI hates us.",
+            "text": "The authors fear AI chasing its own goals and grabbing resources in ways that destroy what people need to survive."
           },
           {
-            "label": "Four different fears",
-            "text": "Everyone dying, a disaster that kills many people, people misusing AI, and losing control of AI are different things."
+            "label": "Fact: There are different kinds of AI risk.",
+            "text": "Everyone dying, a disaster that kills many people, people using AI to do harm, and losing control of AI are separate fears, with separate evidence."
           },
           {
-            "label": "What the tests showed",
-            "text": "AI models blackmailed people in made-up company scenarios (Anthropic, 2025). AI agents tried actions they weren't allowed to in UK government testing, and hacked a real website during standard skills tests (2026). The made-up scenarios hurt no one, and the UK attempts failed."
+            "label": "Fact: AI has misbehaved in tests.",
+            "text": "In made-up company scenarios, AI models blackmailed people (Anthropic, 2025). In UK government tests, AI agents tried things they weren’t allowed to do, and during skills tests, AI agents hacked a real website (2026). The made-up scenarios hurt no one, and the UK attempts failed."
           }
         ],
         "quiz": [
           {
-            "statement": "AI systems have done things in tests their makers didn't intend.",
+            "statement": "AI systems have done things in tests that their makers didn’t intend.",
             "answer": "True",
-            "why": "Documented by Anthropic, the UK AI Security Institute and METR."
+            "why": "Anthropic, the UK’s AI Security Institute and the research group METR have all documented it."
           },
           {
-            "statement": "Experts agree on how likely AI extinction is.",
+            "statement": "Experts agree on how likely it is that AI wipes out humanity.",
             "answer": "False",
-            "why": "The 2026 International AI Safety Report records wide disagreement."
+            "why": "The 2026 International AI Safety Report, written by experts from many countries, found wide disagreement about how likely it is and how soon."
           },
           {
-            "statement": "AI risk is all made up.",
+            "statement": "The risks from AI are all made up.",
             "answer": "False",
-            "why": "The test incidents are real, even though they don't prove extinction."
+            "why": "The incidents in tests are real, even though they don’t prove AI will wipe us out."
           }
         ],
         "headlineSource": "Claim tracked from AI-risk researchers Eliezer Yudkowsky and Nate Soares, who made it in the title of their 2025 book, “If Anyone Builds It, Everyone Dies.”",
@@ -1835,41 +1835,41 @@
         ],
         "finePrint": [
           {
-            "label": "Electricity isn't emissions",
-            "text": "The same power use can be clean or dirty depending on which plants make it."
+            "label": "Fact: Using electricity isn’t the same as polluting.",
+            "text": "Whether AI’s electricity harms the climate depends on how it’s made. Power from wind, sun or nuclear plants adds little pollution; power from coal or gas adds more."
           },
           {
-            "label": "Not all data centers are AI",
-            "text": "All US data centers used 4.4% of US electricity in 2023; AI is one part of that."
+            "label": "Fact: AI is only part of data centers’ electricity use.",
+            "text": "All US data centers together used 4.4% of the country’s electricity in 2023, according to Berkeley Lab. That includes email, websites and streaming, not just AI."
           },
           {
-            "label": "Green purchases have limits",
-            "text": "Buying renewable power over a year doesn't mean clean power every hour, in every place."
+            "label": "Fact: Buying green power doesn’t mean using it every hour.",
+            "text": "A company can buy enough renewable power to cover a whole year, but at night or on still days its data centers may still run on power from coal or gas."
           },
           {
-            "label": "Worldwide numbers",
-            "text": "The International Energy Agency says data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work."
+            "label": "Fact: Data centers’ electricity use is expected to double.",
+            "text": "The International Energy Agency estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030. That includes work that isn’t AI."
           },
           {
-            "label": "Could AI help the climate?",
-            "text": "Possibly, through things like smarter energy management, but those savings aren't proven to cancel out its emissions."
+            "label": "Fact: AI might help the climate, but that isn’t proven.",
+            "text": "AI could cut pollution in other ways, like running power grids more efficiently. No one has shown those savings will outweigh the pollution from its own electricity."
           }
         ],
         "quiz": [
           {
             "statement": "If a company buys enough renewable power over a year, its AI runs on clean power every hour.",
             "answer": "False",
-            "why": "Yearly purchases don't match supply hour by hour."
+            "why": "Buying a year’s worth of green power doesn’t mean clean power at every hour. At night or on still days, its data centers may run on power from coal or gas."
           },
           {
-            "statement": "US emissions could fall overall while AI still adds emissions.",
+            "statement": "US climate pollution could go down overall while AI still adds to it.",
             "answer": "True",
-            "why": "“Adds” means compared with a world without AI's extra power use."
+            "why": "If cleaner power cuts pollution elsewhere, the total can fall even while AI’s extra electricity use pushes it up."
           },
           {
-            "statement": "AI's climate benefits will cancel out its emissions.",
+            "statement": "It’s been proven that AI’s climate benefits cancel out its pollution.",
             "answer": "False",
-            "why": "Not proven. The savings depend on how widely AI is used for them, and using AI more can eat them up."
+            "why": "Not proven. The savings depend on how widely AI is used for climate work, and using more AI also uses more electricity."
           }
         ],
         "headlineSource": "Claim tracked from historian Juan Cole, who made it in the headline of a December 2025 article in The Nation.",
@@ -2299,37 +2299,41 @@
         ],
         "finePrint": [
           {
-            "label": "Learning vs. copying out",
-            "text": "Copying work to teach an AI is a separate legal question from the AI later spitting out a copy."
+            "label": "Fact: Many artists weren’t asked.",
+            "text": "In 2022, Midjourney’s founder said the company didn’t ask living artists for permission before training its AI on their images."
           },
           {
-            "label": "Style isn't protected",
-            "text": "Imitating an artist's style usually isn't against copyright law; copying their actual work can be."
+            "label": "Fact: Training on art and copying art are separate questions.",
+            "text": "Using artwork to teach an AI is one legal question. The AI later producing a copy of that artwork is another."
           },
           {
-            "label": "Legal isn't the same as fair",
-            "text": "A court ruling can't settle whether creators should be asked or paid."
+            "label": "Fact: An artist’s style isn’t protected by copyright.",
+            "text": "Copying an artist’s style usually isn’t against the law. Copying their actual work can be."
           },
           {
-            "label": "Creators' income",
-            "text": "Image-making job posts on one global freelance site fell 17% after image generators appeared. That's one platform, not a US-wide figure."
+            "label": "Fact: Legal doesn’t always mean fair.",
+            "text": "Even if a court says training AI on someone’s work is legal, that doesn’t settle whether artists should be asked or paid."
+          },
+          {
+            "label": "Fact: Some artists are losing work.",
+            "text": "On one global freelance website, job posts for making images fell about 17% after AI image tools appeared, compared with jobs AI can’t do. That’s one website, not the whole US."
           }
         ],
         "quiz": [
           {
-            "statement": "Copying an artist's style is copyright infringement.",
+            "statement": "Copying an artist’s style is against copyright law.",
             "answer": "False",
-            "why": "Usually not. Style alone generally isn't protected."
+            "why": "Usually not. Copyright protects specific works, not a style. Copying an actual artwork can break the law."
           },
           {
-            "statement": "Researchers have pulled long book passages out of commercial AI models.",
+            "statement": "Researchers have gotten AI chatbots to repeat long passages from books.",
             "answer": "True",
-            "why": "Shown in 2025 tests of four AI models that the public uses."
+            "why": "In 2025 tests, researchers got near word-for-word passages from books out of four popular AI models, including OpenAI’s GPT-4.1 and Google’s Gemini. It took special prompts, and sometimes getting around safety rules."
           },
           {
-            "statement": "Courts have ruled that AI art is theft.",
+            "statement": "A US court has ruled that AI art is theft.",
             "answer": "False",
-            "why": "US courts haven’t settled it, and one found a specific training use fair."
+            "why": "No US court has ruled that. In a 2025 case about books, a judge said using books to train AI was fair use, but keeping pirated copies wasn’t. The company, Anthropic, later agreed to pay $1.5 billion."
           }
         ],
         "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper.",
@@ -2756,41 +2760,41 @@
         ],
         "finePrint": [
           {
-            "label": "Three different things",
-            "text": "Training (improving the model), storing (keeping your chat) and access (who can see it) have separate settings and rules."
+            "label": "Fact: Training, storing and sharing are three different things.",
+            "text": "Training means your chats help improve the AI. Storing means OpenAI keeps your chats. Sharing means someone else can see them. Each has its own settings and rules."
           },
           {
-            "label": "Opting out isn't deleting",
-            "text": "Your chats stay saved until you delete them, and deletion has legal and security exceptions."
+            "label": "Fact: Turning off training doesn’t delete your chats.",
+            "text": "Your chats stay saved until you delete them. Even then, OpenAI can keep some for legal or security reasons."
           },
           {
-            "label": "Temporary Chat",
-            "text": "Not used for training, but kept for up to 30 days for safety checks. Saving it turns it into a normal chat."
+            "label": "Fact: Temporary Chats are kept for up to 30 days.",
+            "text": "They aren’t used for training, but OpenAI keeps them for up to 30 days for safety checks. If you save one, it becomes a normal chat."
           },
           {
-            "label": "Shared links",
-            "text": "Anyone with a link to a chat you shared can see it."
+            "label": "Fact: Anyone with a shared link can see that chat.",
+            "text": "If you share a chat by link, anyone who has the link can read it. Deleting the link doesn’t remove copies people already saved."
           },
           {
-            "label": "Depends on your state",
-            "text": "Californians have rights to see, correct and delete data; not every American does."
+            "label": "Fact: Your privacy rights depend on where you live.",
+            "text": "Californians have the legal right to see, correct and delete the personal data companies hold about them. Not every American has those rights."
           }
         ],
         "quiz": [
           {
             "statement": "Turning off training deletes my old chats.",
             "answer": "False",
-            "why": "Training and storage are separate. Delete chats separately."
+            "why": "Training and storage are separate settings. To remove chats, you have to delete them."
           },
           {
-            "statement": "Thumbs-up or thumbs-down feedback may still be used even if I opt out.",
+            "statement": "A thumbs-up or thumbs-down you give can still be used for training, even if you’ve turned training off.",
             "answer": "True",
-            "why": "OpenAI lists feedback as an exception."
+            "why": "OpenAI says feedback you send is an exception to turning training off."
           },
           {
             "statement": "Other ChatGPT users can read my chats.",
             "answer": "False",
-            "why": "Not unless you share a link to a chat. Training and sharing are different things."
+            "why": "Not unless you share a link to a chat. Some OpenAI staff and outside companies it works with can see chats for specific reasons, like safety checks."
           }
         ],
         "situationPicker": {

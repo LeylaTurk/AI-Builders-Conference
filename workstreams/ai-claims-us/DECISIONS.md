@@ -15,6 +15,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Decision | What it means on the page |
 |---|---|
 | "AI art is theft" is 3/5 | Leyla: artists didn't consent to training. With that point the scope check passes, and "theft" counts as a loaded crime word instead. Score 3/5 (Turning it up). |
+| Fine print becomes **The facts behind the headline** | Each item is a dropdown whose label starts "Fact:", for example "Fact: Not all data centers are used for AI." Every fact and every true/false answer rewritten in plain English, re-checked against the sources, with more context in each answer. Water adds Google's own estimate (about five drops per Gemini question, August 2025). |
 | Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. |
 | Certain-doom rule (rubric claims-us-1.2) | A loud claim that says, as certain, that everyone will die scores 5/5. Chosen on a decision card over a one-off override. "AI will kill us all" is now 5/5 (Off the charts); its careful version stays 2/5. On its dial, the headline sits at level 5 and a new example fills level 4. |
 | Source line says "Claim tracked from…" | Under each headline: "Claim tracked from [who], who made it in [where, when]…". No "Our short version of…". Where the headline is shorter than the original, the original is quoted. |
@@ -34,7 +35,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Article cards lead with the rating | Hype label badge first, then chillies and flags with numbers. All 18 ratings re-checked. Block and Microsoft cards use Leyla's own ratings. |
 | Gauge uses only the hype labels | Grounded, A little spicy, Turning it up, Overheated, Off the charts. No "Just right" or "Overhyped". Readers can drag, tap or use arrow keys to move the needle, and it should look polished. |
 | Quiz is True/False only | Anything "not proven" counts as False. |
-| "But…" renamed | Now "What the headline leaves out". |
+| "But…" renamed | Now "What the headline leaves out" (later "The facts behind the headline"). |
 | "Spot the hype" removed | Added and removed the same morning. |
 | Semicircle gauge | Not a thermometer. |
 | "In the news" cards | Three real, rated articles per claim at the bottom of each page, linking to the story page when it's in the feed, otherwise to the original article. |
