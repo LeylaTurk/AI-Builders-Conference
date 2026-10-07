@@ -34,23 +34,23 @@
       "finePrint": [
         {
           "label": "Not all data centers are AI",
-          "text": "National water figures cover every data center, so they can't all be blamed on AI."
+          "text": "Most water figures cover every kind of data center, from email to video streaming, so not all of it is AI."
         },
         {
-          "label": "Using vs. using up",
-          "text": "“Withdrawal” means taking water from a river or aquifer. “Consumption” is the part that evaporates or can't be reused nearby."
+          "label": "Some water goes back",
+          "text": "Data centers take water from rivers and wells. Some of it is returned. The part that evaporates is what a town really loses."
         },
         {
           "label": "Hot days matter most",
           "text": "A data center can look small over a year but use a lot on the hottest days, when water is scarcest."
         },
         {
-          "label": "Cooling is a trade-off",
-          "text": "Dry cooling uses less water but more electricity."
+          "label": "Saving water costs power",
+          "text": "Cooling systems that use less water need more electricity, so there's no free fix."
         },
         {
-          "label": "That “bottle of water” number",
-          "text": "It was a 2023 estimate for 10–50 answers from GPT-3, an older model. It isn't a measurement of today's chatbots."
+          "label": "Where the bottle number comes from",
+          "text": "Researchers estimated it for one 100-word email from GPT-4, counting water at the data center and at the power plant. It's an estimate, not a measurement."
         }
       ],
       "quiz": [
