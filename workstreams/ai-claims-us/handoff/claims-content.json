@@ -380,7 +380,8 @@
             "answer": "False",
             "why": "Not proven. Drought maps and utility reports can't pin a shortage on one user."
           }
-        ]
+        ],
+        "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use."
       },
       "remainingLimitations": [
         "Most aggregate data describe all data centers rather than AI workloads alone.",
@@ -767,7 +768,8 @@
             "answer": "False",
             "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
           }
-        ]
+        ],
+        "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”"
       },
       "remainingLimitations": [
         "The exact half-of-jobs fraction and one-to-five-year horizon have not been validated as an employment forecast. The hype score evaluates conditional wording, not the estimate’s likelihood or an individual’s job prospects.",
@@ -1136,7 +1138,8 @@
             "answer": "False",
             "why": "Not proven. Savings depend on adoption and can be eaten up by more use."
           }
-        ]
+        ],
+        "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation."
       },
       "remainingLimitations": [
         "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
@@ -1508,7 +1511,8 @@
             "answer": "False",
             "why": "US courts haven’t settled it, and one found a specific training use fair."
           }
-        ]
+        ],
+        "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper."
       },
       "remainingLimitations": [
         "Targeted extraction of selected works and dated model versions does not measure ordinary-user prevalence or rank current products.",
@@ -1902,7 +1906,8 @@
               "result": "Not used for training by default. Your organization controls who can see chats and how long they're kept."
             }
           ]
-        }
+        },
+        "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline."
       },
       "remainingLimitations": [
         "The decisive sources establish company-stated practices, not an independent compliance audit or the frequency of actual training selection.",
@@ -2280,7 +2285,8 @@
             "answer": "False",
             "why": "The test incidents are real, even though they don't prove extinction."
           }
-        ]
+        ],
+        "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book."
       },
       "remainingLimitations": [
         "Scaling from current behavior to persistent goals and world-scale destructive power remains unresolved.",
