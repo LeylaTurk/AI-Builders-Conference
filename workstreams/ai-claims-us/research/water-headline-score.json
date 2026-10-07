@@ -1,0 +1,65 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "Every time you use AI, it uses a bottle of water.",
+  "scope": "Any use of any AI tool, as the headline implies.",
+  "time_horizon": "Present-day; no prediction.",
+  "occurrence": "Paraphrase of the Windows Central headline “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies” (Jez Corden, September 11, 2023), which said “every query also uses the equivalent of a bottle of water in cooling”, citing University of California researchers. The Washington Post later used the bottle comparison for one AI-written email (September 18, 2024).",
+  "occurrence_urls": [
+    "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies",
+    "https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "N",
+      "claim_phrase": "uses a bottle of water",
+      "reason": "States as a measured fact what is a modelled estimate. Per-request water figures combine an assumed energy use per request with location-specific water-intensity factors, including water used to generate the electricity.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Section 3.3 and Table 1"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "Every time you use AI",
+      "reason": "Turns the researchers’ estimate of about half a liter for every 10–50 GPT-3 answers into a bottle for every single use, of any AI model in any data center. Water use varies widely with location, cooling and power source.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Sections 2.2 and 3.3"
+        },
+        {
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+          "locator": "Printed pp. 62–64"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No prediction is made.",
+      "sources": []
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "a bottle of water",
+      "reason": "The bottle comparison comes from the research itself; stretching it to every single use is counted once, under scope.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2304.03271v5",
+          "locator": "Section 3.3"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No human-like agency is attributed to AI.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines; changed October 7, 2026 at her request from the AI-written-email version to the every-use version people actually repeat. Scored with the claims-us-1.1 rubric; evidence comes from the topic research brief."
+}

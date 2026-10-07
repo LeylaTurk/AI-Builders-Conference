@@ -16,7 +16,7 @@
   ],
   "properties": {
     "rubric_version": {
-      "const": "claims-us-1.0"
+      "enum": ["claims-us-1.0", "claims-us-1.1"]
     },
     "claim": {
       "type": "string",

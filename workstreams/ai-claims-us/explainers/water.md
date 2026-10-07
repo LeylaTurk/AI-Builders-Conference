@@ -1,45 +1,51 @@
-# Water: Is AI draining our water supplies?
+# Water: Every time you use AI, it uses a bottle of water.
 
 ## A. The claim
 
-**The claim:** “AI data-center growth threatens local water supplies in water-stressed U.S. communities.”
+**The headline claim:** “Every time you use AI, it uses a bottle of water.”
 
-This assesses site-specific risk from current and planned facilities. It narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to its local-threat proposition; it does not claim that every facility causes shortages.
+This paraphrases [Windows Central’s September 2023 headline](https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies), “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query,” which cited University of California researchers. [The Washington Post](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/) later used the same bottle comparison for one AI-written email.
+
+**The careful version we also checked:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
+
+This narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/) to the risk for particular towns. It doesn’t say every data center causes shortages.
 
 ## B. The short answer
 
-The local risk is real, but whether a particular project threatens your supply depends on its location, cooling system, water source, and hottest-day demand. A [2026 research preprint](https://arxiv.org/html/2603.02705v1) identifies pressure on community water capacity; its forecasts are conditional. [National estimates](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) cover all data centers, so they cannot be assigned wholly to AI. They also cannot establish that your town is running out of water.
+Not quite. The researchers behind the bottle figure estimated about half a liter of water for every 10–50 answers from GPT-3, an older model, so one bottle covers many uses, not one. Their numbers [depend on location and cooling](https://arxiv.org/html/2304.03271v5) and aren’t measurements. The real issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia utilities they make up [2% to 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 ## C. What does this claim actually mean?
 
-**Withdrawal** means taking water from a river, reservoir, or aquifer. **Consumption** is the portion not readily available for local reuse, including evaporation. Consumed water has not vanished from the planet. See [USGS definitions](https://water.usgs.gov/water-basics_glossary.html).
+Data centers take water from rivers, lakes or underground. Some goes back; the part that evaporates is gone from your area, though not from the planet. See the [USGS definitions](https://water.usgs.gov/water-basics_glossary.html).
 
-Servers produce heat. Cooling can consume water directly; generating their electricity can consume water elsewhere. Liquid circulating around a chip does not necessarily evaporate, but the facility’s separate heat-rejection system might. Dry cooling can reduce direct water use while increasing electricity needs. These distinctions are explained in [Li and colleagues’ study](https://arxiv.org/html/2304.03271v5).
+Computers get hot, and many data centers use water to cool them. The power plants that make their electricity can use water too, somewhere else. Some cooling systems use almost no water but need more electricity. [Li and colleagues’ study](https://arxiv.org/html/2304.03271v5) explains these trade-offs.
 
-Annual national totals can hide summer peaks and local constraints. Reclaimed wastewater can reduce demand for drinking water, but availability varies. [Virginia’s legislative audit](https://rga.lis.virginia.gov/Published/2025/RD206/PDF) documents those differences.
+Yearly totals hide the real pressure point: hot summer days where water is tight. Some data centers use treated wastewater instead, but not all, as [Virginia’s state audit](https://rga.lis.virginia.gov/Published/2025/RD206/PDF) shows.
 
 ## D. What evidence do we actually have?
 
-**National modeling:** Berkeley Lab’s December 2024 report estimated that all U.S. data centers directly consumed 66 billion liters in 2023—about 17 billion gallons. Its separate electricity-related estimate was nearly 800 billion liters, using regional electricity mixes and including reservoir evaporation. These are modeled allocations, not an AI-only water-meter census or proof of local shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
+**National estimate:** Berkeley Lab estimated that all US data centers used about 17 billion gallons of water on site in 2023, and much more through the power plants that supplied them. These are estimates for all data centers, not just AI, and don’t show shortages. [Report, pages 55–58](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
-**Observed records:** Virginia’s December 2024 audit found wide variation between buildings. Data centers represented 2–21% of use at six examined utilities, excluding reclaimed water. That shows substantial local demand in some places, not demonstrated deprivation of households. [Audit, pages 62–64](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
+**Real records:** At six Virginia water utilities, data centers made up between 2% and 21% of water use in 2023. That’s a lot of local demand in some places, but the audit didn’t find households going without. [Audit, pages 62–64](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
-**Newer projections:** A March 2026 preprint examines peak demand on U.S. water systems. Its results depend on computing growth and cooling-efficiency assumptions; future capacity requirements are not observed shortages. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
+**Forecasts:** A March 2026 study, not yet peer reviewed, warns that hot-day demand could stretch some local water systems. Its results depend on how computing and cooling change. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
 
-**Per-query estimates:** The widely discussed half-liter figure modeled roughly 10–50 medium-length GPT-3 responses, with location-dependent cooling and electricity assumptions. It is not a measurement of every current chatbot response. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
+**The bottle of water:** The research team behind the figure estimated about half a liter of water for every 10–50 answers from GPT-3, an older model. They aren’t measurements of today’s chatbots. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim in A describes a local threat, without asserting inevitable shortages: documented demand and the [peak-capacity analysis](https://arxiv.org/html/2603.02705v1) support that risk pathway. No hype checklist fails; incomplete AI-specific and facility-level data limit precision, while potential local harm remains serious.
+**Hype score for the headline: 4/5 — Overheated.** It treats a computer estimate as if someone measured it, and turns a bottle for every 10–50 answers into a bottle for every single use of any AI, even though water use depends heavily on the [model, location and cooling](https://arxiv.org/html/2304.03271v5). A claim that overstates both what the evidence is and how far it reaches scores at least 4.
+
+**The careful version scores 1/5 — Grounded.** It says data centers threaten water in some places, not that shortages are certain. Real local demand and [hot-day forecasts](https://arxiv.org/html/2603.02705v1) back that up. The data are patchy, but the risk to some towns is real.
 
 ## F. What can you do if you are still concerned?
 
-- **Identify your supplier and source.** Use [EPA’s drinking-water report guide](https://www.epa.gov/ccr/ccr-information-consumers), then ask your utility for proposed facilities’ monthly and maximum-day demand, water source, drought plans, and infrastructure costs. The drinking-water report itself does not establish spare capacity.
-- **Check local conditions.** [NOAA’s local drought tool](https://www.drought.gov/location) helps put proposals in context. Compare it with your utility’s restrictions; drought maps cannot identify which user caused a shortage.
-- **Participate in a relevant permit review.** [EPA explains how to find and comment on wastewater discharge permits](https://www.epa.gov/npdes/npdes-permit-basics). For water allocation or withdrawal questions, ask your utility which state or local process applies: discharge permits address a different issue. Comments inform decisions; they do not guarantee an outcome.
+- **Find out where your water comes from.** [EPA’s guide to your water quality report](https://www.epa.gov/ccr/ccr-information-consumers) shows how to find your supplier. Then ask them how much water any planned data center would use, especially on peak days, and what their drought plans are.
+- **Check drought conditions near you.** [NOAA’s drought tool](https://www.drought.gov/location) shows how dry your area is. It can’t tell you who is causing a shortage.
+- **Speak up on permits.** [EPA explains how to comment on wastewater permits](https://www.epa.gov/npdes/npdes-permit-basics). For questions about how much water a facility can take, ask your utility which state or local process decides. Your comments are heard, but they don’t guarantee an outcome.
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024 (2023 utility records); Li et al., version 5, March 26, 2025; Han et al., preprint March 3, 2026. USGS glossary and NOAA tool: undated pages. EPA consumer guide: updated November 21, 2025; EPA permit guide: updated July 22, 2026. Links appear beside the statements they support.

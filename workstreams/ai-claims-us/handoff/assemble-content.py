@@ -9,13 +9,11 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 SLUGS = ['water', 'jobs', 'energy-climate', 'creativity', 'privacy', 'existential-risk']
 NAMES = ['Water', 'Jobs', 'Energy and climate', 'Creativity', 'Privacy', 'Existential risk']
-QUESTIONS = ['Is AI draining our water supplies?', 'Will AI replace my job?',
-             'How bad is AI for the environment?', 'Is AI copying other people’s work?',
-             'What happens to the information I give AI?', 'Will AI kill us all?']
 FIELDS = dict(zip('ABCDEFG', ['claimContextMarkdown', 'shortAnswerMarkdown',
     'meaningMarkdown', 'evidenceMarkdown', 'scoreExplanationMarkdown',
     'actionsMarkdown', 'sourcesAndReviewMarkdown']))
 REVIEWED = 'AI evidence review completed; human editorial review pending'
+PENDING_LABEL = 'AI rating, not yet reviewed'
 spec = importlib.util.spec_from_file_location('claim_score', ROOT/'scoring/claim-score.py')
 calculator = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(calculator)
@@ -40,11 +38,52 @@ def links(text):
             found.append({'title': title, 'url': url})
     return found
 
+def check_layer(slug, layer, head, record, text):
+    if '?' in layer['headline']:
+        raise ValueError(f'{slug}: headline must be a statement, not a question')
+    if layer['headline'] not in text.splitlines()[0]:
+        raise ValueError(f'{slug}: explainer title does not use the headline')
+    if layer['keyWord']['word'] not in layer['headline']:
+        raise ValueError(f'{slug}: key word missing from headline')
+    if layer['headline'] != head['claim'] or head['claim'] not in text.split('## B.')[0]:
+        raise ValueError(f'{slug}: headline must match the headline score record and section A')
+    kinds = {v['scoredAs']: v['text'] for v in layer['claimDial'] if v['scoredAs'] in ('headline', 'careful')}
+    if kinds != {'headline': layer['headline'], 'careful': layer['carefulHeadline']}:
+        raise ValueError(f'{slug}: claim dial needs the headline and careful versions marked as scored')
+    expected = {'headline': calculator.score(head)['hype']['level'], 'careful': calculator.score(record)['hype']['level']}
+    for v in layer['claimDial']:
+        got = expected.get(v['scoredAs']) or calculator.score({'claim': v['text'], 'hype_checks': v['hype_checks']})['hype']['level']
+        if v['level'] != got:
+            raise ValueError(f'{slug}: dial version scored {got}, labelled {v["level"]}: {v["text"]}')
+    if [v['level'] for v in layer['claimDial']] != [1, 2, 3, 4, 5]:
+        raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
+    if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
+        raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
+    if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
+        raise ValueError(f'{slug}: quiz answers must be True or False')
+
+def check_cards(slug, cards):
+    items = cards['topics'][slug]
+    if [c['role'] for c in items] != cards['roles']:
+        raise ValueError(f'{slug}: need one article card per role, in order {cards["roles"]}')
+    for c in items:
+        if not c['url'].startswith('https://') or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', c['published']):
+            raise ValueError(f'{slug}: article card needs an https URL and an ISO date')
+        if not all(isinstance(c[k], int) and 1 <= c[k] <= 5 for k in ('hype', 'gaps')):
+            raise ValueError(f'{slug}: article card ratings must be 1–5')
+        if c['reviewStatus'] not in (PENDING_LABEL, 'Reviewed by Leyla'):
+            raise ValueError(f'{slug}: unknown article review label')
+        for k in ('whyHere', 'ratingNote'):
+            if len(c[k].split()) > 30:
+                raise ValueError(f'{slug}: article card {k} over 30 words')
+    return [{k: v for k, v in c.items() if k != 'privateRatingFile'} for c in items]
+
 def main():
     editorial = json.loads((ROOT/'handoff/editorial-metadata.json').read_text())
-    related = json.loads((ROOT/'design/related-stories.json').read_text())
+    cards = json.loads((ROOT/'handoff/article-cards.json').read_text())
+    layers = json.loads((ROOT/'handoff/interactive-layers.json').read_text())['topics']
     topics, validations, hashes = [], [], {}
-    for slug, name, question in zip(SLUGS, NAMES, QUESTIONS):
+    for slug, name in zip(SLUGS, NAMES):
         path = ROOT/f'explainers/{slug}.md'
         text = path.read_text()
         record_path = ROOT/f'research/{slug}-score.json'
@@ -56,18 +95,26 @@ def main():
             raise ValueError(f'{slug}: stale public review status')
         if record['claim'] not in parts['claimContextMarkdown']:
             raise ValueError(f'{slug}: exact scored claim not present in section A')
-        hype = calculator.score(record)['hype']
+        careful_hype = calculator.score(record)['hype']
+        head_path = ROOT/f'research/{slug}-headline-score.json'
+        head = json.loads(head_path.read_text())
+        hype = calculator.score(head)['hype']
+        layer = layers[slug]
+        check_layer(slug, layer, head, record, text)
         meta = editorial['topics'][slug]
         for field in ['keyQualification', 'publicEvidenceLimitations', 'aiReviewDate']:
             if not meta.get(field):
                 raise ValueError(f'{slug}: missing editorial field {field}')
         item = {
             'slug': slug, 'route': f'/claims/{slug}', 'topic': name,
-            'readerQuestion': question, 'claim': record['claim'],
-            'claimExampleCitations': record['occurrence_urls'],
-            'scope': record['scope'], 'timeHorizon': record['time_horizon'],
+            'headline': layer['headline'], 'headlineOccurrence': head['occurrence'],
+            'claim': record['claim'], 'carefulHeadline': layer['carefulHeadline'],
+            'claimExampleCitations': head['occurrence_urls'] + record['occurrence_urls'],
+            'scope': meta.get('scope', record['scope']), 'timeHorizon': meta.get('timeHorizon', record['time_horizon']),
             'keyQualification': meta['keyQualification'], **parts,
-            'hype': {**hype, 'displayPrefix': 'Proposed claim hype',
+            'hype': {**hype, 'displayPrefix': 'Headline hype', 'reason': layer['scoreReason'],
+                     'checklist': head['hype_checks'], 'reviewStatus': head['review_status']},
+            'carefulHype': {**careful_hype, 'displayPrefix': 'Careful version', 'reason': layer['carefulScoreReason'],
                      'checklist': record['hype_checks']},
             'evidenceGaps': {'displayMode': 'qualitative', 'score': None,
                 'limitations': meta['publicEvidenceLimitations']},
@@ -75,9 +122,10 @@ def main():
             'researchCutoff': record['research_cutoff'],
             'aiEvidenceReview': {'status': 'completed', 'date': meta['aiReviewDate']},
             'humanEditorialReview': {'status': 'pending', 'reviewer': None, 'date': None},
-            'reviewStatusText': REVIEWED,
+            'reviewStatusText': PENDING_LABEL,
+            'interactive': {k: v for k, v in layer.items() if k not in ('headline', 'carefulHeadline', 'scoreReason', 'carefulScoreReason')},
             'remainingLimitations': record['evidence_limitations'],
-            'relatedStoryCandidates': related['topics'].get(slug, []),
+            'articleCards': check_cards(slug, cards),
             'websiteCopyMarkdown': text,
         }
         topics.append(item)
@@ -93,17 +141,18 @@ def main():
         for field in list(FIELDS.values())[:6]:
             if not links(parts[field]):
                 raise ValueError(f'{slug}: no external inline citation in {field}')
-        if hype['level'] is not None and f"{hype['level']}/5" not in parts['scoreExplanationMarkdown']:
-            raise ValueError(f'{slug}: displayed and calculated score disagree')
+        for h in (hype, careful_hype):
+            if h['level'] is not None and f"{h['level']}/5" not in parts['scoreExplanationMarkdown']:
+                raise ValueError(f'{slug}: displayed and calculated score disagree')
         validations.append({'topic': slug,
             'wordsAThroughF': copy_words,
             'shortAnswerWords': counts['shortAnswerMarkdown'],
             'actions': action_count,
             'externalInlineLinksInEachRequiredSection': True,
             'inlineSourceCount': len(item['sourceLinks']),
-            'score': hype['level'], 'label': hype['label'],
+            'headlineScore': hype['level'], 'carefulScore': careful_hype['level'], 'label': hype['label'],
             'exactClaimMatch': True, 'sourceCopyUnchanged': True})
-        for p in [path, record_path]:
+        for p in [path, record_path, head_path]:
             hashes[str(p.relative_to(ROOT))] = hashlib.sha256(p.read_bytes()).hexdigest()
     content = {
         'contentVersion': editorial['contentVersion'], 'language': 'en-US',
@@ -114,9 +163,10 @@ def main():
             'The claim is under examination, not an endorsement.',
             'Keep the exact claim, key qualification, proposed score and rationale together.',
             'Qualitative evidence limitations are separate from hype and potential harm.',
-            'Human review remains pending; never infer Reviewed by Leyla.',
+            'Do not show review labels (“AI rating, not yet reviewed” or “Reviewed by Leyla”) anywhere in the Claim Tracker.',
+            'The headline statement, score, score reason and key qualification are always visible; interactive layers only add detail.',
             'Dates are stored editorial facts; deployment must not change them.',
-            'Related stories provide context; they are not the research evidence base.'
+            'Article cards show real news coverage of the claim; their article ratings are separate from the claim scores and are not the research evidence base.'
         ],
         'methodology': {
             'version': calculator.VERSION,
@@ -127,7 +177,7 @@ def main():
         'topics': topics, 'sourceFileSha256': hashes,
     }
     (ROOT/'handoff/claims-content.json').write_text(json.dumps(content, ensure_ascii=False, indent=2)+'\n')
-    companion = '# Exact website copy: AI claims explained\n\nHuman editorial review pending. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
+    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
     companion += '\n\n---\n\n'.join(t['websiteCopyMarkdown'].strip() for t in topics)+'\n'
     (ROOT/'handoff/claims-content.md').write_text(companion)
     (ROOT/'review/package-validation.json').write_text(json.dumps({'topics': validations, 'sourceFileSha256': hashes}, indent=2)+'\n')

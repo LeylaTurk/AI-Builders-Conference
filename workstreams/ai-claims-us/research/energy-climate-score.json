@@ -1,7 +1,7 @@
 {
   "rubric_version": "claims-us-1.0",
-  "claim": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
-  "scope": "U.S. electricity-related carbon emissions attributable to additional AI computing demand; compared with an otherwise similar trajectory without that extra demand. No assertion that all data-center demand is AI or that total national emissions necessarily rise year over year.",
+  "claim": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
+  "scope": "US electricity-related carbon emissions attributable to additional AI computing demand; compared with an otherwise similar trajectory without that extra demand. No assertion that all data-center demand is AI or that total national emissions necessarily rise year over year.",
   "time_horizon": "Through 2030; a conditional possibility, not a guaranteed outcome or a quantified forecast.",
   "occurrence_urls": [
     "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
@@ -26,12 +26,12 @@
     },
     "P2": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand ... U.S. carbon emissions",
-      "reason": "U.S.-specific modeling identifies accelerated AI equipment as a contributor, and the occurrence concerns U.S. AI infrastructure. The claim neither attributes all sector electricity to AI nor generalizes a local finding to an inevitable national result.",
+      "claim_phrase": "AI’s growing electricity demand ... US carbon emissions",
+      "reason": "US-specific modeling identifies accelerated AI equipment as a contributor, and the occurrence concerns US AI infrastructure. The claim neither attributes all sector electricity to AI nor generalizes a local finding to an inevitable national result.",
       "sources": [
         {
           "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
-          "locator": "Opening U.S. infrastructure discussion and 2030 horizon; quote following grid-decarbonization paragraph",
+          "locator": "Opening US infrastructure discussion and 2030 horizon; quote following grid-decarbonization paragraph",
           "evidence_row_id": "E01"
         },
         {
@@ -60,7 +60,7 @@
     },
     "W1": {
       "answer": "Y",
-      "claim_phrase": "increase U.S. carbon emissions",
+      "claim_phrase": "increase US carbon emissions",
       "reason": "Increase is a physical proposition without sensational or promotional phrasing. The public researcher statement itself presents a conditional pathway; no separate rhetoric problem exists.",
       "sources": [
         {
@@ -86,7 +86,7 @@
   "evidence_checks": {
     "T1": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "Responsible institutions, authors, and source roles are identified. Cornell is used as university promotion/public occurrence; LBNL, IEA and JLARC supply assessment evidence.",
       "sources": [
         {
@@ -103,7 +103,7 @@
     },
     "T2": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "The decisive models, assumptions and supply-pathway explanations are inspectable in LBNL, IEA and JLARC. The inaccessible Cornell paper is not used for numerical forecasts or net-zero findings; only its opened public communication is used for provenance.",
       "sources": [
         {
@@ -125,7 +125,7 @@
     },
     "S1": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "The evidence addresses the conditional mechanism directly: AI-associated equipment electricity, fossil electricity emissions, and proposed supply. This is sufficient for could; it is not proof of the exact eventual national increment.",
       "sources": [
         {
@@ -142,7 +142,7 @@
     },
     "S2": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "National-laboratory equipment modeling, IEA supply tracking, and a separately commissioned regional grid analysis corroborate the physical pathway. Some market inputs overlap; repeated summaries are not counted as separate studies.",
       "sources": [
         {
@@ -164,8 +164,8 @@
     },
     "S3": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
-      "reason": "Central context figures define all-data-center denominators, geography, and period: U.S. 4.4% in 2023; global 485 TWh in 2025 and projected 950 TWh in 2030. None is presented as AI-only or measured future use.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
+      "reason": "Central context figures define all-data-center denominators, geography, and period: US 4.4% in 2023; global 485 TWh in 2025 and projected 950 TWh in 2030. None is presented as AI-only or measured future use.",
       "sources": [
         {
           "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
@@ -181,7 +181,7 @@
     },
     "C1": {
       "answer": "N",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "LBNL documents incomplete direct operating data and electricity-procurement transparency. AI-specific facility allocations and current operating coverage remain incomplete; this limits magnitude estimates without making the bounded claim too broad.",
       "sources": [
         {
@@ -198,7 +198,7 @@
     },
     "C2": {
       "answer": "Y",
-      "claim_phrase": "AI’s growing electricity demand could increase U.S. carbon emissions by 2030.",
+      "claim_phrase": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
       "reason": "For this conditional claim, available sources bound the important alternatives: cleaner supply and efficiency can reduce emissions, while demand growth and fossil supply can add them. Exact future net magnitude remains unresolved but is not asserted by the claim.",
       "sources": [
         {
@@ -215,9 +215,9 @@
     }
   },
   "evidence_limitations": [
-    "National historical demand is modeled from incomplete equipment and operating data; no complete current U.S. AI-only electricity or emissions census was inspected.",
+    "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
     "2030 outcomes depend on uptake, task complexity, efficiency, siting, financing, transmission and generation; announcements or construction are not operating output.",
-    "Global all-data-center totals are not U.S.-AI totals. Virginia scenarios use 2024 assumptions and are not current law or nationwide predictions.",
+    "Global all-data-center totals are not US-AI totals. Virginia scenarios use 2024 assumptions and are not current law or nationwide predictions.",
     "Annual renewable contracts do not necessarily identify physical hourly supply; regional average emissions cannot measure marginal emissions of one query.",
     "The Cornell paper could not be retrieved; numerical forecasts and industry net-zero conclusions from it are omitted. The opened public statement establishes provenance only.",
     "Potential application benefits and economy-wide rebound do not establish a measured national net effect. The page focuses on operational electricity, not every lifecycle impact."

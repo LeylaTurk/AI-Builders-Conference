@@ -1,0 +1,59 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "AI will only intensify climate change.",
+  "scope": "Global climate change.",
+  "time_horizon": "Ongoing and future, no end date.",
+  "occurrence": "Headline of Juan Cole’s article in The Nation, “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.” (December 4, 2025).",
+  "occurrence_urls": [
+    "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "N",
+      "claim_phrase": "only",
+      "reason": "“Only” treats it as established that AI has no offsetting climate benefits. The IEA describes possible efficiency and climate benefits as conditional: neither proven nor ruled out.",
+      "sources": [
+        {
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+          "locator": "Efficiency findings"
+        },
+        {
+          "url": "https://www.iea.org/reports/energy-and-ai/ai-and-climate-change",
+          "locator": "AI and climate change"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "climate change",
+      "reason": "Global scope matches the global data-center evidence; no distinct scope problem.",
+      "sources": []
+    },
+    "P3": {
+      "answer": "N",
+      "claim_phrase": "will",
+      "reason": "States a certain outcome. The IEA says the effect depends on demand growth, efficiency and how the electricity is generated, and clean-energy investment is also growing.",
+      "sources": [
+        {
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+          "locator": "Executive summary"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "intensify",
+      "reason": "No distinct additional problem; the issue is scored once above.",
+      "sources": []
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No human-like agency is attributed to AI.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

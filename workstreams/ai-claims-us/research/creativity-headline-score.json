@@ -1,0 +1,63 @@
+{
+  "rubric_version": "claims-us-1.1",
+  "claim": "AI art is theft.",
+  "scope": "All AI-generated art.",
+  "time_horizon": "Present-day.",
+  "occurrence": "Title of Trystan S. Goetze’s paper “AI Art is Theft: Labour, Extraction, and Exploitation” (arXiv, version 2; first posted January 2024), which argues that image generators involve labour theft from artists.",
+  "occurrence_urls": [
+    "https://arxiv.org/abs/2401.06178v2"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "N",
+      "claim_phrase": "is theft",
+      "reason": "“Theft” states wrongdoing as settled. As a moral argument about consent and pay, it is a position people can debate; as a statement of fact, US courts have not established it, and one court found a specific training use fair.",
+      "sources": [
+        {
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+          "locator": "Infringement and fair-use analysis"
+        },
+        {
+          "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231",
+          "locator": "June 2025 order"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "N",
+      "claim_phrase": "AI art",
+      "reason": "Applies to all AI art. Reproduction of training images and text has been shown in targeted tests of selected works, not in all output; imitating a style alone is generally not protected.",
+      "sources": [
+        {
+          "url": "https://arxiv.org/html/2601.02671v1",
+          "locator": "Methods and limitations"
+        },
+        {
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+          "locator": "Style discussion"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No prediction is made.",
+      "sources": []
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "theft",
+      "reason": "No distinct additional problem; the issue is scored once above.",
+      "sources": []
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No human-like agency is attributed to AI.",
+      "sources": []
+    }
+  },
+  "research_cutoff": "2026-10-06",
+  "review_status": "AI research draft; not independently reviewed",
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief."
+}

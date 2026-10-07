@@ -1,0 +1,917 @@
+{
+  "version": "claims-us-interactive-1.1",
+  "status": "Updated October 7, 2026: adds article cards and the semicircle hype gauge. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
+  "topics": {
+    "water": {
+      "headline": "Every time you use AI, it uses a bottle of water.",
+      "keyWord": {
+        "word": "Every time",
+        "explanation": "The researchers’ estimate was about half a liter of water for every 10–50 answers, not a bottle for each use, and it rested on guesses about cooling and power."
+      },
+      "scoreReason": "The headline treats a computer estimate as if someone measured it, and turns a bottle for every 10–50 answers into a bottle for every single use.",
+      "claimDial": [
+        {
+          "text": "AI data centers threaten water supplies in some dry US towns.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI data centers are guzzling water in some dry US towns.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Guzzling” adds drama the evidence doesn't need."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI data centers are guzzling the water in America's dry towns.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Talks about all dry towns, when the evidence covers some places."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Guzzling” adds drama the evidence doesn't need."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "Every time you use AI, it uses a bottle of water.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is greedily drinking America dry and will leave us all without water.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches local strain to the whole country."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Drinking America dry” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats AI as greedy, when companies decide where to build."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Not all data centers are AI",
+          "text": "Most water figures cover every kind of data center, from email to video streaming, so not all of it is AI."
+        },
+        {
+          "label": "Some water goes back",
+          "text": "Data centers take water from rivers and wells. Some of it is returned. The part that evaporates is what a town really loses."
+        },
+        {
+          "label": "Hot days matter most",
+          "text": "A data center can look small over a year but use a lot on the hottest days, when water is scarcest."
+        },
+        {
+          "label": "Saving water costs power",
+          "text": "Cooling systems that use less water need more electricity, so there's no free fix."
+        },
+        {
+          "label": "Where the bottle number comes from",
+          "text": "Researchers estimated about half a liter for every 10–50 answers from GPT-3, an older model, counting water at the data center and at the power plant. It’s an estimate, not a measurement."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Every time you use AI, it uses a bottle of water.",
+          "answer": "False",
+          "why": "Not proven. The estimate was about a bottle for every 10–50 answers, and it’s based on guesses, not a measurement."
+        },
+        {
+          "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
+          "answer": "True",
+          "why": "The hottest days, when everyone needs water most, are when the strain shows."
+        },
+        {
+          "statement": "AI data centers are why my town has water restrictions.",
+          "answer": "False",
+          "why": "Not proven. Drought maps and water company reports can't blame a shortage on one user."
+        }
+      ],
+      "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
+      "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
+      "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
+      "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
+    },
+    "jobs": {
+      "headline": "AI will take all our jobs.",
+      "keyWord": {
+        "word": "all",
+        "explanation": "Even Musk said “probably”. The evidence shows AI changing tasks and slowing hiring for some young workers, not replacing every job."
+      },
+      "scoreReason": "The headline turns Musk's “probably” into a sure thing, and jumps from some tasks AI can do to every job.",
+      "claimDial": [
+        {
+          "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI could wipe out half of US entry-level office jobs by about 2030.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Wipe out” adds drama to an expert's warning."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI will wipe out half of US entry-level office jobs by 2030.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Turns an expert's “could” into a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Wipe out” adds drama to an expert's warning."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI will take all our jobs.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is already destroying jobs everywhere and will soon want every single one.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "Says jobs are already being destroyed everywhere, which the data don't show."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches some tasks to every job."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Destroying” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI “wants” jobs, when employers make those choices."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "What Musk actually said",
+          "text": "At a Paris tech conference in May 2024, Elon Musk said: “Probably none of us will have a job.” He added that work could become optional, like a hobby."
+        },
+        {
+          "label": "“Exposed” isn't “at risk”",
+          "text": "It means AI could help with or do some tasks in a job. The US Bureau of Labor Statistics says it isn't a chance of losing your job."
+        },
+        {
+          "label": "Fewer hires, not layoffs",
+          "text": "So far the change shows up mainly as weaker hiring of young people."
+        },
+        {
+          "label": "The numbers so far",
+          "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the jobs where AI can do the most tasks, versus 2.0% in the jobs where it can do the fewest (figures from the payroll company ADP)."
+        },
+        {
+          "label": "The narrower warning",
+          "text": "Anthropic's CEO, whose company sells AI, warned in May 2025 that AI could eliminate half of entry-level office jobs within one to five years. That's a possible future, not a proven prediction."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "AI will take every job.",
+          "answer": "False",
+          "why": "Not proven. Even Musk said “probably”, and current data show no broad disruption."
+        },
+        {
+          "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
+          "answer": "True",
+          "why": "Pay records from employers show it."
+        },
+        {
+          "statement": "AI caused that drop in hiring.",
+          "answer": "False",
+          "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
+        }
+      ],
+      "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
+      "carefulScoreReason": "The more careful version says “could”, and it's an expert's educated guess about the future, though nobody has been able to test the half-of-jobs number yet.",
+      "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
+      "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
+    },
+    "energy-climate": {
+      "headline": "AI will only intensify climate change.",
+      "keyWord": {
+        "word": "only",
+        "explanation": "“Only” rules out any climate benefit from AI. Those benefits are unproven, but so is the claim that there are none."
+      },
+      "scoreReason": "The headline says “will” and “only”, which leaves no room for the uncertainty or the possible benefits the evidence describes.",
+      "claimDial": [
+        {
+          "text": "AI's growing power use could raise US carbon emissions by 2030.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI's exploding power use could raise US carbon emissions by 2030.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Exploding” adds drama to a fast but measured rise."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI's exploding power use will raise US carbon emissions by 2030.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Turns “could” into a sure thing, though it depends on how power is made."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Exploding” adds drama to a fast but measured rise."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI will only intensify climate change.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is single-handedly destroying the planet and will make climate change unstoppable.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Blames AI alone for a planet-wide problem."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Destroying the planet” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats AI as the one acting, when people choose how to power it."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Electricity isn't emissions",
+          "text": "The same power use can be clean or dirty depending on which plants make it."
+        },
+        {
+          "label": "Not all data centers are AI",
+          "text": "All US data centers used 4.4% of US electricity in 2023; AI is one part of that."
+        },
+        {
+          "label": "Green purchases have limits",
+          "text": "Buying renewable power over a year doesn't mean clean power every hour, in every place."
+        },
+        {
+          "label": "Worldwide numbers",
+          "text": "The International Energy Agency says data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work."
+        },
+        {
+          "label": "Could AI help the climate?",
+          "text": "Possibly, through things like smarter energy management, but those savings aren't proven to cancel out its emissions."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "If a company buys enough renewable power over a year, its AI runs on clean power every hour.",
+          "answer": "False",
+          "why": "Yearly purchases don't match supply hour by hour."
+        },
+        {
+          "statement": "US emissions could fall overall while AI still adds emissions.",
+          "answer": "True",
+          "why": "“Adds” means compared with a world without AI's extra power use."
+        },
+        {
+          "statement": "AI's climate benefits will cancel out its emissions.",
+          "answer": "False",
+          "why": "Not proven. The savings depend on how widely AI is used for them, and using AI more can eat them up."
+        }
+      ],
+      "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
+      "carefulScoreReason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
+      "headlineSource": "Claim tracked from historian Juan Cole, who made it in the headline of a December 2025 article in The Nation.",
+      "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
+    },
+    "creativity": {
+      "headline": "AI art is theft.",
+      "keyWord": {
+        "word": "theft",
+        "explanation": "Theft is a legal and moral judgment. US courts haven’t settled whether training AI on others’ work is legal, and one court found a specific use fair."
+      },
+      "scoreReason": "The headline treats a legal and moral judgment as settled fact, and applies it to all AI art.",
+      "claimDial": [
+        {
+          "text": "AI can reproduce copyrighted work from its training data.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI can spit out copies of copyrighted work it was trained on.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Spit out” adds drama to what tests found."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI routinely churns out copies of the copyrighted work it learned from.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Says it happens routinely, when tests showed it with chosen works."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Churns out” adds drama to what tests found."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI art is theft.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is a plagiarism machine that steals every artist's work and will kill human creativity.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States wrongdoing as settled, when courts haven't decided."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches to every artist."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Plagiarism machine” is a label, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI “steals”, when companies choose what to train on."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Learning vs. copying out",
+          "text": "Copying work to teach an AI is a separate legal question from the AI later spitting out a copy."
+        },
+        {
+          "label": "Style isn't protected",
+          "text": "Imitating an artist's style usually isn't against copyright law; copying their actual work can be."
+        },
+        {
+          "label": "Legal isn't the same as fair",
+          "text": "A court ruling can't settle whether creators should be asked or paid."
+        },
+        {
+          "label": "Creators' income",
+          "text": "Image-making job posts on one global freelance site fell 17% after image generators appeared. That's one platform, not a US-wide figure."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Copying an artist's style is copyright infringement.",
+          "answer": "False",
+          "why": "Usually not. Style alone generally isn't protected."
+        },
+        {
+          "statement": "Researchers have pulled long book passages out of commercial AI models.",
+          "answer": "True",
+          "why": "Shown in 2025 tests of four AI models that the public uses."
+        },
+        {
+          "statement": "Courts have ruled that AI art is theft.",
+          "answer": "False",
+          "why": "US courts haven’t settled it, and one found a specific training use fair."
+        }
+      ],
+      "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
+      "carefulScoreReason": "The more careful version says “can”, and experiments have shown that it happens.",
+      "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper.",
+      "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
+    },
+    "privacy": {
+      "headline": "ChatGPT is sharing your secrets.",
+      "keyWord": {
+        "word": "sharing",
+        "explanation": "“Sharing” suggests other people see your chats. What OpenAI describes is using chats to train its models, which you can turn off, plus limited access by staff for things like safety."
+      },
+      "scoreReason": "The headline calls training “sharing”, treats every chat as a secret, and ignores the settings that change what happens.",
+      "claimDial": [
+        {
+          "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "ChatGPT may hoover up your personal chats to train its AI, depending on your settings.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Hoover up” adds drama to what the policy says."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "ChatGPT hoovers up your personal chats to train its AI.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Drops “depending on your settings”, so it sounds like every chat."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Hoover up” adds drama to what the policy says."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "ChatGPT is sharing your secrets.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "ChatGPT is spying on everything you type and will sell your secrets to anyone who wants them.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches to everything you type."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Spying” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats ChatGPT as a spy with its own plans."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Three different things",
+          "text": "Training (improving the model), storing (keeping your chat) and access (who can see it) have separate settings and rules."
+        },
+        {
+          "label": "Opting out isn't deleting",
+          "text": "Your chats stay saved until you delete them, and deletion has legal and security exceptions."
+        },
+        {
+          "label": "Temporary Chat",
+          "text": "Not used for training, but kept for up to 30 days for safety checks. Saving it turns it into a normal chat."
+        },
+        {
+          "label": "Shared links",
+          "text": "Anyone with a link to a chat you shared can see it."
+        },
+        {
+          "label": "Depends on your state",
+          "text": "Californians have rights to see, correct and delete data; not every American does."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "Turning off training deletes my old chats.",
+          "answer": "False",
+          "why": "Training and storage are separate. Delete chats separately."
+        },
+        {
+          "statement": "Thumbs-up or thumbs-down feedback may still be used even if I opt out.",
+          "answer": "True",
+          "why": "OpenAI lists feedback as an exception."
+        },
+        {
+          "statement": "Other ChatGPT users can read my chats.",
+          "answer": "False",
+          "why": "Not unless you share a link to a chat. Training and sharing are different things."
+        }
+      ],
+      "situationPicker": {
+        "title": "What happens to my chat?",
+        "options": [
+          {
+            "label": "Personal account, training setting on",
+            "result": "May be used to train OpenAI's models. Saved until you delete it."
+          },
+          {
+            "label": "Personal account, training setting off",
+            "result": "Not used for training, except feedback you send with thumbs up or down. Still saved until you delete it."
+          },
+          {
+            "label": "Temporary Chat",
+            "result": "Not used for training. Kept for up to 30 days for safety checks, then removed unless you save it."
+          },
+          {
+            "label": "Business or Enterprise account",
+            "result": "Not used for training by default. Your organization controls who can see chats and how long they're kept."
+          }
+        ]
+      },
+      "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
+      "carefulScoreReason": "The more careful version says “may” and “depending on your settings”, which matches what OpenAI's own policy says.",
+      "headlineSource": "Claim tracked from Tom's Guide, a tech advice website, which made it in an April 2023 headline.",
+      "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
+    },
+    "existential-risk": {
+      "headline": "AI will kill us all.",
+      "keyWord": {
+        "word": "kill us all",
+        "explanation": "Stated as a certainty, about all AI. The evidence shows real reasons for concern about future, much smarter AI, not that extinction is guaranteed."
+      },
+      "scoreReason": "The headline talks about all AI, says everyone will certainly die, and drops the authors' own condition about how a super-smart AI gets built.",
+      "claimDial": [
+        {
+          "text": "Future AI much smarter than people could pose serious risks, and experts disagree about how big they are.",
+          "scoredAs": "example",
+          "level": 1,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 2
+        },
+        {
+          "text": "Superintelligent AI built with today's methods will decide to kill us all.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI would “decide” to kill us; the authors' worry is about goals, not intent."
+            }
+          }
+        },
+        {
+          "text": "AI will kill us all.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is already plotting to wipe us out, and it's only a matter of months.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Says today's AI, when the worry is about future AI."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Gives a sure timeline nobody can know."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Plotting to wipe us out” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI is plotting, as if it had human plans."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Who says it",
+          "text": "Eliezer Yudkowsky and Nate Soares, in their 2025 book If Anyone Builds It, Everyone Dies."
+        },
+        {
+          "label": "“Superintelligence”",
+          "text": "AI that is more capable than all of humanity combined, not today's chatbots."
+        },
+        {
+          "label": "Not about hatred",
+          "text": "The authors' worry is AI pursuing goals and resources in ways that destroy what humans need to survive, not AI that hates us."
+        },
+        {
+          "label": "Four different fears",
+          "text": "Everyone dying, a disaster that kills many people, people misusing AI, and losing control of AI are different things."
+        },
+        {
+          "label": "What the tests showed",
+          "text": "AI models blackmailed people in made-up company scenarios (Anthropic, 2025). AI agents tried actions they weren't allowed to in UK government testing, and hacked a real website during standard skills tests (2026). The made-up scenarios hurt no one, and the UK attempts failed."
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "AI systems have done things in tests their makers didn't intend.",
+          "answer": "True",
+          "why": "Documented by Anthropic, the UK AI Security Institute and METR."
+        },
+        {
+          "statement": "Experts agree on how likely AI extinction is.",
+          "answer": "False",
+          "why": "The 2026 International AI Safety Report records wide disagreement."
+        },
+        {
+          "statement": "AI risk is all made up.",
+          "answer": "False",
+          "why": "The test incidents are real, even though they don't prove extinction."
+        }
+      ],
+      "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
+      "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
+      "headlineSource": "Claim tracked from AI-risk researchers Eliezer Yudkowsky and Nate Soares, who made it in the title of their 2025 book, “If Anyone Builds It, Everyone Dies.”",
+      "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
+    }
+  }
+}

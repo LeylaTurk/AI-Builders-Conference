@@ -1,44 +1,48 @@
-# Creativity: Is AI copying other people’s work?
+# Creativity: AI art is theft.
 
 ## A. The claim
 
-**The claim:** Generative AI can reproduce copyrighted material from its training data.
+**The headline claim:** “AI art is theft.”
 
-This is the output-copying possibility discussed in [extraction research](https://arxiv.org/html/2601.02671v1) and [OpenAI’s public acknowledgment of regurgitation](https://openai.com/index/openai-and-journalism/). “Can” means demonstrated possibility, not that every output is copied or every training use is illegal. We assess systems available to US users, using evidence available through October 6, 2026.
+This is the title of [Trystan S. Goetze’s 2024 paper](https://arxiv.org/abs/2401.06178v2), which argues that image generators involve labour theft from artists.
+
+**The careful version we also checked:** Generative AI can reproduce copyrighted material from its training data.
+
+This is what [researchers who pulled text out of AI models](https://arxiv.org/html/2601.02671v1) showed, and what [OpenAI has acknowledged](https://openai.com/index/openai-and-journalism/). “Can” means it has been shown to happen, not that every output is copied or that all training is illegal.
 
 ## B. The short answer
 
-Yes: researchers have prompted some models to reproduce protected text and training images. Their experiments establish that copying can happen; they do not measure how often an ordinary user encounters it. Training, output reproduction, and imitating a style raise different questions. US copyright outcomes depend on the particular conduct and facts, while concerns about consent and livelihoods extend beyond legal judgments. ([Book extraction](https://arxiv.org/html/2601.02671v1); [image extraction](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf); [Copyright Office analysis](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
+It’s an argument, not a settled fact. AI models [can repeat copyrighted work](https://arxiv.org/html/2601.02671v1) they were trained on, but researchers showed this with targeted tests, not everyday use. Whether training on others’ work is legal [depends on the facts](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf), and US courts haven’t settled it; [one court](https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231) found a specific training use fair. Whether creators should be asked and paid is a fair question that law alone can’t answer.
 
 ## C. What does this claim actually mean?
 
-Training adjusts a model’s numerical settings using examples. Memorization means information about particular examples persists; reproduction happens when an output recovers that material. A model can learn general patterns and also memorize particular works. Training commonly involves copying source material, but that is a separate act from producing an infringing output. ([Copyright Office, technical background and infringement analysis](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
+Training means showing a model huge numbers of examples so it adjusts its settings. Usually it learns general patterns, but sometimes it also memorizes particular works and can repeat them. Copying works to train a model is a separate legal question from an AI answer that reproduces a work. ([US Copyright Office](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
 
-Style alone generally lacks copyright protection; copying protected expression within a work can still matter. Licensing authorizes specified uses, not every possible use. Permission, payment, and imitation also involve ethical choices that a copyright ruling cannot settle. ([Copyright Office, style and licensing discussion](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
+Copyright generally doesn’t protect a style, but it does protect a work’s actual expression. A license allows certain uses, not every use. Whether artists should be asked and paid is also a question of fairness that a court ruling can’t fully settle. ([US Copyright Office, on style and licensing](https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf))
 
 ## D. What evidence do we actually have?
 
-**Controlled experiments:** A January 2026 preprint recovered long passages of US-copyrighted books from four production language models tested in August–September 2025. Books and prompts were deliberately selected; some attacks bypassed safeguards. Results cannot establish present-day rates across products. [Peer-reviewed image research](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf) also extracted training images using targeted generation and filtering. ([Book-study methods and limitations](https://arxiv.org/html/2601.02671v1))
+**Experiments:** In tests run in August and September 2025, researchers got four commercial AI models to repeat long passages from copyrighted books. They picked the books and prompts on purpose, and some tests got around safety filters, so the results don’t show how often this happens in normal use. ([Book study](https://arxiv.org/html/2601.02671v1)) Other [peer-reviewed research](https://www.usenix.org/system/files/usenixsecurity23-carlini.pdf) pulled training images out of image generators in a similar way.
 
-**Observed markets:** Research using 2021–2023 data estimated a 17% relative decline in image-creation postings on one global freelance platform after image generators appeared. This is evidence of competitive pressure, not a US-wide income estimate or proof of copyright infringement. ([Study, Table 4](https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf))
+**Work for creators:** One study found image-making job posts on one global freelance site fell 17% after image generators appeared (2021–2023 data). That shows competition, not US-wide income losses or proof of copying. ([Study, Table 4](https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf))
 
-**US legal decisions:** In *Bartz*, California’s Northern District found the specific training use fair in June 2025; its July 2026 settlement judgment addressed pirated-library claims and excluded output claims. On interlocutory appeal, the Third Circuit’s September 29, 2026 *ROSS* opinion affirmed a pretrial partial-summary-judgment ruling rejecting fair use for a competing legal-search system, expressly distinguishing generative AI. Neither settles every generative use. ([Bartz ruling](https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231); [settlement judgment](https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680); [ROSS opinion](https://law.justia.com/cases/federal/appellate-courts/ca3/25-2153/25-2153-2026-09-30.html))
+**Courts:** In the *Bartz* case, a California federal court found one specific use of books for training was fair use (June 2025); the July 2026 settlement covered pirated copies, not AI outputs. In September 2026, a federal appeals court in the *ROSS* case ruled against fair use for a competing legal-search tool, but said that case wasn’t about generative AI. Neither settles the question for all AI. ([Bartz ruling](https://docs.justia.com/cases/federal/district-courts/california/candce/3:2024cv05417/434709/231); [settlement](https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680); [ROSS opinion](https://law.justia.com/cases/federal/appellate-courts/ca3/25-2153/25-2153-2026-09-30.html))
 
 ## E. Hype score and explanation
 
-**Proposed hype score: 1/5 — Grounded.** The exact claim is “Generative AI can reproduce copyrighted material from its training data.” Demonstrated extraction supports “can”; it asserts no universal copying rate or legal verdict. All five wording checks pass, although everyday frequency and creator-wide losses remain uncertain. ([Experimental evidence](https://arxiv.org/html/2601.02671v1))
+**Hype score for the headline: 4/5 — Overheated.** “Theft” treats a legal and moral question as settled, and applies it to all AI art, when copying has only been shown in [targeted tests](https://arxiv.org/html/2601.02671v1). As a moral argument about consent and pay, it’s a fair debate; as a statement of fact, it goes beyond the evidence.
 
-**Evidence limitations:** Targeted tests of selected works and model versions; incomplete evidence about ordinary use and US-wide creator income.
+**The careful version scores 1/5 — Grounded.** Experiments show AI [can reproduce copyrighted work](https://arxiv.org/html/2601.02671v1), and the claim says no more than that. How often it happens, and how much creators lose, are still unknown.
 
 ## F. What can you do if you are still concerned?
 
-- **Creators:** Review [Copyright Office registration guidance](https://www.copyright.gov/help/faq/faq-general.html). Registration supports enforcement options; it does not prevent copying.
-- **Authors and publishers:** Use the [Authors Guild’s AI contract clauses](https://authorsguild.org/advocacy/artificial-intelligence/ai-model-clauses/) to negotiate permission and payment. Agreements bind their parties, not every scraper.
-- **If a specific work was copied:** Consult the [Copyright Claims Board’s claimant guide](https://www.ccb.gov/claimant/) and assistance resources. Its process is voluntary, has limits, and may be unsuitable for complex AI disputes.
-- **Public policy:** Find your representatives through [USAGov](https://www.usa.gov/elected-officials) to express preferences about consent, compensation, and transparency. Individual choices cannot resolve industry-wide incentives.
+- **Creators:** Read the [Copyright Office’s registration guide](https://www.copyright.gov/help/faq/faq-general.html). Registering helps you enforce your rights; it doesn’t stop copying.
+- **Authors and publishers:** Use the [Authors Guild’s AI contract clauses](https://authorsguild.org/advocacy/artificial-intelligence/ai-model-clauses/) to ask for permission and payment. Contracts only bind the people who sign them.
+- **If a specific work was copied:** See the [Copyright Claims Board’s guide](https://www.ccb.gov/claimant/). It’s a voluntary, low-cost process with limits, and may not suit complex AI cases.
+- **Have your say on policy:** Find your representatives through [USAGov](https://www.usa.gov/elected-officials) and tell them what you think about consent, pay and transparency. One person’s choices can’t change how a whole industry works.
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. Human editorial review pending.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and colleagues, *Extracting books from production language models*, January 6, 2026 preprint (experiments August–September 2025); Carlini and colleagues, USENIX Security, August 2023; US Copyright Office, Part 3 prepublication report, May 9, 2025 (still labeled prepublication on the [official AI page](https://www.copyright.gov/ai/) at cutoff); Demirci, Hannane, and Zhu, August 2024 working paper, [journal version published online January 24, 2025](https://spiral.imperial.ac.uk/entities/publication/88113a91-b994-4717-8526-dadac657f1cb); *Bartz* orders June 23, 2025 and July 20, 2026; *ROSS* opinion filed September 29, 2026. Authors Guild clauses updated April 29, 2026; USAGov page updated March 2, 2026; Copyright Office and CCB guidance undated, checked at cutoff. Court-issued documents were inspected through Justia’s public copies.
