@@ -2,7 +2,7 @@
 
 ## How to supply this handoff
 
-Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all six final explainers, statement headlines, interactive layers, exact claims and scores, citations, dates, review states, scoring records and actual related-story candidates. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
+Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all six final explainers, statement headlines, interactive layers, exact claims and scores, citations, dates, review states, scoring records and three real, rated news articles per topic for the article cards. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
 
 This handoff is for implementation in the existing project's preview. It does not authorize publishing the live site. Human editorial review of the content is still pending.
 
@@ -14,7 +14,7 @@ I have attached **`claims-content.json`** to this message. It is the complete, a
 
 ### 1. Content package and exact expected output
 
-The attached JSON has `contentVersion: "claims-us-content-1.3"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
+The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
 
 | Topic | Route | Headline claim (page h1) | Headline hype | Careful version we also checked | Careful hype |
 | --- | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ Field mapping for each topic:
 | `researchCutoff`, `aiEvidenceReview`, `humanEditorialReview`, `reviewStatusText` | Explicit metadata, never derived from deployment time or the viewer's clock. Use the status text exactly and show the cutoff/AI-check dates from the fields. Human review stays pending until Leyla marks a topic reviewed. |
 | `sourceLinks`, `claimExampleCitations` | Direct URL inventory for link checks and any extra source index. Inline citations in A–G are the primary reading experience; a bibliography alone is insufficient. `sourceLinks` supplies exact link titles, not separate structured publication dates: those dates remain in G. |
 | `remainingLimitations` | Preserve as content metadata. The concise public limitation list is `evidenceGaps.limitations`; do not dump the longer internal limitations a second time or remove caveats already in A–G. |
-| `relatedStoryCandidates` | Only these curated existing article IDs can seed related cards. Resolve them as described below. |
+| `articleCards` | Three real news articles per topic, in role order (Says it loud, Reports it carefully, Pushes back), with their article ratings. Render as cards as described in section 7. |
 | `websiteCopyMarkdown` | Exact original A–G text duplicated for integrity comparison. Do not render it as a second article or add a duplicate h1/second copy of each section. |
 
 Parse/import the JSON into a small static content module with one shared landing page and one shared topic-page component. Keep the structured content and citation URLs intact. Render Markdown with the app's safe Markdown handling; do not execute raw HTML. Preserve links, emphasis, paragraphs, bullets, and the one internal link to `/claims/water`. Reordering A–G for the layout is permitted as specified; rewriting, shortening, summarizing, or replacing their bodies is not.
@@ -105,7 +105,7 @@ Use a normal page with one readable column and anchors. Do not make the topic a 
 6. The full meaning, evidence and actions sections in that order, using their exact JSON bodies and headings from the mapping table.
 7. **How these scores work**, with the exact public methodology below and the scoring disclosure.
 8. **Sources and review**, rendering the complete G body, including every publication/update date and access limitation. Show the explicit AI review date separately if not in G. No claim of human review.
-9. **Related stories from the feed**, as specified below.
+9. **In the news**: the three article cards, as specified in section 7.
 10. Links **Explore all AI claims** to `/claims` and **Back to the feed** to `/`.
 
 Anchor destinations need enough `scroll-margin-top` to avoid header overlap. Metadata and important evidence labels are plain text, not green/red “safe/danger” badges. Preserve the distinction between observed outcomes, controlled experiments, projections, surveys/judgments and theoretical scenarios in the supplied copy.
@@ -129,6 +129,7 @@ Use the provided computed `hype` values; do not calculate claim scores by sendin
 These layers carry the nuance so the headline can stay short. They add detail; they never hide the headline, score, score reason or key qualification. Use native buttons, `<details>` or radio inputs so everything works by keyboard and screen reader, with 44px tap targets. Respect `prefers-reduced-motion`. Render all text from `interactive` exactly.
 
 - **Key word** (`keyWord`): highlight `keyWord.word` inside the h1 using the same orange wavy underline as the article markup view's hype highlights. It is a button (`aria-expanded`) that opens `keyWord.explanation` in a small panel just below the h1.
+- **Spot the hype** (`spotTheHype`): heading **Spot the hype**, hint from `prompt`. Show the headline again, large, split into its `pieces`; each piece is a toggle button (`aria-pressed`) that the reader taps to mark as hype (marked pieces get the orange wavy underline). A **Check my answers** button then reveals, for every piece: pieces with `hype: true` get their `label` as a small orange tag and their `why`; pieces with `hype: false` get a green **Fair** tag and their `why`. Show a one-line result such as “You found 2 of 2 hype words” and, if the reader marked a fair piece, “You also marked a fair part. See why below.” A **Try again** button resets. Never reveal the answers before the reader checks. The labels map to the checklist rows: P1 Evidence status, P2 Scope, P3 Future certainty, W1 Rhetorical inflation.
 - **Hype gauge** (`claimDial`, ordered from played down → overhyped): heading **How hot is this claim?**, hint “Slide to hear the same topic said different ways. Only the marked versions were scored.” Draw it as a semicircle gauge, like a speedometer or an oven dial: a half-circle arc in three zones, cool blue on the left, green at the top and hot chilli orange on the right, with a needle from the centre. Label the left end **Played down**, the top **Just right** and the right end **Overhyped**. The careful version always points the needle straight up at Just right; versions before it spread across the blue zone and versions after it across the orange zone, with the headline furthest right. Move the needle with a native range input (labelled “Claim version”) directly under the gauge, so it works by keyboard and screen reader; the needle animates unless reduced motion is on, and the input's value text reads the version and its score, never just a colour. It starts on the item whose `scoredAs` is `headline`. Show the selected `text` as a large quote. For `scoredAs: "headline"` show peppers and `[hype.label] · [hype.level]/5` plus “The headline claim at the top of this page.” For `scoredAs: "careful"` show peppers and `[carefulHype.label] · [carefulHype.level]/5` plus “Just right: what the evidence supports.” For items with `scoredAs: null`, show “Not scored. Shown for comparison.” Never show peppers for unscored items. Use the site's hype words (Grounded, A little spicy, Turning it up, Overheated, Off the charts) so the reading matches the chilli meter everywhere else.
 - **Fine print** (`finePrint`): heading **But…**, hint “The fine print, one tap at a time.” A wrapping row of chip buttons (`label`); tapping one opens its `text` below the row and closes any other.
 - **Situation picker** (`situationPicker`, privacy only): heading from `title`, hint “Pick the one that fits you. Based on OpenAI's published policies.” Radio options (`label`); the chosen option's `result` appears below.
@@ -142,34 +143,23 @@ Display `reviewStatusText` exactly: **AI rating, not yet reviewed**, matching th
 
 Format ISO dates for US readers, e.g. **Research checked through October 6, 2026** and **AI evidence review: October 6, 2026**, using the actual fields. Do not update them on deploy, refresh, feed update or rebuild. Do not change publication dates recorded as “undated,” preprint dates, court-status dates or relative update labels in G into guessed dates. Source dates, research cutoff, AI review and future human-review dates are separate facts. A refreshed feed never silently refreshes the explainers' research.
 
-### 7. Related stories: actual available content, with honest empty states
+### 7. In the news: article cards that link the claim to real stories
 
-This mapping comes from direct site inspection on October 6, 2026. Render only candidates provided in each topic object; resolve each ID via the existing public story read path. Use the actual returned title, publisher and publication date. Link to `/story/[id]`. Show the supplied context label, particularly **Australia · international context**, so a US reader does not mistake foreign law for US law. If the title/topic materially changed or the record is unavailable, omit it rather than preserving a misleading card.
+At the bottom of each topic page, under the heading **In the news**, show the three `articleCards` as cards, in the supplied order. Hint text, exactly:
 
-Launch mapping:
+> Real stories about this claim, rated with the same checklist as our feed. Article ratings are separate from the claim score above.
 
-| Topic | Curated story ID | Context |
-| --- | --- | --- |
-| Water | `dcf19ba9-804b-4919-8bf2-950f0d29c7d6` | United States · data-center cooling |
-| Jobs | None | Empty state |
-| Energy and climate | `dcf19ba9-804b-4919-8bf2-950f0d29c7d6` | United States · data-center infrastructure |
-| Creativity | None | Empty state; the inspected French literary-prize story is too peripheral to the copying claim and must not be added |
-| Privacy | `3ab33723-4d75-430a-aa22-ce61606ff8b7` | Australia · international context |
-| Existential risk | `0cbb21e6-cf82-437f-94d1-d7ed6d6bb1a5` | Commentary · AI control |
+Each card shows, top to bottom:
+1. A role tag from `role`: **Says it loud** (chilli orange), **Reports it carefully** (green) or **Pushes back** (blue). The tag also carries the words, so colour is never the only signal.
+2. `outlet` · formatted `published` date, and `contextLabel` when present (for example **United Kingdom · international context**).
+3. The article `headline` as the card title.
+4. The two article ratings in the feed's own style: chillies for `hype` with its label (Grounded, A little spicy, Turning it up, Overheated, Off the charts) and flags for `gaps` with the feed's evidence-gaps label, plus the review label `reviewStatus` (**AI rating, not yet reviewed** or **Reviewed by Leyla**). Label this row **Article rating**.
+5. `ratingNote` in muted text, then `whyHere` under a small **Why it's here** label.
+6. One link. Look up the feed's stored stories for one whose original URL equals `url` (ignore a trailing slash and `utm_` query parameters). If one exists, link the whole card to its story page `/story/[id]` with the text **See our full rating**, and show that story's own live ratings and review label instead of the supplied ones, so the card always matches the story page. If none exists, link to `url` with the text **Read the article at [outlet]**, opening in a new tab with `rel="noopener noreferrer"` and announced as opening a new tab.
 
-The datacenter article was titled “Microsoft reveals new datacenter for Atlanta, will be world’s first ‘AI super factory’,” dated November 13, 2025. The privacy story was “Australia’s proposed laws could help regulate privacy risks from chatbots – if we get the details right,” dated October 1, 2026. The AI-control story was “The ‘WarGames’ problem: Computer science has long understood what it takes to keep AI under control,” dated September 29, 2026. The JSON preserves verified titles/dates as sanity checks, not fallback fictional records.
+Cards sit in one column on mobile and three across from 1024px. Never hide or reorder a card because of its rating; a "Pushes back" story can be hyped too, and that is part of the lesson. Do not call the article engine for these cards and do not create or edit stored stories from this page. If the story lookup fails, show the supplied ratings and the external link; the cards and the rest of the page stay readable.
 
-Below the related-stories heading use exactly:
-
-> Reporting and commentary on this topic; these stories are not the evidence base for this explainer.
-
-Use at most two genuine mapped stories per topic. Existing article cards/ratings may be reused if easy, but label any rating **Article rating — separate from the claim score**. Preserve the article's own review state and partial-check labels without transferring them to the explainer. Do not request new article ratings, rewrite existing summaries, or change stored articles.
-
-When the list is empty or all candidates are unavailable, show exactly:
-
-> No related stories are available here yet. You can still read the sources above or browse the feed.
-
-Link “browse the feed” to `/`. When the request fails, show **Related stories could not load. Browse the feed.** with the feed link. The static explainer remains readable if the feed is loading, fails or has no matching articles. Do not add an automatic broad “AI” keyword fallback, fabricate matches or hide the sources because a related-story fetch failed.
+Below the cards, add a small line: **Want to see how we rate a story? Browse the feed**, linking “Browse the feed” to `/`.
 
 ### 8. Accessibility and implementation boundaries
 
@@ -177,7 +167,7 @@ Use semantic `nav`, `main`, `article`, lists, headings and `time`. One h1 per pa
 
 Verify normal-text contrast at least 4.5:1, large text 3:1, and UI/focus indicators 3:1. Yellow is an accent background, not small text on white. Maintain visible focus/hover/active text contrast. Peppers are `aria-hidden`; a single text label carries the score. No color-only meaning, hover-only information or unlabeled icon controls. Minimum tap targets are 44px. On route changes place focus at the new page's h1, without trapping focus. Native disclosure controls must work with Enter/Space.
 
-Check widths 320px, 390px, 768px and 1280px plus 200% zoom. Long claims, source links, review text, score labels and related-story headlines must wrap without page-level horizontal scrolling, clipping, text overlap or sticky obstruction. Keep essential controls out of the lower-right area occupied by the existing Lovable badge.
+Check widths 320px, 390px, 768px and 1280px plus 200% zoom. Long claims, source links, review text, score labels and article-card headlines must wrap without page-level horizontal scrolling, clipping, text overlap or sticky obstruction. Keep essential controls out of the lower-right area occupied by the existing Lovable badge.
 
 Keep the implementation small: local static JSON/module, shared components and two route patterns. Reuse the project's router and existing story read path. Do not introduce new databases, authentication, subscriptions, analytics collection, admin/CMS workflows, a scheduler or a chatbot. Do not modify article scoring prompts/calculation/schema, existing engine calls, ingestion jobs or existing stored data. The adaptation is for these recurring-claim content records only.
 
@@ -188,11 +178,11 @@ Complete these in preview and report pass/fail with any exact remaining issue. D
 - **All routes:** `/`, `/claims`, all six listed `/claims/[slug]` routes and at least two existing `/story/[id]` routes work. Direct loads, refresh, browser Back, breadcrumbs and both header links work. Active nav is correct. `/claims/energy-climate` is the canonical climate route.
 - **Complete exact content:** Six topics appear in the supplied order. Each A–G Markdown body is rendered once in the specified location, with the same wording and links as the attachment. Compare against `websiteCopyMarkdown`; headings/placement may differ, bodies must not. No omitted action, citation, qualification, source date or access limitation. No duplicated full article or placeholder.
 - **Scoring:** All six headlines show **Headline hype: Overheated 4/5**. Careful versions show **Grounded 1/5**, except existential risk at **A little spicy 2/5**. Each score's reason line is visible next to it. Both five-check lists, for the headline and the careful version, remain accessible in **Detailed scoring checks**. All six evidence limitation sections are qualitative; no invented numeric evidence-gap values or safety percentages. No rescores were made by the article engine.
-- **Statements and interactivity:** Every h1 and card heading is the `headline` statement, with no question marks. The key word is highlighted and opens its explanation by keyboard and tap. The semicircle hype gauge starts on the headline version, points straight up at **Just right** for the careful version, shows **Played down**, **Just right** and **Overhyped** labels, and only the headline and careful versions show peppers. Fine-print chips, quiz and privacy picker work by keyboard, tap and screen reader. The headline, score, `hype.reason` and `keyQualification` are visible without any interaction.
+- **Statements and interactivity:** Every h1 and card heading is the `headline` statement, with no question marks. The key word is highlighted and opens its explanation by keyboard and tap. Spot the hype lets readers mark pieces, check, see every piece's tag and reason, and try again, by keyboard and tap. The semicircle hype gauge starts on the headline version, points straight up at **Just right** for the careful version, shows **Played down**, **Just right** and **Overhyped** labels, and only the headline and careful versions show peppers. Fine-print chips, quiz and privacy picker work by keyboard, tap and screen reader. The headline, score, `hype.reason` and `keyQualification` are visible without any interaction.
 - **Interpretation:** “The exact claim we scored” is always visible; every card/page keeps its qualifier. Jobs retains the original approximately 2026–2030 warning window, energy retains the comparison-baseline caveat, privacy remains limited to the stated personal-account policy, and existential risk retains its conditional future-superintelligence scope. These checks preserve supplied copy, not new additions. Score meaning is visible; no low-score “safe” badge.
 - **Citations/resources:** Every supplied external inline link has the correct destination in the rendered page; internal `/claims/water` opens correctly. Check representative live sources and report any inaccessible links without inventing replacements or silently dropping them. Section G retains source dates and distinctions between publication date, data period and inspected policy date. No search-snippet substitutions.
 - **Review/dates:** All six show **AI rating, not yet reviewed** and metadata dates from JSON. No “Reviewed by Leyla” until a topic's human review status is updated. Rebuild/refresh does not change research/review dates. Existing articles keep their own review labels.
-- **Related stories:** Resolve the three distinct curated IDs when available; verify clicks open their existing story pages. Water and Energy may reference the same infrastructure story; Privacy visibly says Australia. Jobs and Creativity show the honest empty state. Test missing-ID and failed-fetch behavior; full explainers remain available.
+- **Article cards:** Every topic shows three cards in the order Says it loud, Reports it carefully, Pushes back, with role words, outlet, date, headline, article ratings, review label, rating note and why-it's-here line. Water's Microsoft Atlanta card links to its existing `/story/dcf19ba9-804b-4919-8bf2-950f0d29c7d6` page and shows that story's live rating; cards with no matching story link out to the original article in a new tab. Jobs' Block card shows **Reviewed by Leyla**. Test a failed story lookup: cards still show supplied ratings and links.
 - **Mobile/accessibility:** At all four widths and 200% zoom, no clipping or horizontal page overflow. Two-row mobile navigation, one-column cards, readable labels/links, visible keyboard focus, skip link, anchor links and disclosure controls work. Screen-reader accessible score names contain numbers and words, not a sequence of peppers. Verify contrast.
 - **Feed regression:** Before/after compare the current story order/content, existing timestamp, unrated state, rated/partly-checked labels, original-source links and article-detail functionality. Feed refreshing/loading/error behavior and article-engine paths stay intact. The only intended feed-body addition is the compact invitation. Claim content still loads when the feed request fails.
 - **Scope:** No live publish, no new accounts/subscription/CMS/chatbot, no changes to stored articles or engine behavior. Finish with preview access, changed-component summary and validation results.

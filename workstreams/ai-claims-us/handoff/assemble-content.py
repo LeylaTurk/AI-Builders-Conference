@@ -62,9 +62,25 @@ def check_layer(slug, layer, head, record, text):
     if not flagged or not flagged <= failed:
         raise ValueError(f'{slug}: Spot the hype must flag only checks the headline failed ({sorted(failed)})')
 
+def check_cards(slug, cards):
+    items = cards['topics'][slug]
+    if [c['role'] for c in items] != cards['roles']:
+        raise ValueError(f'{slug}: need one article card per role, in order {cards["roles"]}')
+    for c in items:
+        if not c['url'].startswith('https://') or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', c['published']):
+            raise ValueError(f'{slug}: article card needs an https URL and an ISO date')
+        if not all(isinstance(c[k], int) and 1 <= c[k] <= 5 for k in ('hype', 'gaps')):
+            raise ValueError(f'{slug}: article card ratings must be 1–5')
+        if c['reviewStatus'] not in (PENDING_LABEL, 'Reviewed by Leyla'):
+            raise ValueError(f'{slug}: unknown article review label')
+        for k in ('whyHere', 'ratingNote'):
+            if len(c[k].split()) > 30:
+                raise ValueError(f'{slug}: article card {k} over 30 words')
+    return [{k: v for k, v in c.items() if k != 'privateRatingFile'} for c in items]
+
 def main():
     editorial = json.loads((ROOT/'handoff/editorial-metadata.json').read_text())
-    related = json.loads((ROOT/'design/related-stories.json').read_text())
+    cards = json.loads((ROOT/'handoff/article-cards.json').read_text())
     layers = json.loads((ROOT/'handoff/interactive-layers.json').read_text())['topics']
     topics, validations, hashes = [], [], {}
     for slug, name in zip(SLUGS, NAMES):
@@ -109,7 +125,7 @@ def main():
             'reviewStatusText': PENDING_LABEL,
             'interactive': {k: v for k, v in layer.items() if k not in ('headline', 'carefulHeadline', 'scoreReason', 'carefulScoreReason')},
             'remainingLimitations': record['evidence_limitations'],
-            'relatedStoryCandidates': related['topics'].get(slug, []),
+            'articleCards': check_cards(slug, cards),
             'websiteCopyMarkdown': text,
         }
         topics.append(item)
@@ -150,7 +166,7 @@ def main():
             'Show “AI rating, not yet reviewed” until humanEditorialReview.status is “reviewed”; only then show “Reviewed by Leyla”.',
             'The headline statement, score, score reason and key qualification are always visible; interactive layers only add detail.',
             'Dates are stored editorial facts; deployment must not change them.',
-            'Related stories provide context; they are not the research evidence base.'
+            'Article cards show real news coverage of the claim; their article ratings are separate from the claim scores and are not the research evidence base.'
         ],
         'methodology': {
             'version': calculator.VERSION,

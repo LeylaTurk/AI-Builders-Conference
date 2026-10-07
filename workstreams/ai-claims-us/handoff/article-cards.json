@@ -1,0 +1,278 @@
+{
+  "version": "claims-us-articles-1.0",
+  "checkedOn": "2026-10-07",
+  "purpose": "Real news articles shown as cards at the bottom of each claim page: one that says the claim loudly, one that reports it carefully, one that pushes back. Each is rated with the site's own article checklist (engine/rating-prompt.md, scored by engine/scoring.ts). The article ratings are separate from the claim scores. Article text and the full checklist answers with quotes are kept in the private article archive, not here.",
+  "roles": [
+    "Says it loud",
+    "Reports it carefully",
+    "Pushes back"
+  ],
+  "topics": {
+    "water": [
+      {
+        "role": "Says it loud",
+        "headline": "Sending One Email With ChatGPT is the Equivalent of Consuming One Bottle of Water",
+        "outlet": "TechRepublic",
+        "published": "2024-09-20",
+        "url": "https://www.techrepublic.com/article/generative-ai-data-center-water-use/",
+        "sourceType": "independent news outlet (tech trade publication)",
+        "hype": 4,
+        "gaps": 3,
+        "whyHere": "This free write-up of the Washington Post study turned its estimate into the headline “one email equals one bottle of water.”",
+        "ratingNote": "The headline states as fact what was one modelled estimate for one model, and the story calls the water use extravagant.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2024-09-20_techrepublic_chatgpt-email-bottle-of-water.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "A data center proposed at a quiet corner of East Texas leaves a community bracing for a boom",
+        "outlet": "The Texas Tribune",
+        "published": "2026-07-09",
+        "url": "https://www.texastribune.org/2026/07/09/data-center-backlash-east-texas/",
+        "sourceType": "independent news outlet",
+        "hype": 1,
+        "gaps": 1,
+        "whyHere": "Residents fear a planned data center will drain local water. Independent figures show data centers use under 1% of Texas water, though that share is rising.",
+        "ratingNote": "Fears are reported in proportion, with the developer's answers, independent water figures and a disclosed funding tie.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-07-09_texastribune_east-texas-data-center.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Microsoft reveals new datacenter for Atlanta, will be world’s first ‘AI super factory’",
+        "outlet": "WSB-TV",
+        "published": "2025-11-13",
+        "url": "https://www.wsbtv.com/news/local/atlanta/microsoft-reveals-new-datacenter-atlanta-be-help-create-worlds-1st-ai-superfactory/NPLE2ASPKJG2FEC6BNF7CYFXDY/",
+        "sourceType": "independent news outlet (local TV station)",
+        "hype": 4,
+        "gaps": 5,
+        "siteStoryId": "dcf19ba9-804b-4919-8bf2-950f0d29c7d6",
+        "whyHere": "Microsoft says its new Atlanta AI data center's cooling uses almost no water. Pushback can be hype too: nobody outside the company checked.",
+        "ratingNote": "The story repeats Microsoft's world's-first and near-zero-water claims word for word, with no outside voice or evidence.",
+        "reviewStatus": "Reviewed by Leyla",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-11-13_wsbtv_microsoft-atlanta-ai-superfactory.json"
+      }
+    ],
+    "jobs": [
+      {
+        "role": "Says it loud",
+        "headline": "Block lays off nearly half its staff because of AI. Its CEO said most companies will do the same",
+        "outlet": "CNN",
+        "published": "2026-02-26",
+        "url": "https://www.cnn.com/2026/02/26/business/block-layoffs-ai-jack-dorsey",
+        "sourceType": "independent news outlet",
+        "hype": 4,
+        "gaps": 3,
+        "whyHere": "A CEO cuts 40% of staff, credits AI, and predicts most companies will soon do the same, which is the loud claim in action.",
+        "ratingNote": "The headline treats the company's AI explanation as fact and repeats the CEO's forecast for most companies without any outside voice.",
+        "reviewStatus": "Reviewed by Leyla",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-02-26_cnn_block-layoffs-ai-dorsey.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "Report: Losing your job to AI doesn’t just lead to unemployment, it leaves lasting scars",
+        "outlet": "CNN",
+        "published": "2026-04-07",
+        "url": "https://www.cnn.com/2026/04/07/economy/ai-job-losses-long-term-effects",
+        "sourceType": "independent news outlet",
+        "hype": 2,
+        "gaps": 2,
+        "whyHere": "Goldman Sachs economists use decades of data to estimate what losing a job to technology costs workers, and estimate 6–7% of US jobs at risk.",
+        "ratingNote": "The body is measured and hedged, but the headline turns a study of past technology job losses into a flat fact about AI.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-04-07_cnn_ai-job-loss-scarring-report.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Don’t freak out: AI isn’t causing a jobs-pocalypse. At least, not yet",
+        "outlet": "CNN",
+        "published": "2026-03-02",
+        "url": "https://www.cnn.com/2026/03/02/business/ai-tech-jobs-layoffs",
+        "sourceType": "independent news outlet (analysis column)",
+        "hype": 4,
+        "gaps": 2,
+        "whyHere": "Responding to the Block layoffs and a viral doom essay, this column uses jobs data and history to argue there is no AI jobs collapse yet.",
+        "ratingNote": "Hype runs the reassuring way: it calls the doom essay fan-fiction, uses a flip headline, and turns history into near-certainty about AI.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-03-02_cnn_ai-jobs-pocalypse-not-yet.json"
+      }
+    ],
+    "energy-climate": [
+      {
+        "role": "Says it loud",
+        "headline": "Pennsylvania’s AI boom is repeating old patterns of exploitation",
+        "outlet": "Spotlight PA (Inside Climate News)",
+        "published": "2026-09-22",
+        "url": "https://www.spotlightpa.org/news/2026/09/pennsylvania-ai-data-center-exploitation-environment",
+        "sourceType": "independent news outlet",
+        "hype": 3,
+        "gaps": 2,
+        "whyHere": "Covers a critical report on Pennsylvania's data center boom, which lists climate harm from their huge power demand among its warnings.",
+        "ratingNote": "The headline states a critical report's argument as settled fact and drops its “could”, and a charged phrase from the report goes unchallenged.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-22_spotlightpa_pa-ai-boom-exploitation.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "Oregon data centers by the numbers: 111 facilities consume nearly one-quarter of state’s power, according to new report",
+        "outlet": "OPB",
+        "published": "2026-09-17",
+        "url": "https://www.opb.org/article/2026/09/17/oregon-data-centers-consume-quarter-state-power-report/",
+        "sourceType": "independent news outlet",
+        "hype": 2,
+        "gaps": 2,
+        "whyHere": "Puts hard numbers on how much electricity data centers already use in one state and how much more they may need by 2030.",
+        "ratingNote": "Measured headline and clearly labelled forecasts; the one mark against it is calling the report “first-of-its-kind”.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-17_opb_oregon-data-centers-report.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Fears of AI speeding up climate change \"overstated\": IEA report",
+        "outlet": "Axios",
+        "published": "2025-04-10",
+        "url": "https://www.axios.com/2025/04/10/ai-climate-change-report",
+        "sourceType": "independent news outlet",
+        "hype": 2,
+        "gaps": 2,
+        "whyHere": "Reports the International Energy Agency's finding that fears of AI speeding up climate change appear overstated, though data center power use will still rise.",
+        "ratingNote": "Keeps the agency's hedging in the body, but the headline drops “appear” and the piece calls one figure “stunning”.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-04-10_axios_ai-climate-change-iea-report.json"
+      }
+    ],
+    "creativity": [
+      {
+        "role": "Says it loud",
+        "headline": "Disney and Universal sue \"bottomless pit of plagiarism\" Midjourney AI",
+        "outlet": "The A.V. Club",
+        "published": "2025-06-11",
+        "url": "https://www.avclub.com/disney-universal-sue-midjourney-ai-plagiarism",
+        "sourceType": "independent news outlet",
+        "hype": 4,
+        "gaps": 3,
+        "whyHere": "It repeats the studios' charge that an AI image tool is a plagiarism machine, giving only the accusers' side.",
+        "ratingNote": "The headline uses the lawsuit's insult as a label, and the story ends on a studio's theft slogan with no other view.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-06-11_avclub_disney-universal-midjourney-plagiarism.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "Disney and Universal sue AI firm Midjourney for copyright infringement",
+        "outlet": "Spectrum News (AP wire)",
+        "published": "2025-06-11",
+        "url": "https://spectrumnews1.com/wi/green-bay/business/2025/06/11/disney-universal-lawsuit-midjourney-ai-copyright-infringement",
+        "sourceType": "independent news outlet",
+        "hype": 1,
+        "gaps": 2,
+        "whyHere": "Same lawsuit, reported plainly: the studios say the tool turns out copies of their characters, and the AI company's fair-use argument is included.",
+        "ratingNote": "Plain headline, accusations framed as claims in a lawsuit, and the other side's view included, so nothing is overstated.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-06-11_spectrumnews-ap_disney-universal-sue-midjourney.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Stability AI largely wins UK court battle against Getty Images over copyright and trademark",
+        "outlet": "WDIV ClickOnDetroit (AP wire)",
+        "published": "2025-11-04",
+        "url": "https://www.clickondetroit.com/business/2025/11/04/stability-ai-largely-wins-uk-court-battle-against-getty-images-over-copyright-and-trademark/",
+        "sourceType": "independent news outlet",
+        "hype": 1,
+        "gaps": 2,
+        "contextLabel": "United Kingdom · international context",
+        "whyHere": "A British judge found this image AI did not store or reproduce Getty's photos, which complicates the claim that AI art simply copies.",
+        "ratingNote": "Measured wording that keeps the ruling to its narrow scope, with an outside lawyer saying the larger question is still open.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-11-04_clickondetroit-ap_stability-ai-wins-getty-uk.json"
+      }
+    ],
+    "privacy": [
+      {
+        "role": "Says it loud",
+        "headline": "Your secrets are not so safe with AI chatbots like ChatGPT",
+        "outlet": "Fox News",
+        "published": "2023-05-02",
+        "url": "https://www.foxnews.com/tech/your-secrets-not-so-safe-ai-chatbots-chatgpt",
+        "sourceType": "national news outlet (tech advice column)",
+        "hype": 4,
+        "gaps": 4,
+        "whyHere": "Its headline is close to the page's loud claim. It warns that ChatGPT keeps your chats and suggests they could end up sold or seen.",
+        "ratingNote": "It treats a guess that chat data could be sold to advertisers as likely, says staff see everything, and opens on a fear hook about your secrets.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2023-05-02_foxnews_your-secrets-not-so-safe-chatbots.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "Rogue AI agents leaked ChatGPT users' images. Here's how to keep your chats out of AI training",
+        "outlet": "Scripps News",
+        "published": "2026-09-29",
+        "url": "https://www.scrippsnews.com/science-and-tech/artificial-intelligence/rogue-ai-agents-leaked-chatgpt-users-images-heres-how-to-keep-your-chats-out-of-ai-training",
+        "sourceType": "national news outlet",
+        "hype": 2,
+        "gaps": 3,
+        "whyHere": "It explains that ChatGPT trains on your chats unless you turn that off, which is the page's careful claim, and shows where the setting is.",
+        "ratingNote": "Mostly measured and open about what isn't known, but “rogue agents acting on their own” makes the AI sound like it chose to act.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-29_scrippsnews_rogue-agents-leaked-images-opt-out.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Your public ChatGPT queries are getting indexed by Google and other search engines",
+        "outlet": "TechCrunch",
+        "published": "2025-07-31",
+        "url": "https://techcrunch.com/2025/07/31/your-public-chatgpt-queries-are-getting-indexed-by-google-and-other-search-engines/",
+        "sourceType": "independent tech news outlet",
+        "hype": 2,
+        "gaps": 2,
+        "whyHere": "The chats that showed up in Google were ones people had chosen to share by link. ChatGPT doesn't make chats public on its own.",
+        "ratingNote": "Plain headline, and the claims match what the reporter checked herself. It lost points only for calling the chatbot snarky and hostile.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-07-31_techcrunch_public-chatgpt-queries-indexed.json"
+      }
+    ],
+    "existential-risk": [
+      {
+        "role": "Says it loud",
+        "headline": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
+        "outlet": "CBS News",
+        "published": "2026-09-09",
+        "url": "https://www.cbsnews.com/news/ai-kill-humans-anthropic-researcher-more-than-ten-percent-chance/",
+        "sourceType": "independent news outlet",
+        "hype": 2,
+        "gaps": 3,
+        "whyHere": "An AI company's own safety researcher puts the odds of AI killing all humans within a decade above 10%. A scary claim, but reported as one person's estimate.",
+        "ratingNote": "The headline uses a shock phrase and the story treats AI as acting on its own, but the estimate is clearly attributed to one person.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-09_cbsnews_anthropic-researcher-10-percent-risk.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "OpenAI flags new concerning AI behavior, to track model misalignment regularly",
+        "outlet": "NPR (AP wire)",
+        "published": "2026-09-17",
+        "url": "https://www.npr.org/2026/09/17/g-s1-143774/openai-concerning-ai-behavior",
+        "sourceType": "independent news outlet (wire service copy)",
+        "hype": 2,
+        "gaps": 3,
+        "whyHere": "Reports real cases of AI models misbehaving in testing, the kind of evidence people point to when warning about losing control.",
+        "ratingNote": "The wording is calm and attributed; the only hype is calling an AI system rogue in the story's own voice.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-17_npr_openai-concerning-behavior-reports.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Nvidia's Jensen Huang rejects AI extinction warnings as \"doomsday narratives\"",
+        "outlet": "CBS News",
+        "published": "2026-09-20",
+        "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-rejects-ai-extinction-warnings/",
+        "sourceType": "independent news outlet",
+        "hype": 3,
+        "gaps": 3,
+        "whyHere": "The head of the world's biggest AI chip company says there is no chance AI ends humanity, the opposite of the page's claim.",
+        "ratingNote": "The story repeats a CEO's flat zero-percent certainty without challenge, puts “doomsday” in the headline, and calls AI bots rogue.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-20_cbsnews_jensen-huang-rejects-doomsday.json"
+      }
+    ]
+  }
+}
