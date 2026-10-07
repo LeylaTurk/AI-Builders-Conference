@@ -1,6 +1,6 @@
 {
   "version": "claims-us-interactive-1.1",
-  "status": "Updated October 7, 2026: adds the Spot the hype game and article cards. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
+  "status": "Updated October 7, 2026: adds article cards and the semicircle hype gauge. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
   "topics": {
     "water": {
       "headline": "Every AI-written email uses a bottle of water.",
@@ -71,36 +71,7 @@
         }
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
-      "carefulScoreReason": "Says “threaten” and limits itself to some places, which matches the evidence.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "Every",
-            "hype": true,
-            "check": "P2",
-            "label": "Stretches too far",
-            "why": "The estimate was for one 100-word email from one model. Water use varies a lot by data center, cooling and power source."
-          },
-          {
-            "text": "AI-written email",
-            "hype": false,
-            "why": "The topic is real: AI does use water to keep data centers cool."
-          },
-          {
-            "text": "uses",
-            "hype": true,
-            "check": "P1",
-            "label": "Sounds surer than the evidence",
-            "why": "It's a computer estimate, not a measurement, and it counts water used to make the electricity."
-          },
-          {
-            "text": "a bottle of water.",
-            "hype": false,
-            "why": "About half a liter matches the size of the estimate, so this part is fair."
-          }
-        ]
-      }
+      "carefulScoreReason": "Says “threaten” and limits itself to some places, which matches the evidence."
     },
     "jobs": {
       "headline": "AI will take all our jobs.",
@@ -166,36 +137,7 @@
         }
       ],
       "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
-      "carefulScoreReason": "Says “could” and rests on a reasoned scenario, though the half-of-jobs number hasn’t been tested.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "AI",
-            "hype": false,
-            "why": "Companies really are using AI for some tasks people used to do."
-          },
-          {
-            "text": "will",
-            "hype": true,
-            "check": "P3",
-            "label": "Prediction told as fact",
-            "why": "A guess about the future told as a sure thing. Musk himself said “probably”."
-          },
-          {
-            "text": "take",
-            "hype": false,
-            "why": "Ordinary shorthand for employers using AI instead of people."
-          },
-          {
-            "text": "all our jobs.",
-            "hype": true,
-            "check": "P2",
-            "label": "Stretches too far",
-            "why": "Jumps from tasks AI can help with to every job. US labor statistics show no broad job wipeout so far."
-          }
-        ]
-      }
+      "carefulScoreReason": "Says “could” and rests on a reasoned scenario, though the half-of-jobs number hasn’t been tested."
     },
     "energy-climate": {
       "headline": "AI will only intensify climate change.",
@@ -261,31 +203,7 @@
         }
       ],
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
-      "carefulScoreReason": "Says “could”, and there’s a documented path: more demand met partly by gas power.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "AI",
-            "hype": false,
-            "why": "AI's power use is growing fast, and some of that power comes from fossil fuels."
-          },
-          {
-            "text": "will only",
-            "hype": true,
-            "check": "P1",
-            "label": "Sounds surer than the evidence",
-            "why": "“Only” rules out any climate benefits. Experts say benefits are possible but not proven either way."
-          },
-          {
-            "text": "intensify climate change.",
-            "hype": true,
-            "check": "P3",
-            "label": "Prediction told as fact",
-            "why": "Told as certain. It depends on how much AI grows, how efficient it gets and how the power is made."
-          }
-        ]
-      }
+      "carefulScoreReason": "Says “could”, and there’s a documented path: more demand met partly by gas power."
     },
     "creativity": {
       "headline": "AI art is theft.",
@@ -352,26 +270,7 @@
         }
       ],
       "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
-      "carefulScoreReason": "Says “can”, and controlled experiments show it happens.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "AI art",
-            "hype": true,
-            "check": "P2",
-            "label": "Stretches too far",
-            "why": "Covers all AI art. Copying has been shown only in tests on selected works, and copying a style is generally allowed."
-          },
-          {
-            "text": "is theft.",
-            "hype": true,
-            "check": "P1",
-            "label": "Sounds surer than the evidence",
-            "why": "Treats wrongdoing as settled. US courts haven't decided, and one judge found a kind of training was fair use."
-          }
-        ]
-      }
+      "carefulScoreReason": "Says “can”, and controlled experiments show it happens."
     },
     "privacy": {
       "headline": "ChatGPT is sharing your secrets.",
@@ -458,31 +357,7 @@
         ]
       },
       "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
-      "carefulScoreReason": "Says “may” and “depending on your settings”, which is what OpenAI’s own policy says.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "ChatGPT",
-            "hype": false,
-            "why": "The company does keep chats and may use them, so the worry is real."
-          },
-          {
-            "text": "is sharing",
-            "hype": true,
-            "check": "P1",
-            "label": "Sounds surer than the evidence",
-            "why": "Training its AI on your chats isn't the same as showing them to people. Others see a chat only if you share a link."
-          },
-          {
-            "text": "your secrets.",
-            "hype": true,
-            "check": "W1",
-            "label": "Loaded words",
-            "why": "Calls every chat a secret, and ignores the opt-out, Temporary Chat and work accounts that are left out of training."
-          }
-        ]
-      }
+      "carefulScoreReason": "Says “may” and “depending on your settings”, which is what OpenAI’s own policy says."
     },
     "existential-risk": {
       "headline": "If anyone builds superintelligent AI, everyone dies.",
@@ -558,31 +433,7 @@
         }
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
-      "carefulScoreReason": "Keeps the authors’ condition, but “will” still claims more certainty than the evidence supports.",
-      "spotTheHype": {
-        "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-        "pieces": [
-          {
-            "text": "If anyone builds",
-            "hype": true,
-            "check": "P2",
-            "label": "Stretches too far",
-            "why": "Drops the authors' own condition: AI built with the methods we have today."
-          },
-          {
-            "text": "superintelligent AI,",
-            "hype": false,
-            "why": "This is about a future AI far smarter than people, not today's chatbots. That part is accurate to the book."
-          },
-          {
-            "text": "everyone dies.",
-            "hype": true,
-            "check": "P3",
-            "label": "Prediction told as fact",
-            "why": "Told as certain. Experts disagree about how likely this is and when it could happen."
-          }
-        ]
-      }
+      "carefulScoreReason": "Keeps the authors’ condition, but “will” still claims more certainty than the evidence supports."
     }
   }
 }

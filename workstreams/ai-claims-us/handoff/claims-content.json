@@ -390,36 +390,7 @@
             "answer": "Not proven",
             "why": "Drought maps and utility reports can't pin a shortage on one user."
           }
-        ],
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "Every",
-              "hype": true,
-              "check": "P2",
-              "label": "Stretches too far",
-              "why": "The estimate was for one 100-word email from one model. Water use varies a lot by data center, cooling and power source."
-            },
-            {
-              "text": "AI-written email",
-              "hype": false,
-              "why": "The topic is real: AI does use water to keep data centers cool."
-            },
-            {
-              "text": "uses",
-              "hype": true,
-              "check": "P1",
-              "label": "Sounds surer than the evidence",
-              "why": "It's a computer estimate, not a measurement, and it counts water used to make the electricity."
-            },
-            {
-              "text": "a bottle of water.",
-              "hype": false,
-              "why": "About half a liter matches the size of the estimate, so this part is fair."
-            }
-          ]
-        }
+        ]
       },
       "remainingLimitations": [
         "Most aggregate data describe all data centers rather than AI workloads alone.",
@@ -811,36 +782,7 @@
             "answer": "Not proven",
             "why": "Education, earlier trends and other factors haven't been ruled out."
           }
-        ],
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "AI",
-              "hype": false,
-              "why": "Companies really are using AI for some tasks people used to do."
-            },
-            {
-              "text": "will",
-              "hype": true,
-              "check": "P3",
-              "label": "Prediction told as fact",
-              "why": "A guess about the future told as a sure thing. Musk himself said “probably”."
-            },
-            {
-              "text": "take",
-              "hype": false,
-              "why": "Ordinary shorthand for employers using AI instead of people."
-            },
-            {
-              "text": "all our jobs.",
-              "hype": true,
-              "check": "P2",
-              "label": "Stretches too far",
-              "why": "Jumps from tasks AI can help with to every job. US labor statistics show no broad job wipeout so far."
-            }
-          ]
-        }
+        ]
       },
       "remainingLimitations": [
         "The exact half-of-jobs fraction and one-to-five-year horizon have not been validated as an employment forecast. The hype score evaluates conditional wording, not the estimate’s likelihood or an individual’s job prospects.",
@@ -1214,31 +1156,7 @@
             "answer": "Not proven",
             "why": "Savings depend on adoption and can be eaten up by more use."
           }
-        ],
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "AI",
-              "hype": false,
-              "why": "AI's power use is growing fast, and some of that power comes from fossil fuels."
-            },
-            {
-              "text": "will only",
-              "hype": true,
-              "check": "P1",
-              "label": "Sounds surer than the evidence",
-              "why": "“Only” rules out any climate benefits. Experts say benefits are possible but not proven either way."
-            },
-            {
-              "text": "intensify climate change.",
-              "hype": true,
-              "check": "P3",
-              "label": "Prediction told as fact",
-              "why": "Told as certain. It depends on how much AI grows, how efficient it gets and how the power is made."
-            }
-          ]
-        }
+        ]
       },
       "remainingLimitations": [
         "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
@@ -1620,26 +1538,7 @@
             "answer": "False",
             "why": "US courts haven’t settled it, and one found a specific training use fair."
           }
-        ],
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "AI art",
-              "hype": true,
-              "check": "P2",
-              "label": "Stretches too far",
-              "why": "Covers all AI art. Copying has been shown only in tests on selected works, and copying a style is generally allowed."
-            },
-            {
-              "text": "is theft.",
-              "hype": true,
-              "check": "P1",
-              "label": "Sounds surer than the evidence",
-              "why": "Treats wrongdoing as settled. US courts haven't decided, and one judge found a kind of training was fair use."
-            }
-          ]
-        }
+        ]
       },
       "remainingLimitations": [
         "Targeted extraction of selected works and dated model versions does not measure ordinary-user prevalence or rank current products.",
@@ -2038,30 +1937,6 @@
               "result": "Not used for training by default. Your organization controls who can see chats and how long they're kept."
             }
           ]
-        },
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "ChatGPT",
-              "hype": false,
-              "why": "The company does keep chats and may use them, so the worry is real."
-            },
-            {
-              "text": "is sharing",
-              "hype": true,
-              "check": "P1",
-              "label": "Sounds surer than the evidence",
-              "why": "Training its AI on your chats isn't the same as showing them to people. Others see a chat only if you share a link."
-            },
-            {
-              "text": "your secrets.",
-              "hype": true,
-              "check": "W1",
-              "label": "Loaded words",
-              "why": "Calls every chat a secret, and ignores the opt-out, Temporary Chat and work accounts that are left out of training."
-            }
-          ]
         }
       },
       "remainingLimitations": [
@@ -2455,31 +2330,7 @@
             "answer": "False",
             "why": "The test incidents are real, even though they don't prove extinction."
           }
-        ],
-        "spotTheHype": {
-          "prompt": "Tap the words you think overhype the claim. Then check your answers.",
-          "pieces": [
-            {
-              "text": "If anyone builds",
-              "hype": true,
-              "check": "P2",
-              "label": "Stretches too far",
-              "why": "Drops the authors' own condition: AI built with the methods we have today."
-            },
-            {
-              "text": "superintelligent AI,",
-              "hype": false,
-              "why": "This is about a future AI far smarter than people, not today's chatbots. That part is accurate to the book."
-            },
-            {
-              "text": "everyone dies.",
-              "hype": true,
-              "check": "P3",
-              "label": "Prediction told as fact",
-              "why": "Told as certain. Experts disagree about how likely this is and when it could happen."
-            }
-          ]
-        }
+        ]
       },
       "remainingLimitations": [
         "Scaling from current behavior to persistent goals and world-scale destructive power remains unresolved.",

@@ -54,13 +54,6 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
     if any(q['answer'] not in ('True', 'False', 'Not proven') for q in layer['quiz']):
         raise ValueError(f'{slug}: quiz answers must be True, False or Not proven')
-    pieces = layer['spotTheHype']['pieces']
-    if ' '.join(p['text'] for p in pieces) != layer['headline']:
-        raise ValueError(f'{slug}: Spot the hype pieces must spell out the headline')
-    failed = {c for c, a in head['hype_checks'].items() if a['answer'] == 'N'}
-    flagged = {p['check'] for p in pieces if p['hype']}
-    if not flagged or not flagged <= failed:
-        raise ValueError(f'{slug}: Spot the hype must flag only checks the headline failed ({sorted(failed)})')
 
 def check_cards(slug, cards):
     items = cards['topics'][slug]
