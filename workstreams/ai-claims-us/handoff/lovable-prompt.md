@@ -22,10 +22,10 @@ The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-
 | Jobs | `/claims/jobs` | AI will take all our jobs. | **4/5 — Overheated** | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
 | Existential risk | `/claims/existential-risk` | AI will kill us all. | **5/5 — Off the charts** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 | Energy and climate | `/claims/energy-climate` | AI will only intensify climate change. | **4/5 — Overheated** | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
-| Creativity | `/claims/creativity` | AI art is theft. | **4/5 — Overheated** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
+| Creativity | `/claims/creativity` | AI art is theft. | **3/5 — Turning it up** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
 | Privacy | `/claims/privacy` | ChatGPT is sharing your secrets. | **4/5 — Overheated** | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
 
-The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5, or 5/5 for existential risk) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule and, for existential risk, the certain-doom rule (claims-us-1.2). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
+The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5, or 5/5 for existential risk and 3/5 for creativity) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule and, for existential risk, the certain-doom rule (claims-us-1.2). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
 
 Field mapping for each topic:
 

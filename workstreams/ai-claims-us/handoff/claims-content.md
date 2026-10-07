@@ -263,7 +263,7 @@ Copyright generally doesn’t protect a style, but it does protect a work’s ac
 
 ## E. Hype score and explanation
 
-**Hype score for the headline: 4/5 — Overheated.** “Theft” treats a legal and moral question as settled, and applies it to all AI art, when copying has only been shown in [targeted tests](https://arxiv.org/html/2601.02671v1). As a moral argument about consent and pay, it’s a fair debate; as a statement of fact, it goes beyond the evidence.
+**Hype score for the headline: 3/5 — Turning it up.** Artists have a real point: most of their work was used to train AI without anyone asking. [Midjourney’s founder said](https://www.forbes.com/sites/robsalkowitz/2022/09/16/midjourney-founder-david-holz-on-the-impact-of-ai-on-art-imagination-and-the-creative-economy/) it didn’t seek consent from living artists. But “theft” is a crime word, and it states a legal and moral question as settled. Courts haven’t agreed, and copying has only been shown in [targeted tests](https://arxiv.org/html/2601.02671v1).
 
 **The careful version scores 1/5 — Grounded.** Experiments show AI [can reproduce copyrighted work](https://arxiv.org/html/2601.02671v1), and the claim says no more than that. How often it happens, and how much creators lose, are still unknown.
 

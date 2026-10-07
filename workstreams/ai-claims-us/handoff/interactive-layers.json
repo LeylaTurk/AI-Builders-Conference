@@ -455,7 +455,7 @@
         "word": "theft",
         "explanation": "Theft is a legal and moral judgment. US courts haven’t settled whether training AI on others’ work is legal, and one court found a specific use fair."
       },
-      "scoreReason": "The headline treats a legal and moral judgment as settled fact, and applies it to all AI art.",
+      "scoreReason": "Artists really weren't asked before their work was used to train AI. But “theft” is a crime word, and it treats a question courts haven't settled as a fact.",
       "claimDial": [
         {
           "text": "AI can reproduce copyrighted work from its training data.",
@@ -492,38 +492,38 @@
           }
         },
         {
-          "text": "AI routinely churns out copies of the copyrighted work it learned from.",
-          "scoredAs": "example",
-          "level": 3,
-          "origin": "Example wording we wrote and scored with the same checks",
-          "hype_checks": {
-            "P1": {
-              "answer": "Y",
-              "reason": "Met."
-            },
-            "P2": {
-              "answer": "N",
-              "reason": "Says it happens routinely, when tests showed it with chosen works."
-            },
-            "P3": {
-              "answer": "Y",
-              "reason": "Met."
-            },
-            "W1": {
-              "answer": "N",
-              "reason": "“Churns out” adds drama to what tests found."
-            },
-            "W2": {
-              "answer": "Y",
-              "reason": "Met."
-            }
-          }
-        },
-        {
           "text": "AI art is theft.",
           "scoredAs": "headline",
           "origin": "headline claim",
-          "level": 4
+          "level": 3
+        },
+        {
+          "text": "AI art is stolen art, copied straight from real artists.",
+          "scoredAs": "example",
+          "level": 4,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact that AI art is copied, which hasn't been shown."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Says all AI art, when copying has only been shown in targeted tests."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "No prediction is made."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "No extra drama beyond the copying claim already scored."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Doesn't say AI wants or plans anything."
+            }
+          }
         },
         {
           "text": "AI is a plagiarism machine that steals every artist's work and will kill human creativity.",
