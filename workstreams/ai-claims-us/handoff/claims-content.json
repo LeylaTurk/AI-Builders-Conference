@@ -332,11 +332,6 @@
         },
         "claimDial": [
           {
-            "text": "AI's water use is harmless because it all comes back as rain.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
-          },
-          {
             "text": "AI data centers threaten water supplies in some dry US towns.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -345,11 +340,6 @@
             "text": "Every AI-written email uses a bottle of water.",
             "scoredAs": "headline",
             "origin": "headline claim"
-          },
-          {
-            "text": "AI is draining America's water supply.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
           }
         ],
         "finePrint": [
@@ -402,7 +392,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Sending One Email With ChatGPT is the Equivalent of Consuming One Bottle of Water",
           "outlet": "TechRepublic",
           "published": "2024-09-20",
@@ -729,11 +719,6 @@
         },
         "claimDial": [
           {
-            "text": "AI isn't affecting jobs at all.",
-            "scoredAs": null,
-            "origin": "example (not scored)"
-          },
-          {
             "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -794,7 +779,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Block lays off nearly half its staff because of AI. Its CEO said most companies will do the same",
           "outlet": "CNN",
           "published": "2026-02-26",
@@ -1103,11 +1088,6 @@
         },
         "claimDial": [
           {
-            "text": "AI's climate benefits will cancel out its emissions.",
-            "scoredAs": null,
-            "origin": "example (not scored)"
-          },
-          {
             "text": "AI's growing power use could raise US carbon emissions by 2030.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -1168,7 +1148,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Pennsylvania’s AI boom is repeating old patterns of exploitation",
           "outlet": "Spotlight PA (Inside Climate News)",
           "published": "2026-09-22",
@@ -1484,11 +1464,6 @@
         },
         "claimDial": [
           {
-            "text": "AI never memorizes anything.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
-          },
-          {
             "text": "AI can reproduce copyrighted work from its training data.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -1497,11 +1472,6 @@
             "text": "AI art is theft.",
             "scoredAs": "headline",
             "origin": "headline claim"
-          },
-          {
-            "text": "Everything AI makes is copied.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
           }
         ],
         "finePrint": [
@@ -1549,7 +1519,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Disney and Universal sue \"bottomless pit of plagiarism\" Midjourney AI",
           "outlet": "The A.V. Club",
           "published": "2025-06-11",
@@ -1863,11 +1833,6 @@
         },
         "claimDial": [
           {
-            "text": "Once you opt out, your chats are private.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
-          },
-          {
             "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -1947,7 +1912,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Your secrets are not so safe with AI chatbots like ChatGPT",
           "outlet": "Fox News",
           "published": "2023-05-02",
@@ -2267,16 +2232,6 @@
         },
         "claimDial": [
           {
-            "text": "AI wiping out humanity is impossible.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
-          },
-          {
-            "text": "Future AI could contribute to a global catastrophe.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
-          },
-          {
             "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
             "scoredAs": "careful",
             "origin": "careful version"
@@ -2285,11 +2240,6 @@
             "text": "If anyone builds superintelligent AI, everyone dies.",
             "scoredAs": "headline",
             "origin": "headline claim"
-          },
-          {
-            "text": "Today's AI already guarantees human extinction.",
-            "scoredAs": null,
-            "origin": "research brief (not scored)"
           }
         ],
         "finePrint": [
@@ -2341,7 +2291,7 @@
       ],
       "articleCards": [
         {
-          "role": "Says it loud",
+          "role": "Makes the claim",
           "headline": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
           "outlet": "CBS News",
           "published": "2026-09-09",

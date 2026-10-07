@@ -11,11 +11,6 @@
       "scoreReason": "Presents a computer estimate as a measured fact, and stretches one model’s email to every AI email.",
       "claimDial": [
         {
-          "text": "AI's water use is harmless because it all comes back as rain.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
-        },
-        {
           "text": "AI data centers threaten water supplies in some dry US towns.",
           "scoredAs": "careful",
           "origin": "careful version"
@@ -24,11 +19,6 @@
           "text": "Every AI-written email uses a bottle of water.",
           "scoredAs": "headline",
           "origin": "headline claim"
-        },
-        {
-          "text": "AI is draining America's water supply.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
         }
       ],
       "finePrint": [
@@ -81,11 +71,6 @@
       },
       "scoreReason": "Turns Musk’s “probably” into a certainty and stretches tasks AI can do into every job.",
       "claimDial": [
-        {
-          "text": "AI isn't affecting jobs at all.",
-          "scoredAs": null,
-          "origin": "example (not scored)"
-        },
         {
           "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
           "scoredAs": "careful",
@@ -148,11 +133,6 @@
       "scoreReason": "Says “will” and “only”, ruling out the uncertainty and possible benefits the evidence describes.",
       "claimDial": [
         {
-          "text": "AI's climate benefits will cancel out its emissions.",
-          "scoredAs": null,
-          "origin": "example (not scored)"
-        },
-        {
           "text": "AI's growing power use could raise US carbon emissions by 2030.",
           "scoredAs": "careful",
           "origin": "careful version"
@@ -214,11 +194,6 @@
       "scoreReason": "States a legal and moral judgment as settled fact, for all AI art.",
       "claimDial": [
         {
-          "text": "AI never memorizes anything.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
-        },
-        {
           "text": "AI can reproduce copyrighted work from its training data.",
           "scoredAs": "careful",
           "origin": "careful version"
@@ -227,11 +202,6 @@
           "text": "AI art is theft.",
           "scoredAs": "headline",
           "origin": "headline claim"
-        },
-        {
-          "text": "Everything AI makes is copied.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
         }
       ],
       "finePrint": [
@@ -280,11 +250,6 @@
       },
       "scoreReason": "Calls training “sharing”, treats every chat as a secret, and ignores the settings that change what happens.",
       "claimDial": [
-        {
-          "text": "Once you opt out, your chats are private.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
-        },
         {
           "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
           "scoredAs": "careful",
@@ -368,16 +333,6 @@
       "scoreReason": "States extinction as certain and drops the authors’ own condition about how superintelligence is built.",
       "claimDial": [
         {
-          "text": "AI wiping out humanity is impossible.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
-        },
-        {
-          "text": "Future AI could contribute to a global catastrophe.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
-        },
-        {
           "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
           "scoredAs": "careful",
           "origin": "careful version"
@@ -386,11 +341,6 @@
           "text": "If anyone builds superintelligent AI, everyone dies.",
           "scoredAs": "headline",
           "origin": "headline claim"
-        },
-        {
-          "text": "Today's AI already guarantees human extinction.",
-          "scoredAs": null,
-          "origin": "research brief (not scored)"
         }
       ],
       "finePrint": [

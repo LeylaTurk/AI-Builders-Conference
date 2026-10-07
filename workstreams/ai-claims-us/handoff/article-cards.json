@@ -1,16 +1,16 @@
 {
   "version": "claims-us-articles-1.0",
   "checkedOn": "2026-10-07",
-  "purpose": "Real news articles shown as cards at the bottom of each claim page: one that says the claim loudly, one that reports it carefully, one that pushes back. Each is rated with the site's own article checklist (engine/rating-prompt.md, scored by engine/scoring.ts). The article ratings are separate from the claim scores. Article text and the full checklist answers with quotes are kept in the private article archive, not here.",
+  "purpose": "Real news articles shown as cards at the bottom of each claim page: one that makes the claim, one that reports it carefully, one that pushes back. Each is rated with the site's own article checklist (engine/rating-prompt.md, scored by engine/scoring.ts). The article ratings are separate from the claim scores. Article text and the full checklist answers with quotes are kept in the private article archive, not here.",
   "roles": [
-    "Says it loud",
+    "Makes the claim",
     "Reports it carefully",
     "Pushes back"
   ],
   "topics": {
     "water": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Sending One Email With ChatGPT is the Equivalent of Consuming One Bottle of Water",
         "outlet": "TechRepublic",
         "published": "2024-09-20",
@@ -55,7 +55,7 @@
     ],
     "jobs": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Block lays off nearly half its staff because of AI. Its CEO said most companies will do the same",
         "outlet": "CNN",
         "published": "2026-02-26",
@@ -99,7 +99,7 @@
     ],
     "energy-climate": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Pennsylvania’s AI boom is repeating old patterns of exploitation",
         "outlet": "Spotlight PA (Inside Climate News)",
         "published": "2026-09-22",
@@ -143,7 +143,7 @@
     ],
     "creativity": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Disney and Universal sue \"bottomless pit of plagiarism\" Midjourney AI",
         "outlet": "The A.V. Club",
         "published": "2025-06-11",
@@ -188,7 +188,7 @@
     ],
     "privacy": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Your secrets are not so safe with AI chatbots like ChatGPT",
         "outlet": "Fox News",
         "published": "2023-05-02",
@@ -232,7 +232,7 @@
     ],
     "existential-risk": [
       {
-        "role": "Says it loud",
+        "role": "Makes the claim",
         "headline": "Anthropic researcher says more than 10% chance AI \"could kill all humans\"",
         "outlet": "CBS News",
         "published": "2026-09-09",
