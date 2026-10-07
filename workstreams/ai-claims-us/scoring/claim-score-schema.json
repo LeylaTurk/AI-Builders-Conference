@@ -16,7 +16,11 @@
   ],
   "properties": {
     "rubric_version": {
-      "enum": ["claims-us-1.0", "claims-us-1.1"]
+      "enum": [
+        "claims-us-1.0",
+        "claims-us-1.1",
+        "claims-us-1.2"
+      ]
     },
     "claim": {
       "type": "string",
@@ -119,6 +123,24 @@
         "AI evidence review completed; human editorial review pending",
         "Human editorial review completed"
       ]
+    },
+    "certain_doom": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "answer",
+        "reason"
+      ],
+      "properties": {
+        "answer": {
+          "type": "boolean"
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "description": "Certain-doom rule (claims-us-1.2): true when the claim states that everyone will die."
     }
   },
   "$defs": {

@@ -20,12 +20,12 @@ The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-
 | --- | --- | --- | --- | --- | --- |
 | Water | `/claims/water` | Every time you use AI, it uses a bottle of water. | **4/5 — Overheated** | AI data-center growth threatens local water supplies in water-stressed US communities. | **1/5 — Grounded** |
 | Jobs | `/claims/jobs` | AI will take all our jobs. | **4/5 — Overheated** | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
+| Existential risk | `/claims/existential-risk` | AI will kill us all. | **5/5 — Off the charts** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 | Energy and climate | `/claims/energy-climate` | AI will only intensify climate change. | **4/5 — Overheated** | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
 | Creativity | `/claims/creativity` | AI art is theft. | **4/5 — Overheated** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
 | Privacy | `/claims/privacy` | ChatGPT is sharing your secrets. | **4/5 — Overheated** | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
-| Existential risk | `/claims/existential-risk` | AI will kill us all. | **4/5 — Overheated** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 
-The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule (claims-us-1.1). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
+The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5, or 5/5 for existential risk) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule and, for existential risk, the certain-doom rule (claims-us-1.2). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
 
 Field mapping for each topic:
 
@@ -80,7 +80,7 @@ At `/claims`, use `section.name` as h1, `section.introduction` as the introducto
 
 ### 4. Landing-page cards and responsive layout
 
-Use two equal columns at widths of 768px and up and a single column below that. Keep the JSON order: Water, Jobs, Energy and climate, Creativity, Privacy, Existential risk. At mobile width use roughly 20px page gutters, allowing smaller space only if needed to prevent overflow at 320px.
+Use two equal columns at widths of 768px and up and a single column below that. Keep the JSON order: Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. At mobile width use roughly 20px page gutters, allowing smaller space only if needed to prevent overflow at 320px.
 
 Each card contains:
 

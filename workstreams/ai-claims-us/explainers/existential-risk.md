@@ -30,7 +30,7 @@ It helps to keep four fears apart. **Extinction** means no humans survive. **Cat
 
 ## E. Hype score and explanation
 
-**Hype score for the headline: 4/5 — Overheated.** It talks about all AI, drops the authors’ own condition about how superintelligence is built, and says extinction is certain, while the [international report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) shows deep disagreement.
+**Hype score for the headline: 5/5 — Off the charts.** It talks about all AI, drops the authors’ own condition about how superintelligence is built, and says as a certainty that everyone will die, while the [international report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) shows deep disagreement.
 
 **The careful version scores 2/5 — A little spicy.** It keeps the authors’ condition, but “will” is still more certain than the [evidence](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) supports. This score isn’t a chance of disaster, and it isn’t a promise that AI is safe.
 

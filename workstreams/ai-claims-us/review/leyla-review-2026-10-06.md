@@ -70,7 +70,7 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 | Energy and climate | AI will only intensify climate change. | The Nation, December 2025 | 4/5 | 1/5 |
 | Creativity | AI art is theft. | Goetze, arXiv paper, 2024 | 4/5 | 1/5 |
 | Privacy | ChatGPT is sharing your secrets. | Tom's Guide, April 2023 | 4/5 | 1/5 |
-| Existential risk | AI will kill us all. | Yudkowsky and Soares, book title, 2025 (short form, changed October 7) | 4/5 | 2/5 |
+| Existential risk | AI will kill us all. | Yudkowsky and Soares, book title, 2025 (short form, changed October 7) | 5/5 (certain-doom rule, October 7) | 2/5 |
 
 **Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. Leyla chose this on a decision card on October 6; it can be reverted by removing one line in `scoring/claim-score.py`.
 
@@ -94,3 +94,5 @@ Things worth knowing: a "pushes back" story can be hyped too (CNN's "Don't freak
 Article cards now lead with the hype label badge and review label, then chillies and flags with their numbers (Leyla, 7 Oct). The "Says it loud" role is renamed "Makes the claim", because some stories that make the claim report it calmly (CBS's 10% story is A little spicy). All 18 ratings were re-run from the private checklist files and match the cards; the Block and Microsoft cards use Leyla's current Rating Desk ratings (4/3 and 4/5).
 
 **One claim, five ways (7 Oct, Leyla).** The gauge is renamed **One claim, five ways** and shows one version of the claim at every hype level. The top headline and the careful version are the real ones; the other three per topic are example wordings written for the gauge and scored with the claims checklist (their check answers are in `claimDial[].hype_checks`, and the assembler recalculates each level). The page says so in the gauge's hint. The small labels next to each quote are gone.
+
+**Certain-doom rule, claims-us-1.2 (October 7, 2026).** Leyla noted that every headline scored 4/5 and that "AI will kill us all" should be 5/5. Under 1.1 it failed two of three accuracy checks and passed both wording checks, so it scored 4. She chose a stricter rule on a decision card rather than a one-off override: a loud claim (the loud-claim rule applies) that states as certain that everyone will die scores 5. The careful version, which keeps the authors' condition, stays 2/5 because it isn't a loud claim. On the "One claim, five ways" dial the headline now sits at level 5; the old level-5 example ("AI is already plotting to wipe us out…") is replaced by a new level-4 example, "AI could easily wipe out humanity within a few years."

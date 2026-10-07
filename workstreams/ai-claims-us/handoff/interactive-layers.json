@@ -770,7 +770,7 @@
         "word": "kill us all",
         "explanation": "Stated as a certainty, about all AI. The evidence shows real reasons for concern about future, much smarter AI, not that extinction is guaranteed."
       },
-      "scoreReason": "The headline talks about all AI, says everyone will certainly die, and drops the authors' own condition about how a super-smart AI gets built.",
+      "scoreReason": "The headline talks about all AI, drops the authors' own condition about how a super-smart AI gets built, and says as a certainty that everyone will die. That's the most extreme claim there is, so it goes off the charts.",
       "claimDial": [
         {
           "text": "Future AI much smarter than people could pose serious risks, and experts disagree about how big they are.",
@@ -835,38 +835,38 @@
           }
         },
         {
-          "text": "AI will kill us all.",
-          "scoredAs": "headline",
-          "origin": "headline claim",
-          "level": 4
-        },
-        {
-          "text": "AI is already plotting to wipe us out, and it's only a matter of months.",
+          "text": "AI could easily wipe out humanity within a few years.",
           "scoredAs": "example",
-          "level": 5,
+          "level": 4,
           "origin": "Example wording we wrote and scored with the same checks",
           "hype_checks": {
             "P1": {
-              "answer": "N",
-              "reason": "States as fact something no evidence shows."
+              "answer": "Y",
+              "reason": "A prediction, not a claim that it has already happened."
             },
             "P2": {
               "answer": "N",
-              "reason": "Says today's AI, when the worry is about future AI."
+              "reason": "Says all AI, when the worry is about future super-smart AI."
             },
             "P3": {
               "answer": "N",
-              "reason": "Gives a sure timeline nobody can know."
+              "reason": "“Easily” and “within a few years” are far surer than experts are."
             },
             "W1": {
-              "answer": "N",
-              "reason": "“Plotting to wipe us out” is alarm, not evidence."
+              "answer": "Y",
+              "reason": "Plainly says what it predicts, without extra drama."
             },
             "W2": {
-              "answer": "N",
-              "reason": "Says AI is plotting, as if it had human plans."
+              "answer": "Y",
+              "reason": "Doesn't say AI wants or plans anything."
             }
           }
+        },
+        {
+          "text": "AI will kill us all.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 5
         }
       ],
       "finePrint": [

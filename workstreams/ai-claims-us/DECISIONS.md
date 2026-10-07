@@ -14,11 +14,13 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 
 | Decision | What it means on the page |
 |---|---|
+| Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. |
+| Certain-doom rule (rubric claims-us-1.2) | A loud claim that says, as certain, that everyone will die scores 5/5. Chosen on a decision card over a one-off override. "AI will kill us all" is now 5/5 (Off the charts); its careful version stays 2/5. On its dial, the headline sits at level 5 and a new example fills level 4. |
 | Source line says "Claim tracked from…" | Under each headline: "Claim tracked from [who], who made it in [where, when]…". No "Our short version of…". Where the headline is shorter than the original, the original is quoted. |
 | No review labels in the Claim Tracker | "AI rating, not yet reviewed" and "Reviewed by Leyla" don't appear on claim pages or article cards. The data is kept; the feed keeps its labels. |
 | No topic labels above headlines | No "Jobs", "Water" etc. above the h1. |
 | Section named **Claim Tracker** | Whole section (was "AI claims explained"). Route stays `/claims`. |
-| Existential-risk headline | "AI will kill us all." Tracked from the Yudkowsky and Soares book title "If Anyone Builds It, Everyone Dies" (2025). Scores 4/5. |
+| Existential-risk headline | "AI will kill us all." Tracked from the Yudkowsky and Soares book title "If Anyone Builds It, Everyone Dies" (2025). Scores 5/5 under the certain-doom rule. |
 | Water headline | "Every time you use AI, it uses a bottle of water." Tracked from Windows Central, September 11, 2023. Scores 4/5. |
 | No role tags on article cards | "Makes the claim / Reports it carefully / Pushes back" set the order only and aren't shown. |
 | Dial named **One claim, five ways** | "Turn up the heat" was rejected, because the site is about not turning up the heat. "How hot is this claim?" didn't describe it. |

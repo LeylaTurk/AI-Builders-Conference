@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Mechanical claims-us-1.1 calculator. Does not assess source quality.
+"""Mechanical claims-us-1.2 calculator. Does not assess source quality.
 Usage: python3 claim-score.py scoring-record.json
-Input needs claim and hype_checks; evidence_checks is optional.
+Input needs claim and hype_checks; evidence_checks and certain_doom are optional.
 Each check is {"answer": "Y|N|NA|NC", ...evidence metadata...}.
 """
 import json
 import math
 import sys
 
-VERSION = "claims-us-1.1"
+VERSION = "claims-us-1.2"
 LABELS = {1: "Grounded", 2: "A little spicy", 3: "Turning it up",
           4: "Overheated", 5: "Off the charts"}
 HYPE = {"P": ["P1", "P2", "P3"], "W": ["W1", "W2"]}
@@ -58,11 +58,23 @@ def calculate(checks, sections, kind):
             "label": LABELS[level] if kind == "hype" else f"Evidence gaps: {level}/5",
             "not_checked": [], "sections": results, "rule_applied": floor}
 
+def certain_doom(record, hype):
+    # Certain-doom rule (claims-us-1.2, Oct 7): a loud claim (loud-claim rule applies:
+    # P at level 4 or 5) that states as certain (P3 = N) that everyone will die scores 5.
+    doom = record.get("certain_doom", {})
+    if not isinstance(doom, dict) or doom.get("answer") not in (None, True, False):
+        raise ValueError("certain_doom needs answer true or false")
+    part = hype["sections"].get("P", {})
+    if (doom.get("answer") is True and hype["level"] is not None and not part.get("out")
+            and part["level"] >= 4 and record["hype_checks"]["P3"]["answer"] == "N"):
+        return {**hype, "level": 5, "label": LABELS[5], "rule_applied": True, "certain_doom_applied": True}
+    return hype
+
 def score(record):
     if not isinstance(record.get("claim"), str) or not record["claim"].strip():
         raise ValueError("Exact nonempty claim required")
     result = {"rubric_version": VERSION, "claim": record["claim"],
-              "hype": calculate(record["hype_checks"], HYPE, "hype")}
+              "hype": certain_doom(record, calculate(record["hype_checks"], HYPE, "hype"))}
     if "evidence_checks" in record:
         result["evidence_gaps"] = calculate(record["evidence_checks"], GAPS, "evidence_gaps")
     return result
@@ -78,6 +90,10 @@ def self_test():
     loud = calculate(checks(["Y", "N", "N", "Y", "Y"], hype_codes), HYPE, "hype")
     assert loud["level"] == 4 and loud["rule_applied"]
     assert rounded_average([3, 4]) == 3
+    doom = {"claim": "x", "certain_doom": {"answer": True}, "hype_checks": checks(["Y", "N", "N", "Y", "Y"], hype_codes)}
+    assert score(doom)["hype"]["level"] == 5
+    careful = {**doom, "hype_checks": checks(["Y", "Y", "N", "Y", "Y"], hype_codes)}
+    assert score(careful)["hype"]["level"] == 2
     assert rounded_average([4, 5]) == 4
     assert calculate(checks(["NC", "Y", "Y", "Y", "Y"], hype_codes), HYPE, "hype")["level"] is None
     assert calculate(checks(["NA", "NA", "Y", "Y", "Y"], hype_codes), HYPE, "hype")["level"] is None
@@ -89,7 +105,7 @@ def self_test():
         result = calculate(checks(values, hype_codes), HYPE, "hype")
         assert "NC" not in values or result["level"] is None
         assert result["level"] is None or 1 <= result["level"] <= 5
-    return "Passed: anchors, example, tie-down, minimum coverage, NC suppression, evidence floor, loud-claim rule, all 1,024 hype answer combinations."
+    return "Passed: anchors, example, tie-down, minimum coverage, NC suppression, evidence floor, loud-claim rule, certain-doom rule, all 1,024 hype answer combinations."
 
 if __name__ == "__main__":
     try:

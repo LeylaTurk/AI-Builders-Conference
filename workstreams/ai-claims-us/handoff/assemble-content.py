@@ -7,8 +7,8 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SLUGS = ['water', 'jobs', 'energy-climate', 'creativity', 'privacy', 'existential-risk']
-NAMES = ['Water', 'Jobs', 'Energy and climate', 'Creativity', 'Privacy', 'Existential risk']
+SLUGS = ['water', 'jobs', 'existential-risk', 'energy-climate', 'creativity', 'privacy']
+NAMES = ['Water', 'Jobs', 'Existential risk', 'Energy and climate', 'Creativity', 'Privacy']
 FIELDS = dict(zip('ABCDEFG', ['claimContextMarkdown', 'shortAnswerMarkdown',
     'meaningMarkdown', 'evidenceMarkdown', 'scoreExplanationMarkdown',
     'actionsMarkdown', 'sourcesAndReviewMarkdown']))
