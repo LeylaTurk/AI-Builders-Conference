@@ -12,7 +12,7 @@ This comes from [Anthropic CEO Dario Amodei’s May 2025 warning](https://www.ax
 
 ## B. The short answer
 
-Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible scenario, not a tested forecast. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
+Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible future, not a proven prediction. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 

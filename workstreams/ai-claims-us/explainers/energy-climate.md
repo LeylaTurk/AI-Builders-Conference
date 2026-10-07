@@ -26,7 +26,7 @@ This page is about electricity and climate. Our [water page](/claims/water) cove
 
 **The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
-**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and projects 950 by 2030, including non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
+**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
 
 **One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 

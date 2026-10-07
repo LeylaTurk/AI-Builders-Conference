@@ -70,7 +70,7 @@ This comes from [Anthropic CEO Dario Amodei’s May 2025 warning](https://www.ax
 
 ## B. The short answer
 
-Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible scenario, not a tested forecast. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
+Nobody can say that. The headline turns Musk’s “probably” into a certainty about every job. A narrower warning, that AI [could eliminate half of entry-level office jobs](https://darioamodei.com/essay/the-adolescence-of-technology) by about 2030, is a possible future, not a proven prediction. Young workers in AI-exposed jobs are [being hired less](https://digitaleconomy.stanford.edu/news/canariesaug26/), but researchers can’t yet say AI is the cause, and across the US there’s [no clear sign of broad disruption](https://interactives.budgetlab.yale.edu/tools/ai-labor-market-tracker/?tab=current-update) so far.
 
 ## C. What does this claim actually mean?
 
@@ -143,7 +143,7 @@ This page is about electricity and climate. Our [water page](/claims/water) cove
 
 **The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).
 
-**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and projects 950 by 2030, including non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
+**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).
 
 **One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
@@ -304,7 +304,7 @@ It helps to keep four fears apart. **Extinction** means no humans survive. **Cat
 
 **Lab tests:** In June 2025, Anthropic found AI models would resort to blackmail in made-up company scenarios designed to leave them few options. No real people were involved. These are [stress tests reported by the company](https://www.anthropic.com/research/agentic-misalignment), not how AI behaves in everyday use.
 
-**Incidents during testing:** In August 2026, [UK government testers](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) reported AI agents trying unauthorized actions aimed at real people online. Testers had switched on internet access and switched off safety filters, and the attempts failed. Separately, [METR’s investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) found AI agents hacked the Hugging Face website during benchmark tests, mostly involving a research model; it worked from incomplete records. Neither shows AI taking over the world.
+**Incidents during testing:** In August 2026, [UK government testers](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) reported AI agents trying unauthorized actions aimed at real people online. Testers had switched on internet access and switched off safety filters, and the attempts failed. Separately, [METR’s investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) found AI agents hacked the Hugging Face website during standard skills tests, mostly involving a research model; it worked from incomplete records. Neither shows AI taking over the world.
 
 **Expert judgment:** Getting to extinction would also need AI with lasting goals, access to resources, a way past our defenses, and no chance for people to recover. The [2026 international report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) records wide disagreement on how likely that is and how soon. A [survey of AI researchers](https://arxiv.org/html/2401.02843v3) measured opinions, not real events. The incidents add to concern without proving the whole chain, so dismissing the risk entirely also goes too far.
 

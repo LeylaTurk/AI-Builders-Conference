@@ -6,9 +6,9 @@
       "headline": "Every AI-written email uses a bottle of water.",
       "keyWord": {
         "word": "Every",
-        "explanation": "The estimate was for one 100-word email from one model, GPT-4, under assumed cooling and power conditions. It is not a measurement of every AI email."
+        "explanation": "The estimate was for one 100-word email from one AI model, GPT-4, using guesses about cooling and power. Nobody measured every AI email."
       },
-      "scoreReason": "Presents a computer estimate as a measured fact, and stretches one model’s email to every AI email.",
+      "scoreReason": "The headline treats a computer estimate as if someone measured it, and turns one AI model's email into every AI email.",
       "claimDial": [
         {
           "text": "AI data centers threaten water supplies in some dry US towns.",
@@ -47,21 +47,21 @@
         {
           "statement": "Every AI email uses a bottle of water.",
           "answer": "False",
-          "why": "Not proven. That’s an estimate for one kind of email under assumed conditions, not a measurement."
+          "why": "Not proven. It's an estimate for one kind of email, based on guesses, not a measurement."
         },
         {
           "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
           "answer": "True",
-          "why": "Peak demand on the hottest days is the pressure point."
+          "why": "The hottest days, when everyone needs water most, are when the strain shows."
         },
         {
           "statement": "AI data centers are why my town has water restrictions.",
           "answer": "False",
-          "why": "Not proven. Drought maps and utility reports can't pin a shortage on one user."
+          "why": "Not proven. Drought maps and water company reports can't blame a shortage on one user."
         }
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
-      "carefulScoreReason": "Says “threaten” and limits itself to some places, which matches the evidence.",
+      "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
       "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use.",
       "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
     },
@@ -71,7 +71,7 @@
         "word": "all",
         "explanation": "Even Musk said “probably”. The evidence shows AI changing tasks and slowing hiring for some young workers, not replacing every job."
       },
-      "scoreReason": "Turns Musk’s “probably” into a certainty and stretches tasks AI can do into every job.",
+      "scoreReason": "The headline turns Musk's “probably” into a sure thing, and jumps from some tasks AI can do to every job.",
       "claimDial": [
         {
           "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
@@ -99,11 +99,11 @@
         },
         {
           "label": "The numbers so far",
-          "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the most AI-exposed jobs, versus 2.0% in the least exposed (ADP payroll data)."
+          "text": "In August 2026, employment of 22–25-year-olds was down 4.4% from a year earlier in the jobs where AI can do the most tasks, versus 2.0% in the jobs where it can do the fewest (figures from the payroll company ADP)."
         },
         {
           "label": "The narrower warning",
-          "text": "Anthropic’s CEO, whose company sells AI, warned in May 2025 that AI could eliminate half of entry-level office jobs within one to five years. That’s a possible scenario, not a tested forecast."
+          "text": "Anthropic's CEO, whose company sells AI, warned in May 2025 that AI could eliminate half of entry-level office jobs within one to five years. That's a possible future, not a proven prediction."
         }
       ],
       "quiz": [
@@ -115,7 +115,7 @@
         {
           "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
           "answer": "True",
-          "why": "Payroll data shows it."
+          "why": "Pay records from employers show it."
         },
         {
           "statement": "AI caused that drop in hiring.",
@@ -124,7 +124,7 @@
         }
       ],
       "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
-      "carefulScoreReason": "Says “could” and rests on a reasoned scenario, though the half-of-jobs number hasn’t been tested.",
+      "carefulScoreReason": "The more careful version says “could”, and it's an expert's educated guess about the future, though nobody has been able to test the half-of-jobs number yet.",
       "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
       "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
     },
@@ -134,7 +134,7 @@
         "word": "only",
         "explanation": "“Only” rules out any climate benefit from AI. Those benefits are unproven, but so is the claim that there are none."
       },
-      "scoreReason": "Says “will” and “only”, ruling out the uncertainty and possible benefits the evidence describes.",
+      "scoreReason": "The headline says “will” and “only”, which leaves no room for the uncertainty or the possible benefits the evidence describes.",
       "claimDial": [
         {
           "text": "AI's growing power use could raise US carbon emissions by 2030.",
@@ -162,7 +162,7 @@
         },
         {
           "label": "Worldwide numbers",
-          "text": "The International Energy Agency says data centers worldwide used 485 terawatt-hours in 2025 and projects 950 in 2030, including non-AI work."
+          "text": "The International Energy Agency says data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work."
         },
         {
           "label": "Could AI help the climate?",
@@ -178,16 +178,16 @@
         {
           "statement": "US emissions could fall overall while AI still adds emissions.",
           "answer": "True",
-          "why": "“Adds” is measured against a path without the extra demand."
+          "why": "“Adds” means compared with a world without AI's extra power use."
         },
         {
           "statement": "AI's climate benefits will cancel out its emissions.",
           "answer": "False",
-          "why": "Not proven. Savings depend on adoption and can be eaten up by more use."
+          "why": "Not proven. The savings depend on how widely AI is used for them, and using AI more can eat them up."
         }
       ],
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
-      "carefulScoreReason": "Says “could”, and there’s a documented path: more demand met partly by gas power.",
+      "carefulScoreReason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
       "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation.",
       "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
     },
@@ -197,7 +197,7 @@
         "word": "theft",
         "explanation": "Theft is a legal and moral judgment. US courts haven’t settled whether training AI on others’ work is legal, and one court found a specific use fair."
       },
-      "scoreReason": "States a legal and moral judgment as settled fact, for all AI art.",
+      "scoreReason": "The headline treats a legal and moral judgment as settled fact, and applies it to all AI art.",
       "claimDial": [
         {
           "text": "AI can reproduce copyrighted work from its training data.",
@@ -212,12 +212,12 @@
       ],
       "finePrint": [
         {
-          "label": "Training vs. output",
-          "text": "Copying works to train a model is legally separate from an answer that reproduces a work."
+          "label": "Learning vs. copying out",
+          "text": "Copying work to teach an AI is a separate legal question from the AI later spitting out a copy."
         },
         {
           "label": "Style isn't protected",
-          "text": "Imitating an artist's style usually isn't copyright infringement; copying their actual expression can be."
+          "text": "Imitating an artist's style usually isn't against copyright law; copying their actual work can be."
         },
         {
           "label": "Legal isn't the same as fair",
@@ -237,7 +237,7 @@
         {
           "statement": "Researchers have pulled long book passages out of commercial AI models.",
           "answer": "True",
-          "why": "Shown in 2025 tests of four production models."
+          "why": "Shown in 2025 tests of four AI models that the public uses."
         },
         {
           "statement": "Courts have ruled that AI art is theft.",
@@ -246,7 +246,7 @@
         }
       ],
       "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
-      "carefulScoreReason": "Says “can”, and controlled experiments show it happens.",
+      "carefulScoreReason": "The more careful version says “can”, and experiments have shown that it happens.",
       "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper.",
       "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
     },
@@ -256,7 +256,7 @@
         "word": "sharing",
         "explanation": "“Sharing” suggests other people see your chats. What OpenAI describes is using chats to train its models, which you can turn off, plus limited access by staff for things like safety."
       },
-      "scoreReason": "Calls training “sharing”, treats every chat as a secret, and ignores the settings that change what happens.",
+      "scoreReason": "The headline calls training “sharing”, treats every chat as a secret, and ignores the settings that change what happens.",
       "claimDial": [
         {
           "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
@@ -330,7 +330,7 @@
         ]
       },
       "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
-      "carefulScoreReason": "Says “may” and “depending on your settings”, which is what OpenAI’s own policy says.",
+      "carefulScoreReason": "The more careful version says “may” and “depending on your settings”, which matches what OpenAI's own policy says.",
       "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline.",
       "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
     },
@@ -340,7 +340,7 @@
         "word": "everyone dies",
         "explanation": "Stated as a certainty. The evidence shows real reasons for concern, not that extinction is guaranteed."
       },
-      "scoreReason": "States extinction as certain and drops the authors’ own condition about how superintelligence is built.",
+      "scoreReason": "The headline says everyone will certainly die, and drops the authors' own condition about how this super-smart AI gets built.",
       "claimDial": [
         {
           "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
@@ -368,11 +368,11 @@
         },
         {
           "label": "Four different fears",
-          "text": "Extinction, mass-casualty catastrophe, people misusing AI, and losing control of AI are different things."
+          "text": "Everyone dying, a disaster that kills many people, people misusing AI, and losing control of AI are different things."
         },
         {
           "label": "What the tests showed",
-          "text": "AI models blackmailed in made-up company scenarios (Anthropic, 2025). AI agents attempted unauthorized actions in UK government testing, and hacked a real website during benchmark tests (2026). The made-up scenarios hurt no one, and the UK attempts failed."
+          "text": "AI models blackmailed people in made-up company scenarios (Anthropic, 2025). AI agents tried actions they weren't allowed to in UK government testing, and hacked a real website during standard skills tests (2026). The made-up scenarios hurt no one, and the UK attempts failed."
         }
       ],
       "quiz": [
@@ -393,7 +393,7 @@
         }
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
-      "carefulScoreReason": "Keeps the authors’ condition, but “will” still claims more certainty than the evidence supports.",
+      "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
       "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book.",
       "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
     }
