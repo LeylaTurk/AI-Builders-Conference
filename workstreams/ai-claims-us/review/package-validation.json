@@ -2,11 +2,11 @@
   "topics": [
     {
       "topic": "water",
-      "wordsAThroughF": 647,
-      "shortAnswerWords": 76,
+      "wordsAThroughF": 636,
+      "shortAnswerWords": 74,
       "actions": 3,
       "externalInlineLinksInEachRequiredSection": true,
-      "inlineSourceCount": 10,
+      "inlineSourceCount": 11,
       "headlineScore": 4,
       "carefulScore": 1,
       "label": "Overheated",
@@ -80,9 +80,9 @@
     }
   ],
   "sourceFileSha256": {
-    "explainers/water.md": "7f7db527f2531b2f2189757d0d001ae6c2ede82c469d5a8a18bfcb687f070e51",
+    "explainers/water.md": "39c39e9513cec9fb5ee423afb6dfff03ea8f70e23ae5f16081c7783511943f88",
     "research/water-score.json": "1d03198978e9d5e0798a633a4a1d165a523e09684c2024229f074bfbf2e46b73",
-    "research/water-headline-score.json": "8bd72bebd187ad5549db40988dd465b2dfdbb56d2a427c6e88a491d8ee78d247",
+    "research/water-headline-score.json": "5a86e29ad1e808904ccc74ffb57b51eada78fe5f6747bb79ae9dbe8ccd5f04e0",
     "explainers/jobs.md": "2e6e38ccac24390f2298b651118dea13288ee174ddce8954a745e76393be5fa9",
     "research/jobs-score.json": "f4281c7755d9e481bb9453ae18f12fccd48df0d9f02f2c027c007974f4f073e9",
     "research/jobs-headline-score.json": "425588000eb6f858c7bbfb426bca69fd48773f7c36e89ab62e41906ae38f2dac",

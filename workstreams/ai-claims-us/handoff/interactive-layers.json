@@ -3,12 +3,12 @@
   "status": "Updated October 7, 2026: adds article cards and the semicircle hype gauge. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
   "topics": {
     "water": {
-      "headline": "Every AI-written email uses a bottle of water.",
+      "headline": "Every time you use AI, it uses a bottle of water.",
       "keyWord": {
-        "word": "Every",
-        "explanation": "The estimate was for one 100-word email from one AI model, GPT-4, using guesses about cooling and power. Nobody measured every AI email."
+        "word": "Every time",
+        "explanation": "The researchers’ estimate was about half a liter of water for every 10–50 answers, not a bottle for each use, and it rested on guesses about cooling and power."
       },
-      "scoreReason": "The headline treats a computer estimate as if someone measured it, and turns one AI model's email into every AI email.",
+      "scoreReason": "The headline treats a computer estimate as if someone measured it, and turns a bottle for every 10–50 answers into a bottle for every single use.",
       "claimDial": [
         {
           "text": "AI data centers threaten water supplies in some dry US towns.",
@@ -73,7 +73,7 @@
           }
         },
         {
-          "text": "Every AI-written email uses a bottle of water.",
+          "text": "Every time you use AI, it uses a bottle of water.",
           "scoredAs": "headline",
           "origin": "headline claim",
           "level": 4
@@ -126,14 +126,14 @@
         },
         {
           "label": "Where the bottle number comes from",
-          "text": "Researchers estimated it for one 100-word email from GPT-4, counting water at the data center and at the power plant. It's an estimate, not a measurement."
+          "text": "Researchers estimated about half a liter for every 10–50 answers from GPT-3, an older model, counting water at the data center and at the power plant. It’s an estimate, not a measurement."
         }
       ],
       "quiz": [
         {
-          "statement": "Every AI email uses a bottle of water.",
+          "statement": "Every time you use AI, it uses a bottle of water.",
           "answer": "False",
-          "why": "Not proven. It's an estimate for one kind of email, based on guesses, not a measurement."
+          "why": "Not proven. The estimate was about a bottle for every 10–50 answers, and it’s based on guesses, not a measurement."
         },
         {
           "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
@@ -148,7 +148,7 @@
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
       "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
-      "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use.",
+      "headlineSource": "Said by: Windows Central, a tech news site, in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
       "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
     },
     "jobs": {

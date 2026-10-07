@@ -2,13 +2,13 @@
 
 AI rating, not yet reviewed. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
 
-# Water: Every AI-written email uses a bottle of water.
+# Water: Every time you use AI, it uses a bottle of water.
 
 ## A. The claim
 
-**The headline claim:** “Every AI-written email uses a bottle of water.”
+**The headline claim:** “Every time you use AI, it uses a bottle of water.”
 
-This paraphrases [The Washington Post’s September 2024 headline](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/), “A bottle of water per email,” which reported researchers’ estimate that one 100-word email written with GPT-4 used 519 milliliters of water.
+This paraphrases [Windows Central’s September 2023 headline](https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies), “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query,” which cited University of California researchers. [The Washington Post](https://www.washingtonpost.com/technology/2024/09/18/energy-ai-use-electricity-water-data-centers/) later used the same bottle comparison for one AI-written email.
 
 **The careful version we also checked:** “AI data-center growth threatens local water supplies in water-stressed US communities.”
 
@@ -16,11 +16,11 @@ This narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphic
 
 ## B. The short answer
 
-Not quite. The bottle figure is a researchers’ estimate for one 100-word email from GPT-4, counting water used to cool data centers and to make their electricity. It depends on [assumptions about location and cooling](https://arxiv.org/html/2304.03271v5) and isn’t a measurement of every AI email. The real issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia utilities they already make up [2% to 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
+Not quite. The researchers behind the bottle figure estimated about half a liter of water for every 10–50 answers from GPT-3, an older model, so one bottle covers many uses, not one. Their numbers [depend on location and cooling](https://arxiv.org/html/2304.03271v5) and aren’t measurements. The real issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia utilities they make up [2% to 21% of water use](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 ## C. What does this claim actually mean?
 
-Two words matter here. **Withdrawal** is water taken from a river, lake or underground source. **Consumption** is the part that evaporates or can’t be reused nearby. Consumed water doesn’t vanish from the planet, but it can be gone from your area. See the [USGS definitions](https://water.usgs.gov/water-basics_glossary.html).
+Data centers take water from rivers, lakes or underground. Some goes back; the part that evaporates is gone from your area, though not from the planet. See the [USGS definitions](https://water.usgs.gov/water-basics_glossary.html).
 
 Computers get hot, and many data centers use water to cool them. The power plants that make their electricity can use water too, somewhere else. Some cooling systems use almost no water but need more electricity. [Li and colleagues’ study](https://arxiv.org/html/2304.03271v5) explains these trade-offs.
 
@@ -34,11 +34,11 @@ Yearly totals hide the real pressure point: hot summer days where water is tight
 
 **Forecasts:** A March 2026 study, not yet peer reviewed, warns that hot-day demand could stretch some local water systems. Its results depend on how computing and cooling change. [Han and colleagues](https://arxiv.org/html/2603.02705v1).
 
-**The bottle of water:** The same research team estimated about half a liter of water for every 10–50 answers from GPT-3, an older model. Figures like this depend on where the data center is and how it’s cooled; they aren’t measurements of today’s chatbots. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
+**The bottle of water:** The research team behind the figure estimated about half a liter of water for every 10–50 answers from GPT-3, an older model. They aren’t measurements of today’s chatbots. [Study, section 3.3](https://arxiv.org/html/2304.03271v5).
 
 ## E. Hype score and explanation
 
-**Hype score for the headline: 4/5 — Overheated.** It treats a computer estimate as if someone measured it, and stretches one estimate for one kind of email to every AI email, even though water use depends heavily on the [model, location and cooling](https://arxiv.org/html/2304.03271v5). A claim that overstates both what the evidence is and how far it reaches scores at least 4.
+**Hype score for the headline: 4/5 — Overheated.** It treats a computer estimate as if someone measured it, and turns a bottle for every 10–50 answers into a bottle for every single use of any AI, even though water use depends heavily on the [model, location and cooling](https://arxiv.org/html/2304.03271v5). A claim that overstates both what the evidence is and how far it reaches scores at least 4.
 
 **The careful version scores 1/5 — Grounded.** It says data centers threaten water in some places, not that shortages are certain. Real local demand and [hot-day forecasts](https://arxiv.org/html/2603.02705v1) back that up. The data are patchy, but the risk to some towns is real.
 

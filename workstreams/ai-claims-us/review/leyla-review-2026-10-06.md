@@ -65,7 +65,7 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 
 | Topic | Headline claim | Where it was said | Headline | Careful |
 |---|---|---|---|---|
-| Water | Every AI-written email uses a bottle of water. | The Washington Post, September 2024 | 4/5 | 1/5 |
+| Water | Every time you use AI, it uses a bottle of water. | Windows Central, September 2023 (changed from the Washington Post email version on October 7) | 4/5 | 1/5 |
 | Jobs | AI will take all our jobs. | CNN, May 2024 (Elon Musk) | 4/5 | 1/5 |
 | Energy and climate | AI will only intensify climate change. | The Nation, December 2025 | 4/5 | 1/5 |
 | Creativity | AI art is theft. | Goetze, arXiv paper, 2024 | 4/5 | 1/5 |

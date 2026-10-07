@@ -18,7 +18,7 @@ The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-
 
 | Topic | Route | Headline claim (page h1) | Headline hype | Careful version we also checked | Careful hype |
 | --- | --- | --- | --- | --- | --- |
-| Water | `/claims/water` | Every AI-written email uses a bottle of water. | **4/5 — Overheated** | AI data-center growth threatens local water supplies in water-stressed US communities. | **1/5 — Grounded** |
+| Water | `/claims/water` | Every time you use AI, it uses a bottle of water. | **4/5 — Overheated** | AI data-center growth threatens local water supplies in water-stressed US communities. | **1/5 — Grounded** |
 | Jobs | `/claims/jobs` | AI will take all our jobs. | **4/5 — Overheated** | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
 | Energy and climate | `/claims/energy-climate` | AI will only intensify climate change. | **4/5 — Overheated** | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
 | Creativity | `/claims/creativity` | AI art is theft. | **4/5 — Overheated** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
