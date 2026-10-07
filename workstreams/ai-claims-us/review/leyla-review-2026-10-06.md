@@ -75,3 +75,7 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 **Rubric change, claims-us-1.1 (loud-claim rule).** Under 1.0, each headline failed two or three accuracy checks but passed both wording checks, so averaging gave 2/5 (privacy 3/5). The new rule, which mirrors the article headline rule, says that if the accuracy section reaches level 4 or 5, the score is at least 4. The careful versions are unaffected. Leyla chose this on a decision card on October 6; it can be reverted by removing one line in `scoring/claim-score.py`.
 
 The headline score records (`research/*-headline-score.json`) are an AI research draft. Unlike the careful versions, they have not had an independent evidence review. The Washington Post page returned an access error at cutoff, so its figure was confirmed through TechRepublic's summary.
+
+## Plain-English explanations (October 7, 2026)
+
+Leyla asked for the explanations to be in plain English. Sections A (careful-version context), C (meaning), D (evidence), E (score explanations) and F (actions) are rewritten for a general reader on all six pages. So are the key qualifications, evidence limitations, scope and time-horizon lines in `handoff/editorial-metadata.json`. The facts, numbers and every source link are unchanged; a script confirmed the same set of links before and after. Estimated reading level dropped from about US grade 11–14 to grade 7–9. Headlines and scores are unchanged. Section G (sources and dates) and the detailed scoring-check reasons keep their reference wording.

@@ -1,5 +1,5 @@
 {
-  "contentVersion": "claims-us-content-1.1",
+  "contentVersion": "claims-us-content-1.3",
   "section": {
     "name": "AI claims explained",
     "route": "/claims",
@@ -15,52 +15,64 @@
   },
   "topics": {
     "water": {
-      "keyQualification": "Local risk depends on water source, cooling, and peak demand; shortages are not inevitable at every facility.",
+      "keyQualification": "Depends on the local water source, cooling and hot-day demand; not every data center causes shortages.",
       "publicEvidenceLimitations": [
-        "Most national estimates cover all data centers, not AI alone.",
-        "Facility-level and peak-demand data are incomplete; projected capacity pressure is not proof of household deprivation."
+        "Most national figures cover all data centers, not just AI.",
+        "We lack good data on individual facilities and hot-day use, and forecasts of strain aren’t proof that households will go without."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "Particular US towns where water is tight; not every data center, and not the whole country.",
+      "timeHorizon": "Current and planned data centers; no deadline."
     },
     "jobs": {
-      "keyQualification": "A conditional May 2025 scenario for roughly 2026–2030; the half-jobs estimate is unvalidated and is not a personal forecast.",
+      "keyQualification": "A possible scenario from May 2025 for roughly 2026–2030; the half-of-jobs number is untested and isn’t a forecast for you.",
       "publicEvidenceLimitations": [
-        "Observed employment and hiring patterns do not establish how much AI caused.",
-        "Future adoption and the forecast's specific scale and timetable remain uncertain."
+        "Job and hiring data can’t yet show how much AI is the cause.",
+        "How fast companies adopt AI, and the size and timing of any job losses, are uncertain."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "Entry-level office jobs in the US; not all jobs, and not your own prospects.",
+      "timeHorizon": "One to five years from May 2025, so roughly 2026–2030."
     },
     "energy-climate": {
-      "keyQualification": "Extra emissions compared with a path without the added demand; total US emissions need not rise.",
+      "keyQualification": "Means more emissions than without AI’s extra demand; total US emissions could still fall.",
       "publicEvidenceLimitations": [
-        "AI-specific operating data are incomplete; all-data-center and global estimates have different scopes.",
-        "Future emissions depend on demand, efficiency, electricity supply, and adoption of potential climate benefits."
+        "Companies share little data on AI’s own energy use, and US and worldwide estimates cover different things.",
+        "Future emissions depend on demand, efficiency, how power is made, and whether AI’s possible climate benefits happen."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "US carbon emissions from electricity, compared with a US without AI’s extra demand.",
+      "timeHorizon": "Through 2030."
     },
     "creativity": {
-      "keyQualification": "Demonstrated possibility in selected models and tests; not a claim that every output is copied or every training use is illegal.",
+      "keyQualification": "Shown in chosen models and tests; not every output is copied, and not all training is illegal.",
       "publicEvidenceLimitations": [
-        "Targeted extraction tests do not establish copying rates in ordinary use.",
-        "Economic findings and legal decisions have specific populations, facts, and jurisdictions."
+        "Targeted tests don’t show how often copying happens in everyday use.",
+        "The job and court findings each cover specific people, facts and places."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "AI tools available to US users; copying in AI answers, not every use of training data.",
+      "timeHorizon": "Now, based on evidence through October 6, 2026."
     },
     "privacy": {
-      "keyQualification": "This concerns ChatGPT personal accounts and stated policies; training settings do not settle storage, access, or sharing.",
+      "keyQualification": "About ChatGPT personal accounts and OpenAI’s stated rules; training settings don’t control storage, access or sharing.",
       "publicEvidenceLimitations": [
-        "Company policies establish stated practices, not independently verified compliance or individual exposure risk.",
-        "Other services, workplace configurations, and state-law rights need separate checks."
+        "Company policies say what should happen, not what independent checks have confirmed.",
+        "Other chatbots, workplace setups and state rights need separate checks."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "ChatGPT personal accounts for US users, compared with business accounts.",
+      "timeHorizon": "OpenAI’s rules as of October 6, 2026."
     },
     "existential-risk": {
-      "keyQualification": "A conditional prediction about future superintelligence, with no fixed deadline; inevitable extinction is not established.",
+      "keyQualification": "A prediction about future superintelligent AI, with no deadline; certain extinction isn’t shown by the evidence.",
       "publicEvidenceLimitations": [
-        "Current experiments and incidents do not establish how capabilities would lead to irreversible, global loss of control.",
-        "Expert probabilities are judgments, and key assumptions about future systems, defenses, and recovery remain contested."
+        "Today’s tests and incidents don’t show how AI could lead to permanent, worldwide loss of control.",
+        "Expert estimates are opinions, and big questions about future AI, defenses and recovery are still open."
       ],
-      "aiReviewDate": "2026-10-06"
+      "aiReviewDate": "2026-10-06",
+      "scope": "Worldwide; future superintelligent AI built with methods like those of 2025.",
+      "timeHorizon": "No deadline."
     }
   }
 }

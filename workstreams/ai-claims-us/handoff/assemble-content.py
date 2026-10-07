@@ -87,7 +87,7 @@ def main():
             'headline': layer['headline'], 'headlineOccurrence': head['occurrence'],
             'claim': record['claim'], 'carefulHeadline': layer['carefulHeadline'],
             'claimExampleCitations': head['occurrence_urls'] + record['occurrence_urls'],
-            'scope': record['scope'], 'timeHorizon': record['time_horizon'],
+            'scope': meta.get('scope', record['scope']), 'timeHorizon': meta.get('timeHorizon', record['time_horizon']),
             'keyQualification': meta['keyQualification'], **parts,
             'hype': {**hype, 'displayPrefix': 'Headline hype', 'reason': layer['scoreReason'],
                      'checklist': head['hype_checks'], 'reviewStatus': head['review_status']},

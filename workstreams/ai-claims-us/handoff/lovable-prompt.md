@@ -14,7 +14,7 @@ I have attached **`claims-content.json`** to this message. It is the complete, a
 
 ### 1. Content package and exact expected output
 
-The attached JSON has `contentVersion: "claims-us-content-1.1"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
+The attached JSON has `contentVersion: "claims-us-content-1.3"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
 
 | Topic | Route | Headline claim (page h1) | Headline hype | Careful version we also checked | Careful hype |
 | --- | --- | --- | --- | --- | --- |
