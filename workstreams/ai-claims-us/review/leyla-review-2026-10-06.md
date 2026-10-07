@@ -67,7 +67,7 @@ Leyla asked for spicier headlines, like "AI will take all our jobs". Each page n
 |---|---|---|---|---|
 | Water | Every time you use AI, it uses a bottle of water. | Windows Central, September 2023 (changed from the Washington Post email version on October 7) | 4/5 | 1/5 |
 | Jobs | AI will take all our jobs. | CNN, May 2024 (Elon Musk) | 4/5 | 1/5 |
-| Energy and climate | AI will only intensify climate change. | The Nation, December 2025 | 4/5 | 1/5 |
+| Energy and climate | AI will make climate change worse. | The Nation, December 2025 (plain form, changed October 7) | 2/5 | 1/5 |
 | Creativity | AI art is theft. | Goetze, arXiv paper, 2024 | 3/5 (rescored October 7) | 1/5 |
 | Privacy | ChatGPT is sharing your secrets. | Tom's Guide, April 2023 | 4/5 | 1/5 |
 | Existential risk | AI will kill us all. | Yudkowsky and Soares, book title, 2025 (short form, changed October 7) | 5/5 (certain-doom rule, October 7) | 2/5 |

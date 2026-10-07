@@ -1,10 +1,10 @@
-# Energy and climate: AI will only intensify climate change.
+# Energy and climate: AI will make climate change worse.
 
 ## A. The claim
 
-**The headline claim:** “AI will only intensify climate change.”
+**The headline claim:** “AI will make climate change worse.”
 
-This is the headline of [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/).
+Tracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”
 
 **The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”
 
@@ -34,7 +34,7 @@ This page is about electricity and climate. Our [water page](/claims/water) cove
 
 ## E. Hype score and explanation
 
-**Hype score for the headline: 4/5 — Overheated.** “Will” ignores the uncertainty the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes, and “only” rules out climate benefits that are [unproven but possible](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). A claim that overstates on both counts scores at least 4.
+**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.
 
 **The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.
 

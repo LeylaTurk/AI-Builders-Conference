@@ -15,6 +15,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Decision | What it means on the page |
 |---|---|
 | "AI art is theft" is 3/5 | Leyla: artists didn't consent to training. With that point the scope check passes, and "theft" counts as a loaded crime word instead. Score 3/5 (Turning it up). |
+| Energy headline | "AI will make climate change worse." Tracked from Juan Cole's December 2025 Nation article "AI Will Only Intensify Climate Change…". Without "only" it no longer rules out climate benefits, so it scores 2/5 (A little spicy); "will" still overstates certainty. The Nation's original wording stays on the dial at 4/5. |
 | Fine print becomes **The facts behind the headline** | Each item is a dropdown whose label starts "Fact:", for example "Fact: Not all data centers are used for AI." Every fact and every true/false answer rewritten in plain English, re-checked against the sources, with more context in each answer. Water adds Google's own estimate (about five drops per Gemini question, August 2025). |
 | Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. |
 | Certain-doom rule (rubric claims-us-1.2) | A loud claim that says, as certain, that everyone will die scores 5/5. Chosen on a decision card over a one-off override. "AI will kill us all" is now 5/5 (Off the charts); its careful version stays 2/5. On its dial, the headline sits at level 5 and a new example fills level 4. |

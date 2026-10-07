@@ -301,12 +301,12 @@
       "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
     },
     "energy-climate": {
-      "headline": "AI will only intensify climate change.",
+      "headline": "AI will make climate change worse.",
       "keyWord": {
-        "word": "only",
-        "explanation": "“Only” rules out any climate benefit from AI. Those benefits are unproven, but so is the claim that there are none."
+        "word": "will",
+        "explanation": "“Will” makes it sound certain. How much AI adds depends on how fast its power use grows and how clean the electricity gets, and its possible climate benefits haven’t been proven or ruled out."
       },
-      "scoreReason": "The headline says “will” and “only”, which leaves no room for the uncertainty or the possible benefits the evidence describes.",
+      "scoreReason": "AI's growing power use is adding emissions, so “worse” has a real basis. But “will” sounds surer than the evidence, which says it depends on how clean the power gets.",
       "claimDial": [
         {
           "text": "AI's growing power use could raise US carbon emissions by 2030.",
@@ -315,32 +315,9 @@
           "level": 1
         },
         {
-          "text": "AI's exploding power use could raise US carbon emissions by 2030.",
-          "scoredAs": "example",
-          "level": 2,
-          "origin": "Example wording we wrote and scored with the same checks",
-          "hype_checks": {
-            "P1": {
-              "answer": "Y",
-              "reason": "Met."
-            },
-            "P2": {
-              "answer": "Y",
-              "reason": "Met."
-            },
-            "P3": {
-              "answer": "Y",
-              "reason": "Met."
-            },
-            "W1": {
-              "answer": "N",
-              "reason": "“Exploding” adds drama to a fast but measured rise."
-            },
-            "W2": {
-              "answer": "Y",
-              "reason": "Met."
-            }
-          }
+          "text": "AI will make climate change worse.",
+          "scoredAs": "headline",
+          "level": 2
         },
         {
           "text": "AI's exploding power use will raise US carbon emissions by 2030.",
@@ -372,9 +349,31 @@
         },
         {
           "text": "AI will only intensify climate change.",
-          "scoredAs": "headline",
-          "origin": "headline claim",
-          "level": 4
+          "scoredAs": "example",
+          "level": 4,
+          "origin": "The Nation’s original headline (December 2025), scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "“Only” treats it as established that AI has no offsetting climate benefits. The IEA describes possible efficiency and climate benefits as conditional: neither proven nor ruled out."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Global scope matches the global data-center evidence; no distinct scope problem."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "States a certain outcome. The IEA says the effect depends on demand growth, efficiency and how the electricity is generated, and clean-energy investment is also growing."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "No distinct additional problem; the issue is scored once above."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "No human-like agency is attributed to AI."
+            }
+          }
         },
         {
           "text": "AI is single-handedly destroying the planet and will make climate change unstoppable.",
@@ -446,7 +445,7 @@
       ],
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
       "carefulScoreReason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
-      "headlineSource": "Claim tracked from historian Juan Cole, who made it in the headline of a December 2025 article in The Nation.",
+      "headlineSource": "Claim tracked from historian Juan Cole, who made it in a December 2025 article in The Nation headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”",
       "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
     },
     "creativity": {
