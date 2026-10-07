@@ -148,7 +148,7 @@
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
       "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
-      "headlineSource": "Our short version of a claim from Windows Central, a tech news site, whose September 2023 headline said: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
+      "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
       "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
     },
     "jobs": {
@@ -297,7 +297,7 @@
       ],
       "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
       "carefulScoreReason": "The more careful version says “could”, and it's an expert's educated guess about the future, though nobody has been able to test the half-of-jobs number yet.",
-      "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
+      "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
       "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
     },
     "energy-climate": {
@@ -446,7 +446,7 @@
       ],
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
       "carefulScoreReason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
-      "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation.",
+      "headlineSource": "Claim tracked from historian Juan Cole, who made it in the headline of a December 2025 article in The Nation.",
       "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
     },
     "creativity": {
@@ -591,7 +591,7 @@
       ],
       "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
       "carefulScoreReason": "The more careful version says “can”, and experiments have shown that it happens.",
-      "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper.",
+      "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper.",
       "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
     },
     "privacy": {
@@ -761,7 +761,7 @@
       },
       "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
       "carefulScoreReason": "The more careful version says “may” and “depending on your settings”, which matches what OpenAI's own policy says.",
-      "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline.",
+      "headlineSource": "Claim tracked from Tom's Guide, a tech advice website, which made it in an April 2023 headline.",
       "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
     },
     "existential-risk": {
@@ -910,7 +910,7 @@
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
       "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
-      "headlineSource": "Our short version of the title of AI-risk researchers Eliezer Yudkowsky and Nate Soares's 2025 book, “If Anyone Builds It, Everyone Dies.”",
+      "headlineSource": "Claim tracked from AI-risk researchers Eliezer Yudkowsky and Nate Soares, who made it in the title of their 2025 book, “If Anyone Builds It, Everyone Dies.”",
       "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
     }
   }

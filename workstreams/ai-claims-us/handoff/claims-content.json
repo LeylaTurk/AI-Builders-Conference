@@ -471,7 +471,7 @@
             "why": "Not proven. Drought maps and water company reports can't blame a shortage on one user."
           }
         ],
-        "headlineSource": "Our short version of a claim from Windows Central, a tech news site, whose September 2023 headline said: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
+        "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
         "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
       },
       "remainingLimitations": [
@@ -946,7 +946,7 @@
             "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
           }
         ],
-        "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
+        "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
         "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
       },
       "remainingLimitations": [
@@ -1403,7 +1403,7 @@
             "why": "Not proven. The savings depend on how widely AI is used for them, and using AI more can eat them up."
           }
         ],
-        "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation.",
+        "headlineSource": "Claim tracked from historian Juan Cole, who made it in the headline of a December 2025 article in The Nation.",
         "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
       },
       "remainingLimitations": [
@@ -1863,7 +1863,7 @@
             "why": "US courts haven’t settled it, and one found a specific training use fair."
           }
         ],
-        "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper.",
+        "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper.",
         "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
       },
       "remainingLimitations": [
@@ -2345,7 +2345,7 @@
             }
           ]
         },
-        "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline.",
+        "headlineSource": "Claim tracked from Tom's Guide, a tech advice website, which made it in an April 2023 headline.",
         "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
       },
       "remainingLimitations": [
@@ -2812,7 +2812,7 @@
             "why": "The test incidents are real, even though they don't prove extinction."
           }
         ],
-        "headlineSource": "Our short version of the title of AI-risk researchers Eliezer Yudkowsky and Nate Soares's 2025 book, “If Anyone Builds It, Everyone Dies.”",
+        "headlineSource": "Claim tracked from AI-risk researchers Eliezer Yudkowsky and Nate Soares, who made it in the title of their 2025 book, “If Anyone Builds It, Everyone Dies.”",
         "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
       },
       "remainingLimitations": [
