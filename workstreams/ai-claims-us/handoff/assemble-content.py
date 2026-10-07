@@ -52,8 +52,8 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: claim dial needs the headline and careful versions marked as scored')
     if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
-    if any(q['answer'] not in ('True', 'False', 'Not proven') for q in layer['quiz']):
-        raise ValueError(f'{slug}: quiz answers must be True, False or Not proven')
+    if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
+        raise ValueError(f'{slug}: quiz answers must be True or False')
 
 def check_cards(slug, cards):
     items = cards['topics'][slug]

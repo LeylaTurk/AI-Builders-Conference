@@ -377,8 +377,8 @@
         "quiz": [
           {
             "statement": "Every AI email uses a bottle of water.",
-            "answer": "Not proven",
-            "why": "That’s an estimate for one kind of email under assumed conditions, not a measurement."
+            "answer": "False",
+            "why": "Not proven. That’s an estimate for one kind of email under assumed conditions, not a measurement."
           },
           {
             "statement": "A data center can strain a town's water on hot days even if its yearly use looks small.",
@@ -387,8 +387,8 @@
           },
           {
             "statement": "AI data centers are why my town has water restrictions.",
-            "answer": "Not proven",
-            "why": "Drought maps and utility reports can't pin a shortage on one user."
+            "answer": "False",
+            "why": "Not proven. Drought maps and utility reports can't pin a shortage on one user."
           }
         ]
       },
@@ -769,8 +769,8 @@
         "quiz": [
           {
             "statement": "AI will take every job.",
-            "answer": "Not proven",
-            "why": "Even Musk said “probably”, and current data show no broad disruption."
+            "answer": "False",
+            "why": "Not proven. Even Musk said “probably”, and current data show no broad disruption."
           },
           {
             "statement": "Young workers in AI-exposed jobs have seen weaker hiring.",
@@ -779,8 +779,8 @@
           },
           {
             "statement": "AI caused that drop in hiring.",
-            "answer": "Not proven",
-            "why": "Education, earlier trends and other factors haven't been ruled out."
+            "answer": "False",
+            "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
           }
         ]
       },
@@ -1153,8 +1153,8 @@
           },
           {
             "statement": "AI's climate benefits will cancel out its emissions.",
-            "answer": "Not proven",
-            "why": "Savings depend on adoption and can be eaten up by more use."
+            "answer": "False",
+            "why": "Not proven. Savings depend on adoption and can be eaten up by more use."
           }
         ]
       },
