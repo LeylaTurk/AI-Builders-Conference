@@ -1,0 +1,50 @@
+# Claim Tracker: decisions log
+
+Every decision Leyla has made about the claims section, in one place. Newest first within each day. Details and reasons are in [Leyla's review](review/leyla-review-2026-10-06.md); the site-wide summary is the "Claim Tracker" entry in `master-project-brief.md`.
+
+## Standing rules
+
+- **Real sources only.** Every headline claim and every "In the news" article is real and linked. Never invent a source or a headline.
+- **Plain English everywhere.** Write for a general US reader. No research jargon (for example "reasoned scenario").
+- **Statements, not questions.** Each page leads with the claim as a statement.
+- **Article text stays private.** Full article text and checklist quotes live in the private repo `ai-news-articles` (`claims-cards/ratings/`), never in this public repo.
+- **Claim Tracker names this section only.** The site stays **Decoding the Hype**, with its own logo and tagline ("Be on top of the news and under the hype").
+
+## October 7, 2026
+
+| Decision | What it means on the page |
+|---|---|
+| Source line says "Claim tracked from…" | Under each headline: "Claim tracked from [who], who made it in [where, when]…". No "Our short version of…". Where the headline is shorter than the original, the original is quoted. |
+| No review labels in the Claim Tracker | "AI rating, not yet reviewed" and "Reviewed by Leyla" don't appear on claim pages or article cards. The data is kept; the feed keeps its labels. |
+| No topic labels above headlines | No "Jobs", "Water" etc. above the h1. |
+| Section named **Claim Tracker** | Whole section (was "AI claims explained"). Route stays `/claims`. |
+| Existential-risk headline | "AI will kill us all." Tracked from the Yudkowsky and Soares book title "If Anyone Builds It, Everyone Dies" (2025). Scores 4/5. |
+| Water headline | "Every time you use AI, it uses a bottle of water." Tracked from Windows Central, September 11, 2023. Scores 4/5. |
+| No role tags on article cards | "Makes the claim / Reports it carefully / Pushes back" set the order only and aren't shown. |
+| Dial named **One claim, five ways** | "Turn up the heat" was rejected, because the site is about not turning up the heat. "How hot is this claim?" didn't describe it. |
+| One claim wording per hype level | The dial shows a version at every level 1–5. Headline and careful version are real; the other three are example wordings, scored with the same claims checklist. No labels (like "the careful version") next to the quotes. |
+| Careful version explained | Box reads "Our wording, based on…", then a full plain-English sentence saying why, then its score. The careful versions are our wording, not published quotes. |
+| "We also scored a more careful way…" line deleted | |
+| Short answer comes first | "Is it true? The short answer" sits before the careful-version box. |
+| Who said it | Every headline has a line saying who made the claim and where. |
+| Dial markers removed | No "HEADLINE" or "CAREFUL" markers on the gauge. |
+| Article cards lead with the rating | Hype label badge first, then chillies and flags with numbers. All 18 ratings re-checked. Block and Microsoft cards use Leyla's own ratings. |
+| Gauge uses only the hype labels | Grounded, A little spicy, Turning it up, Overheated, Off the charts. No "Just right" or "Overhyped". Readers can drag, tap or use arrow keys to move the needle, and it should look polished. |
+| Quiz is True/False only | Anything "not proven" counts as False. |
+| "But…" renamed | Now "What the headline leaves out". |
+| "Spot the hype" removed | Added and removed the same morning. |
+| Semicircle gauge | Not a thermometer. |
+| "In the news" cards | Three real, rated articles per claim at the bottom of each page, linking to the story page when it's in the feed, otherwise to the original article. |
+| Fun and interactive | Explanations should be playful and interactive, not just text. |
+| Plain-English rewrite | All explanations rewritten for a general reader (about grade 7–9). |
+
+## October 6, 2026
+
+| Decision | What it means on the page |
+|---|---|
+| Spicier headlines | Each page leads with a loud claim someone actually published, scored, next to the careful version. |
+| Loud-claim rule (rubric claims-us-1.1) | If a claim fails enough accuracy checks to reach level 4 or 5, it scores at least 4. Chosen on a decision card. |
+| Statements and interactive layers | Headlines are statements; nuance moves into tappable layers. Headline, score and its reason always visible. |
+| Evidence-gap flags off for claims | Only hype is scored; evidence limits are in words, and the score note says why. |
+| Kept separate from "Common claims" | The brief's Common claims page stays as planned. |
+| "US", not "U.S." | |
