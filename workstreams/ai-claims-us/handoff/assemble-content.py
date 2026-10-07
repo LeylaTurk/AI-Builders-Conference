@@ -163,7 +163,7 @@ def main():
             'The claim is under examination, not an endorsement.',
             'Keep the exact claim, key qualification, proposed score and rationale together.',
             'Qualitative evidence limitations are separate from hype and potential harm.',
-            'Show “AI rating, not yet reviewed” until humanEditorialReview.status is “reviewed”; only then show “Reviewed by Leyla”.',
+            'Do not show review labels (“AI rating, not yet reviewed” or “Reviewed by Leyla”) anywhere in the Claim Tracker.',
             'The headline statement, score, score reason and key qualification are always visible; interactive layers only add detail.',
             'Dates are stored editorial facts; deployment must not change them.',
             'Article cards show real news coverage of the claim; their article ratings are separate from the claim scores and are not the research evidence base.'
@@ -177,7 +177,7 @@ def main():
         'topics': topics, 'sourceFileSha256': hashes,
     }
     (ROOT/'handoff/claims-content.json').write_text(json.dumps(content, ensure_ascii=False, indent=2)+'\n')
-    companion = '# Exact website copy: Claim Tracker\n\nAI rating, not yet reviewed. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
+    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
     companion += '\n\n---\n\n'.join(t['websiteCopyMarkdown'].strip() for t in topics)+'\n'
     (ROOT/'handoff/claims-content.md').write_text(companion)
     (ROOT/'review/package-validation.json').write_text(json.dumps({'topics': validations, 'sourceFileSha256': hashes}, indent=2)+'\n')

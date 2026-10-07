@@ -46,6 +46,6 @@ This page is about electricity and climate. Our [water page](/claims/water) cove
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.

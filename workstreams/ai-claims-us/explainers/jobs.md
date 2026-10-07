@@ -45,7 +45,7 @@ Amodei’s warning only comes true if AI keeps improving fast, companies use it 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
 
 - Amodei warning: Axios, May 28, 2025; author's essay, January 2026.
 - Stanford revision: August 12, 2026; ADP update: September 23, 2026 (August data).

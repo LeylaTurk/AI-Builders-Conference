@@ -46,6 +46,6 @@ Yearly totals hide the real pressure point: hot summer days where water is tight
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024 (2023 utility records); Li et al., version 5, March 26, 2025; Han et al., preprint March 3, 2026. USGS glossary and NOAA tool: undated pages. EPA consumer guide: updated November 21, 2025; EPA permit guide: updated July 22, 2026. Links appear beside the statements they support.

@@ -1,6 +1,6 @@
 # Exact website copy: Claim Tracker
 
-AI rating, not yet reviewed. This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
+This readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.
 
 # Water: Every time you use AI, it uses a bottle of water.
 
@@ -50,7 +50,7 @@ Yearly totals hide the real pressure point: hot summer days where water is tight
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: Bloomberg, May 8, 2025 (claim provenance); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024 (2023 utility records); Li et al., version 5, March 26, 2025; Han et al., preprint March 3, 2026. USGS glossary and NOAA tool: undated pages. EPA consumer guide: updated November 21, 2025; EPA permit guide: updated July 22, 2026. Links appear beside the statements they support.
 
@@ -103,7 +103,7 @@ Amodei’s warning only comes true if AI keeps improving fast, companies use it 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.** Sources are linked where used. Dates below refer to publication or displayed updates, not necessarily the data period.
 
 - Amodei warning: Axios, May 28, 2025; author's essay, January 2026.
 - Stanford revision: August 12, 2026; ADP update: September 23, 2026 (August data).
@@ -163,7 +163,7 @@ This page is about electricity and climate. Our [water page](/claims/water) cove
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.
 
@@ -214,7 +214,7 @@ Copyright generally doesn’t protect a style, but it does protect a work’s ac
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and colleagues, *Extracting books from production language models*, January 6, 2026 preprint (experiments August–September 2025); Carlini and colleagues, USENIX Security, August 2023; US Copyright Office, Part 3 prepublication report, May 9, 2025 (still labeled prepublication on the [official AI page](https://www.copyright.gov/ai/) at cutoff); Demirci, Hannane, and Zhu, August 2024 working paper, [journal version published online January 24, 2025](https://spiral.imperial.ac.uk/entities/publication/88113a91-b994-4717-8526-dadac657f1cb); *Bartz* orders June 23, 2025 and July 20, 2026; *ROSS* opinion filed September 29, 2026. Authors Guild clauses updated April 29, 2026; USAGov page updated March 2, 2026; Copyright Office and CCB guidance undated, checked at cutoff. Court-issued documents were inspected through Justia’s public copies.
 
@@ -272,7 +272,7 @@ Three different things can happen to your chats, and they’re easy to mix up.
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Source dates: Tom’s Guide, updated October 30, 2025; OpenAI training explanation, May 6, 2026; enterprise privacy, updated January 8, 2026; FTC article, January 2024. OpenAI’s consumer-data, training-use, and data-controls Help Center pages displayed “Updated: 8 days ago”; temporary-chat and sharing pages displayed “Updated: 17 days ago.” CalPrivacy guidance is undated. Relative update labels are recorded as observed, not converted into invented publication dates. Inline links support the relevant statements.
 
@@ -324,7 +324,7 @@ One person’s choices can’t remove a global risk, but these are ways to take 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources inspected October 6, 2026:
 

@@ -44,7 +44,7 @@ One person’s choices can’t remove a global risk, but these are ways to take 
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources inspected October 6, 2026:
 

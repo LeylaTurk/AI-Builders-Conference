@@ -50,6 +50,6 @@ Three different things can happen to your chats, and they’re easy to mix up.
 
 ## G. Sources and review information
 
-Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Source dates: Tom’s Guide, updated October 30, 2025; OpenAI training explanation, May 6, 2026; enterprise privacy, updated January 8, 2026; FTC article, January 2024. OpenAI’s consumer-data, training-use, and data-controls Help Center pages displayed “Updated: 8 days ago”; temporary-chat and sharing pages displayed “Updated: 17 days ago.” CalPrivacy guidance is undated. Relative update labels are recorded as observed, not converted into invented publication dates. Inline links support the relevant statements.

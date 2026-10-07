@@ -43,6 +43,6 @@ Copyright generally doesn’t protect a style, but it does protect a work’s ac
 
 ## G. Sources and review information
 
-Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026. AI rating, not yet reviewed.**
+Research cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**
 
 Sources: OpenAI public statement, January 8, 2024 (company account); Ahmed and colleagues, *Extracting books from production language models*, January 6, 2026 preprint (experiments August–September 2025); Carlini and colleagues, USENIX Security, August 2023; US Copyright Office, Part 3 prepublication report, May 9, 2025 (still labeled prepublication on the [official AI page](https://www.copyright.gov/ai/) at cutoff); Demirci, Hannane, and Zhu, August 2024 working paper, [journal version published online January 24, 2025](https://spiral.imperial.ac.uk/entities/publication/88113a91-b994-4717-8526-dadac657f1cb); *Bartz* orders June 23, 2025 and July 20, 2026; *ROSS* opinion filed September 29, 2026. Authors Guild clauses updated April 29, 2026; USAGov page updated March 2, 2026; Copyright Office and CCB guidance undated, checked at cutoff. Court-issued documents were inspected through Justia’s public copies.
