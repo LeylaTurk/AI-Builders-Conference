@@ -148,7 +148,7 @@
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
       "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
-      "headlineSource": "Said by: Windows Central, a tech news site, in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
+      "headlineSource": "Our short version of a claim from Windows Central, a tech news site, whose September 2023 headline said: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
       "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
     },
     "jobs": {
@@ -910,7 +910,7 @@
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
       "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
-      "headlineSource": "Said by: the short version of the title of AI-risk researchers Eliezer Yudkowsky and Nate Soares's 2025 book, “If Anyone Builds It, Everyone Dies.”",
+      "headlineSource": "Our short version of the title of AI-risk researchers Eliezer Yudkowsky and Nate Soares's 2025 book, “If Anyone Builds It, Everyone Dies.”",
       "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
     }
   }
