@@ -84,11 +84,10 @@ Use two equal columns at widths of 768px and up and a single column below that. 
 
 Each card contains:
 
-1. Linked serif topic heading.
-2. The `headline` statement as the card's main text, in full.
-3. Exact `keyQualification` in readable normal text.
-4. Decorative pepper row and the full text `Headline hype: [label] [level]/5`, then `hype.reason`, then a smaller line `Careful version: [carefulHype.label] [carefulHype.level]/5`.
-5. Link **Read the evidence and actions**. Give it an accessible name that includes the topic, such as “Water: Read the evidence and actions.”
+1. The `headline` statement, in full, as the card's linked serif heading. Do not show the topic name above it.
+2. Exact `keyQualification` in readable normal text.
+3. Decorative pepper row and the full text `Headline hype: [label] [level]/5`, then `hype.reason`, then a smaller line `Careful version: [carefulHype.label] [carefulHype.level]/5`.
+4. Link **Read the evidence and actions**. Give it an accessible name that includes the topic, such as “Water: Read the evidence and actions.”
 
 Let text wrap and card height grow. Never ellipsize a claim, hide a qualifier, use a tooltip for a key limit, or communicate the score with peppers/color alone. The claim itself is text under examination, not an unlabeled site assertion. A linked heading and descriptive text link are sufficient; do not nest interactive controls inside an all-card button. Do not squeeze the entire short answer into cards.
 
@@ -97,7 +96,7 @@ Let text wrap and card height grow. Never ellipsize a claim, hide a qualifier, u
 Use a normal page with one readable column and anchors. Do not make the topic a modal or hide main sections behind tabs; the interactive layers in 5b are the only tap-to-open content. Keep this order on desktop and mobile:
 
 1. Breadcrumb **Claim Tracker / [Topic]**, linked back to `/claims`.
-2. Topic label and `headline` as the single h1, with `interactive.keyWord.word` highlighted inside it (see 5b); research cutoff and exact review status.
+2. The `headline` as the single h1, with no topic label above it, with `interactive.keyWord.word` highlighted inside it (see 5b); research cutoff and exact review status.
 2b. Directly under the h1, `interactive.headlineSource` in a short line (for example “Said by: Elon Musk, at a tech conference in Paris in May 2024…”), so readers know who made the claim before they see its score. Render it exactly: where the headline shortens someone's words, the line starts “Our short version of…” and quotes the original, so it never reads as a direct quote.
 3. A white claim panel containing the headline score row and `hype.reason` directly under the h1. Then the label **Is it true? The short answer** and `shortAnswerMarkdown`, always visible. Then a clearly separated box headed **A more careful way to say it**, containing, in this order: the `carefulHeadline` as a quote, then `interactive.carefulSource` in small muted text (it says the wording is ours and which real source it rests on), then `carefulHype.reason` as a full sentence, then the careful-version score row. Never show the careful score row without its quote. Then `claimContextMarkdown`, exact scope/time horizon and `keyQualification`; `scoreExplanationMarkdown`; and the short `evidenceGaps.limitations` list. Section A labels **The headline claim** and **The careful version we also checked**; keep both labels visible. Add `section.scoreNote` and a **How these scores work** anchor link. Avoid duplicating `claim` a second time if section A already renders it. Do not separate the qualifier and rationale from the score.
 4b. The interactive layers from section 5b, in this order: One claim, five ways, fine print, situation picker (privacy only), quiz.
