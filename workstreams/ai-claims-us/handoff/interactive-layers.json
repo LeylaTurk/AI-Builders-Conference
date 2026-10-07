@@ -13,12 +13,98 @@
         {
           "text": "AI data centers threaten water supplies in some dry US towns.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI data centers are guzzling water in some dry US towns.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Guzzling” adds drama the evidence doesn't need."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI data centers are guzzling the water in America's dry towns.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Talks about all dry towns, when the evidence covers some places."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Guzzling” adds drama the evidence doesn't need."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
         },
         {
           "text": "Every AI-written email uses a bottle of water.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is greedily drinking America dry and will leave us all without water.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches local strain to the whole country."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Drinking America dry” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats AI as greedy, when companies decide where to build."
+            }
+          }
         }
       ],
       "finePrint": [
@@ -76,12 +162,98 @@
         {
           "text": "AI could eliminate half of US entry-level office jobs by about 2030.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI could wipe out half of US entry-level office jobs by about 2030.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Wipe out” adds drama to an expert's warning."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI will wipe out half of US entry-level office jobs by 2030.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Turns an expert's “could” into a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Wipe out” adds drama to an expert's warning."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
         },
         {
           "text": "AI will take all our jobs.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is already destroying jobs everywhere and will soon want every single one.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "Says jobs are already being destroyed everywhere, which the data don't show."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches some tasks to every job."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Destroying” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI “wants” jobs, when employers make those choices."
+            }
+          }
         }
       ],
       "finePrint": [
@@ -139,12 +311,98 @@
         {
           "text": "AI's growing power use could raise US carbon emissions by 2030.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI's exploding power use could raise US carbon emissions by 2030.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Exploding” adds drama to a fast but measured rise."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI's exploding power use will raise US carbon emissions by 2030.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Turns “could” into a sure thing, though it depends on how power is made."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Exploding” adds drama to a fast but measured rise."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
         },
         {
           "text": "AI will only intensify climate change.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is single-handedly destroying the planet and will make climate change unstoppable.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Blames AI alone for a planet-wide problem."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Destroying the planet” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats AI as the one acting, when people choose how to power it."
+            }
+          }
         }
       ],
       "finePrint": [
@@ -202,12 +460,98 @@
         {
           "text": "AI can reproduce copyrighted work from its training data.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "AI can spit out copies of copyrighted work it was trained on.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Spit out” adds drama to what tests found."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "AI routinely churns out copies of the copyrighted work it learned from.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Says it happens routinely, when tests showed it with chosen works."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Churns out” adds drama to what tests found."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
         },
         {
           "text": "AI art is theft.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is a plagiarism machine that steals every artist's work and will kill human creativity.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States wrongdoing as settled, when courts haven't decided."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches to every artist."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Plagiarism machine” is a label, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI “steals”, when companies choose what to train on."
+            }
+          }
         }
       ],
       "finePrint": [
@@ -261,12 +605,98 @@
         {
           "text": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "ChatGPT may hoover up your personal chats to train its AI, depending on your settings.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Hoover up” adds drama to what the policy says."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "ChatGPT hoovers up your personal chats to train its AI.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Drops “depending on your settings”, so it sounds like every chat."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Hoover up” adds drama to what the policy says."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
         },
         {
           "text": "ChatGPT is sharing your secrets.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "ChatGPT is spying on everything you type and will sell your secrets to anyone who wants them.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches to everything you type."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Spying” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats ChatGPT as a spy with its own plans."
+            }
+          }
         }
       ],
       "finePrint": [
@@ -343,14 +773,100 @@
       "scoreReason": "The headline says everyone will certainly die, and drops the authors' own condition about how this super-smart AI gets built.",
       "claimDial": [
         {
+          "text": "Future AI much smarter than people could pose serious risks, and experts disagree about how big they are.",
+          "scoredAs": "example",
+          "level": 1,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
           "text": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
           "scoredAs": "careful",
-          "origin": "careful version"
+          "origin": "careful version",
+          "level": 2
+        },
+        {
+          "text": "Superintelligent AI built with today's methods will decide to kill us all.",
+          "scoredAs": "example",
+          "level": 3,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI would “decide” to kill us; the authors' worry is about goals, not intent."
+            }
+          }
         },
         {
           "text": "If anyone builds superintelligent AI, everyone dies.",
           "scoredAs": "headline",
-          "origin": "headline claim"
+          "origin": "headline claim",
+          "level": 4
+        },
+        {
+          "text": "AI is already plotting to wipe us out, and it's only a matter of months.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "States as fact something no evidence shows."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Says today's AI, when the worry is about future AI."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Gives a sure timeline nobody can know."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Plotting to wipe us out” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Says AI is plotting, as if it had human plans."
+            }
+          }
         }
       ],
       "finePrint": [

@@ -47,9 +47,16 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: key word missing from headline')
     if layer['headline'] != head['claim'] or head['claim'] not in text.split('## B.')[0]:
         raise ValueError(f'{slug}: headline must match the headline score record and section A')
-    kinds = {v['scoredAs']: v['text'] for v in layer['claimDial'] if v['scoredAs']}
+    kinds = {v['scoredAs']: v['text'] for v in layer['claimDial'] if v['scoredAs'] in ('headline', 'careful')}
     if kinds != {'headline': layer['headline'], 'careful': layer['carefulHeadline']}:
         raise ValueError(f'{slug}: claim dial needs the headline and careful versions marked as scored')
+    expected = {'headline': calculator.score(head)['hype']['level'], 'careful': calculator.score(record)['hype']['level']}
+    for v in layer['claimDial']:
+        got = expected.get(v['scoredAs']) or calculator.score({'claim': v['text'], 'hype_checks': v['hype_checks']})['hype']['level']
+        if v['level'] != got:
+            raise ValueError(f'{slug}: dial version scored {got}, labelled {v["level"]}: {v["text"]}')
+    if [v['level'] for v in layer['claimDial']] != [1, 2, 3, 4, 5]:
+        raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
     if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
     if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
