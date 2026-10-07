@@ -381,7 +381,8 @@
             "why": "Not proven. Drought maps and utility reports can't pin a shortage on one user."
           }
         ],
-        "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use."
+        "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use.",
+        "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
       },
       "remainingLimitations": [
         "Most aggregate data describe all data centers rather than AI workloads alone.",
@@ -769,7 +770,8 @@
             "why": "Not proven. Education, earlier trends and other factors haven't been ruled out."
           }
         ],
-        "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”"
+        "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
+        "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
       },
       "remainingLimitations": [
         "The exact half-of-jobs fraction and one-to-five-year horizon have not been validated as an employment forecast. The hype score evaluates conditional wording, not the estimate’s likelihood or an individual’s job prospects.",
@@ -1139,7 +1141,8 @@
             "why": "Not proven. Savings depend on adoption and can be eaten up by more use."
           }
         ],
-        "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation."
+        "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation.",
+        "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
       },
       "remainingLimitations": [
         "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
@@ -1512,7 +1515,8 @@
             "why": "US courts haven’t settled it, and one found a specific training use fair."
           }
         ],
-        "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper."
+        "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper.",
+        "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
       },
       "remainingLimitations": [
         "Targeted extraction of selected works and dated model versions does not measure ordinary-user prevalence or rank current products.",
@@ -1907,7 +1911,8 @@
             }
           ]
         },
-        "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline."
+        "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline.",
+        "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
       },
       "remainingLimitations": [
         "The decisive sources establish company-stated practices, not an independent compliance audit or the frequency of actual training selection.",
@@ -2286,7 +2291,8 @@
             "why": "The test incidents are real, even though they don't prove extinction."
           }
         ],
-        "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book."
+        "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book.",
+        "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
       },
       "remainingLimitations": [
         "Scaling from current behavior to persistent goals and world-scale destructive power remains unresolved.",

@@ -62,7 +62,8 @@
       ],
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
       "carefulScoreReason": "Says “threaten” and limits itself to some places, which matches the evidence.",
-      "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use."
+      "headlineSource": "Said by: The Washington Post, in a September 2024 article about researchers' estimate of how much water AI chatbots use.",
+      "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
     },
     "jobs": {
       "headline": "AI will take all our jobs.",
@@ -124,7 +125,8 @@
       ],
       "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
       "carefulScoreReason": "Says “could” and rests on a reasoned scenario, though the half-of-jobs number hasn’t been tested.",
-      "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”"
+      "headlineSource": "Said by: Elon Musk, at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
+      "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
     },
     "energy-climate": {
       "headline": "AI will only intensify climate change.",
@@ -186,7 +188,8 @@
       ],
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
       "carefulScoreReason": "Says “could”, and there’s a documented path: more demand met partly by gas power.",
-      "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation."
+      "headlineSource": "Said by: historian Juan Cole, in the headline of a December 2025 article in The Nation.",
+      "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
     },
     "creativity": {
       "headline": "AI art is theft.",
@@ -244,7 +247,8 @@
       ],
       "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
       "carefulScoreReason": "Says “can”, and controlled experiments show it happens.",
-      "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper."
+      "headlineSource": "Said by: researcher Trystan S. Goetze, as the title of a 2024 research paper.",
+      "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
     },
     "privacy": {
       "headline": "ChatGPT is sharing your secrets.",
@@ -327,7 +331,8 @@
       },
       "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
       "carefulScoreReason": "Says “may” and “depending on your settings”, which is what OpenAI’s own policy says.",
-      "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline."
+      "headlineSource": "Said by: Tom's Guide, a tech advice website, in an April 2023 headline.",
+      "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
     },
     "existential-risk": {
       "headline": "If anyone builds superintelligent AI, everyone dies.",
@@ -389,7 +394,8 @@
       ],
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
       "carefulScoreReason": "Keeps the authors’ condition, but “will” still claims more certainty than the evidence supports.",
-      "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book."
+      "headlineSource": "Said by: AI-risk researchers Eliezer Yudkowsky and Nate Soares, as the title of their 2025 book.",
+      "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
     }
   },
   "carefulIntro": "We also scored a more careful way to say the same thing, to show what the evidence actually supports."
