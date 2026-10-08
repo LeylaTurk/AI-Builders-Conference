@@ -12,7 +12,7 @@ This narrows [Bloomberg’s May 2025 coverage](https://www.bloomberg.com/graphic
 
 ## B. The short answer
 
-Not quite. The bottle figure comes from a [2023 study](https://arxiv.org/abs/2304.03271) that estimated GPT-3, the model behind early ChatGPT, used about half a liter of water per 10 to 50 answers, not per answer. It’s an estimate, not a measurement, and it [depends on how data centers are cooled](https://arxiv.org/html/2304.03271v5). The bigger issue is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia water utilities they use [2% to 21% of the water](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
+Not quite, but there is real reason for concern. The bottle figure comes from a [2023 study](https://arxiv.org/abs/2304.03271) that estimated GPT-3, the model behind early ChatGPT, used about half a liter of water per 10 to 50 answers, not per answer. It’s an estimate, not a measurement. The real problem is local: data centers can strain water in some dry towns on [the hottest days](https://arxiv.org/html/2603.02705v1), and at six Virginia water utilities they already use [2% to 21% of the water](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).
 
 ## C. What does this claim actually mean?
 
