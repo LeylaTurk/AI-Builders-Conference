@@ -113,8 +113,10 @@
           "text": "Data centers also run email, websites, video streaming and online storage. Most numbers about data center water use add all of these together, so only part of that water goes to AI."
         },
         {
-          "label": "Fact: The “bottle” was for many answers, not one.",
-          "text": "Researchers estimated that GPT-3, an older AI model, used about half a liter of water (one small bottle) for every 10 to 50 answers. That counts water at the data center and at the power plant. It’s an estimate, not a measurement."
+          "label": "Fact: The “bottle” number comes from a 2023 study.",
+          "text": "The figure started with an April 2023 study, “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models,” by Pengfei Li, Shaolei Ren and colleagues. It estimated about half a liter of water (one small bottle) for every 10 to 50 answers from GPT-3, the model behind early ChatGPT, counting water at the data center and at the power plant. It’s an estimate, not a measurement. Later headlines shortened it to every question.",
+          "linkText": "Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models",
+          "url": "https://arxiv.org/abs/2304.03271"
         },
         {
           "label": "Fact: Newer estimates are much smaller.",
@@ -151,12 +153,6 @@
       "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies.”",
       "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water.",
       "headlineSourceUrl": "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies",
-      "earlierSource": {
-        "label": "Where the number comes from",
-        "text": "The “bottle of water” figure started with an April 2023 study, “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models,” by Pengfei Li, Shaolei Ren and colleagues. It estimated about half a liter of water for every 10 to 50 answers from GPT-3, the model behind early ChatGPT. Later headlines shortened that to every question.",
-        "url": "https://arxiv.org/abs/2304.03271",
-        "linkText": "Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models"
-      },
       "headlineSourceLinkText": "Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies"
     },
     "jobs": {

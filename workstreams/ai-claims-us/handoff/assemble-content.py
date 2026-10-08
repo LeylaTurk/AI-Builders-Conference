@@ -64,6 +64,7 @@ def check_layer(slug, layer, head, record, text):
     links_in = [(layer['headlineSource'], layer.get('headlineSourceLinkText', ''))]
     if 'earlierSource' in layer:
         links_in.append((layer['earlierSource']['text'], layer['earlierSource'].get('linkText', '')))
+    links_in += [(f['text'], f['linkText']) for f in layer['finePrint'] if 'linkText' in f or 'url' in f]
     if any(not lt or text.count(lt) != 1 for text, lt in links_in):
         raise ValueError(f'{slug}: each source link text must appear exactly once in its line')
     if any(not f['label'].startswith('Fact: ') for f in layer['finePrint']):

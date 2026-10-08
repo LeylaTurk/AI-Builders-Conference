@@ -15,8 +15,9 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Decision | What it means on the page |
 |---|---|
 | "AI art is theft" is 3/5 | Leyla: artists didn't consent to training. With that point the scope check passes, and "theft" counts as a loaded crime word instead. Score 3/5 (Turning it up). |
+| Section renamed **The facts behind the claim** | Was "The facts behind the headline". Water's "where the number comes from" line moved into its facts as "Fact: The “bottle” number comes from a 2023 study.", with the study title linked. |
 | **Why this score** | A small heading above the sentence that explains each headline's score. |
-| Source line links to the source | In "Claim tracked from…", the article or book title itself is the link (no separate "See the source"). "Tracked from" means a real published example, not necessarily the first time anyone said it. Where we found and checked an earlier source, a second line shows it: water (the April 2023 study the "bottle" number comes from) and existential risk (Yudkowsky's March 2023 TIME essay). |
+| Source line links to the source | In "Claim tracked from…", the article or book title itself is the link (no separate "See the source"). "Tracked from" means a real published example, not necessarily the first time anyone said it. Where we found and checked an earlier source, a second line shows it: existential risk (Yudkowsky's March 2023 TIME essay). Water's earlier source (the April 2023 study) is now one of its facts. |
 | Energy headline | "AI will make climate change worse." Tracked from Juan Cole's December 2025 Nation article "AI Will Only Intensify Climate Change…". Without "only" it no longer rules out climate benefits, so it scores 2/5 (A little spicy); "will" still overstates certainty. The Nation's original wording stays on the dial at 4/5. |
 | Fine print becomes **The facts behind the headline** | Each item is a dropdown whose label starts "Fact:", for example "Fact: Not all data centers are used for AI." Every fact and every true/false answer rewritten in plain English, re-checked against the sources, with more context in each answer. Water adds Google's own estimate (about five drops per Gemini question, August 2025). |
 | Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. |
@@ -38,7 +39,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Article cards lead with the rating | Hype label badge first, then chillies and flags with numbers. All 18 ratings re-checked. Block and Microsoft cards use Leyla's own ratings. |
 | Gauge uses only the hype labels | Grounded, A little spicy, Turning it up, Overheated, Off the charts. No "Just right" or "Overhyped". Readers can drag, tap or use arrow keys to move the needle, and it should look polished. |
 | Quiz is True/False only | Anything "not proven" counts as False. |
-| "But…" renamed | Now "What the headline leaves out" (later "The facts behind the headline"). |
+| "But…" renamed | Now "What the headline leaves out" (later "The facts behind the claim"). |
 | "Spot the hype" removed | Added and removed the same morning. |
 | Semicircle gauge | Not a thermometer. |
 | "In the news" cards | Three real, rated articles per claim at the bottom of each page, linking to the story page when it's in the feed, otherwise to the original article. |
