@@ -121,6 +121,12 @@
           "url": "https://water.usgs.gov/water-basics_glossary.html"
         },
         {
+          "label": "Fact: Most of the water linked to US data centers is used at the power plants that supply their electricity, not at the data centers themselves.",
+          "text": "Berkeley Lab’s 2024 report estimated that US data centers used about 66 billion liters (about 17 billion gallons) of water on site in 2023, mostly for cooling. It separately estimated that making the electricity they used took nearly 800 billion liters, roughly 12 times as much. That count includes water that evaporates from reservoirs behind hydroelectric dams. Both numbers are model estimates for all data centers, not just AI, and the power plant share depends on which plants feed the local grid.",
+          "linkText": "Berkeley Lab’s 2024 report",
+          "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
+        },
+        {
           "label": "Fact: Some data centers use cooling systems that need almost no water on site, but those systems usually need more electricity instead.",
           "text": "Many data centers cool their computers with towers that let some water evaporate. Others use “dry coolers,” which work more like a car radiator and use no water on site. The catch is that dry coolers usually need more electricity, and the power plants that make electricity can use water too, often somewhere else. Li and colleagues’ study explains this trade-off, which means less water at the building doesn’t always mean less water overall.",
           "linkText": "Li and colleagues’ study",

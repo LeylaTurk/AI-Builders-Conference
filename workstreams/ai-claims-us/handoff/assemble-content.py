@@ -57,7 +57,7 @@ def check_layer(slug, layer, head, record, text):
             raise ValueError(f'{slug}: dial version scored {got}, labelled {v["level"]}: {v["text"]}')
     if [v['level'] for v in layer['claimDial']] != [1, 2, 3, 4, 5]:
         raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
-    if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
+    if not 3 <= len(layer['finePrint']) <= 6 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
     if not layer.get('headlineSourceUrl', '').startswith('https://') or layer['headlineSourceUrl'] not in head['occurrence_urls']:
         raise ValueError(f'{slug}: headlineSourceUrl must be one of the headline record occurrence URLs')
