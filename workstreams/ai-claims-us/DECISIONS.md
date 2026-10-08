@@ -14,6 +14,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 
 | Decision | What it means on the page |
 |---|---|
+| Quiz feedback says **Correct / Not correct** | After a tap: "Correct! This statement is false." or "Not correct. This statement is false.", then the explanation. The correct answer's button turns green with a ✓; a wrong tap turns red with a ✗. Replaces "Right. False." |
 | New claim: **Data centers** | "Data centers will destroy our community." Tracked from Gina Mangham of Renew DeKalb in a November 2025 CBS News Atlanta story. Scores 3/5 (Turning it up): "will" states as certain something that depends on local votes and utility rules, and "destroy" turns real but limited costs into ruin. Careful version 1/5. Route `/claims/data-centers`, placed after Energy and climate. Water and climate stay on their own pages. Seven claims in all. |
 
 ## October 7, 2026
