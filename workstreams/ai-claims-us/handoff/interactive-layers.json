@@ -113,12 +113,6 @@
           "text": "Data centers also run email, websites, video streaming and online storage. Most numbers about data center water use add all of these together, so only part of that water goes to AI."
         },
         {
-          "label": "Fact: The “bottle of water” figure comes from a 2023 study that estimated one bottle for every 10 to 50 AI answers, not one per question.",
-          "text": "The figure started with an April 2023 study, “Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models,” by Pengfei Li, Shaolei Ren and colleagues. It estimated about half a liter of water (one small bottle) for every 10 to 50 answers from GPT-3, the model behind early ChatGPT, counting water at the data center and at the power plant. It’s an estimate, not a measurement. Later headlines shortened it to every question.",
-          "linkText": "Making AI Less ‘Thirsty’: Uncovering and Addressing the Secret Water Footprint of AI Models",
-          "url": "https://arxiv.org/abs/2304.03271"
-        },
-        {
           "label": "Fact: Newer estimates are much smaller.",
           "text": "In August 2025, Google estimated that a typical text question to its Gemini AI uses about 0.26 milliliters of water, or about five drops. That’s the company’s own estimate, and no one outside has checked it."
         },
