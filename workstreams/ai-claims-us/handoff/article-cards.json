@@ -141,6 +141,50 @@
         "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-04-10_axios_ai-climate-change-iea-report.json"
       }
     ],
+    "data-centers": [
+      {
+        "role": "Makes the claim",
+        "headline": "'It will destroy this place:' Tucker County residents fight for future against proposed data center",
+        "outlet": "West Virginia Watch",
+        "published": "2025-05-28",
+        "url": "https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/",
+        "sourceType": "independent news outlet (nonprofit state newsroom)",
+        "hype": 3,
+        "gaps": 1,
+        "whyHere": "A West Virginia resident's warning that a planned data center power plant would destroy her mountain town became this story's headline.",
+        "ratingNote": "Careful reporting from permit records and experts, but the headline turns one resident's hedged fear into a certain prediction of destruction.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2025-05-28_westvirginiawatch_tucker-county-destroy-this-place.json"
+      },
+      {
+        "role": "Reports it carefully",
+        "headline": "Data center backlash unites some Missouri and Kansas towns against lawmakers and big tech",
+        "outlet": "KCUR (Midwest Newsroom)",
+        "published": "2026-09-02",
+        "url": "https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas",
+        "sourceType": "independent news outlet (public radio newsroom)",
+        "hype": 1,
+        "gaps": 1,
+        "whyHere": "Towns across the Midwest are fighting data centers over water, power bills, noise and secrecy. This story weighs those fears against promised jobs and tax money.",
+        "ratingNote": "Fears and benefits are both kept in proportion, backed by named sources, linked polls and a stated method. One quote is credited to an unidentified Brown.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-09-02_kcur_midwest-data-center-backlash.json"
+      },
+      {
+        "role": "Pushes back",
+        "headline": "Meta data center in Richland Parish brings jobs, tax growth to northeast Louisiana",
+        "outlet": "WAFB",
+        "published": "2026-07-29",
+        "url": "https://www.wafb.com/2026/07/29/meta-data-center-richland-parish-brings-jobs-tax-growth-northeast-louisiana/",
+        "sourceType": "independent news outlet (local TV station)",
+        "hype": 4,
+        "gaps": 4,
+        "whyHere": "A Louisiana TV story says Meta's huge data center is already bringing jobs and tax growth to the parish. Regulators are still asking Meta for proof.",
+        "ratingNote": "The headline states jobs and tax gains as fact, resting on Meta's own figures and the governor's word, with no independent check.",
+        "reviewStatus": "AI rating, not yet reviewed",
+        "privateRatingFile": "ai-news-articles/claims-cards/ratings/2026-07-29_wafb_meta-richland-parish-jobs-tax.json"
+      }
+    ],
     "creativity": [
       {
         "role": "Makes the claim",

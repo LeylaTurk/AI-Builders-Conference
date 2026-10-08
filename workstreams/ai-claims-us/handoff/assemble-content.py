@@ -7,8 +7,8 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SLUGS = ['water', 'jobs', 'energy-climate', 'creativity', 'privacy', 'existential-risk']
-NAMES = ['Water', 'Jobs', 'Energy and climate', 'Creativity', 'Privacy', 'Existential risk']
+SLUGS = ['water', 'jobs', 'existential-risk', 'energy-climate', 'data-centers', 'creativity', 'privacy']
+NAMES = ['Water', 'Jobs', 'Existential risk', 'Energy and climate', 'Data centers', 'Creativity', 'Privacy']
 FIELDS = dict(zip('ABCDEFG', ['claimContextMarkdown', 'shortAnswerMarkdown',
     'meaningMarkdown', 'evidenceMarkdown', 'scoreExplanationMarkdown',
     'actionsMarkdown', 'sourcesAndReviewMarkdown']))
@@ -57,8 +57,22 @@ def check_layer(slug, layer, head, record, text):
             raise ValueError(f'{slug}: dial version scored {got}, labelled {v["level"]}: {v["text"]}')
     if [v['level'] for v in layer['claimDial']] != [1, 2, 3, 4, 5]:
         raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
-    if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
-        raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
+    if len(layer['finePrint']) != 6 or len(layer['quiz']) != 3:
+        raise ValueError(f'{slug}: expected 6 facts and 3 quiz items')
+    if any(not f.get('icon') or not f.get('tag') for f in layer['finePrint']):
+        raise ValueError(f'{slug}: every fact needs an icon and a tag')
+    if not layer.get('headlineSourceUrl', '').startswith('https://') or layer['headlineSourceUrl'] not in head['occurrence_urls']:
+        raise ValueError(f'{slug}: headlineSourceUrl must be one of the headline record occurrence URLs')
+    links_in = [(layer['headlineSource'], layer.get('headlineSourceLinkText', ''))]
+    if 'earlierSource' in layer:
+        links_in.append((layer['earlierSource']['text'], layer['earlierSource'].get('linkText', '')))
+    if any(not f.get('url', '').startswith('https://') for f in layer['finePrint']):
+        raise ValueError(f'{slug}: every fact needs a source url')
+    links_in += [(f['text'], f.get('linkText', '')) for f in layer['finePrint']]
+    if any(not lt or text.count(lt) != 1 for text, lt in links_in):
+        raise ValueError(f'{slug}: each source link text must appear exactly once in its line')
+    if any(not f['label'].startswith('Fact: ') for f in layer['finePrint']):
+        raise ValueError(f'{slug}: each fact label must start with "Fact: "')
     if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
         raise ValueError(f'{slug}: quiz answers must be True or False')
 
@@ -177,7 +191,7 @@ def main():
         'topics': topics, 'sourceFileSha256': hashes,
     }
     (ROOT/'handoff/claims-content.json').write_text(json.dumps(content, ensure_ascii=False, indent=2)+'\n')
-    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
+    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the seven explainer files; upload claims-content.json with the Lovable prompt.\n\n'
     companion += '\n\n---\n\n'.join(t['websiteCopyMarkdown'].strip() for t in topics)+'\n'
     (ROOT/'handoff/claims-content.md').write_text(companion)
     (ROOT/'review/package-validation.json').write_text(json.dumps({'topics': validations, 'sourceFileSha256': hashes}, indent=2)+'\n')

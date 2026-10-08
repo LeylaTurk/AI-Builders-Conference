@@ -1,5 +1,5 @@
 {
-  "rubric_version": "claims-us-1.1",
+  "rubric_version": "claims-us-1.2",
   "claim": "AI will kill us all.",
   "scope": "Any AI, including today's, built by anyone, by any method.",
   "time_horizon": "No deadline.",
@@ -59,7 +59,11 @@
       ]
     }
   },
+  "certain_doom": {
+    "answer": true,
+    "reason": "“Will kill us all” says, as certain, that every person will die."
+  },
   "research_cutoff": "2026-10-06",
   "review_status": "AI research draft; not independently reviewed",
-  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief. Changed October 7, 2026 at Leyla’s request from “If anyone builds superintelligent AI, everyone dies.” to the shorter “AI will kill us all.”"
+  "note": "Headline claim added October 6, 2026 at Leyla’s request for spicier headlines. Scored with the same claims-us-1.0 rubric; evidence comes from the topic research brief. Changed October 7, 2026 at Leyla’s request from “If anyone builds superintelligent AI, everyone dies.” to the shorter “AI will kill us all.” Rescored October 7, 2026 to 5/5 under the certain-doom rule (claims-us-1.2), chosen by Leyla."
 }

@@ -1,5 +1,5 @@
 {
-  "rubric_version": "claims-us-1.1",
+  "rubric_version": "claims-us-1.2",
   "claim": "ChatGPT is sharing your secrets.",
   "scope": "All ChatGPT users and chats.",
   "time_horizon": "Present tense; policy checked at the October 6, 2026 cutoff.",
