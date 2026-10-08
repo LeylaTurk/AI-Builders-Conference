@@ -61,6 +61,11 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
     if not layer.get('headlineSourceUrl', '').startswith('https://') or layer['headlineSourceUrl'] not in head['occurrence_urls']:
         raise ValueError(f'{slug}: headlineSourceUrl must be one of the headline record occurrence URLs')
+    links_in = [(layer['headlineSource'], layer.get('headlineSourceLinkText', ''))]
+    if 'earlierSource' in layer:
+        links_in.append((layer['earlierSource']['text'], layer['earlierSource'].get('linkText', '')))
+    if any(not lt or text.count(lt) != 1 for text, lt in links_in):
+        raise ValueError(f'{slug}: each source link text must appear exactly once in its line')
     if any(not f['label'].startswith('Fact: ') for f in layer['finePrint']):
         raise ValueError(f'{slug}: each fact label must start with "Fact: "')
     if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
