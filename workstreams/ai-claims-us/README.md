@@ -20,7 +20,7 @@ For Decoding the Hype. US adult audience; American English. Research cutoff: **O
 
 - [Shared scoring rubric](scoring/shared-rubric.md), [GitHub audit and adaptation map](scoring/repository-audit.md), [version record](scoring/repository-version.json), [final cross-topic calibration](scoring/cross-topic-calibration.md).
 - [Independent AI evidence-review report](review/evidence-review-report.md), [corrections and verification](review/corrections.md), [package validation](review/package-validation.md).
-- [Live-site inspection](design/01-live-site-audit.md), [design recommendation](design/02-design-recommendation.md), [annotated desktop/mobile wireframe](design/03-annotated-wireframe.md), [curated related-story mapping](design/related-stories.json).
+- [Live-site inspection](design/01-live-site-audit.md), [design recommendation](design/02-design-recommendation.md), [annotated desktop/mobile wireframe](design/03-annotated-wireframe.md), [curated related-story mapping](design/related-stories.json). [Clickable prototype](design/claims-prototype.html) (latest, October 8; open it in a browser).
 - [One-file content attachment](handoff/claims-content.json), [readable copy companion](handoff/claims-content.md), [copy-ready Lovable prompt](handoff/lovable-prompt.md).
 
 ## Dedicated assignments actually used
