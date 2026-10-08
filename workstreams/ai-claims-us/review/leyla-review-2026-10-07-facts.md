@@ -54,3 +54,15 @@ Leyla asked for no overlap between each short answer and its facts, a full-sente
 - A major 2026 international expert report says today’s AI systems cannot yet cause a true “loss of control,” but are improving in relevant skills. [International AI Safety Report 2026](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026)
 - In a 2023 survey, the middle answer from AI researchers gave a 5% chance that AI causes human extinction or something similarly severe. [Thousands of AI Authors on the Future of AI](https://arxiv.org/html/2401.02843v3)
 - An early-2026 outside review found AI agents used inside four major AI companies could plausibly start small, unapproved operations on their own. [Frontier Risk Report](https://metr.org/blog/2026-05-19-frontier-risk-report/)
+
+## Sixth facts (October 8, 2026)
+
+Added so each claim has six facts for the icon grid. Every number was checked against the linked source.
+
+- **creativity:** Human authors only. [Thaler v. Perlmutter](https://media.cadc.uscourts.gov/opinions/docs/2025/03/23-5233.pdf)
+- **data-centers:** Tax breaks too. [December 2024 audit](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf)
+- **energy-climate:** On-site gas power. [on-site gas power](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary)
+- **existential-risk:** Forecasters vs experts. [Forecasting Existential Risks](https://forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf)
+- **jobs:** Official job outlook. [official 10-year job projections](https://www.bls.gov/news.release/ecopro.nr0.htm)
+- **privacy:** Police data requests. [Government Requests for User Data report](https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf)
+- **water:** Power plant water. [Berkeley Lab’s 2024 report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) (figures from the water research brief, rows W03–W04)

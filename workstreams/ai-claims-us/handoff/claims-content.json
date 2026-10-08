@@ -441,37 +441,49 @@
             "label": "Fact: In 2023, AI servers used less electricity than ordinary servers in US data centers, so most data center totals cover much more than AI.",
             "text": "Data centers also run everyday online services that have nothing to do with AI. According to Berkeley Lab’s 2024 report, servers in US data centers used nearly 100 terawatt-hours of electricity in 2023 (a terawatt-hour is a huge amount of power). AI servers built around graphics chips used more than 40 of those, and ordinary servers used nearly 60. That figure is about electricity, not water, but it shows why data center water totals can’t simply be counted as AI.",
             "linkText": "Berkeley Lab’s 2024 report",
-            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
+            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+            "icon": "⚡",
+            "tag": "Not all AI"
           },
           {
             "label": "Fact: Water that a data center takes in is not all lost, because experts separate water taken from a source and water used up.",
             "text": "Experts use two different words. A “withdrawal” is water taken from a river, lake or underground supply, and some of it can flow back afterward. “Consumptive use” is water that can’t be used again right away, mostly because it evaporated. The USGS water glossary defines both terms. When you see a big water number for a data center, check which one it means, because a withdrawal number can be much larger than what the area actually loses.",
             "linkText": "USGS water glossary",
-            "url": "https://water.usgs.gov/water-basics_glossary.html"
+            "url": "https://water.usgs.gov/water-basics_glossary.html",
+            "icon": "💧",
+            "tag": "Taken vs. used up"
           },
           {
             "label": "Fact: Most of the water linked to US data centers is used at the power plants that supply their electricity, not at the data centers themselves.",
             "text": "Berkeley Lab’s 2024 report estimated that US data centers used about 66 billion liters (about 17 billion gallons) of water on site in 2023, mostly for cooling. It separately estimated that making the electricity they used took nearly 800 billion liters, roughly 12 times as much. That count includes water that evaporates from reservoirs behind hydroelectric dams. Both numbers are model estimates for all data centers, not just AI, and the power plant share depends on which plants feed the local grid.",
             "linkText": "Berkeley Lab’s 2024 report",
-            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
+            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+            "icon": "🏭",
+            "tag": "Power plant water"
           },
           {
             "label": "Fact: Some data centers use cooling systems that need almost no water on site, but those systems usually need more electricity instead.",
             "text": "Many data centers cool their computers with towers that let some water evaporate. Others use “dry coolers,” which work more like a car radiator and use no water on site. The catch is that dry coolers usually need more electricity, and the power plants that make electricity can use water too, often somewhere else. Li and colleagues’ study explains this trade-off, which means less water at the building doesn’t always mean less water overall.",
             "linkText": "Li and colleagues’ study",
-            "url": "https://arxiv.org/html/2304.03271v5"
+            "url": "https://arxiv.org/html/2304.03271v5",
+            "icon": "🌬️",
+            "tag": "Cooling trade-off"
           },
           {
             "label": "Fact: In August 2025, Google estimated that a typical text question to its Gemini AI used about five drops of water.",
             "text": "Google’s own researchers estimated that the median text prompt to the Gemini app in May 2025 used 0.26 milliliters of water, about five drops. (The median is the middle value, so half of prompts used more and half used less.) The figure, from Google’s August 2025 paper, is based on water for cooling Google’s data centers and doesn’t say it covers power plant water. The company produced it, and it has not been independently checked.",
             "linkText": "Google’s August 2025 paper",
-            "url": "https://arxiv.org/abs/2508.15734"
+            "url": "https://arxiv.org/abs/2508.15734",
+            "icon": "🔍",
+            "tag": "Google’s estimate"
           },
           {
             "label": "Fact: Virginia’s state audit found that most data centers there use about as much water as a large office building, though a few use far more.",
             "text": "Data centers are not all alike. Virginia’s 2024 state audit found that most use about the same amount of water as an average large office building, or less. A few need much more, and some use less than a typical household. Their water use depends on size, how much computing is packed inside and the type of cooling. The audit also found Virginia is fairly water rich overall, but water is tighter in some localities.",
             "linkText": "Virginia’s 2024 state audit",
-            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF"
+            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+            "icon": "🏢",
+            "tag": "Not all alike"
           }
         ],
         "quiz": [
@@ -934,31 +946,49 @@
             "label": "Fact: Musk pictured a future where AI and robots supply what people need, so jobs become optional instead of leaving people broke.",
             "text": "Speaking by video to the VivaTech conference in Paris in May 2024, Musk said that in the future he imagines, jobs would be “optional.” If you wanted a job “that’s kinda like a hobby,” you could have one, while “AI and the robots will provide any goods and services that you want.” He said this would need a “universal high income,” which he did not explain. CNN’s report, Elon Musk says AI will take all our jobs, also quotes him saying there is “perhaps still a role for humans.”",
             "linkText": "Elon Musk says AI will take all our jobs",
-            "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/"
+            "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/",
+            "icon": "🤖",
+            "tag": "Musk’s jobless future"
           },
           {
             "label": "Fact: The US Bureau of Labor Statistics says an AI “exposure” rating for a job is not a forecast of job losses or worker replacement.",
             "text": "Researchers call a job “exposed” to AI when AI could help with or complete some of its tasks. In its guide to AI exposure categories, last updated August 27, 2026, the Bureau of Labor Statistics says an exposure category “is not a worker replacement estimate” and “is not a forecast of employment growth or decline.” It also warns that some of the research behind the ratings judges what AI could do as of mid-2023 at the latest, and AI is changing fast.",
             "linkText": "guide to AI exposure categories",
-            "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm"
+            "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm",
+            "icon": "🏷️",
+            "tag": "Exposure isn’t layoffs"
+          },
+          {
+            "label": "Fact: The government’s official job projections, released in August 2026, still expect US employment to grow through 2035, even as AI trims some office work.",
+            "text": "On August 27, 2026, the Bureau of Labor Statistics released its official 10-year job projections. It expects the US to add 5.9 million jobs from 2025 to 2035, growth of 3.5%. Office and administrative support jobs are projected to shrink fastest, by 4.0%, or 752,100 jobs, partly because of automation tools, “including those powered by AI.” These are projections, not measurements. BLS notes long-term predictions carry “inherent uncertainty” and says it applies adjustments for factors like new technology “conservatively.”",
+            "linkText": "official 10-year job projections",
+            "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
+            "icon": "📈",
+            "tag": "Official job outlook"
           },
           {
             "label": "Fact: In a 2026 Census Bureau survey of US businesses, only 2% of firms reported cutting jobs because of AI.",
             "text": "Census Bureau researchers studied a nationally representative 2026 survey of US businesses. In their paper, The Microstructure of AI Diffusion, they report that 18% of firms used AI in at least one part of their business. Among firms using it, 66% used AI only to help workers with tasks, not to replace them. Job cuts tied to AI were rare, reported by just 2% of firms. These are the companies’ own answers, so they may not capture every effect.",
             "linkText": "The Microstructure of AI Diffusion",
-            "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html"
+            "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html",
+            "icon": "🏢",
+            "tag": "Few firms cut jobs"
           },
           {
             "label": "Fact: Separate Census Bureau records also show fewer young hires in AI-exposed industries, but interest-rate changes may explain part of that drop.",
             "text": "A Census Bureau working paper, You’re (not) Hired, used government records that link workers to employers. In the industries most exposed to AI, employment of 22- to 24-year-olds fell 12% in the 10 quarters after ChatGPT came out, while less exposed industries stayed stable. But the author estimates that up to one quarter of that gap, through mid-2025, may be linked to surprise interest-rate moves through 2023. Some trends also seem to have started earlier, around the time of COVID-19.",
             "linkText": "You’re (not) Hired",
-            "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html"
+            "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html",
+            "icon": "🎓",
+            "tag": "Fewer young hires"
           },
           {
             "label": "Fact: In a 2026 Gallup survey, 31% of US workers who use AI said it had led their employer to give them more responsibilities.",
             "text": "Gallup surveyed US employees from January 26 to March 24, 2026. Among 7,845 workers who had used AI on the job at least a few times in the past year, 63% said it helped them do tasks faster. But 31% said using AI had led their employer to ask them to take on more responsibilities. The report, AI Benefits at Work Unevenly Distributed, notes these are workers’ own views, and that people who use AI regularly were more likely to already have good jobs.",
             "linkText": "AI Benefits at Work Unevenly Distributed",
-            "url": "https://news.gallup.com/poll/714602/benefits-work-unevenly-distributed.aspx"
+            "url": "https://news.gallup.com/poll/714602/benefits-work-unevenly-distributed.aspx",
+            "icon": "💼",
+            "tag": "More work, not less"
           }
         ],
         "quiz": [
@@ -1416,31 +1446,49 @@
             "label": "Fact: The book’s warning is about “superintelligence,” a kind of AI that the authors themselves say has not been built yet.",
             "text": "By “superintelligence,” the authors mean AI that is smarter than any single person, or any group of people combined. Today’s chatbots are not that. In the authors’ one-year update, a September 2026 post, Yudkowsky, Soares and a co-author wrote that such AI “has not been created yet.” They also wrote that some steps in their argument, such as how a superintelligent AI would get past humanity’s defenses, are not yet clearly verified, because no such AI exists to observe.",
             "linkText": "the authors’ one-year update",
-            "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer"
+            "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
+            "icon": "🧠",
+            "tag": "Not built yet"
           },
           {
             "label": "Fact: Co-author Nate Soares says the danger he sees is not that AI would hate people, but that it would not care about them.",
             "text": "In a September 2025 Carnegie Endowment podcast, “Will AI Kill Us All? Nate Soares on His Controversial Bestseller,” Soares said “the problem is not malice. The problem is utter indifference.” His reasoning is that almost any goal is easier to reach with more resources, so a very powerful AI could compete with people for them and harm us as a side effect, the way a construction project harms ants. He also said people “might be able to recover” from some early losses of control.",
             "linkText": "Will AI Kill Us All? Nate Soares on His Controversial Bestseller",
-            "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east"
+            "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east",
+            "icon": "🐜",
+            "tag": "Indifference, not malice"
           },
           {
             "label": "Fact: A major 2026 international expert report says today’s AI systems cannot yet cause a true “loss of control,” but are improving in relevant skills.",
             "text": "The International AI Safety Report 2026 was written by more than 100 AI experts and backed by more than 30 countries and international organizations. Published in February 2026, it describes “loss of control” as AI systems operating outside anyone’s control, with no clear way to regain it. The report says current systems “lack the capabilities to pose such risks.” But it adds that they are getting better at related skills, such as working on their own without a person directing each step.",
             "linkText": "International AI Safety Report 2026",
-            "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+            "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
+            "icon": "🌍",
+            "tag": "Global expert report"
           },
           {
             "label": "Fact: In a 2023 survey, the middle answer from AI researchers gave a 5% chance that AI causes human extinction or something similarly severe.",
             "text": "In October 2023, researchers surveyed people who had published at top AI conferences and received 2,778 responses, a 15% response rate. In the paper “Thousands of AI Authors on the Future of AI,” the middle (median) answer to one question put the chance that future AI causes human extinction, or a similarly permanent and severe loss of human power, at 5%. Depending on how the question was worded, between 37.8% and 51.4% gave at least a 10% chance. These are opinions, not measurements of real events.",
             "linkText": "Thousands of AI Authors on the Future of AI",
-            "url": "https://arxiv.org/html/2401.02843v3"
+            "url": "https://arxiv.org/html/2401.02843v3",
+            "icon": "📊",
+            "tag": "Researchers’ 5% median"
+          },
+          {
+            "label": "Fact: In a 2022 forecasting tournament, proven forecasters rated the chance of AI wiping out humanity by 2100 far lower than AI experts did.",
+            "text": "From June to October 2022, the Forecasting Research Institute ran a tournament where 89 “superforecasters” (people with strong records at predicting events) and 80 subject experts made predictions and debated them for months. In the resulting paper, Forecasting Existential Risks, the median superforecaster put the chance that AI causes human extinction by 2100 at 0.38%, while the median AI expert said 3%. The groups “started far apart and ended far apart.” These are judgments about the far future that nobody can check yet.",
+            "linkText": "Forecasting Existential Risks",
+            "url": "https://forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf",
+            "icon": "🎯",
+            "tag": "Forecasters vs experts"
           },
           {
             "label": "Fact: An early-2026 outside review found AI agents used inside four major AI companies could plausibly start small, unapproved operations on their own.",
             "text": "An “AI agent” is an AI that carries out tasks by itself, such as writing and running computer code. From February 16 to March 16, 2026, the research group METR studied agents used inside Anthropic, Google, Meta and OpenAI, with the companies taking part. METR’s Frontier Risk Report concluded the agents plausibly had the means, motive and opportunity to start small “rogue deployments” (agents running without human knowledge or permission), but not to make them highly robust. It did not report any such deployment actually happening.",
             "linkText": "Frontier Risk Report",
-            "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/"
+            "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
+            "icon": "🕵️",
+            "tag": "Rogue agent risk"
           }
         ],
         "quiz": [
@@ -1884,31 +1932,49 @@
             "label": "Fact: US data centers used about 4.4% of the country’s electricity in 2023, and that share covers all their work, not just AI.",
             "text": "Berkeley Lab estimated that US data centers used 176 terawatt-hours of electricity in 2023. A terawatt-hour is a billion kilowatt-hours, the unit on your power bill. That was 4.4% of all US electricity, up from 1.9% in 2018. For 2028, the report’s range is 6.7% to 12%. These are model estimates, not meter readings, and they include email, websites and streaming as well as AI. Source: the 2024 United States Data Center Energy Usage Report.",
             "linkText": "2024 United States Data Center Energy Usage Report",
-            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
+            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+            "icon": "🔌",
+            "tag": "US data center share"
           },
           {
             "label": "Fact: The International Energy Agency expects data centers worldwide to use about twice as much electricity in 2030 as in 2025.",
             "text": "In its April 2026 report Key Questions on Energy and AI, the International Energy Agency estimates data centers worldwide used 485 terawatt-hours in 2025. One terawatt-hour is a billion kilowatt-hours. It projects about 950 terawatt-hours by 2030, around 3% of all electricity used on Earth that year. These totals include non-AI work, but the agency expects AI-focused data centers to grow much faster than the rest. They are forecasts, not guarantees.",
             "linkText": "Key Questions on Energy and AI",
-            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "🌍",
+            "tag": "Global demand doubling"
           },
           {
             "label": "Fact: Each AI answer is using less energy than before, yet AI’s total electricity use can still rise.",
             "text": "The International Energy Agency’s 2026 executive summary says AI’s energy efficiency per task is improving faster than any technology in energy history. A simple text question now typically uses less electricity than running a TV for the same length of time. But total demand depends on three trends that pull in different directions: better efficiency, many more people using AI, and newer models that take on bigger, more demanding jobs.",
             "linkText": "2026 executive summary",
-            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "💡",
+            "tag": "Efficiency vs. demand"
           },
           {
             "label": "Fact: A data center company that buys clean power on paper may still run partly on gas or coal power from the grid.",
             "text": "Many companies sign contracts to buy wind or solar power equal to what they use over a year. But the International Energy Agency explains in its full 2026 report, on page 46, that the power data centers actually use often comes from the local grid, which may include gas or coal. So the real mix of power can differ from what was bought. Some operators are moving to “hourly matching,” covering every hour with low-emissions power.",
             "linkText": "full 2026 report",
-            "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf"
+            "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
+            "icon": "🧾",
+            "tag": "Clean power on paper"
           },
           {
             "label": "Fact: Virginia’s legislative watchdog warned in 2024 that data center growth could keep older fossil fuel power plants running longer.",
             "text": "In December 2024, Virginia’s legislative watchdog published Data Centers in Virginia. It found that, without limits, the state’s power demand is expected to double within 10 years, mainly because of data centers. Building new power plants and lines that fast would be very difficult, it said, so utilities would likely delay retiring older fossil fuel plants. This is one state’s forecast based on 2024 assumptions.",
             "linkText": "Data Centers in Virginia",
-            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF"
+            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+            "icon": "🏭",
+            "tag": "Old plants run longer"
+          },
+          {
+            "label": "Fact: Some US data center builders are planning their own natural gas power plants on site instead of waiting years for a grid connection.",
+            "text": "The International Energy Agency’s 2026 report Key Questions on Energy and AI says slow grid hookups are pushing US data center developers toward gas-fired generators on their own land. Satellite tracking shows about one-fifth of these projects have started land clearing or construction. The agency estimates that around 15 to 27 gigawatts of on-site gas power, mostly in the US, may supply data centers by 2030. A gigawatt is a billion watts. The agency stresses this estimate is highly uncertain, and most data centers still prefer grid power.",
+            "linkText": "on-site gas power",
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "🔥",
+            "tag": "On-site gas power"
           }
         ],
         "quiz": [
@@ -2371,31 +2437,49 @@
             "label": "Fact: Data centers keep diesel backup generators for power outages, and in Northern Virginia these mostly run only for maintenance.",
             "text": "Most data centers keep large diesel generators in case the power goes out. Virginia’s 2024 state audit found these generators are run mostly for maintenance, and in Northern Virginia they make up less than 4 percent of the region’s nitrogen oxide emissions, a type of air pollution. A separate computer study estimated much larger health costs if the generators ran at their maximum permitted levels, but that is a worst case, not what has been measured.",
             "linkText": "Virginia’s 2024 state audit",
-            "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf"
+            "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+            "icon": "⚡",
+            "tag": "Backup generators"
           },
           {
             "label": "Fact: In November 2025, Virginia regulators created a new electricity rate group that makes the biggest power users sign 14-year contracts.",
             "text": "Virginia’s State Corporation Commission created a rate group called GS-5 for customers that use at least 25 megawatts of power, which mainly means large data centers. Starting January 1, 2027, they must sign 14-year contracts and pay for at least 85% of the distribution capacity they sign up for and 60% of the generation, even if they use less. The aim is to cover the costs of equipment built for them, but the November 2025 order is too new to show whether it works.",
             "linkText": "November 2025 order",
-            "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf"
+            "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
+            "icon": "📝",
+            "tag": "New rate rules"
+          },
+          {
+            "label": "Fact: Virginia’s main tax break for data centers saved the industry $928 million in state sales taxes in a single year.",
+            "text": "Virginia’s legislative watchdog found in its December 2024 audit that a state sales tax exemption lets data centers and their tenants buy servers, cooling equipment and generators without paying sales tax. About 90 percent of the industry uses it, and it saved companies $928 million in fiscal year 2023. Companies told auditors the break matters when they choose where to build, and it is set to expire in 2035. This is one state’s figure, and it shows money the state did not collect, not a bill paid by residents.",
+            "linkText": "December 2024 audit",
+            "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+            "icon": "🏷️",
+            "tag": "Tax breaks too"
           },
           {
             "label": "Fact: From 2019 to 2024, US states where electricity demand grew fastest saw average power prices fall after inflation, not rise.",
             "text": "It sounds backward, and the researchers were careful about what it means. A Berkeley Lab analysis, reported by the American Public Power Association, found that states with the fastest-growing demand saw real prices drop, while states with shrinking demand mostly saw them rise. But the link was not clear for household prices alone, it covered all kinds of demand growth, not just data centers, and the researchers said it may not hold for the much larger growth ahead.",
             "linkText": "Berkeley Lab analysis",
-            "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report"
+            "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report",
+            "icon": "📉",
+            "tag": "Prices fell, so far"
           },
           {
             "label": "Fact: A plan for a giant data center campus next to Manassas National Battlefield Park in Virginia was blocked in court after local lawsuits.",
             "text": "In December 2023, Prince William County approved rezoning for the Digital Gateway, once poised to be the largest data center campus in the world. A homeowners’ association and the American Battlefield Trust challenged it in court. A judge voided the rezoning because of improper public notice before the county’s hearing, and a state appeals court upheld that ruling. In April 2026, one of the developers dropped its appeal, and the land may never see a single facility built.",
             "linkText": "dropped its appeal",
-            "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html"
+            "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
+            "icon": "⚖️",
+            "tag": "Blocked in court"
           },
           {
             "label": "Fact: In July 2026, New York paused new state permits for the very largest data centers for up to a year while officials review them.",
             "text": "Governor Kathy Hochul signed an executive order that her office called the nation’s first moratorium on new hyperscale data centers, the very largest kind. New York’s environmental agency will not issue discretionary permits for new projects unless their applications were already complete. The pause lasts up to a year while a review is carried out. Projects with complete applications can still get permits, so it slows new building rather than banning every data center in the state.",
             "linkText": "an executive order",
-            "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/"
+            "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/",
+            "icon": "⏸️",
+            "tag": "New York pause"
           }
         ],
         "quiz": [
@@ -2849,31 +2933,49 @@
             "label": "Fact: In a 2022 interview, Midjourney’s founder said the company did not ask living artists for permission before training its AI on their images.",
             "text": "In a 2022 Forbes interview with Midjourney’s founder, David Holz was asked whether Midjourney sought consent from living artists or from owners of work still under copyright. He answered, “No.” He said there isn’t really a way to gather a hundred million images and know where each one came from, because there’s no registry that links a picture online to its owner. He added that the company was “looking at” ways to let artists opt out.",
             "linkText": "Forbes interview with Midjourney’s founder",
-            "url": "https://www.forbes.com/sites/robsalkowitz/2022/09/16/midjourney-founder-david-holz-on-the-impact-of-ai-on-art-imagination-and-the-creative-economy/"
+            "url": "https://www.forbes.com/sites/robsalkowitz/2022/09/16/midjourney-founder-david-holz-on-the-impact-of-ai-on-art-imagination-and-the-creative-economy/",
+            "icon": "🎨",
+            "tag": "No artist consent"
           },
           {
             "label": "Fact: Building an AI model usually means copying creative works several times, which is a separate step from anything the finished model later produces.",
             "text": "The US Copyright Office report Copyright and Artificial Intelligence, Part 3 (a May 2025 pre-publication version) describes where copying happens. Companies download works from the web, move them between storage systems, and briefly copy them again while “showing” them to the model during training. Separately, the report says AI models sometimes produce results that closely resemble copyrighted works, and that those results likely violate the owner’s right to control copies. Each step raises its own legal question.",
             "linkText": "Copyright and Artificial Intelligence, Part 3",
-            "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf"
+            "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
+            "icon": "📋",
+            "tag": "Copies in training"
           },
           {
             "label": "Fact: In the US, an artist’s original work is protected by copyright from the moment it is created, even if it is never registered.",
             "text": "Copyright is the set of legal rights that lets creators control who copies and shares their work. The US Copyright Office’s Copyright in General FAQ says a work is protected “the moment it is created and fixed in a tangible form,” meaning saved in some lasting way. Registering with the Office is voluntary. It mainly helps in court: if the owner wins a lawsuit, a registered work may qualify for set money awards, called statutory damages, plus lawyers’ fees.",
             "linkText": "Copyright in General FAQ",
-            "url": "https://www.copyright.gov/help/faq/faq-general.html"
+            "url": "https://www.copyright.gov/help/faq/faq-general.html",
+            "icon": "©️",
+            "tag": "Automatic copyright"
+          },
+          {
+            "label": "Fact: A US appeals court ruled in 2025 that art made entirely by an AI system, with no human author, can’t be copyrighted.",
+            "text": "In March 2025, a federal appeals court in Washington, DC, ruled in Thaler v. Perlmutter that US copyright law “requires all eligible work to be authored in the first instance by a human being.” Computer scientist Stephen Thaler had tried to register a picture his AI system made on its own. The court said people who use AI as a tool can still own their work, but it didn’t decide how much AI help is too much. The Supreme Court declined to hear an appeal in March 2026.",
+            "linkText": "Thaler v. Perlmutter",
+            "url": "https://media.cadc.uscourts.gov/opinions/docs/2025/03/23-5233.pdf",
+            "icon": "👤",
+            "tag": "Human authors only"
           },
           {
             "label": "Fact: One study found that job posts for image-making work fell about 17% on one global freelance website after AI image tools appeared.",
             "text": "Economists Ozge Demirci, Jonas Hannane and Xinrong Zhu studied job posts from July 2021 to July 2023 on one large global freelance website, which they did not name. Their August 2024 working paper, “Who Is AI Replacing? The Impact of Generative AI on Online Freelancing Platforms,” estimated that posts for graphic design and 3D modeling fell 17.01% after AI image generators arrived, compared with hands-on jobs. It measures posts on one site, not total US jobs, pay, or copying.",
             "linkText": "Who Is AI Replacing? The Impact of Generative AI on Online Freelancing Platforms",
-            "url": "https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf"
+            "url": "https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf",
+            "icon": "📉",
+            "tag": "Fewer design gigs"
           },
           {
             "label": "Fact: Anthropic agreed to pay $1.5 billion to settle book authors’ claims over pirated copies, but the deal left claims about AI outputs open.",
             "text": "In July 2026, a federal judge in California gave final approval to a settlement in Bartz v. Anthropic, a lawsuit by book authors. The court’s Order Granting Final Approval of Class Action Settlement describes a $1.5 billion fund covering 482,460 books that Anthropic downloaded from two pirate websites, worth about $3,000 per book before costs and fees. Authors did not give up claims about past AI outputs or future conduct. A settlement is a deal, not a court finding of wrongdoing.",
             "linkText": "Order Granting Final Approval of Class Action Settlement",
-            "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680"
+            "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680",
+            "icon": "⚖️",
+            "tag": "$1.5B settlement"
           }
         ],
         "quiz": [
@@ -3322,31 +3424,49 @@
             "label": "Fact: Turning off ChatGPT’s training setting doesn’t delete or hide the chats already saved in your personal account.",
             "text": "Switching off “Improve the model for everyone” only affects whether your chats can be used for training. Your regular, archived and project chats all stay saved where they are. To remove content, you need to delete the chat or your whole account as a separate step. Memory, the feature that lets ChatGPT personalize its answers, also has its own separate setting, according to OpenAI’s Data controls in ChatGPT help page.",
             "linkText": "Data controls in ChatGPT",
-            "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt"
+            "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
+            "icon": "🔒",
+            "tag": "Training vs. storage"
           },
           {
             "label": "Fact: OpenAI says chats you delete are erased from its systems within 30 days, though some can be kept for security or legal reasons.",
             "text": "You can delete ChatGPT chats one at a time or all at once. OpenAI says deleted chats are removed from its systems within 30 days. There are two exceptions: chats that were already stripped of identifying details and separated from your account, and chats the company has to keep for security or legal reasons. The rule is spelled out on OpenAI’s How OpenAI handles data in consumer services page.",
             "linkText": "How OpenAI handles data in consumer services",
-            "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services"
+            "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
+            "icon": "🗑️",
+            "tag": "30-day deletion"
           },
           {
             "label": "Fact: ChatGPT’s Temporary Chat isn’t used for training while it stays temporary, but OpenAI may keep a copy for up to 30 days.",
             "text": "Temporary Chat is a mode for one-off conversations. These chats stay out of your chat history and don’t create or update memories. OpenAI says they aren’t used to improve its models while they remain temporary, but it may keep a copy for up to 30 days for safety purposes. If you choose to save a temporary chat, it turns into a regular chat, according to OpenAI’s Temporary chat in ChatGPT help page.",
             "linkText": "Temporary chat in ChatGPT",
-            "url": "https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt"
+            "url": "https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt",
+            "icon": "⏳",
+            "tag": "Temporary Chat"
           },
           {
             "label": "Fact: If you share a ChatGPT chat by link from a personal account, anyone who has that link can read it.",
             "text": "Sharing is a choice you make, not something that happens on its own. OpenAI says anyone with a personal-account link can view the shared chat, and links can be forwarded. The link shows the chat as it was when you shared it, so later messages aren’t added. You can delete links in Settings under Data controls, but that won’t remove copies people already saved, per OpenAI’s Sharing conversations and scheduled tasks in ChatGPT page.",
             "linkText": "Sharing conversations and scheduled tasks in ChatGPT",
-            "url": "https://help.openai.com/en/articles/7925741-sharing-conversations-and-scheduled-tasks-in-chatgpt"
+            "url": "https://help.openai.com/en/articles/7925741-sharing-conversations-and-scheduled-tasks-in-chatgpt",
+            "icon": "🔗",
+            "tag": "Shared links"
+          },
+          {
+            "label": "Fact: OpenAI says it handed chat content to police or other government agencies in 62 cases in the second half of 2025, in answer to legal demands such as search warrants.",
+            "text": "OpenAI’s own Government Requests for User Data report for July to December 2025 counts legal demands from police and other government agencies. It received 75 requests for chat content, typically search warrants, and handed over content in 62 cases, covering 84 accounts. It also got 224 requests, often subpoenas, for account details like names and payment records, and disclosed data in 146. The numbers come from OpenAI itself, not an outside audit, and US national security requests are reported only as a broad range.",
+            "linkText": "Government Requests for User Data report",
+            "url": "https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf",
+            "icon": "👮",
+            "tag": "Police data requests"
           },
           {
             "label": "Fact: California’s privacy law gives residents the right to know, delete and correct personal information that businesses have collected about them.",
             "text": "Under the California Consumer Privacy Act, Californians can ask businesses what personal information they’ve collected and how it’s used and shared. They can ask for it to be deleted, with some exceptions, and for wrong information to be corrected. They can also opt out of the sale of their information and limit how sensitive details are used, and businesses can’t treat them worse for doing so. The state lists these on its Rights under the California Consumer Privacy Act page.",
             "linkText": "Rights under the California Consumer Privacy Act",
-            "url": "https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/"
+            "url": "https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/",
+            "icon": "🏛️",
+            "tag": "California rights"
           }
         ],
         "quiz": [
