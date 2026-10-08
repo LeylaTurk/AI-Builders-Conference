@@ -15,7 +15,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Decision | What it means on the page |
 |---|---|
 | "AI art is theft" is 3/5 | Leyla: artists didn't consent to training. With that point the scope check passes, and "theft" counts as a loaded crime word instead. Score 3/5 (Turning it up). |
-| Section renamed **The facts behind the claim** | Was "The facts behind the headline". Water's "where the number comes from" line moved into its facts as "Fact: The “bottle” number comes from a 2023 study.", with the study title linked. |
+| Section renamed **The facts behind the claim** | Was "The facts behind the headline". Water's "where the number comes from" line moved into its facts as "Fact: The “bottle of water” figure comes from a 2023 study that estimated one bottle for every 10 to 50 AI answers, not one per question.", with the study title linked. |
 | **Why this score** | A small heading above the sentence that explains each headline's score. |
 | Source line links to the source | In "Claim tracked from…", the article or book title itself is the link (no separate "See the source"). "Tracked from" means a real published example, not necessarily the first time anyone said it. Where we found and checked an earlier source, a second line shows it: existential risk (Yudkowsky's March 2023 TIME essay). Water's earlier source (the April 2023 study) is now one of its facts. |
 | Energy headline | "AI will make climate change worse." Tracked from Juan Cole's December 2025 Nation article "AI Will Only Intensify Climate Change…". Without "only" it no longer rules out climate benefits, so it scores 2/5 (A little spicy); "will" still overstates certainty. The Nation's original wording stays on the dial at 4/5. |
