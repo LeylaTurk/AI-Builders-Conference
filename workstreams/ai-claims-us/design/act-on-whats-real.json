@@ -1,0 +1,275 @@
+{
+ "water": {
+  "intro": "One AI answer doesn’t use up a whole bottle of water. The real concern is local: big data centers can strain water supplies in some dry towns, especially on the hottest days. Here’s how to act on that.",
+  "learn": [
+   {
+    "title": "Find out where your water comes from",
+    "text": "Your yearly water quality report names the river, lake or aquifer your water comes from, plus a phone number for your water system.",
+    "linkText": "See EPA’s guide →",
+    "url": "https://www.epa.gov/ccr/ccr-information-consumers"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Contact your state lawmakers",
+    "text": "Tell your state legislators what you think about data centers and water, whichever side you’re on.",
+    "linkText": "Find your elected officials →",
+    "url": "https://www.usa.gov/elected-officials"
+   },
+   {
+    "title": "Comment on a draft water permit",
+    "text": "When a facility applies for a permit to release wastewater, the public must be told and allowed to comment. Watch your local paper for notices.",
+    "linkText": "Learn how permits work →",
+    "url": "https://www.epa.gov/npdes/npdes-permit-basics"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Go to your city council meeting",
+    "text": "Ask your city or county when a data center plan will be voted on and how much water it would need, then speak during public comment.",
+    "linkText": "Find your local government →",
+    "url": "https://www.usa.gov/local-governments"
+   },
+   {
+    "title": "Team up with your neighbors",
+    "text": "Gather neighbors to study a proposal and comment together. In Tucson, over a thousand residents weighed in before the city set data center water rules.",
+    "linkText": "See what Tucson decided →",
+    "url": "https://www.kold.com/2026/08/06/tucson-city-council-adopts-data-center-regulations-6-1-vote/"
+   }
+  ]
+ },
+ "jobs": {
+  "intro": "No one knows if AI will take every job, and so far there’s no clear sign of widespread job loss in the US. The real concerns are fewer entry-level openings in some fields and how work is changing. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Learn what AI job ratings mean",
+    "text": "The Bureau of Labor Statistics explains how it rates the overlap between AI and each job’s tasks, and why a high rating doesn’t mean a job will vanish.",
+    "linkText": "Read the BLS explainer →",
+    "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Contact your members of Congress",
+    "text": "Congress funds job training and sets national work rules. Tell your US representative and senators what you think about AI and jobs, whichever side you’re on.",
+    "linkText": "Find your elected officials →",
+    "url": "https://www.usa.gov/elected-officials"
+   },
+   {
+    "title": "Raise AI questions with coworkers",
+    "text": "Federal law protects many workers who talk with coworkers about pay and working conditions. You can bring questions about AI changes to your employer together.",
+    "linkText": "Know your rights at work →",
+    "url": "https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/employees/concerted-activity"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Weigh in with your workforce board",
+    "text": "Ask your local workforce board how it’s preparing workers for AI and how the public can give input.",
+    "linkText": "Find your local board →",
+    "url": "https://www.careeronestop.org/LocalHelp/WorkforceDevelopment/find-workforce-development-boards.aspx"
+   },
+   {
+    "title": "Help someone find free job help",
+    "text": "American Job Centers offer free help with job searches and training. Go yourself, or bring a friend or neighbor who has lost work.",
+    "linkText": "Find a center near you →",
+    "url": "https://cloudfront.careeronestop.org/LocalHelp/AmericanJobCenters/find-american-job-centers.aspx"
+   }
+  ]
+ },
+ "xrisk": {
+  "intro": "Nobody has shown that AI will wipe out humanity, and nobody has shown it can’t. The real questions are how the most powerful AI systems get tested and who oversees them. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Read the international expert report",
+    "text": "More than 100 experts from over 30 countries laid out what today’s AI can do and where they still disagree about serious risks.",
+    "linkText": "Read the 2026 report →",
+    "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Contact your members of Congress",
+    "text": "Ask what they plan to do about testing and oversight of the most powerful AI. Share your view, whichever side you’re on.",
+    "linkText": "Find your representative →",
+    "url": "https://www.house.gov/representatives/find-your-representative"
+   },
+   {
+    "title": "Weigh in on state AI rules",
+    "text": "California now requires the biggest makers of advanced AI to publish safety plans. Ask your own state lawmakers where they stand and tell them what you think.",
+    "linkText": "Find your state lawmakers →",
+    "url": "https://www.usa.gov/elected-officials"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Go to a town hall meeting",
+    "text": "Check your representative’s website for town halls or local office hours. Go with neighbors and ask how they would handle risks from powerful AI.",
+    "linkText": "Find your representative’s website →",
+    "url": "https://www.house.gov/representatives"
+   },
+   {
+    "title": "Ask questions at work or school",
+    "text": "Team up with coworkers or parents and use NIST’s voluntary AI risk guide to ask who approves AI tools and who fixes problems.",
+    "linkText": "See NIST’s AI guide →",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+   }
+  ]
+ },
+ "energy": {
+  "intro": "AI won’t necessarily make climate change worse, but its growing power use can raise emissions where the grid still runs on gas or coal. The real questions are what power gets built and who pays. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Check how your area makes power",
+    "text": "Enter your ZIP code in EPA’s Power Profiler to compare emissions from your local power plants with the national average.",
+    "linkText": "Try the Power Profiler →",
+    "url": "https://www.epa.gov/egrid/power-profiler"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Comment on your utility’s plans",
+    "text": "State utility commissions review plans for new power plants and set rates. Ask yours for the case number on data center demand, then file a comment.",
+    "linkText": "Find your state commission →",
+    "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/"
+   },
+   {
+    "title": "Get help with federal energy cases",
+    "text": "FERC’s Office of Public Participation helps people find filings and deadlines and explains how to comment on federal power matters.",
+    "linkText": "Visit FERC’s public office →",
+    "url": "https://www.ferc.gov/OPP"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Show up at the local hearing",
+    "text": "Ask your city or county when it will vote on a data center or new power plant, then speak during public comment, whichever side you’re on.",
+    "linkText": "Find your local government →",
+    "url": "https://www.usa.gov/local-governments"
+   },
+   {
+    "title": "Join a community solar project",
+    "text": "Community solar lets neighbors, including renters, share power from one solar array and get credit on their bills. Ask your utility what’s offered.",
+    "linkText": "Learn how it works →",
+    "url": "https://www.energy.gov/eere/solar/community-solar-basics"
+   }
+  ]
+ },
+ "datacenters": {
+  "intro": "Data centers aren’t destroying whole towns. The real questions are who pays for the power, how much noise neighbors live with, and whether the tax breaks are worth it. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Read the most detailed official study",
+    "text": "Virginia’s 2024 state audit looked at power bills, noise, water and tax breaks.",
+    "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+    "linkText": "Read the audit summary →"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Contact your state lawmakers",
+    "text": "States decide data center tax breaks and power rules. Tell your state legislators what you think, whichever side you’re on.",
+    "url": "https://www.usa.gov/elected-officials",
+    "linkText": "Find your elected officials →"
+   },
+   {
+    "title": "Ask your utility commission who pays",
+    "text": "Ask whether large data centers cover the cost of the new power lines and plants built for them.",
+    "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/",
+    "linkText": "Find your state commission →"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Show up at the hearing",
+    "text": "Ask your county or city planning office for the site plan and the date of the zoning vote, then speak during public comment.",
+    "url": "https://www.usa.gov/local-governments",
+    "linkText": "Find your local government →"
+   },
+   {
+    "title": "Team up with neighbors",
+    "text": "Start a petition or local group, or organize a peaceful gathering. Towns in Missouri and Kansas have done it.",
+    "url": "https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas",
+    "linkText": "See how they organized →"
+   }
+  ]
+ },
+ "creativity": {
+  "intro": "Calling AI art “theft” goes further than the facts, and US courts haven’t settled whether training on others’ work is legal. The real questions are whether creators should be asked and paid, and how to protect your own work. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Read the official AI copyright reports",
+    "text": "The US Copyright Office studied AI training, digital copies of real people, and whether AI-made work can be copyrighted in a three-part series.",
+    "linkText": "See the AI reports →",
+    "url": "https://www.copyright.gov/ai/index.html"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Tell Congress what you think",
+    "text": "Congress writes copyright law, including any rules on AI training, consent or pay. Contact your US senators and representative, whichever side you’re on.",
+    "linkText": "Find your elected officials →",
+    "url": "https://www.usa.gov/elected-officials"
+   },
+   {
+    "title": "File a low-cost copyright claim",
+    "text": "If a specific work of yours was copied, this federal board is a cheaper option than court. Awards are capped at $30,000, and the other side can opt out.",
+    "linkText": "See how claims work →",
+    "url": "https://www.ccb.gov/claimant/"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Register the work you care about",
+    "text": "You own the copyright as soon as you make something, but you must register a US work before you can sue anyone over it.",
+    "linkText": "Read the registration basics →",
+    "url": "https://www.copyright.gov/help/faq/faq-general.html"
+   },
+   {
+    "title": "Team up with other creators",
+    "text": "Join or start a group of artists to share what you learn and act together. Three artists joined forces to take their concerns to court.",
+    "linkText": "See how they organized →",
+    "url": "https://learningenglish.voanews.com/a/artists-fight-back-against-ai-using-their-work/7253853.html"
+   }
+  ]
+ },
+ "privacy": {
+  "intro": "ChatGPT isn’t posting your chats for other people to read. The real issues are whether your chats help train the AI, who at the company can see them, and that no outside audit checks the rules. Here’s how to act on those.",
+  "learn": [
+   {
+    "title": "Read OpenAI’s own data rules",
+    "text": "OpenAI’s help page explains who can look at your chats and why, how deleting works, and what it asks you not to share.",
+    "linkText": "See how chats are handled →",
+    "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services"
+   }
+  ],
+  "speakUp": [
+   {
+    "title": "Tell lawmakers what privacy you expect",
+    "text": "Congress and state legislatures decide what privacy rights you have with tech companies. Tell your lawmakers what you think, whichever side you’re on.",
+    "linkText": "Find your elected officials →",
+    "url": "https://www.usa.gov/elected-officials"
+   },
+   {
+    "title": "Use your privacy rights",
+    "text": "If you live in California, you can ask a company what personal data it has about you and ask it to delete that data.",
+    "linkText": "Make a privacy request →",
+    "url": "https://privacy.ca.gov/tips/submit-a-privacy-request/"
+   }
+  ],
+  "takeAction": [
+   {
+    "title": "Turn off training in your settings",
+    "text": "In ChatGPT, open Settings, then Data controls, and switch off “Improve the model for everyone.” Thumbs-up or thumbs-down feedback can still be used.",
+    "linkText": "Read the opt-out steps →",
+    "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"
+   },
+   {
+    "title": "Ask for clear rules at work",
+    "text": "Team up with coworkers, or other parents at your school, to ask which AI accounts are approved and who can read those chats. On business accounts, admins may see them.",
+    "linkText": "See how business accounts work →",
+    "url": "https://openai.com/enterprise-privacy/"
+   }
+  ]
+ }
+}
