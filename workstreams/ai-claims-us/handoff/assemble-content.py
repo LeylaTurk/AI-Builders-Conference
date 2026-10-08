@@ -59,6 +59,8 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
     if not 3 <= len(layer['finePrint']) <= 5 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 3–5 fine-print items and 3 quiz items')
+    if not layer.get('headlineSourceUrl', '').startswith('https://') or layer['headlineSourceUrl'] not in head['occurrence_urls']:
+        raise ValueError(f'{slug}: headlineSourceUrl must be one of the headline record occurrence URLs')
     if any(not f['label'].startswith('Fact: ') for f in layer['finePrint']):
         raise ValueError(f'{slug}: each fact label must start with "Fact: "')
     if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):

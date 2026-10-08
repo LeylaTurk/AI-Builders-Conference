@@ -149,7 +149,13 @@
       "carefulHeadline": "AI data centers threaten water supplies in some dry US towns.",
       "carefulScoreReason": "The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.",
       "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query.”",
-      "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water."
+      "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water.",
+      "headlineSourceUrl": "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies",
+      "earlierSource": {
+        "label": "Where the number comes from",
+        "text": "The “bottle of water” figure started with an April 2023 study by Pengfei Li, Shaolei Ren and colleagues, which estimated about half a liter of water for every 10 to 50 answers from GPT-3, the model behind early ChatGPT. Later headlines shortened that to every question.",
+        "url": "https://arxiv.org/abs/2304.03271"
+      }
     },
     "jobs": {
       "headline": "AI will take all our jobs.",
@@ -298,7 +304,8 @@
       "carefulHeadline": "AI could eliminate half of US entry-level office jobs by about 2030.",
       "carefulScoreReason": "The more careful version says “could”, and it's an expert's educated guess about the future, though nobody has been able to test the half-of-jobs number yet.",
       "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
-      "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic."
+      "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic.",
+      "headlineSourceUrl": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/"
     },
     "energy-climate": {
       "headline": "AI will make climate change worse.",
@@ -446,7 +453,8 @@
       "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
       "carefulScoreReason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
       "headlineSource": "Claim tracked from historian Juan Cole, who made it in a December 2025 article in The Nation headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”",
-      "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact."
+      "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact.",
+      "headlineSourceUrl": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
     },
     "creativity": {
       "headline": "AI art is theft.",
@@ -595,7 +603,8 @@
       "carefulHeadline": "AI can reproduce copyrighted work from its training data.",
       "carefulScoreReason": "The more careful version says “can”, and experiments have shown that it happens.",
       "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper.",
-      "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on."
+      "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on.",
+      "headlineSourceUrl": "https://arxiv.org/abs/2401.06178v2"
     },
     "privacy": {
       "headline": "ChatGPT is sharing your secrets.",
@@ -765,7 +774,8 @@
       "carefulHeadline": "ChatGPT may use your personal-account chats to train its AI, depending on your settings.",
       "carefulScoreReason": "The more careful version says “may” and “depending on your settings”, which matches what OpenAI's own policy says.",
       "headlineSource": "Claim tracked from Tom's Guide, a tech advice website, which made it in an April 2023 headline.",
-      "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide."
+      "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide.",
+      "headlineSourceUrl": "https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting"
     },
     "existential-risk": {
       "headline": "AI will kill us all.",
@@ -914,7 +924,13 @@
       "carefulHeadline": "Building superintelligent AI with 2025-era methods will kill everyone on Earth.",
       "carefulScoreReason": "The more careful version keeps the authors' condition, but “will” still sounds surer than the evidence allows.",
       "headlineSource": "Claim tracked from AI-risk researchers Eliezer Yudkowsky and Nate Soares, who made it in the title of their 2025 book, “If Anyone Builds It, Everyone Dies.”",
-      "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods."
+      "carefulSource": "Our wording of the full argument in Yudkowsky and Soares's book, which applies it to AI built with today's methods.",
+      "headlineSourceUrl": "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/",
+      "earlierSource": {
+        "label": "An earlier version",
+        "text": "Before the book, Yudkowsky wrote in TIME in March 2023 that if anyone builds superhumanly smart AI under current conditions, “literally everyone on Earth will die.”",
+        "url": "https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/"
+      }
     }
   }
 }
