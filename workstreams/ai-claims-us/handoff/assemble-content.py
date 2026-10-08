@@ -7,8 +7,8 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SLUGS = ['water', 'jobs', 'existential-risk', 'energy-climate', 'creativity', 'privacy']
-NAMES = ['Water', 'Jobs', 'Existential risk', 'Energy and climate', 'Creativity', 'Privacy']
+SLUGS = ['water', 'jobs', 'existential-risk', 'energy-climate', 'data-centers', 'creativity', 'privacy']
+NAMES = ['Water', 'Jobs', 'Existential risk', 'Energy and climate', 'Data centers', 'Creativity', 'Privacy']
 FIELDS = dict(zip('ABCDEFG', ['claimContextMarkdown', 'shortAnswerMarkdown',
     'meaningMarkdown', 'evidenceMarkdown', 'scoreExplanationMarkdown',
     'actionsMarkdown', 'sourcesAndReviewMarkdown']))
@@ -189,7 +189,7 @@ def main():
         'topics': topics, 'sourceFileSha256': hashes,
     }
     (ROOT/'handoff/claims-content.json').write_text(json.dumps(content, ensure_ascii=False, indent=2)+'\n')
-    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the six explainer files; upload claims-content.json with the Lovable prompt.\n\n'
+    companion = '# Exact website copy: Claim Tracker\n\nThis readable companion preserves the seven explainer files; upload claims-content.json with the Lovable prompt.\n\n'
     companion += '\n\n---\n\n'.join(t['websiteCopyMarkdown'].strip() for t in topics)+'\n'
     (ROOT/'handoff/claims-content.md').write_text(companion)
     (ROOT/'review/package-validation.json').write_text(json.dumps({'topics': validations, 'sourceFileSha256': hashes}, indent=2)+'\n')

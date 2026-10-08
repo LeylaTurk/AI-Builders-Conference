@@ -1,0 +1,97 @@
+{
+  "rubric_version": "claims-us-1.2",
+  "claim": "Large data centers can bring real local costs, such as constant noise near homes, pressure on regional power bills and costly state tax breaks for few permanent jobs, while some host communities also gain large local tax revenue.",
+  "scope": "Large US data-center sites and the communities, counties, utility regions and states that host them; site-specific and uneven effects, not every data center or every community. Water use and climate emissions are covered on separate pages.",
+  "time_horizon": "Current and planned data centers; no deadline or certain outcome asserted.",
+  "occurrence_urls": [
+    "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "can bring real local costs",
+      "reason": "Each named cost is documented in inspected sources: a state audit reports constant noise affecting nearby residents’ well-being, the PJM market monitor names data-center load as the primary reason for higher capacity prices that consumers ultimately pay, and state audits put sales-tax exemptions in the hundreds of millions of dollars a year. “Can” presents these as documented possibilities, not as measured net harm.",
+      "sources": [
+        {
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+          "locator": "Summary pp. viii (noise), viii (sales tax exemption $928 million FY23), i (about 50 full-time workers)",
+          "evidence_row_id": "D01"
+        },
+        {
+          "url": "https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780",
+          "locator": "Paragraphs on $7.3 billion (82%), $16.6 billion and “primary reason”",
+          "evidence_row_id": "D03"
+        },
+        {
+          "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf",
+          "locator": "Summary: forgone state tax revenue of $474.2 million in FY 2025",
+          "evidence_row_id": "D10"
+        }
+      ]
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "Large data centers … some host communities",
+      "reason": "Limited to large sites and to “some” host communities; it does not say every community loses or gains. “Regional” power bills fits the PJM evidence, and “some” communities gaining large revenue fits JLARC’s range of under 1% to 31% of local revenue and Loudoun County’s 38% of General Fund revenue.",
+      "sources": [
+        {
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+          "locator": "Summary pp. i–ii, local revenue range in five localities",
+          "evidence_row_id": "D01"
+        },
+        {
+          "url": "https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html",
+          "locator": "Paragraph: “Data centers now generate 38% of the county’s General Fund revenue”",
+          "evidence_row_id": "D09"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "Y",
+      "claim_phrase": "can bring",
+      "reason": "States possibilities with an evidenced basis rather than a certain outcome. Outcomes depend on siting, zoning and utility cost rules such as Virginia’s new GS-5 rate class; the pressure on bills is a documented pathway, and historical research found load growth did not always raise prices.",
+      "sources": [
+        {
+          "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
+          "locator": "Ordering paragraphs establishing Rate Schedule GS-5, effective January 1, 2027",
+          "evidence_row_id": "D05"
+        },
+        {
+          "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report",
+          "locator": "Paragraphs on 2019–2024 findings and “Whether these historical relationships extend…”",
+          "evidence_row_id": "D06"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "Y",
+      "claim_phrase": "real local costs",
+      "reason": "Plain description of documented costs balanced by documented revenue; no added emotional or dismissive force.",
+      "sources": [
+        {
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+          "locator": "Summary pp. i–ii and viii",
+          "evidence_row_id": "D01"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "Large data centers",
+      "reason": "Describes physical facilities and the costs and revenue they bring; no human-like intention is attributed to AI or to buildings.",
+      "sources": []
+    }
+  },
+  "evidence_limitations": [
+    "Most detailed official evidence comes from Virginia, the largest US data-center market; other states and smaller sites may differ.",
+    "Future household bill increases are modeled projections (JLARC: $14–$37 a month by 2040 in Dominion territory), not measured bill changes.",
+    "Research on whether load growth raises or lowers prices is mixed: it lowered average prices through 2024, the link was not significant for residential prices, and it may not hold for future growth.",
+    "Whether new rate classes such as Virginia’s GS-5 (effective January 1, 2027) will protect other customers is not yet known.",
+    "Backup-generator health-cost estimates come from a modeled preprint; the larger figure assumes maximum permitted emissions, while JLARC finds generators run mostly for maintenance.",
+    "Data-center tax revenue is uneven: from under 1% to 31% of total local revenue in five mature Virginia localities; Loudoun County is an extreme case.",
+    "No inspected source measures the overall net effect of a data center on a whole community, and no inspected source documents a host community being destroyed.",
+    "The primary PJM market-monitor report, Virginia’s Annual Comprehensive Financial Report, New York’s executive order text and the full JLARC report were not opened; only the summaries or news reports listed in the brief were used."
+  ],
+  "research_cutoff": "2026-10-08",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

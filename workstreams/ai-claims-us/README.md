@@ -4,13 +4,14 @@ For Decoding the Hype. US adult audience; American English. Research cutoff: **O
 
 **Every decision Leyla has made is in [DECISIONS.md](DECISIONS.md).** Start there, then the original [decision summary](02-decision-summary.md). **October 6 review:** see [Leyla's review](review/leyla-review-2026-10-06.md) and the [proposal for statement headlines and interactive layers](proposals/statements-and-interactive.md) before building. To implement later, upload [claims-content.json](handoff/claims-content.json) to Lovable and paste the [Lovable prompt](handoff/lovable-prompt.md) in the same message. The prompt and attachment are self-contained; Lovable does not need this conversation or other local files.
 
-## Six research briefs and website explainers
+## Seven research briefs and website explainers
 
 | Topic | Research, evidence table and limitations | Concise website copy | Reproducible scoring input |
 |---|---|---|---|
 | Water | [Brief](research/water.md) | [Explainer](explainers/water.md) | [JSON](research/water-score.json) |
 | Jobs | [Brief](research/jobs.md) | [Explainer](explainers/jobs.md) | [JSON](research/jobs-score.json) |
 | Energy and climate | [Brief](research/energy-climate.md) | [Explainer](explainers/energy-climate.md) | [JSON](research/energy-climate-score.json) |
+| Data centers | [Brief](research/data-centers.md) | [Explainer](explainers/data-centers.md) | [JSON](research/data-centers-score.json) |
 | Creativity | [Brief](research/creativity.md) | [Explainer](explainers/creativity.md) | [JSON](research/creativity-score.json) |
 | Privacy | [Brief](research/privacy.md) | [Explainer](explainers/privacy.md) | [JSON](research/privacy-score.json) |
 | Existential risk | [Brief](research/existential-risk.md) | [Explainer](explainers/existential-risk.md) | [JSON](research/existential-risk-score.json) |

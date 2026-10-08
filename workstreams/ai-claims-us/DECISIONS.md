@@ -10,6 +10,12 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 - **Article text stays private.** Full article text and checklist quotes live in the private repo `ai-news-articles` (`claims-cards/ratings/`), never in this public repo.
 - **Claim Tracker names this section only.** The site stays **Decoding the Hype**, with its own logo and tagline ("Be on top of the news and under the hype").
 
+## October 8, 2026
+
+| Decision | What it means on the page |
+|---|---|
+| New claim: **Data centers** | "Data centers will destroy our community." Tracked from Gina Mangham of Renew DeKalb in a November 2025 CBS News Atlanta story. Scores 3/5 (Turning it up): "will" states as certain something that depends on local votes and utility rules, and "destroy" turns real but limited costs into ruin. Careful version 1/5. Route `/claims/data-centers`, placed after Energy and climate. Water and climate stay on their own pages. Seven claims in all. |
+
 ## October 7, 2026
 
 | Decision | What it means on the page |
@@ -22,7 +28,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | Source line links to the source | In "Claim tracked from…", the article or book title itself is the link (no separate "See the source"). "Tracked from" means a real published example, not necessarily the first time anyone said it. Where we found and checked an earlier source, a second line shows it: existential risk (Yudkowsky's March 2023 TIME essay). Water's earlier source (the April 2023 study) is now one of its facts. |
 | Energy headline | "AI will make climate change worse." Tracked from Juan Cole's December 2025 Nation article "AI Will Only Intensify Climate Change…". Without "only" it no longer rules out climate benefits, so it scores 2/5 (A little spicy); "will" still overstates certainty. The Nation's original wording stays on the dial at 4/5. |
 | Fine print becomes **The facts behind the headline** | Each item is a dropdown whose label starts "Fact:", for example "Fact: Not all data centers are used for AI." Every fact and every true/false answer rewritten in plain English, re-checked against the sources, with more context in each answer. Water adds Google's own estimate (about five drops per Gemini question, August 2025). |
-| Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. |
+| Topic order | Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. (Data centers added after Energy and climate on Oct 8.) |
 | Certain-doom rule (rubric claims-us-1.2) | A loud claim that says, as certain, that everyone will die scores 5/5. Chosen on a decision card over a one-off override. "AI will kill us all" is now 5/5 (Off the charts); its careful version stays 2/5. On its dial, the headline sits at level 5 and a new example fills level 4. |
 | Source line says "Claim tracked from…" | Under each headline: "Claim tracked from [who], who made it in [where, when]…". No "Our short version of…". Where the headline is shorter than the original, the original is quoted. |
 | No review labels in the Claim Tracker | "AI rating, not yet reviewed" and "Reviewed by Leyla" don't appear on claim pages or article cards. The data is kept; the feed keeps its labels. |

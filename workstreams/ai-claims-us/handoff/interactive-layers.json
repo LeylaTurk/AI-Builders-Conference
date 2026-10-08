@@ -484,6 +484,167 @@
       "headlineSourceUrl": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/",
       "headlineSourceLinkText": "AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care."
     },
+    "data-centers": {
+      "headline": "Data centers will destroy our community.",
+      "keyWord": {
+        "word": "destroy",
+        "explanation": "The evidence shows real local costs, like noise and pressure on power bills, but also big tax revenue in some places. No source we checked shows a host community destroyed."
+      },
+      "scoreReason": "The headline states as certain something that depends on local votes and utility rules, and “destroy” turns real but limited costs into total ruin.",
+      "claimDial": [
+        {
+          "text": "Big data centers can bring real local costs, but some towns also gain tax money.",
+          "scoredAs": "careful",
+          "origin": "careful version",
+          "level": 1
+        },
+        {
+          "text": "Big data centers can bring a nightmare of noise and power costs to some neighborhoods.",
+          "scoredAs": "example",
+          "level": 2,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P3": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Nightmare” adds drama the evidence doesn’t need."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "Data centers will destroy our community.",
+          "scoredAs": "headline",
+          "origin": "headline claim",
+          "level": 3
+        },
+        {
+          "text": "Data centers will raise everyone’s power bills.",
+          "scoredAs": "example",
+          "level": 4,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Bill effects vary by region and utility; Virginia’s audit found data centers there currently pay their full cost of service."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing; it depends on demand, new rate rules and how the grid grows."
+            },
+            "W1": {
+              "answer": "Y",
+              "reason": "Met."
+            },
+            "W2": {
+              "answer": "Y",
+              "reason": "Met."
+            }
+          }
+        },
+        {
+          "text": "Greedy AI data centers will wipe out every small town in America.",
+          "scoredAs": "example",
+          "level": 5,
+          "origin": "Example wording we wrote and scored with the same checks",
+          "hype_checks": {
+            "P1": {
+              "answer": "N",
+              "reason": "Presents towns being wiped out as established, though no evidence shows that happening."
+            },
+            "P2": {
+              "answer": "N",
+              "reason": "Stretches local, uneven effects to every small town."
+            },
+            "P3": {
+              "answer": "N",
+              "reason": "Tells a guess about the future as a sure thing."
+            },
+            "W1": {
+              "answer": "N",
+              "reason": "“Wipe out” is alarm, not evidence."
+            },
+            "W2": {
+              "answer": "N",
+              "reason": "Treats AI as greedy, when companies and local officials decide where to build."
+            }
+          }
+        }
+      ],
+      "finePrint": [
+        {
+          "label": "Fact: Data centers keep diesel backup generators for power outages, and in Northern Virginia these mostly run only for maintenance.",
+          "text": "Most data centers keep large diesel generators in case the power goes out. Virginia’s 2024 state audit found these generators are run mostly for maintenance, and in Northern Virginia they make up less than 4 percent of the region’s nitrogen oxide emissions, a type of air pollution. A separate computer study estimated much larger health costs if the generators ran at their maximum permitted levels, but that is a worst case, not what has been measured.",
+          "linkText": "Virginia’s 2024 state audit",
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf"
+        },
+        {
+          "label": "Fact: In November 2025, Virginia regulators created a new electricity rate group that makes the biggest power users sign 14-year contracts.",
+          "text": "Virginia’s State Corporation Commission created a rate group called GS-5 for customers that use at least 25 megawatts of power, which mainly means large data centers. Starting January 1, 2027, they must sign 14-year contracts and pay for at least 85% of the distribution capacity they sign up for and 60% of the generation, even if they use less. The aim is to cover the costs of equipment built for them, but the November 2025 order is too new to show whether it works.",
+          "linkText": "November 2025 order",
+          "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf"
+        },
+        {
+          "label": "Fact: From 2019 to 2024, US states where electricity demand grew fastest saw average power prices fall after inflation, not rise.",
+          "text": "It sounds backward, and the researchers were careful about what it means. A Berkeley Lab analysis, reported by the American Public Power Association, found that states with the fastest-growing demand saw real prices drop, while states with shrinking demand mostly saw them rise. But the link was not clear for household prices alone, it covered all kinds of demand growth, not just data centers, and the researchers said it may not hold for the much larger growth ahead.",
+          "linkText": "Berkeley Lab analysis",
+          "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report"
+        },
+        {
+          "label": "Fact: A plan for a giant data center campus next to Manassas National Battlefield Park in Virginia was blocked in court after local lawsuits.",
+          "text": "In December 2023, Prince William County approved rezoning for the Digital Gateway, once poised to be the largest data center campus in the world. A homeowners’ association and the American Battlefield Trust challenged it in court. A judge voided the rezoning because of improper public notice before the county’s hearing, and a state appeals court upheld that ruling. In April 2026, one of the developers dropped its appeal, and the land may never see a single facility built.",
+          "linkText": "dropped its appeal",
+          "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html"
+        },
+        {
+          "label": "Fact: In July 2026, New York paused new state permits for the very largest data centers for up to a year while officials review them.",
+          "text": "Governor Kathy Hochul signed an executive order that her office called the nation’s first moratorium on new hyperscale data centers, the very largest kind. New York’s environmental agency will not issue discretionary permits for new projects unless their applications were already complete. The pause lasts up to a year while a review is carried out. Projects with complete applications can still get permits, so it slows new building rather than banning every data center in the state.",
+          "linkText": "an executive order",
+          "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/"
+        }
+      ],
+      "quiz": [
+        {
+          "statement": "A large data center usually creates hundreds of permanent jobs.",
+          "answer": "False",
+          "why": "Virginia’s state audit says a typical 250,000-square-foot data center has about 50 full-time workers, and about half are contractors. Building one is different: about 1,500 people can be on site at the peak of construction, but those jobs end."
+        },
+        {
+          "statement": "Data center noise is loud enough to damage nearby residents’ hearing.",
+          "answer": "False",
+          "why": "Virginia’s state audit found the low-frequency hum is not loud enough to damage hearing. But some neighbors say the constant noise still affects their well-being, so it can be a real problem without harming hearing."
+        },
+        {
+          "statement": "Some US counties get a large share of their budget from data center taxes.",
+          "answer": "True",
+          "why": "Data centers bring in 38% of Loudoun County, Virginia’s general fund. That is an extreme case: in other Virginia places with data centers, the share of local revenue ranged from under 1% to 31%."
+        }
+      ],
+      "carefulHeadline": "Big data centers can bring real local costs, but some towns also gain tax money.",
+      "carefulScoreReason": "The careful version says “can,” names costs with evidence behind them and includes the tax money some towns gain.",
+      "headlineSource": "Claim tracked from Gina Mangham of the group Renew DeKalb, who made it in a November 2025 CBS News Atlanta story, “DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods”: “I believe this will destroy our community.”",
+      "carefulSource": "Our wording, based mainly on Virginia’s 2024 state audit of data centers, the most detailed official study we found.",
+      "headlineSourceUrl": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+      "headlineSourceLinkText": "DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods"
+    },
     "creativity": {
       "headline": "AI art is theft.",
       "keyWord": {

@@ -5,10 +5,10 @@
   "section": {
     "name": "Claim Tracker",
     "route": "/claims",
-    "introduction": "Six claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
+    "introduction": "Seven claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
     "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
-    "feedInvitationBody": "Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.",
+    "feedInvitationBody": "Explore the evidence on water, jobs, climate, data centers, creativity, privacy, and existential risk.",
     "feedInvitationLinkText": "Explore the Claim Tracker",
     "reviewLabels": {
       "pending": "AI rating, not yet reviewed",
@@ -1979,6 +1979,495 @@
       "websiteCopyMarkdown": "# Energy and climate: AI will make climate change worse.\n\n## A. The claim\n\n**The headline claim:** “AI will make climate change worse.”\n\nTracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”\n\n**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”\n\nHere, “increase” means more emissions than there would be without AI’s extra demand; total US emissions could still go down. This narrows [a warning from Cornell researchers](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) that computing demand is growing faster than electricity is getting cleaner.\n\n## B. The short answer\n\nToo certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## C. What does this claim actually mean?\n\nBuilding AI models and answering questions takes a lot of computing, plus cooling. AI is only part of what data centers do; they also run everyday online services. [Berkeley Lab’s report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) estimates these different uses.\n\nUsing electricity and causing carbon emissions aren’t the same thing. The same amount of power can be clean or dirty depending on the power plants that make it. And a company that buys enough renewable power over a year may still run on fossil power at some hours or in some places. [IEA, 2026, page 46](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).\n\nThis page is about electricity and climate. Our [water page](/claims/water) covers cooling and local water.\n\n## D. What evidence do we actually have?\n\n**The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).\n\n**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).\n\n**One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).\n\n**Possible upsides:** Computers keep getting more efficient, and AI could help manage energy better. But those savings depend on people actually using them, and more use can cancel them out. Nobody has shown they add up to a net cut. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [IEA climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.\n\n**The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.\n\n## F. What can you do if you are still concerned?\n\n- **See how your region makes its electricity.** [EPA’s Power Profiler](https://www.epa.gov/egrid/power-profiler) shows your area’s power mix, with a [help page](https://www.epa.gov/egrid/frequent-questions-about-egrid). It can’t work out the footprint of your own chatbot use.\n- **Comment on a utility plan.** Find your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) and its [guide to taking part](https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/). Ask for the case number, then ask about expected demand, power sources, emissions and who pays. Each state works differently.\n- **Get help with federal energy decisions.** [FERC’s Office of Public Participation](https://www.ferc.gov/OPP) helps you find filings and comment deadlines. It covers federal matters, not every local data center, and taking part doesn’t guarantee the outcome.\n\n## G. Sources and review information\n\nResearch cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.\n"
     },
     {
+      "slug": "data-centers",
+      "route": "/claims/data-centers",
+      "topic": "Data centers",
+      "headline": "Data centers will destroy our community.",
+      "headlineOccurrence": "Lightly generalized from Gina Mangham of the group Renew DeKalb, quoted by CBS News Atlanta (Nakell Williams, November 18, 2025) about proposals for data centers in DeKalb County, Georgia: “I believe this will destroy our community.” West Virginia Watch (Caity Coyne, May 28, 2025) quoted Tucker County resident Nikki Forrester saying of a proposed data center: “Honestly, I feel like if this happens, it will destroy this place.”",
+      "claim": "Large data centers can bring real local costs, such as constant noise near homes, pressure on regional power bills and costly state tax breaks for few permanent jobs, while some host communities also gain large local tax revenue.",
+      "carefulHeadline": "Big data centers can bring real local costs, but some towns also gain tax money.",
+      "claimExampleCitations": [
+        "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+        "https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/",
+        "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods"
+      ],
+      "scope": "Large US data centers and the towns, counties and power regions around them; not every site. Water and climate are covered on other pages.",
+      "timeHorizon": "Current and planned data centers; no deadline.",
+      "keyQualification": "Depends on the site, local zoning and who pays for grid upgrades; the costs are real but uneven, and some places gain large tax revenue.",
+      "claimContextMarkdown": "**The headline claim:** “Data centers will destroy our community.”\n\nThis lightly generalizes what Gina Mangham of the group Renew DeKalb told [CBS News Atlanta in November 2025](https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods) about proposed data centers in DeKalb County, Georgia: “I believe this will destroy our community.” A Tucker County, West Virginia, resident used almost the same words in [West Virginia Watch](https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/).\n\n**The careful version we also checked:** “Large data centers can bring real local costs, such as constant noise near homes, pressure on regional power bills and costly state tax breaks for few permanent jobs, while some host communities also gain large local tax revenue.”\n\nThis is our wording, based mainly on [Virginia’s state audit of data centers](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).",
+      "shortAnswerMarkdown": "Not quite, but the worries are real. Big data centers can bring a constant hum near homes, and in the mid-Atlantic power grid a market watchdog says they are the [main reason capacity prices jumped](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780), a cost customers end up paying. But some places gain a lot: data centers bring in [38% of Loudoun County, Virginia’s general fund](https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html). Whether a community comes out ahead depends on the site, local rules and who pays for the grid.",
+      "meaningMarkdown": "“Destroy” bundles several worries: a huge building near homes, nonstop noise, higher power bills, lost woods or farmland, and tax breaks that leave little for the town.\n\nData centers are warehouses of computers that run day and night and need so much electricity that utilities may build new lines and plants. Who pays? [Harvard legal researchers](https://eelp.law.harvard.edu/extracting-profits-from-the-public-how-utility-ratepayers-are-paying-for-big-techs-power/) reviewed nearly 50 utility cases and warned that special deals could shift those costs to the public.\n\n[Virginia’s audit](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf) says their industrial size makes them “largely incompatible” with homes.\n\nWater and climate have their own pages: see [water](/claims/water) and [energy and climate](/claims/energy-climate).",
+      "evidenceMarkdown": "**Power bills:** Virginia’s audit found data centers there currently pay their full cost of service. But it projected that a typical Dominion Energy household could pay $14 to $37 more a month by 2040 for new plants and lines. That’s a forecast, not a bill. [Audit summary, page v](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Noise:** The same audit says the low hum can’t damage hearing, but some neighbors say it affects their well-being. [Page viii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Tax breaks and jobs:** Georgia’s auditors estimated the state gave up $474.2 million in sales tax for data centers in 2025. [Georgia audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Virginia’s audit says a typical 250,000-square-foot data center has about 50 full-time workers, half of them contractors, though about 1,500 work on site at the peak of construction. [Page i](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Local tax money:** In five Virginia localities with many data centers, they brought in from under 1% to 31% of local revenue. [Pages i–ii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).",
+      "scoreExplanationMarkdown": "**Hype score for the headline: 3/5 — Turning it up.** “Will” makes the outcome sound certain, when projects can be changed or stopped: one huge Virginia plan [may never be built](https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html) after a court fight. And “destroy” turns real but limited costs into total ruin, even though some host communities [gain large tax revenue](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**The careful version scores 1/5 — Grounded.** It says “can,” names costs with [evidence behind them](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780) and includes the tax money. A low hype score doesn’t mean low harm to people living next door.",
+      "actionsMarkdown": "- **Find out what’s planned and when it’s voted on.** Use [USAGov’s directory](https://www.usa.gov/local-governments) to find your county or city, then ask the planning office for the site plan and hearing dates.\n- **Ask about noise limits.** Ask what sound limit applies and whether cooling equipment is exempt; one Virginia county’s rule [exempted air-conditioning units](https://www.nbcwashington.com/news/local/northern-virginia/as-data-centers-proliferate-neighbors-knock-the-noise/3155887/).\n- **Ask who pays for new power lines and plants.** Ask your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) whether large data centers cover the grid upgrades they need. Virginia now requires [long minimum contracts](https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf) for the biggest users.\n- **Weigh jobs against tax breaks.** Ask how many permanent jobs a project promises and what tax breaks it gets. Some states publish reviews, like [Georgia’s audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Speaking up doesn’t guarantee an outcome.",
+      "sourcesAndReviewMarkdown": "Research cutoff and links checked: **October 8, 2026**. **AI research and editorial checks completed October 8, 2026.**\n\nSources: CBS News Atlanta, November 18, 2025 (headline claim); West Virginia Watch, May 28, 2025; Virginia JLARC, *Data Centers in Virginia*, December 2024 (summary); Utility Dive, October 2, 2025, reporting PJM’s independent market monitor; Harvard Electricity Law Initiative, March 5, 2025; NBC Washington, September 13, 2022; Georgia Department of Audits and Accounts, December 2025, revised January 2026 (2025 data); Loudoun Now, February 12, 2025; InsideNoVa, April 29, 2026; Virginia State Corporation Commission order, November 25, 2025. USAGov and NARUC pages: undated. Links appear beside the statements they support.",
+      "hype": {
+        "status": "proposed",
+        "level": 3,
+        "label": "Turning it up",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 3,
+            "met": 2,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 3,
+            "met": 1,
+            "scored": 2
+          }
+        },
+        "rule_applied": false,
+        "displayPrefix": "Headline hype",
+        "reason": "The headline states as certain something that depends on local votes and utility rules, and “destroy” turns real but limited costs into total ruin.",
+        "checklist": {
+          "P1": {
+            "answer": "Y",
+            "claim_phrase": "",
+            "reason": "A prediction about one community; its certainty is scored under P3 and its severity under W1. No distinct problem with how current evidence is described.",
+            "sources": []
+          },
+          "P2": {
+            "answer": "Y",
+            "claim_phrase": "our community",
+            "reason": "Refers to one community facing specific proposals, not every town; no distinct scope problem beyond the severity scored under W1.",
+            "sources": [
+              {
+                "url": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+                "locator": "Paragraphs on the DeKalb zoning text amendment and data campus proposals"
+              }
+            ]
+          },
+          "P3": {
+            "answer": "N",
+            "claim_phrase": "will",
+            "reason": "States a certain outcome. Proposals can be rejected or changed (the Prince William Digital Gateway rezoning was voided in court and a developer abandoned it; New York paused permits for new hyperscale projects), and local effects depend on siting, zoning and how utilities split costs.",
+            "sources": [
+              {
+                "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
+                "locator": "Paragraphs on Compass ending its appeal and the project “may never see a single facility built”",
+                "evidence_row_id": "D13"
+              },
+              {
+                "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
+                "locator": "Rate Schedule GS-5 ordering paragraphs",
+                "evidence_row_id": "D05"
+              },
+              {
+                "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/",
+                "locator": "Paragraphs on discretionary permits paused for up to a year",
+                "evidence_row_id": "D15"
+              }
+            ]
+          },
+          "W1": {
+            "answer": "N",
+            "claim_phrase": "destroy",
+            "reason": "“Destroy” turns real but bounded costs into total ruin. Inspected evidence documents noise that affects well-being but does not damage hearing, few permanent jobs and pressure on regional power prices, alongside large tax revenue in some host counties; no inspected source shows a host community destroyed.",
+            "sources": [
+              {
+                "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+                "locator": "Summary pp. i–ii (local revenue), viii (noise)",
+                "evidence_row_id": "D01"
+              },
+              {
+                "url": "https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html",
+                "locator": "Paragraph on 38% of General Fund revenue and the tax rate",
+                "evidence_row_id": "D09"
+              }
+            ]
+          },
+          "W2": {
+            "answer": "Y",
+            "claim_phrase": "",
+            "reason": "No human-like agency is attributed to AI; people decide where data centers are built.",
+            "sources": []
+          }
+        },
+        "reviewStatus": "AI evidence review completed; human editorial review pending"
+      },
+      "carefulHype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false,
+        "displayPrefix": "Careful version",
+        "reason": "The careful version says “can,” names costs with evidence behind them and includes the tax money some towns gain.",
+        "checklist": {
+          "P1": {
+            "answer": "Y",
+            "claim_phrase": "can bring real local costs",
+            "reason": "Each named cost is documented in inspected sources: a state audit reports constant noise affecting nearby residents’ well-being, the PJM market monitor names data-center load as the primary reason for higher capacity prices that consumers ultimately pay, and state audits put sales-tax exemptions in the hundreds of millions of dollars a year. “Can” presents these as documented possibilities, not as measured net harm.",
+            "sources": [
+              {
+                "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+                "locator": "Summary pp. viii (noise), viii (sales tax exemption $928 million FY23), i (about 50 full-time workers)",
+                "evidence_row_id": "D01"
+              },
+              {
+                "url": "https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780",
+                "locator": "Paragraphs on $7.3 billion (82%), $16.6 billion and “primary reason”",
+                "evidence_row_id": "D03"
+              },
+              {
+                "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf",
+                "locator": "Summary: forgone state tax revenue of $474.2 million in FY 2025",
+                "evidence_row_id": "D10"
+              }
+            ]
+          },
+          "P2": {
+            "answer": "Y",
+            "claim_phrase": "Large data centers … some host communities",
+            "reason": "Limited to large sites and to “some” host communities; it does not say every community loses or gains. “Regional” power bills fits the PJM evidence, and “some” communities gaining large revenue fits JLARC’s range of under 1% to 31% of local revenue and Loudoun County’s 38% of General Fund revenue.",
+            "sources": [
+              {
+                "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+                "locator": "Summary pp. i–ii, local revenue range in five localities",
+                "evidence_row_id": "D01"
+              },
+              {
+                "url": "https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html",
+                "locator": "Paragraph: “Data centers now generate 38% of the county’s General Fund revenue”",
+                "evidence_row_id": "D09"
+              }
+            ]
+          },
+          "P3": {
+            "answer": "Y",
+            "claim_phrase": "can bring",
+            "reason": "States possibilities with an evidenced basis rather than a certain outcome. Outcomes depend on siting, zoning and utility cost rules such as Virginia’s new GS-5 rate class; the pressure on bills is a documented pathway, and historical research found load growth did not always raise prices.",
+            "sources": [
+              {
+                "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
+                "locator": "Ordering paragraphs establishing Rate Schedule GS-5, effective January 1, 2027",
+                "evidence_row_id": "D05"
+              },
+              {
+                "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report",
+                "locator": "Paragraphs on 2019–2024 findings and “Whether these historical relationships extend…”",
+                "evidence_row_id": "D06"
+              }
+            ]
+          },
+          "W1": {
+            "answer": "Y",
+            "claim_phrase": "real local costs",
+            "reason": "Plain description of documented costs balanced by documented revenue; no added emotional or dismissive force.",
+            "sources": [
+              {
+                "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+                "locator": "Summary pp. i–ii and viii",
+                "evidence_row_id": "D01"
+              }
+            ]
+          },
+          "W2": {
+            "answer": "Y",
+            "claim_phrase": "Large data centers",
+            "reason": "Describes physical facilities and the costs and revenue they bring; no human-like intention is attributed to AI or to buildings.",
+            "sources": []
+          }
+        }
+      },
+      "evidenceGaps": {
+        "displayMode": "qualitative",
+        "score": null,
+        "limitations": [
+          "Most detailed official evidence comes from Virginia, and future bill increases are forecasts, not measured changes.",
+          "No source we found measures a data center’s overall effect on a whole community, good and bad together."
+        ]
+      },
+      "sourceLinks": [
+        {
+          "title": "CBS News Atlanta in November 2025",
+          "url": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods"
+        },
+        {
+          "title": "West Virginia Watch",
+          "url": "https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/"
+        },
+        {
+          "title": "Virginia’s state audit of data centers",
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf"
+        },
+        {
+          "title": "main reason capacity prices jumped",
+          "url": "https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780"
+        },
+        {
+          "title": "38% of Loudoun County, Virginia’s general fund",
+          "url": "https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html"
+        },
+        {
+          "title": "Harvard legal researchers",
+          "url": "https://eelp.law.harvard.edu/extracting-profits-from-the-public-how-utility-ratepayers-are-paying-for-big-techs-power/"
+        },
+        {
+          "title": "Georgia audit",
+          "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf"
+        },
+        {
+          "title": "may never be built",
+          "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html"
+        },
+        {
+          "title": "USAGov’s directory",
+          "url": "https://www.usa.gov/local-governments"
+        },
+        {
+          "title": "exempted air-conditioning units",
+          "url": "https://www.nbcwashington.com/news/local/northern-virginia/as-data-centers-proliferate-neighbors-knock-the-noise/3155887/"
+        },
+        {
+          "title": "state utility commission",
+          "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/"
+        },
+        {
+          "title": "long minimum contracts",
+          "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf"
+        }
+      ],
+      "researchCutoff": "2026-10-08",
+      "aiEvidenceReview": {
+        "status": "completed",
+        "date": "2026-10-08"
+      },
+      "humanEditorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "date": null
+      },
+      "reviewStatusText": "AI rating, not yet reviewed",
+      "interactive": {
+        "keyWord": {
+          "word": "destroy",
+          "explanation": "The evidence shows real local costs, like noise and pressure on power bills, but also big tax revenue in some places. No source we checked shows a host community destroyed."
+        },
+        "claimDial": [
+          {
+            "text": "Big data centers can bring real local costs, but some towns also gain tax money.",
+            "scoredAs": "careful",
+            "origin": "careful version",
+            "level": 1
+          },
+          {
+            "text": "Big data centers can bring a nightmare of noise and power costs to some neighborhoods.",
+            "scoredAs": "example",
+            "level": 2,
+            "origin": "Example wording we wrote and scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "P2": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "P3": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "W1": {
+                "answer": "N",
+                "reason": "“Nightmare” adds drama the evidence doesn’t need."
+              },
+              "W2": {
+                "answer": "Y",
+                "reason": "Met."
+              }
+            }
+          },
+          {
+            "text": "Data centers will destroy our community.",
+            "scoredAs": "headline",
+            "origin": "headline claim",
+            "level": 3
+          },
+          {
+            "text": "Data centers will raise everyone’s power bills.",
+            "scoredAs": "example",
+            "level": 4,
+            "origin": "Example wording we wrote and scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "P2": {
+                "answer": "N",
+                "reason": "Bill effects vary by region and utility; Virginia’s audit found data centers there currently pay their full cost of service."
+              },
+              "P3": {
+                "answer": "N",
+                "reason": "Tells a guess about the future as a sure thing; it depends on demand, new rate rules and how the grid grows."
+              },
+              "W1": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "W2": {
+                "answer": "Y",
+                "reason": "Met."
+              }
+            }
+          },
+          {
+            "text": "Greedy AI data centers will wipe out every small town in America.",
+            "scoredAs": "example",
+            "level": 5,
+            "origin": "Example wording we wrote and scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "N",
+                "reason": "Presents towns being wiped out as established, though no evidence shows that happening."
+              },
+              "P2": {
+                "answer": "N",
+                "reason": "Stretches local, uneven effects to every small town."
+              },
+              "P3": {
+                "answer": "N",
+                "reason": "Tells a guess about the future as a sure thing."
+              },
+              "W1": {
+                "answer": "N",
+                "reason": "“Wipe out” is alarm, not evidence."
+              },
+              "W2": {
+                "answer": "N",
+                "reason": "Treats AI as greedy, when companies and local officials decide where to build."
+              }
+            }
+          }
+        ],
+        "finePrint": [
+          {
+            "label": "Fact: Data centers keep diesel backup generators for power outages, and in Northern Virginia these mostly run only for maintenance.",
+            "text": "Most data centers keep large diesel generators in case the power goes out. Virginia’s 2024 state audit found these generators are run mostly for maintenance, and in Northern Virginia they make up less than 4 percent of the region’s nitrogen oxide emissions, a type of air pollution. A separate computer study estimated much larger health costs if the generators ran at their maximum permitted levels, but that is a worst case, not what has been measured.",
+            "linkText": "Virginia’s 2024 state audit",
+            "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf"
+          },
+          {
+            "label": "Fact: In November 2025, Virginia regulators created a new electricity rate group that makes the biggest power users sign 14-year contracts.",
+            "text": "Virginia’s State Corporation Commission created a rate group called GS-5 for customers that use at least 25 megawatts of power, which mainly means large data centers. Starting January 1, 2027, they must sign 14-year contracts and pay for at least 85% of the distribution capacity they sign up for and 60% of the generation, even if they use less. The aim is to cover the costs of equipment built for them, but the November 2025 order is too new to show whether it works.",
+            "linkText": "November 2025 order",
+            "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf"
+          },
+          {
+            "label": "Fact: From 2019 to 2024, US states where electricity demand grew fastest saw average power prices fall after inflation, not rise.",
+            "text": "It sounds backward, and the researchers were careful about what it means. A Berkeley Lab analysis, reported by the American Public Power Association, found that states with the fastest-growing demand saw real prices drop, while states with shrinking demand mostly saw them rise. But the link was not clear for household prices alone, it covered all kinds of demand growth, not just data centers, and the researchers said it may not hold for the much larger growth ahead.",
+            "linkText": "Berkeley Lab analysis",
+            "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report"
+          },
+          {
+            "label": "Fact: A plan for a giant data center campus next to Manassas National Battlefield Park in Virginia was blocked in court after local lawsuits.",
+            "text": "In December 2023, Prince William County approved rezoning for the Digital Gateway, once poised to be the largest data center campus in the world. A homeowners’ association and the American Battlefield Trust challenged it in court. A judge voided the rezoning because of improper public notice before the county’s hearing, and a state appeals court upheld that ruling. In April 2026, one of the developers dropped its appeal, and the land may never see a single facility built.",
+            "linkText": "dropped its appeal",
+            "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html"
+          },
+          {
+            "label": "Fact: In July 2026, New York paused new state permits for the very largest data centers for up to a year while officials review them.",
+            "text": "Governor Kathy Hochul signed an executive order that her office called the nation’s first moratorium on new hyperscale data centers, the very largest kind. New York’s environmental agency will not issue discretionary permits for new projects unless their applications were already complete. The pause lasts up to a year while a review is carried out. Projects with complete applications can still get permits, so it slows new building rather than banning every data center in the state.",
+            "linkText": "an executive order",
+            "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/"
+          }
+        ],
+        "quiz": [
+          {
+            "statement": "A large data center usually creates hundreds of permanent jobs.",
+            "answer": "False",
+            "why": "Virginia’s state audit says a typical 250,000-square-foot data center has about 50 full-time workers, and about half are contractors. Building one is different: about 1,500 people can be on site at the peak of construction, but those jobs end."
+          },
+          {
+            "statement": "Data center noise is loud enough to damage nearby residents’ hearing.",
+            "answer": "False",
+            "why": "Virginia’s state audit found the low-frequency hum is not loud enough to damage hearing. But some neighbors say the constant noise still affects their well-being, so it can be a real problem without harming hearing."
+          },
+          {
+            "statement": "Some US counties get a large share of their budget from data center taxes.",
+            "answer": "True",
+            "why": "Data centers bring in 38% of Loudoun County, Virginia’s general fund. That is an extreme case: in other Virginia places with data centers, the share of local revenue ranged from under 1% to 31%."
+          }
+        ],
+        "headlineSource": "Claim tracked from Gina Mangham of the group Renew DeKalb, who made it in a November 2025 CBS News Atlanta story, “DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods”: “I believe this will destroy our community.”",
+        "carefulSource": "Our wording, based mainly on Virginia’s 2024 state audit of data centers, the most detailed official study we found.",
+        "headlineSourceUrl": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+        "headlineSourceLinkText": "DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods"
+      },
+      "remainingLimitations": [
+        "Most detailed official evidence comes from Virginia, the largest US data-center market; other states and smaller sites may differ.",
+        "Future household bill increases are modeled projections (JLARC: $14–$37 a month by 2040 in Dominion territory), not measured bill changes.",
+        "Research on whether load growth raises or lowers prices is mixed: it lowered average prices through 2024, the link was not significant for residential prices, and it may not hold for future growth.",
+        "Whether new rate classes such as Virginia’s GS-5 (effective January 1, 2027) will protect other customers is not yet known.",
+        "Backup-generator health-cost estimates come from a modeled preprint; the larger figure assumes maximum permitted emissions, while JLARC finds generators run mostly for maintenance.",
+        "Data-center tax revenue is uneven: from under 1% to 31% of total local revenue in five mature Virginia localities; Loudoun County is an extreme case.",
+        "No inspected source measures the overall net effect of a data center on a whole community, and no inspected source documents a host community being destroyed.",
+        "The primary PJM market-monitor report, Virginia’s Annual Comprehensive Financial Report, New York’s executive order text and the full JLARC report were not opened; only the summaries or news reports listed in the brief were used."
+      ],
+      "articleCards": [
+        {
+          "role": "Makes the claim",
+          "headline": "'It will destroy this place:' Tucker County residents fight for future against proposed data center",
+          "outlet": "West Virginia Watch",
+          "published": "2025-05-28",
+          "url": "https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/",
+          "sourceType": "independent news outlet (nonprofit state newsroom)",
+          "hype": 3,
+          "gaps": 1,
+          "whyHere": "A West Virginia resident's warning that a planned data center power plant would destroy her mountain town became this story's headline.",
+          "ratingNote": "Careful reporting from permit records and experts, but the headline turns one resident's hedged fear into a certain prediction of destruction.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        },
+        {
+          "role": "Reports it carefully",
+          "headline": "Data center backlash unites some Missouri and Kansas towns against lawmakers and big tech",
+          "outlet": "KCUR (Midwest Newsroom)",
+          "published": "2026-09-02",
+          "url": "https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas",
+          "sourceType": "independent news outlet (public radio newsroom)",
+          "hype": 1,
+          "gaps": 1,
+          "whyHere": "Towns across the Midwest are fighting data centers over water, power bills, noise and secrecy. This story weighs those fears against promised jobs and tax money.",
+          "ratingNote": "Fears and benefits are both kept in proportion, backed by named sources, linked polls and a stated method. One quote is credited to an unidentified Brown.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        },
+        {
+          "role": "Pushes back",
+          "headline": "Meta data center in Richland Parish brings jobs, tax growth to northeast Louisiana",
+          "outlet": "WAFB",
+          "published": "2026-07-29",
+          "url": "https://www.wafb.com/2026/07/29/meta-data-center-richland-parish-brings-jobs-tax-growth-northeast-louisiana/",
+          "sourceType": "independent news outlet (local TV station)",
+          "hype": 4,
+          "gaps": 4,
+          "whyHere": "A Louisiana TV story says Meta's huge data center is already bringing jobs and tax growth to the parish. Regulators are still asking Meta for proof.",
+          "ratingNote": "The headline states jobs and tax gains as fact, resting on Meta's own figures and the governor's word, with no independent check.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        }
+      ],
+      "websiteCopyMarkdown": "# Data centers: Data centers will destroy our community.\n\n## A. The claim\n\n**The headline claim:** “Data centers will destroy our community.”\n\nThis lightly generalizes what Gina Mangham of the group Renew DeKalb told [CBS News Atlanta in November 2025](https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods) about proposed data centers in DeKalb County, Georgia: “I believe this will destroy our community.” A Tucker County, West Virginia, resident used almost the same words in [West Virginia Watch](https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/).\n\n**The careful version we also checked:** “Large data centers can bring real local costs, such as constant noise near homes, pressure on regional power bills and costly state tax breaks for few permanent jobs, while some host communities also gain large local tax revenue.”\n\nThis is our wording, based mainly on [Virginia’s state audit of data centers](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n## B. The short answer\n\nNot quite, but the worries are real. Big data centers can bring a constant hum near homes, and in the mid-Atlantic power grid a market watchdog says they are the [main reason capacity prices jumped](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780), a cost customers end up paying. But some places gain a lot: data centers bring in [38% of Loudoun County, Virginia’s general fund](https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html). Whether a community comes out ahead depends on the site, local rules and who pays for the grid.\n\n## C. What does this claim actually mean?\n\n“Destroy” bundles several worries: a huge building near homes, nonstop noise, higher power bills, lost woods or farmland, and tax breaks that leave little for the town.\n\nData centers are warehouses of computers that run day and night and need so much electricity that utilities may build new lines and plants. Who pays? [Harvard legal researchers](https://eelp.law.harvard.edu/extracting-profits-from-the-public-how-utility-ratepayers-are-paying-for-big-techs-power/) reviewed nearly 50 utility cases and warned that special deals could shift those costs to the public.\n\n[Virginia’s audit](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf) says their industrial size makes them “largely incompatible” with homes.\n\nWater and climate have their own pages: see [water](/claims/water) and [energy and climate](/claims/energy-climate).\n\n## D. What evidence do we actually have?\n\n**Power bills:** Virginia’s audit found data centers there currently pay their full cost of service. But it projected that a typical Dominion Energy household could pay $14 to $37 more a month by 2040 for new plants and lines. That’s a forecast, not a bill. [Audit summary, page v](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Noise:** The same audit says the low hum can’t damage hearing, but some neighbors say it affects their well-being. [Page viii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Tax breaks and jobs:** Georgia’s auditors estimated the state gave up $474.2 million in sales tax for data centers in 2025. [Georgia audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Virginia’s audit says a typical 250,000-square-foot data center has about 50 full-time workers, half of them contractors, though about 1,500 work on site at the peak of construction. [Page i](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Local tax money:** In five Virginia localities with many data centers, they brought in from under 1% to 31% of local revenue. [Pages i–ii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 3/5 — Turning it up.** “Will” makes the outcome sound certain, when projects can be changed or stopped: one huge Virginia plan [may never be built](https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html) after a court fight. And “destroy” turns real but limited costs into total ruin, even though some host communities [gain large tax revenue](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**The careful version scores 1/5 — Grounded.** It says “can,” names costs with [evidence behind them](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780) and includes the tax money. A low hype score doesn’t mean low harm to people living next door.\n\n## F. What can you do if you are still concerned?\n\n- **Find out what’s planned and when it’s voted on.** Use [USAGov’s directory](https://www.usa.gov/local-governments) to find your county or city, then ask the planning office for the site plan and hearing dates.\n- **Ask about noise limits.** Ask what sound limit applies and whether cooling equipment is exempt; one Virginia county’s rule [exempted air-conditioning units](https://www.nbcwashington.com/news/local/northern-virginia/as-data-centers-proliferate-neighbors-knock-the-noise/3155887/).\n- **Ask who pays for new power lines and plants.** Ask your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) whether large data centers cover the grid upgrades they need. Virginia now requires [long minimum contracts](https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf) for the biggest users.\n- **Weigh jobs against tax breaks.** Ask how many permanent jobs a project promises and what tax breaks it gets. Some states publish reviews, like [Georgia’s audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Speaking up doesn’t guarantee an outcome.\n\n## G. Sources and review information\n\nResearch cutoff and links checked: **October 8, 2026**. **AI research and editorial checks completed October 8, 2026.**\n\nSources: CBS News Atlanta, November 18, 2025 (headline claim); West Virginia Watch, May 28, 2025; Virginia JLARC, *Data Centers in Virginia*, December 2024 (summary); Utility Dive, October 2, 2025, reporting PJM’s independent market monitor; Harvard Electricity Law Initiative, March 5, 2025; NBC Washington, September 13, 2022; Georgia Department of Audits and Accounts, December 2025, revised January 2026 (2025 data); Loudoun Now, February 12, 2025; InsideNoVa, April 29, 2026; Virginia State Corporation Commission order, November 25, 2025. USAGov and NARUC pages: undated. Links appear beside the statements they support.\n"
+    },
+    {
       "slug": "creativity",
       "route": "/claims/creativity",
       "topic": "Creativity",
@@ -2960,6 +3449,9 @@
     "explainers/energy-climate.md": "1c6dd75fb96a985e876e0b8e3a3fa2dfa9e2204d5a246f5ba98840b3f1a858a1",
     "research/energy-climate-score.json": "6ffe1f33daf7c87f9deae3390aad42ed16430783a0730bd7131cba791c478b1f",
     "research/energy-climate-headline-score.json": "0017145109f1a145835f38b6bc17dd959702636274bdde2913cbf326b89ab19b",
+    "explainers/data-centers.md": "2fd8a7f7ffefbdb6efadfdbc55731eec4f2aadda273dd0669cf714d60183e6ad",
+    "research/data-centers-score.json": "663b2c5866ae158f449e4fa8278ce27e525178ae9dc21426051ff6bcda27a2da",
+    "research/data-centers-headline-score.json": "e7c5e99b1216a1b9c2f7705a82a40f38a6ad49249e1e3adf9f53a02646d0b1df",
     "explainers/creativity.md": "2068d5c51ad1ac7548eeed3138db443fc61f606063b71805d2482a60b9272694",
     "research/creativity-score.json": "fadee6baf62c06663013a3fbe7127adedf7e3535f6fa66825362f719354d1bdf",
     "research/creativity-headline-score.json": "68fcfb741af8dd65993d9cd1d1185ea70b07f9847d90f83f8d8c9abe5f84e355",

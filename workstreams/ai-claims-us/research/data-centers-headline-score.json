@@ -1,0 +1,87 @@
+{
+  "rubric_version": "claims-us-1.2",
+  "claim": "Data centers will destroy our community.",
+  "scope": "The speaker’s own community where data centers are proposed, as the headline implies; here, DeKalb County, Georgia.",
+  "time_horizon": "Future, if proposed data centers are built; no date given.",
+  "occurrence": "Lightly generalized from Gina Mangham of the group Renew DeKalb, quoted by CBS News Atlanta (Nakell Williams, November 18, 2025) about proposals for data centers in DeKalb County, Georgia: “I believe this will destroy our community.” West Virginia Watch (Caity Coyne, May 28, 2025) quoted Tucker County resident Nikki Forrester saying of a proposed data center: “Honestly, I feel like if this happens, it will destroy this place.”",
+  "occurrence_urls": [
+    "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+    "https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/"
+  ],
+  "hype_checks": {
+    "P1": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "A prediction about one community; its certainty is scored under P3 and its severity under W1. No distinct problem with how current evidence is described.",
+      "sources": []
+    },
+    "P2": {
+      "answer": "Y",
+      "claim_phrase": "our community",
+      "reason": "Refers to one community facing specific proposals, not every town; no distinct scope problem beyond the severity scored under W1.",
+      "sources": [
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
+          "locator": "Paragraphs on the DeKalb zoning text amendment and data campus proposals"
+        }
+      ]
+    },
+    "P3": {
+      "answer": "N",
+      "claim_phrase": "will",
+      "reason": "States a certain outcome. Proposals can be rejected or changed (the Prince William Digital Gateway rezoning was voided in court and a developer abandoned it; New York paused permits for new hyperscale projects), and local effects depend on siting, zoning and how utilities split costs.",
+      "sources": [
+        {
+          "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
+          "locator": "Paragraphs on Compass ending its appeal and the project “may never see a single facility built”",
+          "evidence_row_id": "D13"
+        },
+        {
+          "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
+          "locator": "Rate Schedule GS-5 ordering paragraphs",
+          "evidence_row_id": "D05"
+        },
+        {
+          "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/",
+          "locator": "Paragraphs on discretionary permits paused for up to a year",
+          "evidence_row_id": "D15"
+        }
+      ]
+    },
+    "W1": {
+      "answer": "N",
+      "claim_phrase": "destroy",
+      "reason": "“Destroy” turns real but bounded costs into total ruin. Inspected evidence documents noise that affects well-being but does not damage hearing, few permanent jobs and pressure on regional power prices, alongside large tax revenue in some host counties; no inspected source shows a host community destroyed.",
+      "sources": [
+        {
+          "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+          "locator": "Summary pp. i–ii (local revenue), viii (noise)",
+          "evidence_row_id": "D01"
+        },
+        {
+          "url": "https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html",
+          "locator": "Paragraph on 38% of General Fund revenue and the tax rate",
+          "evidence_row_id": "D09"
+        }
+      ]
+    },
+    "W2": {
+      "answer": "Y",
+      "claim_phrase": "",
+      "reason": "No human-like agency is attributed to AI; people decide where data centers are built.",
+      "sources": []
+    }
+  },
+  "evidence_limitations": [
+    "Most detailed official evidence comes from Virginia, the largest US data-center market; other states and smaller sites may differ.",
+    "Future household bill increases are modeled projections (JLARC: $14–$37 a month by 2040 in Dominion territory), not measured bill changes.",
+    "Research on whether load growth raises or lowers prices is mixed: it lowered average prices through 2024, the link was not significant for residential prices, and it may not hold for future growth.",
+    "Whether new rate classes such as Virginia’s GS-5 (effective January 1, 2027) will protect other customers is not yet known.",
+    "Backup-generator health-cost estimates come from a modeled preprint; the larger figure assumes maximum permitted emissions, while JLARC finds generators run mostly for maintenance.",
+    "Data-center tax revenue is uneven: from under 1% to 31% of total local revenue in five mature Virginia localities; Loudoun County is an extreme case.",
+    "No inspected source measures the overall net effect of a data center on a whole community, and no inspected source documents a host community being destroyed.",
+    "The primary PJM market-monitor report, Virginia’s Annual Comprehensive Financial Report, New York’s executive order text and the full JLARC report were not opened; only the summaries or news reports listed in the brief were used."
+  ],
+  "research_cutoff": "2026-10-08",
+  "review_status": "AI evidence review completed; human editorial review pending"
+}

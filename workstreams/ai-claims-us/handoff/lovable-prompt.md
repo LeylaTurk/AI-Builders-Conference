@@ -2,7 +2,7 @@
 
 ## How to supply this handoff
 
-Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all six final explainers, statement headlines, interactive layers, exact claims and scores, citations, dates, review states, scoring records and three real, rated news articles per topic for the article cards. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
+Open the existing **Decoding the Hype** project in Lovable. Upload exactly one required content attachment, **`claims-content.json`**, in the same message, then paste everything under **Prompt to paste into Lovable** below. The JSON contains all seven final explainers, statement headlines, interactive layers, exact claims and scores, citations, dates, review states, scoring records and three real, rated news articles per topic for the article cards. No other attachment or access to Codex files is required. The readable `claims-content.md` companion is not needed by Lovable.
 
 This handoff is for implementation in the existing project's preview. It does not authorize publishing the live site. Human editorial review of the content is still pending.
 
@@ -14,7 +14,7 @@ I have attached **`claims-content.json`** to this message. It is the complete, a
 
 ### 1. Content package and exact expected output
 
-The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of six records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
+The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-US"`, `section`, `editorialInstructions`, `methodology` and a `topics` array of seven records. The intended audience is nontechnical adults in the United States. Preserve explicit international labels, conditional claims, dates and source limitations.
 
 | Topic | Route | Headline claim (page h1) | Headline hype | Careful version we also checked | Careful hype |
 | --- | --- | --- | --- | --- | --- |
@@ -22,10 +22,11 @@ The attached JSON has `contentVersion: "claims-us-content-1.4"`, `language: "en-
 | Jobs | `/claims/jobs` | AI will take all our jobs. | **4/5 — Overheated** | AI could eliminate half of US entry-level white-collar jobs within one to five years. | **1/5 — Grounded** |
 | Existential risk | `/claims/existential-risk` | AI will kill us all. | **5/5 — Off the charts** | If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die. | **2/5 — A little spicy** |
 | Energy and climate | `/claims/energy-climate` | AI will make climate change worse. | **2/5 — A little spicy** | AI’s growing electricity demand could increase US carbon emissions by 2030. | **1/5 — Grounded** |
+| Data centers | `/claims/data-centers` | Data centers will destroy our community. | **3/5 — Turning it up** | Big data centers can bring real local costs, but some towns also gain tax money. | **1/5 — Grounded** |
 | Creativity | `/claims/creativity` | AI art is theft. | **3/5 — Turning it up** | Generative AI can reproduce copyrighted material from its training data. | **1/5 — Grounded** |
 | Privacy | `/claims/privacy` | ChatGPT is sharing your secrets. | **4/5 — Overheated** | ChatGPT may use personal-account conversations to train its models, depending on your settings. | **1/5 — Grounded** |
 
-The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5, or 5/5 for existential risk, 3/5 for creativity and 2/5 for energy and climate) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule and, for existential risk, the certain-doom rule (claims-us-1.2). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
+The table is a quick check. The JSON contains the exact full copy and citations and is authoritative. Each page contrasts a loud headline claim that people actually published (scored 4/5, or 5/5 for existential risk, 3/5 for creativity and data centers, and 2/5 for energy and climate) with a careful version (scored 1/5, or 2/5 for existential risk). Both scores come from the same checklist; the headline scores use the loud-claim rule and, for existential risk, the certain-doom rule (claims-us-1.2). They do not imply small harms or establish the likelihood of any forecast. Keep every qualification supplied alongside these claims.
 
 Field mapping for each topic:
 
@@ -45,7 +46,7 @@ Field mapping for each topic:
 | `carefulHype` (same fields, plus `checklist`) | The careful version's score: `Careful version: [label] [level]/5` plus its `reason`. Show it in the claim panel right after the headline score, and on the dial. The supplied display prefix is authoritative. Score is a stored editorial result, not an article-engine call. |
 | `interactive` | Interactive layers described in section 5b: `keyWord`, `claimDial`, `finePrint`, `quiz`, and for privacy only `situationPicker`. Render the text exactly. |
 | `hype.checklist` | Five records keyed P1, P2, P3, W1, W2. Use for the “Detailed scoring checks” disclosure described below. Preserve reasons and links. |
-| `evidenceGaps.displayMode`, `.score`, `.limitations` | All six use qualitative limitations and a null numeric score. Show the supplied limitations as a short list titled “Evidence limitations.” Do not invent numbers, flags, or article-derived gap scores. |
+| `evidenceGaps.displayMode`, `.score`, `.limitations` | All seven use qualitative limitations and a null numeric score. Show the supplied limitations as a short list titled “Evidence limitations.” Do not invent numbers, flags, or article-derived gap scores. |
 | `researchCutoff`, `aiEvidenceReview`, `humanEditorialReview`, `reviewStatusText` | Explicit metadata, never derived from deployment time or the viewer's clock. Show the cutoff/AI-check dates from the fields. Do not display `reviewStatusText` or any review label. |
 | `sourceLinks`, `claimExampleCitations` | Direct URL inventory for link checks and any extra source index. Inline citations in A–G are the primary reading experience; a bibliography alone is insufficient. `sourceLinks` supplies exact link titles, not separate structured publication dates: those dates remain in G. |
 | `remainingLimitations` | Preserve as content metadata. The concise public limitation list is `evidenceGaps.limitations`; do not dump the longer internal limitations a second time or remove caveats already in A–G. |
@@ -64,7 +65,7 @@ Keep the current feed visually familiar. Use a centered content area around 856p
 
 ### 3. Routes, navigation and feed entry point
 
-Keep `/` as Feed and `/story/:id` as the current story detail. Add `/claims` and the six exact routes in the table. The logo still links to `/`. Add **Claim Tracker** beside **Feed** in the global header, using the existing yellow active treatment and `aria-current="page"` on the active section. Claims detail pages keep the claims nav item active.
+Keep `/` as Feed and `/story/:id` as the current story detail. Add `/claims` and the seven exact routes in the table. The logo still links to `/`. Add **Claim Tracker** beside **Feed** in the global header, using the existing yellow active treatment and `aria-current="page"` on the active section. Claims detail pages keep the claims nav item active.
 
 At 768px and wider, the logo and two nav links can occupy one row. Below 768px, place the logo on row one and the two links on row two, wrapping safely down to 320px. No hamburger menu is needed for two destinations. Use real links, not click-handler-only text.
 
@@ -74,13 +75,13 @@ On the current feed add one compact invitation below its existing feed-checked t
 - Body: `section.feedInvitationBody` — **Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.**
 - Link: `section.feedInvitationLinkText` — **Explore the Claim Tracker**, pointing to `/claims`.
 
-Do not insert the six-card grid into the feed or change its fetching, ordering, ratings, refresh controls or timestamp. Keep the invitation compact so news remains prominent on mobile.
+Do not insert the seven-card grid into the feed or change its fetching, ordering, ratings, refresh controls or timestamp. Keep the invitation compact so news remains prominent on mobile.
 
-At `/claims`, use `section.name` as h1, `section.introduction` as the introductory paragraph and `section.scoreNote` as a visible explanatory note. Their exact text is already supplied in the attachment. No search, filters, accounts, subscriptions, chatbot or new publishing system are needed for six static entries.
+At `/claims`, use `section.name` as h1, `section.introduction` as the introductory paragraph and `section.scoreNote` as a visible explanatory note. Their exact text is already supplied in the attachment. No search, filters, accounts, subscriptions, chatbot or new publishing system are needed for seven static entries.
 
 ### 4. Landing-page cards and responsive layout
 
-Use two equal columns at widths of 768px and up and a single column below that. Keep the JSON order: Water, Jobs, Existential risk, Energy and climate, Creativity, Privacy. At mobile width use roughly 20px page gutters, allowing smaller space only if needed to prevent overflow at 320px.
+Use two equal columns at widths of 768px and up and a single column below that. Keep the JSON order: Water, Jobs, Existential risk, Energy and climate, Data centers, Creativity, Privacy. At mobile width use roughly 20px page gutters, allowing smaller space only if needed to prevent overflow at 320px.
 
 Each card contains:
 
@@ -121,7 +122,7 @@ Within that disclosure, a compact optional calculation note may state:
 
 > Evidence-status, scope and future-certainty checks form one group; language and agency checks form the other. Within each group, the share of met answers maps to levels: 100% → 1; at least 75% → 2; at least 50% → 3; at least 25% → 4; below 25% → 5. Each group needs at least two met/not-met answers. The two group levels are averaged; an exact half rounds down. If the first group reaches level 4 or 5, the score is at least 4, just as an overstated headline lifts an article's rating. An applicable “not checked” answer means no numeric score is shown.
 
-Use the provided computed `hype` values; do not calculate claim scores by sending the explainers to the article engine. If a future content record is explicitly not assessable or lacks a valid level, show **Not yet assessable** with its supplied reason, without peppers or `0/5`. For this package all six scores are present. All six evidence-gap displays are qualitative; a numeric score in internal audit material must not override that design choice.
+Use the provided computed `hype` values; do not calculate claim scores by sending the explainers to the article engine. If a future content record is explicitly not assessable or lacks a valid level, show **Not yet assessable** with its supplied reason, without peppers or `0/5`. For this package all seven scores are present. All seven evidence-gap displays are qualitative; a numeric score in internal audit material must not override that design choice.
 
 ### 5b. Interactive layers
 
@@ -172,9 +173,9 @@ Keep the implementation small: local static JSON/module, shared components and t
 
 Complete these in preview and report pass/fail with any exact remaining issue. Do not claim live deployment or human editorial approval.
 
-- **All routes:** `/`, `/claims`, all six listed `/claims/[slug]` routes and at least two existing `/story/[id]` routes work. Direct loads, refresh, browser Back, breadcrumbs and both header links work. Active nav is correct. `/claims/energy-climate` is the canonical climate route.
-- **Complete exact content:** Six topics appear in the supplied order. Each A–G Markdown body is rendered once in the specified location, with the same wording and links as the attachment. Compare against `websiteCopyMarkdown`; headings/placement may differ, bodies must not. No omitted action, citation, qualification, source date or access limitation. No duplicated full article or placeholder.
-- **Scoring:** All six headlines show **Headline hype: Overheated 4/5**. Careful versions show **Grounded 1/5**, except existential risk at **A little spicy 2/5**. Each score's reason line is visible next to it. Both five-check lists, for the headline and the careful version, remain accessible in **Detailed scoring checks**. All six evidence limitation sections are qualitative; no invented numeric evidence-gap values or safety percentages. No rescores were made by the article engine.
+- **All routes:** `/`, `/claims`, all seven listed `/claims/[slug]` routes and at least two existing `/story/[id]` routes work. Direct loads, refresh, browser Back, breadcrumbs and both header links work. Active nav is correct. `/claims/energy-climate` is the canonical climate route.
+- **Complete exact content:** Seven topics appear in the supplied order. Each A–G Markdown body is rendered once in the specified location, with the same wording and links as the attachment. Compare against `websiteCopyMarkdown`; headings/placement may differ, bodies must not. No omitted action, citation, qualification, source date or access limitation. No duplicated full article or placeholder.
+- **Scoring:** Headlines show the scores in the table: Overheated 4/5 for water, jobs and privacy; Off the charts 5/5 for existential risk; Turning it up 3/5 for creativity and data centers; A little spicy 2/5 for energy and climate. Careful versions show **Grounded 1/5**, except existential risk at **A little spicy 2/5**. Each score's reason line is visible next to it. Both five-check lists, for the headline and the careful version, remain accessible in **Detailed scoring checks**. All seven evidence limitation sections are qualitative; no invented numeric evidence-gap values or safety percentages. No rescores were made by the article engine.
 - **Statements and interactivity:** Every h1 and card heading is the `headline` statement, with no question marks. The key word is highlighted and opens its explanation by keyboard and tap. **One claim, five ways** shows the five hype labels (Grounded to Off the charts) and no others, starts on the headline's level, its needle moves by dragging, tapping a segment and the arrow keys, and every level shows its own version of the claim with no extra label. Fine-print chips, quiz and privacy picker work by keyboard, tap and screen reader. The headline, score, `hype.reason` and `keyQualification` are visible without any interaction.
 - **Interpretation:** “The exact claim we scored” is always visible; every card/page keeps its qualifier. Jobs retains the original approximately 2026–2030 warning window, energy retains the comparison-baseline caveat, privacy remains limited to the stated personal-account policy, and existential risk retains its conditional future-superintelligence scope. These checks preserve supplied copy, not new additions. Score meaning is visible; no low-score “safe” badge.
 - **Citations/resources:** Every supplied external inline link has the correct destination in the rendered page; internal `/claims/water` opens correctly. Check representative live sources and report any inaccessible links without inventing replacements or silently dropping them. Section G retains source dates and distinctions between publication date, data period and inspected policy date. No search-snippet substitutions.

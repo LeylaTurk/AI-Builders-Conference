@@ -3,10 +3,10 @@
   "section": {
     "name": "Claim Tracker",
     "route": "/claims",
-    "introduction": "Six claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
+    "introduction": "Seven claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
     "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
-    "feedInvitationBody": "Explore the evidence on water, jobs, climate, creativity, privacy, and existential risk.",
+    "feedInvitationBody": "Explore the evidence on water, jobs, climate, data centers, creativity, privacy, and existential risk.",
     "feedInvitationLinkText": "Explore the Claim Tracker",
     "reviewLabels": {
       "pending": "AI rating, not yet reviewed",
@@ -43,6 +43,16 @@
       "aiReviewDate": "2026-10-06",
       "scope": "US carbon emissions from electricity, compared with a US without AI’s extra demand.",
       "timeHorizon": "Through 2030."
+    },
+    "data-centers": {
+      "keyQualification": "Depends on the site, local zoning and who pays for grid upgrades; the costs are real but uneven, and some places gain large tax revenue.",
+      "publicEvidenceLimitations": [
+        "Most detailed official evidence comes from Virginia, and future bill increases are forecasts, not measured changes.",
+        "No source we found measures a data center’s overall effect on a whole community, good and bad together."
+      ],
+      "aiReviewDate": "2026-10-08",
+      "scope": "Large US data centers and the towns, counties and power regions around them; not every site. Water and climate are covered on other pages.",
+      "timeHorizon": "Current and planned data centers; no deadline."
     },
     "creativity": {
       "keyQualification": "Shown in chosen models and tests; not every output is copied, and not all training is illegal.",
