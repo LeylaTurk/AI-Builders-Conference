@@ -1,11 +1,11 @@
 {
-  "version": "claims-us-interactive-1.1",
-  "status": "Updated October 7, 2026: adds article cards and the semicircle hype gauge. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
+  "version": "claims-us-interactive-1.2",
+  "status": "Updated October 9, 2026: highlighted words changed for water (\"bottle of water\") and energy (\"climate change\"); each fact has a Phosphor iconName. Updated October 7, 2026: adds article cards and the semicircle hype gauge. Updated October 6, 2026: headlines are the loud claims people actually hear, each with a real public source and its own score; the careful versions stay on the dial.",
   "topics": {
     "water": {
       "headline": "Every time you use AI, it uses a bottle of water.",
       "keyWord": {
-        "word": "Every time",
+        "word": "bottle of water",
         "explanation": "The researchers’ estimate was about half a liter of water for every 10–50 answers, not a bottle for each use, and it rested on guesses about cooling and power."
       },
       "scoreReason": "The headline treats a computer estimate as if someone measured it, and turns a bottle for every 10–50 answers into a bottle for every single use.",
@@ -114,7 +114,8 @@
           "linkText": "Berkeley Lab’s 2024 report",
           "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
           "icon": "⚡",
-          "tag": "Not all AI"
+          "tag": "Not all AI",
+          "iconName": "lightning"
         },
         {
           "label": "Fact: Water that a data center takes in is not all lost, because experts separate water taken from a source and water used up.",
@@ -122,7 +123,8 @@
           "linkText": "USGS water glossary",
           "url": "https://water.usgs.gov/water-basics_glossary.html",
           "icon": "💧",
-          "tag": "Taken vs. used up"
+          "tag": "Taken vs. used up",
+          "iconName": "drop"
         },
         {
           "label": "Fact: Most of the water linked to US data centers is used at the power plants that supply their electricity, not at the data centers themselves.",
@@ -130,7 +132,8 @@
           "linkText": "Berkeley Lab’s 2024 report",
           "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
           "icon": "🏭",
-          "tag": "Power plant water"
+          "tag": "Power plant water",
+          "iconName": "factory"
         },
         {
           "label": "Fact: Some data centers use cooling systems that need almost no water on site, but those systems usually need more electricity instead.",
@@ -138,7 +141,8 @@
           "linkText": "Li and colleagues’ study",
           "url": "https://arxiv.org/html/2304.03271v5",
           "icon": "🌬️",
-          "tag": "Cooling trade-off"
+          "tag": "Cooling trade-off",
+          "iconName": "wind"
         },
         {
           "label": "Fact: In August 2025, Google estimated that a typical text question to its Gemini AI used about five drops of water.",
@@ -146,7 +150,8 @@
           "linkText": "Google’s August 2025 paper",
           "url": "https://arxiv.org/abs/2508.15734",
           "icon": "🔍",
-          "tag": "Google’s estimate"
+          "tag": "Google’s estimate",
+          "iconName": "magnifying-glass"
         },
         {
           "label": "Fact: Virginia’s state audit found that most data centers there use about as much water as a large office building, though a few use far more.",
@@ -154,7 +159,8 @@
           "linkText": "Virginia’s 2024 state audit",
           "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
           "icon": "🏢",
-          "tag": "Not all alike"
+          "tag": "Not all alike",
+          "iconName": "buildings"
         }
       ],
       "quiz": [
@@ -293,7 +299,8 @@
           "linkText": "Elon Musk says AI will take all our jobs",
           "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/",
           "icon": "🤖",
-          "tag": "Musk’s jobless future"
+          "tag": "Musk’s jobless future",
+          "iconName": "robot"
         },
         {
           "label": "Fact: The US Bureau of Labor Statistics says an AI “exposure” rating for a job is not a forecast of job losses or worker replacement.",
@@ -301,7 +308,8 @@
           "linkText": "guide to AI exposure categories",
           "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm",
           "icon": "🏷️",
-          "tag": "Exposure isn’t layoffs"
+          "tag": "Exposure isn’t layoffs",
+          "iconName": "tag"
         },
         {
           "label": "Fact: The government’s official job projections, released in August 2026, still expect US employment to grow through 2035, even as AI trims some office work.",
@@ -309,7 +317,8 @@
           "linkText": "official 10-year job projections",
           "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
           "icon": "📈",
-          "tag": "Official job outlook"
+          "tag": "Official job outlook",
+          "iconName": "trend-up"
         },
         {
           "label": "Fact: In a 2026 Census Bureau survey of US businesses, only 2% of firms reported cutting jobs because of AI.",
@@ -317,7 +326,8 @@
           "linkText": "The Microstructure of AI Diffusion",
           "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html",
           "icon": "🏢",
-          "tag": "Few firms cut jobs"
+          "tag": "Few firms cut jobs",
+          "iconName": "buildings"
         },
         {
           "label": "Fact: Separate Census Bureau records also show fewer young hires in AI-exposed industries, but interest-rate changes may explain part of that drop.",
@@ -325,7 +335,8 @@
           "linkText": "You’re (not) Hired",
           "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html",
           "icon": "🎓",
-          "tag": "Fewer young hires"
+          "tag": "Fewer young hires",
+          "iconName": "graduation-cap"
         },
         {
           "label": "Fact: In a 2026 Gallup survey, 31% of US workers who use AI said it had led their employer to give them more responsibilities.",
@@ -333,7 +344,8 @@
           "linkText": "AI Benefits at Work Unevenly Distributed",
           "url": "https://news.gallup.com/poll/714602/benefits-work-unevenly-distributed.aspx",
           "icon": "💼",
-          "tag": "More work, not less"
+          "tag": "More work, not less",
+          "iconName": "briefcase"
         }
       ],
       "quiz": [
@@ -363,8 +375,8 @@
     "energy-climate": {
       "headline": "AI will make climate change worse.",
       "keyWord": {
-        "word": "will",
-        "explanation": "“Will” makes it sound certain. How much AI adds depends on how fast its power use grows and how clean the electricity gets, and its possible climate benefits haven’t been proven or ruled out."
+        "word": "climate change",
+        "explanation": "How much AI adds to climate change depends on how fast its power use grows and how clean the electricity gets, and its possible climate benefits haven’t been proven or ruled out."
       },
       "scoreReason": "AI's growing power use is adding emissions, so “worse” has a real basis. But “will” sounds surer than the evidence, which says it depends on how clean the power gets.",
       "claimDial": [
@@ -471,7 +483,8 @@
           "linkText": "2024 United States Data Center Energy Usage Report",
           "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
           "icon": "🔌",
-          "tag": "US data center share"
+          "tag": "US data center share",
+          "iconName": "plug"
         },
         {
           "label": "Fact: The International Energy Agency expects data centers worldwide to use about twice as much electricity in 2030 as in 2025.",
@@ -479,7 +492,8 @@
           "linkText": "Key Questions on Energy and AI",
           "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
           "icon": "🌍",
-          "tag": "Global demand doubling"
+          "tag": "Global demand doubling",
+          "iconName": "globe-hemisphere-west"
         },
         {
           "label": "Fact: Each AI answer is using less energy than before, yet AI’s total electricity use can still rise.",
@@ -487,7 +501,8 @@
           "linkText": "2026 executive summary",
           "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
           "icon": "💡",
-          "tag": "Efficiency vs. demand"
+          "tag": "Efficiency vs. demand",
+          "iconName": "lightbulb"
         },
         {
           "label": "Fact: A data center company that buys clean power on paper may still run partly on gas or coal power from the grid.",
@@ -495,7 +510,8 @@
           "linkText": "full 2026 report",
           "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
           "icon": "🧾",
-          "tag": "Clean power on paper"
+          "tag": "Clean power on paper",
+          "iconName": "receipt"
         },
         {
           "label": "Fact: Virginia’s legislative watchdog warned in 2024 that data center growth could keep older fossil fuel power plants running longer.",
@@ -503,7 +519,8 @@
           "linkText": "Data Centers in Virginia",
           "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
           "icon": "🏭",
-          "tag": "Old plants run longer"
+          "tag": "Old plants run longer",
+          "iconName": "factory"
         },
         {
           "label": "Fact: Some US data center builders are planning their own natural gas power plants on site instead of waiting years for a grid connection.",
@@ -511,7 +528,8 @@
           "linkText": "on-site gas power",
           "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
           "icon": "🔥",
-          "tag": "On-site gas power"
+          "tag": "On-site gas power",
+          "iconName": "flame"
         }
       ],
       "quiz": [
@@ -650,7 +668,8 @@
           "linkText": "Virginia’s 2024 state audit",
           "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
           "icon": "⚡",
-          "tag": "Backup generators"
+          "tag": "Backup generators",
+          "iconName": "lightning"
         },
         {
           "label": "Fact: In November 2025, Virginia regulators created a new electricity rate group that makes the biggest power users sign 14-year contracts.",
@@ -658,7 +677,8 @@
           "linkText": "November 2025 order",
           "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
           "icon": "📝",
-          "tag": "New rate rules"
+          "tag": "New rate rules",
+          "iconName": "file-text"
         },
         {
           "label": "Fact: Virginia’s main tax break for data centers saved the industry $928 million in state sales taxes in a single year.",
@@ -666,7 +686,8 @@
           "linkText": "December 2024 audit",
           "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
           "icon": "🏷️",
-          "tag": "Tax breaks too"
+          "tag": "Tax breaks too",
+          "iconName": "tag"
         },
         {
           "label": "Fact: From 2019 to 2024, US states where electricity demand grew fastest saw average power prices fall after inflation, not rise.",
@@ -674,7 +695,8 @@
           "linkText": "Berkeley Lab analysis",
           "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report",
           "icon": "📉",
-          "tag": "Prices fell, so far"
+          "tag": "Prices fell, so far",
+          "iconName": "trend-down"
         },
         {
           "label": "Fact: A plan for a giant data center campus next to Manassas National Battlefield Park in Virginia was blocked in court after local lawsuits.",
@@ -682,7 +704,8 @@
           "linkText": "dropped its appeal",
           "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
           "icon": "⚖️",
-          "tag": "Blocked in court"
+          "tag": "Blocked in court",
+          "iconName": "scales"
         },
         {
           "label": "Fact: In July 2026, New York paused new state permits for the very largest data centers for up to a year while officials review them.",
@@ -690,7 +713,8 @@
           "linkText": "an executive order",
           "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/",
           "icon": "⏸️",
-          "tag": "New York pause"
+          "tag": "New York pause",
+          "iconName": "pause-circle"
         }
       ],
       "quiz": [
@@ -829,7 +853,8 @@
           "linkText": "Forbes interview with Midjourney’s founder",
           "url": "https://www.forbes.com/sites/robsalkowitz/2022/09/16/midjourney-founder-david-holz-on-the-impact-of-ai-on-art-imagination-and-the-creative-economy/",
           "icon": "🎨",
-          "tag": "No artist consent"
+          "tag": "No artist consent",
+          "iconName": "palette"
         },
         {
           "label": "Fact: Building an AI model usually means copying creative works several times, which is a separate step from anything the finished model later produces.",
@@ -837,7 +862,8 @@
           "linkText": "Copyright and Artificial Intelligence, Part 3",
           "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
           "icon": "📋",
-          "tag": "Copies in training"
+          "tag": "Copies in training",
+          "iconName": "copy"
         },
         {
           "label": "Fact: In the US, an artist’s original work is protected by copyright from the moment it is created, even if it is never registered.",
@@ -845,7 +871,8 @@
           "linkText": "Copyright in General FAQ",
           "url": "https://www.copyright.gov/help/faq/faq-general.html",
           "icon": "©️",
-          "tag": "Automatic copyright"
+          "tag": "Automatic copyright",
+          "iconName": "copyright"
         },
         {
           "label": "Fact: A US appeals court ruled in 2025 that art made entirely by an AI system, with no human author, can’t be copyrighted.",
@@ -853,7 +880,8 @@
           "linkText": "Thaler v. Perlmutter",
           "url": "https://media.cadc.uscourts.gov/opinions/docs/2025/03/23-5233.pdf",
           "icon": "👤",
-          "tag": "Human authors only"
+          "tag": "Human authors only",
+          "iconName": "user"
         },
         {
           "label": "Fact: One study found that job posts for image-making work fell about 17% on one global freelance website after AI image tools appeared.",
@@ -861,7 +889,8 @@
           "linkText": "Who Is AI Replacing? The Impact of Generative AI on Online Freelancing Platforms",
           "url": "https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf",
           "icon": "📉",
-          "tag": "Fewer design gigs"
+          "tag": "Fewer design gigs",
+          "iconName": "trend-down"
         },
         {
           "label": "Fact: Anthropic agreed to pay $1.5 billion to settle book authors’ claims over pirated copies, but the deal left claims about AI outputs open.",
@@ -869,7 +898,8 @@
           "linkText": "Order Granting Final Approval of Class Action Settlement",
           "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680",
           "icon": "⚖️",
-          "tag": "$1.5B settlement"
+          "tag": "$1.5B settlement",
+          "iconName": "scales"
         }
       ],
       "quiz": [
@@ -1008,7 +1038,8 @@
           "linkText": "Data controls in ChatGPT",
           "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
           "icon": "🔒",
-          "tag": "Training vs. storage"
+          "tag": "Training vs. storage",
+          "iconName": "lock"
         },
         {
           "label": "Fact: OpenAI says chats you delete are erased from its systems within 30 days, though some can be kept for security or legal reasons.",
@@ -1016,7 +1047,8 @@
           "linkText": "How OpenAI handles data in consumer services",
           "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
           "icon": "🗑️",
-          "tag": "30-day deletion"
+          "tag": "30-day deletion",
+          "iconName": "trash"
         },
         {
           "label": "Fact: ChatGPT’s Temporary Chat isn’t used for training while it stays temporary, but OpenAI may keep a copy for up to 30 days.",
@@ -1024,7 +1056,8 @@
           "linkText": "Temporary chat in ChatGPT",
           "url": "https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt",
           "icon": "⏳",
-          "tag": "Temporary Chat"
+          "tag": "Temporary Chat",
+          "iconName": "hourglass"
         },
         {
           "label": "Fact: If you share a ChatGPT chat by link from a personal account, anyone who has that link can read it.",
@@ -1032,7 +1065,8 @@
           "linkText": "Sharing conversations and scheduled tasks in ChatGPT",
           "url": "https://help.openai.com/en/articles/7925741-sharing-conversations-and-scheduled-tasks-in-chatgpt",
           "icon": "🔗",
-          "tag": "Shared links"
+          "tag": "Shared links",
+          "iconName": "link"
         },
         {
           "label": "Fact: OpenAI says it handed chat content to police or other government agencies in 62 cases in the second half of 2025, in answer to legal demands such as search warrants.",
@@ -1040,7 +1074,8 @@
           "linkText": "Government Requests for User Data report",
           "url": "https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf",
           "icon": "👮",
-          "tag": "Police data requests"
+          "tag": "Police data requests",
+          "iconName": "police-car"
         },
         {
           "label": "Fact: California’s privacy law gives residents the right to know, delete and correct personal information that businesses have collected about them.",
@@ -1048,7 +1083,8 @@
           "linkText": "Rights under the California Consumer Privacy Act",
           "url": "https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/",
           "icon": "🏛️",
-          "tag": "California rights"
+          "tag": "California rights",
+          "iconName": "bank"
         }
       ],
       "quiz": [
@@ -1208,7 +1244,8 @@
           "linkText": "the authors’ one-year update",
           "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
           "icon": "🧠",
-          "tag": "Not built yet"
+          "tag": "Not built yet",
+          "iconName": "brain"
         },
         {
           "label": "Fact: Co-author Nate Soares says the danger he sees is not that AI would hate people, but that it would not care about them.",
@@ -1216,7 +1253,8 @@
           "linkText": "Will AI Kill Us All? Nate Soares on His Controversial Bestseller",
           "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east",
           "icon": "🐜",
-          "tag": "Indifference, not malice"
+          "tag": "Indifference, not malice",
+          "iconName": "smiley-meh"
         },
         {
           "label": "Fact: A major 2026 international expert report says today’s AI systems cannot yet cause a true “loss of control,” but are improving in relevant skills.",
@@ -1224,7 +1262,8 @@
           "linkText": "International AI Safety Report 2026",
           "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
           "icon": "🌍",
-          "tag": "Global expert report"
+          "tag": "Global expert report",
+          "iconName": "globe-hemisphere-west"
         },
         {
           "label": "Fact: In a 2023 survey, the middle answer from AI researchers gave a 5% chance that AI causes human extinction or something similarly severe.",
@@ -1232,7 +1271,8 @@
           "linkText": "Thousands of AI Authors on the Future of AI",
           "url": "https://arxiv.org/html/2401.02843v3",
           "icon": "📊",
-          "tag": "Researchers’ 5% median"
+          "tag": "Researchers’ 5% median",
+          "iconName": "chart-bar"
         },
         {
           "label": "Fact: In a 2022 forecasting tournament, proven forecasters rated the chance of AI wiping out humanity by 2100 far lower than AI experts did.",
@@ -1240,7 +1280,8 @@
           "linkText": "Forecasting Existential Risks",
           "url": "https://forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf",
           "icon": "🎯",
-          "tag": "Forecasters vs experts"
+          "tag": "Forecasters vs experts",
+          "iconName": "target"
         },
         {
           "label": "Fact: An early-2026 outside review found AI agents used inside four major AI companies could plausibly start small, unapproved operations on their own.",
@@ -1248,7 +1289,8 @@
           "linkText": "Frontier Risk Report",
           "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
           "icon": "🕵️",
-          "tag": "Rogue agent risk"
+          "tag": "Rogue agent risk",
+          "iconName": "detective"
         }
       ],
       "quiz": [

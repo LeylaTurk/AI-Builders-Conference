@@ -7,8 +7,9 @@ import json
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
-SLUGS = ['water', 'jobs', 'existential-risk', 'energy-climate', 'data-centers', 'creativity', 'privacy']
-NAMES = ['Water', 'Jobs', 'Existential risk', 'Energy and climate', 'Data centers', 'Creativity', 'Privacy']
+SLUGS = ['water', 'jobs', 'existential-risk', 'data-centers', 'energy-climate', 'creativity', 'privacy']
+NAMES = ['Water', 'Jobs', 'Existential risk', 'Data centers', 'Energy and climate', 'Creativity', 'Privacy']
+TRAIL_ROLES = {'origin', 'spread', 'twist', 'peak', 'pushback', 'update'}
 FIELDS = dict(zip('ABCDEFG', ['claimContextMarkdown', 'shortAnswerMarkdown',
     'meaningMarkdown', 'evidenceMarkdown', 'scoreExplanationMarkdown',
     'actionsMarkdown', 'sourcesAndReviewMarkdown']))
@@ -59,8 +60,8 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: the dial needs one version at each hype level, in order')
     if len(layer['finePrint']) != 6 or len(layer['quiz']) != 3:
         raise ValueError(f'{slug}: expected 6 facts and 3 quiz items')
-    if any(not f.get('icon') or not f.get('tag') for f in layer['finePrint']):
-        raise ValueError(f'{slug}: every fact needs an icon and a tag')
+    if any(not f.get('icon') or not f.get('iconName') or not f.get('tag') for f in layer['finePrint']):
+        raise ValueError(f'{slug}: every fact needs an icon, an iconName and a tag')
     if not layer.get('headlineSourceUrl', '').startswith('https://') or layer['headlineSourceUrl'] not in head['occurrence_urls']:
         raise ValueError(f'{slug}: headlineSourceUrl must be one of the headline record occurrence URLs')
     links_in = [(layer['headlineSource'], layer.get('headlineSourceLinkText', ''))]
@@ -75,6 +76,27 @@ def check_layer(slug, layer, head, record, text):
         raise ValueError(f'{slug}: each fact label must start with "Fact: "')
     if any(q['answer'] not in ('True', 'False') for q in layer['quiz']):
         raise ValueError(f'{slug}: quiz answers must be True or False')
+
+def check_trail(slug, trail):
+    stops = trail['stops']
+    if not trail.get('intro') or not 6 <= len(stops) <= 10:
+        raise ValueError(f'{slug}: a trail needs an intro and 6–10 stops')
+    for st in stops:
+        if st['role'] not in TRAIL_ROLES or not st['url'].startswith('https://'):
+            raise ValueError(f'{slug}: trail stop needs a known role and an https URL: {st["title"]}')
+        if not all(st.get(k) for k in ('date', 'title', 'quote', 'note', 'linkText')):
+            raise ValueError(f'{slug}: trail stop is missing a field: {st["title"]}')
+        if len(st['quote'].split()) > 25:
+            raise ValueError(f'{slug}: trail quote over 25 words: {st["title"]}')
+    return trail
+
+def check_act(slug, act):
+    for part in ('learn', 'speakUp', 'takeAction'):
+        if not act.get(part) or any(not x['url'].startswith('https://') or not x.get('title') or not x.get('linkText') for x in act[part]):
+            raise ValueError(f'{slug}: Act on what’s real needs {part} items with a title, link text and https URL')
+    if not act.get('intro'):
+        raise ValueError(f'{slug}: Act on what’s real needs an intro')
+    return act
 
 def check_cards(slug, cards):
     items = cards['topics'][slug]
@@ -96,6 +118,8 @@ def main():
     editorial = json.loads((ROOT/'handoff/editorial-metadata.json').read_text())
     cards = json.loads((ROOT/'handoff/article-cards.json').read_text())
     layers = json.loads((ROOT/'handoff/interactive-layers.json').read_text())['topics']
+    trails = json.loads((ROOT/'handoff/claim-trails.json').read_text())
+    act = json.loads((ROOT/'handoff/act-on-whats-real.json').read_text())
     topics, validations, hashes = [], [], {}
     for slug, name in zip(SLUGS, NAMES):
         path = ROOT/f'explainers/{slug}.md'
@@ -137,7 +161,9 @@ def main():
             'aiEvidenceReview': {'status': 'completed', 'date': meta['aiReviewDate']},
             'humanEditorialReview': {'status': 'pending', 'reviewer': None, 'date': None},
             'reviewStatusText': PENDING_LABEL,
-            'interactive': {k: v for k, v in layer.items() if k not in ('headline', 'carefulHeadline', 'scoreReason', 'carefulScoreReason')},
+            'interactive': {**{k: v for k, v in layer.items() if k not in ('headline', 'carefulHeadline', 'scoreReason', 'carefulScoreReason')},
+                'trail': check_trail(slug, trails['topics'][slug]),
+                'actOnWhatsReal': check_act(slug, act['topics'][slug])},
             'remainingLimitations': record['evidence_limitations'],
             'articleCards': check_cards(slug, cards),
             'websiteCopyMarkdown': text,
@@ -178,7 +204,7 @@ def main():
             'Keep the exact claim, key qualification, proposed score and rationale together.',
             'Qualitative evidence limitations are separate from hype and potential harm.',
             'Do not show review labels (“AI rating, not yet reviewed” or “Reviewed by Leyla”) anywhere in the Claim Tracker.',
-            'The headline statement, score, score reason and key qualification are always visible; interactive layers only add detail.',
+            'The headline statement, its hype score and its trail are always visible; tabs only add detail.',
             'Dates are stored editorial facts; deployment must not change them.',
             'Article cards show real news coverage of the claim; their article ratings are separate from the claim scores and are not the research evidence base.'
         ],
@@ -188,6 +214,8 @@ def main():
             'repositoryAuditMarkdown': (ROOT/'scoring/repository-audit.md').read_text(),
             'repository': json.loads((ROOT/'scoring/repository-version.json').read_text())
         },
+        'trailRoles': trails['roles'],
+        'actOnWhatsReal': {'siteItem': act['siteItem'], 'footer': act['footer']},
         'topics': topics, 'sourceFileSha256': hashes,
     }
     (ROOT/'handoff/claims-content.json').write_text(json.dumps(content, ensure_ascii=False, indent=2)+'\n')

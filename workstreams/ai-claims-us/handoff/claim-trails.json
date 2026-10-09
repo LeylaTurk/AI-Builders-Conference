@@ -1,0 +1,607 @@
+{
+ "version": "claims-us-trails-1.0",
+ "status": "October 9, 2026: one verified trail per claim. Every stop was opened and checked; quotes are verbatim (25 words or fewer).",
+ "roles": {
+  "origin": "Where it started",
+  "spread": "Spreading",
+  "twist": "The twist",
+  "peak": "Loudest",
+  "pushback": "Pushback",
+  "update": "New numbers"
+ },
+ "topics": {
+  "water": {
+   "intro": "How one research estimate became “a bottle of water every time you use AI”, and how it has been challenged since.",
+   "stops": [
+    {
+     "date": "April 6, 2023",
+     "role": "origin",
+     "title": "University researchers publish “Making AI Less Thirsty”",
+     "quote": "ChatGPT needs to \"drink\" a 500ml bottle of water for a simple conversation of roughly 20-50 questions and answers",
+     "note": "A computer estimate for one model that also counts water used by power plants. One bottle for a whole conversation, not for each question.",
+     "linkText": "Read the study (first version)",
+     "url": "https://arxiv.org/pdf/2304.03271v1"
+    },
+    {
+     "date": "April 11, 2023",
+     "role": "spread",
+     "title": "Gizmodo picks it up",
+     "quote": "ChatGPT, which came after GPT-3, would need to \"drink\" a 500-milliliter water bottle in order to complete a basic exchange",
+     "note": "Early coverage still tied the bottle to a whole exchange of questions.",
+     "linkText": "Read Gizmodo’s story",
+     "url": "https://gizmodo.com/chatgpt-ai-water-185000-gallons-training-nuclear-1850324249"
+    },
+    {
+     "date": "September 9, 2023",
+     "role": "spread",
+     "title": "The Associated Press takes it nationwide",
+     "quote": "Ren's team estimates ChatGPT gulps up 500 milliliters of water",
+     "note": "The AP story, run by local news sites across the US, said this was for a series of 5 to 50 prompts.",
+     "linkText": "Read the AP story (on FOX 9)",
+     "url": "https://www.fox9.com/news/artificial-intelligence-technology-behind-chatgpt-was-built-in-iowa-with-a-lot-of-water"
+    },
+    {
+     "date": "September 11, 2023",
+     "role": "twist",
+     "title": "Windows Central turns it into a bottle for every query",
+     "quote": "every query also uses the equivalent of a bottle of water in cooling",
+     "note": "This is where a bottle per conversation became a bottle per question, the version our headline tracks.",
+     "linkText": "Read Windows Central’s story",
+     "url": "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies"
+    },
+    {
+     "date": "September 2024",
+     "role": "spread",
+     "title": "“One email, one bottle”",
+     "quote": "ChatGPT with GPT-4 uses approximately 519 milliliters of water, slightly more than one 16.9 ounce bottle",
+     "note": "TechRepublic, citing a Washington Post analysis with the same researchers, put the bottle on one 100-word AI-written email.",
+     "linkText": "Read TechRepublic’s story",
+     "url": "https://www.techrepublic.com/article/generative-ai-data-center-water-use/"
+    },
+    {
+     "date": "March 26, 2025",
+     "role": "update",
+     "title": "The researchers narrow their own figure",
+     "quote": "GPT-3 needs to \"drink\" (i.e., consume) a 500ml bottle of water for roughly 10 – 50 medium-length responses",
+     "note": "The updated study names the older GPT-3 model and says the number depends a lot on where the data center is.",
+     "linkText": "Read the updated study",
+     "url": "https://arxiv.org/pdf/2304.03271v5"
+    },
+    {
+     "date": "June 10, 2025",
+     "role": "pushback",
+     "title": "OpenAI’s boss gives a much smaller number",
+     "quote": "It also uses about 0.000085 gallons of water; roughly one fifteenth of a teaspoon.",
+     "note": "Sam Altman’s figure for an average ChatGPT question. It’s a company figure, not an independent measurement.",
+     "linkText": "Read Altman’s post",
+     "url": "https://blog.samaltman.com/the-gentle-singularity"
+    },
+    {
+     "date": "August 21, 2025",
+     "role": "update",
+     "title": "Google publishes its own estimate",
+     "quote": "consumes 0.26 milliliters (or about five drops) of water",
+     "note": "For a typical Gemini text prompt. Some experts said it leaves out water used by power plants.",
+     "linkText": "Read Google’s post",
+     "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference"
+    },
+    {
+     "date": "October 11, 2025",
+     "role": "pushback",
+     "title": "A writer calls the bottle claim a misconception",
+     "quote": "The most widespread misconception about AI and the environment is that each prompt uses a whole bottle of water.",
+     "note": "Andy Masley’s essay estimates about 2 milliliters per prompt, counting power-plant water.",
+     "linkText": "Read the essay",
+     "url": "https://blog.andymasley.com/p/the-ai-water-issue-is-fake"
+    }
+   ]
+  },
+  "jobs": {
+   "intro": "How an estimate of which jobs could be automated became “AI will take all our jobs”, and what job data shows so far.",
+   "stops": [
+    {
+     "date": "September 1, 2013",
+     "role": "origin",
+     "title": "Oxford study says 47% of US jobs are at risk of automation",
+     "quote": "According to their estimates, about 47 per cent of total US employment is at risk.",
+     "note": "Carl Benedikt Frey and Michael Osborne's paper 'The Future of Employment' estimated which jobs could be automated. It measured which jobs could technically be automated, not a forecast of actual job losses.",
+     "linkText": "Read the Oxford Martin School's summary",
+     "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment"
+    },
+    {
+     "date": "April 5, 2023",
+     "role": "spread",
+     "title": "Goldman Sachs: generative AI could expose 300 million jobs",
+     "quote": "could expose the equivalent of 300 million full-time jobs to automation",
+     "note": "Months after ChatGPT launched, Goldman Sachs economists Joseph Briggs and Devesh Kodnani put a global number on exposure. 'Exposed' meant some tasks could be automated, not that the jobs would vanish.",
+     "linkText": "Read Goldman Sachs' article",
+     "url": "https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent"
+    },
+    {
+     "date": "May 23, 2024",
+     "role": "twist",
+     "title": "Elon Musk says probably none of us will have a job",
+     "quote": "Probably none of us will have a job",
+     "note": "Speaking by webcam to the VivaTech conference in Paris, Musk predicted near-total job loss, adding that a 'universal high income' would be needed. CNN's headline put it as 'AI will take all our jobs.'",
+     "linkText": "Read CNN's story (via WRAL)",
+     "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/"
+    },
+    {
+     "date": "May 28, 2025",
+     "role": "peak",
+     "title": "Anthropic CEO warns of a 'white-collar bloodbath'",
+     "quote": "AI could wipe out half of all entry-level white-collar jobs",
+     "note": "In an Axios interview, Dario Amodei said AI could eliminate half of entry-level white-collar jobs and push unemployment to 10-20% within one to five years.",
+     "linkText": "Read Axios' story",
+     "url": "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic"
+    },
+    {
+     "date": "May 30, 2025",
+     "role": "spread",
+     "title": "Amodei repeats the warning on CNN",
+     "quote": "We can't just sleepwalk into it.",
+     "note": "In a CNN interview, Amodei said AI is already about as good as a smart college student at tasks like summarizing documents and writing code, the core of many entry-level office jobs.",
+     "linkText": "Read CNN's story (via WRAL)",
+     "url": "https://www.wral.com/takeaways-from-anthropic-ceo-dario-amodei-s-cnn-interview/22029240"
+    },
+    {
+     "date": "October 1, 2025",
+     "role": "pushback",
+     "title": "Yale Budget Lab finds no broad job disruption yet",
+     "quote": "has not experienced a discernible disruption since ChatGPT's release 33 months ago",
+     "note": "Researchers at Yale's Budget Lab and Brookings compared job and unemployment data with measures of AI exposure and found no clear link. They said better data is needed and promised regular updates.",
+     "linkText": "Read the Yale Budget Lab's report",
+     "url": "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs"
+    },
+    {
+     "date": "February 2, 2026",
+     "role": "pushback",
+     "title": "Updated Yale analysis: fears remain 'largely speculative'",
+     "quote": "largely reflects stability, not major disruption at an economy-wide level",
+     "note": "Fortune reported that the Budget Lab's updated numbers still showed no economy-wide shock, raising the question of whether some companies cite AI to justify layoffs. Director Martha Gimbel warned against declaring the impact 'here before it's here.'",
+     "linkText": "Read Fortune's story",
+     "url": "https://fortune.com/2026/02/02/ai-labor-market-yale-budget-lab-ai-washing/"
+    },
+    {
+     "date": "April 22, 2026",
+     "role": "pushback",
+     "title": "Nobel economist Daron Acemoglu disputes Amodei's forecast",
+     "quote": "I'm convinced that Dario actually believes what he says.",
+     "note": "MIT economist Daron Acemoglu called Amodei's warning 'motivated reasoning' and said it ignores new jobs that technology creates. Meta's Yann LeCun also posted that 'Dario is wrong.'",
+     "linkText": "Read Business Insider's story (via Yahoo Finance)",
+     "url": "https://finance.yahoo.com/economy/articles/nobel-prize-winning-economist-isnt-090501207.html"
+    },
+    {
+     "date": "August 12, 2026",
+     "role": "update",
+     "title": "Stanford data shows young workers in AI-exposed jobs falling behind",
+     "quote": "stands 19% below where it would be had it kept pace with that of their less-exposed peers",
+     "note": "A revised Stanford study using ADP payroll data through June 2026 found employment of workers aged 22 to 25 in AI-exposed jobs lagging their peers. The authors call the findings early descriptive signals, not proof that AI caused the gap.",
+     "linkText": "Read Stanford Digital Economy Lab's paper",
+     "url": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/"
+    }
+   ]
+  },
+  "existential-risk": {
+   "intro": "How warnings that superintelligent AI could slip out of human control became the flat prediction that everyone will die, and how experts have answered.",
+   "stops": [
+    {
+     "date": "September 3, 2014",
+     "role": "origin",
+     "title": "Philosopher Nick Bostrom's book Superintelligence warns AI could escape human control",
+     "quote": "this new superintelligence could become extremely powerful - possibly beyond our control.",
+     "note": "Oxford University Press published the book, which made the case that machine intelligence surpassing humans could pose a risk to humanity.",
+     "linkText": "Read Oxford University Press's book page",
+     "url": "https://global.oup.com/academic/product/superintelligence-9780199678112"
+    },
+    {
+     "date": "March 22, 2023",
+     "role": "spread",
+     "title": "Open letter calls for a six-month pause on AI more powerful than GPT-4",
+     "quote": "Should we develop nonhuman minds that might eventually outnumber, outsmart, obsolete and replace us?",
+     "note": "The Future of Life Institute letter asked all AI labs to immediately pause training systems more powerful than GPT-4 for at least six months. It brought the idea of AI replacing humans into mainstream news.",
+     "linkText": "Read the Future of Life Institute's open letter",
+     "url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+    },
+    {
+     "date": "March 29, 2023",
+     "role": "twist",
+     "title": "Yudkowsky says a pause is not enough and predicts everyone on Earth will die",
+     "quote": "is that literally everyone on Earth will die.",
+     "note": "In a TIME essay, Eliezer Yudkowsky argued the pause letter understated the danger and called for shutting AI development down. He framed extinction as the most likely result of building superhuman AI under current conditions, not a remote possibility.",
+     "linkText": "Read TIME's essay",
+     "url": "https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/"
+    },
+    {
+     "date": "May 1, 2023",
+     "role": "spread",
+     "title": "AI pioneer Geoffrey Hinton leaves Google to speak about AI's dangers",
+     "quote": "I left so that I could talk about the dangers of AI without considering how this impacts Google",
+     "note": "Hinton, a leading figure in deep learning, said he quit Google so he could warn freely about AI risks.",
+     "linkText": "Read CNN's story",
+     "url": "https://www.cnn.com/2023/05/01/tech/geoffrey-hinton-leaves-google-ai-fears/index.html"
+    },
+    {
+     "date": "May 2023",
+     "role": "peak",
+     "title": "AI lab leaders and top researchers sign a one-sentence extinction warning",
+     "quote": "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.",
+     "note": "Signers of the Center for AI Safety statement include Geoffrey Hinton, Yoshua Bengio, Google DeepMind CEO Demis Hassabis and OpenAI CEO Sam Altman. It put the word \"extinction\" next to the names of the people building the technology.",
+     "linkText": "Read the Center for AI Safety's statement",
+     "url": "https://www.safe.ai/work/statement-on-ai-risk"
+    },
+    {
+     "date": "June 20, 2023",
+     "role": "pushback",
+     "title": "Meta's chief AI scientist Yann LeCun calls extinction fears ridiculous",
+     "quote": "That's just insane.",
+     "note": "LeCun dismissed scenarios in which AI takes over the world's resources, and MIT Technology Review described his view of a superintelligent takeover as \"preposterously ridiculous.\" He is one of the most prominent researchers who reject the extinction claim.",
+     "linkText": "Read MIT Technology Review's story",
+     "url": "https://www.technologyreview.com/2023/06/20/1075075/metas-ai-leaders-want-you-to-know-fears-over-ai-existential-risk-are-ridiculous/"
+    },
+    {
+     "date": "January 4, 2024",
+     "role": "update",
+     "title": "Survey of 2,778 AI researchers finds a median 5% chance of extinction-level outcomes",
+     "quote": "Median respondents put 5% or more on advanced AI leading to human extinction or similar",
+     "note": "The AI Impacts survey found researchers take the risk seriously but are far from certain of it: \"a third to a half of participants gave 10% or more.\" That is a long way from the certainty in \"everyone dies.\"",
+     "linkText": "Read AI Impacts' survey summary",
+     "url": "https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things"
+    },
+    {
+     "date": "January 29, 2025",
+     "role": "update",
+     "title": "International AI Safety Report finds experts split on the risk of losing control",
+     "quote": "expert opinion on the likelihood of loss of control within the next several years varies greatly.",
+     "note": "A government-backed report chaired by Yoshua Bengio reviewed the evidence on loss-of-control risks. It treated the risk as a real concern but found no expert consensus on how likely it is.",
+     "linkText": "Read the International AI Safety Report",
+     "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+    },
+    {
+     "date": "September 16, 2025",
+     "role": "peak",
+     "title": "Yudkowsky and Soares publish a book titled If Anyone Builds It, Everyone Dies",
+     "quote": "And if anyone builds it, everyone dies.",
+     "note": "The book's subtitle is \"Why Superhuman AI Would Kill Us All.\" It made the 2023 essay's prediction into the title of a mainstream book.",
+     "linkText": "Read Hachette's book page",
+     "url": "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/"
+    }
+   ]
+  },
+  "data-centers": {
+   "intro": "How local fights over data centers grew into “data centers will destroy our community”, with costs and benefits argued along the way.",
+   "stops": [
+    {
+     "date": "November 2022",
+     "role": "origin",
+     "title": "Prince William County approves the Digital Gateway over loud opposition",
+     "quote": "greatest single threat to the park in decades",
+     "note": "Supervisors voted 5–2 to open about 2,100 acres next to Manassas National Battlefield to data centers after a 15-hour hearing. The quote is from former battlefield superintendent Brandon Bies, and another opponent called the plan \"a massive concrete jungle.\"",
+     "linkText": "Read the Prince William Times story",
+     "url": "https://www.princewilliamtimes.com/news/breaking-supervisors-approve-digital-gateway-plan-to-open-rural-crescent-to-data-centers/article_aa09b826-5ab5-11ed-a197-cfc793b860f0.html"
+    },
+    {
+     "date": "December 9, 2024",
+     "role": "pushback",
+     "title": "Virginia's legislative auditors weigh benefits against energy costs",
+     "quote": "But at the same time, the industry provides about $9.1 billion in annual activity to the economy.",
+     "note": "The JLARC study counted about 74,000 jobs a year tied to the industry. It also warned that rising energy demand could add $37 a month to Dominion Energy customers' bills.",
+     "linkText": "Read the Virginia Mercury's story",
+     "url": "https://virginiamercury.com/?p=41102"
+    },
+    {
+     "date": "May 21, 2025",
+     "role": "spread",
+     "title": "Report tallies $64 billion in projects blocked or delayed by local opposition",
+     "quote": "$64 billion in U.S. data center projects have been blocked or delayed by a growing wave of local, bipartisan opposition.",
+     "note": "This Inside Climate News story, republished by Route Fifty, covered a Data Center Watch report. The report turned scattered local fights into a national number. Virginia alone accounted for about $45.8 billion in delayed projects.",
+     "linkText": "Read Route Fifty's story",
+     "url": "https://www.route-fifty.com/infrastructure/2025/05/report-highlights-community-pushback-stalling-64-billion-data-center-development-nationwide/405480"
+    },
+    {
+     "date": "June 17, 2025",
+     "role": "spread",
+     "title": "NAACP moves to sue xAI over turbine pollution in Memphis",
+     "quote": "The temporary power generation units are operating in compliance with all applicable laws,",
+     "note": "The NAACP, represented by the Southern Environmental Law Center, sent a notice of intent to sue over gas turbines powering xAI's supercomputer near mostly Black Memphis neighborhoods. The quote is xAI's response.",
+     "linkText": "Read Fortune's (AP) story",
+     "url": "https://fortune.com/2025/06/17/elon-musk-xai-naacp-memphis-supercomputer-colossus-ai-environment-health"
+    },
+    {
+     "date": "July 29, 2025",
+     "role": "spread",
+     "title": "Record grid auction ties data centers to higher power bills",
+     "quote": "Data centers are a primary driver of this increase.",
+     "note": "PJM, the largest US grid, set record capacity prices, and monthly bills in its 13 states could rise more than 5%. This gave opponents a cost argument that reached households far from any data center site.",
+     "linkText": "Read Data Center Dynamics' story",
+     "url": "https://datacenterdynamics.com/en/news/data-center-boom-fuels-pjm-power-cost-increases-as-states-move-to-shield-ratepayers"
+    },
+    {
+     "date": "August 6, 2025",
+     "role": "peak",
+     "title": "Tucson council unanimously ends Project Blue",
+     "quote": "In addition to the water use, this was a problem because of the energy use.",
+     "note": "The Tucson City Council voted unanimously to stop all staff work on the proposed data center after residents objected to its water and energy use. Councilmember Kevin Dahl gave the quote.",
+     "linkText": "Read AZFamily's story",
+     "url": "https://www.azfamily.com/2025/08/06/tucson-city-council-votes-end-project-blue/"
+    },
+    {
+     "date": "August 7, 2025",
+     "role": "peak",
+     "title": "Judge voids the Digital Gateway rezoning",
+     "quote": "A Prince William County judge ruled on August 7 to void the rezoning for the Prince William Digital Gateway.",
+     "note": "Judge Kimberly Irving ruled for nearby residents, finding that the county's public notice was defective. That halted, at least for now, the 2,100-acre project from the first stop. The county and developers had 30 days to appeal. The linked story ran on August 11.",
+     "linkText": "Read Northern Virginia Magazine's story",
+     "url": "https://northernvirginiamag.com/news/2025/08/11/judge-blocks-prince-william-digital-gateway-data-center-project/"
+    },
+    {
+     "date": "November 18, 2025",
+     "role": "twist",
+     "title": "DeKalb County activist: data centers \"will destroy our community\"",
+     "quote": "I believe this will destroy our community.",
+     "note": "Gina Mangham of Renew DeKalb spoke before a county vote on data center zoning rules. She also raised health impacts and effects on Black and brown communities.",
+     "linkText": "Read CBS News Atlanta's story",
+     "url": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods"
+    },
+    {
+     "date": "June 10, 2026",
+     "role": "update",
+     "title": "DeKalb extends its pause on new data centers again",
+     "quote": "This has never been about opposing technology or economic development.",
+     "note": "DeKalb County, Georgia commissioners voted 5–2 to extend the pause on new data center applications by 100 days, through September 30. Commissioner Nicole Massiah gave the quote.",
+     "linkText": "Read Hoodline's story",
+     "url": "https://hoodline.com/2026/06/dekalb-slams-brakes-on-data-center-boom-after-5-2-vote/"
+    }
+   ]
+  },
+  "energy-climate": {
+   "intro": "How an estimate of the carbon cost of training AI grew into “AI will make climate change worse”, and how the evidence and arguments have moved since.",
+   "stops": [
+    {
+     "date": "June 5, 2019",
+     "role": "origin",
+     "title": "University researchers estimate the energy and carbon cost of training AI language models",
+     "quote": "these accuracy improvements depend on the availability of exceptionally large computational resources",
+     "note": "Emma Strubell, Ananya Ganesh and Andrew McCallum of UMass Amherst estimated the financial and environmental costs of training several popular language models and suggested ways to reduce them.",
+     "linkText": "Read the paper on arXiv",
+     "url": "https://arxiv.org/abs/1906.02243"
+    },
+    {
+     "date": "June 6, 2019",
+     "role": "twist",
+     "title": "A headline turns the study into \"as much carbon as five cars\"",
+     "quote": "Training a single AI model can emit as much carbon as five cars in their lifetimes",
+     "note": "MIT Technology Review reported the study's top estimate of more than 626,000 pounds of CO2 equivalent, compared with car lifetime emissions including manufacture. The figure applied to the most intensive training run studied, not to a typical model.",
+     "linkText": "Read MIT Technology Review's story",
+     "url": "https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/"
+    },
+    {
+     "date": "May 15, 2024",
+     "role": "spread",
+     "title": "Microsoft says its emissions are up about 29% since 2020",
+     "quote": "In aggregate, across all Scopes 1–3, Microsoft's emissions are up 29.1% from the 2020 baseline.",
+     "note": "Microsoft said the rise mainly came from building more data centers, and that infrastructure and electricity for new technologies such as generative AI create new challenges for its climate goals.",
+     "linkText": "Read Microsoft's report announcement",
+     "url": "https://blogs.microsoft.com/on-the-issues/2024/05/15/microsoft-environmental-sustainability-report-2024/"
+    },
+    {
+     "date": "July 2024",
+     "role": "peak",
+     "title": "Google reports emissions up 48% since 2019, blamed on data center energy use",
+     "quote": "Google admitted that its greenhouse gas emissions rose 48 percent since 2019.",
+     "note": "The Register reported Google's 2024 environmental report, which tied the rise to data center energy use as AI spreads, while Google also argued AI could help cut emissions elsewhere.",
+     "linkText": "Read The Register's story",
+     "url": "https://www.theregister.com/2024/07/02/google_datacenter_emissions/"
+    },
+    {
+     "date": "December 20, 2024",
+     "role": "update",
+     "title": "US government report projects data center electricity share could nearly triple by 2028",
+     "quote": "consumed about 4.4% of total U.S. electricity in 2023",
+     "note": "The Department of Energy released a Lawrence Berkeley National Laboratory report projecting data centers could use about 6.7% to 12% of US electricity by 2028. It measured electricity use, not climate impact directly.",
+     "linkText": "Read the Department of Energy's announcement",
+     "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
+    },
+    {
+     "date": "April 10, 2025",
+     "role": "update",
+     "title": "IEA says data center electricity will more than double by 2030, but AI could offset emissions",
+     "quote": "could potentially be offset by emissions reductions enabled by AI if adoption of the technology is widespread",
+     "note": "The International Energy Agency projected global data center demand rising to around 945 TWh by 2030, while saying AI-enabled savings could potentially offset the added emissions.",
+     "linkText": "Read the IEA's announcement",
+     "url": "https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works"
+    },
+    {
+     "date": "October 28, 2025",
+     "role": "pushback",
+     "title": "Bill Gates says climate change won't end humanity and credits AI with speeding clean energy",
+     "quote": "will not lead to humanity’s demise",
+     "note": "In his memo \"Three tough truths about climate,\" Gates argued against a doomsday view and said artificial intelligence is accelerating clean energy innovation.",
+     "linkText": "Read Bill Gates' memo",
+     "url": "https://www.gatesnotes.com/three-tough-truths-about-climate"
+    },
+    {
+     "date": "December 4, 2025",
+     "role": "peak",
+     "title": "Historian Juan Cole argues AI will intensify climate change",
+     "quote": "AI has its uses, but we clearly don't need so much more of it desperately enough to thoroughly wreck our planet.",
+     "note": "Writing in The Nation partly in response to Gates, Cole argued that data centers are poised to use more fossil fuels and raise global carbon emissions significantly.",
+     "linkText": "Read The Nation's story",
+     "url": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
+    }
+   ]
+  },
+  "creativity": {
+   "intro": "How artists’ objections to AI trained on their work became “AI art is theft”, and how courts and regulators have answered.",
+   "stops": [
+    {
+     "date": "September 16, 2022",
+     "role": "origin",
+     "title": "Fantasy artist Greg Rutkowski finds his name is a top prompt for AI images",
+     "quote": "But for me and many other artists, it's starting to look like a threat to our careers.",
+     "note": "MIT Technology Review reported that Rutkowski's name had been used as a prompt about 93,000 times. It was one of the first widely read stories about artists objecting to AI trained on their work.",
+     "linkText": "Read MIT Technology Review's story",
+     "url": "https://www.technologyreview.com/2022/09/16/1059598/this-artist-is-dominating-ai-generated-art-and-hes-not-happy-about-it/"
+    },
+    {
+     "date": "December 14, 2022",
+     "role": "spread",
+     "title": "Artists flood ArtStation with \"No to AI Generated Images\" protest posts",
+     "quote": "work generated by a machine, using data mined from the labor of real humans.",
+     "note": "Illustrator Nicholas Kole started the protest after AI-generated images appeared on ArtStation's Explore page, and the protest image spread across the site. Kole's words framed AI art as built on other people's labor.",
+     "linkText": "Read Vice's story",
+     "url": "https://vice.com/en/article/ake9me/artists-are-revolt-against-ai-art-on-artstation"
+    },
+    {
+     "date": "January 13, 2023",
+     "role": "spread",
+     "title": "Artists file a class action against Stability AI, Midjourney and DeviantArt",
+     "quote": "This suit alleges copyright infringement, DMCA violations, right of publicity violations, breach of the DeviantArt Terms of Service, unfair competition, and unjust enrichment.",
+     "note": "In Andersen v. Stability AI, filed in federal court in Northern California, the artists' complaint moved the argument from social media into court.",
+     "linkText": "Read the plaintiffs' lawyers' case page",
+     "url": "https://www.saverilawfirm.com/our-cases/ai-artgenerators-copyright-litigation"
+    },
+    {
+     "date": "January 2024",
+     "role": "twist",
+     "title": "Philosophy paper argues the protest slogan \"AI art is theft\" holds up",
+     "quote": "the artistic community has launched a protest movement, which argues that AI image generation is a kind of theft.",
+     "note": "Trystan S. Goetze's paper, later presented at the FAccT 2024 conference, moved the claim from legal copyright to ethics. It argues that AI image generators involve an unethical kind of labor theft, whatever the law says.",
+     "linkText": "Read the paper on arXiv",
+     "url": "https://arxiv.org/abs/2401.06178v2"
+    },
+    {
+     "date": "May 9, 2025",
+     "role": "update",
+     "title": "US Copyright Office says some AI training is fair use and some is not",
+     "quote": "some uses of copyrighted works for generative AI training will qualify as fair use, and some will not.",
+     "note": "The Office released a pre-publication version of Part 3 of its AI report, on training. It said the answer depends on the facts of each case and stressed that not every transformative use is a fair one.",
+     "linkText": "Read Jenner & Block's summary",
+     "url": "https://www.jenner.com/en/news-insights/client-alerts/us-copyright-office-releases-pre-publication-version-of-report-on-copyright-issues-in-generative-ai-training"
+    },
+    {
+     "date": "June 11, 2025",
+     "role": "peak",
+     "title": "Disney and Universal sue Midjourney",
+     "quote": "Midjourney is the quintessential copyright free-rider and a bottomless pit of plagiarism",
+     "note": "Two of the biggest Hollywood studios sued in federal court in Los Angeles. The case put major corporate rights holders behind the argument individual artists had been making.",
+     "linkText": "Read Reuters' story (via Insurance Journal)",
+     "url": "https://amp.insurancejournal.com/news/national/2025/06/12/827252.htm"
+    },
+    {
+     "date": "June 23, 2025",
+     "role": "pushback",
+     "title": "Judge rules training on books is fair use, but pirated copies are not",
+     "quote": "The court held that using copyrighted material to train LLM models was \"exceedingly transformative\" and thus was fair use",
+     "note": "In Bartz v. Anthropic, a case about books rather than images, Judge William Alsup ruled for the AI company on training. He ruled against it on keeping more than seven million pirated books in a library.",
+     "linkText": "Read Akin Gump's summary",
+     "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/district-court-rules-ai-training-can-be-fair-use-in-bartz-v-anthropic"
+    },
+    {
+     "date": "September 25, 2025",
+     "role": "update",
+     "title": "Judge approves $1.5 billion Anthropic settlement with authors",
+     "quote": "which will pay authors and publishers about $3,000 for each of the books covered by the agreement.",
+     "note": "The settlement covered Anthropic's use of pirated books, the part of the case that was not ruled fair use. It showed that how training data is obtained can carry a large cost even when training itself is allowed.",
+     "linkText": "Read the AP's story (via The Republic)",
+     "url": "https://www.therepublic.com/?p=827516"
+    },
+    {
+     "date": "November 4, 2025",
+     "role": "pushback",
+     "title": "UK court rejects Getty's claim that Stable Diffusion is an infringing copy",
+     "quote": "the model weights are not themselves an infringing copy and they do not store an infringing copy.",
+     "note": "In Getty Images v. Stability AI, Mrs Justice Smith of England's High Court rejected Getty's secondary copyright claim. She found that the model does not store the copyrighted images it learned from.",
+     "linkText": "Read Latham & Watkins' summary",
+     "url": "https://www.lw.com/en/insights/getty-images-v-stability-ai-english-high-court-rejects-secondary-copyright-claim"
+    }
+   ]
+  },
+  "privacy": {
+   "intro": "How a real bug and new privacy settings became “ChatGPT is sharing your secrets”, and what has happened to ChatGPT chats since.",
+   "stops": [
+    {
+     "date": "March 24, 2023",
+     "role": "origin",
+     "title": "OpenAI admits a bug showed some users other people's chat titles",
+     "quote": "allowed some users to see titles from another active user's chat history",
+     "note": "OpenAI said a bug in an open-source library caused the March 20 outage and also exposed payment-related details for 1.2% of ChatGPT Plus subscribers active in a nine-hour window. It said full credit card numbers were not exposed.",
+     "linkText": "Read OpenAI's post",
+     "url": "https://openai.com/index/march-20-chatgpt-outage/"
+    },
+    {
+     "date": "March 31, 2023",
+     "role": "spread",
+     "title": "Italy's privacy regulator temporarily blocks ChatGPT",
+     "quote": "The Italian SA imposed an immediate temporary limitation on the processing of Italian users' data by OpenAI",
+     "note": "The Garante cited the March 20 data breach and said personal data was being collected unlawfully, with no age checks for children. It opened an inquiry into OpenAI.",
+     "linkText": "Read the Garante's press release",
+     "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870847"
+    },
+    {
+     "date": "April 25, 2023",
+     "role": "update",
+     "title": "OpenAI lets users turn off chat history and training",
+     "quote": "Conversations that are started when chat history is disabled won't be used to train and improve our models",
+     "note": "OpenAI said chats started with history off would be kept for 30 days and reviewed only when needed to monitor for abuse, then permanently deleted.",
+     "linkText": "Read OpenAI's announcement",
+     "url": "https://openai.com/index/new-ways-to-manage-your-data-in-chatgpt/"
+    },
+    {
+     "date": "April 26, 2023",
+     "role": "twist",
+     "title": "Tom's Guide headline: \"ChatGPT is sharing your secrets\"",
+     "quote": "Until now, ChatGPT saved users’ conversations to train its impressive AI chatbot on.",
+     "note": "The how-to story by Andy Sansom framed default training on chats as ChatGPT 'sharing your secrets' and told readers to switch off the new Chat History & Training setting. The body describes training and retention, not chats being shared with other people.",
+     "linkText": "Read Tom's Guide's story",
+     "url": "https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting"
+    },
+    {
+     "date": "May 2, 2023",
+     "role": "spread",
+     "title": "Samsung bans staff from using ChatGPT after code was pasted into it",
+     "quote": "asked ChatGPT to help fix a faulty database",
+     "note": "Fortune reported, citing Korean media, that an employee uploaded confidential source code while asking for help, and another shared a whole meeting to get minutes. Samsung warned violations could lead to firing.",
+     "linkText": "Read Fortune's story",
+     "url": "https://fortune.com/2023/05/02/samsung-bans-employee-use-chatgpt-data-leak/"
+    },
+    {
+     "date": "June 5, 2025",
+     "role": "spread",
+     "title": "Court order in New York Times lawsuit forces OpenAI to keep deleted chats",
+     "quote": "The New York Times is demanding that we retain even deleted ChatGPT chats and API content that would typically be automatically removed",
+     "note": "OpenAI said it was challenging a preservation order in The New York Times' copyright lawsuit that required it to keep chats users had deleted. A magistrate judge clarified on May 27 that ChatGPT Enterprise was excluded.",
+     "linkText": "Read OpenAI's post",
+     "url": "https://openai.com/index/response-to-nyt-data-demands/"
+    },
+    {
+     "date": "July 25, 2025",
+     "role": "peak",
+     "title": "Sam Altman says ChatGPT chats lack legal confidentiality",
+     "quote": "There's legal confidentiality, whatever. And we haven't figured that out yet for when you talk to ChatGPT.",
+     "note": "On Theo Von's podcast, OpenAI's CEO said conversations with ChatGPT lack the legal privilege of talks with a therapist, lawyer or doctor, and that the company could be required to produce them in a lawsuit.",
+     "linkText": "Read TechCrunch's story",
+     "url": "https://techcrunch.com/2025/07/25/sam-altman-warns-theres-no-legal-confidentiality-when-using-chatgpt-as-a-therapist/"
+    },
+    {
+     "date": "July 31, 2025",
+     "role": "pushback",
+     "title": "OpenAI pulls feature that let shared chats show up in Google",
+     "quote": "Ultimately we think this feature introduced too many opportunities for folks to accidentally share things",
+     "note": "After Fast Company found over 4,500 shared ChatGPT links indexed by Google, OpenAI removed the opt-in 'discoverable' option and said it was working to remove indexed content from search engines.",
+     "linkText": "Read Search Engine Journal's story",
+     "url": "https://www.searchenginejournal.com/openai-is-pulling-shared-chatgpt-chats-from-google-search/552671/"
+    },
+    {
+     "date": "October 11, 2025",
+     "role": "update",
+     "title": "Judge lifts the order to keep all deleted ChatGPT chats, with exceptions",
+     "quote": "OpenAI is required to hold on to any data related to ChatGPT accounts that have been flagged by the NYT.",
+     "note": "An October 9 order ended the duty to preserve all output logs going forward; logs already saved remain. OpenAI said its obligation ended September 26, 2025, and deleted chats are again removed within 30 days.",
+     "linkText": "Read Engadget's story",
+     "url": "https://engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html"
+    }
+   ]
+  }
+ }
+}
