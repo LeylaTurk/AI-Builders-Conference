@@ -10,7 +10,7 @@ This brief merges the two earlier documents in `archive/` (the challenge brief a
 | Item | Status |
 | --- | --- |
 | Idea | **Decided:** an AI-news website that rates each story for hype and for gaps in its evidence, with the evidence shown. |
-| Name | **Decoding the Hype**, subtitle *AI news, headlines, and claims* (renamed 6 Oct; subtitle and tagline not final; name and domain not yet checked). |
+| Name | **Decoding the Hype**, subtitle *AI news, headlines, and claims*, tagline *Be on top of the news and under the hype* (renamed and tagline chosen 6 Oct; name and domain not yet checked). |
 | Feature scope | **Approved** 25–26 Sep: 12 Musts, 4 Shoulds (see [Features](#features-approved) and `prep/feature-list.md`). |
 | Ratings | **Decided** 26 Sep: two separate ratings on **matching scales where fewer is better**: 🌶 **Hype** (1–5 chillies) and 🚩 **Evidence gaps** (1–5 flags for gaps in the evidence). |
 | Sources | **Decided:** big outlets are not fetched or AI-rated; the feed uses press releases, company announcements and openly licensed outlets, plus a hand-collected backlog. Readers can check any article by pasting it. |
@@ -221,7 +221,7 @@ Curious, sharp and welcoming. The spice metaphor is for exaggerated presentation
 
 ## Name
 
-**Name (decided 6 Oct): Decoding the Hype**, with the working subtitle **"AI news, headlines, and claims"** (subtitle and tagline not final). It replaces "AI Decoded: Don't fall for the hype" (4 Oct), which was already used elsewhere, and the first working name "AI, Seriously?". The logo reads "Decoding the **Hype**" with "Hype" on the yellow highlighter mark; the subtitle sits under it on the feed. **Not yet checked** for existing products or a domain; nothing purchased. **Behind the Claim** names the evidence section. Avoid **ClaimTrail** ([existing product](https://claimtrail.dev/)).
+**Name (decided 6 Oct): Decoding the Hype**, with the subtitle **"AI news, headlines, and claims"** and the tagline **"Be on top of the news and under the hype"** (chosen by Leyla, 6 Oct; it opens the feed page under the header). It replaces "AI Decoded: Don't fall for the hype" (4 Oct), which was already used elsewhere, and the first working name "AI, Seriously?". The logo reads "Decoding the **Hype**" with "Hype" on the yellow highlighter mark; the subtitle sits under it on the feed. **Not yet checked** for existing products or a domain; nothing purchased. **Behind the Claim** names the evidence section. Avoid **ClaimTrail** ([existing product](https://claimtrail.dev/)).
 
 ## Testing and acceptance
 
