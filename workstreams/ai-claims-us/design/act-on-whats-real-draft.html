@@ -220,7 +220,7 @@ h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 4px}
     <p class="short" id="short"></p>
     <div class="carefulbox"><p class="cbhead">A more careful way to say it</p><q id="ctext"></q>
       <p class="who" id="csrc"></p>
-      <p class="creason" id="creason"></p>
+      
       <div class="score careful"><span class="peppers small" id="cpeppers" aria-hidden="true"></span><span id="clabel"></span></div></div>
   </article>
 
@@ -324,7 +324,7 @@ function render(t){
   $("wordnote").innerHTML=t.wordnote+" <i>(Tap the highlighted word to close.)</i>";$("wordnote").hidden=true;
   $("peppers").innerHTML=pep(t.score);
   $("label").textContent=`Headline hype: ${LABELS[t.score]} · ${t.score}/5`;
-  $("cpeppers").innerHTML=pep(t.careful);$("clabel").textContent=`Careful version hype: ${LABELS[t.careful]} · ${t.careful}/5`;$("creason").textContent=t.creason;
+  $("cpeppers").innerHTML=pep(t.careful);$("clabel").textContent=`Careful version hype: ${LABELS[t.careful]} · ${t.careful}/5`;
   $("reason").textContent=t.reason;
   $("short").textContent=t.short;
   linkIn($("who"),t.who,t.wholink,t.whourl);$("ctext").textContent=t.ctext;$("csrc").textContent=t.csrc;
