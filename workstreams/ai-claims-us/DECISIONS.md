@@ -10,6 +10,12 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 - **Article text stays private.** Full article text and checklist quotes live in the private repo `ai-news-articles` (`claims-cards/ratings/`), never in this public repo.
 - **Claim Tracker names this section only.** The site stays **Decoding the Hype**, with its own logo and tagline ("Be on top of the news and under the hype").
 
+## October 9, 2026
+
+| Decision | What it means on the page |
+|---|---|
+| No reason sentence under the careful version | The sentence explaining the careful version's score (for example “The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.”) is removed from every claim. The careful box now shows the quote, “Our wording, based on…”, and the score. The reason stays in the data and the detailed scoring checks. |
+
 ## October 8, 2026
 
 | Decision | What it means on the page |
@@ -50,7 +56,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 | No role tags on article cards | "Makes the claim / Reports it carefully / Pushes back" set the order only and aren't shown. |
 | Dial named **One claim, five ways** | "Turn up the heat" was rejected, because the site is about not turning up the heat. "How hot is this claim?" didn't describe it. |
 | One claim wording per hype level | The dial shows a version at every level 1–5. Headline and careful version are real; the other three are example wordings, scored with the same claims checklist. No labels (like "the careful version") next to the quotes. |
-| Careful version explained | Box reads "Our wording, based on…", then a full plain-English sentence saying why, then its score. The careful versions are our wording, not published quotes. |
+| Careful version explained | Box reads "Our wording, based on…", then its score (the "why" sentence was removed on Oct 9). The careful versions are our wording, not published quotes. |
 | "We also scored a more careful way…" line deleted | |
 | Short answer comes first | "Is it true? The short answer" sits before the careful-version box. |
 | Who said it | Every headline has a line saying who made the claim and where. |
