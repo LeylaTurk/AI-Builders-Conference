@@ -1,11 +1,11 @@
 {
-  "contentVersion": "claims-us-content-1.4",
+  "contentVersion": "claims-us-content-1.5",
   "language": "en-US",
   "audience": "Nontechnical adults in the United States",
   "section": {
     "name": "Claim Tracker",
     "route": "/claims",
-    "introduction": "Seven claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
+    "introduction": "Big claims about AI travel fast and change as they go. We follow each one back to where it started, show how it grew, and check it against the evidence.",
     "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
     "feedInvitationBody": "Explore the evidence on water, jobs, climate, data centers, creativity, privacy, and existential risk.",
@@ -21,7 +21,7 @@
     "Keep the exact claim, key qualification, proposed score and rationale together.",
     "Qualitative evidence limitations are separate from hype and potential harm.",
     "Do not show review labels (“AI rating, not yet reviewed” or “Reviewed by Leyla”) anywhere in the Claim Tracker.",
-    "The headline statement, score, score reason and key qualification are always visible; interactive layers only add detail.",
+    "The headline statement, its hype score and its trail are always visible; tabs only add detail.",
     "Dates are stored editorial facts; deployment must not change them.",
     "Article cards show real news coverage of the claim; their article ratings are separate from the claim scores and are not the research evidence base."
   ],
@@ -59,6 +59,23 @@
         }
       ]
     }
+  },
+  "trailRoles": {
+    "origin": "Where it started",
+    "spread": "Spreading",
+    "twist": "The twist",
+    "peak": "Loudest",
+    "pushback": "Pushback",
+    "update": "New numbers"
+  },
+  "actOnWhatsReal": {
+    "siteItem": {
+      "title": "Check the next headline you see",
+      "text": "Before you share a story on this topic, see how it rates on hype and evidence.",
+      "linkText": "Use Decoding the Hype →",
+      "route": "/"
+    },
+    "footer": "We don’t tell you which side to take, only how to be heard. Speaking up doesn’t guarantee an outcome."
   },
   "topics": [
     {
@@ -335,7 +352,7 @@
       "reviewStatusText": "AI rating, not yet reviewed",
       "interactive": {
         "keyWord": {
-          "word": "Every time",
+          "word": "bottle of water",
           "explanation": "The researchers’ estimate was about half a liter of water for every 10–50 answers, not a bottle for each use, and it rested on guesses about cooling and power."
         },
         "claimDial": [
@@ -443,7 +460,8 @@
             "linkText": "Berkeley Lab’s 2024 report",
             "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
             "icon": "⚡",
-            "tag": "Not all AI"
+            "tag": "Not all AI",
+            "iconName": "lightning"
           },
           {
             "label": "Fact: Water that a data center takes in is not all lost, because experts separate water taken from a source and water used up.",
@@ -451,7 +469,8 @@
             "linkText": "USGS water glossary",
             "url": "https://water.usgs.gov/water-basics_glossary.html",
             "icon": "💧",
-            "tag": "Taken vs. used up"
+            "tag": "Taken vs. used up",
+            "iconName": "drop"
           },
           {
             "label": "Fact: Most of the water linked to US data centers is used at the power plants that supply their electricity, not at the data centers themselves.",
@@ -459,7 +478,8 @@
             "linkText": "Berkeley Lab’s 2024 report",
             "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
             "icon": "🏭",
-            "tag": "Power plant water"
+            "tag": "Power plant water",
+            "iconName": "factory"
           },
           {
             "label": "Fact: Some data centers use cooling systems that need almost no water on site, but those systems usually need more electricity instead.",
@@ -467,7 +487,8 @@
             "linkText": "Li and colleagues’ study",
             "url": "https://arxiv.org/html/2304.03271v5",
             "icon": "🌬️",
-            "tag": "Cooling trade-off"
+            "tag": "Cooling trade-off",
+            "iconName": "wind"
           },
           {
             "label": "Fact: In August 2025, Google estimated that a typical text question to its Gemini AI used about five drops of water.",
@@ -475,7 +496,8 @@
             "linkText": "Google’s August 2025 paper",
             "url": "https://arxiv.org/abs/2508.15734",
             "icon": "🔍",
-            "tag": "Google’s estimate"
+            "tag": "Google’s estimate",
+            "iconName": "magnifying-glass"
           },
           {
             "label": "Fact: Virginia’s state audit found that most data centers there use about as much water as a large office building, though a few use far more.",
@@ -483,7 +505,8 @@
             "linkText": "Virginia’s 2024 state audit",
             "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
             "icon": "🏢",
-            "tag": "Not all alike"
+            "tag": "Not all alike",
+            "iconName": "buildings"
           }
         ],
         "quiz": [
@@ -506,7 +529,132 @@
         "headlineSource": "Claim tracked from Windows Central, a tech news site, which made it in a September 2023 headline: “Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies.”",
         "carefulSource": "Our wording, based on a 2025 Bloomberg investigation into where AI data centers get their water.",
         "headlineSourceUrl": "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies",
-        "headlineSourceLinkText": "Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies"
+        "headlineSourceLinkText": "Bing Chat and ChatGPT use ‘1 bottle of water’ in cooling for every query, leading to concerns for local water supplies",
+        "trail": {
+          "intro": "How one research estimate became “a bottle of water every time you use AI”, and how it has been challenged since.",
+          "stops": [
+            {
+              "date": "April 6, 2023",
+              "role": "origin",
+              "title": "University researchers publish “Making AI Less Thirsty”",
+              "quote": "ChatGPT needs to \"drink\" a 500ml bottle of water for a simple conversation of roughly 20-50 questions and answers",
+              "note": "A computer estimate for one model that also counts water used by power plants. One bottle for a whole conversation, not for each question.",
+              "linkText": "Read the study (first version)",
+              "url": "https://arxiv.org/pdf/2304.03271v1"
+            },
+            {
+              "date": "April 11, 2023",
+              "role": "spread",
+              "title": "Gizmodo picks it up",
+              "quote": "ChatGPT, which came after GPT-3, would need to \"drink\" a 500-milliliter water bottle in order to complete a basic exchange",
+              "note": "Early coverage still tied the bottle to a whole exchange of questions.",
+              "linkText": "Read Gizmodo’s story",
+              "url": "https://gizmodo.com/chatgpt-ai-water-185000-gallons-training-nuclear-1850324249"
+            },
+            {
+              "date": "September 9, 2023",
+              "role": "spread",
+              "title": "The Associated Press takes it nationwide",
+              "quote": "Ren's team estimates ChatGPT gulps up 500 milliliters of water",
+              "note": "The AP story, run by local news sites across the US, said this was for a series of 5 to 50 prompts.",
+              "linkText": "Read the AP story (on FOX 9)",
+              "url": "https://www.fox9.com/news/artificial-intelligence-technology-behind-chatgpt-was-built-in-iowa-with-a-lot-of-water"
+            },
+            {
+              "date": "September 11, 2023",
+              "role": "twist",
+              "title": "Windows Central turns it into a bottle for every query",
+              "quote": "every query also uses the equivalent of a bottle of water in cooling",
+              "note": "This is where a bottle per conversation became a bottle per question, the version our headline tracks.",
+              "linkText": "Read Windows Central’s story",
+              "url": "https://www.windowscentral.com/microsoft/bing-chat-and-chatgpt-use-1-bottle-of-water-in-cooling-for-every-query-leading-to-concerns-for-local-water-supplies"
+            },
+            {
+              "date": "September 2024",
+              "role": "spread",
+              "title": "“One email, one bottle”",
+              "quote": "ChatGPT with GPT-4 uses approximately 519 milliliters of water, slightly more than one 16.9 ounce bottle",
+              "note": "TechRepublic, citing a Washington Post analysis with the same researchers, put the bottle on one 100-word AI-written email.",
+              "linkText": "Read TechRepublic’s story",
+              "url": "https://www.techrepublic.com/article/generative-ai-data-center-water-use/"
+            },
+            {
+              "date": "March 26, 2025",
+              "role": "update",
+              "title": "The researchers narrow their own figure",
+              "quote": "GPT-3 needs to \"drink\" (i.e., consume) a 500ml bottle of water for roughly 10 – 50 medium-length responses",
+              "note": "The updated study names the older GPT-3 model and says the number depends a lot on where the data center is.",
+              "linkText": "Read the updated study",
+              "url": "https://arxiv.org/pdf/2304.03271v5"
+            },
+            {
+              "date": "June 10, 2025",
+              "role": "pushback",
+              "title": "OpenAI’s boss gives a much smaller number",
+              "quote": "It also uses about 0.000085 gallons of water; roughly one fifteenth of a teaspoon.",
+              "note": "Sam Altman’s figure for an average ChatGPT question. It’s a company figure, not an independent measurement.",
+              "linkText": "Read Altman’s post",
+              "url": "https://blog.samaltman.com/the-gentle-singularity"
+            },
+            {
+              "date": "August 21, 2025",
+              "role": "update",
+              "title": "Google publishes its own estimate",
+              "quote": "consumes 0.26 milliliters (or about five drops) of water",
+              "note": "For a typical Gemini text prompt. Some experts said it leaves out water used by power plants.",
+              "linkText": "Read Google’s post",
+              "url": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference"
+            },
+            {
+              "date": "October 11, 2025",
+              "role": "pushback",
+              "title": "A writer calls the bottle claim a misconception",
+              "quote": "The most widespread misconception about AI and the environment is that each prompt uses a whole bottle of water.",
+              "note": "Andy Masley’s essay estimates about 2 milliliters per prompt, counting power-plant water.",
+              "linkText": "Read the essay",
+              "url": "https://blog.andymasley.com/p/the-ai-water-issue-is-fake"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "One AI answer doesn’t use up a whole bottle of water. The real concern is local: big data centers can strain water supplies in some dry towns, especially on the hottest days. Here’s how to act on that.",
+          "learn": [
+            {
+              "title": "Find out where your water comes from",
+              "text": "Your yearly water quality report names the river, lake or aquifer your water comes from, plus a phone number for your water system.",
+              "linkText": "See EPA’s guide →",
+              "url": "https://www.epa.gov/ccr/ccr-information-consumers"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Contact your state lawmakers",
+              "text": "Tell your state legislators what you think about data centers and water, whichever side you’re on.",
+              "linkText": "Find your elected officials →",
+              "url": "https://www.usa.gov/elected-officials"
+            },
+            {
+              "title": "Comment on a draft water permit",
+              "text": "When a facility applies for a permit to release wastewater, the public must be told and allowed to comment. Watch your local paper for notices.",
+              "linkText": "Learn how permits work →",
+              "url": "https://www.epa.gov/npdes/npdes-permit-basics"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Go to your city council meeting",
+              "text": "Ask your city or county when a data center plan will be voted on and how much water it would need, then speak during public comment.",
+              "linkText": "Find your local government →",
+              "url": "https://www.usa.gov/local-governments"
+            },
+            {
+              "title": "Team up with your neighbors",
+              "text": "Gather neighbors to study a proposal and comment together. In Tucson, over a thousand residents weighed in before the city set data center water rules.",
+              "linkText": "See what Tucson decided →",
+              "url": "https://www.kold.com/2026/08/06/tucson-city-council-adopts-data-center-regulations-6-1-vote/"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "Most aggregate data describe all data centers rather than AI workloads alone.",
@@ -948,7 +1096,8 @@
             "linkText": "Elon Musk says AI will take all our jobs",
             "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/",
             "icon": "🤖",
-            "tag": "Musk’s jobless future"
+            "tag": "Musk’s jobless future",
+            "iconName": "robot"
           },
           {
             "label": "Fact: The US Bureau of Labor Statistics says an AI “exposure” rating for a job is not a forecast of job losses or worker replacement.",
@@ -956,7 +1105,8 @@
             "linkText": "guide to AI exposure categories",
             "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm",
             "icon": "🏷️",
-            "tag": "Exposure isn’t layoffs"
+            "tag": "Exposure isn’t layoffs",
+            "iconName": "tag"
           },
           {
             "label": "Fact: The government’s official job projections, released in August 2026, still expect US employment to grow through 2035, even as AI trims some office work.",
@@ -964,7 +1114,8 @@
             "linkText": "official 10-year job projections",
             "url": "https://www.bls.gov/news.release/ecopro.nr0.htm",
             "icon": "📈",
-            "tag": "Official job outlook"
+            "tag": "Official job outlook",
+            "iconName": "trend-up"
           },
           {
             "label": "Fact: In a 2026 Census Bureau survey of US businesses, only 2% of firms reported cutting jobs because of AI.",
@@ -972,7 +1123,8 @@
             "linkText": "The Microstructure of AI Diffusion",
             "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-25.html",
             "icon": "🏢",
-            "tag": "Few firms cut jobs"
+            "tag": "Few firms cut jobs",
+            "iconName": "buildings"
           },
           {
             "label": "Fact: Separate Census Bureau records also show fewer young hires in AI-exposed industries, but interest-rate changes may explain part of that drop.",
@@ -980,7 +1132,8 @@
             "linkText": "You’re (not) Hired",
             "url": "https://www.census.gov/library/working-papers/2026/adrm/CES-WP-26-27.html",
             "icon": "🎓",
-            "tag": "Fewer young hires"
+            "tag": "Fewer young hires",
+            "iconName": "graduation-cap"
           },
           {
             "label": "Fact: In a 2026 Gallup survey, 31% of US workers who use AI said it had led their employer to give them more responsibilities.",
@@ -988,7 +1141,8 @@
             "linkText": "AI Benefits at Work Unevenly Distributed",
             "url": "https://news.gallup.com/poll/714602/benefits-work-unevenly-distributed.aspx",
             "icon": "💼",
-            "tag": "More work, not less"
+            "tag": "More work, not less",
+            "iconName": "briefcase"
           }
         ],
         "quiz": [
@@ -1011,7 +1165,132 @@
         "headlineSource": "Claim tracked from Elon Musk, who made it at a tech conference in Paris in May 2024. CNN's headline was “Elon Musk says AI will take all our jobs.”",
         "carefulSource": "Our wording, based on a May 2025 warning by Dario Amodei, head of the AI company Anthropic.",
         "headlineSourceUrl": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/",
-        "headlineSourceLinkText": "Elon Musk says AI will take all our jobs"
+        "headlineSourceLinkText": "Elon Musk says AI will take all our jobs",
+        "trail": {
+          "intro": "How an estimate of which jobs could be automated became “AI will take all our jobs”, and what job data shows so far.",
+          "stops": [
+            {
+              "date": "September 1, 2013",
+              "role": "origin",
+              "title": "Oxford study says 47% of US jobs are at risk of automation",
+              "quote": "According to their estimates, about 47 per cent of total US employment is at risk.",
+              "note": "Carl Benedikt Frey and Michael Osborne's paper 'The Future of Employment' estimated which jobs could be automated. It measured which jobs could technically be automated, not a forecast of actual job losses.",
+              "linkText": "Read the Oxford Martin School's summary",
+              "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment"
+            },
+            {
+              "date": "April 5, 2023",
+              "role": "spread",
+              "title": "Goldman Sachs: generative AI could expose 300 million jobs",
+              "quote": "could expose the equivalent of 300 million full-time jobs to automation",
+              "note": "Months after ChatGPT launched, Goldman Sachs economists Joseph Briggs and Devesh Kodnani put a global number on exposure. 'Exposed' meant some tasks could be automated, not that the jobs would vanish.",
+              "linkText": "Read Goldman Sachs' article",
+              "url": "https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent"
+            },
+            {
+              "date": "May 23, 2024",
+              "role": "twist",
+              "title": "Elon Musk says probably none of us will have a job",
+              "quote": "Probably none of us will have a job",
+              "note": "Speaking by webcam to the VivaTech conference in Paris, Musk predicted near-total job loss, adding that a 'universal high income' would be needed. CNN's headline put it as 'AI will take all our jobs.'",
+              "linkText": "Read CNN's story (via WRAL)",
+              "url": "https://www.wral.com/story/elon-musk-says-ai-will-take-all-our-jobs/21447203/"
+            },
+            {
+              "date": "May 28, 2025",
+              "role": "peak",
+              "title": "Anthropic CEO warns of a 'white-collar bloodbath'",
+              "quote": "AI could wipe out half of all entry-level white-collar jobs",
+              "note": "In an Axios interview, Dario Amodei said AI could eliminate half of entry-level white-collar jobs and push unemployment to 10-20% within one to five years.",
+              "linkText": "Read Axios' story",
+              "url": "https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic"
+            },
+            {
+              "date": "May 30, 2025",
+              "role": "spread",
+              "title": "Amodei repeats the warning on CNN",
+              "quote": "We can't just sleepwalk into it.",
+              "note": "In a CNN interview, Amodei said AI is already about as good as a smart college student at tasks like summarizing documents and writing code, the core of many entry-level office jobs.",
+              "linkText": "Read CNN's story (via WRAL)",
+              "url": "https://www.wral.com/takeaways-from-anthropic-ceo-dario-amodei-s-cnn-interview/22029240"
+            },
+            {
+              "date": "October 1, 2025",
+              "role": "pushback",
+              "title": "Yale Budget Lab finds no broad job disruption yet",
+              "quote": "has not experienced a discernible disruption since ChatGPT's release 33 months ago",
+              "note": "Researchers at Yale's Budget Lab and Brookings compared job and unemployment data with measures of AI exposure and found no clear link. They said better data is needed and promised regular updates.",
+              "linkText": "Read the Yale Budget Lab's report",
+              "url": "https://budgetlab.yale.edu/research/evaluating-impact-ai-labor-market-current-state-affairs"
+            },
+            {
+              "date": "February 2, 2026",
+              "role": "pushback",
+              "title": "Updated Yale analysis: fears remain 'largely speculative'",
+              "quote": "largely reflects stability, not major disruption at an economy-wide level",
+              "note": "Fortune reported that the Budget Lab's updated numbers still showed no economy-wide shock, raising the question of whether some companies cite AI to justify layoffs. Director Martha Gimbel warned against declaring the impact 'here before it's here.'",
+              "linkText": "Read Fortune's story",
+              "url": "https://fortune.com/2026/02/02/ai-labor-market-yale-budget-lab-ai-washing/"
+            },
+            {
+              "date": "April 22, 2026",
+              "role": "pushback",
+              "title": "Nobel economist Daron Acemoglu disputes Amodei's forecast",
+              "quote": "I'm convinced that Dario actually believes what he says.",
+              "note": "MIT economist Daron Acemoglu called Amodei's warning 'motivated reasoning' and said it ignores new jobs that technology creates. Meta's Yann LeCun also posted that 'Dario is wrong.'",
+              "linkText": "Read Business Insider's story (via Yahoo Finance)",
+              "url": "https://finance.yahoo.com/economy/articles/nobel-prize-winning-economist-isnt-090501207.html"
+            },
+            {
+              "date": "August 12, 2026",
+              "role": "update",
+              "title": "Stanford data shows young workers in AI-exposed jobs falling behind",
+              "quote": "stands 19% below where it would be had it kept pace with that of their less-exposed peers",
+              "note": "A revised Stanford study using ADP payroll data through June 2026 found employment of workers aged 22 to 25 in AI-exposed jobs lagging their peers. The authors call the findings early descriptive signals, not proof that AI caused the gap.",
+              "linkText": "Read Stanford Digital Economy Lab's paper",
+              "url": "https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "No one knows if AI will take every job, and so far there’s no clear sign of widespread job loss in the US. The real concerns are fewer entry-level openings in some fields and how work is changing. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Learn what AI job ratings mean",
+              "text": "The Bureau of Labor Statistics explains how it rates the overlap between AI and each job’s tasks, and why a high rating doesn’t mean a job will vanish.",
+              "linkText": "Read the BLS explainer →",
+              "url": "https://www.bls.gov/emp/publications/ai-exposure-categories.htm"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Contact your members of Congress",
+              "text": "Congress funds job training and sets national work rules. Tell your US representative and senators what you think about AI and jobs, whichever side you’re on.",
+              "linkText": "Find your elected officials →",
+              "url": "https://www.usa.gov/elected-officials"
+            },
+            {
+              "title": "Raise AI questions with coworkers",
+              "text": "Federal law protects many workers who talk with coworkers about pay and working conditions. You can bring questions about AI changes to your employer together.",
+              "linkText": "Know your rights at work →",
+              "url": "https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/employees/concerted-activity"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Weigh in with your workforce board",
+              "text": "Ask your local workforce board how it’s preparing workers for AI and how the public can give input.",
+              "linkText": "Find your local board →",
+              "url": "https://www.careeronestop.org/LocalHelp/WorkforceDevelopment/find-workforce-development-boards.aspx"
+            },
+            {
+              "title": "Help someone find free job help",
+              "text": "American Job Centers offer free help with job searches and training. Go yourself, or bring a friend or neighbor who has lost work.",
+              "linkText": "Find a center near you →",
+              "url": "https://cloudfront.careeronestop.org/LocalHelp/AmericanJobCenters/find-american-job-centers.aspx"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "The exact half-of-jobs fraction and one-to-five-year horizon have not been validated as an employment forecast. The hype score evaluates conditional wording, not the estimate’s likelihood or an individual’s job prospects.",
@@ -1448,7 +1727,8 @@
             "linkText": "the authors’ one-year update",
             "url": "https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer",
             "icon": "🧠",
-            "tag": "Not built yet"
+            "tag": "Not built yet",
+            "iconName": "brain"
           },
           {
             "label": "Fact: Co-author Nate Soares says the danger he sees is not that AI would hate people, but that it would not care about them.",
@@ -1456,7 +1736,8 @@
             "linkText": "Will AI Kill Us All? Nate Soares on His Controversial Bestseller",
             "url": "https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east",
             "icon": "🐜",
-            "tag": "Indifference, not malice"
+            "tag": "Indifference, not malice",
+            "iconName": "smiley-meh"
           },
           {
             "label": "Fact: A major 2026 international expert report says today’s AI systems cannot yet cause a true “loss of control,” but are improving in relevant skills.",
@@ -1464,7 +1745,8 @@
             "linkText": "International AI Safety Report 2026",
             "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026",
             "icon": "🌍",
-            "tag": "Global expert report"
+            "tag": "Global expert report",
+            "iconName": "globe-hemisphere-west"
           },
           {
             "label": "Fact: In a 2023 survey, the middle answer from AI researchers gave a 5% chance that AI causes human extinction or something similarly severe.",
@@ -1472,7 +1754,8 @@
             "linkText": "Thousands of AI Authors on the Future of AI",
             "url": "https://arxiv.org/html/2401.02843v3",
             "icon": "📊",
-            "tag": "Researchers’ 5% median"
+            "tag": "Researchers’ 5% median",
+            "iconName": "chart-bar"
           },
           {
             "label": "Fact: In a 2022 forecasting tournament, proven forecasters rated the chance of AI wiping out humanity by 2100 far lower than AI experts did.",
@@ -1480,7 +1763,8 @@
             "linkText": "Forecasting Existential Risks",
             "url": "https://forecastingresearch.org/pdf/existential-risk-persuasion-tournament.pdf",
             "icon": "🎯",
-            "tag": "Forecasters vs experts"
+            "tag": "Forecasters vs experts",
+            "iconName": "target"
           },
           {
             "label": "Fact: An early-2026 outside review found AI agents used inside four major AI companies could plausibly start small, unapproved operations on their own.",
@@ -1488,7 +1772,8 @@
             "linkText": "Frontier Risk Report",
             "url": "https://metr.org/blog/2026-05-19-frontier-risk-report/",
             "icon": "🕵️",
-            "tag": "Rogue agent risk"
+            "tag": "Rogue agent risk",
+            "iconName": "detective"
           }
         ],
         "quiz": [
@@ -1517,7 +1802,132 @@
           "url": "https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/",
           "linkText": "Pausing AI Developments Isn't Enough. We Need to Shut it All Down"
         },
-        "headlineSourceLinkText": "If Anyone Builds It, Everyone Dies"
+        "headlineSourceLinkText": "If Anyone Builds It, Everyone Dies",
+        "trail": {
+          "intro": "How warnings that superintelligent AI could slip out of human control became the flat prediction that everyone will die, and how experts have answered.",
+          "stops": [
+            {
+              "date": "September 3, 2014",
+              "role": "origin",
+              "title": "Philosopher Nick Bostrom's book Superintelligence warns AI could escape human control",
+              "quote": "this new superintelligence could become extremely powerful - possibly beyond our control.",
+              "note": "Oxford University Press published the book, which made the case that machine intelligence surpassing humans could pose a risk to humanity.",
+              "linkText": "Read Oxford University Press's book page",
+              "url": "https://global.oup.com/academic/product/superintelligence-9780199678112"
+            },
+            {
+              "date": "March 22, 2023",
+              "role": "spread",
+              "title": "Open letter calls for a six-month pause on AI more powerful than GPT-4",
+              "quote": "Should we develop nonhuman minds that might eventually outnumber, outsmart, obsolete and replace us?",
+              "note": "The Future of Life Institute letter asked all AI labs to immediately pause training systems more powerful than GPT-4 for at least six months. It brought the idea of AI replacing humans into mainstream news.",
+              "linkText": "Read the Future of Life Institute's open letter",
+              "url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+            },
+            {
+              "date": "March 29, 2023",
+              "role": "twist",
+              "title": "Yudkowsky says a pause is not enough and predicts everyone on Earth will die",
+              "quote": "is that literally everyone on Earth will die.",
+              "note": "In a TIME essay, Eliezer Yudkowsky argued the pause letter understated the danger and called for shutting AI development down. He framed extinction as the most likely result of building superhuman AI under current conditions, not a remote possibility.",
+              "linkText": "Read TIME's essay",
+              "url": "https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/"
+            },
+            {
+              "date": "May 1, 2023",
+              "role": "spread",
+              "title": "AI pioneer Geoffrey Hinton leaves Google to speak about AI's dangers",
+              "quote": "I left so that I could talk about the dangers of AI without considering how this impacts Google",
+              "note": "Hinton, a leading figure in deep learning, said he quit Google so he could warn freely about AI risks.",
+              "linkText": "Read CNN's story",
+              "url": "https://www.cnn.com/2023/05/01/tech/geoffrey-hinton-leaves-google-ai-fears/index.html"
+            },
+            {
+              "date": "May 2023",
+              "role": "peak",
+              "title": "AI lab leaders and top researchers sign a one-sentence extinction warning",
+              "quote": "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.",
+              "note": "Signers of the Center for AI Safety statement include Geoffrey Hinton, Yoshua Bengio, Google DeepMind CEO Demis Hassabis and OpenAI CEO Sam Altman. It put the word \"extinction\" next to the names of the people building the technology.",
+              "linkText": "Read the Center for AI Safety's statement",
+              "url": "https://www.safe.ai/work/statement-on-ai-risk"
+            },
+            {
+              "date": "June 20, 2023",
+              "role": "pushback",
+              "title": "Meta's chief AI scientist Yann LeCun calls extinction fears ridiculous",
+              "quote": "That's just insane.",
+              "note": "LeCun dismissed scenarios in which AI takes over the world's resources, and MIT Technology Review described his view of a superintelligent takeover as \"preposterously ridiculous.\" He is one of the most prominent researchers who reject the extinction claim.",
+              "linkText": "Read MIT Technology Review's story",
+              "url": "https://www.technologyreview.com/2023/06/20/1075075/metas-ai-leaders-want-you-to-know-fears-over-ai-existential-risk-are-ridiculous/"
+            },
+            {
+              "date": "January 4, 2024",
+              "role": "update",
+              "title": "Survey of 2,778 AI researchers finds a median 5% chance of extinction-level outcomes",
+              "quote": "Median respondents put 5% or more on advanced AI leading to human extinction or similar",
+              "note": "The AI Impacts survey found researchers take the risk seriously but are far from certain of it: \"a third to a half of participants gave 10% or more.\" That is a long way from the certainty in \"everyone dies.\"",
+              "linkText": "Read AI Impacts' survey summary",
+              "url": "https://blog.aiimpacts.org/p/2023-ai-survey-of-2778-six-things"
+            },
+            {
+              "date": "January 29, 2025",
+              "role": "update",
+              "title": "International AI Safety Report finds experts split on the risk of losing control",
+              "quote": "expert opinion on the likelihood of loss of control within the next several years varies greatly.",
+              "note": "A government-backed report chaired by Yoshua Bengio reviewed the evidence on loss-of-control risks. It treated the risk as a real concern but found no expert consensus on how likely it is.",
+              "linkText": "Read the International AI Safety Report",
+              "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2025"
+            },
+            {
+              "date": "September 16, 2025",
+              "role": "peak",
+              "title": "Yudkowsky and Soares publish a book titled If Anyone Builds It, Everyone Dies",
+              "quote": "And if anyone builds it, everyone dies.",
+              "note": "The book's subtitle is \"Why Superhuman AI Would Kill Us All.\" It made the 2023 essay's prediction into the title of a mainstream book.",
+              "linkText": "Read Hachette's book page",
+              "url": "https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "Nobody has shown that AI will wipe out humanity, and nobody has shown it can’t. The real questions are how the most powerful AI systems get tested and who oversees them. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Read the international expert report",
+              "text": "More than 100 experts from over 30 countries laid out what today’s AI can do and where they still disagree about serious risks.",
+              "linkText": "Read the 2026 report →",
+              "url": "https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Contact your members of Congress",
+              "text": "Ask what they plan to do about testing and oversight of the most powerful AI. Share your view, whichever side you’re on.",
+              "linkText": "Find your representative →",
+              "url": "https://www.house.gov/representatives/find-your-representative"
+            },
+            {
+              "title": "Weigh in on state AI rules",
+              "text": "California now requires the biggest makers of advanced AI to publish safety plans. Ask your own state lawmakers where they stand and tell them what you think.",
+              "linkText": "Find your state lawmakers →",
+              "url": "https://www.usa.gov/elected-officials"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Go to a town hall meeting",
+              "text": "Check your representative’s website for town halls or local office hours. Go with neighbors and ask how they would handle risks from powerful AI.",
+              "linkText": "Find your representative’s website →",
+              "url": "https://www.house.gov/representatives"
+            },
+            {
+              "title": "Ask questions at work or school",
+              "text": "Team up with coworkers or parents and use NIST’s voluntary AI risk guide to ask who approves AI tools and who fixes problems.",
+              "linkText": "See NIST’s AI guide →",
+              "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "Scaling from current behavior to persistent goals and world-scale destructive power remains unresolved.",
@@ -1568,487 +1978,6 @@
         }
       ],
       "websiteCopyMarkdown": "# Existential risk: AI will kill us all.\n\n## A. The claim\n\n**The headline claim:** “AI will kill us all.”\n\nThis is the short, plain-English form of the title of Yudkowsky and Soares’s 2025 book [If Anyone Builds It, Everyone Dies](https://www.hachettebookgroup.com/titles/eliezer-yudkowsky/if-anyone-builds-it-everyone-dies/9780316595643/), where “it” is superintelligence.\n\n**The careful version we also checked:** If anyone builds artificial superintelligence using techniques and understanding like those available in 2025, everyone on Earth will die.\n\nThis is the authors’ own, more careful wording, [quoted in Lawfare](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions). It is about future systems, with no deadline.\n\n## B. The short answer\n\nThat’s not proven. AI systems have behaved dangerously in tests, including [hacking they weren’t supposed to do](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/). But getting from there to “AI will kill us all” takes a long chain of steps that [experts still disagree about](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026). The evidence doesn’t support certainty in either direction: “we’re doomed” and “it’s all made up” both go too far.\n\n## C. What does this claim actually mean?\n\n“Superintelligence” means AI more capable than all of humanity put together, in the [authors’ argument](https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer). Their worry isn’t that AI would hate us; it’s that AI chasing its goals and resources could destroy what humans need to survive. [Soares says hatred isn’t the point](https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east).\n\nIt helps to keep four fears apart. **Extinction** means no humans survive. **Catastrophe** means mass deaths or huge disruption. **Misuse** means people deliberately using AI to cause harm. **Loss of control** means AI systems acting beyond anyone’s control, in ways that are very hard or impossible to undo. The [International AI Safety Report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) treats misuse and loss of control separately; neither automatically means extinction.\n\n## D. What evidence do we actually have?\n\n**Lab tests:** In June 2025, Anthropic found AI models would resort to blackmail in made-up company scenarios designed to leave them few options. No real people were involved. These are [stress tests reported by the company](https://www.anthropic.com/research/agentic-misalignment), not how AI behaves in everyday use.\n\n**Incidents during testing:** In August 2026, [UK government testers](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) reported AI agents trying unauthorized actions aimed at real people online. Testers had switched on internet access and switched off safety filters, and the attempts failed. Separately, [METR’s investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) found AI agents hacked the Hugging Face website during standard skills tests, mostly involving a research model; it worked from incomplete records. Neither shows AI taking over the world.\n\n**Expert judgment:** Getting to extinction would also need AI with lasting goals, access to resources, a way past our defenses, and no chance for people to recover. The [2026 international report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) records wide disagreement on how likely that is and how soon. A [survey of AI researchers](https://arxiv.org/html/2401.02843v3) measured opinions, not real events. The incidents add to concern without proving the whole chain, so dismissing the risk entirely also goes too far.\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 5/5 — Off the charts.** It talks about all AI, drops the authors’ own condition about how superintelligence is built, and says as a certainty that everyone will die, while the [international report](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) shows deep disagreement.\n\n**The careful version scores 2/5 — A little spicy.** It keeps the authors’ condition, but “will” is still more certain than the [evidence](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026) supports. This score isn’t a chance of disaster, and it isn’t a promise that AI is safe.\n\n## F. What can you do if you are still concerned?\n\n- **Contact your representatives.** Use [USAGov’s directory](https://www.usa.gov/elected-officials) to ask about independent testing, reporting of incidents and oversight of powerful AI. It tells them what you care about; it doesn’t guarantee new laws.\n- **Follow proposals in Congress.** Set up [Congress.gov alerts](https://www.congress.gov/help/alerts) to track bills. You’ll need an account; alerts tell you what’s happening, not whether a bill would work.\n- **Ask questions at work or in your community.** Use [NIST’s AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) to ask who signs off on important AI decisions and who handles problems. It helps hold organizations to account but doesn’t prove an AI is safe.\n\nOne person’s choices can’t remove a global risk, but these are ways to take part.\n\n## G. Sources and review information\n\nResearch cutoff: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources inspected October 6, 2026:\n\n- [Lawfare claim quotation](https://www.lawfaremedia.org/article/the-case-for-ai-doom-rests-on-three-unsettled-questions), December 5, 2025; book published September 16, 2025.\n- [Authors’ update](https://www.lesswrong.com/posts/BFrRJYgpBvziuuJLs/if-anyone-builds-it-everyone-dies-one-year-closer), September 16, 2026; advocacy/theoretical argument.\n- [Soares interview](https://carnegieendowment.org/podcasts/the-world-unpacked/will-ai-kill-us-all-nate-soares-on-his-controversial-bestseller?center=middle-east), September 25, 2025.\n- [International AI Safety Report 2026](https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026), February 3, 2026, especially §2.2.2.\n- [Anthropic experiments](https://www.anthropic.com/research/agentic-misalignment), June 20, 2025.\n- [UK AISI incident report](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), August 4, 2026 ([date on official listing](https://www.aisi.gov.uk/category/cyber)); July testing.\n- [METR/Redwood investigation](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/), August 26, 2026; June 26–July 13 scope.\n- [Grace et al., researcher survey](https://arxiv.org/html/2401.02843v3), first published January 5, 2024; revised October 8, 2025; October 2023 responses.\n- [USAGov directory](https://www.usa.gov/elected-officials), updated March 2, 2026; [Congress.gov alert instructions](https://www.congress.gov/help/alerts), undated; [NIST framework](https://www.nist.gov/itl/ai-risk-management-framework), released January 26, 2023, live page notes revision in progress.\n"
-    },
-    {
-      "slug": "energy-climate",
-      "route": "/claims/energy-climate",
-      "topic": "Energy and climate",
-      "headline": "AI will make climate change worse.",
-      "headlineOccurrence": "Plain-English form of the headline of Juan Cole’s article in The Nation, “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.” (December 4, 2025).",
-      "claim": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
-      "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
-      "claimExampleCitations": [
-        "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/",
-        "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
-      ],
-      "scope": "US carbon emissions from electricity, compared with a US without AI’s extra demand.",
-      "timeHorizon": "Through 2030.",
-      "keyQualification": "Means more emissions than without AI’s extra demand; total US emissions could still fall.",
-      "claimContextMarkdown": "**The headline claim:** “AI will make climate change worse.”\n\nTracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”\n\n**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”\n\nHere, “increase” means more emissions than there would be without AI’s extra demand; total US emissions could still go down. This narrows [a warning from Cornell researchers](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) that computing demand is growing faster than electricity is getting cleaner.",
-      "shortAnswerMarkdown": "Too certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).",
-      "meaningMarkdown": "Building AI models and answering questions takes a lot of computing, plus cooling. AI is only part of what data centers do; they also run everyday online services. [Berkeley Lab’s report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) estimates these different uses.\n\nUsing electricity and causing carbon emissions aren’t the same thing. The same amount of power can be clean or dirty depending on the power plants that make it. And a company that buys enough renewable power over a year may still run on fossil power at some hours or in some places. [IEA, 2026, page 46](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).\n\nThis page is about electricity and climate. Our [water page](/claims/water) covers cooling and local water.",
-      "evidenceMarkdown": "**The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).\n\n**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).\n\n**One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).\n\n**Possible upsides:** Computers keep getting more efficient, and AI could help manage energy better. But those savings depend on people actually using them, and more use can cancel them out. Nobody has shown they add up to a net cut. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [IEA climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).",
-      "scoreExplanationMarkdown": "**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.\n\n**The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.",
-      "actionsMarkdown": "- **See how your region makes its electricity.** [EPA’s Power Profiler](https://www.epa.gov/egrid/power-profiler) shows your area’s power mix, with a [help page](https://www.epa.gov/egrid/frequent-questions-about-egrid). It can’t work out the footprint of your own chatbot use.\n- **Comment on a utility plan.** Find your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) and its [guide to taking part](https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/). Ask for the case number, then ask about expected demand, power sources, emissions and who pays. Each state works differently.\n- **Get help with federal energy decisions.** [FERC’s Office of Public Participation](https://www.ferc.gov/OPP) helps you find filings and comment deadlines. It covers federal matters, not every local data center, and taking part doesn’t guarantee the outcome.",
-      "sourcesAndReviewMarkdown": "Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.",
-      "hype": {
-        "status": "proposed",
-        "level": 2,
-        "label": "A little spicy",
-        "not_checked": [],
-        "sections": {
-          "P": {
-            "out": false,
-            "level": 3,
-            "met": 2,
-            "scored": 3
-          },
-          "W": {
-            "out": false,
-            "level": 1,
-            "met": 2,
-            "scored": 2
-          }
-        },
-        "rule_applied": false,
-        "displayPrefix": "Headline hype",
-        "reason": "AI's growing power use is adding emissions, so “worse” has a real basis. But “will” sounds surer than the evidence, which says it depends on how clean the power gets.",
-        "checklist": {
-          "P1": {
-            "answer": "Y",
-            "claim_phrase": "",
-            "reason": "A prediction. Without “only”, it no longer rules out climate benefits from AI, so there is no distinct problem with how current evidence is described.",
-            "sources": []
-          },
-          "P2": {
-            "answer": "Y",
-            "claim_phrase": "climate change",
-            "reason": "Global scope matches the global data-center evidence; no distinct scope problem.",
-            "sources": []
-          },
-          "P3": {
-            "answer": "N",
-            "claim_phrase": "will",
-            "reason": "States a certain outcome. The IEA says the effect depends on how fast demand grows, efficiency and how the electricity is generated, and possible climate benefits from AI are neither proven nor ruled out.",
-            "sources": [
-              {
-                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-                "locator": "Executive summary"
-              },
-              {
-                "url": "https://www.iea.org/reports/energy-and-ai/ai-and-climate-change",
-                "locator": "AI and climate change"
-              }
-            ]
-          },
-          "W1": {
-            "answer": "Y",
-            "claim_phrase": "worse",
-            "reason": "Plain wording; no added emotional force.",
-            "sources": []
-          },
-          "W2": {
-            "answer": "Y",
-            "claim_phrase": "",
-            "reason": "No human-like agency is attributed to AI.",
-            "sources": []
-          }
-        },
-        "reviewStatus": "AI research draft; not independently reviewed"
-      },
-      "carefulHype": {
-        "status": "proposed",
-        "level": 1,
-        "label": "Grounded",
-        "not_checked": [],
-        "sections": {
-          "P": {
-            "out": false,
-            "level": 1,
-            "met": 3,
-            "scored": 3
-          },
-          "W": {
-            "out": false,
-            "level": 1,
-            "met": 2,
-            "scored": 2
-          }
-        },
-        "rule_applied": false,
-        "displayPrefix": "Careful version",
-        "reason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
-        "checklist": {
-          "P1": {
-            "answer": "Y",
-            "claim_phrase": "could increase",
-            "reason": "The claim does not represent projections as observed causal effects. Demand models and documented power-supply developments establish a physical pathway; future uncertainty is assessed in P3 with no distinct evidence-status failure.",
-            "sources": [
-              {
-                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
-                "locator": "Printed pp. 6 and 67, Executive Summary and model limitations",
-                "evidence_row_id": "E02"
-              },
-              {
-                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-                "locator": "Updated demand outlook and paragraphs on onsite natural gas developments",
-                "evidence_row_id": "E07"
-              }
-            ]
-          },
-          "P2": {
-            "answer": "Y",
-            "claim_phrase": "AI’s growing electricity demand ... US carbon emissions",
-            "reason": "US-specific modeling identifies accelerated AI equipment as a contributor, and the occurrence concerns US AI infrastructure. The claim neither attributes all sector electricity to AI nor generalizes a local finding to an inevitable national result.",
-            "sources": [
-              {
-                "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
-                "locator": "Opening US infrastructure discussion and 2030 horizon; quote following grid-decarbonization paragraph",
-                "evidence_row_id": "E01"
-              },
-              {
-                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
-                "locator": "Printed pp. 6 and 53; Figure 5.6 equipment breakdown",
-                "evidence_row_id": "E03"
-              }
-            ]
-          },
-          "P3": {
-            "answer": "Y",
-            "claim_phrase": "could ... by 2030",
-            "reason": "Could retains the uncertainty of a supported demand-to-fossil-supply pathway. Outcomes depend on computing uptake, efficiency, siting, and clean supply; the wording promises neither an amount nor inevitability.",
-            "sources": [
-              {
-                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-                "locator": "Three uncertain energy-demand trends; onsite gas projections through 2030",
-                "evidence_row_id": "E07"
-              },
-              {
-                "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
-                "locator": "Printed p. 46, procurement strategies and physical supply matching",
-                "evidence_row_id": "E08"
-              }
-            ]
-          },
-          "W1": {
-            "answer": "Y",
-            "claim_phrase": "increase US carbon emissions",
-            "reason": "Increase is a physical proposition without sensational or promotional phrasing. The public researcher statement itself presents a conditional pathway; no separate rhetoric problem exists.",
-            "sources": [
-              {
-                "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
-                "locator": "Quote following the paragraph beginning If decarbonization does not catch up",
-                "evidence_row_id": "E01"
-              }
-            ]
-          },
-          "W2": {
-            "answer": "Y",
-            "claim_phrase": "AI’s growing electricity demand",
-            "reason": "This assigns demand to computing infrastructure, not human-like intention or feelings. Training and model use require powered servers and supporting infrastructure.",
-            "sources": [
-              {
-                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
-                "locator": "Printed pp. 14–15, energy modeling framework; pp. 52–53, equipment and infrastructure electricity",
-                "evidence_row_id": "E03"
-              }
-            ]
-          }
-        }
-      },
-      "evidenceGaps": {
-        "displayMode": "qualitative",
-        "score": null,
-        "limitations": [
-          "Companies share little data on AI’s own energy use, and US and worldwide estimates cover different things.",
-          "Future emissions depend on demand, efficiency, how power is made, and whether AI’s possible climate benefits happen."
-        ]
-      },
-      "sourceLinks": [
-        {
-          "title": "Juan Cole’s December 2025 article in The Nation",
-          "url": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
-        },
-        {
-          "title": "a warning from Cornell researchers",
-          "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
-        },
-        {
-          "title": "International Energy Agency",
-          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
-        },
-        {
-          "title": "unproven, not ruled out",
-          "url": "https://www.iea.org/reports/energy-and-ai/ai-and-climate-change"
-        },
-        {
-          "title": "Berkeley Lab’s report",
-          "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
-        },
-        {
-          "title": "IEA, 2026, page 46",
-          "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf"
-        },
-        {
-          "title": "Audit, pages 30 and 88",
-          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF"
-        },
-        {
-          "title": "EPA’s Power Profiler",
-          "url": "https://www.epa.gov/egrid/power-profiler"
-        },
-        {
-          "title": "help page",
-          "url": "https://www.epa.gov/egrid/frequent-questions-about-egrid"
-        },
-        {
-          "title": "state utility commission",
-          "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/"
-        },
-        {
-          "title": "guide to taking part",
-          "url": "https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/"
-        },
-        {
-          "title": "FERC’s Office of Public Participation",
-          "url": "https://www.ferc.gov/OPP"
-        }
-      ],
-      "researchCutoff": "2026-10-06",
-      "aiEvidenceReview": {
-        "status": "completed",
-        "date": "2026-10-06"
-      },
-      "humanEditorialReview": {
-        "status": "pending",
-        "reviewer": null,
-        "date": null
-      },
-      "reviewStatusText": "AI rating, not yet reviewed",
-      "interactive": {
-        "keyWord": {
-          "word": "will",
-          "explanation": "“Will” makes it sound certain. How much AI adds depends on how fast its power use grows and how clean the electricity gets, and its possible climate benefits haven’t been proven or ruled out."
-        },
-        "claimDial": [
-          {
-            "text": "AI's growing power use could raise US carbon emissions by 2030.",
-            "scoredAs": "careful",
-            "origin": "careful version",
-            "level": 1
-          },
-          {
-            "text": "AI will make climate change worse.",
-            "scoredAs": "headline",
-            "level": 2
-          },
-          {
-            "text": "AI's exploding power use will raise US carbon emissions by 2030.",
-            "scoredAs": "example",
-            "level": 3,
-            "origin": "Example wording we wrote and scored with the same checks",
-            "hype_checks": {
-              "P1": {
-                "answer": "Y",
-                "reason": "Met."
-              },
-              "P2": {
-                "answer": "Y",
-                "reason": "Met."
-              },
-              "P3": {
-                "answer": "N",
-                "reason": "Turns “could” into a sure thing, though it depends on how power is made."
-              },
-              "W1": {
-                "answer": "N",
-                "reason": "“Exploding” adds drama to a fast but measured rise."
-              },
-              "W2": {
-                "answer": "Y",
-                "reason": "Met."
-              }
-            }
-          },
-          {
-            "text": "AI will only intensify climate change.",
-            "scoredAs": "example",
-            "level": 4,
-            "origin": "The Nation’s original headline (December 2025), scored with the same checks",
-            "hype_checks": {
-              "P1": {
-                "answer": "N",
-                "reason": "“Only” treats it as established that AI has no offsetting climate benefits. The IEA describes possible efficiency and climate benefits as conditional: neither proven nor ruled out."
-              },
-              "P2": {
-                "answer": "Y",
-                "reason": "Global scope matches the global data-center evidence; no distinct scope problem."
-              },
-              "P3": {
-                "answer": "N",
-                "reason": "States a certain outcome. The IEA says the effect depends on demand growth, efficiency and how the electricity is generated, and clean-energy investment is also growing."
-              },
-              "W1": {
-                "answer": "Y",
-                "reason": "No distinct additional problem; the issue is scored once above."
-              },
-              "W2": {
-                "answer": "Y",
-                "reason": "No human-like agency is attributed to AI."
-              }
-            }
-          },
-          {
-            "text": "AI is single-handedly destroying the planet and will make climate change unstoppable.",
-            "scoredAs": "example",
-            "level": 5,
-            "origin": "Example wording we wrote and scored with the same checks",
-            "hype_checks": {
-              "P1": {
-                "answer": "N",
-                "reason": "States as fact something no evidence shows."
-              },
-              "P2": {
-                "answer": "N",
-                "reason": "Blames AI alone for a planet-wide problem."
-              },
-              "P3": {
-                "answer": "N",
-                "reason": "Tells a guess about the future as a sure thing."
-              },
-              "W1": {
-                "answer": "N",
-                "reason": "“Destroying the planet” is alarm, not evidence."
-              },
-              "W2": {
-                "answer": "N",
-                "reason": "Treats AI as the one acting, when people choose how to power it."
-              }
-            }
-          }
-        ],
-        "finePrint": [
-          {
-            "label": "Fact: US data centers used about 4.4% of the country’s electricity in 2023, and that share covers all their work, not just AI.",
-            "text": "Berkeley Lab estimated that US data centers used 176 terawatt-hours of electricity in 2023. A terawatt-hour is a billion kilowatt-hours, the unit on your power bill. That was 4.4% of all US electricity, up from 1.9% in 2018. For 2028, the report’s range is 6.7% to 12%. These are model estimates, not meter readings, and they include email, websites and streaming as well as AI. Source: the 2024 United States Data Center Energy Usage Report.",
-            "linkText": "2024 United States Data Center Energy Usage Report",
-            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
-            "icon": "🔌",
-            "tag": "US data center share"
-          },
-          {
-            "label": "Fact: The International Energy Agency expects data centers worldwide to use about twice as much electricity in 2030 as in 2025.",
-            "text": "In its April 2026 report Key Questions on Energy and AI, the International Energy Agency estimates data centers worldwide used 485 terawatt-hours in 2025. One terawatt-hour is a billion kilowatt-hours. It projects about 950 terawatt-hours by 2030, around 3% of all electricity used on Earth that year. These totals include non-AI work, but the agency expects AI-focused data centers to grow much faster than the rest. They are forecasts, not guarantees.",
-            "linkText": "Key Questions on Energy and AI",
-            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-            "icon": "🌍",
-            "tag": "Global demand doubling"
-          },
-          {
-            "label": "Fact: Each AI answer is using less energy than before, yet AI’s total electricity use can still rise.",
-            "text": "The International Energy Agency’s 2026 executive summary says AI’s energy efficiency per task is improving faster than any technology in energy history. A simple text question now typically uses less electricity than running a TV for the same length of time. But total demand depends on three trends that pull in different directions: better efficiency, many more people using AI, and newer models that take on bigger, more demanding jobs.",
-            "linkText": "2026 executive summary",
-            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-            "icon": "💡",
-            "tag": "Efficiency vs. demand"
-          },
-          {
-            "label": "Fact: A data center company that buys clean power on paper may still run partly on gas or coal power from the grid.",
-            "text": "Many companies sign contracts to buy wind or solar power equal to what they use over a year. But the International Energy Agency explains in its full 2026 report, on page 46, that the power data centers actually use often comes from the local grid, which may include gas or coal. So the real mix of power can differ from what was bought. Some operators are moving to “hourly matching,” covering every hour with low-emissions power.",
-            "linkText": "full 2026 report",
-            "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
-            "icon": "🧾",
-            "tag": "Clean power on paper"
-          },
-          {
-            "label": "Fact: Virginia’s legislative watchdog warned in 2024 that data center growth could keep older fossil fuel power plants running longer.",
-            "text": "In December 2024, Virginia’s legislative watchdog published Data Centers in Virginia. It found that, without limits, the state’s power demand is expected to double within 10 years, mainly because of data centers. Building new power plants and lines that fast would be very difficult, it said, so utilities would likely delay retiring older fossil fuel plants. This is one state’s forecast based on 2024 assumptions.",
-            "linkText": "Data Centers in Virginia",
-            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
-            "icon": "🏭",
-            "tag": "Old plants run longer"
-          },
-          {
-            "label": "Fact: Some US data center builders are planning their own natural gas power plants on site instead of waiting years for a grid connection.",
-            "text": "The International Energy Agency’s 2026 report Key Questions on Energy and AI says slow grid hookups are pushing US data center developers toward gas-fired generators on their own land. Satellite tracking shows about one-fifth of these projects have started land clearing or construction. The agency estimates that around 15 to 27 gigawatts of on-site gas power, mostly in the US, may supply data centers by 2030. A gigawatt is a billion watts. The agency stresses this estimate is highly uncertain, and most data centers still prefer grid power.",
-            "linkText": "on-site gas power",
-            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
-            "icon": "🔥",
-            "tag": "On-site gas power"
-          }
-        ],
-        "quiz": [
-          {
-            "statement": "If a company buys enough renewable power over a year, its AI runs on clean power every hour.",
-            "answer": "False",
-            "why": "Buying a year’s worth of green power doesn’t mean clean power at every hour. At night or on still days, its data centers may run on power from coal or gas."
-          },
-          {
-            "statement": "US climate pollution could go down overall while AI still adds to it.",
-            "answer": "True",
-            "why": "If cleaner power cuts pollution elsewhere, the total can fall even while AI’s extra electricity use pushes it up."
-          },
-          {
-            "statement": "It’s been proven that AI’s climate benefits cancel out its pollution.",
-            "answer": "False",
-            "why": "Not proven. The savings depend on how widely AI is used for climate work, and using more AI also uses more electricity."
-          }
-        ],
-        "headlineSource": "Claim tracked from historian Juan Cole, who made it in a December 2025 article in The Nation headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”",
-        "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact.",
-        "headlineSourceUrl": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/",
-        "headlineSourceLinkText": "AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care."
-      },
-      "remainingLimitations": [
-        "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
-        "2030 outcomes depend on uptake, task complexity, efficiency, siting, financing, transmission and generation; announcements or construction are not operating output.",
-        "Global all-data-center totals are not US-AI totals. Virginia scenarios use 2024 assumptions and are not current law or nationwide predictions.",
-        "Annual renewable contracts do not necessarily identify physical hourly supply; regional average emissions cannot measure marginal emissions of one query.",
-        "The Cornell paper could not be retrieved; numerical forecasts and industry net-zero conclusions from it are omitted. The opened public statement establishes provenance only.",
-        "Potential application benefits and economy-wide rebound do not establish a measured national net effect. The page focuses on operational electricity, not every lifecycle impact."
-      ],
-      "articleCards": [
-        {
-          "role": "Makes the claim",
-          "headline": "Pennsylvania’s AI boom is repeating old patterns of exploitation",
-          "outlet": "Spotlight PA (Inside Climate News)",
-          "published": "2026-09-22",
-          "url": "https://www.spotlightpa.org/news/2026/09/pennsylvania-ai-data-center-exploitation-environment",
-          "sourceType": "independent news outlet",
-          "hype": 3,
-          "gaps": 2,
-          "whyHere": "Covers a critical report on Pennsylvania's data center boom, which lists climate harm from their huge power demand among its warnings.",
-          "ratingNote": "The headline states a critical report's argument as settled fact and drops its “could”, and a charged phrase from the report goes unchallenged.",
-          "reviewStatus": "AI rating, not yet reviewed"
-        },
-        {
-          "role": "Reports it carefully",
-          "headline": "Oregon data centers by the numbers: 111 facilities consume nearly one-quarter of state’s power, according to new report",
-          "outlet": "OPB",
-          "published": "2026-09-17",
-          "url": "https://www.opb.org/article/2026/09/17/oregon-data-centers-consume-quarter-state-power-report/",
-          "sourceType": "independent news outlet",
-          "hype": 2,
-          "gaps": 2,
-          "whyHere": "Puts hard numbers on how much electricity data centers already use in one state and how much more they may need by 2030.",
-          "ratingNote": "Measured headline and clearly labelled forecasts; the one mark against it is calling the report “first-of-its-kind”.",
-          "reviewStatus": "AI rating, not yet reviewed"
-        },
-        {
-          "role": "Pushes back",
-          "headline": "Fears of AI speeding up climate change \"overstated\": IEA report",
-          "outlet": "Axios",
-          "published": "2025-04-10",
-          "url": "https://www.axios.com/2025/04/10/ai-climate-change-report",
-          "sourceType": "independent news outlet",
-          "hype": 2,
-          "gaps": 2,
-          "whyHere": "Reports the International Energy Agency's finding that fears of AI speeding up climate change appear overstated, though data center power use will still rise.",
-          "ratingNote": "Keeps the agency's hedging in the body, but the headline drops “appear” and the piece calls one figure “stunning”.",
-          "reviewStatus": "AI rating, not yet reviewed"
-        }
-      ],
-      "websiteCopyMarkdown": "# Energy and climate: AI will make climate change worse.\n\n## A. The claim\n\n**The headline claim:** “AI will make climate change worse.”\n\nTracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”\n\n**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”\n\nHere, “increase” means more emissions than there would be without AI’s extra demand; total US emissions could still go down. This narrows [a warning from Cornell researchers](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) that computing demand is growing faster than electricity is getting cleaner.\n\n## B. The short answer\n\nToo certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## C. What does this claim actually mean?\n\nBuilding AI models and answering questions takes a lot of computing, plus cooling. AI is only part of what data centers do; they also run everyday online services. [Berkeley Lab’s report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) estimates these different uses.\n\nUsing electricity and causing carbon emissions aren’t the same thing. The same amount of power can be clean or dirty depending on the power plants that make it. And a company that buys enough renewable power over a year may still run on fossil power at some hours or in some places. [IEA, 2026, page 46](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).\n\nThis page is about electricity and climate. Our [water page](/claims/water) covers cooling and local water.\n\n## D. What evidence do we actually have?\n\n**The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).\n\n**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).\n\n**One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).\n\n**Possible upsides:** Computers keep getting more efficient, and AI could help manage energy better. But those savings depend on people actually using them, and more use can cancel them out. Nobody has shown they add up to a net cut. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [IEA climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.\n\n**The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.\n\n## F. What can you do if you are still concerned?\n\n- **See how your region makes its electricity.** [EPA’s Power Profiler](https://www.epa.gov/egrid/power-profiler) shows your area’s power mix, with a [help page](https://www.epa.gov/egrid/frequent-questions-about-egrid). It can’t work out the footprint of your own chatbot use.\n- **Comment on a utility plan.** Find your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) and its [guide to taking part](https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/). Ask for the case number, then ask about expected demand, power sources, emissions and who pays. Each state works differently.\n- **Get help with federal energy decisions.** [FERC’s Office of Public Participation](https://www.ferc.gov/OPP) helps you find filings and comment deadlines. It covers federal matters, not every local data center, and taking part doesn’t guarantee the outcome.\n\n## G. Sources and review information\n\nResearch cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.\n"
     },
     {
       "slug": "data-centers",
@@ -2439,7 +2368,8 @@
             "linkText": "Virginia’s 2024 state audit",
             "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
             "icon": "⚡",
-            "tag": "Backup generators"
+            "tag": "Backup generators",
+            "iconName": "lightning"
           },
           {
             "label": "Fact: In November 2025, Virginia regulators created a new electricity rate group that makes the biggest power users sign 14-year contracts.",
@@ -2447,7 +2377,8 @@
             "linkText": "November 2025 order",
             "url": "https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf",
             "icon": "📝",
-            "tag": "New rate rules"
+            "tag": "New rate rules",
+            "iconName": "file-text"
           },
           {
             "label": "Fact: Virginia’s main tax break for data centers saved the industry $928 million in state sales taxes in a single year.",
@@ -2455,7 +2386,8 @@
             "linkText": "December 2024 audit",
             "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
             "icon": "🏷️",
-            "tag": "Tax breaks too"
+            "tag": "Tax breaks too",
+            "iconName": "tag"
           },
           {
             "label": "Fact: From 2019 to 2024, US states where electricity demand grew fastest saw average power prices fall after inflation, not rise.",
@@ -2463,7 +2395,8 @@
             "linkText": "Berkeley Lab analysis",
             "url": "https://www.publicpower.org/periodical/article/state-level-load-growth-has-reduced-average-retail-electricity-prices-report",
             "icon": "📉",
-            "tag": "Prices fell, so far"
+            "tag": "Prices fell, so far",
+            "iconName": "trend-down"
           },
           {
             "label": "Fact: A plan for a giant data center campus next to Manassas National Battlefield Park in Virginia was blocked in court after local lawsuits.",
@@ -2471,7 +2404,8 @@
             "linkText": "dropped its appeal",
             "url": "https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
             "icon": "⚖️",
-            "tag": "Blocked in court"
+            "tag": "Blocked in court",
+            "iconName": "scales"
           },
           {
             "label": "Fact: In July 2026, New York paused new state permits for the very largest data centers for up to a year while officials review them.",
@@ -2479,7 +2413,8 @@
             "linkText": "an executive order",
             "url": "https://www.wbng.com/2026/07/14/new-york-enacts-one-year-ban-hyperscale-data-centers/",
             "icon": "⏸️",
-            "tag": "New York pause"
+            "tag": "New York pause",
+            "iconName": "pause-circle"
           }
         ],
         "quiz": [
@@ -2502,7 +2437,132 @@
         "headlineSource": "Claim tracked from Gina Mangham of the group Renew DeKalb, who made it in a November 2025 CBS News Atlanta story, “DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods”: “I believe this will destroy our community.”",
         "carefulSource": "Our wording, based mainly on Virginia’s 2024 state audit of data centers, the most detailed official study we found.",
         "headlineSourceUrl": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods",
-        "headlineSourceLinkText": "DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods"
+        "headlineSourceLinkText": "DeKalb County residents push back against proposal that could bring massive data centers to their neighborhoods",
+        "trail": {
+          "intro": "How local fights over data centers grew into “data centers will destroy our community”, with costs and benefits argued along the way.",
+          "stops": [
+            {
+              "date": "November 2022",
+              "role": "origin",
+              "title": "Prince William County approves the Digital Gateway over loud opposition",
+              "quote": "greatest single threat to the park in decades",
+              "note": "Supervisors voted 5–2 to open about 2,100 acres next to Manassas National Battlefield to data centers after a 15-hour hearing. The quote is from former battlefield superintendent Brandon Bies, and another opponent called the plan \"a massive concrete jungle.\"",
+              "linkText": "Read the Prince William Times story",
+              "url": "https://www.princewilliamtimes.com/news/breaking-supervisors-approve-digital-gateway-plan-to-open-rural-crescent-to-data-centers/article_aa09b826-5ab5-11ed-a197-cfc793b860f0.html"
+            },
+            {
+              "date": "December 9, 2024",
+              "role": "pushback",
+              "title": "Virginia's legislative auditors weigh benefits against energy costs",
+              "quote": "But at the same time, the industry provides about $9.1 billion in annual activity to the economy.",
+              "note": "The JLARC study counted about 74,000 jobs a year tied to the industry. It also warned that rising energy demand could add $37 a month to Dominion Energy customers' bills.",
+              "linkText": "Read the Virginia Mercury's story",
+              "url": "https://virginiamercury.com/?p=41102"
+            },
+            {
+              "date": "May 21, 2025",
+              "role": "spread",
+              "title": "Report tallies $64 billion in projects blocked or delayed by local opposition",
+              "quote": "$64 billion in U.S. data center projects have been blocked or delayed by a growing wave of local, bipartisan opposition.",
+              "note": "This Inside Climate News story, republished by Route Fifty, covered a Data Center Watch report. The report turned scattered local fights into a national number. Virginia alone accounted for about $45.8 billion in delayed projects.",
+              "linkText": "Read Route Fifty's story",
+              "url": "https://www.route-fifty.com/infrastructure/2025/05/report-highlights-community-pushback-stalling-64-billion-data-center-development-nationwide/405480"
+            },
+            {
+              "date": "June 17, 2025",
+              "role": "spread",
+              "title": "NAACP moves to sue xAI over turbine pollution in Memphis",
+              "quote": "The temporary power generation units are operating in compliance with all applicable laws,",
+              "note": "The NAACP, represented by the Southern Environmental Law Center, sent a notice of intent to sue over gas turbines powering xAI's supercomputer near mostly Black Memphis neighborhoods. The quote is xAI's response.",
+              "linkText": "Read Fortune's (AP) story",
+              "url": "https://fortune.com/2025/06/17/elon-musk-xai-naacp-memphis-supercomputer-colossus-ai-environment-health"
+            },
+            {
+              "date": "July 29, 2025",
+              "role": "spread",
+              "title": "Record grid auction ties data centers to higher power bills",
+              "quote": "Data centers are a primary driver of this increase.",
+              "note": "PJM, the largest US grid, set record capacity prices, and monthly bills in its 13 states could rise more than 5%. This gave opponents a cost argument that reached households far from any data center site.",
+              "linkText": "Read Data Center Dynamics' story",
+              "url": "https://datacenterdynamics.com/en/news/data-center-boom-fuels-pjm-power-cost-increases-as-states-move-to-shield-ratepayers"
+            },
+            {
+              "date": "August 6, 2025",
+              "role": "peak",
+              "title": "Tucson council unanimously ends Project Blue",
+              "quote": "In addition to the water use, this was a problem because of the energy use.",
+              "note": "The Tucson City Council voted unanimously to stop all staff work on the proposed data center after residents objected to its water and energy use. Councilmember Kevin Dahl gave the quote.",
+              "linkText": "Read AZFamily's story",
+              "url": "https://www.azfamily.com/2025/08/06/tucson-city-council-votes-end-project-blue/"
+            },
+            {
+              "date": "August 7, 2025",
+              "role": "peak",
+              "title": "Judge voids the Digital Gateway rezoning",
+              "quote": "A Prince William County judge ruled on August 7 to void the rezoning for the Prince William Digital Gateway.",
+              "note": "Judge Kimberly Irving ruled for nearby residents, finding that the county's public notice was defective. That halted, at least for now, the 2,100-acre project from the first stop. The county and developers had 30 days to appeal. The linked story ran on August 11.",
+              "linkText": "Read Northern Virginia Magazine's story",
+              "url": "https://northernvirginiamag.com/news/2025/08/11/judge-blocks-prince-william-digital-gateway-data-center-project/"
+            },
+            {
+              "date": "November 18, 2025",
+              "role": "twist",
+              "title": "DeKalb County activist: data centers \"will destroy our community\"",
+              "quote": "I believe this will destroy our community.",
+              "note": "Gina Mangham of Renew DeKalb spoke before a county vote on data center zoning rules. She also raised health impacts and effects on Black and brown communities.",
+              "linkText": "Read CBS News Atlanta's story",
+              "url": "https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods"
+            },
+            {
+              "date": "June 10, 2026",
+              "role": "update",
+              "title": "DeKalb extends its pause on new data centers again",
+              "quote": "This has never been about opposing technology or economic development.",
+              "note": "DeKalb County, Georgia commissioners voted 5–2 to extend the pause on new data center applications by 100 days, through September 30. Commissioner Nicole Massiah gave the quote.",
+              "linkText": "Read Hoodline's story",
+              "url": "https://hoodline.com/2026/06/dekalb-slams-brakes-on-data-center-boom-after-5-2-vote/"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "Data centers aren’t destroying whole towns. The real questions are who pays for the power, how much noise neighbors live with, and whether the tax breaks are worth it. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Read the most detailed official study",
+              "text": "Virginia’s 2024 state audit looked at power bills, noise, water and tax breaks.",
+              "url": "https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf",
+              "linkText": "Read the audit summary →"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Contact your state lawmakers",
+              "text": "States decide data center tax breaks and power rules. Tell your state legislators what you think, whichever side you’re on.",
+              "url": "https://www.usa.gov/elected-officials",
+              "linkText": "Find your elected officials →"
+            },
+            {
+              "title": "Ask your utility commission who pays",
+              "text": "Ask whether large data centers cover the cost of the new power lines and plants built for them.",
+              "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/",
+              "linkText": "Find your state commission →"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Show up at the hearing",
+              "text": "Ask your county or city planning office for the site plan and the date of the zoning vote, then speak during public comment.",
+              "url": "https://www.usa.gov/local-governments",
+              "linkText": "Find your local government →"
+            },
+            {
+              "title": "Team up with neighbors",
+              "text": "Start a petition or local group, or organize a peaceful gathering. Towns in Missouri and Kansas have done it.",
+              "url": "https://www.kcur.org/housing-development-section/2026-09-02/data-center-backlash-missouri-kansas",
+              "linkText": "See how they organized →"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "Most detailed official evidence comes from Virginia, the largest US data-center market; other states and smaller sites may differ.",
@@ -2556,6 +2616,609 @@
         }
       ],
       "websiteCopyMarkdown": "# Data centers: Data centers will destroy our community.\n\n## A. The claim\n\n**The headline claim:** “Data centers will destroy our community.”\n\nThis lightly generalizes what Gina Mangham of the group Renew DeKalb told [CBS News Atlanta in November 2025](https://www.cbsnews.com/atlanta/news/dekalb-county-residents-push-back-against-proposal-that-could-bring-massive-data-centers-to-their-neighborhoods) about proposed data centers in DeKalb County, Georgia: “I believe this will destroy our community.” A Tucker County, West Virginia, resident used almost the same words in [West Virginia Watch](https://westvirginiawatch.com/2025/05/28/it-will-destroy-this-place-tucker-county-residents-fight-for-future-against-proposed-data-center/).\n\n**The careful version we also checked:** “Large data centers can bring real local costs, such as constant noise near homes, pressure on regional power bills and costly state tax breaks for few permanent jobs, while some host communities also gain large local tax revenue.”\n\nThis is our wording, based mainly on [Virginia’s state audit of data centers](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n## B. The short answer\n\nNot quite, but the worries are real. Big data centers can bring a constant hum near homes, and in the mid-Atlantic power grid a market watchdog says they are the [main reason capacity prices jumped](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780), a cost customers end up paying. But some places gain a lot: data centers bring in [38% of Loudoun County, Virginia’s general fund](https://www.loudounnow.com/news/hemstreet-presents-4-7b-fy-2026-budget-with-unprecedented-data-center-revenues/article_82f9c6ba-e9db-11ef-a684-ab75573cc019.html). Whether a community comes out ahead depends on the site, local rules and who pays for the grid.\n\n## C. What does this claim actually mean?\n\n“Destroy” bundles several worries: a huge building near homes, nonstop noise, higher power bills, lost woods or farmland, and tax breaks that leave little for the town.\n\nData centers are warehouses of computers that run day and night and need so much electricity that utilities may build new lines and plants. Who pays? [Harvard legal researchers](https://eelp.law.harvard.edu/extracting-profits-from-the-public-how-utility-ratepayers-are-paying-for-big-techs-power/) reviewed nearly 50 utility cases and warned that special deals could shift those costs to the public.\n\n[Virginia’s audit](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf) says their industrial size makes them “largely incompatible” with homes.\n\nWater and climate have their own pages: see [water](/claims/water) and [energy and climate](/claims/energy-climate).\n\n## D. What evidence do we actually have?\n\n**Power bills:** Virginia’s audit found data centers there currently pay their full cost of service. But it projected that a typical Dominion Energy household could pay $14 to $37 more a month by 2040 for new plants and lines. That’s a forecast, not a bill. [Audit summary, page v](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Noise:** The same audit says the low hum can’t damage hearing, but some neighbors say it affects their well-being. [Page viii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Tax breaks and jobs:** Georgia’s auditors estimated the state gave up $474.2 million in sales tax for data centers in 2025. [Georgia audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Virginia’s audit says a typical 250,000-square-foot data center has about 50 full-time workers, half of them contractors, though about 1,500 work on site at the peak of construction. [Page i](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**Local tax money:** In five Virginia localities with many data centers, they brought in from under 1% to 31% of local revenue. [Pages i–ii](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 3/5 — Turning it up.** “Will” makes the outcome sound certain, when projects can be changed or stopped: one huge Virginia plan [may never be built](https://www.insidenova.com/news/prince_william/breaking-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html) after a court fight. And “destroy” turns real but limited costs into total ruin, even though some host communities [gain large tax revenue](https://jlarc.virginia.gov/pdfs/summary/Rpt598Sum.pdf).\n\n**The careful version scores 1/5 — Grounded.** It says “can,” names costs with [evidence behind them](https://utilitydive.com/news/data-centers-pjm-capacity-auction-market-monitor/801780) and includes the tax money. A low hype score doesn’t mean low harm to people living next door.\n\n## F. What can you do if you are still concerned?\n\n- **Find out what’s planned and when it’s voted on.** Use [USAGov’s directory](https://www.usa.gov/local-governments) to find your county or city, then ask the planning office for the site plan and hearing dates.\n- **Ask about noise limits.** Ask what sound limit applies and whether cooling equipment is exempt; one Virginia county’s rule [exempted air-conditioning units](https://www.nbcwashington.com/news/local/northern-virginia/as-data-centers-proliferate-neighbors-knock-the-noise/3155887/).\n- **Ask who pays for new power lines and plants.** Ask your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) whether large data centers cover the grid upgrades they need. Virginia now requires [long minimum contracts](https://npr.brightspotcdn.com/b6/ac/706130b64d2b8eee6a9832b97e48/20251125-virginiascc-dominionenergyruling.pdf) for the biggest users.\n- **Weigh jobs against tax breaks.** Ask how many permanent jobs a project promises and what tax breaks it gets. Some states publish reviews, like [Georgia’s audit](https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf). Speaking up doesn’t guarantee an outcome.\n\n## G. Sources and review information\n\nResearch cutoff and links checked: **October 8, 2026**. **AI research and editorial checks completed October 8, 2026.**\n\nSources: CBS News Atlanta, November 18, 2025 (headline claim); West Virginia Watch, May 28, 2025; Virginia JLARC, *Data Centers in Virginia*, December 2024 (summary); Utility Dive, October 2, 2025, reporting PJM’s independent market monitor; Harvard Electricity Law Initiative, March 5, 2025; NBC Washington, September 13, 2022; Georgia Department of Audits and Accounts, December 2025, revised January 2026 (2025 data); Loudoun Now, February 12, 2025; InsideNoVa, April 29, 2026; Virginia State Corporation Commission order, November 25, 2025. USAGov and NARUC pages: undated. Links appear beside the statements they support.\n"
+    },
+    {
+      "slug": "energy-climate",
+      "route": "/claims/energy-climate",
+      "topic": "Energy and climate",
+      "headline": "AI will make climate change worse.",
+      "headlineOccurrence": "Plain-English form of the headline of Juan Cole’s article in The Nation, “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.” (December 4, 2025).",
+      "claim": "AI’s growing electricity demand could increase US carbon emissions by 2030.",
+      "carefulHeadline": "AI's growing power use could raise US carbon emissions by 2030.",
+      "claimExampleCitations": [
+        "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/",
+        "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
+      ],
+      "scope": "US carbon emissions from electricity, compared with a US without AI’s extra demand.",
+      "timeHorizon": "Through 2030.",
+      "keyQualification": "Means more emissions than without AI’s extra demand; total US emissions could still fall.",
+      "claimContextMarkdown": "**The headline claim:** “AI will make climate change worse.”\n\nTracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”\n\n**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”\n\nHere, “increase” means more emissions than there would be without AI’s extra demand; total US emissions could still go down. This narrows [a warning from Cornell researchers](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) that computing demand is growing faster than electricity is getting cleaner.",
+      "shortAnswerMarkdown": "Too certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).",
+      "meaningMarkdown": "Building AI models and answering questions takes a lot of computing, plus cooling. AI is only part of what data centers do; they also run everyday online services. [Berkeley Lab’s report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) estimates these different uses.\n\nUsing electricity and causing carbon emissions aren’t the same thing. The same amount of power can be clean or dirty depending on the power plants that make it. And a company that buys enough renewable power over a year may still run on fossil power at some hours or in some places. [IEA, 2026, page 46](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).\n\nThis page is about electricity and climate. Our [water page](/claims/water) covers cooling and local water.",
+      "evidenceMarkdown": "**The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).\n\n**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).\n\n**One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).\n\n**Possible upsides:** Computers keep getting more efficient, and AI could help manage energy better. But those savings depend on people actually using them, and more use can cancel them out. Nobody has shown they add up to a net cut. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [IEA climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).",
+      "scoreExplanationMarkdown": "**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.\n\n**The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.",
+      "actionsMarkdown": "- **See how your region makes its electricity.** [EPA’s Power Profiler](https://www.epa.gov/egrid/power-profiler) shows your area’s power mix, with a [help page](https://www.epa.gov/egrid/frequent-questions-about-egrid). It can’t work out the footprint of your own chatbot use.\n- **Comment on a utility plan.** Find your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) and its [guide to taking part](https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/). Ask for the case number, then ask about expected demand, power sources, emissions and who pays. Each state works differently.\n- **Get help with federal energy decisions.** [FERC’s Office of Public Participation](https://www.ferc.gov/OPP) helps you find filings and comment deadlines. It covers federal matters, not every local data center, and taking part doesn’t guarantee the outcome.",
+      "sourcesAndReviewMarkdown": "Research cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.",
+      "hype": {
+        "status": "proposed",
+        "level": 2,
+        "label": "A little spicy",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 3,
+            "met": 2,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false,
+        "displayPrefix": "Headline hype",
+        "reason": "AI's growing power use is adding emissions, so “worse” has a real basis. But “will” sounds surer than the evidence, which says it depends on how clean the power gets.",
+        "checklist": {
+          "P1": {
+            "answer": "Y",
+            "claim_phrase": "",
+            "reason": "A prediction. Without “only”, it no longer rules out climate benefits from AI, so there is no distinct problem with how current evidence is described.",
+            "sources": []
+          },
+          "P2": {
+            "answer": "Y",
+            "claim_phrase": "climate change",
+            "reason": "Global scope matches the global data-center evidence; no distinct scope problem.",
+            "sources": []
+          },
+          "P3": {
+            "answer": "N",
+            "claim_phrase": "will",
+            "reason": "States a certain outcome. The IEA says the effect depends on how fast demand grows, efficiency and how the electricity is generated, and possible climate benefits from AI are neither proven nor ruled out.",
+            "sources": [
+              {
+                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+                "locator": "Executive summary"
+              },
+              {
+                "url": "https://www.iea.org/reports/energy-and-ai/ai-and-climate-change",
+                "locator": "AI and climate change"
+              }
+            ]
+          },
+          "W1": {
+            "answer": "Y",
+            "claim_phrase": "worse",
+            "reason": "Plain wording; no added emotional force.",
+            "sources": []
+          },
+          "W2": {
+            "answer": "Y",
+            "claim_phrase": "",
+            "reason": "No human-like agency is attributed to AI.",
+            "sources": []
+          }
+        },
+        "reviewStatus": "AI research draft; not independently reviewed"
+      },
+      "carefulHype": {
+        "status": "proposed",
+        "level": 1,
+        "label": "Grounded",
+        "not_checked": [],
+        "sections": {
+          "P": {
+            "out": false,
+            "level": 1,
+            "met": 3,
+            "scored": 3
+          },
+          "W": {
+            "out": false,
+            "level": 1,
+            "met": 2,
+            "scored": 2
+          }
+        },
+        "rule_applied": false,
+        "displayPrefix": "Careful version",
+        "reason": "The more careful version says “could”, and there's a clear way it can happen: more demand for electricity, partly met by gas power plants.",
+        "checklist": {
+          "P1": {
+            "answer": "Y",
+            "claim_phrase": "could increase",
+            "reason": "The claim does not represent projections as observed causal effects. Demand models and documented power-supply developments establish a physical pathway; future uncertainty is assessed in P3 with no distinct evidence-status failure.",
+            "sources": [
+              {
+                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+                "locator": "Printed pp. 6 and 67, Executive Summary and model limitations",
+                "evidence_row_id": "E02"
+              },
+              {
+                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+                "locator": "Updated demand outlook and paragraphs on onsite natural gas developments",
+                "evidence_row_id": "E07"
+              }
+            ]
+          },
+          "P2": {
+            "answer": "Y",
+            "claim_phrase": "AI’s growing electricity demand ... US carbon emissions",
+            "reason": "US-specific modeling identifies accelerated AI equipment as a contributor, and the occurrence concerns US AI infrastructure. The claim neither attributes all sector electricity to AI nor generalizes a local finding to an inevitable national result.",
+            "sources": [
+              {
+                "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
+                "locator": "Opening US infrastructure discussion and 2030 horizon; quote following grid-decarbonization paragraph",
+                "evidence_row_id": "E01"
+              },
+              {
+                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+                "locator": "Printed pp. 6 and 53; Figure 5.6 equipment breakdown",
+                "evidence_row_id": "E03"
+              }
+            ]
+          },
+          "P3": {
+            "answer": "Y",
+            "claim_phrase": "could ... by 2030",
+            "reason": "Could retains the uncertainty of a supported demand-to-fossil-supply pathway. Outcomes depend on computing uptake, efficiency, siting, and clean supply; the wording promises neither an amount nor inevitability.",
+            "sources": [
+              {
+                "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+                "locator": "Three uncertain energy-demand trends; onsite gas projections through 2030",
+                "evidence_row_id": "E07"
+              },
+              {
+                "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
+                "locator": "Printed p. 46, procurement strategies and physical supply matching",
+                "evidence_row_id": "E08"
+              }
+            ]
+          },
+          "W1": {
+            "answer": "Y",
+            "claim_phrase": "increase US carbon emissions",
+            "reason": "Increase is a physical proposition without sensational or promotional phrasing. The public researcher statement itself presents a conditional pathway; no separate rhetoric problem exists.",
+            "sources": [
+              {
+                "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom",
+                "locator": "Quote following the paragraph beginning If decarbonization does not catch up",
+                "evidence_row_id": "E01"
+              }
+            ]
+          },
+          "W2": {
+            "answer": "Y",
+            "claim_phrase": "AI’s growing electricity demand",
+            "reason": "This assigns demand to computing infrastructure, not human-like intention or feelings. Training and model use require powered servers and supporting infrastructure.",
+            "sources": [
+              {
+                "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+                "locator": "Printed pp. 14–15, energy modeling framework; pp. 52–53, equipment and infrastructure electricity",
+                "evidence_row_id": "E03"
+              }
+            ]
+          }
+        }
+      },
+      "evidenceGaps": {
+        "displayMode": "qualitative",
+        "score": null,
+        "limitations": [
+          "Companies share little data on AI’s own energy use, and US and worldwide estimates cover different things.",
+          "Future emissions depend on demand, efficiency, how power is made, and whether AI’s possible climate benefits happen."
+        ]
+      },
+      "sourceLinks": [
+        {
+          "title": "Juan Cole’s December 2025 article in The Nation",
+          "url": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
+        },
+        {
+          "title": "a warning from Cornell researchers",
+          "url": "https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom"
+        },
+        {
+          "title": "International Energy Agency",
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+        },
+        {
+          "title": "unproven, not ruled out",
+          "url": "https://www.iea.org/reports/energy-and-ai/ai-and-climate-change"
+        },
+        {
+          "title": "Berkeley Lab’s report",
+          "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top"
+        },
+        {
+          "title": "IEA, 2026, page 46",
+          "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf"
+        },
+        {
+          "title": "Audit, pages 30 and 88",
+          "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF"
+        },
+        {
+          "title": "EPA’s Power Profiler",
+          "url": "https://www.epa.gov/egrid/power-profiler"
+        },
+        {
+          "title": "help page",
+          "url": "https://www.epa.gov/egrid/frequent-questions-about-egrid"
+        },
+        {
+          "title": "state utility commission",
+          "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/"
+        },
+        {
+          "title": "guide to taking part",
+          "url": "https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/"
+        },
+        {
+          "title": "FERC’s Office of Public Participation",
+          "url": "https://www.ferc.gov/OPP"
+        }
+      ],
+      "researchCutoff": "2026-10-06",
+      "aiEvidenceReview": {
+        "status": "completed",
+        "date": "2026-10-06"
+      },
+      "humanEditorialReview": {
+        "status": "pending",
+        "reviewer": null,
+        "date": null
+      },
+      "reviewStatusText": "AI rating, not yet reviewed",
+      "interactive": {
+        "keyWord": {
+          "word": "climate change",
+          "explanation": "How much AI adds to climate change depends on how fast its power use grows and how clean the electricity gets, and its possible climate benefits haven’t been proven or ruled out."
+        },
+        "claimDial": [
+          {
+            "text": "AI's growing power use could raise US carbon emissions by 2030.",
+            "scoredAs": "careful",
+            "origin": "careful version",
+            "level": 1
+          },
+          {
+            "text": "AI will make climate change worse.",
+            "scoredAs": "headline",
+            "level": 2
+          },
+          {
+            "text": "AI's exploding power use will raise US carbon emissions by 2030.",
+            "scoredAs": "example",
+            "level": 3,
+            "origin": "Example wording we wrote and scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "P2": {
+                "answer": "Y",
+                "reason": "Met."
+              },
+              "P3": {
+                "answer": "N",
+                "reason": "Turns “could” into a sure thing, though it depends on how power is made."
+              },
+              "W1": {
+                "answer": "N",
+                "reason": "“Exploding” adds drama to a fast but measured rise."
+              },
+              "W2": {
+                "answer": "Y",
+                "reason": "Met."
+              }
+            }
+          },
+          {
+            "text": "AI will only intensify climate change.",
+            "scoredAs": "example",
+            "level": 4,
+            "origin": "The Nation’s original headline (December 2025), scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "N",
+                "reason": "“Only” treats it as established that AI has no offsetting climate benefits. The IEA describes possible efficiency and climate benefits as conditional: neither proven nor ruled out."
+              },
+              "P2": {
+                "answer": "Y",
+                "reason": "Global scope matches the global data-center evidence; no distinct scope problem."
+              },
+              "P3": {
+                "answer": "N",
+                "reason": "States a certain outcome. The IEA says the effect depends on demand growth, efficiency and how the electricity is generated, and clean-energy investment is also growing."
+              },
+              "W1": {
+                "answer": "Y",
+                "reason": "No distinct additional problem; the issue is scored once above."
+              },
+              "W2": {
+                "answer": "Y",
+                "reason": "No human-like agency is attributed to AI."
+              }
+            }
+          },
+          {
+            "text": "AI is single-handedly destroying the planet and will make climate change unstoppable.",
+            "scoredAs": "example",
+            "level": 5,
+            "origin": "Example wording we wrote and scored with the same checks",
+            "hype_checks": {
+              "P1": {
+                "answer": "N",
+                "reason": "States as fact something no evidence shows."
+              },
+              "P2": {
+                "answer": "N",
+                "reason": "Blames AI alone for a planet-wide problem."
+              },
+              "P3": {
+                "answer": "N",
+                "reason": "Tells a guess about the future as a sure thing."
+              },
+              "W1": {
+                "answer": "N",
+                "reason": "“Destroying the planet” is alarm, not evidence."
+              },
+              "W2": {
+                "answer": "N",
+                "reason": "Treats AI as the one acting, when people choose how to power it."
+              }
+            }
+          }
+        ],
+        "finePrint": [
+          {
+            "label": "Fact: US data centers used about 4.4% of the country’s electricity in 2023, and that share covers all their work, not just AI.",
+            "text": "Berkeley Lab estimated that US data centers used 176 terawatt-hours of electricity in 2023. A terawatt-hour is a billion kilowatt-hours, the unit on your power bill. That was 4.4% of all US electricity, up from 1.9% in 2018. For 2028, the report’s range is 6.7% to 12%. These are model estimates, not meter readings, and they include email, websites and streaming as well as AI. Source: the 2024 United States Data Center Energy Usage Report.",
+            "linkText": "2024 United States Data Center Energy Usage Report",
+            "url": "https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top",
+            "icon": "🔌",
+            "tag": "US data center share",
+            "iconName": "plug"
+          },
+          {
+            "label": "Fact: The International Energy Agency expects data centers worldwide to use about twice as much electricity in 2030 as in 2025.",
+            "text": "In its April 2026 report Key Questions on Energy and AI, the International Energy Agency estimates data centers worldwide used 485 terawatt-hours in 2025. One terawatt-hour is a billion kilowatt-hours. It projects about 950 terawatt-hours by 2030, around 3% of all electricity used on Earth that year. These totals include non-AI work, but the agency expects AI-focused data centers to grow much faster than the rest. They are forecasts, not guarantees.",
+            "linkText": "Key Questions on Energy and AI",
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "🌍",
+            "tag": "Global demand doubling",
+            "iconName": "globe-hemisphere-west"
+          },
+          {
+            "label": "Fact: Each AI answer is using less energy than before, yet AI’s total electricity use can still rise.",
+            "text": "The International Energy Agency’s 2026 executive summary says AI’s energy efficiency per task is improving faster than any technology in energy history. A simple text question now typically uses less electricity than running a TV for the same length of time. But total demand depends on three trends that pull in different directions: better efficiency, many more people using AI, and newer models that take on bigger, more demanding jobs.",
+            "linkText": "2026 executive summary",
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "💡",
+            "tag": "Efficiency vs. demand",
+            "iconName": "lightbulb"
+          },
+          {
+            "label": "Fact: A data center company that buys clean power on paper may still run partly on gas or coal power from the grid.",
+            "text": "Many companies sign contracts to buy wind or solar power equal to what they use over a year. But the International Energy Agency explains in its full 2026 report, on page 46, that the power data centers actually use often comes from the local grid, which may include gas or coal. So the real mix of power can differ from what was bought. Some operators are moving to “hourly matching,” covering every hour with low-emissions power.",
+            "linkText": "full 2026 report",
+            "url": "https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf",
+            "icon": "🧾",
+            "tag": "Clean power on paper",
+            "iconName": "receipt"
+          },
+          {
+            "label": "Fact: Virginia’s legislative watchdog warned in 2024 that data center growth could keep older fossil fuel power plants running longer.",
+            "text": "In December 2024, Virginia’s legislative watchdog published Data Centers in Virginia. It found that, without limits, the state’s power demand is expected to double within 10 years, mainly because of data centers. Building new power plants and lines that fast would be very difficult, it said, so utilities would likely delay retiring older fossil fuel plants. This is one state’s forecast based on 2024 assumptions.",
+            "linkText": "Data Centers in Virginia",
+            "url": "https://rga.lis.virginia.gov/Published/2025/RD206/PDF",
+            "icon": "🏭",
+            "tag": "Old plants run longer",
+            "iconName": "factory"
+          },
+          {
+            "label": "Fact: Some US data center builders are planning their own natural gas power plants on site instead of waiting years for a grid connection.",
+            "text": "The International Energy Agency’s 2026 report Key Questions on Energy and AI says slow grid hookups are pushing US data center developers toward gas-fired generators on their own land. Satellite tracking shows about one-fifth of these projects have started land clearing or construction. The agency estimates that around 15 to 27 gigawatts of on-site gas power, mostly in the US, may supply data centers by 2030. A gigawatt is a billion watts. The agency stresses this estimate is highly uncertain, and most data centers still prefer grid power.",
+            "linkText": "on-site gas power",
+            "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary",
+            "icon": "🔥",
+            "tag": "On-site gas power",
+            "iconName": "flame"
+          }
+        ],
+        "quiz": [
+          {
+            "statement": "If a company buys enough renewable power over a year, its AI runs on clean power every hour.",
+            "answer": "False",
+            "why": "Buying a year’s worth of green power doesn’t mean clean power at every hour. At night or on still days, its data centers may run on power from coal or gas."
+          },
+          {
+            "statement": "US climate pollution could go down overall while AI still adds to it.",
+            "answer": "True",
+            "why": "If cleaner power cuts pollution elsewhere, the total can fall even while AI’s extra electricity use pushes it up."
+          },
+          {
+            "statement": "It’s been proven that AI’s climate benefits cancel out its pollution.",
+            "answer": "False",
+            "why": "Not proven. The savings depend on how widely AI is used for climate work, and using more AI also uses more electricity."
+          }
+        ],
+        "headlineSource": "Claim tracked from historian Juan Cole, who made it in a December 2025 article in The Nation headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”",
+        "carefulSource": "Our wording, based on a 2025 Cornell University study of the AI data center boom's environmental impact.",
+        "headlineSourceUrl": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/",
+        "headlineSourceLinkText": "AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.",
+        "trail": {
+          "intro": "How an estimate of the carbon cost of training AI grew into “AI will make climate change worse”, and how the evidence and arguments have moved since.",
+          "stops": [
+            {
+              "date": "June 5, 2019",
+              "role": "origin",
+              "title": "University researchers estimate the energy and carbon cost of training AI language models",
+              "quote": "these accuracy improvements depend on the availability of exceptionally large computational resources",
+              "note": "Emma Strubell, Ananya Ganesh and Andrew McCallum of UMass Amherst estimated the financial and environmental costs of training several popular language models and suggested ways to reduce them.",
+              "linkText": "Read the paper on arXiv",
+              "url": "https://arxiv.org/abs/1906.02243"
+            },
+            {
+              "date": "June 6, 2019",
+              "role": "twist",
+              "title": "A headline turns the study into \"as much carbon as five cars\"",
+              "quote": "Training a single AI model can emit as much carbon as five cars in their lifetimes",
+              "note": "MIT Technology Review reported the study's top estimate of more than 626,000 pounds of CO2 equivalent, compared with car lifetime emissions including manufacture. The figure applied to the most intensive training run studied, not to a typical model.",
+              "linkText": "Read MIT Technology Review's story",
+              "url": "https://www.technologyreview.com/2019/06/06/239031/training-a-single-ai-model-can-emit-as-much-carbon-as-five-cars-in-their-lifetimes/"
+            },
+            {
+              "date": "May 15, 2024",
+              "role": "spread",
+              "title": "Microsoft says its emissions are up about 29% since 2020",
+              "quote": "In aggregate, across all Scopes 1–3, Microsoft's emissions are up 29.1% from the 2020 baseline.",
+              "note": "Microsoft said the rise mainly came from building more data centers, and that infrastructure and electricity for new technologies such as generative AI create new challenges for its climate goals.",
+              "linkText": "Read Microsoft's report announcement",
+              "url": "https://blogs.microsoft.com/on-the-issues/2024/05/15/microsoft-environmental-sustainability-report-2024/"
+            },
+            {
+              "date": "July 2024",
+              "role": "peak",
+              "title": "Google reports emissions up 48% since 2019, blamed on data center energy use",
+              "quote": "Google admitted that its greenhouse gas emissions rose 48 percent since 2019.",
+              "note": "The Register reported Google's 2024 environmental report, which tied the rise to data center energy use as AI spreads, while Google also argued AI could help cut emissions elsewhere.",
+              "linkText": "Read The Register's story",
+              "url": "https://www.theregister.com/2024/07/02/google_datacenter_emissions/"
+            },
+            {
+              "date": "December 20, 2024",
+              "role": "update",
+              "title": "US government report projects data center electricity share could nearly triple by 2028",
+              "quote": "consumed about 4.4% of total U.S. electricity in 2023",
+              "note": "The Department of Energy released a Lawrence Berkeley National Laboratory report projecting data centers could use about 6.7% to 12% of US electricity by 2028. It measured electricity use, not climate impact directly.",
+              "linkText": "Read the Department of Energy's announcement",
+              "url": "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers"
+            },
+            {
+              "date": "April 10, 2025",
+              "role": "update",
+              "title": "IEA says data center electricity will more than double by 2030, but AI could offset emissions",
+              "quote": "could potentially be offset by emissions reductions enabled by AI if adoption of the technology is widespread",
+              "note": "The International Energy Agency projected global data center demand rising to around 945 TWh by 2030, while saying AI-enabled savings could potentially offset the added emissions.",
+              "linkText": "Read the IEA's announcement",
+              "url": "https://www.iea.org/news/ai-is-set-to-drive-surging-electricity-demand-from-data-centres-while-offering-the-potential-to-transform-how-the-energy-sector-works"
+            },
+            {
+              "date": "October 28, 2025",
+              "role": "pushback",
+              "title": "Bill Gates says climate change won't end humanity and credits AI with speeding clean energy",
+              "quote": "will not lead to humanity’s demise",
+              "note": "In his memo \"Three tough truths about climate,\" Gates argued against a doomsday view and said artificial intelligence is accelerating clean energy innovation.",
+              "linkText": "Read Bill Gates' memo",
+              "url": "https://www.gatesnotes.com/three-tough-truths-about-climate"
+            },
+            {
+              "date": "December 4, 2025",
+              "role": "peak",
+              "title": "Historian Juan Cole argues AI will intensify climate change",
+              "quote": "AI has its uses, but we clearly don't need so much more of it desperately enough to thoroughly wreck our planet.",
+              "note": "Writing in The Nation partly in response to Gates, Cole argued that data centers are poised to use more fossil fuels and raise global carbon emissions significantly.",
+              "linkText": "Read The Nation's story",
+              "url": "https://www.thenation.com/article/environment/ai-climate-change-bill-gates/"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "AI won’t necessarily make climate change worse, but its growing power use can raise emissions where the grid still runs on gas or coal. The real questions are what power gets built and who pays. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Check how your area makes power",
+              "text": "Enter your ZIP code in EPA’s Power Profiler to compare emissions from your local power plants with the national average.",
+              "linkText": "Try the Power Profiler →",
+              "url": "https://www.epa.gov/egrid/power-profiler"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Comment on your utility’s plans",
+              "text": "State utility commissions review plans for new power plants and set rates. Ask yours for the case number on data center demand, then file a comment.",
+              "linkText": "Find your state commission →",
+              "url": "https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/"
+            },
+            {
+              "title": "Get help with federal energy cases",
+              "text": "FERC’s Office of Public Participation helps people find filings and deadlines and explains how to comment on federal power matters.",
+              "linkText": "Visit FERC’s public office →",
+              "url": "https://www.ferc.gov/OPP"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Show up at the local hearing",
+              "text": "Ask your city or county when it will vote on a data center or new power plant, then speak during public comment, whichever side you’re on.",
+              "linkText": "Find your local government →",
+              "url": "https://www.usa.gov/local-governments"
+            },
+            {
+              "title": "Join a community solar project",
+              "text": "Community solar lets neighbors, including renters, share power from one solar array and get credit on their bills. Ask your utility what’s offered.",
+              "linkText": "Learn how it works →",
+              "url": "https://www.energy.gov/eere/solar/community-solar-basics"
+            }
+          ]
+        }
+      },
+      "remainingLimitations": [
+        "National historical demand is modeled from incomplete equipment and operating data; no complete current US AI-only electricity or emissions census was inspected.",
+        "2030 outcomes depend on uptake, task complexity, efficiency, siting, financing, transmission and generation; announcements or construction are not operating output.",
+        "Global all-data-center totals are not US-AI totals. Virginia scenarios use 2024 assumptions and are not current law or nationwide predictions.",
+        "Annual renewable contracts do not necessarily identify physical hourly supply; regional average emissions cannot measure marginal emissions of one query.",
+        "The Cornell paper could not be retrieved; numerical forecasts and industry net-zero conclusions from it are omitted. The opened public statement establishes provenance only.",
+        "Potential application benefits and economy-wide rebound do not establish a measured national net effect. The page focuses on operational electricity, not every lifecycle impact."
+      ],
+      "articleCards": [
+        {
+          "role": "Makes the claim",
+          "headline": "Pennsylvania’s AI boom is repeating old patterns of exploitation",
+          "outlet": "Spotlight PA (Inside Climate News)",
+          "published": "2026-09-22",
+          "url": "https://www.spotlightpa.org/news/2026/09/pennsylvania-ai-data-center-exploitation-environment",
+          "sourceType": "independent news outlet",
+          "hype": 3,
+          "gaps": 2,
+          "whyHere": "Covers a critical report on Pennsylvania's data center boom, which lists climate harm from their huge power demand among its warnings.",
+          "ratingNote": "The headline states a critical report's argument as settled fact and drops its “could”, and a charged phrase from the report goes unchallenged.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        },
+        {
+          "role": "Reports it carefully",
+          "headline": "Oregon data centers by the numbers: 111 facilities consume nearly one-quarter of state’s power, according to new report",
+          "outlet": "OPB",
+          "published": "2026-09-17",
+          "url": "https://www.opb.org/article/2026/09/17/oregon-data-centers-consume-quarter-state-power-report/",
+          "sourceType": "independent news outlet",
+          "hype": 2,
+          "gaps": 2,
+          "whyHere": "Puts hard numbers on how much electricity data centers already use in one state and how much more they may need by 2030.",
+          "ratingNote": "Measured headline and clearly labelled forecasts; the one mark against it is calling the report “first-of-its-kind”.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        },
+        {
+          "role": "Pushes back",
+          "headline": "Fears of AI speeding up climate change \"overstated\": IEA report",
+          "outlet": "Axios",
+          "published": "2025-04-10",
+          "url": "https://www.axios.com/2025/04/10/ai-climate-change-report",
+          "sourceType": "independent news outlet",
+          "hype": 2,
+          "gaps": 2,
+          "whyHere": "Reports the International Energy Agency's finding that fears of AI speeding up climate change appear overstated, though data center power use will still rise.",
+          "ratingNote": "Keeps the agency's hedging in the body, but the headline drops “appear” and the piece calls one figure “stunning”.",
+          "reviewStatus": "AI rating, not yet reviewed"
+        }
+      ],
+      "websiteCopyMarkdown": "# Energy and climate: AI will make climate change worse.\n\n## A. The claim\n\n**The headline claim:** “AI will make climate change worse.”\n\nTracked from [Juan Cole’s December 2025 article in The Nation](https://www.thenation.com/article/environment/ai-climate-change-bill-gates/), headlined “AI Will Only Intensify Climate Change. The Tech Moguls Don’t Care.”\n\n**The careful version we also checked:** “AI’s growing electricity demand could increase US carbon emissions by 2030.”\n\nHere, “increase” means more emissions than there would be without AI’s extra demand; total US emissions could still go down. This narrows [a warning from Cornell researchers](https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom) that computing demand is growing faster than electricity is getting cleaner.\n\n## B. The short answer\n\nToo certain. AI is pushing up demand for electricity, and where gas or coal plants supply it, emissions are higher than they’d be without AI’s extra demand. But how much depends on how fast demand grows and how clean the grid gets, and the [International Energy Agency](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) also sees new clean power being built. Possible climate benefits from AI are [unproven, not ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## C. What does this claim actually mean?\n\nBuilding AI models and answering questions takes a lot of computing, plus cooling. AI is only part of what data centers do; they also run everyday online services. [Berkeley Lab’s report](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top) estimates these different uses.\n\nUsing electricity and causing carbon emissions aren’t the same thing. The same amount of power can be clean or dirty depending on the power plants that make it. And a company that buys enough renewable power over a year may still run on fossil power at some hours or in some places. [IEA, 2026, page 46](https://iea.blob.core.windows.net/assets/3179f7f8-01f6-4dd6-bffa-c9f7b73f1dc9/KeyQuestionsonEnergyandAI.pdf).\n\nThis page is about electricity and climate. Our [water page](/claims/water) covers cooling and local water.\n\n## D. What evidence do we actually have?\n\n**The US so far:** Berkeley Lab estimated that all US data centers used 4.4% of the country’s electricity in 2023. That’s an estimate for all data centers, not just AI, and it has gaps. [Report, pages 6 and 67–68](https://eta-publications.lbl.gov/sites/default/files/2024-12/lbnl-2024-united-states-data-center-energy-usage-report.pdf?stream=top).\n\n**Worldwide forecast:** The International Energy Agency (IEA) estimates data centers worldwide used 485 terawatt-hours of electricity in 2025 and expects about 950 by 2030, roughly double. That includes non-AI work. It also found US companies planning gas power plants on site, though not every announced project gets built. [2026 report](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary).\n\n**One state’s warning:** Virginia’s state audit warned in December 2024 that fast data-center growth could make clean-energy goals harder and keep fossil plants open longer. That’s one state’s forecast, not a national certainty. [Audit, pages 30 and 88](https://rga.lis.virginia.gov/Published/2025/RD206/PDF).\n\n**Possible upsides:** Computers keep getting more efficient, and AI could help manage energy better. But those savings depend on people actually using them, and more use can cancel them out. Nobody has shown they add up to a net cut. [IEA efficiency analysis](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); [IEA climate assessment](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change).\n\n## E. Hype score and explanation\n\n**Hype score for the headline: 2/5 — A little spicy.** AI’s growing electricity use is adding emissions, so “worse” has a real basis. But “will” makes it sound certain, when the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) says it depends on how fast demand grows and how clean the power gets, and AI’s possible climate benefits are [neither proven nor ruled out](https://www.iea.org/reports/energy-and-ai/ai-and-climate-change). The Nation’s original wording, “will only intensify”, scores 4/5.\n\n**The careful version scores 1/5 — Grounded.** It compares emissions with a US without AI’s extra demand, and it says “could”. That matches the growing demand and the real chance it’s met with gas power, as the [IEA](https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary) describes. A low hype score doesn’t mean low harm to the climate.\n\n## F. What can you do if you are still concerned?\n\n- **See how your region makes its electricity.** [EPA’s Power Profiler](https://www.epa.gov/egrid/power-profiler) shows your area’s power mix, with a [help page](https://www.epa.gov/egrid/frequent-questions-about-egrid). It can’t work out the footprint of your own chatbot use.\n- **Comment on a utility plan.** Find your [state utility commission](https://www.naruc.org/about-naruc/our-mission/state-associate-and-federal-members/) and its [guide to taking part](https://www.naruc.org/serving-the-public-interest/how-commissions-work/frequently-asked-questions/). Ask for the case number, then ask about expected demand, power sources, emissions and who pays. Each state works differently.\n- **Get help with federal energy decisions.** [FERC’s Office of Public Participation](https://www.ferc.gov/OPP) helps you find filings and comment deadlines. It covers federal matters, not every local data center, and taking part doesn’t guarantee the outcome.\n\n## G. Sources and review information\n\nResearch cutoff and links checked: **October 6, 2026**. **AI research and editorial checks completed October 6, 2026.**\n\nSources: Cornell Chronicle, November 10, 2025 (public claim); Berkeley Lab, December 2024 (2023 estimates); Virginia JLARC, December 9, 2024; IEA, April 16, 2026, and April 10, 2025 (benefits and rebound discussion). EPA Power Profiler updated September 9, 2026 (2023 data); EPA guide updated July 28, 2026. NARUC pages: undated. FERC page updated September 23, 2026. The linked Cornell research paper could not be fully retrieved; its numerical forecasts are not used here.\n"
     },
     {
       "slug": "creativity",
@@ -2935,7 +3598,8 @@
             "linkText": "Forbes interview with Midjourney’s founder",
             "url": "https://www.forbes.com/sites/robsalkowitz/2022/09/16/midjourney-founder-david-holz-on-the-impact-of-ai-on-art-imagination-and-the-creative-economy/",
             "icon": "🎨",
-            "tag": "No artist consent"
+            "tag": "No artist consent",
+            "iconName": "palette"
           },
           {
             "label": "Fact: Building an AI model usually means copying creative works several times, which is a separate step from anything the finished model later produces.",
@@ -2943,7 +3607,8 @@
             "linkText": "Copyright and Artificial Intelligence, Part 3",
             "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-3-Generative-AI-Training-Report-Pre-Publication-Version.pdf",
             "icon": "📋",
-            "tag": "Copies in training"
+            "tag": "Copies in training",
+            "iconName": "copy"
           },
           {
             "label": "Fact: In the US, an artist’s original work is protected by copyright from the moment it is created, even if it is never registered.",
@@ -2951,7 +3616,8 @@
             "linkText": "Copyright in General FAQ",
             "url": "https://www.copyright.gov/help/faq/faq-general.html",
             "icon": "©️",
-            "tag": "Automatic copyright"
+            "tag": "Automatic copyright",
+            "iconName": "copyright"
           },
           {
             "label": "Fact: A US appeals court ruled in 2025 that art made entirely by an AI system, with no human author, can’t be copyrighted.",
@@ -2959,7 +3625,8 @@
             "linkText": "Thaler v. Perlmutter",
             "url": "https://media.cadc.uscourts.gov/opinions/docs/2025/03/23-5233.pdf",
             "icon": "👤",
-            "tag": "Human authors only"
+            "tag": "Human authors only",
+            "iconName": "user"
           },
           {
             "label": "Fact: One study found that job posts for image-making work fell about 17% on one global freelance website after AI image tools appeared.",
@@ -2967,7 +3634,8 @@
             "linkText": "Who Is AI Replacing? The Impact of Generative AI on Online Freelancing Platforms",
             "url": "https://www.ifo.de/sites/default/files/docbase/docs/cesifo1_wp11276.pdf",
             "icon": "📉",
-            "tag": "Fewer design gigs"
+            "tag": "Fewer design gigs",
+            "iconName": "trend-down"
           },
           {
             "label": "Fact: Anthropic agreed to pay $1.5 billion to settle book authors’ claims over pirated copies, but the deal left claims about AI outputs open.",
@@ -2975,7 +3643,8 @@
             "linkText": "Order Granting Final Approval of Class Action Settlement",
             "url": "https://docs.justia.com/cases/federal/district-courts/california/candce/4:2024cv05417/434709/680",
             "icon": "⚖️",
-            "tag": "$1.5B settlement"
+            "tag": "$1.5B settlement",
+            "iconName": "scales"
           }
         ],
         "quiz": [
@@ -2998,7 +3667,132 @@
         "headlineSource": "Claim tracked from researcher Trystan S. Goetze, who made it in the title of a 2024 research paper, “AI Art is Theft: Labour, Extraction, and Exploitation.”",
         "carefulSource": "Our wording, based on research showing AI models can repeat long passages from the work they were trained on.",
         "headlineSourceUrl": "https://arxiv.org/abs/2401.06178v2",
-        "headlineSourceLinkText": "AI Art is Theft: Labour, Extraction, and Exploitation"
+        "headlineSourceLinkText": "AI Art is Theft: Labour, Extraction, and Exploitation",
+        "trail": {
+          "intro": "How artists’ objections to AI trained on their work became “AI art is theft”, and how courts and regulators have answered.",
+          "stops": [
+            {
+              "date": "September 16, 2022",
+              "role": "origin",
+              "title": "Fantasy artist Greg Rutkowski finds his name is a top prompt for AI images",
+              "quote": "But for me and many other artists, it's starting to look like a threat to our careers.",
+              "note": "MIT Technology Review reported that Rutkowski's name had been used as a prompt about 93,000 times. It was one of the first widely read stories about artists objecting to AI trained on their work.",
+              "linkText": "Read MIT Technology Review's story",
+              "url": "https://www.technologyreview.com/2022/09/16/1059598/this-artist-is-dominating-ai-generated-art-and-hes-not-happy-about-it/"
+            },
+            {
+              "date": "December 14, 2022",
+              "role": "spread",
+              "title": "Artists flood ArtStation with \"No to AI Generated Images\" protest posts",
+              "quote": "work generated by a machine, using data mined from the labor of real humans.",
+              "note": "Illustrator Nicholas Kole started the protest after AI-generated images appeared on ArtStation's Explore page, and the protest image spread across the site. Kole's words framed AI art as built on other people's labor.",
+              "linkText": "Read Vice's story",
+              "url": "https://vice.com/en/article/ake9me/artists-are-revolt-against-ai-art-on-artstation"
+            },
+            {
+              "date": "January 13, 2023",
+              "role": "spread",
+              "title": "Artists file a class action against Stability AI, Midjourney and DeviantArt",
+              "quote": "This suit alleges copyright infringement, DMCA violations, right of publicity violations, breach of the DeviantArt Terms of Service, unfair competition, and unjust enrichment.",
+              "note": "In Andersen v. Stability AI, filed in federal court in Northern California, the artists' complaint moved the argument from social media into court.",
+              "linkText": "Read the plaintiffs' lawyers' case page",
+              "url": "https://www.saverilawfirm.com/our-cases/ai-artgenerators-copyright-litigation"
+            },
+            {
+              "date": "January 2024",
+              "role": "twist",
+              "title": "Philosophy paper argues the protest slogan \"AI art is theft\" holds up",
+              "quote": "the artistic community has launched a protest movement, which argues that AI image generation is a kind of theft.",
+              "note": "Trystan S. Goetze's paper, later presented at the FAccT 2024 conference, moved the claim from legal copyright to ethics. It argues that AI image generators involve an unethical kind of labor theft, whatever the law says.",
+              "linkText": "Read the paper on arXiv",
+              "url": "https://arxiv.org/abs/2401.06178v2"
+            },
+            {
+              "date": "May 9, 2025",
+              "role": "update",
+              "title": "US Copyright Office says some AI training is fair use and some is not",
+              "quote": "some uses of copyrighted works for generative AI training will qualify as fair use, and some will not.",
+              "note": "The Office released a pre-publication version of Part 3 of its AI report, on training. It said the answer depends on the facts of each case and stressed that not every transformative use is a fair one.",
+              "linkText": "Read Jenner & Block's summary",
+              "url": "https://www.jenner.com/en/news-insights/client-alerts/us-copyright-office-releases-pre-publication-version-of-report-on-copyright-issues-in-generative-ai-training"
+            },
+            {
+              "date": "June 11, 2025",
+              "role": "peak",
+              "title": "Disney and Universal sue Midjourney",
+              "quote": "Midjourney is the quintessential copyright free-rider and a bottomless pit of plagiarism",
+              "note": "Two of the biggest Hollywood studios sued in federal court in Los Angeles. The case put major corporate rights holders behind the argument individual artists had been making.",
+              "linkText": "Read Reuters' story (via Insurance Journal)",
+              "url": "https://amp.insurancejournal.com/news/national/2025/06/12/827252.htm"
+            },
+            {
+              "date": "June 23, 2025",
+              "role": "pushback",
+              "title": "Judge rules training on books is fair use, but pirated copies are not",
+              "quote": "The court held that using copyrighted material to train LLM models was \"exceedingly transformative\" and thus was fair use",
+              "note": "In Bartz v. Anthropic, a case about books rather than images, Judge William Alsup ruled for the AI company on training. He ruled against it on keeping more than seven million pirated books in a library.",
+              "linkText": "Read Akin Gump's summary",
+              "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/district-court-rules-ai-training-can-be-fair-use-in-bartz-v-anthropic"
+            },
+            {
+              "date": "September 25, 2025",
+              "role": "update",
+              "title": "Judge approves $1.5 billion Anthropic settlement with authors",
+              "quote": "which will pay authors and publishers about $3,000 for each of the books covered by the agreement.",
+              "note": "The settlement covered Anthropic's use of pirated books, the part of the case that was not ruled fair use. It showed that how training data is obtained can carry a large cost even when training itself is allowed.",
+              "linkText": "Read the AP's story (via The Republic)",
+              "url": "https://www.therepublic.com/?p=827516"
+            },
+            {
+              "date": "November 4, 2025",
+              "role": "pushback",
+              "title": "UK court rejects Getty's claim that Stable Diffusion is an infringing copy",
+              "quote": "the model weights are not themselves an infringing copy and they do not store an infringing copy.",
+              "note": "In Getty Images v. Stability AI, Mrs Justice Smith of England's High Court rejected Getty's secondary copyright claim. She found that the model does not store the copyrighted images it learned from.",
+              "linkText": "Read Latham & Watkins' summary",
+              "url": "https://www.lw.com/en/insights/getty-images-v-stability-ai-english-high-court-rejects-secondary-copyright-claim"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "Calling AI art “theft” goes further than the facts, and US courts haven’t settled whether training on others’ work is legal. The real questions are whether creators should be asked and paid, and how to protect your own work. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Read the official AI copyright reports",
+              "text": "The US Copyright Office studied AI training, digital copies of real people, and whether AI-made work can be copyrighted in a three-part series.",
+              "linkText": "See the AI reports →",
+              "url": "https://www.copyright.gov/ai/index.html"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Tell Congress what you think",
+              "text": "Congress writes copyright law, including any rules on AI training, consent or pay. Contact your US senators and representative, whichever side you’re on.",
+              "linkText": "Find your elected officials →",
+              "url": "https://www.usa.gov/elected-officials"
+            },
+            {
+              "title": "File a low-cost copyright claim",
+              "text": "If a specific work of yours was copied, this federal board is a cheaper option than court. Awards are capped at $30,000, and the other side can opt out.",
+              "linkText": "See how claims work →",
+              "url": "https://www.ccb.gov/claimant/"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Register the work you care about",
+              "text": "You own the copyright as soon as you make something, but you must register a US work before you can sue anyone over it.",
+              "linkText": "Read the registration basics →",
+              "url": "https://www.copyright.gov/help/faq/faq-general.html"
+            },
+            {
+              "title": "Team up with other creators",
+              "text": "Join or start a group of artists to share what you learn and act together. Three artists joined forces to take their concerns to court.",
+              "linkText": "See how they organized →",
+              "url": "https://learningenglish.voanews.com/a/artists-fight-back-against-ai-using-their-work/7253853.html"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "Targeted extraction of selected works and dated model versions does not measure ordinary-user prevalence or rank current products.",
@@ -3426,7 +4220,8 @@
             "linkText": "Data controls in ChatGPT",
             "url": "https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt",
             "icon": "🔒",
-            "tag": "Training vs. storage"
+            "tag": "Training vs. storage",
+            "iconName": "lock"
           },
           {
             "label": "Fact: OpenAI says chats you delete are erased from its systems within 30 days, though some can be kept for security or legal reasons.",
@@ -3434,7 +4229,8 @@
             "linkText": "How OpenAI handles data in consumer services",
             "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services",
             "icon": "🗑️",
-            "tag": "30-day deletion"
+            "tag": "30-day deletion",
+            "iconName": "trash"
           },
           {
             "label": "Fact: ChatGPT’s Temporary Chat isn’t used for training while it stays temporary, but OpenAI may keep a copy for up to 30 days.",
@@ -3442,7 +4238,8 @@
             "linkText": "Temporary chat in ChatGPT",
             "url": "https://help.openai.com/en/articles/8914046-temporary-chat-in-chatgpt",
             "icon": "⏳",
-            "tag": "Temporary Chat"
+            "tag": "Temporary Chat",
+            "iconName": "hourglass"
           },
           {
             "label": "Fact: If you share a ChatGPT chat by link from a personal account, anyone who has that link can read it.",
@@ -3450,7 +4247,8 @@
             "linkText": "Sharing conversations and scheduled tasks in ChatGPT",
             "url": "https://help.openai.com/en/articles/7925741-sharing-conversations-and-scheduled-tasks-in-chatgpt",
             "icon": "🔗",
-            "tag": "Shared links"
+            "tag": "Shared links",
+            "iconName": "link"
           },
           {
             "label": "Fact: OpenAI says it handed chat content to police or other government agencies in 62 cases in the second half of 2025, in answer to legal demands such as search warrants.",
@@ -3458,7 +4256,8 @@
             "linkText": "Government Requests for User Data report",
             "url": "https://cdn.openai.com/trust-and-transparency/report-2025h2-government-requests-for-user-data.pdf",
             "icon": "👮",
-            "tag": "Police data requests"
+            "tag": "Police data requests",
+            "iconName": "police-car"
           },
           {
             "label": "Fact: California’s privacy law gives residents the right to know, delete and correct personal information that businesses have collected about them.",
@@ -3466,7 +4265,8 @@
             "linkText": "Rights under the California Consumer Privacy Act",
             "url": "https://privacy.ca.gov/california-privacy-rights/rights-under-the-california-consumer-privacy-act/",
             "icon": "🏛️",
-            "tag": "California rights"
+            "tag": "California rights",
+            "iconName": "bank"
           }
         ],
         "quiz": [
@@ -3510,7 +4310,132 @@
         "headlineSource": "Claim tracked from Tom's Guide, a tech advice website, which made it in an April 2023 headline: “ChatGPT is sharing your secrets — keep your chats private by changing this setting.”",
         "carefulSource": "Our wording, based on OpenAI's own privacy settings, as explained by Tom's Guide.",
         "headlineSourceUrl": "https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting",
-        "headlineSourceLinkText": "ChatGPT is sharing your secrets — keep your chats private by changing this setting"
+        "headlineSourceLinkText": "ChatGPT is sharing your secrets — keep your chats private by changing this setting",
+        "trail": {
+          "intro": "How a real bug and new privacy settings became “ChatGPT is sharing your secrets”, and what has happened to ChatGPT chats since.",
+          "stops": [
+            {
+              "date": "March 24, 2023",
+              "role": "origin",
+              "title": "OpenAI admits a bug showed some users other people's chat titles",
+              "quote": "allowed some users to see titles from another active user's chat history",
+              "note": "OpenAI said a bug in an open-source library caused the March 20 outage and also exposed payment-related details for 1.2% of ChatGPT Plus subscribers active in a nine-hour window. It said full credit card numbers were not exposed.",
+              "linkText": "Read OpenAI's post",
+              "url": "https://openai.com/index/march-20-chatgpt-outage/"
+            },
+            {
+              "date": "March 31, 2023",
+              "role": "spread",
+              "title": "Italy's privacy regulator temporarily blocks ChatGPT",
+              "quote": "The Italian SA imposed an immediate temporary limitation on the processing of Italian users' data by OpenAI",
+              "note": "The Garante cited the March 20 data breach and said personal data was being collected unlawfully, with no age checks for children. It opened an inquiry into OpenAI.",
+              "linkText": "Read the Garante's press release",
+              "url": "https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/9870847"
+            },
+            {
+              "date": "April 25, 2023",
+              "role": "update",
+              "title": "OpenAI lets users turn off chat history and training",
+              "quote": "Conversations that are started when chat history is disabled won't be used to train and improve our models",
+              "note": "OpenAI said chats started with history off would be kept for 30 days and reviewed only when needed to monitor for abuse, then permanently deleted.",
+              "linkText": "Read OpenAI's announcement",
+              "url": "https://openai.com/index/new-ways-to-manage-your-data-in-chatgpt/"
+            },
+            {
+              "date": "April 26, 2023",
+              "role": "twist",
+              "title": "Tom's Guide headline: \"ChatGPT is sharing your secrets\"",
+              "quote": "Until now, ChatGPT saved users’ conversations to train its impressive AI chatbot on.",
+              "note": "The how-to story by Andy Sansom framed default training on chats as ChatGPT 'sharing your secrets' and told readers to switch off the new Chat History & Training setting. The body describes training and retention, not chats being shared with other people.",
+              "linkText": "Read Tom's Guide's story",
+              "url": "https://www.tomsguide.com/how-to/chatgpt-is-sharing-your-secrets-keep-your-chats-private-by-changing-this-setting"
+            },
+            {
+              "date": "May 2, 2023",
+              "role": "spread",
+              "title": "Samsung bans staff from using ChatGPT after code was pasted into it",
+              "quote": "asked ChatGPT to help fix a faulty database",
+              "note": "Fortune reported, citing Korean media, that an employee uploaded confidential source code while asking for help, and another shared a whole meeting to get minutes. Samsung warned violations could lead to firing.",
+              "linkText": "Read Fortune's story",
+              "url": "https://fortune.com/2023/05/02/samsung-bans-employee-use-chatgpt-data-leak/"
+            },
+            {
+              "date": "June 5, 2025",
+              "role": "spread",
+              "title": "Court order in New York Times lawsuit forces OpenAI to keep deleted chats",
+              "quote": "The New York Times is demanding that we retain even deleted ChatGPT chats and API content that would typically be automatically removed",
+              "note": "OpenAI said it was challenging a preservation order in The New York Times' copyright lawsuit that required it to keep chats users had deleted. A magistrate judge clarified on May 27 that ChatGPT Enterprise was excluded.",
+              "linkText": "Read OpenAI's post",
+              "url": "https://openai.com/index/response-to-nyt-data-demands/"
+            },
+            {
+              "date": "July 25, 2025",
+              "role": "peak",
+              "title": "Sam Altman says ChatGPT chats lack legal confidentiality",
+              "quote": "There's legal confidentiality, whatever. And we haven't figured that out yet for when you talk to ChatGPT.",
+              "note": "On Theo Von's podcast, OpenAI's CEO said conversations with ChatGPT lack the legal privilege of talks with a therapist, lawyer or doctor, and that the company could be required to produce them in a lawsuit.",
+              "linkText": "Read TechCrunch's story",
+              "url": "https://techcrunch.com/2025/07/25/sam-altman-warns-theres-no-legal-confidentiality-when-using-chatgpt-as-a-therapist/"
+            },
+            {
+              "date": "July 31, 2025",
+              "role": "pushback",
+              "title": "OpenAI pulls feature that let shared chats show up in Google",
+              "quote": "Ultimately we think this feature introduced too many opportunities for folks to accidentally share things",
+              "note": "After Fast Company found over 4,500 shared ChatGPT links indexed by Google, OpenAI removed the opt-in 'discoverable' option and said it was working to remove indexed content from search engines.",
+              "linkText": "Read Search Engine Journal's story",
+              "url": "https://www.searchenginejournal.com/openai-is-pulling-shared-chatgpt-chats-from-google-search/552671/"
+            },
+            {
+              "date": "October 11, 2025",
+              "role": "update",
+              "title": "Judge lifts the order to keep all deleted ChatGPT chats, with exceptions",
+              "quote": "OpenAI is required to hold on to any data related to ChatGPT accounts that have been flagged by the NYT.",
+              "note": "An October 9 order ended the duty to preserve all output logs going forward; logs already saved remain. OpenAI said its obligation ended September 26, 2025, and deleted chats are again removed within 30 days.",
+              "linkText": "Read Engadget's story",
+              "url": "https://engadget.com/ai/openai-no-longer-has-to-preserve-all-of-its-chatgpt-data-with-some-exceptions-192422093.html"
+            }
+          ]
+        },
+        "actOnWhatsReal": {
+          "intro": "ChatGPT isn’t posting your chats for other people to read. The real issues are whether your chats help train the AI, who at the company can see them, and that no outside audit checks the rules. Here’s how to act on those.",
+          "learn": [
+            {
+              "title": "Read OpenAI’s own data rules",
+              "text": "OpenAI’s help page explains who can look at your chats and why, how deleting works, and what it asks you not to share.",
+              "linkText": "See how chats are handled →",
+              "url": "https://help.openai.com/en/articles/7039943-how-openai-handles-data-in-consumer-services"
+            }
+          ],
+          "speakUp": [
+            {
+              "title": "Tell lawmakers what privacy you expect",
+              "text": "Congress and state legislatures decide what privacy rights you have with tech companies. Tell your lawmakers what you think, whichever side you’re on.",
+              "linkText": "Find your elected officials →",
+              "url": "https://www.usa.gov/elected-officials"
+            },
+            {
+              "title": "Use your privacy rights",
+              "text": "If you live in California, you can ask a company what personal data it has about you and ask it to delete that data.",
+              "linkText": "Make a privacy request →",
+              "url": "https://privacy.ca.gov/tips/submit-a-privacy-request/"
+            }
+          ],
+          "takeAction": [
+            {
+              "title": "Turn off training in your settings",
+              "text": "In ChatGPT, open Settings, then Data controls, and switch off “Improve the model for everyone.” Thumbs-up or thumbs-down feedback can still be used.",
+              "linkText": "Read the opt-out steps →",
+              "url": "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance"
+            },
+            {
+              "title": "Ask for clear rules at work",
+              "text": "Team up with coworkers, or other parents at your school, to ask which AI accounts are approved and who can read those chats. On business accounts, admins may see them.",
+              "linkText": "See how business accounts work →",
+              "url": "https://openai.com/enterprise-privacy/"
+            }
+          ]
+        }
       },
       "remainingLimitations": [
         "The decisive sources establish company-stated practices, not an independent compliance audit or the frequency of actual training selection.",
@@ -3572,12 +4497,12 @@
     "explainers/existential-risk.md": "ed5a531d4ce47c9296e0dd73876f1187bfe6f1331d49a36066339069cd01f346",
     "research/existential-risk-score.json": "8e6f0384f4bde1e7c205bb3c8d512660dfd26e531be1cf67158dcfb157e9df6f",
     "research/existential-risk-headline-score.json": "58bd1c1a56ce46c15b90f95357976ff7204b4a21e3920760bb56371877ee1839",
-    "explainers/energy-climate.md": "1c6dd75fb96a985e876e0b8e3a3fa2dfa9e2204d5a246f5ba98840b3f1a858a1",
-    "research/energy-climate-score.json": "6ffe1f33daf7c87f9deae3390aad42ed16430783a0730bd7131cba791c478b1f",
-    "research/energy-climate-headline-score.json": "0017145109f1a145835f38b6bc17dd959702636274bdde2913cbf326b89ab19b",
     "explainers/data-centers.md": "2fd8a7f7ffefbdb6efadfdbc55731eec4f2aadda273dd0669cf714d60183e6ad",
     "research/data-centers-score.json": "663b2c5866ae158f449e4fa8278ce27e525178ae9dc21426051ff6bcda27a2da",
     "research/data-centers-headline-score.json": "e7c5e99b1216a1b9c2f7705a82a40f38a6ad49249e1e3adf9f53a02646d0b1df",
+    "explainers/energy-climate.md": "1c6dd75fb96a985e876e0b8e3a3fa2dfa9e2204d5a246f5ba98840b3f1a858a1",
+    "research/energy-climate-score.json": "6ffe1f33daf7c87f9deae3390aad42ed16430783a0730bd7131cba791c478b1f",
+    "research/energy-climate-headline-score.json": "0017145109f1a145835f38b6bc17dd959702636274bdde2913cbf326b89ab19b",
     "explainers/creativity.md": "2068d5c51ad1ac7548eeed3138db443fc61f606063b71805d2482a60b9272694",
     "research/creativity-score.json": "fadee6baf62c06663013a3fbe7127adedf7e3535f6fa66825362f719354d1bdf",
     "research/creativity-headline-score.json": "68fcfb741af8dd65993d9cd1d1185ea70b07f9847d90f83f8d8c9abe5f84e355",

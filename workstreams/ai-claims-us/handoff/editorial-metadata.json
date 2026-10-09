@@ -1,9 +1,9 @@
 {
-  "contentVersion": "claims-us-content-1.4",
+  "contentVersion": "claims-us-content-1.5",
   "section": {
     "name": "Claim Tracker",
     "route": "/claims",
-    "introduction": "Seven claims you'll hear about AI, checked against the evidence for readers in the United States. See what each one means, how much hype it carries, and what you can do if you're concerned.",
+    "introduction": "Big claims about AI travel fast and change as they go. We follow each one back to where it started, show how it grew, and check it against the evidence.",
     "scoreNote": "Hype scores check the wording of a claim against the evidence. They don't measure how serious or likely a harm is. Unlike feed stories, these pages don't show evidence-gap flags yet; the limits of the evidence are described in words.",
     "feedInvitationTitle": "Concerned about a recurring AI claim?",
     "feedInvitationBody": "Explore the evidence on water, jobs, climate, data centers, creativity, privacy, and existential risk.",
