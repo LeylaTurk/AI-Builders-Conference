@@ -14,6 +14,7 @@ Every decision Leyla has made about the claims section, in one place. Newest fir
 
 | Decision | What it means on the page |
 |---|---|
+| Sections clearly separated | Leyla: the sections bled into each other. Each interactive section and In the news is now its own panel with a coloured top band, a light tint and a coloured dot before the heading: From calm to clickbait purple, The Facts yellow, situation picker blue, True or false? green, In the news orange. |
 | No reason sentence under the careful version | The sentence explaining the careful version's score (for example “The more careful version says “threaten” and talks only about some places, which matches what the evidence shows.”) is removed from every claim. The careful box now shows the quote, “Our wording, based on…”, and the score. The reason stays in the data and the detailed scoring checks. |
 
 ## October 8, 2026

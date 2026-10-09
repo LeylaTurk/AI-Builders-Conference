@@ -54,6 +54,16 @@ h1{font-family:var(--display);font-weight:700;font-size:clamp(26px,5vw,34px);lin
 .carefulbox .creason{margin:0 0 8px;font-size:15px}
 .exact{font-size:13px;color:var(--muted);margin:14px 0 0;border-top:1px solid var(--line);padding-top:10px}
 section.layer{margin-top:28px}
+/* clearly separated section panels */
+section.layer[class*="s-"]{margin-top:36px;border-radius:22px;padding:0 16px 20px;border:1px solid var(--line);border-top:6px solid var(--acc);background:var(--tint)}
+section.layer[class*="s-"] > h2{padding-top:16px;display:flex;align-items:center;gap:10px}
+section.layer[class*="s-"] > h2::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--acc);flex:none}
+section.layer[class*="s-"] > .hint{padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid var(--line)}
+.s-dial{--acc:#5B2EA6;--tint:rgba(91,46,166,.07)}
+.s-facts{--acc:#E6B400;--tint:rgba(255,216,77,.14)}
+.s-picker{--acc:#2A78D6;--tint:rgba(42,120,214,.08)}
+.s-quiz{--acc:#1BAF7A;--tint:rgba(27,175,122,.09)}
+.s-news{--acc:#EB6834;--tint:rgba(235,104,52,.08)}
 h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 4px}
 .hint{color:var(--muted);font-size:14px;margin:0 0 12px}
 /* dial */
@@ -224,7 +234,7 @@ h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 4px}
       <div class="score careful"><span class="peppers small" id="cpeppers" aria-hidden="true"></span><span id="clabel"></span></div></div>
   </article>
 
-  <section class="layer dial">
+  <section class="layer dial s-dial">
     <h2>From calm to clickbait</h2>
     <p class="hint">See how the same idea sounds from Grounded to Off the charts. The top headline and the careful version are real; the others are examples we wrote and scored with the same checks. Drag the needle or click on a level.</p>
 <div class="gaugewrap">
@@ -242,20 +252,20 @@ h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 4px}
     <div class="version" id="version" aria-live="polite"></div>
   </section>
 
-  <section class="layer">
+  <section class="layer s-facts">
     <h2>The Facts</h2>
     <p class="hint">Tap a fact to learn more.</p>
     <div class="facts" id="chips"></div>
   </section>
 
-  <section class="layer" id="pickerSec" hidden>
+  <section class="layer s-picker" id="pickerSec" hidden>
     <h2>What happens to my chat?</h2>
     <p class="hint">Pick the one that fits you. Based on OpenAI's published policies.</p>
     <div class="picker" id="picker"></div>
     <div class="outcome" id="outcome" hidden></div>
   </section>
 
-  <section class="layer">
+  <section class="layer s-quiz">
     <h2>True or false?</h2>
     <p class="hint">Test yourself.</p>
     <div class="quiz" id="quiz"></div>
@@ -267,7 +277,7 @@ h2{font-family:var(--display);font-weight:500;font-size:22px;margin:0 0 4px}
     <p class="act-foot">We don’t tell you which side to take, only how to be heard. Speaking up doesn’t guarantee an outcome.</p>
   </section>
 
-  <section class="layer">
+  <section class="layer s-news">
     <h2>In the news</h2>
     <p class="hint">Real stories about this claim, rated with the same checklist as our feed. Article ratings are separate from the claim score above.</p>
     <div class="acards" id="acards"></div>
