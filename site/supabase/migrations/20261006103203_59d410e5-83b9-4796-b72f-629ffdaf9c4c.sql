@@ -1,0 +1,1 @@
+DROP FUNCTION IF EXISTS public.store_feeds_cron_secret(text);

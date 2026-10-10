@@ -1,0 +1,2 @@
+ALTER TABLE public.settings ADD COLUMN IF NOT EXISTS decode_global_cap integer NOT NULL DEFAULT 50, ADD COLUMN IF NOT EXISTS decode_visitor_cap integer NOT NULL DEFAULT 5;
+UPDATE public.settings SET daily_rating_cap = 8, decode_global_cap = 50, decode_visitor_cap = 5 WHERE id = 1;

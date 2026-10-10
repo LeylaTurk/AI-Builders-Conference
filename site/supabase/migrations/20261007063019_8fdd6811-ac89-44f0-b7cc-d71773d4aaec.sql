@@ -1,0 +1,1 @@
+ALTER TABLE public.ratings ADD COLUMN IF NOT EXISTS writeup jsonb;

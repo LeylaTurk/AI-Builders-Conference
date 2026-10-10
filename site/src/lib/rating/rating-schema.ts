@@ -1,0 +1,799 @@
+// The JSON format Claude must answer in (used as the input schema of a forced tool call).
+// Source of truth: engine/rating-schema.json in LeylaTurk/AI-Builders-Conference (copied here as rating-schema.json).
+export const RATING_SCHEMA = {
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "key_claims",
+    "main_source",
+    "checks",
+    "claim_type",
+    "summary",
+    "reason",
+    "other_observations"
+  ],
+  "properties": {
+    "key_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "One or two key claims, in your own words."
+    },
+    "main_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "url",
+        "status"
+      ],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "description": "The link to it from the article's links, or empty string."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "read",
+            "locked",
+            "unlinked",
+            "none"
+          ]
+        }
+      }
+    },
+    "checks": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "H1",
+        "H2",
+        "H3",
+        "P1",
+        "P2",
+        "P3",
+        "W1",
+        "W2",
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
+      "properties": {
+        "H1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "H2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "H3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "P1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "P2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "P3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "W1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "W2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "T1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "T2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "T3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "T4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "T5": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "S1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "S2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "S3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "S4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "C1": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "C2": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "C3": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        },
+        "C4": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "answer",
+            "quote",
+            "paragraph",
+            "reason"
+          ],
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "Y",
+                "N",
+                "NA",
+                "NC"
+              ]
+            },
+            "quote": {
+              "type": "string",
+              "description": "Exact words from the article, a sentence or less. Empty string if none."
+            },
+            "paragraph": {
+              "type": "string",
+              "description": "Paragraph number, or 'headline' or 'deck'. Empty string if no quote."
+            },
+            "reason": {
+              "type": "string",
+              "description": "One plain-English sentence."
+            }
+          }
+        }
+      }
+    },
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "jobs",
+        "beats_experts",
+        "existential",
+        "acts_on_its_own",
+        "company_first",
+        "data_center_growth",
+        "saves_time_money",
+        "harms_children_health",
+        "other"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "other_observations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+} as const;

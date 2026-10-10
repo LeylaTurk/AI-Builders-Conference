@@ -1,0 +1,864 @@
+{
+ "version": "claim-trail-story-1.0",
+ "note": "Story lines for the Claim Tracker trail. Stops are matched by position (stop 1 = interactive.trail.stops[0]). Text here is new; it does not replace any text in claims-content.json. linkPhrase is the exact words inside whatHappened that link to the stop's existing source url.",
+ "claims": {
+  "water": {
+   "topic": "Water",
+   "turningPointStop": 4,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with a careful estimate.",
+     "summary": "In April 2023, university researchers tried to work out how much water ChatGPT might use. Their answer was about half a litre for a whole conversation, not for one question.",
+     "stops": [
+      1
+     ]
+    },
+    {
+     "label": "How it spread",
+     "headline": "Then the bottle travelled, and the conversation shrank to one question.",
+     "summary": "Early stories kept the “whole conversation” detail. Then one headline dropped it, and a bottle per conversation became a bottle per question. That is the version people still repeat.",
+     "stops": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "How it was challenged",
+     "headline": "Then people checked, and the number got much smaller.",
+     "summary": "The researchers narrowed their own figure. Companies and independent writers then put a single question at a few drops to a few millilitres.",
+     "stops": [
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "University researchers publish “Making AI Less Thirsty”",
+     "whatHappened": "Researchers estimate half a litre of water for a whole ChatGPT conversation of 20 to 50 questions.",
+     "glanceValue": "500 ml",
+     "glanceCaption": "per 20–50 questions",
+     "glanceTone": "claim",
+     "linkPhrase": "Researchers estimate"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Gizmodo picks it up",
+     "whatHappened": "Gizmodo repeats the bottle, still for a whole exchange of questions.",
+     "glanceValue": "500 ml",
+     "glanceCaption": "per exchange",
+     "glanceTone": "claim",
+     "linkPhrase": "Gizmodo"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "The Associated Press takes it nationwide",
+     "whatHappened": "The Associated Press spreads it across the US, for a series of 5 to 50 prompts.",
+     "glanceValue": "500 ml",
+     "glanceCaption": "per 5–50 prompts",
+     "glanceTone": "claim",
+     "linkPhrase": "The Associated Press"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "Windows Central turns it into a bottle for every query",
+     "whatHappened": "Windows Central drops the detail: now it is a bottle for every single question.",
+     "glanceValue": "1 bottle",
+     "glanceCaption": "per question",
+     "glanceTone": "claim",
+     "linkPhrase": "Windows Central"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "“One email, one bottle”",
+     "whatHappened": "A year later, the bottle is pinned to one AI-written email.",
+     "glanceValue": "519 ml",
+     "glanceCaption": "per 100-word email",
+     "glanceTone": "claim",
+     "linkPhrase": "one AI-written email"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "The researchers narrow their own figure",
+     "whatHappened": "The researchers narrow it to the older GPT-3 model and say location matters a lot.",
+     "glanceValue": "500 ml",
+     "glanceCaption": "per 10–50 answers (GPT-3)",
+     "glanceTone": "check",
+     "linkPhrase": "The researchers narrow it"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "OpenAI’s boss gives a much smaller number",
+     "whatHappened": "OpenAI’s boss says one question uses about a fifteenth of a teaspoon.",
+     "glanceValue": "0.32 ml",
+     "glanceCaption": "per question",
+     "glanceTone": "check",
+     "linkPhrase": "OpenAI’s boss"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "Google publishes its own estimate",
+     "whatHappened": "Google says a typical prompt uses about five drops.",
+     "glanceValue": "0.26 ml",
+     "glanceCaption": "per prompt",
+     "glanceTone": "check",
+     "linkPhrase": "Google says"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "A writer calls the bottle claim a misconception",
+     "whatHappened": "A writer estimates about 2 ml per prompt and calls the bottle a misconception.",
+     "glanceValue": "~2 ml",
+     "glanceCaption": "per prompt, incl. power plants",
+     "glanceTone": "check",
+     "linkPhrase": "A writer estimates"
+    }
+   ],
+   "glanceTitle": "How the number changed",
+   "whereItStandsToday": "One question uses somewhere between a few drops and a few millilitres, depending on whose estimate you trust. A bottle for every question is not supported. The real issue is local: data centers can strain water in some dry towns on the hottest days."
+  },
+  "jobs": {
+   "topic": "Jobs",
+   "turningPointStop": 3,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with a study of what machines could do.",
+     "summary": "In 2013, two Oxford researchers estimated that 47% of US jobs could technically be automated. It measured what was possible, not a forecast of job losses.",
+     "stops": [
+      1
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then the estimates got bigger, and the warnings got louder.",
+     "summary": "After ChatGPT, a bank put a global number on jobs exposed to AI. Then a tech boss said probably none of us will have a job, and the headline dropped the “probably”. An AI company boss added his own warning.",
+     "stops": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "How it was checked",
+     "headline": "Then economists looked at the job data.",
+     "summary": "Studies found no economy-wide job shock so far, and a leading economist pushed back on the forecasts. The newest data shows an early warning sign for young workers.",
+     "stops": [
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "Oxford study says 47% of US jobs are at risk of automation",
+     "whatHappened": "Oxford researchers estimate that 47% of US jobs could technically be automated.",
+     "glanceValue": "47%",
+     "glanceCaption": "of US jobs could be automated",
+     "glanceTone": "claim",
+     "linkPhrase": "Oxford researchers"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Goldman Sachs: generative AI could expose 300 million jobs",
+     "whatHappened": "Goldman Sachs says generative AI could expose 300 million jobs worldwide to automation.",
+     "glanceValue": "300 m",
+     "glanceCaption": "jobs exposed worldwide",
+     "glanceTone": "claim",
+     "linkPhrase": "Goldman Sachs"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "Elon Musk says probably none of us will have a job",
+     "whatHappened": "Elon Musk says probably none of us will have a job, and CNN’s headline becomes “AI will take all our jobs”.",
+     "glanceValue": "All",
+     "glanceCaption": "“probably none of us”",
+     "glanceTone": "claim",
+     "linkPhrase": "Elon Musk says"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "Anthropic CEO warns of a 'white-collar bloodbath'",
+     "whatHappened": "Anthropic’s CEO warns AI could wipe out half of entry-level office jobs within five years.",
+     "glanceValue": "50%",
+     "glanceCaption": "of entry-level office jobs",
+     "glanceTone": "claim",
+     "linkPhrase": "Anthropic’s CEO warns"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "Amodei repeats the warning on CNN",
+     "whatHappened": "He repeats the warning on CNN, saying AI already matches a smart graduate at some tasks.",
+     "glanceValue": "50%",
+     "glanceCaption": "repeated on CNN",
+     "glanceTone": "claim",
+     "linkPhrase": "repeats the warning on CNN"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "Yale Budget Lab finds no broad job disruption yet",
+     "whatHappened": "Yale researchers find no clear sign that AI has disrupted jobs since ChatGPT launched.",
+     "glanceValue": "No change",
+     "glanceCaption": "in job data so far",
+     "glanceTone": "check",
+     "linkPhrase": "Yale researchers"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Updated Yale analysis: fears remain 'largely speculative'",
+     "whatHappened": "An update still shows stability, and asks whether some firms blame AI for layoffs.",
+     "glanceValue": "Stable",
+     "glanceCaption": "economy-wide, 2026",
+     "glanceTone": "check",
+     "linkPhrase": "An update"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "Nobel economist Daron Acemoglu disputes Amodei's forecast",
+     "whatHappened": "A Nobel-winning economist says the forecast ignores the new jobs technology creates.",
+     "glanceValue": "Disputed",
+     "glanceCaption": "by a Nobel economist",
+     "glanceTone": "check",
+     "linkPhrase": "A Nobel-winning economist"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "Stanford data shows young workers in AI-exposed jobs falling behind",
+     "whatHappened": "Stanford payroll data shows young workers in AI-exposed jobs 19% behind their peers.",
+     "glanceValue": "−19%",
+     "glanceCaption": "young workers in exposed jobs",
+     "glanceTone": "check",
+     "linkPhrase": "Stanford payroll data"
+    }
+   ],
+   "glanceTitle": "How the number changed",
+   "whereItStandsToday": "No data shows AI taking all our jobs, or even causing an economy-wide shock so far. The early sign is narrower: young workers in AI-exposed jobs are falling behind, though researchers can’t yet say AI caused it."
+  },
+  "existential-risk": {
+   "topic": "Existential risk",
+   "turningPointStop": 3,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with a warning in a philosophy book.",
+     "summary": "In 2014, Nick Bostrom argued that AI smarter than humans could become extremely powerful, possibly beyond our control. It was a risk to take seriously, not a prediction.",
+     "stops": [
+      1
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then the warning turned into a prediction.",
+     "summary": "A 2023 open letter asked AI labs to pause. One writer said that wasn’t enough and predicted everyone on Earth would die. Then a famous AI pioneer quit Google to warn about the dangers, and lab bosses signed a warning about extinction.",
+     "stops": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "How experts answered",
+     "headline": "Then experts answered, and they disagreed.",
+     "summary": "A leading AI scientist called the fears ridiculous. A large survey of researchers put the typical estimate at about 5%, and a government-backed report found no agreement on how likely it is.",
+     "stops": [
+      6,
+      7,
+      8
+     ]
+    },
+    {
+     "label": "Where it went next",
+     "headline": "Then the prediction became a book title.",
+     "summary": "In 2025 the claim reached bookshops in its boldest form.",
+     "stops": [
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "Philosopher Nick Bostrom's book Superintelligence warns AI could escape human control",
+     "whatHappened": "Philosopher Nick Bostrom warns that superintelligent AI could slip beyond human control.",
+     "glanceValue": "Possibly",
+     "glanceCaption": "beyond our control",
+     "glanceTone": "claim",
+     "linkPhrase": "Nick Bostrom"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Open letter calls for a six-month pause on AI more powerful than GPT-4",
+     "whatHappened": "An open letter asks AI labs to pause their most powerful systems for six months.",
+     "glanceValue": "Pause",
+     "glanceCaption": "for six months",
+     "glanceTone": "claim",
+     "linkPhrase": "An open letter"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "Yudkowsky says a pause is not enough and predicts everyone on Earth will die",
+     "whatHappened": "Eliezer Yudkowsky says a pause isn’t enough: build superhuman AI and everyone on Earth will die.",
+     "glanceValue": "Everyone dies",
+     "glanceCaption": "says Yudkowsky",
+     "glanceTone": "claim",
+     "linkPhrase": "Eliezer Yudkowsky"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "AI pioneer Geoffrey Hinton leaves Google to speak about AI's dangers",
+     "whatHappened": "Geoffrey Hinton, a pioneer of modern AI, quits Google so he can warn about its dangers.",
+     "glanceValue": "Warning",
+     "glanceCaption": "Hinton leaves Google",
+     "glanceTone": "claim",
+     "linkPhrase": "quits Google"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "AI lab leaders and top researchers sign a one-sentence extinction warning",
+     "whatHappened": "AI lab bosses and top researchers sign a one-line warning about the risk of extinction.",
+     "glanceValue": "Extinction",
+     "glanceCaption": "a global priority",
+     "glanceTone": "claim",
+     "linkPhrase": "a one-line warning"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "Meta's chief AI scientist Yann LeCun calls extinction fears ridiculous",
+     "whatHappened": "Meta’s chief AI scientist Yann LeCun calls extinction fears ridiculous.",
+     "glanceValue": "Ridiculous",
+     "glanceCaption": "says LeCun",
+     "glanceTone": "check",
+     "linkPhrase": "Yann LeCun"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Survey of 2,778 AI researchers finds a median 5% chance of extinction-level outcomes",
+     "whatHappened": "A survey of 2,778 AI researchers puts the typical estimate of an extinction-level outcome at 5%.",
+     "glanceValue": "5%",
+     "glanceCaption": "typical researcher estimate",
+     "glanceTone": "check",
+     "linkPhrase": "A survey of 2,778 AI researchers"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "International AI Safety Report finds experts split on the risk of losing control",
+     "whatHappened": "An international report finds experts deeply split on the risk of losing control of AI.",
+     "glanceValue": "Split",
+     "glanceCaption": "no expert agreement",
+     "glanceTone": "check",
+     "linkPhrase": "An international report"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "Yudkowsky and Soares publish a book titled If Anyone Builds It, Everyone Dies",
+     "whatHappened": "Yudkowsky and Soares publish a book called If Anyone Builds It, Everyone Dies.",
+     "glanceValue": "Everyone dies",
+     "glanceCaption": "now a book title",
+     "glanceTone": "claim",
+     "linkPhrase": "If Anyone Builds It, Everyone Dies"
+    }
+   ],
+   "glanceTitle": "How the warning changed",
+   "whereItStandsToday": "Many experts take the risk of losing control of AI seriously, but they disagree about how likely it is. “AI will kill us all” states as certain what most researchers put at a small, uncertain chance."
+  },
+  "data-centers": {
+   "topic": "Data centers",
+   "turningPointStop": 8,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with one county fight in Virginia.",
+     "summary": "In 2022, Prince William County opened 2,100 acres next to a Civil War battlefield to data centers, after a 15-hour hearing and loud opposition.",
+     "stops": [
+      1
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then the costs and benefits were counted.",
+     "summary": "Virginia’s auditors found big economic benefits and rising power bills. Reports then added up blocked projects, pollution complaints and higher electricity prices across the country.",
+     "stops": [
+      2,
+      3,
+      4,
+      5
+     ]
+    },
+    {
+     "label": "How communities pushed back",
+     "headline": "Then communities started winning.",
+     "summary": "In August 2025, Tucson’s council ended a proposed data center, and a judge voided the Virginia zoning from the first stop.",
+     "stops": [
+      6,
+      7
+     ]
+    },
+    {
+     "label": "Where it stands",
+     "headline": "Then the fear got its slogan.",
+     "summary": "In Georgia, an activist warned that data centers “will destroy our community”, and the county kept pausing new projects.",
+     "stops": [
+      8,
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "Prince William County approves the Digital Gateway over loud opposition",
+     "whatHappened": "Prince William County approves a huge data center zone next to Manassas battlefield.",
+     "glanceValue": "2,100 acres",
+     "glanceCaption": "zoned next to a battlefield",
+     "glanceTone": "claim",
+     "linkPhrase": "approves a huge data center zone"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Virginia's legislative auditors weigh benefits against energy costs",
+     "whatHappened": "Virginia’s auditors find $9.1 billion a year for the economy, but higher power bills ahead.",
+     "glanceValue": "$9.1 bn",
+     "glanceCaption": "a year for Virginia’s economy",
+     "glanceTone": "check",
+     "linkPhrase": "Virginia’s auditors"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "Report tallies $64 billion in projects blocked or delayed by local opposition",
+     "whatHappened": "A report counts $64 billion in data center projects blocked or delayed by local opposition.",
+     "glanceValue": "$64 bn",
+     "glanceCaption": "of projects blocked or delayed",
+     "glanceTone": "claim",
+     "linkPhrase": "A report counts"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "NAACP moves to sue xAI over turbine pollution in Memphis",
+     "whatHappened": "The NAACP moves to sue Elon Musk’s xAI over turbine pollution in Memphis.",
+     "glanceValue": "Lawsuit",
+     "glanceCaption": "over pollution in Memphis",
+     "glanceTone": "claim",
+     "linkPhrase": "The NAACP moves to sue"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "Record grid auction ties data centers to higher power bills",
+     "whatHappened": "A record power auction ties data centers to higher electricity bills in 13 states.",
+     "glanceValue": "+5%",
+     "glanceCaption": "power bills in 13 states",
+     "glanceTone": "claim",
+     "linkPhrase": "A record power auction"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "Tucson council unanimously ends Project Blue",
+     "whatHappened": "Tucson’s council votes unanimously to end Project Blue over its water and energy use.",
+     "glanceValue": "Stopped",
+     "glanceCaption": "Tucson’s Project Blue",
+     "glanceTone": "claim",
+     "linkPhrase": "Tucson’s council"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Judge voids the Digital Gateway rezoning",
+     "whatHappened": "A judge voids the Prince William rezoning because the county’s public notice was flawed.",
+     "glanceValue": "Voided",
+     "glanceCaption": "the Virginia rezoning",
+     "glanceTone": "claim",
+     "linkPhrase": "A judge voids"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "DeKalb County activist: data centers \"will destroy our community\"",
+     "whatHappened": "A DeKalb County activist says data centers “will destroy our community”.",
+     "glanceValue": "“Destroy”",
+     "glanceCaption": "our community",
+     "glanceTone": "claim",
+     "linkPhrase": "A DeKalb County activist"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "DeKalb extends its pause on new data centers again",
+     "whatHappened": "DeKalb extends its pause on new data centers, saying it isn’t against technology.",
+     "glanceValue": "Paused",
+     "glanceCaption": "new projects in DeKalb",
+     "glanceTone": "check",
+     "linkPhrase": "DeKalb extends its pause"
+    }
+   ],
+   "glanceTitle": "How the fight grew",
+   "whereItStandsToday": "Data centers bring real costs, like a constant hum near homes, higher power bills and pressure on water, as well as jobs and tax money. Whether one harms a community depends on where it goes and the rules around it."
+  },
+  "energy-climate": {
+   "topic": "Energy and climate",
+   "turningPointStop": 2,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with a study, and a headline that went further.",
+     "summary": "In 2019, researchers estimated the carbon cost of training AI models. A day later, a headline compared one model to five cars, using the study’s most extreme case.",
+     "stops": [
+      1,
+      2
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then the tech giants’ own emissions went up.",
+     "summary": "In 2024, Microsoft and Google both reported rising emissions and linked them to building and powering more data centers.",
+     "stops": [
+      3,
+      4
+     ]
+    },
+    {
+     "label": "What the forecasts say",
+     "headline": "Then the forecasts came in.",
+     "summary": "Government and international reports projected data center electricity use rising fast, while noting that AI could also help cut emissions elsewhere.",
+     "stops": [
+      5,
+      6
+     ]
+    },
+    {
+     "label": "Where it stands",
+     "headline": "Then the argument split.",
+     "summary": "Bill Gates said AI is speeding up clean energy. A historian answered that AI will make climate change worse.",
+     "stops": [
+      7,
+      8
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "University researchers estimate the energy and carbon cost of training AI language models",
+     "whatHappened": "Researchers estimate the energy and carbon cost of training AI language models.",
+     "glanceValue": "Estimate",
+     "glanceCaption": "carbon cost of training",
+     "glanceTone": "check",
+     "linkPhrase": "Researchers estimate"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "A headline turns the study into \"as much carbon as five cars\"",
+     "whatHappened": "A headline says training one AI model can emit as much carbon as five cars.",
+     "glanceValue": "5 cars",
+     "glanceCaption": "per AI model",
+     "glanceTone": "claim",
+     "linkPhrase": "A headline says"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "Microsoft says its emissions are up about 29% since 2020",
+     "whatHappened": "Microsoft says its emissions are up 29% since 2020, mainly from new data centers.",
+     "glanceValue": "+29%",
+     "glanceCaption": "Microsoft emissions since 2020",
+     "glanceTone": "claim",
+     "linkPhrase": "Microsoft says"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "Google reports emissions up 48% since 2019, blamed on data center energy use",
+     "whatHappened": "Google reports emissions up 48% since 2019, tied to data center energy use.",
+     "glanceValue": "+48%",
+     "glanceCaption": "Google emissions since 2019",
+     "glanceTone": "claim",
+     "linkPhrase": "Google reports"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "US government report projects data center electricity share could nearly triple by 2028",
+     "whatHappened": "A US government report says data centers could use up to 12% of US electricity by 2028.",
+     "glanceValue": "4.4% → 12%",
+     "glanceCaption": "of US electricity by 2028",
+     "glanceTone": "claim",
+     "linkPhrase": "A US government report"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "IEA says data center electricity will more than double by 2030, but AI could offset emissions",
+     "whatHappened": "The IEA says data center electricity will more than double by 2030, but AI could offset emissions.",
+     "glanceValue": "×2",
+     "glanceCaption": "data center power by 2030",
+     "glanceTone": "claim",
+     "linkPhrase": "The IEA says"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Bill Gates says climate change won't end humanity and credits AI with speeding clean energy",
+     "whatHappened": "Bill Gates says climate change won’t end humanity and AI is speeding up clean energy.",
+     "glanceValue": "Speeding up",
+     "glanceCaption": "clean energy, says Gates",
+     "glanceTone": "check",
+     "linkPhrase": "Bill Gates says"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "Historian Juan Cole argues AI will intensify climate change",
+     "whatHappened": "Historian Juan Cole argues AI’s data centers will raise carbon emissions significantly.",
+     "glanceValue": "“Wreck our planet”",
+     "glanceCaption": "says Cole",
+     "glanceTone": "claim",
+     "linkPhrase": "Historian Juan Cole"
+    }
+   ],
+   "glanceTitle": "How the number changed",
+   "whereItStandsToday": "AI is pushing up demand for electricity, and where that power comes from gas or coal, emissions rise. How much depends on how fast demand grows and how clean the grid gets, so “will make climate change worse” is too certain."
+  },
+  "creativity": {
+   "topic": "Creativity",
+   "turningPointStop": 4,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with artists finding their work inside AI.",
+     "summary": "In 2022, a fantasy artist learned his name was one of the most used prompts for AI images. Weeks later, artists flooded a big art site with protest posts.",
+     "stops": [
+      1,
+      2
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then the objection went to court, and became a slogan.",
+     "summary": "Artists sued AI image companies for copyright infringement. A philosophy paper then argued that “AI art is theft” holds up as ethics, whatever the law says.",
+     "stops": [
+      3,
+      4
+     ]
+    },
+    {
+     "label": "How it was answered",
+     "headline": "Then courts and regulators gave mixed answers.",
+     "summary": "The US Copyright Office said some AI training is fair use and some isn’t. Hollywood studios sued. A US court allowed training on books but not piracy, and a UK court found an AI model doesn’t store the images it learned from.",
+     "stops": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "Fantasy artist Greg Rutkowski finds his name is a top prompt for AI images",
+     "whatHappened": "Artist Greg Rutkowski finds his name used about 93,000 times as a prompt for AI images.",
+     "glanceValue": "93,000",
+     "glanceCaption": "prompts using one artist’s name",
+     "glanceTone": "claim",
+     "linkPhrase": "Artist Greg Rutkowski"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Artists flood ArtStation with \"No to AI Generated Images\" protest posts",
+     "whatHappened": "Artists flood ArtStation with “No to AI Generated Images” protest posts.",
+     "glanceValue": "Protest",
+     "glanceCaption": "across ArtStation",
+     "glanceTone": "claim",
+     "linkPhrase": "flood ArtStation"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "Artists file a class action against Stability AI, Midjourney and DeviantArt",
+     "whatHappened": "Artists file a class action against Stability AI, Midjourney and DeviantArt.",
+     "glanceValue": "Lawsuit",
+     "glanceCaption": "artists sue AI firms",
+     "glanceTone": "claim",
+     "linkPhrase": "file a class action"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "Philosophy paper argues the protest slogan \"AI art is theft\" holds up",
+     "whatHappened": "A philosophy paper argues the slogan “AI art is theft” holds up, whatever the law says.",
+     "glanceValue": "“Theft”",
+     "glanceCaption": "as an ethical argument",
+     "glanceTone": "claim",
+     "linkPhrase": "A philosophy paper"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "US Copyright Office says some AI training is fair use and some is not",
+     "whatHappened": "The US Copyright Office says some AI training is fair use and some is not.",
+     "glanceValue": "It depends",
+     "glanceCaption": "says the Copyright Office",
+     "glanceTone": "check",
+     "linkPhrase": "The US Copyright Office"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "Disney and Universal sue Midjourney",
+     "whatHappened": "Disney and Universal sue Midjourney, calling it “a bottomless pit of plagiarism”.",
+     "glanceValue": "“Plagiarism”",
+     "glanceCaption": "say Disney and Universal",
+     "glanceTone": "claim",
+     "linkPhrase": "Disney and Universal sue Midjourney"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Judge rules training on books is fair use, but pirated copies are not",
+     "whatHappened": "A US judge rules training on books is fair use, but keeping pirated copies is not.",
+     "glanceValue": "Fair use",
+     "glanceCaption": "training on books",
+     "glanceTone": "check",
+     "linkPhrase": "A US judge rules"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "Judge approves $1.5 billion Anthropic settlement with authors",
+     "whatHappened": "Anthropic agrees to pay authors $1.5 billion over the pirated books.",
+     "glanceValue": "$1.5 bn",
+     "glanceCaption": "for pirated books",
+     "glanceTone": "claim",
+     "linkPhrase": "agrees to pay authors $1.5 billion"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "UK court rejects Getty's claim that Stable Diffusion is an infringing copy",
+     "whatHappened": "A UK court finds Stable Diffusion doesn’t store the images it learned from.",
+     "glanceValue": "Not a copy",
+     "glanceCaption": "UK court on Stable Diffusion",
+     "glanceTone": "check",
+     "linkPhrase": "A UK court"
+    }
+   ],
+   "glanceTitle": "How the argument changed",
+   "whereItStandsToday": "Whether AI art is theft is still an argument, not a settled fact. Courts have said training can be legal, but how the training data was obtained can be costly, and many cases are still open."
+  },
+  "privacy": {
+   "topic": "Privacy",
+   "turningPointStop": 4,
+   "phases": [
+    {
+     "label": "Where it started",
+     "headline": "It started with a real bug.",
+     "summary": "In March 2023, a bug let some ChatGPT users see other people’s chat titles. Italy briefly blocked ChatGPT, and OpenAI added a way to turn off chat history and training.",
+     "stops": [
+      1,
+      2,
+      3
+     ]
+    },
+    {
+     "label": "How it grew",
+     "headline": "Then a headline turned training into “sharing your secrets”.",
+     "summary": "A how-to story told readers ChatGPT was sharing their secrets, when it meant chats being used for training. Days later, Samsung banned staff from ChatGPT after confidential code was pasted into it.",
+     "stops": [
+      4,
+      5
+     ]
+    },
+    {
+     "label": "Where it stands",
+     "headline": "Then courts raised new questions, and some got answers.",
+     "summary": "A court ordered OpenAI to keep deleted chats, and Sam Altman said chats have no legal confidentiality. OpenAI pulled a feature that let shared chats show up in Google, and the court order was later lifted.",
+     "stops": [
+      6,
+      7,
+      8,
+      9
+     ]
+    }
+   ],
+   "stops": [
+    {
+     "stop": 1,
+     "stopTitle": "OpenAI admits a bug showed some users other people's chat titles",
+     "whatHappened": "A bug lets some ChatGPT users see the titles of other people’s chats.",
+     "glanceValue": "1.2%",
+     "glanceCaption": "of Plus users’ payment details exposed",
+     "glanceTone": "claim",
+     "linkPhrase": "A bug"
+    },
+    {
+     "stop": 2,
+     "stopTitle": "Italy's privacy regulator temporarily blocks ChatGPT",
+     "whatHappened": "Italy’s privacy regulator temporarily blocks ChatGPT.",
+     "glanceValue": "Blocked",
+     "glanceCaption": "in Italy",
+     "glanceTone": "claim",
+     "linkPhrase": "Italy’s privacy regulator"
+    },
+    {
+     "stop": 3,
+     "stopTitle": "OpenAI lets users turn off chat history and training",
+     "whatHappened": "OpenAI lets users turn off chat history so their chats aren’t used for training.",
+     "glanceValue": "Off switch",
+     "glanceCaption": "for chat history",
+     "glanceTone": "check",
+     "linkPhrase": "OpenAI lets users"
+    },
+    {
+     "stop": 4,
+     "stopTitle": "Tom's Guide headline: \"ChatGPT is sharing your secrets\"",
+     "whatHappened": "A Tom’s Guide headline says “ChatGPT is sharing your secrets”, though the story is about training.",
+     "glanceValue": "“Secrets”",
+     "glanceCaption": "in a headline",
+     "glanceTone": "claim",
+     "linkPhrase": "A Tom’s Guide headline"
+    },
+    {
+     "stop": 5,
+     "stopTitle": "Samsung bans staff from using ChatGPT after code was pasted into it",
+     "whatHappened": "Samsung bans staff from ChatGPT after an employee pasted in confidential code.",
+     "glanceValue": "Banned",
+     "glanceCaption": "at Samsung",
+     "glanceTone": "claim",
+     "linkPhrase": "Samsung bans staff"
+    },
+    {
+     "stop": 6,
+     "stopTitle": "Court order in New York Times lawsuit forces OpenAI to keep deleted chats",
+     "whatHappened": "A court order in a New York Times lawsuit forces OpenAI to keep even deleted chats.",
+     "glanceValue": "Kept",
+     "glanceCaption": "even deleted chats",
+     "glanceTone": "claim",
+     "linkPhrase": "A court order"
+    },
+    {
+     "stop": 7,
+     "stopTitle": "Sam Altman says ChatGPT chats lack legal confidentiality",
+     "whatHappened": "Sam Altman says ChatGPT chats lack the legal protection of talking to a doctor or lawyer.",
+     "glanceValue": "No privilege",
+     "glanceCaption": "says Altman",
+     "glanceTone": "claim",
+     "linkPhrase": "Sam Altman says"
+    },
+    {
+     "stop": 8,
+     "stopTitle": "OpenAI pulls feature that let shared chats show up in Google",
+     "whatHappened": "OpenAI pulls a feature after thousands of shared chats showed up in Google search.",
+     "glanceValue": "Removed",
+     "glanceCaption": "from Google search",
+     "glanceTone": "check",
+     "linkPhrase": "OpenAI pulls a feature"
+    },
+    {
+     "stop": 9,
+     "stopTitle": "Judge lifts the order to keep all deleted ChatGPT chats, with exceptions",
+     "whatHappened": "A judge lifts the order to keep all deleted chats, with some exceptions.",
+     "glanceValue": "Lifted",
+     "glanceCaption": "the deleted-chats order",
+     "glanceTone": "check",
+     "linkPhrase": "A judge lifts the order"
+    }
+   ],
+   "glanceTitle": "How the worry changed",
+   "whereItStandsToday": "ChatGPT doesn’t show your chats to other people, but they may be used for training unless you turn that off, and they can be handed over in a lawsuit. It’s wise not to share anything you’d need kept truly confidential."
+  }
+ }
+}
